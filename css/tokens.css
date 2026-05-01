@@ -1,0 +1,139 @@
+/* La Política en el Espacio - design tokens
+   Editorial light mode. Warm paper + deep navy ink + oxblood accent. */
+
+:root {
+  /* Surface */
+  --paper:        #FAFAF7;
+  --surface:      #FFFFFF;
+  --rule:         #D9D2C2;
+  --rule-strong:  #C9C0AC;
+  --hairline:     #E8E4DA;
+
+  /* Ink */
+  --ink:          #0E1A2B;
+  --ink-muted:    #4A5568;
+  --ink-faint:    #94918A;
+
+  /* Accent (oxblood) */
+  --accent:       #7A1E2B;
+  --accent-muted: #B8696F;
+  --accent-soft:  #F5EFE6;
+
+  /* Sequential ramp (7 steps): paper-tinted -> oxblood */
+  --seq-1: #F5EFE6;
+  --seq-2: #ECDDD1;
+  --seq-3: #D9B3AE;
+  --seq-4: #C2867F;
+  --seq-5: #A8504F;
+  --seq-6: #8E2C36;
+  --seq-7: #6E1822;
+
+  /* Diverging (ink <-> paper <-> oxblood) */
+  --div-neg-3: #0E1A2B;
+  --div-neg-2: #45556C;
+  --div-neg-1: #8E96A2;
+  --div-mid:   #FAFAF7;
+  --div-pos-1: #C2867F;
+  --div-pos-2: #8E2C36;
+  --div-pos-3: #6E1822;
+
+  /* Event categories on the annotations rail (muted) */
+  --event-war:           #8E2C36;
+  --event-political:     #4A5568;
+  --event-economic:      #6B5840;
+  --event-institutional: #2C5060;
+
+  /* Type — Fraunces variable for display + Manrope for UI + IBM Plex Mono for code/tabular only.
+     JetBrains Mono and Inter intentionally absent. Mono is reserved for genuine
+     code/data-table contexts; numeric readouts in the UI use Fraunces tabular
+     lining figures via the .num utility class. */
+  --serif:        'Fraunces', Georgia, 'Times New Roman', serif;
+  --sans:         'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --mono:         'IBM Plex Mono', 'SF Mono', Menlo, Consolas, monospace;
+
+  /* Type scale (px, line-height) */
+  --t-display:   72px / 1.05;
+  --t-display-md:56px / 1.05;
+  --t-h2:        32px / 1.2;
+  --t-h3:        22px / 1.3;
+  --t-body:      15px / 1.55;
+  --t-body-sm:   13px / 1.5;
+  --t-caption:   12px / 1.45;
+  --t-overline:  11px / 1.4;
+
+  /* Layout */
+  --max-w:       1440px;
+  --gutter:      40px;
+  --gutter-sm:   24px;
+  --radius-sm:   2px;
+  --radius:      4px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+button, input, select { font-family: inherit; color: inherit; }
+a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--rule-strong); text-underline-offset: 3px; }
+a:hover { text-decoration-color: var(--accent); }
+
+.serif    {
+  font-family: var(--serif); font-weight: 500;
+  font-variation-settings: "opsz" 36, "SOFT" 30;
+  letter-spacing: -0.005em;
+}
+.serif-i  {
+  font-family: var(--serif); font-style: italic; font-weight: 400;
+  font-variation-settings: "opsz" 14, "SOFT" 50;
+}
+.mono     { font-family: var(--mono); font-feature-settings: "tnum", "lnum"; }
+
+/* Section labels: Fraunces small caps. opsz 14, weight 600, letterspacing
+   per the brief. Falls back gracefully on browsers that lack OT 'smcp' by
+   relying on font-variant-caps. */
+.overline {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+  font-variation-settings: "opsz" 14, "SOFT" 0;
+  font-feature-settings: "smcp", "c2sc", "lnum", "tnum";
+  font-variant-caps: all-small-caps;
+  text-transform: lowercase; /* let smcp uppercase optically */
+}
+
+.caption  { font-size: 12px; line-height: 1.45; color: var(--ink-muted); }
+.muted    { color: var(--ink-muted); }
+.faint    { color: var(--ink-faint); }
+.rule     { border-top: 1px solid var(--rule); }
+.hairline { border-top: 1px solid var(--hairline); }
+
+/* Numerics in tooltips, legends, dataset strips, slider readouts: Fraunces
+   tabular lining figures. Keeps glyphs aligned in columns and at cap height
+   without slipping into mono territory. */
+.num {
+  font-family: var(--serif);
+  font-feature-settings: "tnum", "lnum";
+  font-variation-settings: "opsz" 14, "SOFT" 0;
+  letter-spacing: 0;
+}
+
+/* Old-style figures for body prose. Numerals carry ascenders/descenders
+   like lowercase letters — archival without being precious. */
+.onum {
+  font-feature-settings: "onum", "pnum";
+}
+
+/* Genuine mono blocks: code samples, data tables, file paths */
+.code {
+  font-family: var(--mono); font-size: 12.5px; line-height: 1.55;
+  font-feature-settings: "tnum", "lnum", "zero";
+}

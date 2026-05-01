@@ -1,0 +1,14 @@
+{
+  "n_years_covered": 186,
+  "year_span": 186,
+  "year_range": [
+    1810,
+    1995
+  ],
+  "n_census_years": 13,
+  "n_categories": 18,
+  "n_variables_total": 160,
+  "n_variables_department": 38,
+  "n_variables_province": 22,
+  "n_variables_national": 103
+}

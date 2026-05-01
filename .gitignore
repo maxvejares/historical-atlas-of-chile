@@ -1,0 +1,9 @@
+.DS_Store
+*.swp
+*.swo
+old/
+screenshots/
+# Legacy .js geojson sidecars - the new platform fetches .geojson directly.
+# window_data.js is intentionally tracked (it's the live data block).
+data/departments_*.js
+data/provinces_*.js
