@@ -19,9 +19,12 @@ export function createControlStrip(host, { onSelect }) {
         <span class="label">Category</span>
         <select></select>
       </div>
-      <div class="dropdown" data-control="variable">
+      <div class="dropdown var-dropdown" data-control="variable">
         <span class="label">Variable</span>
-        <select></select>
+        <button type="button" class="var-trigger" aria-haspopup="listbox" aria-expanded="false">
+          <span class="var-trigger-label"></span>
+        </button>
+        <ul class="var-listbox" role="listbox" tabindex="-1" hidden></ul>
       </div>
       <div data-control="slider"></div>
       <div class="cs-aux">
@@ -29,16 +32,15 @@ export function createControlStrip(host, { onSelect }) {
           <input type="checkbox" data-control="pc">
           <span class="toggle-label">Per 100,000</span>
         </label>
-        <label class="toggle cb-toggle">
-          <input type="checkbox" data-control="cb">
-          <span class="toggle-label">Colorblind</span>
-        </label>
       </div>
     </div>
   `;
   const tabsEl = host.querySelector('.scale-tabs');
   const catSelect = host.querySelector('[data-control="category"] select');
-  const varSelect = host.querySelector('[data-control="variable"] select');
+  const varDropdown = host.querySelector('[data-control="variable"]');
+  const varTrigger = varDropdown.querySelector('.var-trigger');
+  const varTriggerLabel = varDropdown.querySelector('.var-trigger-label');
+  const varListbox = varDropdown.querySelector('.var-listbox');
   const sliderHost = host.querySelector('[data-control="slider"]');
   const pcToggle = host.querySelector('[data-control="pc"]');
   const pcWrap = host.querySelector('.pc-toggle');
@@ -55,17 +57,45 @@ export function createControlStrip(host, { onSelect }) {
   const crossBadge = sliderHost.querySelector('.cross-section-badge');
   const slider = createYearSlider(sliderInner, { onChange: y => emit() });
 
-  const state = { scale: 'national', category: null, variable: null, year: null, pillar: null, perCapita: false };
+  const state = { scale: 'national', category: null, variable: null, year: null, pillar: null, perCapita: false,
+    // 4a year-default machinery. _lastSliderVar tracks the variable the slider
+    // was last mounted for, so we can tell an indicator change (year -> first
+    // valid year) from a scale-only change (keep the current year). _explicitYear
+    // is set when a deep link / citation supplied an explicit &year=; it is
+    // honored once if valid, then consumed.
+    _lastSliderVar: null, _explicitYear: false };
+
+  function refreshScaleTabs() {
+    // Hide scale tabs when variable is only available at one level
+    if (!state.variable) { tabsEl.style.display = ''; return; }
+    const meta = M.byId(state.variable);
+    if (!meta) { tabsEl.style.display = ''; return; }
+    const available = SCALES.filter(s => meta.scale_availability[s]);
+    if (available.length <= 1) {
+      tabsEl.style.display = 'none';
+    } else {
+      tabsEl.style.display = '';
+      // Disable tabs for unavailable scales
+      tabsEl.querySelectorAll('button').forEach(b => {
+        const avail = meta.scale_availability[b.dataset.scale];
+        b.disabled = !avail;
+        b.style.opacity = avail ? '' : '0.35';
+        b.style.cursor = avail ? '' : 'default';
+      });
+    }
+  }
 
   function refreshPCToggle() {
     if (!state.variable) { pcWrap.style.display = 'none'; return; }
     const meta = M.byId(state.variable);
     const mode = meta && meta.per_capita_default;
-    if (mode === 'default_pc' || mode === 'user_choice') {
+    // Per-capita doctrine (Addendum 5): the toggle renders wherever per-capita
+    // is meaningful — i.e. for every mode except 'not_applicable' (which is
+    // reserved for rates, shares, prices, indices, and presence indicators).
+    // 'default_pc' opens on; 'user_choice' and 'default_raw' open off.
+    if (mode && mode !== 'not_applicable') {
       pcWrap.style.display = '';
-      // Default state per mode
-      if (mode === 'default_pc' && !state._pcUserSet) state.perCapita = true;
-      if (mode === 'user_choice' && !state._pcUserSet) state.perCapita = false;
+      if (!state._pcUserSet) state.perCapita = (mode === 'default_pc');
       pcToggle.checked = !!state.perCapita;
     } else {
       pcWrap.style.display = 'none';
@@ -82,34 +112,137 @@ export function createControlStrip(host, { onSelect }) {
   function populateCategories() {
     const cats = new Map();
     for (const v of listForCurrentScale()) {
-      if (!cats.has(v.category)) cats.set(v.category, []);
-      cats.get(v.category).push(v);
+      const t = v.topic_category || v.category;
+      if (!cats.has(t)) cats.set(t, []);
+      cats.get(t).push(v);
     }
     const keys = [...cats.keys()].sort();
-    catSelect.innerHTML = keys.map(c => `<option value="${c}">${c}</option>`).join('');
+    const topicLabel = c => (c ? c.charAt(0).toUpperCase() + c.slice(1) : c);
+    catSelect.innerHTML = keys.map(c => `<option value="${c}">${topicLabel(c)}</option>`).join('');
     if (!state.category || !cats.has(state.category)) state.category = keys[0] || null;
     if (state.category) catSelect.value = state.category;
   }
 
-  function populateVariables() {
-    const vars = listForCurrentScale().filter(v => v.category === state.category);
-    // Group by tier: complete, then partial, then sparse. Within tier, alphabetical.
-    const tierOrder = { complete: 0, partial: 1, sparse: 2 };
-    vars.sort((a, b) => {
-      const ta = tierOrder[a.published] ?? 9;
-      const tb = tierOrder[b.published] ?? 9;
-      if (ta !== tb) return ta - tb;
-      return (a.display_label || a.label).localeCompare(b.display_label || b.label);
-    });
-    varSelect.innerHTML = vars.map(v => {
-      let badge = '';
-      if (v.published === 'partial')      badge = ' — PARTIAL';
-      else if (v.published === 'sparse')  badge = ' — SPARSE';
-      else if (v.commit_status === 'cross_section') badge = ' — CROSS-SECTION';
-      return `<option value="${v.id}">${v.display_label || v.label}${badge}</option>`;
+  // Custom variable dropdown. Native <select> can't carry separate styled
+  // badge spans inside <option>, so coverage tiers were concatenated as
+  // ` — PARTIAL` / ` — SPARSE` strings into the option label (B1). The
+  // custom listbox below renders each row as label + badge so the badge
+  // can be styled independently of the variable name.
+  let varOptions = [];
+  let varHighlight = -1;
+
+  function escapeHTML(s) {
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function badgeForOption(v) {
+    // All quality/status badges removed — internal info, not for end users.
+    return null;
+  }
+
+  function renderVarListbox() {
+    varListbox.innerHTML = varOptions.map((v, i) => {
+      const name = escapeHTML(v.display_label || v.label);
+      const badge = badgeForOption(v);
+      const badgeHTML = badge
+        ? `<span class="opt-badge tier-${badge.tier}">${badge.label}</span>`
+        : '';
+      const sel = v.id === state.variable ? ' aria-selected="true"' : '';
+      const hl  = i === varHighlight ? ' is-highlighted' : '';
+      return `<li role="option" class="var-option${hl}" data-id="${escapeHTML(v.id)}"${sel}>
+        <span class="opt-label">${name}</span>${badgeHTML}
+      </li>`;
     }).join('');
-    if (!state.variable || !vars.find(v => v.id === state.variable)) state.variable = vars[0]?.id || null;
-    varSelect.value = state.variable || '';
+  }
+
+  function renderVarTrigger() {
+    const cur = varOptions.find(v => v.id === state.variable);
+    if (!cur) { varTriggerLabel.textContent = ''; return; }
+    varTriggerLabel.textContent = cur.display_label || cur.label;
+  }
+
+  function setVarOpen(open) {
+    if (open) {
+      varListbox.hidden = false;
+      varTrigger.setAttribute('aria-expanded', 'true');
+      varHighlight = Math.max(0, varOptions.findIndex(v => v.id === state.variable));
+      renderVarListbox();
+      // scroll the highlighted row into view
+      const node = varListbox.querySelector('.is-highlighted');
+      if (node) node.scrollIntoView({ block: 'nearest' });
+    } else {
+      varListbox.hidden = true;
+      varTrigger.setAttribute('aria-expanded', 'false');
+    }
+  }
+
+  function selectVarById(id) {
+    if (!varOptions.find(v => v.id === id)) return;
+    state.variable = id;
+    state._pcUserSet = false;
+    renderVarTrigger();
+    renderVarListbox();
+    setVarOpen(false);
+    refreshScaleTabs();
+    refreshPCToggle();
+    refreshSlider();
+    emit();
+  }
+
+  function moveHighlight(delta) {
+    if (!varOptions.length) return;
+    if (varListbox.hidden) { setVarOpen(true); return; }
+    varHighlight = (varHighlight + delta + varOptions.length) % varOptions.length;
+    renderVarListbox();
+    const node = varListbox.querySelector('.is-highlighted');
+    if (node) node.scrollIntoView({ block: 'nearest' });
+  }
+
+  varTrigger.addEventListener('click', e => {
+    e.stopPropagation();
+    setVarOpen(varListbox.hidden);
+  });
+  varTrigger.addEventListener('keydown', e => {
+    if (e.key === 'ArrowDown') { moveHighlight(1); e.preventDefault(); }
+    else if (e.key === 'ArrowUp') { moveHighlight(-1); e.preventDefault(); }
+    else if (e.key === 'Enter' || e.key === ' ') {
+      if (varListbox.hidden) { setVarOpen(true); }
+      else if (varHighlight >= 0) { selectVarById(varOptions[varHighlight].id); }
+      e.preventDefault();
+    } else if (e.key === 'Escape' && !varListbox.hidden) {
+      setVarOpen(false); e.preventDefault();
+    }
+  });
+  varListbox.addEventListener('click', e => {
+    const li = e.target.closest('.var-option');
+    if (!li) return;
+    selectVarById(li.dataset.id);
+  });
+  varListbox.addEventListener('mousemove', e => {
+    const li = e.target.closest('.var-option');
+    if (!li) return;
+    const i = [...varListbox.children].indexOf(li);
+    if (i !== varHighlight) {
+      varHighlight = i;
+      renderVarListbox();
+    }
+  });
+  document.addEventListener('click', e => {
+    if (varListbox.hidden) return;
+    if (varDropdown.contains(e.target)) return;
+    setVarOpen(false);
+  });
+
+  function populateVariables() {
+    const vars = listForCurrentScale().filter(v => (v.topic_category || v.category) === state.category);
+    // Alphabetical sort
+    vars.sort((a, b) => (a.display_label || a.label).localeCompare(b.display_label || b.label));
+    varOptions = vars;
+    if (!state.variable || !vars.find(v => v.id === state.variable)) {
+      state.variable = vars[0]?.id || null;
+    }
+    renderVarTrigger();
+    renderVarListbox();
   }
 
   function refreshSlider() {
@@ -117,6 +250,14 @@ export function createControlStrip(host, { onSelect }) {
     const meta = M.byId(state.variable);
     const blk = meta && meta.scales[state.scale];
     if (!blk) return;
+    // National scale renders a chart over the full year range; the slider
+    // has no chart-relevant function. Hide the entire slider host.
+    if (state.scale === 'national') {
+      sliderHost.style.display = 'none';
+      state.year = null;
+      return;
+    }
+    sliderHost.style.display = '';
     if (blk.valid_years && blk.valid_years.length === 1) {
       // Cross-section: hide slider DOM, show badge
       sliderInner.style.display = 'none';
@@ -124,11 +265,31 @@ export function createControlStrip(host, { onSelect }) {
       crossBadge.querySelector('.ys-year').textContent = String(blk.valid_years[0]);
       crossBadge.querySelector('.year-slider-cad').textContent = M.cadenceLabel(state.variable, state.scale);
       state.year = blk.valid_years[0];
+      state._lastSliderVar = state.variable;
+      state._explicitYear = false;
       return;
     }
     crossBadge.style.display = 'none';
     sliderInner.style.display = '';
-    slider.mount({ id: state.variable, scale: state.scale, preferYear: state.year });
+    // 4a: choose the year the slider should open on.
+    //   1. a valid explicit deep-link / citation year wins (citation persistence);
+    //   2. otherwise, on an indicator change (or when no year is set yet) open on
+    //      the FIRST valid year — not the slider's median default, which the user
+    //      perceived as a "random year";
+    //   3. on a scale-only change keep the current year (it is still meaningful).
+    const vy = blk.valid_years || [];
+    const varChanged = state._lastSliderVar !== state.variable;
+    let preferYear;
+    if (state._explicitYear && state.year != null && vy.includes(state.year)) {
+      preferYear = state.year;
+    } else if (varChanged || state.year == null) {
+      preferYear = vy[0];
+    } else {
+      preferYear = state.year;
+    }
+    state._lastSliderVar = state.variable;
+    state._explicitYear = false;
+    slider.mount({ id: state.variable, scale: state.scale, preferYear });
     state.year = slider.year();
   }
 
@@ -143,17 +304,19 @@ export function createControlStrip(host, { onSelect }) {
     // Cross-scale cascade: try to keep the variable; otherwise jump to first available
     const meta = prevVar ? M.byId(prevVar) : null;
     if (meta && meta.scale_availability[scale]) {
-      state.category = meta.category;
+      state.category = meta.topic_category || meta.category;
       catSelect.value = state.category;
       populateVariables();
       state.variable = prevVar;
-      varSelect.value = prevVar;
+      renderVarTrigger();
+      renderVarListbox();
     } else {
       populateVariables();
       if (meta && !meta.scale_availability[scale]) {
         flash(`Switched: ${meta.label} not available at ${scale} scale.`);
       }
     }
+    refreshScaleTabs();
     refreshPCToggle();
     refreshSlider();
     emit();
@@ -162,10 +325,11 @@ export function createControlStrip(host, { onSelect }) {
   function emit() {
     // Cross-section variables set state.year directly in refreshSlider;
     // do not let the (unmounted) slider clobber it back to null.
+    // National scale has no slider mounted; state.year stays null.
     const meta = state.variable ? M.byId(state.variable) : null;
     const blk = meta && meta.scales[state.scale];
     const isCross = !!(blk && blk.valid_years && blk.valid_years.length === 1);
-    if (!isCross) state.year = slider.year();
+    if (!isCross && state.scale !== 'national') state.year = slider.year();
     onSelect && onSelect({ ...state });
   }
 
@@ -191,14 +355,6 @@ export function createControlStrip(host, { onSelect }) {
     refreshSlider();
     emit();
   });
-  varSelect.addEventListener('change', () => {
-    state.variable = varSelect.value;
-    state._pcUserSet = false; // reset user override when variable changes
-    refreshPCToggle();
-    refreshPCToggle();
-    refreshSlider();
-    emit();
-  });
   pcToggle.addEventListener('change', () => {
     state.perCapita = pcToggle.checked;
     state._pcUserSet = true;
@@ -206,13 +362,27 @@ export function createControlStrip(host, { onSelect }) {
   });
 
   return {
-    mount({ scale = 'national', variable = null, category = null } = {}) {
+    mount({ scale = 'national', variable = null, category = null, year = null, perCapita = null } = {}) {
       state.scale = scale;
       state.category = category;
       state.variable = variable;
+      // A deep link / citation may carry per-capita intent (#...&pc=1, or a
+      // retired per-capita variant that resolved to its count sibling). Honor
+      // it as a user-set choice so refreshPCToggle does not overwrite it with
+      // the indicator's default. (UX2 / Addendum 5e citation persistence.)
+      if (perCapita != null) { state.perCapita = !!perCapita; state._pcUserSet = true; }
+      else { state._pcUserSet = false; }
+      // A deep link / pasted citation may carry an explicit year; stash it so
+      // refreshSlider honors it once (if valid) before defaulting to the first
+      // valid year (4a). _lastSliderVar starts null so the first mount counts as
+      // an indicator change.
+      state.year = year;
+      state._explicitYear = (year != null);
+      state._lastSliderVar = null;
       tabsEl.querySelectorAll('button').forEach(b => b.classList.toggle('is-active', b.dataset.scale === scale));
       populateCategories();
       populateVariables();
+      refreshScaleTabs();
       refreshSlider();
       emit();
     },
@@ -223,11 +393,11 @@ export function createControlStrip(host, { onSelect }) {
       state.scale = scale || targetScale;
       state.pillar = pillar || null;
       tabsEl.querySelectorAll('button').forEach(b => b.classList.toggle('is-active', b.dataset.scale === state.scale));
-      state.category = meta.category;
+      state.category = meta.topic_category || meta.category;
       populateCategories();
       state.variable = meta.id;
       populateVariables();
-      varSelect.value = meta.id;
+      refreshScaleTabs();
       refreshSlider();
       emit();
     },

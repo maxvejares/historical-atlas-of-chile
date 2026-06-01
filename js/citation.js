@@ -9,7 +9,11 @@ const TODAY = () => new Date().toISOString().slice(0, 10);
 
 function stableUrl(state) {
   const base = location.origin + location.pathname;
-  const hash = `scale=${state.scale}&variable=${state.variable}` +
+  const compare = Array.isArray(state.compareIds) && state.compareIds.length;
+  const varPart = compare
+    ? `variables=${[state.variable, ...state.compareIds].join(',')}`
+    : `variable=${state.variable}`;
+  const hash = `scale=${state.scale}&${varPart}` +
                (state.year != null ? `&year=${state.year}` : '') +
                (state.perCapita ? `&pc=1` : '');
   return `${base}#${hash}`;
@@ -19,8 +23,9 @@ function escape(s) { return String(s ?? ''); }
 
 // Year-specific source tweaks (e.g. census year, anuario tomo)
 function originalCitation(meta, state) {
-  const docs = meta.source_documents || [];
-  const primary = meta.source_document || (docs[0] || '');
+  // Prefer the cleaned `source_documents[0]` over the filename-shorthand
+  // `source_document` (UX2 C6); M.sourceLine encodes that preference.
+  const primary = M.sourceLine(meta);
   const yr = state.year || (meta.scales[state.scale]?.year_range?.[0] ?? '');
   switch (meta.source_type) {
     case 'census':
@@ -38,27 +43,54 @@ function originalCitation(meta, state) {
   }
 }
 
+// Source types we extracted from government / institutional primary sources.
+// Only these carry an atlas permalink in their citation — academic
+// compilations (Díaz-Lüders-Wagner, Mamalakis, Braun, …) are already
+// accessible at their original source, so no link to the atlas is added.
+const PRIMARY_SOURCE_TYPES = ['census', 'anuario', 'memoria', 'sinopsis'];
+
 export function buildCitation(meta, state, format = 'apa') {
   const original = originalCitation(meta, state);
   const variable = meta.display_label || meta.label;
-  const url = stableUrl(state);
   const compiler = "Maximiliano Véjares";
   const accessed = TODAY();
+  const isPrimary = PRIMARY_SOURCE_TYPES.includes(meta.source_type);
+  const link = isPrimary ? ' ' + stableUrl(state) : '';
 
   if (format === 'apa') {
     if (meta.source_type === 'diaz_luders_wagner') {
-      return `Díaz, J., Lüders, R., & Wagner, G. (2016). La República en Cifras: Chile 1810–2010. Variable: ${variable}. Accessed via ${PROJECT_NAME}, ${accessed}. ${url}`;
+      return `Díaz, J., Lüders, R., & Wagner, G. (2016). La República en Cifras: Chile 1810–2010. Variable: ${variable}. Accessed via ${PROJECT_NAME}, ${accessed}.`;
     }
-    return `${original} Variable: ${variable}. Accessed via ${PROJECT_NAME}, ${accessed}. ${url}`;
+    return `${original} Variable: ${variable}. Accessed via ${PROJECT_NAME}, ${accessed}.${link}`;
   }
   if (format === 'chicago') {
     if (meta.source_type === 'diaz_luders_wagner') {
-      return `Díaz, José, Rolf Lüders, and Gert Wagner. La República en Cifras: Chile 1810–2010. 2016. Variable: "${variable}." Accessed via ${PROJECT_NAME}, ${accessed}. ${url}.`;
+      return `Díaz, José, Rolf Lüders, and Gert Wagner. La República en Cifras: Chile 1810–2010. 2016. Variable: "${variable}." Accessed via ${PROJECT_NAME}, ${accessed}.`;
     }
-    return `${original} Variable: "${variable}." Accessed via ${PROJECT_NAME}, ${accessed}. ${url}.`;
+    return `${original} Variable: "${variable}." Accessed via ${PROJECT_NAME}, ${accessed}.${link}`;
   }
   // plain
-  return `${original}\nVariable: ${variable}\nCompiled by ${compiler}\nAccessed: ${accessed}\n${url}`;
+  return `${original}\nVariable: ${variable}\nCompiled by ${compiler}\nAccessed: ${accessed}${isPrimary ? '\n' + stableUrl(state) : ''}`;
+}
+
+// Comparison citation (UX2 B.4). The single-variable cite named only the
+// primary; a comparison view must enumerate every overlaid series, each on its
+// own line with its own source, then carry one shared accessed-line + the
+// shareable comparison URL.
+export function buildComparisonCitation(state, format = 'apa') {
+  const ids = [state.variable, ...(state.compareIds || [])].filter(Boolean);
+  const accessed = TODAY();
+  const lines = ids.map(id => {
+    const m = M.byId(id);
+    if (!m) return null;
+    const original = originalCitation(m, { ...state, variable: id });
+    const variable = m.display_label || m.label;
+    return format === 'chicago'
+      ? `${original} Variable: "${variable}."`
+      : `${original} Variable: ${variable}.`;
+  }).filter(Boolean);
+  const body = lines.join('\n');
+  return `${body}\nAccessed via ${PROJECT_NAME}, ${accessed}.\n${stableUrl(state)}`;
 }
 
 // "Cite this view" UI: a small inline button that opens a popover.
@@ -70,16 +102,27 @@ export function attachCiteButton(host, getState) {
   const pop = document.createElement('div');
   pop.className = 'cite-popover';
   pop.style.display = 'none';
+  // Accessibility (UX2 E.2): the popover is a labelled, dismissible dialog.
+  pop.setAttribute('role', 'dialog');
+  pop.setAttribute('aria-modal', 'true');
+  pop.setAttribute('aria-label', 'Cite this view');
+
+  // Citation builder: comparison view enumerates every series; single view
+  // uses the per-variable template.
+  function citationFor(state, fmt) {
+    const isCompare = Array.isArray(state.compareIds) && state.compareIds.length;
+    if (isCompare) return buildComparisonCitation(state, fmt);
+    const meta = M.byId(state.variable);
+    return meta ? buildCitation(meta, state, fmt) : '';
+  }
 
   function render() {
     const state = getState();
-    const meta = state.variable ? M.byId(state.variable) : null;
-    if (!meta) {
+    if (!state.variable || !M.byId(state.variable)) {
       pop.innerHTML = `<div class="cite-empty">Select a variable first.</div>`;
       return;
     }
-    const apa = buildCitation(meta, state, 'apa');
-    const chi = buildCitation(meta, state, 'chicago');
+    const apa = citationFor(state, 'apa');
     pop.innerHTML = `
       <div class="cite-head">
         <span class="overline">Cite</span>
@@ -92,26 +135,51 @@ export function attachCiteButton(host, getState) {
       <div class="cite-body" data-current="apa">${escape(apa)}</div>
       <div class="cite-actions">
         <button class="cite-copy">Copy</button>
-        <a class="cite-link" href="#" target="_blank">Permalink</a>
       </div>
     `;
-    pop.querySelector('.cite-link').href = stableUrl(state);
     pop.querySelectorAll('.cite-tab').forEach(t => t.addEventListener('click', () => {
       pop.querySelectorAll('.cite-tab').forEach(x => x.classList.toggle('is-active', x === t));
       const fmt = t.dataset.fmt;
       pop.querySelector('.cite-body').dataset.current = fmt;
-      pop.querySelector('.cite-body').textContent = buildCitation(meta, state, fmt);
+      pop.querySelector('.cite-body').textContent = citationFor(state, fmt);
     }));
     pop.querySelector('.cite-copy').addEventListener('click', async () => {
       const txt = pop.querySelector('.cite-body').textContent;
       try { await navigator.clipboard.writeText(txt); pop.querySelector('.cite-copy').textContent = 'Copied'; setTimeout(() => pop.querySelector('.cite-copy').textContent = 'Copy', 1500); } catch {}
     });
-    pop.querySelector('.cite-close').addEventListener('click', () => { pop.style.display = 'none'; });
+    pop.querySelector('.cite-close').addEventListener('click', closePopover);
+  }
+
+  function openPopover() {
+    render();
+    pop.style.display = 'block';
+    document.addEventListener('keydown', onKeydown);
+    document.addEventListener('click', onOutsideClick, true);
+    // Move focus into the dialog (the close button is a safe first stop).
+    const focusTarget = pop.querySelector('.cite-close');
+    if (focusTarget) focusTarget.focus();
+  }
+
+  function closePopover() {
+    if (pop.style.display === 'none') return;
+    pop.style.display = 'none';
+    document.removeEventListener('keydown', onKeydown);
+    document.removeEventListener('click', onOutsideClick, true);
+    // Return focus to the trigger so keyboard context is not lost (E.2).
+    btn.focus();
+  }
+
+  function onKeydown(e) {
+    if (e.key === 'Escape') { e.stopPropagation(); closePopover(); }
+  }
+  function onOutsideClick(e) {
+    if (pop.contains(e.target) || e.target === btn) return;
+    closePopover();
   }
 
   btn.addEventListener('click', () => {
-    if (pop.style.display === 'none') { render(); pop.style.display = 'block'; }
-    else                                pop.style.display = 'none';
+    if (pop.style.display === 'none') openPopover();
+    else                              closePopover();
   });
 
   host.appendChild(btn);

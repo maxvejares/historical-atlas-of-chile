@@ -1,0 +1,19 @@
+{
+  "platform_scope_start": 1810,
+  "platform_scope_end": 1990,
+  "rationale": "1810 marks the start of the Chilean republican period and the canonical lower bound of the project's historical panel. Pre-1865 censuses (Egaña 1813, 1835, 1843, 1854) are included with methodological caveat flags rather than excluded; affected cells carry [pre_1865_census=<year>;caveats=<descriptor>] notes prefixes. 1990 marks the democratic transition; post-1990 data is digitally-native and structurally different from the historical archive (INE microdata, BC APIs, ministry datasets), deferred to a future window-extension phase rather than retired.",
+  "applies_to": [
+    "variable_family_manifest.csv (valid_years_pattern clipping; scope_status)",
+    "chile_master_data.csv (notes prefix [out_of_scope=post_1990] for >1990 cells; [pre_1865_census=...;caveats=...] for pre-1865 census-attributed cells)",
+    "long_master.csv (same)",
+    "scripts/detect_anomalies.py (skip out-of-scope cells; pre_1865_census cells stay in-scope with caveat surfaced in anomaly notes)",
+    "scripts/build_health_reports.py (skip out-of-scope years in coverage)",
+    "gis_platform/ UI (date range strings 1810-1990)"
+  ],
+  "methodology_refs": [
+    "M024",
+    "M025",
+    "M037"
+  ],
+  "last_updated": "2026-05-06"
+}

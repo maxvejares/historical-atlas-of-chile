@@ -6,26 +6,119 @@ let _manifest = null;
 let _byId = null;
 let _stats = null;
 let _events = null;
+let _scope = null;   // {start, end} from manifest_globals.json (M024)
+let _relatedTo = null;  // canonical id -> {alternate_source, retired_into, alternate_currency}
 
 export async function loadManifest() {
   if (_manifest) return _manifest;
-  const [m, s, e] = await Promise.all([
-    fetch('data/variable_manifest.json').then(r => r.json()),
-    fetch('data/dataset_stats.json').then(r => r.json()),
-    fetch('data/events.json').then(r => r.json()),
+  // Bundle-aware: when this runs inside the self-contained atlas bundle the
+  // data is already present as window.__INLINE_* globals; otherwise (dev mode)
+  // it is fetched from data/. The build script needs no structural rewrite.
+  const [m, s, e, g] = await Promise.all([
+    window.__INLINE_variable_manifest !== undefined
+      ? Promise.resolve(window.__INLINE_variable_manifest)
+      : fetch('data/variable_manifest.json').then(r => r.json()),
+    window.__INLINE_dataset_stats !== undefined
+      ? Promise.resolve(window.__INLINE_dataset_stats)
+      : fetch('data/dataset_stats.json').then(r => r.json()),
+    window.__INLINE_events !== undefined
+      ? Promise.resolve(window.__INLINE_events)
+      : fetch('data/events.json').then(r => r.json()),
+    // manifest_globals declares the platform analytical window per M024.
+    // Non-fatal: if absent the UI falls back to dataset_stats.year_range.
+    window.__INLINE_manifest_globals !== undefined
+      ? Promise.resolve(window.__INLINE_manifest_globals)
+      : fetch('data/manifest_globals.json').then(r => r.ok ? r.json() : null).catch(() => null),
   ]);
-  _manifest = m;
+  // Source-disable overlay (reversible, no data deleted). Indicators whose id
+  // is in window.__DISABLED_INDICATORS are dropped from the catalog entirely,
+  // so they vanish from every enumeration (topic grid, browse nav, national
+  // chart picker, hero counts, search) and byId cannot resolve them. The id
+  // list is generated from variable_manifest.json source attribution by
+  // scripts/apply_source_disable.py (driven by curation/disabled_sources.json)
+  // and injected into the bundle by build_atlas_bundle.py. Absent/empty list
+  // => the full catalog, unfiltered.
+  const _disabledIds = (typeof window !== 'undefined' && Array.isArray(window.__DISABLED_INDICATORS))
+    ? window.__DISABLED_INDICATORS : [];
+  _manifest = _disabledIds.length
+    ? (() => { const ds = new Set(_disabledIds); return m.filter(v => !ds.has(v.id)); })()
+    : m;
   _stats = s;
   _events = e;
-  _byId = new Map(m.map(v => [v.id, v]));
+  if (g && Number.isFinite(g.platform_scope_start) && Number.isFinite(g.platform_scope_end)) {
+    _scope = { start: g.platform_scope_start, end: g.platform_scope_end };
+  } else if (s && Array.isArray(s.year_range) && s.year_range.length === 2) {
+    _scope = { start: s.year_range[0], end: s.year_range[1] };
+  } else {
+    _scope = { start: 1840, end: 1990 };
+  }
+  _byId = new Map(_manifest.map(v => [v.id, v]));
+  // Also index by display_id and by aliases so URLs that cite a renamed or
+  // retired indicator still resolve. (curation overlay 01 — duplicates &
+  // renames keep the canonical entry but add display_id + aliases lists;
+  // a citation pasted before the rename should not 404.)
+  for (const v of _manifest) {
+    if (v.display_id && !_byId.has(v.display_id)) _byId.set(v.display_id, v);
+    if (Array.isArray(v.aliases)) {
+      for (const a of v.aliases) {
+        if (a && !_byId.has(a)) _byId.set(a, v);
+      }
+    }
+    // Retired indicators carry a `merged_into` pointer to their canonical;
+    // make the canonical reachable by the retired name.
+    if (v.presentation_status === 'retired' && v.merged_into) {
+      const target = _byId.get(v.merged_into);
+      // Note: we do NOT overwrite the original mapping for v.id, because
+      // pages that load by the retired ID should still find the retired
+      // entry (with its own metadata) and decide how to render it.
+    }
+  }
+  // Reverse index: canonical id -> the ids that point at it. The forward
+  // pointers (variant_of, merged_into, currency_view_of) are set by
+  // apply_curation_01_duplicates.py; the canonical does not know its
+  // alternates, so we invert the relation here for the "Related series" footer.
+  _relatedTo = new Map();
+  const bucket = (canon, key, id) => {
+    if (!canon) return;
+    let r = _relatedTo.get(canon);
+    if (!r) { r = { alternate_source: [], retired_into: [], alternate_currency: [] }; _relatedTo.set(canon, r); }
+    r[key].push(id);
+  };
+  for (const v of _manifest) {
+    if (v.variant_of) bucket(v.variant_of, 'alternate_source', v.id);
+    if (v.merged_into) bucket(v.merged_into, 'retired_into', v.id);
+    if (v.currency_view_of) bucket(v.currency_view_of, 'alternate_currency', v.id);
+  }
   return _manifest;
 }
 
 export function manifest() { return _manifest; }
 export function stats()    { return _stats; }
 export function events()   { return _events; }
+export function scope()    { return _scope; }   // {start, end}
 
 export function byId(id) { return _byId.get(id); }
+
+// Related-series reverse index for the canonical `id`, or null if it has none.
+// Returns { alternate_source: [...ids], retired_into: [...ids], alternate_currency: [...ids] }.
+export function relatedTo(id) {
+  return (_relatedTo && _relatedTo.get(id)) || null;
+}
+
+// Resolve to a canonical entry, following retired→merged_into and
+// alternate_variant→variant_of pointers. Returns the entry the platform
+// should render when the user asks for `id`.
+export function resolveCanonical(id) {
+  let v = _byId.get(id);
+  if (!v) return null;
+  // Walk one hop for retirement/variant indirection. Two hops would only
+  // happen if the curation memo has chains, which it does not.
+  if (v.presentation_status === 'retired' && v.merged_into) {
+    const canon = _byId.get(v.merged_into);
+    if (canon) return canon;
+  }
+  return v;
+}
 
 export function listForScale(scale, includeHidden = false) {
   return _manifest.filter(v =>
@@ -97,6 +190,21 @@ export function isCrossSectionVariable(id) {
   return v.commit_status === 'cross_section';
 }
 
+// Coverage-tier badge for browse cards and the chart head. Reads the
+// `published` tier (reliable after the curation tier-rebadge pass). Returns
+// {label, cls} or null when no badge is warranted (complete coverage). `cls`
+// reuses the existing .variable-flag styling: is-warning for sparse/single-
+// year/withheld, is-soft for the gentler partial case.
+export function tierBadge(published) {
+  switch (published) {
+    case 'sparse':        return { label: 'SPARSE COVERAGE',  cls: 'is-warning' };
+    case 'cross_section': return { label: 'SINGLE YEAR',      cls: 'is-warning' };
+    case 'partial':       return { label: 'PARTIAL COVERAGE', cls: 'is-soft' };
+    case false:           return { label: 'WITHHELD — UNDER REVIEW', cls: 'is-warning' };
+    default:              return null; // 'complete' or unknown -> no badge
+  }
+}
+
 // Filter list by topic_category (closed list of 10)
 export function listByTopic(topic, scale = null, includeHidden = false) {
   return _manifest.filter(v =>
@@ -131,6 +239,21 @@ export function tierLabel(id) {
   return String(v.published).toUpperCase();
 }
 
+// Resolved source line for the chart/map source block and citation. The
+// curated citation lives in `source_documents` (plural); `source_document`
+// (singular) is what the renderers historically read first and still carries
+// filename-style shorthand for some indicators (UX2 C6). Prefer the cleaned
+// `source_documents[0]` over `source_document` when both exist and disagree;
+// otherwise fall back through the singular field and the source-type name.
+export function sourceLine(meta) {
+  if (!meta) return '';
+  const docs = Array.isArray(meta.source_documents) ? meta.source_documents : [];
+  const clean = docs[0];
+  const single = meta.source_document;
+  if (clean && single && clean !== single) return clean;
+  return single || clean || sourceTypeName(meta.source_type);
+}
+
 // Source-type readable name
 export function sourceTypeName(t) {
   return ({
@@ -139,7 +262,7 @@ export function sourceTypeName(t) {
     memoria: "Memoria ministerial",
     sinopsis: "Sinopsis Estadística de Chile",
     diaz_luders_wagner: "Díaz, Lüders & Wagner (2016)",
-    compiled: "Compiled / multi-source",
+    compiled: "Multiple primary sources (compilation)",
   }[t] || t);
 }
 

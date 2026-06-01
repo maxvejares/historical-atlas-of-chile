@@ -12,7 +12,7 @@
   /* Ink */
   --ink:          #0E1A2B;
   --ink-muted:    #4A5568;
-  --ink-faint:    #94918A;
+  --ink-faint:    #6E6A60;
 
   /* Accent (oxblood) */
   --accent:       #7A1E2B;
@@ -67,6 +67,15 @@
   --gutter-sm:   24px;
   --radius-sm:   2px;
   --radius:      4px;
+
+  /* Sticky-chrome heights. Control strip sits exactly below the header. */
+  --header-h:        108px;    /* desktop: title 44 + gap + subtitle + 24*2 */
+  --control-strip-h: 56px;
+  --sticky-chrome-h: calc(var(--header-h) + var(--control-strip-h));
+}
+
+@media (max-width: 1100px) {
+  :root { --header-h: 88px; }
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }

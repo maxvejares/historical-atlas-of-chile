@@ -1,36 +1,408 @@
 [
-  {"year": 1810, "name": "First Government Junta", "short_description": "Provisional self-government breaks from Spanish viceregal authority.", "category": "political", "priority": 1},
-  {"year": 1818, "name": "Independence proclaimed", "short_description": "Battle of Maipú secures independence from Spain.", "category": "war", "priority": 1},
-  {"year": 1833, "name": "Constitution of 1833", "short_description": "Conservative republic; centralized presidency, restricted suffrage.", "category": "institutional", "priority": 1},
-  {"year": 1851, "name": "Civil war (Liberal revolt)", "short_description": "Failed Liberal uprising against Manuel Montt.", "category": "war", "priority": 3},
-  {"year": 1859, "name": "Constitutional revolt", "short_description": "Second Liberal uprising; Copiapó and the north rise against Santiago.", "category": "war", "priority": 3},
-  {"year": 1861, "name": "Liberal era begins", "short_description": "Pérez assumes presidency; Liberal-Conservative coalition.", "category": "political", "priority": 2},
-  {"year": 1865, "name": "First national census", "short_description": "Inaugurates the modern Chilean census series.", "category": "institutional", "priority": 1},
-  {"year": 1874, "name": "Suffrage reform", "short_description": "Property requirement loosened; literate-male suffrage.", "category": "institutional", "priority": 1},
-  {"year": 1879, "name": "War of the Pacific", "short_description": "Chile annexes Tarapacá and Antofagasta; nitrate boom begins.", "category": "war", "priority": 1},
-  {"year": 1883, "name": "Treaty of Ancón", "short_description": "Ends War of the Pacific; cements territorial gains.", "category": "war", "priority": 2},
-  {"year": 1884, "name": "Civil registry law", "short_description": "Civil marriage and registration secularized.", "category": "institutional", "priority": 2},
-  {"year": 1888, "name": "Universal male suffrage", "short_description": "Property qualification removed; voter registers expand.", "category": "institutional", "priority": 1},
-  {"year": 1891, "name": "Civil War of 1891", "short_description": "Congressionalists defeat Balmaceda; parliamentary republic.", "category": "war", "priority": 1},
-  {"year": 1907, "name": "Santa María massacre", "short_description": "Iquique nitrate strike suppressed; ~2,000 killed.", "category": "political", "priority": 2},
-  {"year": 1920, "name": "Alessandri elected", "short_description": "Reform mandate ends parliamentary republic.", "category": "political", "priority": 2},
-  {"year": 1924, "name": "Military coup", "short_description": "Officer revolt forces Alessandri into exile.", "category": "political", "priority": 3},
-  {"year": 1925, "name": "Constitution of 1925", "short_description": "Presidential system restored; church-state separation.", "category": "institutional", "priority": 1},
-  {"year": 1929, "name": "Great Depression", "short_description": "Nitrate market collapses; export economy contracts ~50%.", "category": "economic", "priority": 1},
-  {"year": 1932, "name": "Socialist Republic", "short_description": "Brief military-backed socialist regime.", "category": "political", "priority": 3},
-  {"year": 1938, "name": "Popular Front elected", "short_description": "Aguirre Cerda leads Radical-led center-left coalition.", "category": "political", "priority": 2},
-  {"year": 1939, "name": "CORFO created", "short_description": "Production Development Corporation; ISI begins.", "category": "institutional", "priority": 1},
-  {"year": 1949, "name": "Female suffrage (national)", "short_description": "Women obtain national voting rights.", "category": "institutional", "priority": 1},
-  {"year": 1958, "name": "Cédula única electoral", "short_description": "Standard ballot ends machine politics.", "category": "institutional", "priority": 2},
-  {"year": 1962, "name": "Agrarian Reform Law", "short_description": "Alessandri's first agrarian reform statute (Law 15.020).", "category": "institutional", "priority": 2},
-  {"year": 1964, "name": "Frei elected", "short_description": "Christian Democratic 'Revolution in Liberty' begins.", "category": "political", "priority": 2},
-  {"year": 1967, "name": "Frei agrarian reform", "short_description": "Law 16.640 expropriates large estates.", "category": "institutional", "priority": 1},
-  {"year": 1970, "name": "Allende elected", "short_description": "Popular Unity wins narrowly; nationalization accelerates.", "category": "political", "priority": 1},
-  {"year": 1971, "name": "Copper nationalization", "short_description": "Constitutional amendment transfers Gran Minería.", "category": "economic", "priority": 1},
-  {"year": 1973, "name": "Military coup", "short_description": "Pinochet junta overthrows Allende; congress dissolved.", "category": "war", "priority": 1},
-  {"year": 1975, "name": "Chicago Boys reforms", "short_description": "Trade liberalization, deregulation, monetarist shock.", "category": "economic", "priority": 1},
-  {"year": 1980, "name": "Constitution of 1980", "short_description": "Pinochet plebiscite ratifies authoritarian charter.", "category": "institutional", "priority": 1},
-  {"year": 1982, "name": "Debt crisis", "short_description": "Banking collapse; GDP contracts ~14%.", "category": "economic", "priority": 1},
-  {"year": 1988, "name": "Plebiscite NO wins", "short_description": "Pinochet rejected; transition to democracy scheduled.", "category": "political", "priority": 1},
-  {"year": 1990, "name": "Democratic transition", "short_description": "Aylwin assumes presidency; civilian rule restored.", "category": "political", "priority": 1}
+  {
+    "year": 1810,
+    "name": "First Government Junta",
+    "short_description": "Provisional self-government breaks from Spanish viceregal authority.",
+    "category": "political",
+    "priority": 1
+  },
+  {
+    "year": 1818,
+    "name": "Independence proclaimed",
+    "short_description": "Battle of Maipú secures independence from Spain.",
+    "category": "war",
+    "priority": 1
+  },
+  {
+    "year": 1826,
+    "name": "Manuel Blanco Encalada inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Liberal naval officer; the first to hold the title President of Chile, in a brief two-month term."
+  },
+  {
+    "year": 1827,
+    "name": "Francisco Antonio Pinto inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Liberal (pipiolo); presided over the short-lived federalist experiment and the 1828 Constitution."
+  },
+  {
+    "year": 1831,
+    "name": "José Joaquín Prieto inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Conservative (pelucón); opened the thirty-year Conservative Republic and the 1833 Constitution."
+  },
+  {
+    "year": 1833,
+    "name": "Constitution of 1833",
+    "short_description": "Conservative republic; centralized presidency, restricted suffrage.",
+    "category": "institutional",
+    "priority": 1
+  },
+  {
+    "year": 1841,
+    "name": "Manuel Bulnes inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Conservative; victorious general of the war against the Peru-Bolivian Confederation, then a decade of stability and southern settlement."
+  },
+  {
+    "year": 1851,
+    "name": "Manuel Montt inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Conservative civilian; railways, schools, and the Civil Code, though his rule provoked the 1851 and 1859 revolts."
+  },
+  {
+    "year": 1859,
+    "name": "Civil War",
+    "short_description": "Liberal revolution of 1859; Copiapó and the north rise against the Santiago government.",
+    "category": "war",
+    "priority": 3
+  },
+  {
+    "year": 1861,
+    "name": "Liberal era begins",
+    "short_description": "Pérez assumes presidency; Liberal-Conservative coalition.",
+    "category": "political",
+    "priority": 2
+  },
+  {
+    "year": 1861,
+    "name": "José Joaquín Pérez inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Moderate of the Liberal-Conservative fusion; his calm decade opened the Liberal era."
+  },
+  {
+    "year": 1871,
+    "name": "Federico Errázuriz Zañartu inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Liberal; governed through the Liberal-Radical alliance, the first president barred from re-election."
+  },
+  {
+    "year": 1874,
+    "name": "Suffrage reform",
+    "short_description": "Property requirement loosened; literate-male suffrage.",
+    "category": "institutional",
+    "priority": 1
+  },
+  {
+    "year": 1876,
+    "name": "Aníbal Pinto inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Liberal; faced the 1870s export slump and led Chile into the War of the Pacific."
+  },
+  {
+    "year": 1879,
+    "name": "War of the Pacific",
+    "short_description": "Chile annexes Tarapacá and Antofagasta; nitrate boom begins.",
+    "category": "war",
+    "priority": 1
+  },
+  {
+    "year": 1881,
+    "name": "Domingo Santa María inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Liberal; passed the anticlerical leyes laicas secularizing the civil registry, marriage, and cemeteries."
+  },
+  {
+    "year": 1883,
+    "name": "Treaty of Ancón",
+    "short_description": "Ends War of the Pacific; cements territorial gains.",
+    "category": "war",
+    "priority": 2
+  },
+  {
+    "year": 1886,
+    "name": "José Manuel Balmaceda inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Liberal; nitrate revenue funded vast public works, but his clash with Congress brought the 1891 civil war."
+  },
+  {
+    "year": 1888,
+    "name": "Universal male suffrage",
+    "short_description": "Property qualification removed; voter registers expand.",
+    "category": "institutional",
+    "priority": 1
+  },
+  {
+    "year": 1891,
+    "name": "Civil War of 1891",
+    "short_description": "Congressionalists defeat Balmaceda; parliamentary republic.",
+    "category": "war",
+    "priority": 1
+  },
+  {
+    "year": 1891,
+    "name": "Jorge Montt inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Navy admiral who led the Congressionalist victory; opened the Parliamentary Republic."
+  },
+  {
+    "year": 1896,
+    "name": "Federico Errázuriz Echaurren inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Liberal; governed the early Parliamentary Republic and moved to settle the Argentine border dispute."
+  },
+  {
+    "year": 1901,
+    "name": "Germán Riesco inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Liberal; signed the 1902 Pactos de Mayo settling the boundary with Argentina."
+  },
+  {
+    "year": 1906,
+    "name": "Pedro Montt inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "National Party; presided over reconstruction after the 1906 Valparaíso earthquake."
+  },
+  {
+    "year": 1910,
+    "name": "Ramón Barros Luco inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Liberal; centennial-era figure of the Parliamentary Republic's rotating cabinets."
+  },
+  {
+    "year": 1915,
+    "name": "Juan Luis Sanfuentes inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Liberal; last president of the Parliamentary Republic, through the WWI nitrate boom and bust."
+  },
+  {
+    "year": 1920,
+    "name": "Alessandri elected",
+    "short_description": "Reform mandate ends parliamentary republic.",
+    "category": "political",
+    "priority": 2
+  },
+  {
+    "year": 1920,
+    "name": "Arturo Alessandri inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Liberal Alliance reformer, the 'León de Tarapacá', elected on a social-reform mandate against the parliamentary oligarchy."
+  },
+  {
+    "year": 1924,
+    "name": "Military coup",
+    "short_description": "Officer revolt forces Alessandri into exile.",
+    "category": "political",
+    "priority": 3
+  },
+  {
+    "year": 1925,
+    "name": "Constitution of 1925",
+    "short_description": "Presidential system restored; church-state separation.",
+    "category": "institutional",
+    "priority": 1
+  },
+  {
+    "year": 1925,
+    "name": "Emiliano Figueroa inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Liberal caretaker president, soon sidelined by the army and forced to resign in 1927."
+  },
+  {
+    "year": 1927,
+    "name": "Carlos Ibáñez del Campo inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Army colonel; ruled by authoritarian fiat with ambitious public works until the 1931 crisis toppled him."
+  },
+  {
+    "year": 1929,
+    "name": "Great Depression",
+    "short_description": "Nitrate market collapses; export economy contracts ~50%.",
+    "category": "economic",
+    "priority": 1
+  },
+  {
+    "year": 1931,
+    "name": "Juan Esteban Montero inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Radical; elected as the Depression hit bottom and overthrown within a year."
+  },
+  {
+    "year": 1932,
+    "name": "Socialist Republic",
+    "short_description": "Brief military-backed socialist regime.",
+    "category": "political",
+    "priority": 3
+  },
+  {
+    "year": 1932,
+    "name": "Arturo Alessandri inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Liberal; returned to restore constitutional order after the turmoil of 1932 and steer an orthodox recovery."
+  },
+  {
+    "year": 1938,
+    "name": "Popular Front elected",
+    "short_description": "Aguirre Cerda leads Radical-led center-left coalition.",
+    "category": "political",
+    "priority": 2
+  },
+  {
+    "year": 1938,
+    "name": "Pedro Aguirre Cerda inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Radical; led the Popular Front of Radicals, Socialists, and Communists, and founded CORFO to drive state industrialization."
+  },
+  {
+    "year": 1942,
+    "name": "Juan Antonio Ríos inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Radical; wartime president of the developmentalist drive, 'to govern is to produce'."
+  },
+  {
+    "year": 1946,
+    "name": "Gabriel González Videla inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Radical; elected with Communist support, then outlawed the party under the 1948 'Ley Maldita'."
+  },
+  {
+    "year": 1949,
+    "name": "Female suffrage (national)",
+    "short_description": "Women obtain national voting rights.",
+    "category": "institutional",
+    "priority": 1
+  },
+  {
+    "year": 1952,
+    "name": "Carlos Ibáñez del Campo inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Returned as an elected populist above party, campaigning on a broom to sweep out corruption."
+  },
+  {
+    "year": 1958,
+    "name": "Single official ballot",
+    "short_description": "Adoption of the single state-printed ballot, ending party-printed votes and curbing electoral bribery.",
+    "category": "institutional",
+    "priority": 2
+  },
+  {
+    "year": 1958,
+    "name": "Jorge Alessandri inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Independent backed by the right; a businessman who ran an orthodox, technocratic administration."
+  },
+  {
+    "year": 1962,
+    "name": "Agrarian Reform Law",
+    "short_description": "Alessandri's first agrarian reform statute (Law 15.020).",
+    "category": "institutional",
+    "priority": 2
+  },
+  {
+    "year": 1964,
+    "name": "Frei elected",
+    "short_description": "Christian Democratic 'Revolution in Liberty' begins.",
+    "category": "political",
+    "priority": 2
+  },
+  {
+    "year": 1964,
+    "name": "Eduardo Frei Montalva inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Christian Democrat; the 'Revolution in Liberty' of agrarian reform and copper 'Chileanization'."
+  },
+  {
+    "year": 1967,
+    "name": "Frei agrarian reform",
+    "short_description": "Law 16.640 expropriates large estates.",
+    "category": "institutional",
+    "priority": 1
+  },
+  {
+    "year": 1970,
+    "name": "Allende elected",
+    "short_description": "Popular Unity wins narrowly; nationalization accelerates.",
+    "category": "political",
+    "priority": 1
+  },
+  {
+    "year": 1970,
+    "name": "Salvador Allende inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Socialist of the Popular Unity coalition; the first Marxist freely elected president in the Americas."
+  },
+  {
+    "year": 1971,
+    "name": "Copper nationalization",
+    "short_description": "Constitutional amendment transfers Gran Minería.",
+    "category": "economic",
+    "priority": 1
+  },
+  {
+    "year": 1973,
+    "name": "Military coup",
+    "short_description": "Pinochet junta overthrows Allende; congress dissolved.",
+    "category": "war",
+    "priority": 1
+  },
+  {
+    "year": 1975,
+    "name": "Chicago Boys reforms",
+    "short_description": "Trade liberalization, deregulation, monetarist shock.",
+    "category": "economic",
+    "priority": 1
+  },
+  {
+    "year": 1980,
+    "name": "Constitution of 1980",
+    "short_description": "Pinochet plebiscite ratifies authoritarian charter.",
+    "category": "institutional",
+    "priority": 1
+  },
+  {
+    "year": 1982,
+    "name": "Debt crisis",
+    "short_description": "Banking collapse; GDP contracts ~14%.",
+    "category": "economic",
+    "priority": 1
+  },
+  {
+    "year": 1988,
+    "name": "Plebiscite NO wins",
+    "short_description": "Pinochet rejected; transition to democracy scheduled.",
+    "category": "political",
+    "priority": 1
+  },
+  {
+    "year": 1990,
+    "name": "Democratic transition",
+    "short_description": "Aylwin assumes presidency; civilian rule restored.",
+    "category": "political",
+    "priority": 1
+  },
+  {
+    "year": 1990,
+    "name": "Patricio Aylwin inaugurated",
+    "category": "political",
+    "priority": 3,
+    "short_description": "Christian Democrat of the Concertación; first president of the post-Pinochet democratic transition."
+  }
 ]

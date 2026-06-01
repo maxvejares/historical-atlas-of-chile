@@ -3,7 +3,7 @@
 
 import * as M from './manifest.js';
 
-const TOPICS = [
+export const TOPICS = [
   { id: "economy",        label: "Economy",        landing: "real_gdp_per_capita",         desc: "GDP, growth, exchange rates, sectoral shares." },
   { id: "demography",     label: "Demography",     landing: "total_population",            desc: "Population, vital statistics, urbanization." },
   { id: "politics",       label: "Politics",       landing: "n_legislators",               desc: "Suffrage, legislators, elections, franchise reform." },
@@ -59,7 +59,7 @@ export function createTopicGrid(host, { onSelect }) {
       <div class="stat"><span class="v num">${stats.year_span}</span><span class="l">years</span></div>
       <div class="stat"><span class="v num">${Object.values(counts).reduce((a, b) => a + b, 0)}</span><span class="l">indicators</span></div>
       <div class="stat"><span class="v num">${stats.n_census_years}</span><span class="l">census waves</span></div>
-      <div class="stat"><span class="v num">52</span><span class="l">departments</span></div>
+      <div class="stat"><span class="v num">70+</span><span class="l">departments</span></div>
       <div class="stat"><span class="v num">25</span><span class="l">provinces</span></div>
       <div class="stat"><span class="v num">~145</span><span class="l">source documents</span></div>
     </div>

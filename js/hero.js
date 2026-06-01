@@ -8,13 +8,18 @@ export function createHero(host) {
   const nVars = Object.values(counts).reduce((a, b) => a + b, 0);
   const nTopics = Object.keys(counts).length;
   const indicatorClaim = Math.floor(nVars / 10) * 10 + "+";
+  const sc = M.scope();
+  const stats = M.stats();
+  const yMin = (sc && sc.start) ?? (stats && stats.year_range && stats.year_range[0]);
+  const yMax = (sc && sc.end)   ?? (stats && stats.year_range && stats.year_range[1]);
+  const span = (yMin != null && yMax != null) ? `${yMin}–${yMax}` : '';
 
   host.classList.add('hero');
   host.innerHTML = `
     <div class="hero-text">
-      <div class="kicker">Chile · 1845–1995</div>
+      <div class="kicker">Chile · ${span}</div>
       <h1>Explore Chile's economic, political, and social history through <em>data</em>.</h1>
-      <p class="pillars">Two centuries of Chilean data. Browse, compare, visualize, download.</p>
+      <p class="pillars">A century and a half of Chilean records. Browse, compare, visualize, download.</p>
       <p class="blurb">Department, province, and national series compiled from over a dozen historical Chilean sources. ${indicatorClaim} indicators across ${nTopics} topics, free to use for research, journalism, or teaching.</p>
     </div>
     <figure class="hero-figure">
@@ -26,7 +31,7 @@ export function createHero(host) {
         alt="Painting by Pedro Lira (1845–1912) showing the Chilean central valley with cattle in the foreground and the Andes cordillera in the background."
         loading="eager"
       >
-      <figcaption>Pedro Lira (1845–1912), <em>Paisaje con cordillera y vacunos</em>. Public domain. Source: Currículum Nacional, Ministerio de Educación de Chile.</figcaption>
+      <figcaption>Pedro Lira (1845–1912), <em>Paisaje con cordillera y vacunos</em>. Public domain. Image: Museo Nacional de Bellas Artes (MNBA), Santiago.</figcaption>
     </figure>
   `;
 }
