@@ -57,6 +57,75 @@
     "published": "cross_section"
   },
   {
+    "id": "manzanas_produccion_ton",
+    "label": "Apple production, tons (1974)",
+    "display_label": "Apple production, tons (1974)",
+    "category": "Agriculture",
+    "source_type": "compiled",
+    "format_hint": "count",
+    "display_unit": "metric tons",
+    "curated_subtitle": "Apple production, tons (1974), by province, 1974, metric tons",
+    "scale_availability": {
+      "national": false,
+      "province": true,
+      "department": false,
+      "commune": false
+    },
+    "scales": {
+      "province": {
+        "cadence": "irregular",
+        "valid_years": [
+          1974
+        ],
+        "year_range": [
+          1974,
+          1974
+        ],
+        "n_observations": 12,
+        "magnitude": {
+          "min": 172.0,
+          "max": 42215.0,
+          "median": 4921.0,
+          "orders_of_magnitude": 2.39,
+          "hint": "linear"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "Apple production in metric tons by province in 1974, from ODEPA's Estadísticas Agropecuarias fruit returns.",
+    "coverage_statement": "1 year(s) 1974, 12 province-level observations",
+    "commit_status_by_scale": {
+      "province": "cross_section"
+    },
+    "published_by_scale": {
+      "province": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section",
+    "breaks": [
+      {
+        "id": "boundary_conara_1974",
+        "year": 1974,
+        "kind": "boundary",
+        "label": "CONARA regionalization (13 regions replace provinces)",
+        "description": "Decreto-Ley 575 of July 1974, implemented through 1975-1976, replaced Chile's 25-province structure with 13 regions plus the Metropolitan Region. Department-level reporting effectively ends; from this date forward the canonical subnational geography is the region (XV regions today, after later subdivisions).",
+        "severity": "blocker",
+        "citation": "Decreto-Ley 575 de 1974; ODEPLAN/CONARA (1976), Chile hacia un nuevo destino.",
+        "rule_for_chart": "Department and province series should not be drawn past 1974 without a notice; the data after this date originates from region-level reporting back-cast to the older units, which is interpolation. Recommended: terminate department/province series at 1973 by default with an option to view the back-cast extension."
+      }
+    ]
+  },
+  {
     "id": "barley_production",
     "label": "Barley production",
     "display_label": "Barley production",
@@ -610,6 +679,93 @@
     "source_attribution_status": "no_recoverable_source"
   },
   {
+    "id": "existencias_bovinos_cabezas",
+    "label": "Cattle stock, head (1965–1974)",
+    "display_label": "Cattle stock, head (1965–1974)",
+    "category": "Agriculture",
+    "source_type": "compiled",
+    "format_hint": "count",
+    "display_unit": "head",
+    "curated_subtitle": "Cattle stock, head (1965–1974), by province, 1965–1973, head",
+    "scale_availability": {
+      "national": false,
+      "province": true,
+      "department": false,
+      "commune": false
+    },
+    "scales": {
+      "province": {
+        "cadence": "annual",
+        "valid_years": [
+          1965,
+          1966,
+          1967,
+          1968,
+          1969,
+          1970,
+          1971,
+          1972,
+          1973
+        ],
+        "year_range": [
+          1965,
+          1973
+        ],
+        "n_observations": 225,
+        "magnitude": {
+          "min": 859.0,
+          "max": 461613.0,
+          "median": 85500.0,
+          "orders_of_magnitude": 2.73,
+          "hint": "linear"
+        },
+        "rendering_mode": "line",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)"
+    ],
+    "topic_category": "agriculture",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)",
+    "per_capita_default": "default_raw",
+    "accent": "#3b6d11",
+    "definition": "Cattle stock in head by province, 1965 to 1974, from ODEPA's Estadísticas Agropecuarias compiled from the INE livestock returns.",
+    "coverage_statement": "9 year(s) 1965-1973, 225 province-level observations",
+    "commit_status_by_scale": {
+      "province": "committed"
+    },
+    "published_by_scale": {
+      "province": "complete"
+    },
+    "commit_status": "committed",
+    "published": "complete",
+    "breaks": [
+      {
+        "id": "methodological_ine_1970",
+        "year": 1970,
+        "kind": "methodological",
+        "label": "INE replaces SNEC",
+        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
+        "severity": "informational",
+        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
+        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
+      },
+      {
+        "id": "political_unidad_popular_1973",
+        "year": 1973,
+        "kind": "political",
+        "label": "September 1973 — political rupture",
+        "description": "The military government that took power on September 11, 1973 disrupted civilian statistical reporting for several years and introduced methodological changes in social and economic series. Fiscal, labor, and social-sector series across 1972–1976 are particularly affected by definitional turnover and, in some cases, political contestation of the published figures.",
+        "severity": "warning",
+        "citation": "Meller (2000); Ffrench-Davis (2001).",
+        "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
+      }
+    ]
+  },
+  {
     "id": "chickpea_production",
     "label": "Chickpea production",
     "display_label": "Chickpea production",
@@ -1022,6 +1178,167 @@
     "source_attribution_status": "no_recoverable_source"
   },
   {
+    "id": "maiz_produccion_ton",
+    "label": "Maize production, tons (1972–1974)",
+    "display_label": "Maize production, tons (1972–1974)",
+    "category": "Agriculture",
+    "source_type": "compiled",
+    "format_hint": "count",
+    "display_unit": "metric tons",
+    "curated_subtitle": "Maize production, tons (1972–1974), by province, 1972–1974, metric tons",
+    "scale_availability": {
+      "national": false,
+      "province": true,
+      "department": false,
+      "commune": false
+    },
+    "scales": {
+      "province": {
+        "cadence": "annual",
+        "valid_years": [
+          1972,
+          1973,
+          1974
+        ],
+        "year_range": [
+          1972,
+          1974
+        ],
+        "n_observations": 54,
+        "magnitude": {
+          "min": 13.0,
+          "max": 140923.0,
+          "median": 4119.0,
+          "orders_of_magnitude": 4.04,
+          "hint": "log"
+        },
+        "rendering_mode": "line",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)"
+    ],
+    "topic_category": "agriculture",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)",
+    "per_capita_default": "default_raw",
+    "accent": "#3b6d11",
+    "definition": "Maize production in metric tons by province, 1972 to 1974, from ODEPA's Estadísticas Agropecuarias.",
+    "coverage_statement": "3 year(s) 1972-1974, 54 province-level observations",
+    "commit_status_by_scale": {
+      "province": "committed"
+    },
+    "published_by_scale": {
+      "province": "complete"
+    },
+    "commit_status": "committed",
+    "published": "complete",
+    "breaks": [
+      {
+        "id": "boundary_conara_1974",
+        "year": 1974,
+        "kind": "boundary",
+        "label": "CONARA regionalization (13 regions replace provinces)",
+        "description": "Decreto-Ley 575 of July 1974, implemented through 1975-1976, replaced Chile's 25-province structure with 13 regions plus the Metropolitan Region. Department-level reporting effectively ends; from this date forward the canonical subnational geography is the region (XV regions today, after later subdivisions).",
+        "severity": "blocker",
+        "citation": "Decreto-Ley 575 de 1974; ODEPLAN/CONARA (1976), Chile hacia un nuevo destino.",
+        "rule_for_chart": "Department and province series should not be drawn past 1974 without a notice; the data after this date originates from region-level reporting back-cast to the older units, which is interpolation. Recommended: terminate department/province series at 1973 by default with an option to view the back-cast extension."
+      },
+      {
+        "id": "political_unidad_popular_1973",
+        "year": 1973,
+        "kind": "political",
+        "label": "September 1973 — political rupture",
+        "description": "The military government that took power on September 11, 1973 disrupted civilian statistical reporting for several years and introduced methodological changes in social and economic series. Fiscal, labor, and social-sector series across 1972–1976 are particularly affected by definitional turnover and, in some cases, political contestation of the published figures.",
+        "severity": "warning",
+        "citation": "Meller (2000); Ffrench-Davis (2001).",
+        "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
+      }
+    ]
+  },
+  {
+    "id": "leche_vendida_plantas_miles_lts",
+    "label": "Milk delivered to plants, thousand litres (1973 to 1974)",
+    "display_label": "Milk delivered to plants, thousand litres (1973 to 1974)",
+    "category": "Agriculture",
+    "source_type": "compiled",
+    "format_hint": "count",
+    "display_unit": "thousand litres",
+    "curated_subtitle": "Milk delivered to plants, thousand litres (1973 to 1974), by province, 1973–1974, thousand litres",
+    "scale_availability": {
+      "national": false,
+      "province": true,
+      "department": false,
+      "commune": false
+    },
+    "scales": {
+      "province": {
+        "cadence": "annual",
+        "valid_years": [
+          1973,
+          1974
+        ],
+        "year_range": [
+          1973,
+          1974
+        ],
+        "n_observations": 40,
+        "magnitude": {
+          "min": 119.4,
+          "max": 145040.0,
+          "median": 5355.8,
+          "orders_of_magnitude": 3.08,
+          "hint": "log"
+        },
+        "rendering_mode": "line",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "Milk delivered to processing plants in thousands of litres by province, 1973 to 1974, from ODEPA's Estadísticas Agropecuarias.",
+    "coverage_statement": "2 year(s) 1973-1974, 40 province-level observations",
+    "commit_status_by_scale": {
+      "province": "committed"
+    },
+    "published_by_scale": {
+      "province": "sparse"
+    },
+    "commit_status": "committed",
+    "published": "sparse",
+    "breaks": [
+      {
+        "id": "boundary_conara_1974",
+        "year": 1974,
+        "kind": "boundary",
+        "label": "CONARA regionalization (13 regions replace provinces)",
+        "description": "Decreto-Ley 575 of July 1974, implemented through 1975-1976, replaced Chile's 25-province structure with 13 regions plus the Metropolitan Region. Department-level reporting effectively ends; from this date forward the canonical subnational geography is the region (XV regions today, after later subdivisions).",
+        "severity": "blocker",
+        "citation": "Decreto-Ley 575 de 1974; ODEPLAN/CONARA (1976), Chile hacia un nuevo destino.",
+        "rule_for_chart": "Department and province series should not be drawn past 1974 without a notice; the data after this date originates from region-level reporting back-cast to the older units, which is interpolation. Recommended: terminate department/province series at 1973 by default with an option to view the back-cast extension."
+      },
+      {
+        "id": "political_unidad_popular_1973",
+        "year": 1973,
+        "kind": "political",
+        "label": "September 1973 — political rupture",
+        "description": "The military government that took power on September 11, 1973 disrupted civilian statistical reporting for several years and introduced methodological changes in social and economic series. Fiscal, labor, and social-sector series across 1972–1976 are particularly affected by definitional turnover and, in some cases, political contestation of the published figures.",
+        "severity": "warning",
+        "citation": "Meller (2000); Ffrench-Davis (2001).",
+        "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
+      }
+    ]
+  },
+  {
     "id": "pea_production",
     "label": "Pea production",
     "display_label": "Pea production",
@@ -1230,6 +1547,92 @@
     "source_attribution_status": "no_recoverable_source"
   },
   {
+    "id": "existencias_porcinos_cabezas",
+    "label": "Pig stock, head (1965–1974)",
+    "display_label": "Pig stock, head (1965–1974)",
+    "category": "Agriculture",
+    "source_type": "compiled",
+    "format_hint": "count",
+    "display_unit": "head",
+    "curated_subtitle": "Pig stock, head (1965–1974), by province, 1965–1973, head",
+    "scale_availability": {
+      "national": false,
+      "province": true,
+      "department": false,
+      "commune": false
+    },
+    "scales": {
+      "province": {
+        "cadence": "annual",
+        "valid_years": [
+          1965,
+          1966,
+          1967,
+          1968,
+          1970,
+          1971,
+          1972,
+          1973
+        ],
+        "year_range": [
+          1965,
+          1973
+        ],
+        "n_observations": 200,
+        "magnitude": {
+          "min": 2903.0,
+          "max": 155394.0,
+          "median": 34910.0,
+          "orders_of_magnitude": 1.73,
+          "hint": "linear"
+        },
+        "rendering_mode": "line",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "Pig stock in head by province, 1965 to 1974, from ODEPA's Estadísticas Agropecuarias.",
+    "coverage_statement": "8 year(s) 1965-1973, 200 province-level observations",
+    "commit_status_by_scale": {
+      "province": "committed"
+    },
+    "published_by_scale": {
+      "province": "partial"
+    },
+    "commit_status": "committed",
+    "published": "partial",
+    "breaks": [
+      {
+        "id": "methodological_ine_1970",
+        "year": 1970,
+        "kind": "methodological",
+        "label": "INE replaces SNEC",
+        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
+        "severity": "informational",
+        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
+        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
+      },
+      {
+        "id": "political_unidad_popular_1973",
+        "year": 1973,
+        "kind": "political",
+        "label": "September 1973 — political rupture",
+        "description": "The military government that took power on September 11, 1973 disrupted civilian statistical reporting for several years and introduced methodological changes in social and economic series. Fiscal, labor, and social-sector series across 1972–1976 are particularly affected by definitional turnover and, in some cases, political contestation of the published figures.",
+        "severity": "warning",
+        "citation": "Meller (2000); Ffrench-Davis (2001).",
+        "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
+      }
+    ]
+  },
+  {
     "id": "potato_production",
     "label": "Potato production",
     "display_label": "Potato production",
@@ -1436,6 +1839,334 @@
       }
     ],
     "source_attribution_status": "no_recoverable_source"
+  },
+  {
+    "id": "papas_produccion_ton",
+    "label": "Potato production, tons (1972–1974)",
+    "display_label": "Potato production, tons (1972–1974)",
+    "category": "Agriculture",
+    "source_type": "compiled",
+    "format_hint": "count",
+    "display_unit": "metric tons",
+    "curated_subtitle": "Potato production, tons (1972–1974), by province, 1972–1974, metric tons",
+    "scale_availability": {
+      "national": false,
+      "province": true,
+      "department": false,
+      "commune": false
+    },
+    "scales": {
+      "province": {
+        "cadence": "annual",
+        "valid_years": [
+          1972,
+          1973,
+          1974
+        ],
+        "year_range": [
+          1972,
+          1974
+        ],
+        "n_observations": 67,
+        "magnitude": {
+          "min": 167.0,
+          "max": 148967.0,
+          "median": 24221.0,
+          "orders_of_magnitude": 2.95,
+          "hint": "linear"
+        },
+        "rendering_mode": "line",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)"
+    ],
+    "topic_category": "agriculture",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)",
+    "per_capita_default": "default_raw",
+    "accent": "#3b6d11",
+    "definition": "Potato production in metric tons by province, 1972 to 1974, from ODEPA's Estadísticas Agropecuarias.",
+    "coverage_statement": "3 year(s) 1972-1974, 67 province-level observations",
+    "commit_status_by_scale": {
+      "province": "committed"
+    },
+    "published_by_scale": {
+      "province": "complete"
+    },
+    "commit_status": "committed",
+    "published": "complete",
+    "breaks": [
+      {
+        "id": "boundary_conara_1974",
+        "year": 1974,
+        "kind": "boundary",
+        "label": "CONARA regionalization (13 regions replace provinces)",
+        "description": "Decreto-Ley 575 of July 1974, implemented through 1975-1976, replaced Chile's 25-province structure with 13 regions plus the Metropolitan Region. Department-level reporting effectively ends; from this date forward the canonical subnational geography is the region (XV regions today, after later subdivisions).",
+        "severity": "blocker",
+        "citation": "Decreto-Ley 575 de 1974; ODEPLAN/CONARA (1976), Chile hacia un nuevo destino.",
+        "rule_for_chart": "Department and province series should not be drawn past 1974 without a notice; the data after this date originates from region-level reporting back-cast to the older units, which is interpolation. Recommended: terminate department/province series at 1973 by default with an option to view the back-cast extension."
+      },
+      {
+        "id": "political_unidad_popular_1973",
+        "year": 1973,
+        "kind": "political",
+        "label": "September 1973 — political rupture",
+        "description": "The military government that took power on September 11, 1973 disrupted civilian statistical reporting for several years and introduced methodological changes in social and economic series. Fiscal, labor, and social-sector series across 1972–1976 are particularly affected by definitional turnover and, in some cases, political contestation of the published figures.",
+        "severity": "warning",
+        "citation": "Meller (2000); Ffrench-Davis (2001).",
+        "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
+      }
+    ]
+  },
+  {
+    "id": "existencias_ovinos_cabezas",
+    "label": "Sheep stock, head (1965–1974)",
+    "display_label": "Sheep stock, head (1965–1974)",
+    "category": "Agriculture",
+    "source_type": "compiled",
+    "format_hint": "count",
+    "display_unit": "head",
+    "curated_subtitle": "Sheep stock, head (1965–1974), by province, 1965–1974, head",
+    "scale_availability": {
+      "national": false,
+      "province": true,
+      "department": false,
+      "commune": false
+    },
+    "scales": {
+      "province": {
+        "cadence": "annual",
+        "valid_years": [
+          1965,
+          1966,
+          1967,
+          1968,
+          1969,
+          1970,
+          1972,
+          1973,
+          1974
+        ],
+        "year_range": [
+          1965,
+          1974
+        ],
+        "n_observations": 225,
+        "magnitude": {
+          "min": 8268.0,
+          "max": 2935160.0,
+          "median": 95686.0,
+          "orders_of_magnitude": 2.55,
+          "hint": "linear"
+        },
+        "rendering_mode": "line",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "Sheep stock in head by province, 1965 to 1974, from ODEPA's Estadísticas Agropecuarias.",
+    "coverage_statement": "9 year(s) 1965-1974, 225 province-level observations",
+    "commit_status_by_scale": {
+      "province": "committed"
+    },
+    "published_by_scale": {
+      "province": "complete"
+    },
+    "commit_status": "committed",
+    "published": "complete",
+    "breaks": [
+      {
+        "id": "boundary_conara_1974",
+        "year": 1974,
+        "kind": "boundary",
+        "label": "CONARA regionalization (13 regions replace provinces)",
+        "description": "Decreto-Ley 575 of July 1974, implemented through 1975-1976, replaced Chile's 25-province structure with 13 regions plus the Metropolitan Region. Department-level reporting effectively ends; from this date forward the canonical subnational geography is the region (XV regions today, after later subdivisions).",
+        "severity": "blocker",
+        "citation": "Decreto-Ley 575 de 1974; ODEPLAN/CONARA (1976), Chile hacia un nuevo destino.",
+        "rule_for_chart": "Department and province series should not be drawn past 1974 without a notice; the data after this date originates from region-level reporting back-cast to the older units, which is interpolation. Recommended: terminate department/province series at 1973 by default with an option to view the back-cast extension."
+      },
+      {
+        "id": "methodological_ine_1970",
+        "year": 1970,
+        "kind": "methodological",
+        "label": "INE replaces SNEC",
+        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
+        "severity": "informational",
+        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
+        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
+      },
+      {
+        "id": "political_unidad_popular_1973",
+        "year": 1973,
+        "kind": "political",
+        "label": "September 1973 — political rupture",
+        "description": "The military government that took power on September 11, 1973 disrupted civilian statistical reporting for several years and introduced methodological changes in social and economic series. Fiscal, labor, and social-sector series across 1972–1976 are particularly affected by definitional turnover and, in some cases, political contestation of the published figures.",
+        "severity": "warning",
+        "citation": "Meller (2000); Ffrench-Davis (2001).",
+        "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
+      }
+    ]
+  },
+  {
+    "id": "uva_mesa_produccion_ton",
+    "label": "Table grape production, tons (1974)",
+    "display_label": "Table grape production, tons (1974)",
+    "category": "Agriculture",
+    "source_type": "compiled",
+    "format_hint": "count",
+    "display_unit": "metric tons",
+    "curated_subtitle": "Table grape production, tons (1974), by province, 1974, metric tons",
+    "scale_availability": {
+      "national": false,
+      "province": true,
+      "department": false,
+      "commune": false
+    },
+    "scales": {
+      "province": {
+        "cadence": "irregular",
+        "valid_years": [
+          1974
+        ],
+        "year_range": [
+          1974,
+          1974
+        ],
+        "n_observations": 9,
+        "magnitude": {
+          "min": 24.0,
+          "max": 25486.0,
+          "median": 548.0,
+          "orders_of_magnitude": 3.03,
+          "hint": "log"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "Table grape production in metric tons by province in 1974, from ODEPA's Estadísticas Agropecuarias fruit returns.",
+    "coverage_statement": "1 year(s) 1974, 9 province-level observations",
+    "commit_status_by_scale": {
+      "province": "cross_section"
+    },
+    "published_by_scale": {
+      "province": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section",
+    "breaks": [
+      {
+        "id": "boundary_conara_1974",
+        "year": 1974,
+        "kind": "boundary",
+        "label": "CONARA regionalization (13 regions replace provinces)",
+        "description": "Decreto-Ley 575 of July 1974, implemented through 1975-1976, replaced Chile's 25-province structure with 13 regions plus the Metropolitan Region. Department-level reporting effectively ends; from this date forward the canonical subnational geography is the region (XV regions today, after later subdivisions).",
+        "severity": "blocker",
+        "citation": "Decreto-Ley 575 de 1974; ODEPLAN/CONARA (1976), Chile hacia un nuevo destino.",
+        "rule_for_chart": "Department and province series should not be drawn past 1974 without a notice; the data after this date originates from region-level reporting back-cast to the older units, which is interpolation. Recommended: terminate department/province series at 1973 by default with an option to view the back-cast extension."
+      }
+    ]
+  },
+  {
+    "id": "trigo_superficie_ha",
+    "label": "Wheat area sown, hectares (1972–1974)",
+    "display_label": "Wheat area sown, hectares (1972–1974)",
+    "category": "Agriculture",
+    "source_type": "compiled",
+    "format_hint": "count",
+    "display_unit": "hectares",
+    "curated_subtitle": "Wheat area sown, hectares (1972–1974), by province, 1972–1974, hectares",
+    "scale_availability": {
+      "national": false,
+      "province": true,
+      "department": false,
+      "commune": false
+    },
+    "scales": {
+      "province": {
+        "cadence": "annual",
+        "valid_years": [
+          1972,
+          1973,
+          1974
+        ],
+        "year_range": [
+          1972,
+          1974
+        ],
+        "n_observations": 66,
+        "magnitude": {
+          "min": 90.0,
+          "max": 110650.0,
+          "median": 13030.0,
+          "orders_of_magnitude": 3.09,
+          "hint": "log"
+        },
+        "rendering_mode": "line",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)"
+    ],
+    "topic_category": "agriculture",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)",
+    "per_capita_default": "default_raw",
+    "accent": "#3b6d11",
+    "definition": "Area sown with wheat in hectares by province, 1972 to 1974, from ODEPA's Estadísticas Agropecuarias.",
+    "coverage_statement": "3 year(s) 1972-1974, 66 province-level observations",
+    "commit_status_by_scale": {
+      "province": "committed"
+    },
+    "published_by_scale": {
+      "province": "complete"
+    },
+    "commit_status": "committed",
+    "published": "complete",
+    "breaks": [
+      {
+        "id": "boundary_conara_1974",
+        "year": 1974,
+        "kind": "boundary",
+        "label": "CONARA regionalization (13 regions replace provinces)",
+        "description": "Decreto-Ley 575 of July 1974, implemented through 1975-1976, replaced Chile's 25-province structure with 13 regions plus the Metropolitan Region. Department-level reporting effectively ends; from this date forward the canonical subnational geography is the region (XV regions today, after later subdivisions).",
+        "severity": "blocker",
+        "citation": "Decreto-Ley 575 de 1974; ODEPLAN/CONARA (1976), Chile hacia un nuevo destino.",
+        "rule_for_chart": "Department and province series should not be drawn past 1974 without a notice; the data after this date originates from region-level reporting back-cast to the older units, which is interpolation. Recommended: terminate department/province series at 1973 by default with an option to view the back-cast extension."
+      },
+      {
+        "id": "political_unidad_popular_1973",
+        "year": 1973,
+        "kind": "political",
+        "label": "September 1973 — political rupture",
+        "description": "The military government that took power on September 11, 1973 disrupted civilian statistical reporting for several years and introduced methodological changes in social and economic series. Fiscal, labor, and social-sector series across 1972–1976 are particularly affected by definitional turnover and, in some cases, political contestation of the published figures.",
+        "severity": "warning",
+        "citation": "Meller (2000); Ffrench-Davis (2001).",
+        "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
+      }
+    ]
   },
   {
     "id": "wheat_production",
@@ -1647,6 +2378,87 @@
     "source_attribution_status": "no_recoverable_source"
   },
   {
+    "id": "trigo_produccion_ton",
+    "label": "Wheat production, tons (1972–1974)",
+    "display_label": "Wheat production, tons (1972–1974)",
+    "category": "Agriculture",
+    "source_type": "compiled",
+    "format_hint": "count",
+    "display_unit": "metric tons",
+    "curated_subtitle": "Wheat production, tons (1972–1974), by province, 1972–1974, metric tons",
+    "scale_availability": {
+      "national": false,
+      "province": true,
+      "department": false,
+      "commune": false
+    },
+    "scales": {
+      "province": {
+        "cadence": "annual",
+        "valid_years": [
+          1972,
+          1973,
+          1974
+        ],
+        "year_range": [
+          1972,
+          1974
+        ],
+        "n_observations": 66,
+        "magnitude": {
+          "min": 60.0,
+          "max": 160443.0,
+          "median": 12227.0,
+          "orders_of_magnitude": 3.43,
+          "hint": "log"
+        },
+        "rendering_mode": "line",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)"
+    ],
+    "topic_category": "agriculture",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)",
+    "per_capita_default": "default_raw",
+    "accent": "#3b6d11",
+    "definition": "Wheat production in metric tons by province, 1972 to 1974, from ODEPA's Estadísticas Agropecuarias.",
+    "coverage_statement": "3 year(s) 1972-1974, 66 province-level observations",
+    "commit_status_by_scale": {
+      "province": "committed"
+    },
+    "published_by_scale": {
+      "province": "complete"
+    },
+    "commit_status": "committed",
+    "published": "complete",
+    "breaks": [
+      {
+        "id": "boundary_conara_1974",
+        "year": 1974,
+        "kind": "boundary",
+        "label": "CONARA regionalization (13 regions replace provinces)",
+        "description": "Decreto-Ley 575 of July 1974, implemented through 1975-1976, replaced Chile's 25-province structure with 13 regions plus the Metropolitan Region. Department-level reporting effectively ends; from this date forward the canonical subnational geography is the region (XV regions today, after later subdivisions).",
+        "severity": "blocker",
+        "citation": "Decreto-Ley 575 de 1974; ODEPLAN/CONARA (1976), Chile hacia un nuevo destino.",
+        "rule_for_chart": "Department and province series should not be drawn past 1974 without a notice; the data after this date originates from region-level reporting back-cast to the older units, which is interpolation. Recommended: terminate department/province series at 1973 by default with an option to view the back-cast extension."
+      },
+      {
+        "id": "political_unidad_popular_1973",
+        "year": 1973,
+        "kind": "political",
+        "label": "September 1973 — political rupture",
+        "description": "The military government that took power on September 11, 1973 disrupted civilian statistical reporting for several years and introduced methodological changes in social and economic series. Fiscal, labor, and social-sector series across 1972–1976 are particularly affected by definitional turnover and, in some cases, political contestation of the published figures.",
+        "severity": "warning",
+        "citation": "Meller (2000); Ffrench-Davis (2001).",
+        "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
+      }
+    ]
+  },
+  {
     "id": "wine_production",
     "label": "Wine production",
     "display_label": "Wine production",
@@ -1797,826 +2609,6 @@
     "published": "complete",
     "data_quality_flag": "series_endpoint_methodological",
     "source_attribution_status": "no_recoverable_source"
-  },
-  {
-    "id": "poblacion_hombres_1970",
-    "label": "Poblacion hombres 1970",
-    "display_label": "Poblacion hombres 1970",
-    "category": "Commune-level",
-    "source_type": "census",
-    "format_hint": "count",
-    "display_unit": "",
-    "curated_subtitle": "Poblacion hombres 1970, 1970",
-    "scale_availability": {
-      "national": false,
-      "province": false,
-      "department": false,
-      "commune": true
-    },
-    "scales": {
-      "commune": {
-        "cadence": "irregular",
-        "valid_years": [
-          1970
-        ],
-        "year_range": [
-          1970,
-          1970
-        ],
-        "n_observations": 250,
-        "magnitude": {
-          "min": 400.0,
-          "max": 232673.0,
-          "median": 6926.0,
-          "orders_of_magnitude": 2.76,
-          "hint": "linear"
-        },
-        "rendering_mode": "dots",
-        "magnitude_hint": "auto"
-      }
-    },
-    "source_documents": [
-      "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)",
-      "Censo 1970 - Caracteristicas basicas de la poblacion, NUBLE (INE/CIREN)",
-      "Censo 1970 CIREN folleto VALPARAISO (Características Básicas de la Población)",
-      "Censo 1970 CIREN folleto OHIGGINS (Características Básicas de la Población)",
-      "Censo 1970 CIREN folleto CAUTIN (Características Básicas de la Población)"
-    ],
-    "topic_category": "demography",
-    "semantic_zero": true,
-    "source_quality": "clean",
-    "source_document": "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)",
-    "per_capita_default": "default_raw",
-    "accent": "#0E1A2B",
-    "definition": "",
-    "coverage_statement": "1 year(s) 1970, 250 observations",
-    "commit_status_by_scale": {
-      "commune": "cross_section"
-    },
-    "published_by_scale": {
-      "commune": "cross_section"
-    },
-    "commit_status": "cross_section",
-    "published": "cross_section",
-    "breaks": [
-      {
-        "id": "methodological_ine_1970",
-        "year": 1970,
-        "kind": "methodological",
-        "label": "INE replaces SNEC",
-        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
-        "severity": "informational",
-        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
-        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
-      }
-    ]
-  },
-  {
-    "id": "poblacion_hombres_1992",
-    "label": "Poblacion hombres 1992",
-    "display_label": "Poblacion hombres 1992",
-    "category": "Commune-level",
-    "source_type": "census",
-    "format_hint": "count",
-    "display_unit": "",
-    "curated_subtitle": "Poblacion hombres 1992, 1992",
-    "scale_availability": {
-      "national": false,
-      "province": false,
-      "department": false,
-      "commune": true
-    },
-    "scales": {
-      "commune": {
-        "cadence": "irregular",
-        "valid_years": [
-          1992
-        ],
-        "year_range": [
-          1992,
-          1992
-        ],
-        "n_observations": 329,
-        "magnitude": {
-          "min": 108.0,
-          "max": 158656.0,
-          "median": 7998.0,
-          "orders_of_magnitude": 3.17,
-          "hint": "log"
-        },
-        "rendering_mode": "dots",
-        "magnitude_hint": "log"
-      }
-    },
-    "source_documents": [
-      "Censo 1992 (INE, born-digital volumen)"
-    ],
-    "topic_category": "demography",
-    "semantic_zero": true,
-    "source_quality": "clean",
-    "source_document": "Censo 1992 (INE, born-digital volumen)",
-    "per_capita_default": "default_raw",
-    "accent": "#0E1A2B",
-    "definition": "",
-    "coverage_statement": "1 year(s) 1992, 329 observations",
-    "commit_status_by_scale": {
-      "commune": "cross_section"
-    },
-    "published_by_scale": {
-      "commune": "cross_section"
-    },
-    "commit_status": "cross_section",
-    "published": "cross_section"
-  },
-  {
-    "id": "poblacion_mujeres_1970",
-    "label": "Poblacion mujeres 1970",
-    "display_label": "Poblacion mujeres 1970",
-    "category": "Commune-level",
-    "source_type": "census",
-    "format_hint": "count",
-    "display_unit": "",
-    "curated_subtitle": "Poblacion mujeres 1970, 1970",
-    "scale_availability": {
-      "national": false,
-      "province": false,
-      "department": false,
-      "commune": true
-    },
-    "scales": {
-      "commune": {
-        "cadence": "irregular",
-        "valid_years": [
-          1970
-        ],
-        "year_range": [
-          1970,
-          1970
-        ],
-        "n_observations": 250,
-        "magnitude": {
-          "min": 117.0,
-          "max": 284840.0,
-          "median": 6665.0,
-          "orders_of_magnitude": 3.39,
-          "hint": "log"
-        },
-        "rendering_mode": "dots",
-        "magnitude_hint": "log"
-      }
-    },
-    "source_documents": [
-      "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)",
-      "Censo 1970 - Caracteristicas basicas de la poblacion, NUBLE (INE/CIREN)",
-      "Censo 1970 CIREN folleto VALPARAISO (Características Básicas de la Población)",
-      "Censo 1970 CIREN folleto OHIGGINS (Características Básicas de la Población)",
-      "Censo 1970 CIREN folleto CAUTIN (Características Básicas de la Población)"
-    ],
-    "topic_category": "demography",
-    "semantic_zero": true,
-    "source_quality": "clean",
-    "source_document": "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)",
-    "per_capita_default": "default_raw",
-    "accent": "#0E1A2B",
-    "definition": "",
-    "coverage_statement": "1 year(s) 1970, 250 observations",
-    "commit_status_by_scale": {
-      "commune": "cross_section"
-    },
-    "published_by_scale": {
-      "commune": "cross_section"
-    },
-    "commit_status": "cross_section",
-    "published": "cross_section",
-    "breaks": [
-      {
-        "id": "methodological_ine_1970",
-        "year": 1970,
-        "kind": "methodological",
-        "label": "INE replaces SNEC",
-        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
-        "severity": "informational",
-        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
-        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
-      }
-    ]
-  },
-  {
-    "id": "poblacion_mujeres_1992",
-    "label": "Poblacion mujeres 1992",
-    "display_label": "Poblacion mujeres 1992",
-    "category": "Commune-level",
-    "source_type": "census",
-    "format_hint": "count",
-    "display_unit": "",
-    "curated_subtitle": "Poblacion mujeres 1992, 1992",
-    "scale_availability": {
-      "national": false,
-      "province": false,
-      "department": false,
-      "commune": true
-    },
-    "scales": {
-      "commune": {
-        "cadence": "irregular",
-        "valid_years": [
-          1992
-        ],
-        "year_range": [
-          1992,
-          1992
-        ],
-        "n_observations": 329,
-        "magnitude": {
-          "min": 23.0,
-          "max": 172371.0,
-          "median": 7499.0,
-          "orders_of_magnitude": 3.87,
-          "hint": "log"
-        },
-        "rendering_mode": "dots",
-        "magnitude_hint": "log"
-      }
-    },
-    "source_documents": [
-      "Censo 1992 (INE, born-digital volumen)"
-    ],
-    "topic_category": "demography",
-    "semantic_zero": true,
-    "source_quality": "clean",
-    "source_document": "Censo 1992 (INE, born-digital volumen)",
-    "per_capita_default": "default_raw",
-    "accent": "#0E1A2B",
-    "definition": "",
-    "coverage_statement": "1 year(s) 1992, 329 observations",
-    "commit_status_by_scale": {
-      "commune": "cross_section"
-    },
-    "published_by_scale": {
-      "commune": "cross_section"
-    },
-    "commit_status": "cross_section",
-    "published": "cross_section"
-  },
-  {
-    "id": "poblacion_rural_1970",
-    "label": "Poblacion rural 1970",
-    "display_label": "Poblacion rural 1970",
-    "category": "Commune-level",
-    "source_type": "census",
-    "format_hint": "count",
-    "display_unit": "",
-    "curated_subtitle": "Poblacion rural 1970, 1970",
-    "scale_availability": {
-      "national": false,
-      "province": false,
-      "department": false,
-      "commune": true
-    },
-    "scales": {
-      "commune": {
-        "cadence": "irregular",
-        "valid_years": [
-          1970
-        ],
-        "year_range": [
-          1970,
-          1970
-        ],
-        "n_observations": 222,
-        "magnitude": {
-          "min": 215.0,
-          "max": 40988.0,
-          "median": 6857.0,
-          "orders_of_magnitude": 2.28,
-          "hint": "linear"
-        },
-        "rendering_mode": "dots",
-        "magnitude_hint": "auto"
-      }
-    },
-    "source_documents": [
-      "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)",
-      "Censo 1970 CIREN folleto VALPARAISO (Características Básicas de la Población)",
-      "Censo 1970 CIREN folleto OHIGGINS (Características Básicas de la Población)",
-      "Censo 1970 CIREN folleto CAUTIN (Características Básicas de la Población)",
-      "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)"
-    ],
-    "topic_category": "demography",
-    "semantic_zero": true,
-    "source_quality": "clean",
-    "source_document": "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)",
-    "per_capita_default": "default_pc",
-    "accent": "#0E1A2B",
-    "definition": "",
-    "coverage_statement": "1 year(s) 1970, 222 observations",
-    "commit_status_by_scale": {
-      "commune": "cross_section"
-    },
-    "published_by_scale": {
-      "commune": "cross_section"
-    },
-    "commit_status": "cross_section",
-    "published": "cross_section",
-    "breaks": [
-      {
-        "id": "methodological_ine_1970",
-        "year": 1970,
-        "kind": "methodological",
-        "label": "INE replaces SNEC",
-        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
-        "severity": "informational",
-        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
-        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
-      }
-    ]
-  },
-  {
-    "id": "poblacion_rural_hombres_1970",
-    "label": "Poblacion rural hombres 1970",
-    "display_label": "Poblacion rural hombres 1970",
-    "category": "Commune-level",
-    "source_type": "census",
-    "format_hint": "count",
-    "display_unit": "",
-    "curated_subtitle": "Poblacion rural hombres 1970, 1970",
-    "scale_availability": {
-      "national": false,
-      "province": false,
-      "department": false,
-      "commune": true
-    },
-    "scales": {
-      "commune": {
-        "cadence": "irregular",
-        "valid_years": [
-          1970
-        ],
-        "year_range": [
-          1970,
-          1970
-        ],
-        "n_observations": 31,
-        "magnitude": {
-          "min": 1394.0,
-          "max": 10291.0,
-          "median": 4442.0,
-          "orders_of_magnitude": 0.87,
-          "hint": "linear"
-        },
-        "rendering_mode": "dots",
-        "magnitude_hint": "auto"
-      }
-    },
-    "source_documents": [
-      "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)",
-      "Censo 1970 CIREN folleto TALCA (Características Básicas de la Población)",
-      "Censo 1970 CIREN folleto CURICO (Características Básicas de la Población)"
-    ],
-    "topic_category": "demography",
-    "semantic_zero": true,
-    "source_quality": "clean",
-    "source_document": "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)",
-    "per_capita_default": "default_pc",
-    "accent": "#0E1A2B",
-    "definition": "",
-    "coverage_statement": "1 year(s) 1970, 31 observations",
-    "commit_status_by_scale": {
-      "commune": "cross_section"
-    },
-    "published_by_scale": {
-      "commune": "cross_section"
-    },
-    "commit_status": "cross_section",
-    "published": "cross_section",
-    "breaks": [
-      {
-        "id": "methodological_ine_1970",
-        "year": 1970,
-        "kind": "methodological",
-        "label": "INE replaces SNEC",
-        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
-        "severity": "informational",
-        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
-        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
-      }
-    ]
-  },
-  {
-    "id": "poblacion_rural_mujeres_1970",
-    "label": "Poblacion rural mujeres 1970",
-    "display_label": "Poblacion rural mujeres 1970",
-    "category": "Commune-level",
-    "source_type": "census",
-    "format_hint": "count",
-    "display_unit": "",
-    "curated_subtitle": "Poblacion rural mujeres 1970, 1970",
-    "scale_availability": {
-      "national": false,
-      "province": false,
-      "department": false,
-      "commune": true
-    },
-    "scales": {
-      "commune": {
-        "cadence": "irregular",
-        "valid_years": [
-          1970
-        ],
-        "year_range": [
-          1970,
-          1970
-        ],
-        "n_observations": 31,
-        "magnitude": {
-          "min": 1272.0,
-          "max": 8840.0,
-          "median": 4088.0,
-          "orders_of_magnitude": 0.84,
-          "hint": "linear"
-        },
-        "rendering_mode": "dots",
-        "magnitude_hint": "auto"
-      }
-    },
-    "source_documents": [
-      "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)",
-      "Censo 1970 CIREN folleto TALCA (Características Básicas de la Población)",
-      "Censo 1970 CIREN folleto CURICO (Características Básicas de la Población)"
-    ],
-    "topic_category": "demography",
-    "semantic_zero": true,
-    "source_quality": "clean",
-    "source_document": "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)",
-    "per_capita_default": "default_pc",
-    "accent": "#0E1A2B",
-    "definition": "",
-    "coverage_statement": "1 year(s) 1970, 31 observations",
-    "commit_status_by_scale": {
-      "commune": "cross_section"
-    },
-    "published_by_scale": {
-      "commune": "cross_section"
-    },
-    "commit_status": "cross_section",
-    "published": "cross_section",
-    "breaks": [
-      {
-        "id": "methodological_ine_1970",
-        "year": 1970,
-        "kind": "methodological",
-        "label": "INE replaces SNEC",
-        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
-        "severity": "informational",
-        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
-        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
-      }
-    ]
-  },
-  {
-    "id": "poblacion_total_1970",
-    "label": "Poblacion total 1970",
-    "display_label": "Poblacion total 1970",
-    "category": "Commune-level",
-    "source_type": "census",
-    "format_hint": "count",
-    "display_unit": "",
-    "curated_subtitle": "Poblacion total 1970, 1970",
-    "scale_availability": {
-      "national": false,
-      "province": false,
-      "department": false,
-      "commune": true
-    },
-    "scales": {
-      "commune": {
-        "cadence": "irregular",
-        "valid_years": [
-          1970
-        ],
-        "year_range": [
-          1970,
-          1970
-        ],
-        "n_observations": 252,
-        "magnitude": {
-          "min": 554.0,
-          "max": 517513.0,
-          "median": 13542.0,
-          "orders_of_magnitude": 2.97,
-          "hint": "linear"
-        },
-        "rendering_mode": "dots",
-        "magnitude_hint": "auto"
-      }
-    },
-    "source_documents": [
-      "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)",
-      "Censo 1970 - Caracteristicas basicas de la poblacion, NUBLE (INE/CIREN)",
-      "Censo 1970 CIREN folleto VALPARAISO (Características Básicas de la Población)",
-      "Censo 1970 CIREN folleto OHIGGINS (Características Básicas de la Población)",
-      "Censo 1970 CIREN folleto CAUTIN (Características Básicas de la Población)"
-    ],
-    "topic_category": "demography",
-    "semantic_zero": true,
-    "source_quality": "clean",
-    "source_document": "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)",
-    "per_capita_default": "default_raw",
-    "accent": "#0E1A2B",
-    "definition": "",
-    "coverage_statement": "1 year(s) 1970, 252 observations",
-    "commit_status_by_scale": {
-      "commune": "cross_section"
-    },
-    "published_by_scale": {
-      "commune": "cross_section"
-    },
-    "commit_status": "cross_section",
-    "published": "cross_section",
-    "breaks": [
-      {
-        "id": "methodological_ine_1970",
-        "year": 1970,
-        "kind": "methodological",
-        "label": "INE replaces SNEC",
-        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
-        "severity": "informational",
-        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
-        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
-      }
-    ]
-  },
-  {
-    "id": "poblacion_total_1992",
-    "label": "Poblacion total 1992",
-    "display_label": "Poblacion total 1992",
-    "category": "Commune-level",
-    "source_type": "census",
-    "format_hint": "count",
-    "display_unit": "",
-    "curated_subtitle": "Poblacion total 1992, 1992",
-    "scale_availability": {
-      "national": false,
-      "province": false,
-      "department": false,
-      "commune": true
-    },
-    "scales": {
-      "commune": {
-        "cadence": "irregular",
-        "valid_years": [
-          1992
-        ],
-        "year_range": [
-          1992,
-          1992
-        ],
-        "n_observations": 329,
-        "magnitude": {
-          "min": 131.0,
-          "max": 331027.0,
-          "median": 15290.0,
-          "orders_of_magnitude": 3.4,
-          "hint": "log"
-        },
-        "rendering_mode": "dots",
-        "magnitude_hint": "log"
-      }
-    },
-    "source_documents": [
-      "Censo 1992 (INE, born-digital volumen)"
-    ],
-    "topic_category": "demography",
-    "semantic_zero": true,
-    "source_quality": "clean",
-    "source_document": "Censo 1992 (INE, born-digital volumen)",
-    "per_capita_default": "default_raw",
-    "accent": "#0E1A2B",
-    "definition": "",
-    "coverage_statement": "1 year(s) 1992, 329 observations",
-    "commit_status_by_scale": {
-      "commune": "cross_section"
-    },
-    "published_by_scale": {
-      "commune": "cross_section"
-    },
-    "commit_status": "cross_section",
-    "published": "cross_section"
-  },
-  {
-    "id": "poblacion_urbana_1970",
-    "label": "Poblacion urbana 1970",
-    "display_label": "Poblacion urbana 1970",
-    "category": "Commune-level",
-    "source_type": "census",
-    "format_hint": "count",
-    "display_unit": "",
-    "curated_subtitle": "Poblacion urbana 1970, 1970",
-    "scale_availability": {
-      "national": false,
-      "province": false,
-      "department": false,
-      "commune": true
-    },
-    "scales": {
-      "commune": {
-        "cadence": "irregular",
-        "valid_years": [
-          1970
-        ],
-        "year_range": [
-          1970,
-          1970
-        ],
-        "n_observations": 222,
-        "magnitude": {
-          "min": 165.0,
-          "max": 517513.0,
-          "median": 5328.0,
-          "orders_of_magnitude": 3.5,
-          "hint": "log"
-        },
-        "rendering_mode": "dots",
-        "magnitude_hint": "log"
-      }
-    },
-    "source_documents": [
-      "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)",
-      "Censo 1970 CIREN folleto VALPARAISO (Características Básicas de la Población)",
-      "Censo 1970 CIREN folleto OHIGGINS (Características Básicas de la Población)",
-      "Censo 1970 CIREN folleto CAUTIN (Características Básicas de la Población)",
-      "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)"
-    ],
-    "topic_category": "demography",
-    "semantic_zero": true,
-    "source_quality": "clean",
-    "source_document": "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)",
-    "per_capita_default": "default_pc",
-    "accent": "#0E1A2B",
-    "definition": "",
-    "coverage_statement": "1 year(s) 1970, 222 observations",
-    "commit_status_by_scale": {
-      "commune": "cross_section"
-    },
-    "published_by_scale": {
-      "commune": "cross_section"
-    },
-    "commit_status": "cross_section",
-    "published": "cross_section",
-    "breaks": [
-      {
-        "id": "methodological_ine_1970",
-        "year": 1970,
-        "kind": "methodological",
-        "label": "INE replaces SNEC",
-        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
-        "severity": "informational",
-        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
-        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
-      }
-    ]
-  },
-  {
-    "id": "poblacion_urbana_hombres_1970",
-    "label": "Poblacion urbana hombres 1970",
-    "display_label": "Poblacion urbana hombres 1970",
-    "category": "Commune-level",
-    "source_type": "census",
-    "format_hint": "count",
-    "display_unit": "",
-    "curated_subtitle": "Poblacion urbana hombres 1970, 1970",
-    "scale_availability": {
-      "national": false,
-      "province": false,
-      "department": false,
-      "commune": true
-    },
-    "scales": {
-      "commune": {
-        "cadence": "irregular",
-        "valid_years": [
-          1970
-        ],
-        "year_range": [
-          1970,
-          1970
-        ],
-        "n_observations": 31,
-        "magnitude": {
-          "min": 144.0,
-          "max": 43543.0,
-          "median": 1019.0,
-          "orders_of_magnitude": 2.48,
-          "hint": "linear"
-        },
-        "rendering_mode": "dots",
-        "magnitude_hint": "auto"
-      }
-    },
-    "source_documents": [
-      "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)",
-      "Censo 1970 CIREN folleto TALCA (Características Básicas de la Población)",
-      "Censo 1970 CIREN folleto CURICO (Características Básicas de la Población)"
-    ],
-    "topic_category": "demography",
-    "semantic_zero": true,
-    "source_quality": "clean",
-    "source_document": "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)",
-    "per_capita_default": "default_pc",
-    "accent": "#0E1A2B",
-    "definition": "",
-    "coverage_statement": "1 year(s) 1970, 31 observations",
-    "commit_status_by_scale": {
-      "commune": "cross_section"
-    },
-    "published_by_scale": {
-      "commune": "cross_section"
-    },
-    "commit_status": "cross_section",
-    "published": "cross_section",
-    "breaks": [
-      {
-        "id": "methodological_ine_1970",
-        "year": 1970,
-        "kind": "methodological",
-        "label": "INE replaces SNEC",
-        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
-        "severity": "informational",
-        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
-        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
-      }
-    ]
-  },
-  {
-    "id": "poblacion_urbana_mujeres_1970",
-    "label": "Poblacion urbana mujeres 1970",
-    "display_label": "Poblacion urbana mujeres 1970",
-    "category": "Commune-level",
-    "source_type": "census",
-    "format_hint": "count",
-    "display_unit": "",
-    "curated_subtitle": "Poblacion urbana mujeres 1970, 1970",
-    "scale_availability": {
-      "national": false,
-      "province": false,
-      "department": false,
-      "commune": true
-    },
-    "scales": {
-      "commune": {
-        "cadence": "irregular",
-        "valid_years": [
-          1970
-        ],
-        "year_range": [
-          1970,
-          1970
-        ],
-        "n_observations": 31,
-        "magnitude": {
-          "min": 159.0,
-          "max": 50839.0,
-          "median": 1146.0,
-          "orders_of_magnitude": 2.5,
-          "hint": "linear"
-        },
-        "rendering_mode": "dots",
-        "magnitude_hint": "auto"
-      }
-    },
-    "source_documents": [
-      "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)",
-      "Censo 1970 CIREN folleto TALCA (Características Básicas de la Población)",
-      "Censo 1970 CIREN folleto CURICO (Características Básicas de la Población)"
-    ],
-    "topic_category": "demography",
-    "semantic_zero": true,
-    "source_quality": "clean",
-    "source_document": "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)",
-    "per_capita_default": "default_pc",
-    "accent": "#0E1A2B",
-    "definition": "",
-    "coverage_statement": "1 year(s) 1970, 31 observations",
-    "commit_status_by_scale": {
-      "commune": "cross_section"
-    },
-    "published_by_scale": {
-      "commune": "cross_section"
-    },
-    "commit_status": "cross_section",
-    "published": "cross_section",
-    "breaks": [
-      {
-        "id": "methodological_ine_1970",
-        "year": 1970,
-        "kind": "methodological",
-        "label": "INE replaces SNEC",
-        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
-        "severity": "informational",
-        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
-        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
-      }
-    ]
   },
   {
     "id": "catolicos_1952",
@@ -2824,6 +2816,136 @@
     ]
   },
   {
+    "id": "poblacion_mujeres_1970",
+    "label": "Female population, commune (1970)",
+    "display_label": "Female population, commune (1970)",
+    "category": "Demographics",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Female population, commune (1970), 1970",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1970
+        ],
+        "year_range": [
+          1970,
+          1970
+        ],
+        "n_observations": 250,
+        "magnitude": {
+          "min": 117.0,
+          "max": 284840.0,
+          "median": 6665.0,
+          "orders_of_magnitude": 3.39,
+          "hint": "log"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)",
+      "Censo 1970 - Caracteristicas basicas de la poblacion, NUBLE (INE/CIREN)",
+      "Censo 1970 CIREN folleto VALPARAISO (Características Básicas de la Población)",
+      "Censo 1970 CIREN folleto OHIGGINS (Características Básicas de la Población)",
+      "Censo 1970 CIREN folleto CAUTIN (Características Básicas de la Población)"
+    ],
+    "topic_category": "demography",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)",
+    "per_capita_default": "default_raw",
+    "accent": "#0E1A2B",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1970, 250 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section",
+    "breaks": [
+      {
+        "id": "methodological_ine_1970",
+        "year": 1970,
+        "kind": "methodological",
+        "label": "INE replaces SNEC",
+        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
+        "severity": "informational",
+        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
+        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
+      }
+    ]
+  },
+  {
+    "id": "poblacion_mujeres_1992",
+    "label": "Female population, commune (1992)",
+    "display_label": "Female population, commune (1992)",
+    "category": "Demographics",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Female population, commune (1992), 1992",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1992
+        ],
+        "year_range": [
+          1992,
+          1992
+        ],
+        "n_observations": 329,
+        "magnitude": {
+          "min": 23.0,
+          "max": 172371.0,
+          "median": 7499.0,
+          "orders_of_magnitude": 3.87,
+          "hint": "log"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "Censo 1992 (INE, born-digital volumen)"
+    ],
+    "topic_category": "demography",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1992 (INE, born-digital volumen)",
+    "per_capita_default": "default_raw",
+    "accent": "#0E1A2B",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1992, 329 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
     "id": "extranjeros_total_1952",
     "label": "Foreign-born population (1952)",
     "display_label": "Foreign-born population (1952)",
@@ -2933,6 +3055,136 @@
     },
     "published_by_scale": {
       "province": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
+    "id": "poblacion_hombres_1970",
+    "label": "Male population, commune (1970)",
+    "display_label": "Male population, commune (1970)",
+    "category": "Demographics",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Male population, commune (1970), 1970",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1970
+        ],
+        "year_range": [
+          1970,
+          1970
+        ],
+        "n_observations": 250,
+        "magnitude": {
+          "min": 400.0,
+          "max": 232673.0,
+          "median": 6926.0,
+          "orders_of_magnitude": 2.76,
+          "hint": "linear"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)",
+      "Censo 1970 - Caracteristicas basicas de la poblacion, NUBLE (INE/CIREN)",
+      "Censo 1970 CIREN folleto VALPARAISO (Características Básicas de la Población)",
+      "Censo 1970 CIREN folleto OHIGGINS (Características Básicas de la Población)",
+      "Censo 1970 CIREN folleto CAUTIN (Características Básicas de la Población)"
+    ],
+    "topic_category": "demography",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)",
+    "per_capita_default": "default_raw",
+    "accent": "#0E1A2B",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1970, 250 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section",
+    "breaks": [
+      {
+        "id": "methodological_ine_1970",
+        "year": 1970,
+        "kind": "methodological",
+        "label": "INE replaces SNEC",
+        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
+        "severity": "informational",
+        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
+        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
+      }
+    ]
+  },
+  {
+    "id": "poblacion_hombres_1992",
+    "label": "Male population, commune (1992)",
+    "display_label": "Male population, commune (1992)",
+    "category": "Demographics",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Male population, commune (1992), 1992",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1992
+        ],
+        "year_range": [
+          1992,
+          1992
+        ],
+        "n_observations": 329,
+        "magnitude": {
+          "min": 108.0,
+          "max": 158656.0,
+          "median": 7998.0,
+          "orders_of_magnitude": 3.17,
+          "hint": "log"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "Censo 1992 (INE, born-digital volumen)"
+    ],
+    "topic_category": "demography",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1992 (INE, born-digital volumen)",
+    "per_capita_default": "default_raw",
+    "accent": "#0E1A2B",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1992, 329 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
     },
     "commit_status": "cross_section",
     "published": "cross_section"
@@ -3480,6 +3732,148 @@
     "data_quality_flag": "urban_rural_definition_drift"
   },
   {
+    "id": "poblacion_rural_mujeres_1970",
+    "label": "Rural female population, commune (1970)",
+    "display_label": "Rural female population, commune (1970)",
+    "category": "Demographics",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Rural female population, commune (1970), 1970",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1970
+        ],
+        "year_range": [
+          1970,
+          1970
+        ],
+        "n_observations": 31,
+        "magnitude": {
+          "min": 1272.0,
+          "max": 8840.0,
+          "median": 4088.0,
+          "orders_of_magnitude": 0.84,
+          "hint": "linear"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)",
+      "Censo 1970 CIREN folleto TALCA (Características Básicas de la Población)",
+      "Censo 1970 CIREN folleto CURICO (Características Básicas de la Población)"
+    ],
+    "topic_category": "demography",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)",
+    "per_capita_default": "default_pc",
+    "accent": "#0E1A2B",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1970, 31 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section",
+    "breaks": [
+      {
+        "id": "methodological_ine_1970",
+        "year": 1970,
+        "kind": "methodological",
+        "label": "INE replaces SNEC",
+        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
+        "severity": "informational",
+        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
+        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
+      }
+    ]
+  },
+  {
+    "id": "poblacion_rural_hombres_1970",
+    "label": "Rural male population, commune (1970)",
+    "display_label": "Rural male population, commune (1970)",
+    "category": "Demographics",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Rural male population, commune (1970), 1970",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1970
+        ],
+        "year_range": [
+          1970,
+          1970
+        ],
+        "n_observations": 31,
+        "magnitude": {
+          "min": 1394.0,
+          "max": 10291.0,
+          "median": 4442.0,
+          "orders_of_magnitude": 0.87,
+          "hint": "linear"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)",
+      "Censo 1970 CIREN folleto TALCA (Características Básicas de la Población)",
+      "Censo 1970 CIREN folleto CURICO (Características Básicas de la Población)"
+    ],
+    "topic_category": "demography",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)",
+    "per_capita_default": "default_pc",
+    "accent": "#0E1A2B",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1970, 31 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section",
+    "breaks": [
+      {
+        "id": "methodological_ine_1970",
+        "year": 1970,
+        "kind": "methodological",
+        "label": "INE replaces SNEC",
+        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
+        "severity": "informational",
+        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
+        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
+      }
+    ]
+  },
+  {
     "id": "ruralpop",
     "label": "Rural population",
     "display_label": "Rural population",
@@ -3610,6 +4004,79 @@
     ]
   },
   {
+    "id": "poblacion_rural_1970",
+    "label": "Rural population, commune (1970)",
+    "display_label": "Rural population, commune (1970)",
+    "category": "Demographics",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Rural population, commune (1970), 1970",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1970
+        ],
+        "year_range": [
+          1970,
+          1970
+        ],
+        "n_observations": 222,
+        "magnitude": {
+          "min": 215.0,
+          "max": 40988.0,
+          "median": 6857.0,
+          "orders_of_magnitude": 2.28,
+          "hint": "linear"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)",
+      "Censo 1970 CIREN folleto VALPARAISO (Características Básicas de la Población)",
+      "Censo 1970 CIREN folleto OHIGGINS (Características Básicas de la Población)",
+      "Censo 1970 CIREN folleto CAUTIN (Características Básicas de la Población)",
+      "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)"
+    ],
+    "topic_category": "demography",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)",
+    "per_capita_default": "default_pc",
+    "accent": "#0E1A2B",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1970, 222 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section",
+    "breaks": [
+      {
+        "id": "methodological_ine_1970",
+        "year": 1970,
+        "kind": "methodological",
+        "label": "INE replaces SNEC",
+        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
+        "severity": "informational",
+        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
+        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
+      }
+    ]
+  },
+  {
     "id": "solteros_1952",
     "label": "Single population 15+ (1952)",
     "display_label": "Single population 15+ (1952)",
@@ -3734,6 +4201,148 @@
     "data_quality_flag": "urban_rural_definition_drift"
   },
   {
+    "id": "poblacion_urbana_mujeres_1970",
+    "label": "Urban female population, commune (1970)",
+    "display_label": "Urban female population, commune (1970)",
+    "category": "Demographics",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Urban female population, commune (1970), 1970",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1970
+        ],
+        "year_range": [
+          1970,
+          1970
+        ],
+        "n_observations": 31,
+        "magnitude": {
+          "min": 159.0,
+          "max": 50839.0,
+          "median": 1146.0,
+          "orders_of_magnitude": 2.5,
+          "hint": "linear"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)",
+      "Censo 1970 CIREN folleto TALCA (Características Básicas de la Población)",
+      "Censo 1970 CIREN folleto CURICO (Características Básicas de la Población)"
+    ],
+    "topic_category": "demography",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)",
+    "per_capita_default": "default_pc",
+    "accent": "#0E1A2B",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1970, 31 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section",
+    "breaks": [
+      {
+        "id": "methodological_ine_1970",
+        "year": 1970,
+        "kind": "methodological",
+        "label": "INE replaces SNEC",
+        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
+        "severity": "informational",
+        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
+        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
+      }
+    ]
+  },
+  {
+    "id": "poblacion_urbana_hombres_1970",
+    "label": "Urban male population, commune (1970)",
+    "display_label": "Urban male population, commune (1970)",
+    "category": "Demographics",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Urban male population, commune (1970), 1970",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1970
+        ],
+        "year_range": [
+          1970,
+          1970
+        ],
+        "n_observations": 31,
+        "magnitude": {
+          "min": 144.0,
+          "max": 43543.0,
+          "median": 1019.0,
+          "orders_of_magnitude": 2.48,
+          "hint": "linear"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)",
+      "Censo 1970 CIREN folleto TALCA (Características Básicas de la Población)",
+      "Censo 1970 CIREN folleto CURICO (Características Básicas de la Población)"
+    ],
+    "topic_category": "demography",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)",
+    "per_capita_default": "default_pc",
+    "accent": "#0E1A2B",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1970, 31 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section",
+    "breaks": [
+      {
+        "id": "methodological_ine_1970",
+        "year": 1970,
+        "kind": "methodological",
+        "label": "INE replaces SNEC",
+        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
+        "severity": "informational",
+        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
+        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
+      }
+    ]
+  },
+  {
     "id": "pob_urbana_nat",
     "label": "Urban population",
     "display_label": "Urban population",
@@ -3825,6 +4434,79 @@
       }
     ],
     "source_attribution_status": "no_family_no_source"
+  },
+  {
+    "id": "poblacion_urbana_1970",
+    "label": "Urban population, commune (1970)",
+    "display_label": "Urban population, commune (1970)",
+    "category": "Demographics",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Urban population, commune (1970), 1970",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1970
+        ],
+        "year_range": [
+          1970,
+          1970
+        ],
+        "n_observations": 222,
+        "magnitude": {
+          "min": 165.0,
+          "max": 517513.0,
+          "median": 5328.0,
+          "orders_of_magnitude": 3.5,
+          "hint": "log"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)",
+      "Censo 1970 CIREN folleto VALPARAISO (Características Básicas de la Población)",
+      "Censo 1970 CIREN folleto OHIGGINS (Características Básicas de la Población)",
+      "Censo 1970 CIREN folleto CAUTIN (Características Básicas de la Población)",
+      "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)"
+    ],
+    "topic_category": "demography",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)",
+    "per_capita_default": "default_pc",
+    "accent": "#0E1A2B",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1970, 222 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section",
+    "breaks": [
+      {
+        "id": "methodological_ine_1970",
+        "year": 1970,
+        "kind": "methodological",
+        "label": "INE replaces SNEC",
+        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
+        "severity": "informational",
+        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
+        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
+      }
+    ]
   },
   {
     "id": "pct_poblacion_urbana",
@@ -22872,6 +23554,1032 @@
     "published": "sparse"
   },
   {
+    "id": "viviendas_colectivas_1992",
+    "label": "Collective dwellings (1992)",
+    "display_label": "Collective dwellings (1992)",
+    "category": "Housing",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Collective dwellings (1992), 1992",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1992
+        ],
+        "year_range": [
+          1992,
+          1992
+        ],
+        "n_observations": 335,
+        "magnitude": {
+          "min": 1.0,
+          "max": 523.0,
+          "median": 16.0,
+          "orders_of_magnitude": 2.72,
+          "hint": "linear"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1992, 335 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
+    "id": "viviendas_con_alumbrado_electrico_1992",
+    "label": "Dwellings with electric lighting (1992)",
+    "display_label": "Dwellings with electric lighting (1992)",
+    "category": "Housing",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "dwellings",
+    "curated_subtitle": "Dwellings with electric lighting (1992), 1992, dwellings",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1992
+        ],
+        "year_range": [
+          1992,
+          1992
+        ],
+        "n_observations": 335,
+        "magnitude": {
+          "min": 13.0,
+          "max": 78284.0,
+          "median": 2639.0,
+          "orders_of_magnitude": 3.78,
+          "hint": "log"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "Private occupied dwellings with electric lighting by comuna in 1992, from the 1992 census housing characterization.",
+    "coverage_statement": "1 year(s) 1992, 335 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
+    "id": "viviendas_agua_otra_fuente_1992",
+    "label": "Dwellings with other water source (1992)",
+    "display_label": "Dwellings with other water source (1992)",
+    "category": "Housing",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Dwellings with other water source (1992), 1992",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1992
+        ],
+        "year_range": [
+          1992,
+          1992
+        ],
+        "n_observations": 335,
+        "magnitude": {
+          "min": 6.0,
+          "max": 9428.0,
+          "median": 1029.0,
+          "orders_of_magnitude": 3.2,
+          "hint": "log"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1992, 335 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
+    "id": "viviendas_agua_con_caneria_1992",
+    "label": "Dwellings with piped water (1992)",
+    "display_label": "Dwellings with piped water (1992)",
+    "category": "Housing",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Dwellings with piped water (1992), 1992",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1992
+        ],
+        "year_range": [
+          1992,
+          1992
+        ],
+        "n_observations": 335,
+        "magnitude": {
+          "min": 13.0,
+          "max": 78037.0,
+          "median": 2345.0,
+          "orders_of_magnitude": 3.78,
+          "hint": "log"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1992, 335 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
+    "id": "viviendas_agua_red_publica_1992",
+    "label": "Dwellings with public-network water (1992)",
+    "display_label": "Dwellings with public-network water (1992)",
+    "category": "Housing",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "dwellings",
+    "curated_subtitle": "Dwellings with public-network water (1992), 1992, dwellings",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1992
+        ],
+        "year_range": [
+          1992,
+          1992
+        ],
+        "n_observations": 335,
+        "magnitude": {
+          "min": 5.0,
+          "max": 78201.0,
+          "median": 2065.0,
+          "orders_of_magnitude": 4.19,
+          "hint": "log"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "Private occupied dwellings supplied with water from the public network by comuna in 1992, from the 1992 census housing characterization.",
+    "coverage_statement": "1 year(s) 1992, 335 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
+    "id": "viviendas_con_alcantarillado_1992",
+    "label": "Dwellings with sewerage (1992)",
+    "display_label": "Dwellings with sewerage (1992)",
+    "category": "Housing",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "dwellings",
+    "curated_subtitle": "Dwellings with sewerage (1992), 1992, dwellings",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1992
+        ],
+        "year_range": [
+          1992,
+          1992
+        ],
+        "n_observations": 335,
+        "magnitude": {
+          "min": 13.0,
+          "max": 71633.0,
+          "median": 1121.0,
+          "orders_of_magnitude": 3.74,
+          "hint": "log"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "Private occupied dwellings connected to a sewerage system by comuna in 1992, from the 1992 census housing characterization.",
+    "coverage_statement": "1 year(s) 1992, 335 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
+    "id": "viviendas_sin_alumbrado_electrico_1992",
+    "label": "Dwellings without electric lighting (1992)",
+    "display_label": "Dwellings without electric lighting (1992)",
+    "category": "Housing",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Dwellings without electric lighting (1992), 1992",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1992
+        ],
+        "year_range": [
+          1992,
+          1992
+        ],
+        "n_observations": 335,
+        "magnitude": {
+          "min": 3.0,
+          "max": 8306.0,
+          "median": 647.0,
+          "orders_of_magnitude": 3.44,
+          "hint": "log"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1992, 335 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
+    "id": "viviendas_agua_sin_caneria_1992",
+    "label": "Dwellings without piped water (1992)",
+    "display_label": "Dwellings without piped water (1992)",
+    "category": "Housing",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Dwellings without piped water (1992), 1992",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1992
+        ],
+        "year_range": [
+          1992,
+          1992
+        ],
+        "n_observations": 335,
+        "magnitude": {
+          "min": 8.0,
+          "max": 7450.0,
+          "median": 854.0,
+          "orders_of_magnitude": 2.97,
+          "hint": "linear"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1992, 335 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
+    "id": "viviendas_sin_alcantarillado_1992",
+    "label": "Dwellings without sewerage (1992)",
+    "display_label": "Dwellings without sewerage (1992)",
+    "category": "Housing",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Dwellings without sewerage (1992), 1992",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1992
+        ],
+        "year_range": [
+          1992,
+          1992
+        ],
+        "n_observations": 335,
+        "magnitude": {
+          "min": 25.0,
+          "max": 20090.0,
+          "median": 2201.0,
+          "orders_of_magnitude": 2.91,
+          "hint": "linear"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1992, 335 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
+    "id": "viviendas_tenencia_otra_1992",
+    "label": "Dwellings, other tenure (1992)",
+    "display_label": "Dwellings, other tenure (1992)",
+    "category": "Housing",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Dwellings, other tenure (1992), 1992",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1992
+        ],
+        "year_range": [
+          1992,
+          1992
+        ],
+        "n_observations": 335,
+        "magnitude": {
+          "min": 13.0,
+          "max": 8668.0,
+          "median": 845.0,
+          "orders_of_magnitude": 2.82,
+          "hint": "linear"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1992, 335 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
+    "id": "viviendas_total_1992",
+    "label": "Dwellings, total (1992)",
+    "display_label": "Dwellings, total (1992)",
+    "category": "Housing",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "dwellings",
+    "curated_subtitle": "Dwellings, total (1992), 1992, dwellings",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1992
+        ],
+        "year_range": [
+          1992,
+          1992
+        ],
+        "n_observations": 335,
+        "magnitude": {
+          "min": 21.0,
+          "max": 89780.0,
+          "median": 4244.0,
+          "orders_of_magnitude": 3.63,
+          "hint": "log"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "Total occupied dwellings, private and collective, counted by comuna in the 1992 population and housing census (INE, volume Ciudades, Pueblos y Aldeas).",
+    "coverage_statement": "1 year(s) 1992, 335 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
+    "id": "hogares_1992",
+    "label": "Households (1992)",
+    "display_label": "Households (1992)",
+    "category": "Housing",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "households",
+    "curated_subtitle": "Households (1992), 1992, households",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1992
+        ],
+        "year_range": [
+          1992,
+          1992
+        ],
+        "n_observations": 335,
+        "magnitude": {
+          "min": 13.0,
+          "max": 82335.0,
+          "median": 3741.0,
+          "orders_of_magnitude": 3.8,
+          "hint": "log"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "Number of households (hogares) counted by comuna in the 1992 population and housing census.",
+    "coverage_statement": "1 year(s) 1992, 335 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
+    "id": "viviendas_moviles_otros_1992",
+    "label": "Mobile and other dwellings (1992)",
+    "display_label": "Mobile and other dwellings (1992)",
+    "category": "Housing",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Mobile and other dwellings (1992), 1992",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1992
+        ],
+        "year_range": [
+          1992,
+          1992
+        ],
+        "n_observations": 335,
+        "magnitude": {
+          "min": 1.0,
+          "max": 106.0,
+          "median": 6.0,
+          "orders_of_magnitude": 2.03,
+          "hint": "linear"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1992, 335 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
+    "id": "viviendas_tenencia_propia_1992",
+    "label": "Owner-occupied dwellings (1992)",
+    "display_label": "Owner-occupied dwellings (1992)",
+    "category": "Housing",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "dwellings",
+    "curated_subtitle": "Owner-occupied dwellings (1992), 1992, dwellings",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1992
+        ],
+        "year_range": [
+          1992,
+          1992
+        ],
+        "n_observations": 335,
+        "magnitude": {
+          "min": 9.0,
+          "max": 60262.0,
+          "median": 2383.0,
+          "orders_of_magnitude": 3.83,
+          "hint": "log"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "Owner occupied private dwellings by comuna in 1992 (tenure reported as propia), from the 1992 census housing characterization.",
+    "coverage_statement": "1 year(s) 1992, 335 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
+    "id": "viviendas_permanentes_1992",
+    "label": "Permanent dwellings (1992)",
+    "display_label": "Permanent dwellings (1992)",
+    "category": "Housing",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Permanent dwellings (1992), 1992",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1992
+        ],
+        "year_range": [
+          1992,
+          1992
+        ],
+        "n_observations": 335,
+        "magnitude": {
+          "min": 13.0,
+          "max": 73652.0,
+          "median": 3136.0,
+          "orders_of_magnitude": 3.75,
+          "hint": "log"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1992, 335 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
+    "id": "viviendas_particulares_1992",
+    "label": "Private dwellings (1992)",
+    "display_label": "Private dwellings (1992)",
+    "category": "Housing",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Private dwellings (1992), 1992",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1992
+        ],
+        "year_range": [
+          1992,
+          1992
+        ],
+        "n_observations": 335,
+        "magnitude": {
+          "min": 14.0,
+          "max": 89569.0,
+          "median": 4230.0,
+          "orders_of_magnitude": 3.81,
+          "hint": "log"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1992, 335 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
+    "id": "viviendas_tenencia_arrendada_1992",
+    "label": "Rented dwellings (1992)",
+    "display_label": "Rented dwellings (1992)",
+    "category": "Housing",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Rented dwellings (1992), 1992",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1992
+        ],
+        "year_range": [
+          1992,
+          1992
+        ],
+        "n_observations": 335,
+        "magnitude": {
+          "min": 4.0,
+          "max": 27270.0,
+          "median": 362.0,
+          "orders_of_magnitude": 3.83,
+          "hint": "log"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1992, 335 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
+    "id": "viviendas_semipermanentes_1992",
+    "label": "Semi-permanent dwellings (1992)",
+    "display_label": "Semi-permanent dwellings (1992)",
+    "category": "Housing",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Semi-permanent dwellings (1992), 1992",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1992
+        ],
+        "year_range": [
+          1992,
+          1992
+        ],
+        "n_observations": 335,
+        "magnitude": {
+          "min": 3.0,
+          "max": 6809.0,
+          "median": 401.0,
+          "orders_of_magnitude": 3.36,
+          "hint": "log"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1992, 335 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
     "id": "electricity_production",
     "label": "Electricity production",
     "display_label": "Electricity production",
@@ -29669,7 +31377,7 @@
       "national": true,
       "province": true,
       "department": true,
-      "commune": false
+      "commune": true
     },
     "scales": {
       "national": {
@@ -29905,6 +31613,28 @@
         },
         "rendering_mode": "dots",
         "magnitude_hint": "auto"
+      },
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1935,
+          1970,
+          1992
+        ],
+        "year_range": [
+          1935,
+          1992
+        ],
+        "n_observations": 811,
+        "magnitude": {
+          "min": 131.0,
+          "max": 542432.0,
+          "median": 13616.0,
+          "orders_of_magnitude": 3.62,
+          "hint": "log"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
       }
     },
     "source_documents": [
@@ -29920,16 +31650,18 @@
     "per_capita_default": "user_choice",
     "accent": "#0E1A2B",
     "definition": "Total population of the unit (national, province, or department), the canonical population indicator at each of the three scales. The national series draws from Braun et al. (1998); the subnational series stitch together census enumerations (1865, 1875, 1885, 1895, 1907, 1920, 1930, 1940, 1952, 1960, 1970, 1982, 1992), Mamalakis (1980) intercensal estimates, and Véjares department-level extraction. Per the duplicate-resolution memo, the totalpop, poblacion_total_titled_dept, and poblacion_extended entries fold into this canonical.",
-    "coverage_statement": "152 year(s) 1835-1990, 152 national observations; 17 year(s) 1835-1970, 352 province-level observations; 8 year(s) 1835-1878, 274 department-level observations",
+    "coverage_statement": "152 year(s) 1835-1990, 152 national observations; 17 year(s) 1835-1970, 352 province-level observations; 8 year(s) 1835-1878, 274 department-level observations; 3 year(s) 1935-1992, 811 observations",
     "commit_status_by_scale": {
       "national": "committed",
       "province": "committed",
-      "department": "committed"
+      "department": "committed",
+      "commune": "committed"
     },
     "published_by_scale": {
       "national": "complete",
       "province": "sparse",
-      "department": "sparse"
+      "department": "sparse",
+      "commune": "sparse"
     },
     "commit_status": "committed",
     "published": "complete",
@@ -38274,7 +40006,7 @@
       "national": false,
       "province": false,
       "department": true,
-      "commune": true
+      "commune": false
     },
     "scales": {
       "department": {
@@ -38314,26 +40046,6 @@
         },
         "rendering_mode": "dots",
         "magnitude_hint": "log"
-      },
-      "commune": {
-        "cadence": "irregular",
-        "valid_years": [
-          1935
-        ],
-        "year_range": [
-          1935,
-          1935
-        ],
-        "n_observations": 230,
-        "magnitude": {
-          "min": 395.0,
-          "max": 542432.0,
-          "median": 11278.0,
-          "orders_of_magnitude": 3.14,
-          "hint": "log"
-        },
-        "rendering_mode": "dots",
-        "magnitude_hint": "log"
       }
     },
     "source_documents": [
@@ -38349,14 +40061,12 @@
     "per_capita_default": "user_choice",
     "accent": "#0E1A2B",
     "definition": "Department-level total population, Véjares department-level historical dataset. Per the duplicate-resolution memo, this indicator is scheduled to merge into the canonical total_population at department scale.",
-    "coverage_statement": "19 year(s) 1862-1952, 1127 department-level observations; 1 year(s) 1935, 230 observations",
+    "coverage_statement": "19 year(s) 1862-1952, 1127 department-level observations",
     "commit_status_by_scale": {
-      "department": "committed",
-      "commune": "cross_section"
+      "department": "committed"
     },
     "published_by_scale": {
-      "department": "sparse",
-      "commune": "sparse"
+      "department": "sparse"
     },
     "commit_status": "committed",
     "published": "sparse",

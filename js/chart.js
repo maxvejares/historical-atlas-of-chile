@@ -561,6 +561,26 @@ export function createChart(host) {
       return;
     }
 
+    // Data-quality gate: a `unit_splice_corruption` series carries impossible
+    // values (e.g. a "%" share contaminated with peso-level magnitudes from a
+    // bad merge, or a tonnage series mixing tons and kilograms). These are
+    // already excluded from the catalog (manifest.js / browse_nav.js); this
+    // guards the only remaining path — a direct deep-link URL — so the
+    // contaminated values are never plotted as if they were reliable.
+    if ((meta.data_quality_flag || '').trim() === 'unit_splice_corruption') {
+      titleEl.textContent = meta.display_label || meta.label;
+      if (tierBadgeEl) tierBadgeEl.style.display = 'none';
+      unitsEl.textContent = '';
+      defEl.innerHTML = `<div class="variable-flag is-${dqSeverity('unit_splice_corruption')}">${escapeXML(dqFlagLabel('unit_splice_corruption'))}</div>`
+        + `<div class="variable-def-text">This series is withheld pending unit reconciliation: its recorded values mix incompatible units and are not yet reliable, so the chart is not drawn.</div>`;
+      defEl.style.display = 'block';
+      svgEl.innerHTML = '<text x="50%" y="50%" text-anchor="middle" fill="#94918A" font-family="Source Serif 4" font-style="italic" font-size="16">Withheld pending unit reconciliation.</text>';
+      sourceBlock.textContent = '';
+      sparseEl.style.display = 'none';
+      renderRelatedSeries(meta, state.scale);
+      return;
+    }
+
     const blk = meta.scales[state.scale];
 
     // Per-capita transform (UX2 A.1). The national chart previously ignored the

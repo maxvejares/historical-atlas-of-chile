@@ -282,7 +282,20 @@
 .var-dropdown .var-option[aria-selected="true"] .opt-label::before {
   content: "✓"; margin-right: 6px; color: var(--accent);
 }
-/* Quality badges removed — internal status, not for end users */
+/* User-facing COVERAGE badges (snapshot/sparse/partial) on picker rows and the
+   selected-variable trigger. Internal quality flags stay hidden; these only
+   tell the reader how much data exists before they click. */
+.opt-badge {
+  flex: 0 0 auto;
+  font-size: 10px; line-height: 1.4; letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding: 1px 6px; border-radius: 2px;
+  white-space: nowrap;
+}
+.opt-badge.tier-snapshot { background: #FBF4E4; color: #6A4A14; }
+.opt-badge.tier-sparse   { background: #F3EFE6; color: #5A5341; }
+.opt-badge.tier-partial  { background: #F0EEE8; color: #6E6A60; }
+.var-trigger-badge { margin-left: 8px; }
 
 .cs-aux { margin-left: auto; display: flex; align-items: center; gap: 18px; }
 .cs-aux .toggle { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--ink-muted); cursor: pointer; }

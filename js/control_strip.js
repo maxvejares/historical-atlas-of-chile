@@ -23,6 +23,7 @@ export function createControlStrip(host, { onSelect }) {
         <span class="label">Variable</span>
         <button type="button" class="var-trigger" aria-haspopup="listbox" aria-expanded="false">
           <span class="var-trigger-label"></span>
+          <span class="var-trigger-badge"></span>
         </button>
         <ul class="var-listbox" role="listbox" tabindex="-1" hidden></ul>
       </div>
@@ -40,6 +41,7 @@ export function createControlStrip(host, { onSelect }) {
   const varDropdown = host.querySelector('[data-control="variable"]');
   const varTrigger = varDropdown.querySelector('.var-trigger');
   const varTriggerLabel = varDropdown.querySelector('.var-trigger-label');
+  const varTriggerBadge = varDropdown.querySelector('.var-trigger-badge');
   const varListbox = varDropdown.querySelector('.var-listbox');
   const sliderHost = host.querySelector('[data-control="slider"]');
   const pcToggle = host.querySelector('[data-control="pc"]');
@@ -136,7 +138,23 @@ export function createControlStrip(host, { onSelect }) {
   }
 
   function badgeForOption(v) {
-    // All quality/status badges removed — internal info, not for end users.
+    // User-facing COVERAGE signal (not the internal quality flags, which stay
+    // hidden): tell the reader before they click that an indicator is a
+    // single-year snapshot or has thin coverage AT THE CURRENT SCALE. The
+    // manifest already records this per scale (scales[scale].valid_years and
+    // published_by_scale); we only render what it carries.
+    return coverageBadge(v, state.scale);
+  }
+
+  function coverageBadge(v, scale) {
+    const blk = v.scales && v.scales[scale];
+    if (blk && Array.isArray(blk.valid_years) && blk.valid_years.length === 1) {
+      return { tier: 'snapshot', label: `${blk.valid_years[0]} only` };
+    }
+    const pub = (v.published_by_scale && v.published_by_scale[scale]) || v.published;
+    if (pub === 'cross_section') return { tier: 'snapshot', label: 'single year' };
+    if (pub === 'sparse') return { tier: 'sparse', label: 'sparse' };
+    if (pub === 'partial') return { tier: 'partial', label: 'partial' };
     return null;
   }
 
@@ -157,8 +175,19 @@ export function createControlStrip(host, { onSelect }) {
 
   function renderVarTrigger() {
     const cur = varOptions.find(v => v.id === state.variable);
-    if (!cur) { varTriggerLabel.textContent = ''; return; }
+    if (!cur) { varTriggerLabel.textContent = ''; varTriggerBadge.style.display = 'none'; varTriggerBadge.textContent = ''; return; }
     varTriggerLabel.textContent = cur.display_label || cur.label;
+    // On-selection coverage note (e.g. "1952 only"): the same per-scale signal
+    // the picker rows carry, so the reader sees it after choosing too.
+    const b = coverageBadge(cur, state.scale);
+    if (b) {
+      varTriggerBadge.textContent = b.label;
+      varTriggerBadge.className = `var-trigger-badge opt-badge tier-${b.tier}`;
+      varTriggerBadge.style.display = '';
+    } else {
+      varTriggerBadge.style.display = 'none';
+      varTriggerBadge.textContent = '';
+    }
   }
 
   function setVarOpen(open) {

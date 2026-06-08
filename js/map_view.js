@@ -26,6 +26,23 @@ async function loadNationalAggregates() {
   return _nationalAggregates;
 }
 
+// Does `agg` carry a national aggregate that genuinely belongs to `id`?
+// `not_defined` and empty series never do. A `national_sibling` verdict means
+// the stored series belongs to a DIFFERENT indicator (a population or
+// birth-rate proxy) and must NOT be presented as `id`'s own national trend —
+// EXCEPT the self-sibling case (e.g. total_population, where sibling_id === id)
+// in which the series genuinely is this indicator's national total. Without
+// this guard ~58 unrelated indicators (bank offices, baptisms, deaths,
+// students, wheat 1924, …) all rendered the same urban-population or
+// crude-birth-rate proxy curve captioned as their own.
+function nationalAggIsReal(agg, id) {
+  if (!agg) return false;
+  if (agg.verdict === 'not_defined') return false;
+  if (!agg.series || !Object.keys(agg.series).length) return false;
+  if (agg.verdict === 'national_sibling' && agg.sibling_id !== id) return false;
+  return true;
+}
+
 const SEQ = ['#F5EFE6', '#ECDDD1', '#D9B3AE', '#C2867F', '#A8504F', '#8E2C36', '#6E1822'];
 const NO_DATA_FILL = '#F2EEE5';
 const NO_DATA_STROKE = '#C9C0AC';
@@ -321,8 +338,11 @@ export function createMapView(host) {
     const agg = (_nationalAggregates || {})[meta.id];
     if (!agg) { sparkEl.style.display = 'none'; sparkEl.innerHTML = ''; return; }
     sparkEl.style.display = 'block';
-    if (agg.verdict === 'not_defined' || !agg.series || !Object.keys(agg.series).length) {
-      sparkEl.innerHTML = `<div class="spark-caption">National aggregate not defined for this indicator</div>`;
+    // No genuine national aggregate for this indicator (undefined, or a
+    // national_sibling proxy that belongs to another series): show a caption
+    // rather than plotting an unrelated curve as if it were this indicator.
+    if (!nationalAggIsReal(agg, meta.id)) {
+      sparkEl.innerHTML = `<div class="spark-caption">No national aggregate for this indicator</div>`;
       return;
     }
     // Build (year, value) pairs, applying the per-capita transform if on.
@@ -377,7 +397,10 @@ export function createMapView(host) {
   sparkEl.addEventListener('click', () => {
     if (!lastState.variable) return;
     const agg = (_nationalAggregates || {})[lastState.variable];
-    if (!agg || agg.verdict === 'not_defined') return;
+    // Only navigate when a genuine national series exists for THIS indicator.
+    // For a national_sibling proxy (sibling_id !== id) there is no national
+    // chart for the selected variable, so do not silently jump to the sibling.
+    if (!nationalAggIsReal(agg, lastState.variable)) return;
     const target = agg.sibling_id || lastState.variable;
     window.dispatchEvent(new CustomEvent('atlas:nav', { detail: { scale: 'national', variable: target } }));
   });
