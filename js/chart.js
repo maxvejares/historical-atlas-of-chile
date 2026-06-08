@@ -402,8 +402,11 @@ export function createChart(host) {
         .filter(([_, v]) => v != null && !Number.isNaN(v));
       return { meta, pairs };
     }
-    // dept / province scale: aggregate by year (sum across units, mean for rate-like)
-    const block = scale === 'department' ? window._data.department_data : window._data.province_data;
+    // dept / province / commune scale: aggregate by year (sum across units, mean for rate-like)
+    const block = scale === 'department' ? window._data.department_data
+                : scale === 'commune'    ? window._data.commune_data
+                : window._data.province_data;
+    if (!block) return [];
     const out = [];
     for (const [yStr, units] of Object.entries(block.data || {})) {
       const y = +yStr;
@@ -613,8 +616,9 @@ export function createChart(host) {
     // all 257 indicators (apply_curation_04_definitions.py).
     const defText = (meta.definition || '').trim();
     const dqf = (meta.data_quality_flag || '').trim();
+    const covText = (meta.coverage_statement || '').trim();
     const researchOnly = meta.catalog_visibility === 'research_only';
-    if (defText || dqf || researchOnly) {
+    if (defText || dqf || researchOnly || covText) {
       let html = '';
       if (researchOnly) {
         html += `<div class="variable-flag is-soft research-note">Research-construct indicator — derived from the Chilean landholding dataset; included for transparency.</div>`;
@@ -624,6 +628,11 @@ export function createChart(host) {
       }
       if (defText) {
         html += `<div class="variable-def-text">${escapeXML(defText)}</div>`;
+      }
+      // Explicit coverage statement (curation overlay 04): tells the reader how
+      // complete the series is (units covered, year span) before they use it.
+      if (covText) {
+        html += `<div class="variable-def-text variable-coverage-text">Coverage: ${escapeXML(covText)}</div>`;
       }
       defEl.innerHTML = html;
       defEl.style.display = 'block';

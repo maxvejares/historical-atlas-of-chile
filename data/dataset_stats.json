@@ -1,14 +1,14 @@
 {
-  "n_years_covered": 181,
-  "year_span": 181,
+  "n_years_covered": 182,
+  "year_span": 183,
   "year_range": [
     1810,
-    1990
+    1992
   ],
   "n_census_years": 16,
   "n_categories": 10,
-  "n_variables_total": 257,
-  "n_variables_department": 70,
-  "n_variables_province": 53,
+  "n_variables_total": 302,
+  "n_variables_department": 75,
+  "n_variables_province": 77,
   "n_variables_national": 137
 }

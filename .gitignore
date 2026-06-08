@@ -7,3 +7,20 @@ screenshots/
 # window_data.js is intentionally tracked (it's the live data block).
 data/departments_*.js
 data/provinces_*.js
+# Full-resolution build residue the app NEVER fetches (it loads the simplified
+# departments_/provinces_/communes_<year>.geojson). These are 90-102 MB each and
+# exceed GitHub's 100 MB file limit - must never be committed.
+data/chile_departments_*.geojson
+data/chile_provincias_*.geojson
+data/*_pre_crosswalk.geojson
+# Working copy of the canonical master; the public download is chile_historical_database_v1.csv.
+data/chile_master_data.csv
+# Internal audit notes, not part of the public site.
+USER_UTILITY_AUDIT_*.md
+# Curation backup snapshots (intermediate state), keep the tracked config only.
+curation/*.pre_*
+curation/*~
+# Curation is build-time source config, not served at runtime. Keep the machine-
+# readable build inputs (.json/.csv the scripts read); exclude internal prose docs
+# (apply logs, UX diagnostics, status handoffs, prompts) from the public repo.
+curation/*.md

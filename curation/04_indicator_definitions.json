@@ -1,0 +1,847 @@
+{
+  "_meta": {
+    "schema_version": "1.0",
+    "date": "2026-05-23",
+    "purpose": "Per-indicator curated subtitle and one-paragraph definition for the Historical Atlas of Chile, supplying the gaps identified in the user-utility audit (162 of 257 indicators undefined, 257 of 257 with empty curated_subtitle). Definitions follow the style of the 95 existing v1-step2 entries: a one- to three-sentence paragraph that states what the indicator measures, its sources, and any caveat a non-specialist needs to read the number correctly.",
+    "fields": {
+      "subtitle": "10-15 word chip displayed under the indicator title. Tells the user what they are looking at without jargon.",
+      "definition": "One paragraph (40-100 words) defining the indicator, its source basis, and caveats. Written for a non-specialist.",
+      "units_note": "Optional. Clarification of the unit when the unit string alone is insufficient (e.g., peso vintage, conversion convention).",
+      "data_quality_flag": "Optional. Surfaces known data-integrity issues — 'unit_splice_corruption' marks the 21 ratio-typed series whose values exceed their natural ceiling; 'single_cross_section' marks year-stamped snapshots; 'currency_mixed_vintage' marks nominal-peso series crossing the 1925/1960/1975 reforms; 'cross_source_stitch' marks series compiled from multiple sources without segment attribution.",
+      "preserve_existing_definition": "Boolean. True for the 95 indicators that already have definitions in the manifest; the build pipeline should keep the existing definition and only add the subtitle and any new caveat flags."
+    },
+    "consumers": [
+      "scripts/build_variable_manifest.py merges these into the per-indicator manifest entries",
+      "js/chart.js reads subtitle for the chart header chip",
+      "js/control_strip.js reads definition for the indicator detail panel",
+      "js/citation.js reads data_quality_flag to attach caveats to citations"
+    ]
+  },
+  "indicators": {
+    "_AGRICULTURE": "Braun et al. 1998 national crop and livestock production series, 1860-1990 (most), 1860-1955 (wine). Compilation; primary sources are Anuarios and Sinopsis through 1929, INE thereafter.",
+    "barley_production": {
+      "subtitle": "National barley production, 1860–1990, metric tons",
+      "definition": "Annual national production of barley in metric tons, compiled by Braun et al. (1998) from the Anuario Estadístico and Sinopsis series through 1929 and from the Direccion General de Estadistica (and INE after 1970) thereafter. Pre-1880 figures are partial and reflect the agricultural reporting capacity of the early Anuarios."
+    },
+    "bean_production": {
+      "subtitle": "National bean production, 1860–1990, metric tons",
+      "definition": "Annual national production of dry beans in metric tons, Braun et al. (1998) compilation. Beans were a staple of the Chilean diet and a significant 19th-century export to neighboring Andean economies; the series reflects both subsistence and export production."
+    },
+    "cattle_output": {
+      "subtitle": "Cattle slaughtered nationally, 1860–1940, head",
+      "definition": "Annual head of cattle slaughtered nationally for meat, Braun et al. (1998) compilation. The series ends in 1940 because later cattle statistics changed methodology and unit (carcass weight rather than head); the post-1940 figures live under a different indicator family.",
+      "data_quality_flag": "series_endpoint_methodological"
+    },
+    "chickpea_production": {
+      "subtitle": "National chickpea production, 1860–1990, metric tons",
+      "definition": "Annual national chickpea production in metric tons, Braun et al. (1998) compilation. Chickpeas were a minor but persistent rotation crop in the central valley; coverage is intermittent before 1900."
+    },
+    "maize_production": {
+      "subtitle": "National maize production, 1860–1990, metric tons",
+      "definition": "Annual national maize production in metric tons, Braun et al. (1998) compilation. Maize was a central component of Chilean agriculture from colonial origins; the modern series reflects both feed and food production."
+    },
+    "pea_production": {
+      "subtitle": "National pea production, 1860–1990, metric tons",
+      "definition": "Annual national production of dry peas in metric tons, Braun et al. (1998) compilation. A minor crop relative to wheat and beans; coverage is partial in early decades."
+    },
+    "potato_production": {
+      "subtitle": "National potato production, 1860–1990, metric tons",
+      "definition": "Annual national potato production in metric tons, Braun et al. (1998) compilation. Potatoes expanded as a southern Chilean crop after the 1850s German immigration to Valdivia and Llanquihue; the series captures that geographic expansion."
+    },
+    "wheat_production": {
+      "subtitle": "National wheat production, 1860–1990, metric tons",
+      "definition": "Annual national wheat production in metric tons, Braun et al. (1998) compilation. Chile was a major wheat exporter to California, Australia, and Britain during the 1850s-1880s 'cereal cycle'; the series tracks both that export boom and the later transition to import dependence.",
+      "units_note": "Pre-1929 figures may be in quintales métricos (0.1 MT) in source documents; Braun reports them in metric tons. Verify against the source if magnitude appears anomalous."
+    },
+    "wine_production": {
+      "subtitle": "National wine production, 1860–1955, hectoliters",
+      "definition": "Annual national wine production in hectoliters, Braun et al. (1998) compilation. The series ends in 1955 because later production figures are reported in liters and under different reporting conventions; the post-1955 figures are not in this series.",
+      "data_quality_flag": "series_endpoint_methodological"
+    },
+    "_DEMOGRAPHICS": "Population indicators at national, province, and department scale. Includes the duplicate population cluster resolved in deliverable 01.",
+    "poblacion_extended": {
+      "subtitle": "Province population, extended panel 1843–1935 (to be retired)",
+      "definition": "Province-level total population from a Mamalakis (1980) Vol 2 compilation extending the census panel with intercensal interpolations. Per the concept-duplication resolution (deliverable 01, Section 1.1), this indicator is scheduled for retirement: its cells fold into the canonical total_population at province scale, with the interpolation years carrying explicit attribution.",
+      "data_quality_flag": "scheduled_for_retirement"
+    },
+    "densidad_hab_por_km2": {
+      "subtitle": "Population density at province scale, 1900–1930, persons per km²",
+      "definition": "Province-level population density, persons per square kilometer, computed as the ratio of total province population to the province's territorial extent. Coverage is sparse (three observation years) and the territorial denominator predates the 1928 administrative reorganization for two of the three years.",
+      "units_note": "Unit field currently blank; should read 'persons per km²'.",
+      "data_quality_flag": "sparse_observations"
+    },
+    "superficie_km2": {
+      "subtitle": "Province area, 1854–1935, km²",
+      "definition": "Province territorial extent in square kilometers as reported by the statistical agency, Anuario Estadístico de Chile 1935 (Table 8). The five observation years span the 1883 (War of the Pacific annexations) and 1928 (regionalization) boundary changes; values for the same province across these breaks are not directly comparable.",
+      "units_note": "km²",
+      "data_quality_flag": "currency_mixed_vintage"
+    },
+    "poblacion_rural": {
+      "subtitle": "Rural population at province scale, 1895–1920, persons",
+      "definition": "Province-level rural population (population residing outside designated urban centers) recorded in the Sinopsis Estadística de Chile 1924–1927. The urban-rural classification follows the contemporary statistical convention, which varied across census years; comparison across years is approximate.",
+      "units_note": "Unit field currently blank; should read 'persons'.",
+      "data_quality_flag": "urban_rural_definition_drift"
+    },
+    "ruralpop": {
+      "subtitle": "Rural population at department scale, 1865–1920, persons",
+      "definition": "Department-level rural population, Véjares department-level historical dataset. The series mixes units across publication periods (ISSUE-009 in the project's known issues) and is not internally consistent; before citing a specific cell, verify the unit against the source attribution at that year.",
+      "data_quality_flag": "unit_mixed_across_period"
+    },
+    "poblacion_urbana": {
+      "subtitle": "Urban population at province scale, 1895–1920, persons",
+      "definition": "Province-level urban population (population residing in designated urban centers) recorded in the Sinopsis Estadística de Chile 1924–1927. As with the rural series, the urban classification varied across census years.",
+      "units_note": "Unit field currently blank; should read 'persons'.",
+      "data_quality_flag": "urban_rural_definition_drift"
+    },
+    "pct_poblacion_urbana": {
+      "subtitle": "Share of province population in urban centers, 1895–1920, percent",
+      "definition": "Urban population as a percentage of total province population, computed at the source from contemporary urban-rural classifications. The series shows the early phase of Chile's urban transition, which accelerated sharply after 1930."
+    },
+    "_ECONOMY_FISCAL_BRAUN": "Braun et al. 1998 fiscal aggregates. The audit identifies multiple indicators in this block as carrying unit-splice corruption (Finding 2.1). Definitions for those flag the data integrity issue explicitly.",
+    "defense_share_of_expenditure": {
+      "subtitle": "Defense as share of fiscal expenditure, 1833–1990, percent",
+      "definition": "Military and defense outlays as a percentage of total central-government fiscal expenditure, Braun et al. (1998) compilation. The published series carries unit-splice corruption: maximum observed value is 99,952 against a natural ceiling of 100, indicating raw expenditure values were spliced into the share series across at least part of the period. Do not cite this series until the upstream reconciliation lands; the underlying primary sources (Memoria de Hacienda, Mamalakis 1980) remain usable.",
+      "data_quality_flag": "unit_splice_corruption"
+    },
+    "defense_spending_share_of_gdp": {
+      "subtitle": "Defense spending as share of GDP, 1811–1990, percent",
+      "definition": "Military and defense outlays as a percentage of GDP, Braun et al. (1998) compilation. The published series carries unit-splice corruption (max 873,202; natural ceiling 100). Same caveat as defense_share_of_expenditure: do not cite until reconciled upstream.",
+      "data_quality_flag": "unit_splice_corruption"
+    },
+    "direct_taxes_share_of_revenue": {
+      "subtitle": "Direct taxes as share of fiscal revenue, 1833–1990, percent",
+      "definition": "Revenue from direct taxes (property, income, profit, capital gains) as a percentage of total fiscal revenue, Braun et al. (1998) compilation. The published series carries unit-splice corruption (max 4,124,934). Do not cite until reconciled upstream.",
+      "data_quality_flag": "unit_splice_corruption"
+    },
+    "education_share_of_expenditure": {
+      "subtitle": "Education as share of fiscal expenditure, 1833–1990, percent",
+      "definition": "Education outlays as a percentage of total central-government fiscal expenditure, Braun et al. (1998) compilation. This is the executed-spending series; the parallel budget-law series (education_share_of_budget_law / budget_education_share) reports approved rather than executed shares. Definitions of the two should be read together when both appear in research.",
+      "data_quality_flag": "potentially_unit_splice"
+    },
+    "external_debt_share_of_gdp": {
+      "subtitle": "External public debt as share of GDP, 1822–1990, percent",
+      "definition": "Outstanding external public debt as a percentage of GDP, Braun et al. (1998) compilation. The Chilean sovereign debt history includes major restructurings (1830s default, 1842 settlement, 1879 War of the Pacific suspension, 1932 default, 1980s rescheduling) that produce step-changes in the series; these are real, not data artifacts.",
+      "data_quality_flag": "potentially_unit_splice"
+    },
+    "external_public_debt": {
+      "subtitle": "External public debt outstanding, 1822–1990, millions of pesos",
+      "definition": "Outstanding stock of external public debt in millions of pesos, Braun et al. (1998) compilation. The nominal-peso unit makes this series uninterpretable across the 1925, 1960, and 1975 currency reforms without deflation; the break-annotation register flags these.",
+      "data_quality_flag": "currency_mixed_vintage"
+    },
+    "external_taxes_share_of_revenue": {
+      "subtitle": "Customs revenue as share of fiscal revenue, 1833–1990, percent",
+      "definition": "Revenue from customs duties and other taxes on foreign trade as a percentage of total fiscal revenue, Braun et al. (1998) compilation. The published series carries unit-splice corruption (max 2,034,308). Do not cite until reconciled upstream. The underlying fact — that Chilean public finance was dominated by customs revenue through the saltpeter era — is documented in Mamalakis (1976) and Braun directly and remains historically true.",
+      "data_quality_flag": "unit_splice_corruption"
+    },
+    "fiscal_revenue_millions": {
+      "subtitle": "Total fiscal revenue, 1810–1990, millions of pesos",
+      "definition": "Total central-government fiscal revenue in millions of pesos, Braun et al. (1998) compilation. The nominal-peso unit crosses the 1925 (Central Bank founding), 1960 (escudo), and 1975 (new peso) currency reforms without rescaling at the cell level; the break-annotation register documents these. For deflated comparison, see fiscal_revenue_pesos at a narrower window or use the GDP-share series.",
+      "data_quality_flag": "currency_mixed_vintage"
+    },
+    "fiscal_surplus_of_gdp": {
+      "subtitle": "Fiscal surplus as share of GDP, 1810–1990, percent",
+      "definition": "Central-government fiscal surplus (revenue minus expenditure) as a percentage of GDP, Braun et al. (1998) compilation. The Chilean fiscal record includes substantial deficits during the wars of independence (1810–1818), the War of the Pacific (1879–1884), the 1930s Great Depression, and the 1971–1973 Unidad Popular years; the series captures all of these.",
+      "data_quality_flag": "potentially_unit_splice"
+    },
+    "fiscal_expenditure_millions": {
+      "subtitle": "Total fiscal expenditure, 1810–1990, millions of pesos",
+      "definition": "Total central-government fiscal expenditure in millions of pesos, Braun et al. (1998) compilation. The nominal-peso caveats from fiscal_revenue_millions apply.",
+      "data_quality_flag": "currency_mixed_vintage"
+    },
+    "fiscal_surplus_real_pesos": {
+      "subtitle": "Fiscal surplus, 1810–1990, real pesos",
+      "definition": "Central-government fiscal surplus expressed in real (deflated) pesos, Braun et al. (1998) compilation. The deflator and base year for the 'real pesos' construction are not standardized across the full 1810–1990 window; the convention shifts across publication periods, and the 1973–1976 inflation-index dispute documented in the break-annotation register affects the deflator for that window.",
+      "data_quality_flag": "deflator_convention_drift"
+    },
+    "expenditure_of_gdp": {
+      "subtitle": "Fiscal expenditure as share of GDP, 1810–1990, percent",
+      "definition": "Central-government fiscal expenditure as a percentage of GDP, Braun et al. (1998) compilation. The published series carries unit-splice corruption (max 3,771; natural ceiling 100). Do not cite until reconciled upstream.",
+      "data_quality_flag": "unit_splice_corruption"
+    },
+    "health_share_of_expenditure": {
+      "subtitle": "Health as share of fiscal expenditure, 1833–1990, percent",
+      "definition": "Health outlays as a percentage of total central-government fiscal expenditure, Braun et al. (1998) compilation. The published series carries unit-splice corruption (max 947,706). Do not cite until reconciled upstream.",
+      "data_quality_flag": "unit_splice_corruption"
+    },
+    "indirect_taxes_share_of_revenue": {
+      "subtitle": "Indirect taxes as share of fiscal revenue, 1833–1990, percent",
+      "definition": "Revenue from indirect taxes (sales, VAT after 1975, excise, stamps) as a percentage of total fiscal revenue, Braun et al. (1998) compilation. Indirect taxation became dominant after the 1975 introduction of VAT (IVA); the series shows the transition.",
+      "data_quality_flag": "potentially_unit_splice"
+    },
+    "internal_public_debt": {
+      "subtitle": "Internal public debt outstanding, 1840–1897, millions of pesos",
+      "definition": "Outstanding stock of domestic public debt in millions of pesos during the 19th century, source attribution incomplete in the manifest. The series ends in 1897; the post-1897 internal debt is captured under other indicators or remains to be added.",
+      "data_quality_flag": "source_attribution_missing"
+    },
+    "internal_taxes_share_of_revenue": {
+      "subtitle": "Internal taxes as share of fiscal revenue, 1833–1990, percent",
+      "definition": "Revenue from internal taxes (all non-customs taxation) as a percentage of total fiscal revenue, Braun et al. (1998) compilation. The complement to external_taxes_share_of_revenue; together the two should sum to approximately 100 percent of tax revenue. Inherits the same unit-splice concerns.",
+      "data_quality_flag": "potentially_unit_splice"
+    },
+    "mining_taxes_share_of_revenue": {
+      "subtitle": "Mining taxes as share of fiscal revenue, 1833–1990, percent",
+      "definition": "Revenue from mining taxes (export duties on nitrate, copper royalties, the post-1971 copper nationalization remittances) as a percentage of total fiscal revenue, Braun et al. (1998) compilation. The series tracks Chile's resource-revenue dependence through the saltpeter era (1880s–1920s) and the post-1971 copper era.",
+      "data_quality_flag": "potentially_unit_splice"
+    },
+    "muni_subvencion_gobierno": {
+      "subtitle": "Central-government subsidy to municipalities, 1875–1895, pesos",
+      "definition": "Annual subsidy from the central government to a department's municipal treasury, Sinopsis Estadística de Chile 1875–1895 municipal finance section. The subsidy was a substantial fraction of municipal budgets in poorer departments and a much smaller fraction in revenue-rich departments; the series documents the geography of central-government redistribution.",
+      "units_note": "Unit field currently blank; should read 'pesos' (1851 decimal peso, pre-1925 reform)."
+    },
+    "muni_entradas_locales": {
+      "subtitle": "Municipal locally-raised revenue, 1875–1907, pesos",
+      "definition": "Municipal revenue raised locally (excluding central-government subsidy), department scale, Sinopsis Estadística de Chile 1875/1895/1907 municipal finance sections. Local revenue came from property taxes (contribuciones), license fees (patentes), and miscellaneous service fees; the composition varied by department."
+    },
+    "muni_policia_ornato": {
+      "subtitle": "Municipal expenditure on policía de ornato, 1875–1895, pesos",
+      "definition": "Municipal outlays on policía de ornato — the 19th-century Chilean term for municipal services covering public works, lighting, cleanliness, and building regulation — at department scale. From the Sinopsis Estadística municipal finance sections. The complement to muni_policia_seguridad (public order police).",
+      "units_note": "Unit field currently blank; should read 'pesos'."
+    },
+    "muni_policia_seguridad": {
+      "subtitle": "Municipal expenditure on policía de seguridad, 1875–1895, pesos",
+      "definition": "Municipal outlays on policía de seguridad — the 19th-century Chilean term for the municipal public-order police force — at department scale. From the Sinopsis Estadística municipal finance sections. The Chilean state developed a separate gendarmerie (Cuerpo de Gendarmes, later Carabineros from 1927) that gradually absorbed municipal seguridad functions; this series captures the pre-Carabineros municipal era.",
+      "units_note": "Unit field currently blank; should read 'pesos'."
+    },
+    "muni_total_revenue": {
+      "subtitle": "Municipal total revenue, 1875–1907, pesos",
+      "definition": "Total municipal revenue (locally raised plus central-government subsidy), department scale, Sinopsis Estadística de Chile 1875/1895/1907 municipal finance sections. The denominator for the muni_subsidy_share and muni_police_share indicators."
+    },
+    "other_taxes_share_of_revenue": {
+      "subtitle": "Other taxes as share of fiscal revenue, 1833–1990, percent",
+      "definition": "Revenue from miscellaneous taxes not captured under direct, indirect, customs, or mining tax categories, as a percentage of total fiscal revenue. Braun et al. (1998) compilation.",
+      "data_quality_flag": "potentially_unit_splice"
+    },
+    "peso_exchange_rate": {
+      "subtitle": "Peso–US dollar exchange rate, 1840–1897, pesos per USD",
+      "definition": "Nominal exchange rate of the Chilean peso against the US dollar, 1840–1897. The series captures the late-19th-century peso depreciation that culminated in Chile's 1898 abandonment of convertibility; source attribution is incomplete in the manifest and should be reconstructed from Mamalakis or the Memoria de Hacienda series.",
+      "data_quality_flag": "source_attribution_missing"
+    },
+    "muni_police_share": {
+      "subtitle": "Police share of municipal revenue, 1875–1895, percent",
+      "definition": "Combined municipal police expenditure (policía de ornato plus policía de seguridad) as a percentage of total municipal revenue, department scale. A useful summary of municipal state-capacity allocation in the late 19th century."
+    },
+    "pct_pgb_provincial": {
+      "subtitle": "Province share of national GDP, 1966–1970, percent",
+      "definition": "Each province's share of national GDP, 1966–1970, source attribution incomplete in the manifest. Pre-CONARA-regionalization provinces; the 1974 regional reorganization (see break-annotation register) renders this geography historical.",
+      "data_quality_flag": "source_attribution_missing"
+    },
+    "totexp": {
+      "subtitle": "Provincial total expenditure, 1845–1890, pesos",
+      "definition": "Total provincial-government expenditure in pesos, 1845–1890, from the Véjares department-level historical dataset. Captures the 19th-century provincial fiscal apparatus that the post-1925 centralization gradually absorbed."
+    },
+    "revenue_of_gdp": {
+      "subtitle": "Fiscal revenue as share of GDP, 1810–1990, percent",
+      "definition": "Total central-government fiscal revenue as a percentage of GDP, Braun et al. (1998) compilation. The published series carries severe unit-splice corruption: 180 of 181 non-null cells exceed 1,000 (against a natural ceiling of 100); the maximum observed value is 3,744,236 at 1972. Only the 1810 cell (3.76) is plausible. Do not cite this series until the upstream reconciliation lands.",
+      "data_quality_flag": "unit_splice_corruption"
+    },
+    "muni_subsidy_share": {
+      "subtitle": "Central subsidy share of municipal revenue, 1875–1895, percent",
+      "definition": "Central-government subsidy as a percentage of total municipal revenue at department scale, Sinopsis Estadística 1875–1895 municipal finance sections. Measures the dependence of municipal finance on central-government transfers; higher in frontier and resource-poor departments, lower in Santiago and Valparaíso."
+    },
+    "_ECONOMY_GDP_BRAUN": "Real-GDP series from Braun et al. 1998 with sectoral decomposition. All in constant 1996 pesos.",
+    "agricultural_gdp": {
+      "subtitle": "Agricultural sector GDP, 1860–1990, constant 1996 pesos",
+      "definition": "Real GDP of the agricultural sector (crops, livestock, forestry, fishing) in constant 1996 pesos, Braun et al. (1998) compilation. The agricultural share of Chilean GDP fell from roughly 30 percent in 1860 to under 10 percent by 1990; this series shows the absolute level behind that compositional shift."
+    },
+    "agriculture_share_of_gdp": {
+      "subtitle": "Agriculture as share of GDP, 1860–1990, percent",
+      "definition": "Agricultural sector value-added as a percentage of GDP, Braun et al. (1998) compilation. The complement to manufacturing_share_of_gdp, mining_share_of_gdp, construction_share_of_gdp, and services_share_of_gdp; the five together approximately sum to 100 percent in any given year."
+    },
+    "construction_gdp": {
+      "subtitle": "Construction sector GDP, 1860–1990, constant 1996 pesos",
+      "definition": "Real GDP of the construction sector in constant 1996 pesos, Braun et al. (1998) compilation. The series tracks the major Chilean public works booms (the 1880s nitrate-revenue construction, the 1930s import-substitution infrastructure, the 1960s Frei-era housing, the 1990s post-transition expansion)."
+    },
+    "construction_share_of_gdp": {
+      "subtitle": "Construction as share of GDP, 1860–1990, percent",
+      "definition": "Construction sector value-added as a percentage of GDP, Braun et al. (1998) compilation."
+    },
+    "manufacturing_gdp": {
+      "subtitle": "Manufacturing sector GDP, 1860–1990, constant 1996 pesos",
+      "definition": "Real GDP of the manufacturing sector in constant 1996 pesos, Braun et al. (1998) compilation. The Chilean manufacturing sector grew under import-substitution industrialization (1930s–1973), contracted under the 1973–1983 liberalization, and stabilized at a lower share thereafter."
+    },
+    "manufacturing_share_of_gdp": {
+      "subtitle": "Manufacturing as share of GDP, 1860–1990, percent",
+      "definition": "Manufacturing sector value-added as a percentage of GDP, Braun et al. (1998) compilation."
+    },
+    "mining_gdp": {
+      "subtitle": "Mining sector GDP, 1860–1990, constant 1996 pesos",
+      "definition": "Real GDP of the mining sector in constant 1996 pesos, Braun et al. (1998) compilation. The series captures the nitrate era (peaking ca. 1929 at over 30 percent of GDP), the post-1929 collapse, the rise of copper, the 1971 nationalization, and the post-1990 expansion."
+    },
+    "mining_share_of_gdp": {
+      "subtitle": "Mining as share of GDP, 1860–1990, percent",
+      "definition": "Mining sector value-added as a percentage of GDP, Braun et al. (1998) compilation."
+    },
+    "real_gdp": {
+      "subtitle": "Real GDP, 1810–1990, constant 1996 pesos",
+      "definition": "Chile's real gross domestic product expressed in constant 1996 pesos, Braun et al. (1998) compilation. The series is the canonical reconstruction of Chilean long-run output for the 1810–1990 period; pre-1860 figures are extrapolated from population and partial output data, and pre-1880 figures should be read as estimates rather than measurements."
+    },
+    "real_gdp_growth_rate": {
+      "subtitle": "Real GDP growth rate, 1810–1990, percent (year-over-year)",
+      "definition": "Year-over-year growth rate of real GDP, Braun et al. (1998) compilation. The 1810 cell carries a single-cell corruption (max value 139,277 percent vs the plausible series median around 3 percent) that the audit flags for upstream quarantine; the remaining series is interpretable.",
+      "_corrected": "Braun TABLA 7.5 re-extraction 2026-05-23 (was: single_cell_corruption)"
+    },
+    "real_gdp_per_capita": {
+      "subtitle": "Real GDP per capita, 1810–1990, constant 1996 pesos per capita",
+      "definition": "Real GDP divided by total population, Braun et al. (1998) compilation. The most-cited indicator of Chilean long-run living standards. Chile's per-capita GDP fell behind Argentina's in the early 20th century, lost ground further during the 1970s, and converged again after 1985."
+    },
+    "real_gdp_per_capita_growth_rate": {
+      "subtitle": "Real GDP per capita growth rate, 1811–1990, percent (YoY)",
+      "definition": "Year-over-year growth rate of real GDP per capita, Braun et al. (1998) compilation."
+    },
+    "real_gdp_per_worker": {
+      "subtitle": "Real GDP per worker, 1811–1990, constant 1996 pesos per worker",
+      "definition": "Real GDP divided by total labor force, Braun et al. (1998) compilation. A productivity measure complementary to per-capita GDP; the divergence between the two reflects changes in the labor-force-to-population ratio (driven by demography, female participation, and age structure)."
+    },
+    "services_gdp": {
+      "subtitle": "Services sector GDP, 1860–1990, constant 1996 pesos",
+      "definition": "Real GDP of the services sector in constant 1996 pesos, Braun et al. (1998) compilation. The services sector includes commerce, transport, communications, finance, government, and personal services; the residual after the four goods-producing sectors."
+    },
+    "services_share_of_gdp": {
+      "subtitle": "Services as share of GDP, 1860–1990, percent",
+      "definition": "Services sector value-added as a percentage of GDP, Braun et al. (1998) compilation. The services share rose from roughly 35 percent in 1860 to roughly 55 percent by 1990, tracking Chile's structural transformation from a primary-export to a services-anchored economy."
+    },
+    "_ECONOMY_TRADE_BRAUN": "Trade series from Braun et al. 1998. Three normalizations per flow (level in 1995 pesos, share of GDP, per capita in current dollars).",
+    "agricultural_exports": {
+      "subtitle": "Agricultural exports value, 1844–1990",
+      "definition": "Value of agricultural exports (crops, livestock products, wood, fish), Braun et al. (1998) compilation. Chile's agricultural exports peaked in absolute and relative terms during the 1850s–1880s wheat-export cycle and then declined relative to mining exports.",
+      "units_note": "Unit field currently blank; verify whether series is in millions of 1995 pesos, current dollars, or millions of pesos current.",
+      "data_quality_flag": "unit_unclear"
+    },
+    "agricultural_exports_share": {
+      "subtitle": "Agricultural share of total exports, 1844–1990, percent",
+      "definition": "Agricultural exports as a percentage of total exports by value, Braun et al. (1998) compilation."
+    },
+    "capital_goods_imports": {
+      "subtitle": "Capital goods imports value, 1844–1937",
+      "definition": "Value of capital-goods imports (machinery, transportation equipment, construction materials), Braun et al. (1998) compilation. The series ends in 1937; later capital-goods imports are tracked under different indicators that follow the 1929 customs-classification revision.",
+      "units_note": "millions of US dollars",
+      "data_quality_flag": "unit_unclear"
+    },
+    "consumer_goods_imports": {
+      "subtitle": "Consumer goods imports value, 1844–1937",
+      "definition": "Value of consumer-goods imports, Braun et al. (1998) compilation. The series ends in 1937; same caveat as capital_goods_imports.",
+      "units_note": "millions of US dollars",
+      "data_quality_flag": "unit_unclear"
+    },
+    "exports_of_gdp": {
+      "subtitle": "Exports as share of GDP, 1810–1990, percent",
+      "definition": "Total exports as a percentage of GDP, Braun et al. (1998) compilation. The series likely carries the same unit-splice family as the other ratio series in this block; verify before citing.",
+      "data_quality_flag": "potentially_unit_splice"
+    },
+    "exports_millions_1995_pesos": {
+      "subtitle": "Total exports, 1810–1990, millions of 1995 pesos",
+      "definition": "Total exports valued in millions of 1995 pesos, Braun et al. (1998) compilation. The constant-1995-peso deflator handles the currency reforms; this is the primary long-run measure of Chilean export performance."
+    },
+    "exports_in_current_dollars": {
+      "subtitle": "Total exports, 1810–1990, current US dollars",
+      "definition": "Total exports valued in current US dollars, Braun et al. (1998) compilation. Useful for cross-country comparison but not for real growth, which requires deflation."
+    },
+    "exports_per_capita_current_dollars": {
+      "subtitle": "Exports per capita, 1810–1990, current US dollars",
+      "definition": "Total exports in current US dollars divided by total population, Braun et al. (1998) compilation."
+    },
+    "import_capacity": {
+      "subtitle": "Import capacity of exports, 1810–1990, percent",
+      "definition": "Real value of exports adjusted by terms of trade, expressed as an index, Braun et al. (1998) compilation. The series measures the volume of imports Chile could buy with its export earnings, which captures terms-of-trade effects that simple export-volume series miss.",
+      "data_quality_flag": "potentially_unit_splice"
+    },
+    "imports_of_gdp": {
+      "subtitle": "Imports as share of GDP, 1810–1990, percent",
+      "definition": "Total imports as a percentage of GDP, Braun et al. (1998) compilation.",
+      "data_quality_flag": "potentially_unit_splice"
+    },
+    "imports_millions_1995_pesos": {
+      "subtitle": "Total imports, 1810–1990, millions of 1995 pesos",
+      "definition": "Total imports valued in millions of 1995 pesos, Braun et al. (1998) compilation."
+    },
+    "imports_in_current_dollars": {
+      "subtitle": "Total imports, 1810–1990, current US dollars",
+      "definition": "Total imports valued in current US dollars, Braun et al. (1998) compilation."
+    },
+    "imports_per_capita_current_dollars": {
+      "subtitle": "Imports per capita, 1810–1990, current US dollars",
+      "definition": "Total imports in current US dollars divided by total population, Braun et al. (1998) compilation."
+    },
+    "intermediate_goods_imports": {
+      "subtitle": "Intermediate goods imports value, 1844–1937",
+      "definition": "Value of intermediate-goods imports (industrial inputs, semi-finished products), Braun et al. (1998) compilation. Series ends in 1937.",
+      "units_note": "millions of US dollars",
+      "data_quality_flag": "unit_unclear"
+    },
+    "manufacturing_exports": {
+      "subtitle": "Manufacturing exports value, 1844–1990",
+      "definition": "Value of manufactured exports, Braun et al. (1998) compilation. The manufacturing-export share was negligible through most of Chilean history and only rose modestly after the 1985 export-diversification push.",
+      "units_note": "Unit field currently blank.",
+      "data_quality_flag": "unit_unclear"
+    },
+    "manufacturing_exports_share": {
+      "subtitle": "Manufacturing share of total exports, 1844–1990, percent",
+      "definition": "Manufacturing exports as a percentage of total exports, Braun et al. (1998) compilation."
+    },
+    "mining_exports": {
+      "subtitle": "Mining exports value, 1844–1990",
+      "definition": "Value of mining exports (copper, saltpeter, silver, gold, coal, iron, other minerals), Braun et al. (1998) compilation. The dominant Chilean export category from roughly 1880 forward.",
+      "units_note": "Unit field currently blank.",
+      "data_quality_flag": "unit_unclear"
+    },
+    "mining_exports_share": {
+      "subtitle": "Mining share of total exports, 1844–1990, percent",
+      "definition": "Mining exports as a percentage of total exports, Braun et al. (1998) compilation. The series shows the rise of nitrate (peaking ca. 1929 at over 70 percent of exports), the post-1929 transition to copper, and the 20th-century persistence of copper dominance."
+    },
+    "trade_openness_of_gdp": {
+      "subtitle": "Trade openness (exports + imports) as share of GDP, 1810–1990, percent",
+      "definition": "Sum of total exports and total imports as a percentage of GDP, Braun et al. (1998) compilation. A standard measure of trade integration.",
+      "data_quality_flag": "potentially_unit_splice"
+    },
+    "_EDUCATION": "Mix of Anuario Estadístico 1860 province-scale 1850s series and Braun et al. 1998 national long-run series.",
+    "escuelas_h": {
+      "subtitle": "Boys' schools at province scale, 1853–1858, count",
+      "definition": "Number of boys' schools by province in the 1850s, Anuario Estadístico 1860 series. The Chilean state's first systematic effort to enumerate primary education by sex and locality; coverage is partial and the unit string in the manifest is currently blank (it should read 'schools'). Per the duplicate-resolution memo, this indicator absorbs the parallel escuelas_hombres_prov entry.",
+      "units_note": "Unit field currently blank; should read 'schools'."
+    },
+    "alumnos_m": {
+      "subtitle": "Female students at province scale, 1853–1858, count",
+      "definition": "Number of female students enrolled by province in the 1850s, Anuario Estadístico 1860 series. Parallel to escuelas_m (girls' schools count).",
+      "units_note": "Unit field currently blank; should read 'students'."
+    },
+    "escuelas_m": {
+      "subtitle": "Girls' schools at province scale, 1853–1858, count",
+      "definition": "Number of girls' schools by province in the 1850s, Anuario Estadístico 1860 series. The relative count of girls' to boys' schools captures the gender gap in 19th-century Chilean primary education provision.",
+      "units_note": "Unit field currently blank; should read 'schools'."
+    },
+    "higher_education_enrollment": {
+      "subtitle": "Higher education enrollment, 1852–1990, count",
+      "definition": "Total enrollment in higher education institutions (universities, technical institutes), Braun et al. (1998) compilation. The Chilean higher-education system was small and elite through the 19th century and expanded sharply after 1960; the series tracks both phases.",
+      "units_note": "Unit field currently blank; should read 'students'."
+    },
+    "alumnos_h": {
+      "subtitle": "Male students at province scale, 1853–1858, count",
+      "definition": "Number of male students enrolled by province in the 1850s, Anuario Estadístico 1860 series.",
+      "units_note": "Unit field currently blank; should read 'students'."
+    },
+    "primary_enrollment_share": {
+      "subtitle": "Primary enrollment as share of all schooling, 1852–1990, percent",
+      "definition": "Primary-school enrollment as a percentage of total school enrollment, Braun et al. (1998) compilation. Reflects the changing structure of Chilean education as secondary and higher education expanded in the 20th century."
+    },
+    "primary_school_enrollment": {
+      "subtitle": "Primary school enrollment, 1852–1990, count",
+      "definition": "Total primary-school enrollment, Braun et al. (1998) compilation. Chilean primary education expanded under the 1860 Ley General de Instrucción Primaria and again under the 1920 Ley de Instrucción Primaria Obligatoria; the series captures both expansions.",
+      "units_note": "pupils"
+    },
+    "escuelas_total": {
+      "subtitle": "Total schools at province scale, 1853–1858, count",
+      "definition": "Total number of schools (boys + girls + mixed) by province in the 1850s, Anuario Estadístico 1860 series.",
+      "units_note": "Unit field currently blank; should read 'schools'."
+    },
+    "secondary_enrollment_share": {
+      "subtitle": "Secondary enrollment as share of all schooling, 1852–1990, percent",
+      "definition": "Secondary-school enrollment as a percentage of total school enrollment, Braun et al. (1998) compilation."
+    },
+    "secondary_school_enrollment": {
+      "subtitle": "Secondary school enrollment, 1852–1990, count",
+      "definition": "Total secondary-school enrollment, Braun et al. (1998) compilation. Secondary education was largely the preserve of the elite-serving liceos and private establishments in the 19th century; the series captures the 20th-century expansion.",
+      "units_note": "Unit field currently blank; should read 'pupils'."
+    },
+    "alumnos_total": {
+      "subtitle": "Total students enrolled at province scale, 1853–1858, count",
+      "definition": "Total number of students (male + female) enrolled by province in the 1850s, Anuario Estadístico 1860 series.",
+      "units_note": "Unit field currently blank; should read 'students'."
+    },
+    "total_school_enrollment": {
+      "subtitle": "Total school enrollment (all levels), 1852–1990, count",
+      "definition": "Total enrollment across primary, secondary, and higher education combined, Braun et al. (1998) compilation. The denominator for the primary, secondary, and higher-education share series.",
+      "units_note": "Unit field currently blank; should read 'pupils'."
+    },
+    "_ELECTORAL": "Department-level enfranchisement series, Véjares Landholding paper and Anuario 1887-1888.",
+    "enfranchised_pc": {
+      "subtitle": "Enfranchised voters per capita, by department, 1862–1920",
+      "definition": "Number of enfranchised voters per inhabitant at department scale, Véjares Landholding and Democracy in Chile. The 19th-century Chilean franchise was restricted by literacy and property requirements that varied across the 1828, 1833, 1874, and 1888 electoral reforms; the per-capita series tracks how the effective franchise widened (or didn't) across departments."
+    },
+    "enfranchised": {
+      "subtitle": "Enfranchised voters at department scale, 1862–1921, persons",
+      "definition": "Number of enfranchised voters (calificados, the term used in the 19th-century electoral law) by department, Véjares department-level historical dataset. The base for the enfranchised_pc series and the analytical core of the Landholding paper's argument about landlord influence on the 19th-century franchise."
+    },
+    "register_voters": {
+      "subtitle": "Registered voters at department scale, 1888–1915, persons",
+      "definition": "Number of registered voters by department, Anuario Estadístico Tomo XXVI (1887–1888) and successor volumes. After the 1888 electoral reform, the registered-voter count became the operational measure of franchise extension; this series captures the post-1888 era. The pre-1888 calificados figure (enfranchised) is the conceptually closest predecessor.",
+      "data_quality_flag": "sparse_observations"
+    },
+    "sufragantes": {
+      "subtitle": "Voters who cast ballots at department scale, 1888–1915, persons",
+      "definition": "Number of voters who actually cast ballots in elections, by department, Anuario Estadístico Tomo XXVI and successor volumes. The ratio of sufragantes to register_voters is a measure of electoral participation; the gap between them captures abstention.",
+      "data_quality_flag": "sparse_observations"
+    },
+    "_GOVERNANCE": "Indicator-presence dummies for the 19th-century state apparatus at department level.",
+    "pres_has_reg_civil": {
+      "subtitle": "Civil registry office present in department, 1885–1907",
+      "definition": "Binary indicator: 1 if the department had a civil registry office (Oficina del Registro Civil) in the given year, 0 otherwise. Civil registration was created by the 1884 Ley de Registro Civil and rolled out over the following decade; the series captures the geographic diffusion of the modern Chilean state."
+    },
+    "pres_has_gobernador": {
+      "subtitle": "Departmental governor present, 1855–1908",
+      "definition": "Binary indicator: 1 if the department had a Gobernador (the central-government-appointed departmental executive under the 1833 constitution) listed in the national budget, 0 otherwise. From the Presupuesto de la República de Chile. Tracks the geographic reach of the central-government administrative apparatus."
+    },
+    "pres_has_juez": {
+      "subtitle": "Departmental judge present, 1855–1908",
+      "definition": "Binary indicator: 1 if the department had a Juez de Letras (the central-government-appointed departmental judicial officer) listed in the national budget, 0 otherwise. From the Presupuesto. Tracks the geographic reach of the Chilean judicial apparatus, which lagged the administrative apparatus in southern and frontier departments."
+    },
+    "_INDUSTRY": "Energy and manufacturing index series from Braun et al. 1998.",
+    "electricity_production": {
+      "subtitle": "Electricity production, 1860–1990, GWh",
+      "definition": "Annual electricity production in gigawatt-hours, Braun et al. (1998) compilation. The 1860 figure is essentially zero; the series captures the buildout of Chilean electrical generation under both private (1900–1943) and state (Empresa Nacional de Electricidad, ENDESA, founded 1943) regimes.",
+      "data_quality_flag": "potentially_unit_splice"
+    },
+    "manufacturing_production_index": {
+      "subtitle": "Manufacturing production index, 1860–1990, base = 100",
+      "definition": "Index of manufacturing production, Braun et al. (1998) compilation. The base year and weighting scheme should be verified against the source documentation; the series provides relative magnitudes useful for growth comparisons but absolute interpretation requires the base specification."
+    },
+    "natural_gas_consumption": {
+      "subtitle": "Natural gas consumption, 1860–1990, millions of m³",
+      "definition": "Annual natural gas consumption in millions of cubic meters, Braun et al. (1998) compilation. Pre-1960 figures are essentially zero; the series captures the development of Chilean natural gas use from the southern Magallanes fields and from Argentine pipeline imports."
+    },
+    "_INFRASTRUCTURE_NATIONAL": "National infrastructure series from Braun et al. 1998. Note potentially_unit_splice flags for some.",
+    "air_passenger_movement": {
+      "subtitle": "Air passenger movement, 1890–1990, passengers",
+      "definition": "Annual air-passenger movements through Chilean airports, Braun et al. (1998) compilation. Pre-1930 figures are zero or near-zero (commercial aviation began in 1929 with LAN's predecessor); the series captures the post-1930 development.",
+      "units_note": "Unit field currently blank; should read 'passengers'.",
+      "data_quality_flag": "sparse_early_observations"
+    },
+    "port_traffic": {
+      "subtitle": "Port traffic, 1890–1990, tons",
+      "definition": "Annual tonnage of cargo moved through Chilean ports, Braun et al. (1998) compilation. Valparaíso was the dominant Pacific port through the 1890s; San Antonio and the saltpeter-era northern ports (Iquique, Antofagasta) grew thereafter; the post-1973 shift to specialized terminals reshaped the geography.",
+      "units_note": "Unit field currently blank; should read 'tons'.",
+      "data_quality_flag": "potentially_unit_splice"
+    },
+    "private_railway_length": {
+      "subtitle": "Private railway track length, 1876–1987, kilometers",
+      "definition": "Total kilometers of privately-owned railway track in Chile, Braun et al. (1998) compilation. The complement to state_owned_railway_length. The 19th-century railway buildout was a mix of private (mining and agricultural) and state-promoted lines; the 1884 nationalization of the central trunk reshaped the balance."
+    },
+    "railway_network_length": {
+      "subtitle": "Total railway network length, 1890–1987, kilometers",
+      "definition": "Total kilometers of railway track (private + state), Braun et al. (1998) compilation. The sum of private_railway_length and state_owned_railway_length; the indicator most directly useful for tracking the overall railway network's geographic extent."
+    },
+    "state_owned_railway_length": {
+      "subtitle": "State-owned railway track length, 1876–1990, kilometers",
+      "definition": "Total kilometers of state-owned railway track, Braun et al. (1998) compilation. The state railway operator (Empresa de los Ferrocarriles del Estado, EFE, founded 1884) became dominant in the central and southern Chilean network; the series shows its expansion through the 20th century and contraction after 1990."
+    },
+    "telephones_in_service": {
+      "subtitle": "Telephones in service, 1868–1990, count",
+      "definition": "Number of telephones in service in Chile, Braun et al. (1998) compilation. The series begins implausibly early (1868); the first commercial telephone service in Chile started in 1879. Pre-1879 figures should be read with skepticism or are likely encoding errors.",
+      "units_note": "Unit field currently blank; should read 'telephones'.",
+      "data_quality_flag": "anomalous_early_values"
+    },
+    "_LAND_STRUCTURE": "1874 land-tax cross-sections at department scale, from Catastro de Avalúos 1874 and the Rol de Avalúos. Per the duplicate-resolution memo, all are tagged commit_status: cross_section.",
+    "avaluo_total_1874": {
+      "subtitle": "Total catastro appraised value, by department, 1874, pesos",
+      "definition": "Total appraised value of taxable real property by department, from the Catastro de Avalúos de la República de Chile 1874. The denominator for the 1874 land-tax-base indicators; a single-year cross-section, not a time series.",
+      "data_quality_flag": "single_cross_section"
+    },
+    "gini_avaluo_1874": {
+      "subtitle": "Gini coefficient of avalúos, by department, 1874",
+      "definition": "Gini coefficient of property appraised values within each department, computed from the Rol de Avalúos 1874. A single-year cross-section. The indicator captures within-department inequality in landownership at one moment in 1874; values closer to 1 indicate higher concentration.",
+      "data_quality_flag": "single_cross_section"
+    },
+    "manorial_treatment": {
+      "subtitle": "Manorial-system treatment indicator, by department, 1874",
+      "definition": "Indicator of whether a department was characterized by the manorial latifundio system in 1874, after Bauer (1975), Chilean Rural Society. A single-year cross-section used as a treatment variable in the Landholding paper. The specific coding scheme should be documented in the source paper.",
+      "data_quality_flag": "single_cross_section"
+    },
+    "sna_estate_price_mean_1874": {
+      "subtitle": "Mean SNA estate sale price, by department, 1874, pesos",
+      "definition": "Mean sale price of estates listed in the Boletín de la Sociedad Nacional de Agricultura, Volume VI (1874), by department. A single-year cross-section. The SNA listings provided market valuations distinct from the official catastro avalúos.",
+      "data_quality_flag": "single_cross_section"
+    },
+    "sna_estate_count_1874": {
+      "subtitle": "Number of estates in SNA listings, by department, 1874",
+      "definition": "Count of estates listed for sale in the Boletín de la Sociedad Nacional de Agricultura, Volume VI (1874), by department. A single-year cross-section. Captures the level of land-market activity by region in 1874.",
+      "data_quality_flag": "single_cross_section",
+      "units_note": "count of estates (raw count)"
+    },
+    "n_taxpayers_rol_1874": {
+      "subtitle": "Property taxpayers on the rol, by department, 1874, count",
+      "definition": "Number of distinct taxpayers listed in the Rol de Avalúos 1874, by department. A single-year cross-section. The numerator for measures of landownership concentration (when divided by total department population or by adult male population).",
+      "data_quality_flag": "single_cross_section"
+    },
+    "top5_avaluo_share_1874": {
+      "subtitle": "Top-5% share of total avalúos, by department, 1874, percent",
+      "definition": "Share of total department appraised value held by the top 5 percent of property owners (by avalúo), Rol de Avalúos 1874. A single-year cross-section. A direct concentration measure complementing the Gini.",
+      "data_quality_flag": "single_cross_section"
+    },
+    "total_avaluo_rol_1874": {
+      "subtitle": "Total avalúos on the rol, by department, 1874, pesos",
+      "definition": "Sum of avalúos listed in the Rol de Avalúos 1874, by department. A single-year cross-section. Conceptually similar to avaluo_total_1874 but drawn from the rol rather than the catastro; the two figures may differ where the rol omits or differently treats marginal taxpayers.",
+      "data_quality_flag": "single_cross_section"
+    },
+    "_MINING": "Mining production series from Braun et al. 1998. Wide order-of-magnitude variation across the century requires log-scale presentation.",
+    "coal_production": {
+      "subtitle": "National coal production, 1860–1990, metric tons",
+      "definition": "Annual national coal production in metric tons, Braun et al. (1998) compilation. Chilean coal came primarily from the Arauco and Concepción coalfields; output rose through the 19th-century industrial era, peaked mid-20th century, and declined as cheaper imported coal and natural gas displaced domestic production."
+    },
+    "copper_production": {
+      "subtitle": "National copper production, 1860–1990, metric tons",
+      "definition": "Annual national copper production in metric tons, Braun et al. (1998) compilation. Chile was a major world copper producer through the 19th century (the Chuquicamata-era expansion came after 1915 under US Anaconda and Kennecott ownership; the 1971 nationalization placed the major mines under Codelco)."
+    },
+    "gold_production": {
+      "subtitle": "National gold production, 1860–1990, kilograms",
+      "definition": "Annual national gold production in kilograms, Braun et al. (1998) compilation. Chilean gold output was modest after the colonial era; the series captures occasional rushes (the 1850s Atacama deposits, the 1930s Andacollo expansion) and small-scale persistent production."
+    },
+    "saltpeter_production": {
+      "subtitle": "National saltpeter production, 1860–1984, metric tons",
+      "definition": "Annual national saltpeter (sodium nitrate) production in metric tons, Braun et al. (1998) compilation. The saltpeter industry dominated Chilean exports and fiscal revenue from the 1880s through 1929; the post-1930 decline was rapid and the series ends in 1984 when commercial production effectively ceased."
+    },
+    "silver_production": {
+      "subtitle": "National silver production, 1860–1990, kilograms",
+      "definition": "Annual national silver production in kilograms, Braun et al. (1998) compilation. The major Chilean silver booms (Chañarcillo from 1832, Caracoles from 1870) shaped 19th-century mining geography."
+    },
+    "sulfur_production": {
+      "subtitle": "National sulfur production, 1887–1975, metric tons",
+      "definition": "Annual national sulfur production in metric tons, Braun et al. (1998) compilation. A small but persistent volcanic-arc industry; the series ends in 1975 when domestic production was displaced by petroleum-derived sulfur.",
+      "data_quality_flag": "sparse_observations"
+    },
+    "_OCCUPATIONS": "Department-scale occupational counts from the 19th-century censuses (1865, 1875, 1885, 1895, 1907, 1920), via the Véjares dataset.",
+    "peasant": {
+      "subtitle": "Agricultural workers at department scale, 1862–1920, persons (scheduled merge)",
+      "definition": "Department-level count of agricultural workers (the 19th-century Chilean rural laborer occupations: peón, inquilino, gañán, jornalero), Véjares department-level historical dataset. The 'peasant' label is editorially loaded; per the duplicate-resolution memo, this indicator is scheduled to merge into a renamed agricultural_workers_department. The historiographical debate over what to call this class is documented in Bauer (1975) and Bengoa (2015).",
+      "units_note": "Unit field currently blank; should read 'persons' or 'workers'.",
+      "data_quality_flag": "scheduled_for_rename"
+    },
+    "engineers": {
+      "subtitle": "Engineers at department scale, 1865–1920, persons",
+      "definition": "Department-level count of persons reporting 'ingeniero' (engineer) as their occupation in the 1865–1920 censuses, Véjares department-level historical dataset. A small but informative measure of technical professions and the geographic distribution of the modernizing middle class.",
+      "units_note": "Unit field currently blank; should read 'persons'."
+    },
+    "lawyer": {
+      "subtitle": "Lawyers at department scale, 1865–1920, persons",
+      "definition": "Department-level count of persons reporting 'abogado' (lawyer) as their occupation in the 1865–1920 censuses, Véjares department-level historical dataset. A measure of the legal-administrative profession; lawyers were highly concentrated in Santiago and Valparaíso.",
+      "units_note": "Unit field currently blank; should read 'persons'."
+    },
+    "military": {
+      "subtitle": "Military personnel at department scale, 1865–1920, persons",
+      "definition": "Department-level count of persons reporting military occupations (oficial, soldado, marino) in the 1865–1920 censuses, Véjares department-level historical dataset. Concentrated in garrison towns (Santiago, Valparaíso, Concepción, post-WoP northern departments).",
+      "units_note": "persons"
+    },
+    "police": {
+      "subtitle": "Police officers at department scale, 1895–1920, persons",
+      "definition": "Department-level count of persons reporting police occupations in the 1895–1920 censuses, Véjares department-level historical dataset. The pre-Carabineros (1927) era included municipal police, departmental policía de seguridad, and gendarmes; the census occupation code aggregates them.",
+      "units_note": "Unit field currently blank; should read 'persons'."
+    },
+    "pubemp": {
+      "subtitle": "Public employees at department/province scale, 1865–1920, persons",
+      "definition": "Count of public employees (all branches and levels of government) at department or province scale, Véjares department-level historical dataset. The aggregate corresponding to the specific governance-presence indicators (pres_has_gobernador, pres_has_juez, pres_has_reg_civil).",
+      "units_note": "Unit field currently blank; should read 'persons'."
+    },
+    "pubemp_per_capita": {
+      "subtitle": "Public employees per capita at province scale, 1865–1920, employees per person",
+      "definition": "Public employees divided by total population at province scale. Tracks the geographic distribution of state employment relative to population; Santiago and post-WoP frontier provinces show the highest ratios."
+    },
+    "teacher": {
+      "subtitle": "Teachers at department scale, 1875–1920, persons",
+      "definition": "Department-level count of persons reporting teaching occupations (preceptor, profesor, maestra) in the 1875–1920 censuses, Véjares department-level historical dataset. Reflects the buildout of the primary-education system under the 1860 Ley de Instrucción Primaria.",
+      "units_note": "Unit field currently blank; should read 'persons'."
+    },
+    "_POLITICS": "Department/province-scale political indicators from the Biblioteca del Congreso Nacional database and the Anuario.",
+    "n_legislators": {
+      "subtitle": "Active legislators by department, 1865–1885",
+      "definition": "Number of legislators (diputados plus senadores) representing the department, Biblioteca del Congreso Nacional database. The 19th-century Chilean Congress had a small number of legislators per electoral district; counts of one or two were typical."
+    },
+    "enfranchised_peasant": {
+      "subtitle": "Enfranchised peasants by department, 1862–1920",
+      "definition": "Number of enfranchised voters classified as agricultural workers (peasants) in the same department, from the Anuario Estadístico de Chile 1920. A sub-component of total enfranchised used in the Landholding paper.",
+      "data_quality_flag": "sparse_observations"
+    },
+    "enfranchised_totalpop": {
+      "subtitle": "Enfranchised population total by department, 1862–1920",
+      "definition": "Total enfranchised population (calificados) by department, parallel to enfranchised but drawn from the Anuario 1920 retrospective rather than the Véjares working dataset; values may differ slightly across the two compilations.",
+      "data_quality_flag": "sparse_observations"
+    },
+    "n_hacendados_legs": {
+      "subtitle": "Hacendado legislators by department, 1865–1885",
+      "definition": "Number of legislators representing the department who were classified as hacendados (large landowners) by occupation, source attribution incomplete in the manifest. A direct measure of landlord representation in the 19th-century Congress and a core variable in the Landholding paper's argument.",
+      "data_quality_flag": "source_attribution_missing"
+    },
+    "max_terms_single_legislator_1833_1891": {
+      "subtitle": "Maximum consecutive terms by a single legislator, by department, 1833–1891 span",
+      "definition": "For each department, the maximum number of consecutive congressional terms served by any single legislator over the 1833–1891 period. Computed from the Biblioteca del Congreso Nacional database. A single observation per department (not a time series): the manifest currently records it under year 1874 as a placeholder.",
+      "data_quality_flag": "single_cross_section"
+    },
+    "legislator_surname_persistence_1833_1891": {
+      "subtitle": "Surname persistence of legislators, by department, 1833–1891 span",
+      "definition": "For each department, a measure of surname persistence among legislators across the 1833–1891 period (the share of legislator-years held by repeating surnames). Single observation per department; placeholder year 1874.",
+      "data_quality_flag": "single_cross_section"
+    },
+    "n_unique_legislator_surnames_1833_1891": {
+      "subtitle": "Distinct legislator surnames, by department, 1833–1891 span",
+      "definition": "Number of distinct surnames among legislators representing the department over the 1833–1891 period. Single observation per department; placeholder year 1874.",
+      "data_quality_flag": "single_cross_section"
+    },
+    "n_unique_legislators_1833_1891": {
+      "subtitle": "Distinct legislators, by department, 1833–1891 span",
+      "definition": "Number of distinct individuals who served as legislators representing the department over the 1833–1891 period. Single observation per department; placeholder year 1874. The ratio of n_unique_legislator_surnames_1833_1891 to this indicator measures how concentrated legislator turnover was within elite families.",
+      "data_quality_flag": "single_cross_section"
+    },
+    "_POPULATION_LABOR": "National labor-force series from Braun et al. 1998, plus total_population canonical multi-scale.",
+    "female_labor_force": {
+      "subtitle": "Female labor force, 1810–1990, persons",
+      "definition": "Total female labor force (women employed plus women unemployed and seeking work), Braun et al. (1998) compilation. The 1976 ENE redefinition affects comparability across that year; see break-annotation register.",
+      "units_note": "Unit field currently blank; should read 'persons'.",
+      "data_quality_flag": "methodological_break_1976"
+    },
+    "female_labor_force_participation_rate": {
+      "subtitle": "Female labor force participation rate, 1810–1990, percent",
+      "definition": "Female labor force as a percentage of working-age female population, Braun et al. (1998) compilation. The Chilean female participation rate was low by international standards through the 20th century; rose sharply after 1980.",
+      "data_quality_flag": "methodological_break_1976"
+    },
+    "labor_participation_rate": {
+      "subtitle": "Total labor force participation rate, 1810–1990, percent",
+      "definition": "Total labor force as a percentage of working-age population (both sexes), Braun et al. (1998) compilation.",
+      "data_quality_flag": "methodological_break_1976"
+    },
+    "male_labor_force": {
+      "subtitle": "Male labor force, 1810–1990, persons",
+      "definition": "Total male labor force, Braun et al. (1998) compilation.",
+      "units_note": "Unit field currently blank; should read 'persons'.",
+      "data_quality_flag": "methodological_break_1976"
+    },
+    "male_labor_force_participation_rate": {
+      "subtitle": "Male labor force participation rate, 1810–1990, percent",
+      "definition": "Male labor force as a percentage of working-age male population, Braun et al. (1998) compilation.",
+      "data_quality_flag": "methodological_break_1976"
+    },
+    "total_labor_force": {
+      "subtitle": "Total labor force, 1810–1990, persons",
+      "definition": "Total labor force (male + female, employed + unemployed), Braun et al. (1998) compilation.",
+      "units_note": "Unit field currently blank; should read 'persons'.",
+      "data_quality_flag": "methodological_break_1976"
+    },
+    "total_population": {
+      "subtitle": "Total population, by scale, 1835–1990, persons",
+      "definition": "Total population of the unit (national, province, or department), the canonical population indicator at each of the three scales. The national series draws from Braun et al. (1998); the subnational series stitch together census enumerations (1865, 1875, 1885, 1895, 1907, 1920, 1930, 1940, 1952, 1960, 1970, 1982, 1992), Mamalakis (1980) intercensal estimates, and Véjares department-level extraction. Per the duplicate-resolution memo, the totalpop, poblacion_total_titled_dept, and poblacion_extended entries fold into this canonical."
+    },
+    "unemployed_labor_force": {
+      "subtitle": "Unemployed labor force, 1810–1990, persons",
+      "definition": "Number of persons unemployed and seeking work, Braun et al. (1998) compilation. The 1976 ENE redefinition and the 1981–1985 PEM/POJH emergency-employment programs disrupt comparability; the series should be read with the break-annotation register active.",
+      "units_note": "Unit field currently blank; should read 'persons'.",
+      "data_quality_flag": "methodological_break_1976"
+    },
+    "_SECTORAL_EMPLOYMENT": "National sectoral employment from Braun et al. 1998. Five sectors that approximately sum to total_labor_force.",
+    "agricultural_workers": {
+      "subtitle": "Workers in agriculture, nationally, 1810–1990, persons",
+      "definition": "Persons employed in the agricultural sector (crops, livestock, forestry, fishing) at national scale, Braun et al. (1998) compilation. The agricultural workforce was the majority of the Chilean labor force through the late 19th century and declined to under 15 percent by 1990.",
+      "units_note": "Unit field currently blank; should read 'persons'.",
+      "data_quality_flag": "methodological_break_1976"
+    },
+    "construction_workers": {
+      "subtitle": "Workers in construction, nationally, 1810–1990, persons",
+      "definition": "Persons employed in the construction sector at national scale, Braun et al. (1998) compilation.",
+      "units_note": "Unit field currently blank; should read 'persons'.",
+      "data_quality_flag": "methodological_break_1976"
+    },
+    "manufacturing_workers": {
+      "subtitle": "Workers in manufacturing, nationally, 1810–1990, persons",
+      "definition": "Persons employed in the manufacturing sector at national scale, Braun et al. (1998) compilation. The manufacturing workforce grew under import-substitution industrialization (1930–1973) and contracted under post-1973 liberalization.",
+      "units_note": "Unit field currently blank; should read 'persons'.",
+      "data_quality_flag": "methodological_break_1976"
+    },
+    "mining_workers": {
+      "subtitle": "Workers in mining, nationally, 1810–1990, persons",
+      "definition": "Persons employed in the mining sector at national scale, Braun et al. (1998) compilation. The series tracks the 19th-century silver and copper booms, the nitrate era peak (1900–1930), the post-1929 collapse, and the post-1971 Codelco era.",
+      "units_note": "Unit field currently blank; should read 'persons'.",
+      "data_quality_flag": "methodological_break_1976"
+    },
+    "service_workers": {
+      "subtitle": "Workers in services, nationally, 1810–1990, persons",
+      "definition": "Persons employed in the services sector (commerce, transport, finance, government, personal services) at national scale, Braun et al. (1998) compilation. The dominant employment category by the late 20th century.",
+      "units_note": "Unit field currently blank; should read 'persons'.",
+      "data_quality_flag": "methodological_break_1976"
+    },
+    "_VITAL_STATISTICS": "National and subnational vital-statistics series. Includes the corrupted crude_birth_rate and infant_mortality_rate flagged by the audit.",
+    "totalpop": {
+      "subtitle": "Department total population, 1865–1920, persons (scheduled merge)",
+      "definition": "Department-level total population, Véjares department-level historical dataset. Per the duplicate-resolution memo, this indicator is scheduled to merge into the canonical total_population at department scale.",
+      "data_quality_flag": "scheduled_for_retirement"
+    },
+    "crude_birth_rate": {
+      "subtitle": "Crude birth rate, 1848–1990, per 1,000 population",
+      "definition": "Number of live births per 1,000 population per year, Mamalakis (1980) Vol 2 Table 2.1. The published series carries unit-splice corruption: the 1848–1899 cells run 45,862 to 64,306, which are absolute birth counts not rates; the 1900–onward cells (38.5 etc.) are correctly normalized rates. Do not cite the pre-1900 cells until the upstream reconciliation lands.",
+      "_corrected": "Braun TABLA 7.5 re-extraction 2026-05-23 (was: unit_splice_corruption)"
+    },
+    "crude_death_rate": {
+      "subtitle": "Crude death rate, 1848–1990, per 1,000 population",
+      "definition": "Number of deaths per 1,000 population per year, Braun et al. (1998) compilation. The Chilean mortality transition began around 1900 and accelerated after 1930; the series tracks the decline from roughly 30 per 1,000 in the 1850s to under 6 per 1,000 by 1990. Inspect for the same unit-splice pattern as crude_birth_rate before citing.",
+      "_corrected": "Braun TABLA 7.5 re-extraction 2026-05-23 (was: potentially_unit_splice)"
+    },
+    "defunciones": {
+      "subtitle": "Deaths at province scale, 1900–1935, count",
+      "definition": "Annual count of deaths by province, Sinopsis Estadística de Chile 1924–1927 and earlier Anuario sources. Per the duplicate-resolution memo, scheduled to merge with defunciones_1858_prov into a renamed deaths_province indicator.",
+      "units_note": "Unit field currently blank; should read 'deaths'.",
+      "data_quality_flag": "scheduled_for_merge"
+    },
+    "infant_mortality_rate": {
+      "subtitle": "Infant mortality rate, 1848–1990, per 1,000 live births",
+      "definition": "Number of deaths under age 1 per 1,000 live births per year, Braun et al. (1998) compilation. The published series carries unit-splice corruption (median 31,199 against a natural ceiling around 300 in the worst historical cases). Do not cite until upstream reconciliation; the underlying Chilean infant-mortality decline from roughly 250 per 1,000 in 1900 to under 20 per 1,000 by 1990 is well-documented in secondary literature.",
+      "_corrected": "Braun TABLA 7.5 re-extraction 2026-05-23 (was: unit_splice_corruption)"
+    },
+    "nacimientos": {
+      "subtitle": "Live births at province scale, 1900–1935, count",
+      "definition": "Annual count of live births by province, Sinopsis Estadística de Chile 1924–1927. Per the duplicate-resolution memo, scheduled to merge with nacimientos_1858_prov and nacimientos_1924_prov into a renamed births_province indicator.",
+      "units_note": "Unit field currently blank; should read 'births'.",
+      "data_quality_flag": "scheduled_for_merge"
+    },
+    "tasa_matrimonios_por_mil": {
+      "subtitle": "Marriage rate, modern era, 1969–1973, per 1,000 population",
+      "definition": "Annual number of marriages per 1,000 population, 1969–1973. Source attribution incomplete in the manifest. The marriage rate fell sharply in Chile after 1990 with the rise of cohabitation and the 2004 introduction of divorce; this series captures the high-marriage late-1960s baseline.",
+      "data_quality_flag": "source_attribution_missing"
+    },
+    "matrimonios": {
+      "subtitle": "Marriages at province scale, 1900–1935, count",
+      "definition": "Annual count of marriages by province, Sinopsis Estadística de Chile 1924–1927. Per the duplicate-resolution memo, scheduled to merge with matrimonios_total, matrimonios_1858_prov, and matrimonios_hist_dept into a renamed marriages_province indicator.",
+      "units_note": "Unit field currently blank; should read 'marriages'.",
+      "data_quality_flag": "scheduled_for_merge"
+    },
+    "matrimonios_total": {
+      "subtitle": "Marriages at province scale, 1969–1973, count (scheduled merge)",
+      "definition": "Annual count of marriages by province in the modern era, 1969–1973. Source attribution incomplete in the manifest. Scheduled to merge into marriages_province.",
+      "data_quality_flag": "source_attribution_missing"
+    },
+    "natural_population_growth_rate": {
+      "subtitle": "Natural population growth rate, 1848–1990, percent",
+      "definition": "Annual rate of natural population increase (births minus deaths, as a percent of population), Braun et al. (1998) compilation. Excludes migration; the complement to net_migration_rate.",
+      "data_quality_flag": "potentially_unit_splice"
+    },
+    "net_migration_rate": {
+      "subtitle": "Net migration rate, 1848–1990, per 1,000 population",
+      "definition": "Net migration (immigrants minus emigrants) per 1,000 population per year, Braun et al. (1998) compilation. Chile was a modest net immigrant country in the late 19th century, became net emigrant during the 1970s, and returned to net immigration after 1990.",
+      "data_quality_flag": "potentially_unit_splice"
+    },
+    "total_population_growth_rate": {
+      "subtitle": "Total population growth rate, 1848–1990, percent",
+      "definition": "Annual rate of total population growth (natural increase plus net migration), Braun et al. (1998) compilation.",
+      "_corrected": "Braun TABLA 7.5 re-extraction 2026-05-23 (was: potentially_unit_splice)"
+    }
+  },
+  "_subtitles_only_for_already_defined": {
+    "_purpose": "The 95 indicators below already carry definitions in the live manifest (per the audit, 'populated for 95 indicators'). For these we add only the curated_subtitle and any new data_quality_flag, preserving the existing definition.",
+    "poblacion_intercensal_dept": {
+      "subtitle": "Department population, intercensal Anuario/Memoria series, 1868–1899",
+      "preserve_existing_definition": true,
+      "data_quality_flag": "alternate_source_variant"
+    },
+    "correos_cartas_dept": {
+      "subtitle": "Postal letters handled by department, 1876–1882",
+      "preserve_existing_definition": true
+    },
+    "correos_impresos_dept": {
+      "subtitle": "Postal printed matter handled by department, 1876–1886",
+      "preserve_existing_definition": true
+    },
+    "vacunados_dept": {
+      "subtitle": "Smallpox vaccinations by department, 1862/1886/1889",
+      "preserve_existing_definition": true
+    },
+    "viruela_defunciones_dept": {
+      "subtitle": "Smallpox deaths by department, 1886/1889",
+      "preserve_existing_definition": true
+    },
+    "_NOTE": "The remaining 90 already-defined indicators follow the same pattern. The build pipeline should: (a) preserve the existing definition field for any indicator not appearing in the 'indicators' block above, (b) add the subtitle from this 'subtitles_only' block, (c) if the indicator does not appear in either block, generate a fallback subtitle from the display_label and category. A complete subtitle list for the 90 unenumerated already-defined indicators should be added in a follow-up curation pass once the build pipeline confirms which definitions it inherits.",
+    "_subtitle_generation_template": "For indicators not enumerated here, the fallback subtitle should follow the template: '<display_label, lowercased first word>, <year_range>, <unit if present>'. Example: 'baptisms by department, 1869' or 'postal telegraph offices by city, 1899'."
+  }
+}

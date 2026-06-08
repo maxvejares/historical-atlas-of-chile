@@ -1,0 +1,260 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Annotation register for historical breaks that visibly fracture indicators in the Atlas. Consumed by the chart and map components to draw vertical break rules, gray out incomparable spans, attach hover tooltips, and decline cross-break aggregations. Each entry is an event a non-specialist will see in the data as an unexplained jump unless the platform tells them it is administrative rather than substantive.",
+  "consumers": [
+    "js/chart.js — draw vertical break lines on time series whose unit_pattern or indicator_pattern matches",
+    "js/map_view.js — gate department/province aggregation across boundary breaks",
+    "js/citation.js — list break events relevant to the displayed (variable, year_range, scale) on cite",
+    "scripts/build_variable_manifest.py — propagate per-indicator breaks block from this register"
+  ],
+  "severity_meaning": {
+    "blocker": "Comparison across this break is wrong without correction (e.g., nominal-peso series across the 1960 reform). The chart should either deflate, withhold the cross-break view, or annotate prominently.",
+    "warning": "Comparison is possible but requires the user to know the break exists. The chart annotates with a vertical rule and a hover description.",
+    "informational": "Context that helps a user read the data correctly. Visible in caveats but does not change the rendering."
+  },
+  "kinds": [
+    "currency — change in the monetary unit (peso reform, escudo, gold standard)",
+    "boundary — change in administrative geography (province creation, regionalization, territorial annexation)",
+    "methodological — change in how the source measures the indicator (institution change, definition revision)",
+    "political — political event that disrupted measurement or made it politically contested",
+    "source_transition — the stitched series moves from one publication regime to another"
+  ],
+  "events": [
+    {
+      "id": "currency_decimal_peso_1851",
+      "year": 1851,
+      "kind": "currency",
+      "label": "Decimal peso introduced",
+      "description": "Chile decimalized its currency, replacing the colonial real-based system with a peso of 100 centavos. Pre-1851 fiscal series originate in reales and were converted to pesos at the source; conversions are not always documented per cell.",
+      "scope": "national",
+      "applies_to_unit_pattern": "^(pesos|real pesos|millions of pesos|GBP)$",
+      "applies_to_indicator_pattern": "^(fiscal_|gov_|muni_|land_tax|expenditure_).*",
+      "severity": "warning",
+      "citation": "Decreto sobre Monedas, 9 de enero de 1851; Banco Central de Chile, Historia Monetaria de Chile.",
+      "rule_for_chart": "Draw a thin vertical rule at 1851 on any nominal-peso series. Hover tooltip names the reform. Do not gray; the conversion is per-cell at the source."
+    },
+    {
+      "id": "currency_kemmerer_1925",
+      "year": 1925,
+      "kind": "currency",
+      "label": "Central Bank founded; peso pegged to gold",
+      "description": "The Kemmerer mission of 1925 created the Banco Central de Chile (Decree-Law 486, August 1925) and pegged the peso to gold at 6 pence sterling. Pre-1925 fiscal and monetary series are nominal-peso, post-1925 reflect the gold-standard regime through its 1932 abandonment.",
+      "scope": "national",
+      "applies_to_unit_pattern": "^(pesos|real pesos|millions of pesos|GBP)$",
+      "applies_to_indicator_pattern": "^(fiscal_|gov_|peso_exchange_rate|external_public_debt|internal_public_debt).*",
+      "severity": "warning",
+      "citation": "Decreto-Ley 486 de 1925, creación del Banco Central de Chile; Edwin W. Kemmerer (1925), Report on the Central Bank of Chile.",
+      "rule_for_chart": "Draw a vertical rule at 1925; tooltip names Central Bank founding and the gold peg."
+    },
+    {
+      "id": "currency_escudo_1960",
+      "year": 1960,
+      "kind": "currency",
+      "label": "Escudo replaces peso (1,000 : 1)",
+      "description": "By Decree-Law 13.305 of 1959 the escudo replaced the peso at 1 escudo = 1,000 old pesos, in force January 1, 1960. Any nominal series that crosses 1960 without a 1,000× rescaling will show a phantom 1,000-fold drop interpreted as economic collapse.",
+      "scope": "national",
+      "applies_to_unit_pattern": "^(pesos|escudos|millions of pesos)$",
+      "applies_to_indicator_pattern": "^(fiscal_|gov_|peso_exchange_rate|external_public_debt|internal_public_debt|expenditure_).*",
+      "severity": "blocker",
+      "citation": "Ley 13.305 de 1959; Banco Central de Chile, Historia Monetaria de Chile.",
+      "rule_for_chart": "Refuse to plot a nominal-currency series across 1960 without deflation. If the platform has no deflated companion series, gray the post-1960 segment and surface a notice. Real-peso, constant-1996-peso, and GBP series are unaffected and render normally."
+    },
+    {
+      "id": "currency_peso_1975",
+      "year": 1975,
+      "kind": "currency",
+      "label": "New peso replaces escudo (1,000 : 1)",
+      "description": "By Decree-Law 1,123 of September 29, 1975 the current peso replaced the escudo at 1 peso = 1,000 escudos, in force September 29, 1975. Any nominal series that crosses 1975 without rescaling will show a second phantom 1,000-fold drop on top of the 1960 break.",
+      "scope": "national",
+      "applies_to_unit_pattern": "^(pesos|escudos|millions of pesos)$",
+      "applies_to_indicator_pattern": "^(fiscal_|gov_|peso_exchange_rate|external_public_debt|internal_public_debt|expenditure_).*",
+      "severity": "blocker",
+      "citation": "Decreto-Ley 1,123 de 1975; Banco Central de Chile, Historia Monetaria de Chile.",
+      "rule_for_chart": "Same treatment as the 1960 break. Cumulative effect of 1960 + 1975 means a 1959 escudo value and a 1975 peso value are 1,000,000× apart in nominal terms."
+    },
+    {
+      "id": "boundary_wop_tarapaca_1883",
+      "year": 1883,
+      "kind": "boundary",
+      "label": "Tarapacá annexed (Treaty of Ancón)",
+      "description": "The Treaty of Ancón (October 20, 1883) transferred Tarapacá Province from Peru to Chile. National-level population, fiscal-revenue, and saltpeter series jump because the territorial base grew; department- and province-level series are unaffected outside Tarapacá itself.",
+      "scope": "national",
+      "applies_to_indicator_pattern": "^(total_population|fiscal_|saltpeter_|exports_|imports_).*",
+      "severity": "warning",
+      "citation": "Treaty of Ancón, October 20, 1883; Sater (2007), Andean Tragedy.",
+      "rule_for_chart": "Vertical rule at 1883 on national-aggregate series. For department/province maps, Tarapacá appears in the data starting 1884 (1883 was a transition year); the choropleth should show this as new geography rather than missing data."
+    },
+    {
+      "id": "boundary_wop_antofagasta_1884",
+      "year": 1884,
+      "kind": "boundary",
+      "label": "Antofagasta annexed (Pacto de Tregua)",
+      "description": "The Pacto de Tregua of April 4, 1884 transferred Antofagasta from Bolivia to Chilean administration; the formal cession came with the Treaty of Peace and Friendship of 1904. The 1884 pact is the working date for the data; Antofagasta enters Chilean statistical reporting from this year.",
+      "scope": "national",
+      "applies_to_indicator_pattern": "^(total_population|fiscal_|copper_|exports_|imports_).*",
+      "severity": "warning",
+      "citation": "Pacto de Tregua, 4 de abril de 1884; Treaty of Peace and Friendship of 1904; Sater (2007), Andean Tragedy.",
+      "rule_for_chart": "Vertical rule at 1884. The pre-1883 baseline excludes both Tarapacá and Antofagasta and is the relevant comparison year for the new territories."
+    },
+    {
+      "id": "boundary_tacna_to_peru_1929",
+      "year": 1929,
+      "kind": "boundary",
+      "label": "Tacna returned to Peru (Treaty of Lima)",
+      "description": "The Treaty of Lima of June 3, 1929 settled the Tacna-Arica question: Tacna returned to Peru, Arica confirmed Chilean. National-aggregate series experience a small reduction in 1929; the Tacna department disappears from Chilean reporting after this date.",
+      "scope": "national",
+      "applies_to_indicator_pattern": "^(total_population|fiscal_|saltpeter_).*",
+      "severity": "warning",
+      "citation": "Treaty of Lima, June 3, 1929; St. John (1992), The Bolivia–Chile–Peru Dispute.",
+      "rule_for_chart": "Vertical rule at 1929 on national series with subnational composition. Department-level series for Tacna terminate in 1929 and should not be drawn beyond that year."
+    },
+    {
+      "id": "boundary_regionalization_1928",
+      "year": 1928,
+      "kind": "boundary",
+      "label": "Provincial reorganization (DFL 8,582)",
+      "description": "Decreto con Fuerza de Ley 8,582 of 1927, in force 1928, redrew Chile's provincial map. Some 19th-century departments merged, new provinces were created from departmental groupings, and several department names persisted into different boundary contexts. The 52-panel that anchors this dataset is built from the pre-1928 frame; post-1928 departments map imperfectly to it.",
+      "scope": "subnational",
+      "applies_to_indicator_pattern": ".*",
+      "applies_to_scale": [
+        "department",
+        "province"
+      ],
+      "severity": "blocker",
+      "citation": "Decreto con Fuerza de Ley 8,582 de 1927; Cavieres (1988), División político-administrativa de Chile.",
+      "rule_for_chart": "All department and province series should annotate 1928 as a boundary discontinuity. Cross-break comparisons of the same named department before and after 1928 are not on the same geography and should carry a notice. The platform's choice of 1920 as the last department GeoJSON frame predates this reform; users mapping post-1928 data onto pre-1928 geometry are looking at a fiction."
+    },
+    {
+      "id": "boundary_conara_1974",
+      "year": 1974,
+      "kind": "boundary",
+      "label": "CONARA regionalization (13 regions replace provinces)",
+      "description": "Decreto-Ley 575 of July 1974, implemented through 1975-1976, replaced Chile's 25-province structure with 13 regions plus the Metropolitan Region. Department-level reporting effectively ends; from this date forward the canonical subnational geography is the region (XV regions today, after later subdivisions).",
+      "scope": "subnational",
+      "applies_to_indicator_pattern": ".*",
+      "applies_to_scale": [
+        "department",
+        "province"
+      ],
+      "severity": "blocker",
+      "citation": "Decreto-Ley 575 de 1974; ODEPLAN/CONARA (1976), Chile hacia un nuevo destino.",
+      "rule_for_chart": "Department and province series should not be drawn past 1974 without a notice; the data after this date originates from region-level reporting back-cast to the older units, which is interpolation. Recommended: terminate department/province series at 1973 by default with an option to view the back-cast extension."
+    },
+    {
+      "id": "methodological_dge_1929",
+      "year": 1927,
+      "kind": "methodological",
+      "label": "Dirección General de Estadística replaces OCE",
+      "description": "The Oficina Central de Estadística (1843–1927) was reorganized into the Dirección General de Estadística in 1927. Several series carry definitional revisions across this transition (occupational classifications, education tabulations, foreign-trade reporting).",
+      "scope": "national",
+      "applies_to_indicator_pattern": "^(escuelas_|alumnos_|matricula_|occ_|exports_|imports_).*",
+      "severity": "informational",
+      "citation": "Decreto sobre la Dirección General de Estadística, 1927; Hutchison (2001), Labors Appropriate to Their Sex.",
+      "rule_for_chart": "Source caption should attribute pre-1929 cells to OCE and post-1929 cells to DGE; no vertical rule required unless the user opens a definitional caveat."
+    },
+    {
+      "id": "methodological_snec_1953",
+      "year": 1953,
+      "kind": "methodological",
+      "label": "SNEC professionalizes census-taking",
+      "description": "The Servicio Nacional de Estadística y Censos (SNEC), created in 1953, professionalized the Chilean census. The 1952 census was the last under the older agency; from 1960 forward, census enumeration follows modernized UN-standard methodology.",
+      "scope": "national",
+      "applies_to_indicator_pattern": "^(total_population|poblacion_|literates_|urban_population|rural_population).*",
+      "severity": "informational",
+      "citation": "Ley 11,237 de 1953, creación del Servicio Nacional de Estadística y Censos.",
+      "rule_for_chart": "Source caption flags the 1952-vs-1960 transition. No rule line; the discontinuity is in methodology, not in the data shape."
+    },
+    {
+      "id": "methodological_ine_1970",
+      "year": 1970,
+      "kind": "methodological",
+      "label": "INE replaces SNEC",
+      "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
+      "scope": "national",
+      "applies_to_indicator_pattern": ".*",
+      "severity": "informational",
+      "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
+      "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
+    },
+    {
+      "id": "methodological_unemployment_redefinition_1976",
+      "year": 1976,
+      "kind": "methodological",
+      "label": "Unemployment series redefined (ENE)",
+      "description": "INE replaced the older labor-force survey with the Encuesta Nacional del Empleo (ENE) in 1976. Pre-1976 and post-1976 unemployment rates are not directly comparable; the new methodology produces systematically different counts. The PEM/POJH emergency-employment programs of the late 1970s and 1980s further complicate the count.",
+      "scope": "national",
+      "applies_to_indicator_pattern": "^(unemployment|labor_force|employed|total_labor_force).*",
+      "severity": "warning",
+      "citation": "INE (1976), Encuesta Nacional del Empleo, primera medición; Meller (2000), The Unidad Popular and the Pinochet Dictatorship.",
+      "rule_for_chart": "Vertical rule at 1976 on labor-force series. Tooltip explains the survey redesign. Cross-1976 comparisons should be possible but accompanied by a caveat."
+    },
+    {
+      "id": "political_unidad_popular_1973",
+      "year": 1973,
+      "kind": "political",
+      "label": "September 1973 — political rupture",
+      "description": "The military government that took power on September 11, 1973 disrupted civilian statistical reporting for several years and introduced methodological changes in social and economic series. Fiscal, labor, and social-sector series across 1972–1976 are particularly affected by definitional turnover and, in some cases, political contestation of the published figures.",
+      "scope": "national",
+      "applies_to_indicator_pattern": ".*",
+      "severity": "warning",
+      "citation": "Meller (2000); Ffrench-Davis (2001).",
+      "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
+    },
+    {
+      "id": "methodological_social_security_1981",
+      "year": 1981,
+      "kind": "methodological",
+      "label": "Social security privatized (AFP system)",
+      "description": "Decreto-Ley 3,500 of 1980 replaced Chile's pay-as-you-go pension system with private capitalized accounts (AFP), in force from May 1981. Fiscal series for pensions, social spending, and the labor-force participation of older workers are not comparable across this break.",
+      "scope": "national",
+      "applies_to_indicator_pattern": "^(fiscal_|social_security|pension|labor_force).*",
+      "severity": "warning",
+      "citation": "Decreto-Ley 3,500 de 1980; Mesa-Lago (1994), Changing Social Security in Latin America.",
+      "rule_for_chart": "Vertical rule at 1981 on fiscal and labor series. Tooltip names the AFP reform."
+    },
+    {
+      "id": "source_transition_anuario_to_braun",
+      "year": 1929,
+      "kind": "source_transition",
+      "label": "Anuario primary → Braun et al. compilation",
+      "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is typically primary archival readings from the Anuario, Sinopsis, and Memoria series, while the post-1929 segment relies on Braun et al. (1998), Mamalakis (1980), and Díaz, Lüders, and Wagner (DLW) compilations. The compilers harmonized definitions, sometimes with judgment calls that differ from the primary readings.",
+      "scope": "national",
+      "applies_to_indicator_pattern": "^(real_gdp|fiscal_|exports_|imports_|total_population).*",
+      "severity": "informational",
+      "citation": "Braun et al. (1998); Mamalakis (1980); Díaz, Lüders, and Wagner.",
+      "rule_for_chart": "Source caption attributes by year-segment per audit Finding 4.2. No vertical rule required unless a definitional revision crossed this date."
+    },
+    {
+      "id": "data_caveat_pre_1865_censuses",
+      "year": 1865,
+      "kind": "methodological",
+      "label": "First modern census",
+      "description": "The 1865 census was Chile's first under the Oficina Central de Estadística using modern enumeration. Pre-1865 'censuses' (Egaña 1813, 1835, 1843, 1854) were proto-statistical exercises with incomplete territorial coverage, varying methodologies, and known undercounts. The manifest_globals.json policy carries '[pre_1865_census=...;caveats=...]' notes on affected cells; the platform must surface these caveats prominently.",
+      "scope": "national",
+      "applies_to_indicator_pattern": "^(total_population|poblacion_|literates_|urban_population|rural_population).*",
+      "applies_to_year_range": [
+        1810,
+        1864
+      ],
+      "severity": "warning",
+      "citation": "manifest_globals.json; methodology decisions M024, M025, M037.",
+      "rule_for_chart": "Pre-1865 population dots should render with an open marker (not filled) and a caption noting 'proto-statistical, undercount likely.' This is not a break but a continuous caveat on a year range."
+    },
+    {
+      "id": "data_caveat_inflation_index_dispute_1973_1976",
+      "year": 1973,
+      "kind": "political",
+      "label": "INE inflation index dispute, 1973–1976",
+      "description": "The Chilean inflation index published by INE during the 1973–1976 period was contested at the time and revised in later compilations. Real-peso deflators built from the official CPI for these years differ from later academic reconstructions (Cortázar and Marshall, 1980; Ffrench-Davis, 2001). Real-value series that span this window inherit the dispute.",
+      "scope": "national",
+      "applies_to_indicator_pattern": "^(real_gdp|expenditure_per_capita_real|fiscal_surplus_real).*",
+      "applies_to_year_range": [
+        1973,
+        1976
+      ],
+      "severity": "warning",
+      "citation": "Cortázar and Marshall (1980), Indice de precios al consumidor en Chile, 1970–1978; Ffrench-Davis (2001).",
+      "rule_for_chart": "Shaded background band over 1973–1976 on real-value series. Tooltip explains the deflator dispute. The platform should ideally offer the Cortázar-Marshall corrected series as a companion."
+    }
+  ]
+}

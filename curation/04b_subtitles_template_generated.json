@@ -1,0 +1,369 @@
+{
+  "_meta": {
+    "purpose": "Subtitles for the 90 already-defined indicators not enumerated in deliverable 04, generated mechanically from display_label + scope + year_range + unit. The build pipeline merges these with the enumerated ones and applies them all in apply_curation_04_definitions.py.",
+    "count": 90,
+    "generation_date": "2026-05-23"
+  },
+  "indicators": {
+    "virus_repartido_dept": {
+      "subtitle": "smallpox vaccine distributed, by department, 1889, doses",
+      "preserve_existing_definition": true
+    },
+    "municipal_entradas_dept": {
+      "subtitle": "municipal revenue, by department, 1877–1889, pesos",
+      "preserve_existing_definition": true
+    },
+    "municipal_salidas_dept": {
+      "subtitle": "municipal expenditure, by department, 1877–1889, pesos",
+      "preserve_existing_definition": true
+    },
+    "escuelas_matricula_dept": {
+      "subtitle": "primary school enrolment, by department, 1909, pupils",
+      "preserve_existing_definition": true
+    },
+    "escuelas_asistencia_dept": {
+      "subtitle": "primary school attendance, by department, 1909, pupils",
+      "preserve_existing_definition": true
+    },
+    "bautismos_dept": {
+      "subtitle": "baptisms, by department, 1869, baptisms",
+      "preserve_existing_definition": true
+    },
+    "defunciones_hist_dept": {
+      "subtitle": "registered deaths, by department, 1869, deaths",
+      "preserve_existing_definition": true
+    },
+    "matrimonios_hist_dept": {
+      "subtitle": "marriages, by department, 1869–1889, marriages",
+      "preserve_existing_definition": true
+    },
+    "schools_count_dept": {
+      "subtitle": "schools, by department, 1875–1907, schools",
+      "preserve_existing_definition": true
+    },
+    "post_offices_dept": {
+      "subtitle": "post offices, by department, 1865–1875, offices",
+      "preserve_existing_definition": true
+    },
+    "calificados_1869_dept": {
+      "subtitle": "qualified voters, by department, 1869, voters",
+      "preserve_existing_definition": true
+    },
+    "votos_municipales_1870_dept": {
+      "subtitle": "municipal-election votes cast, by department, 1870, votes",
+      "preserve_existing_definition": true
+    },
+    "votos_presidente_1871_dept": {
+      "subtitle": "presidential-elector votes cast, by department, 1871, votes",
+      "preserve_existing_definition": true
+    },
+    "hospitals_count_dept": {
+      "subtitle": "hospitals, by department, 1930–1940, hospitals",
+      "preserve_existing_definition": true
+    },
+    "carceles_entrados_1869_prov": {
+      "subtitle": "prison admissions, by province, 1869, prisoners",
+      "preserve_existing_definition": true
+    },
+    "reos_entrados_prov": {
+      "subtitle": "prisoners admitted, by province, 1900, prisoners",
+      "preserve_existing_definition": true
+    },
+    "reos_aprehendidos_prov": {
+      "subtitle": "persons arrested, by province, 1924–1925, persons",
+      "preserve_existing_definition": true
+    },
+    "hospital_admissions_prov": {
+      "subtitle": "hospital admissions, by province, 1924, admissions",
+      "preserve_existing_definition": true
+    },
+    "hospital_beds_prov": {
+      "subtitle": "hospital beds, by province, 1924, beds",
+      "preserve_existing_definition": true
+    },
+    "hospitals_count_prov": {
+      "subtitle": "hospitals, by province, 1924, hospitals",
+      "preserve_existing_definition": true
+    },
+    "bankruptcies_prov": {
+      "subtitle": "bankruptcies declared, by province, 1933–1935, bankruptcies",
+      "preserve_existing_definition": true
+    },
+    "foreigners_1895_prov": {
+      "subtitle": "foreign-born population, by province, 1895, persons",
+      "preserve_existing_definition": true
+    },
+    "senadores_1920_prov": {
+      "subtitle": "senators, by province, 1920, senators",
+      "preserve_existing_definition": true
+    },
+    "diputados_1920_prov": {
+      "subtitle": "deputies, by province, 1920, deputies",
+      "preserve_existing_definition": true
+    },
+    "nacimientos_1858_prov": {
+      "subtitle": "births (province, 1849-1858 decadal total), by province, 1858, births",
+      "preserve_existing_definition": true
+    },
+    "defunciones_1858_prov": {
+      "subtitle": "deaths (province, 1849-1858 decadal total), by province, 1858, deaths",
+      "preserve_existing_definition": true
+    },
+    "matrimonios_1858_prov": {
+      "subtitle": "marriages (province, 1849-1858 decadal total), by province, 1858, marriages",
+      "preserve_existing_definition": true
+    },
+    "patentes_prov": {
+      "subtitle": "business licences issued, by province, 1852–1858, patentes",
+      "preserve_existing_definition": true
+    },
+    "nacimientos_1924_prov": {
+      "subtitle": "births, by province, 1924, births",
+      "preserve_existing_definition": true
+    },
+    "literates_subnational": {
+      "subtitle": "people who can read (department, census years), by department, 1875–1920, persons",
+      "preserve_existing_definition": true
+    },
+    "land_tax_dept": {
+      "subtitle": "Land tax assessed, by department, 1856, pesos",
+      "preserve_existing_definition": true
+    },
+    "police_force_dept": {
+      "subtitle": "police force, by department, 1895–1920, officers",
+      "preserve_existing_definition": true
+    },
+    "school_matricula_ext_dept": {
+      "subtitle": "school enrolment, matrícula (department, extended), by department, 1935, pupils",
+      "preserve_existing_definition": true
+    },
+    "court_cases_filed_prov": {
+      "subtitle": "court cases filed, by province, 1899, cases",
+      "preserve_existing_definition": true
+    },
+    "bank_offices_prov": {
+      "subtitle": "bank offices, by province, 1935, offices",
+      "preserve_existing_definition": true
+    },
+    "wheat_1924_prov": {
+      "subtitle": "wheat harvested, by province, 1924, quintals",
+      "preserve_existing_definition": true
+    },
+    "tariff_imports_avg": {
+      "subtitle": "average import tariff rate, national, 1833–1990, %",
+      "preserve_existing_definition": true
+    },
+    "cpi_index": {
+      "subtitle": "consumer price index (1995 = 100), national, 1810–1990, index, 1995 = 100",
+      "preserve_existing_definition": true
+    },
+    "fiscal_balance_gdp": {
+      "subtitle": "fiscal balance (% of GDP), national, 1810–1990, %",
+      "preserve_existing_definition": true
+    },
+    "labor_force_total": {
+      "subtitle": "Labour force, total, national, 1810–1990, workers",
+      "preserve_existing_definition": true
+    },
+    "gross_fixed_capital": {
+      "subtitle": "gross fixed capital formation (real), national, 1940–1990, millions of 1995 pesos",
+      "preserve_existing_definition": true
+    },
+    "fiscal_revenue_pesos": {
+      "subtitle": "total fiscal revenue (pesos), national, 1837–1914, pesos",
+      "preserve_existing_definition": true
+    },
+    "fiscal_revenue_gbp": {
+      "subtitle": "total fiscal revenue (British Foreign Office, GBP), national, 1833–1866, GBP",
+      "preserve_existing_definition": true
+    },
+    "birth_rate_national": {
+      "subtitle": "birth rate (per 1,000), national, 1848–1990, per 1,000 population",
+      "preserve_existing_definition": true
+    },
+    "expenditure_per_capita_real": {
+      "subtitle": "government expenditure per capita, national, 1810–1990, pesos (1995)",
+      "preserve_existing_definition": true
+    },
+    "shipping_tonnage_entered": {
+      "subtitle": "shipping tonnage entered, national, 1874–1914, tons",
+      "preserve_existing_definition": true
+    },
+    "mint_receipts_national": {
+      "subtitle": "mint receipts, national, 1837–1894, pesos",
+      "preserve_existing_definition": true
+    },
+    "poblacion_censal_dept": {
+      "subtitle": "census population, by department, 1865–1920, persons",
+      "preserve_existing_definition": true
+    },
+    "bautismos_1865_dept": {
+      "subtitle": "baptisms, by department, 1865, baptisms",
+      "preserve_existing_definition": true
+    },
+    "defunciones_1865_dept": {
+      "subtitle": "parish-register deaths, by department, 1865, deaths",
+      "preserve_existing_definition": true
+    },
+    "matrimonios_1865_dept": {
+      "subtitle": "parish-register marriages, by department, 1865, marriages",
+      "preserve_existing_definition": true
+    },
+    "occ_agricultura_1920_dept": {
+      "subtitle": "agricultural workers, by department, 1920, workers",
+      "preserve_existing_definition": true
+    },
+    "n_landowners_1875_dept": {
+      "subtitle": "Landowners, by department, 1875, landowners",
+      "preserve_existing_definition": true
+    },
+    "poblacion_total_titled_dept": {
+      "subtitle": "total population, by department, 1920–1952, persons",
+      "preserve_existing_definition": true
+    },
+    "poblacion_censal_prov": {
+      "subtitle": "census population, by province, 1865–1920, persons",
+      "preserve_existing_definition": true
+    },
+    "alumnos_total_prov": {
+      "subtitle": "pupils enrolled (province, 1850s), by province, 1855–1858, pupils",
+      "preserve_existing_definition": true
+    },
+    "alumnos_hombres_prov": {
+      "subtitle": "male pupils enrolled (province, 1850s), by province, 1855–1858, pupils",
+      "preserve_existing_definition": true
+    },
+    "alumnos_mujeres_prov": {
+      "subtitle": "female pupils enrolled (province, 1850s), by province, 1855–1858, pupils",
+      "preserve_existing_definition": true
+    },
+    "escuelas_total_prov": {
+      "subtitle": "schools (province, 1850s), by province, 1855–1858, schools",
+      "preserve_existing_definition": true
+    },
+    "escuelas_hombres_prov": {
+      "subtitle": "boys' schools (province, 1850s), by province, 1855–1858, schools",
+      "preserve_existing_definition": true
+    },
+    "escuelas_mujeres_prov": {
+      "subtitle": "girls' schools (province, 1850s), by province, 1855–1858, schools",
+      "preserve_existing_definition": true
+    },
+    "crimenes_1859_prov": {
+      "subtitle": "crimes recorded, by province, 1859, crimes",
+      "preserve_existing_definition": true
+    },
+    "casados_1854_prov": {
+      "subtitle": "married persons, by province, 1854, persons",
+      "preserve_existing_definition": true
+    },
+    "pct_inmigrantes_prov": {
+      "subtitle": "in-migrants as a share of population, by province, 1960, %",
+      "preserve_existing_definition": true
+    },
+    "occ_agricultores_1875_prov": {
+      "subtitle": "farmers, by province, 1875, men",
+      "preserve_existing_definition": true
+    },
+    "pct_protestante_prov": {
+      "subtitle": "protestant population share, by province, 1960–1970, %",
+      "preserve_existing_definition": true
+    },
+    "pct_urbana_prov": {
+      "subtitle": "urban population share, by province, 1895–1920, %",
+      "preserve_existing_definition": true
+    },
+    "bfo_total_revenue": {
+      "subtitle": "total fiscal revenue (British Foreign Office returns), national, 1837–1860, GBP",
+      "preserve_existing_definition": true
+    },
+    "customs_revenue_nat": {
+      "subtitle": "customs revenue (British Foreign Office returns), national, 1837–1860, GBP",
+      "preserve_existing_definition": true
+    },
+    "budget_education_share": {
+      "subtitle": "education share of the national budget, national, 1900–1940, %",
+      "preserve_existing_definition": true
+    },
+    "active_population_nat": {
+      "subtitle": "economically active population, national, 1960–1978, thousands of persons",
+      "preserve_existing_definition": true
+    },
+    "education_spending_total": {
+      "subtitle": "public education expenditure, national, 1850–1858, pesos",
+      "preserve_existing_definition": true
+    },
+    "votantes_nacional": {
+      "subtitle": "votes cast in national elections, national, 1935–1970, voters",
+      "preserve_existing_definition": true
+    },
+    "employment_total_nat": {
+      "subtitle": "total employment, national, 1956–1978, persons",
+      "preserve_existing_definition": true
+    },
+    "fiscal_expenditure_total_nat": {
+      "subtitle": "total fiscal expenditure, national, 1901–1913, pesos",
+      "preserve_existing_definition": true
+    },
+    "gov_current_revenue_nat": {
+      "subtitle": "government current revenue, national, 1960–1970, pesos",
+      "preserve_existing_definition": true
+    },
+    "viviendas_nat": {
+      "subtitle": "dwellings, national, 1952–1990, dwellings",
+      "preserve_existing_definition": true
+    },
+    "menores_control_nat": {
+      "subtitle": "minors under state protective control, national, 1821–1983, minors",
+      "preserve_existing_definition": true
+    },
+    "labor_obreros_share_nat": {
+      "subtitle": "manual workers as a share of the employed, national, 1960–1970, %",
+      "preserve_existing_definition": true
+    },
+    "labor_force_quarterly_nat": {
+      "subtitle": "total labour force (quarterly survey), national, 1956–1978, persons",
+      "preserve_existing_definition": true
+    },
+    "desnutricion_total_nat": {
+      "subtitle": "child malnutrition rate, national, 1975–1983, %",
+      "preserve_existing_definition": true
+    },
+    "copper_production_value_nat": {
+      "subtitle": "copper production value, national, 1918–1923, gold pesos (18d)",
+      "preserve_existing_definition": true
+    },
+    "mortality_rate_nat": {
+      "subtitle": "crude mortality rate, national, 1849–1858, %",
+      "preserve_existing_definition": true
+    },
+    "pob_urbana_nat": {
+      "subtitle": "urban population, national, 1865–1982, persons",
+      "preserve_existing_definition": true
+    },
+    "real_income_nat": {
+      "subtitle": "average real income, national, 1960–1983, index",
+      "preserve_existing_definition": true
+    },
+    "social_spending_real_nat": {
+      "subtitle": "real social expenditure, national, 1960–1983, index",
+      "preserve_existing_definition": true
+    },
+    "exports_total_nat": {
+      "subtitle": "total exports, national, 1862–1924, pesos (18d)",
+      "preserve_existing_definition": true
+    },
+    "total_trade_nat": {
+      "subtitle": "total foreign trade, national, 1870–1914, pesos",
+      "preserve_existing_definition": true
+    },
+    "unemployment_total_nat": {
+      "subtitle": "total unemployment (quarterly survey), national, 1959–1978, persons",
+      "preserve_existing_definition": true
+    },
+    "wages_total_nat": {
+      "subtitle": "average registered monthly wage, national, 1944–1976, pesos",
+      "preserve_existing_definition": true
+    }
+  }
+}

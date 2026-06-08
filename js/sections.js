@@ -211,6 +211,47 @@ export function createSections(host) {
       <p class="ss-foot caption">Contact: <a href="mailto:maxvejares@jhu.edu">maxvejares@jhu.edu</a>.</p>
     </section>
 
+    <section id="resources" class="static-section">
+      <div class="ss-overline overline">Other data</div>
+      <h2 class="ss-title serif">Looking for something else?</h2>
+      <p class="ss-body">
+        This atlas is deliberately focused: subnational (department and province)
+        Chilean statistics for ${sc.start}&ndash;${sc.end}, compiled from primary
+        records. For national long-run series, cross-country comparison, or data
+        after 1990, the resources below are the best starting points.
+      </p>
+
+      <h3 style="font-weight:600; margin:22px 0 8px; font-size:16px;">Looking for data after 1990? Current official statistics</h3>
+      <ul style="list-style:none; padding:0; margin:0; display:grid; gap:10px;">
+        <li style="font-size:14px;"><a href="https://www.ine.gob.cl/" target="_blank" rel="noopener" style="color:var(--accent); font-weight:600;">Instituto Nacional de Estad&iacute;sticas (INE)</a> &mdash; censuses, demography, prices, employment.</li>
+        <li style="font-size:14px;"><a href="https://www.sinim.gov.cl/" target="_blank" rel="noopener" style="color:var(--accent); font-weight:600;">SINIM</a> &mdash; municipal data for every Chilean municipality (finance, education, health, social).</li>
+        <li style="font-size:14px;"><a href="https://www.bcentral.cl/" target="_blank" rel="noopener" style="color:var(--accent); font-weight:600;">Banco Central de Chile</a> &mdash; macroeconomic, monetary, and financial series.</li>
+        <li style="font-size:14px;"><a href="https://centroestudios.mineduc.cl/datos-abiertos/" target="_blank" rel="noopener" style="color:var(--accent); font-weight:600;">MINEDUC &middot; Centro de Estudios</a> &mdash; open education data (enrollment, schools, teachers), 1992&ndash;present.</li>
+        <li style="font-size:14px;"><a href="https://deis.minsal.cl/" target="_blank" rel="noopener" style="color:var(--accent); font-weight:600;">DEIS &middot; Ministerio de Salud</a> &mdash; vital statistics, hospital discharges, health data.</li>
+        <li style="font-size:14px;"><a href="https://observatorio.ministeriodesarrollosocial.gob.cl/" target="_blank" rel="noopener" style="color:var(--accent); font-weight:600;">Observatorio Social &middot; CASEN</a> &mdash; poverty, income, and social conditions.</li>
+        <li style="font-size:14px;"><a href="https://www.servel.cl/" target="_blank" rel="noopener" style="color:var(--accent); font-weight:600;">Servicio Electoral (SERVEL)</a> &mdash; electoral rolls and results.</li>
+        <li style="font-size:14px;"><a href="https://datos.gob.cl/" target="_blank" rel="noopener" style="color:var(--accent); font-weight:600;">datos.gob.cl</a> &mdash; the Chilean government open-data portal.</li>
+      </ul>
+
+      <h3 style="font-weight:600; margin:22px 0 8px; font-size:16px;">National &amp; comparative historical series</h3>
+      <ul style="list-style:none; padding:0; margin:0; display:grid; gap:10px;">
+        <li style="font-size:14px;"><a href="https://ebooks.ediciones.uc.cl/library/publication/chile-1810-2010-la-republica-en-cifras-historical-statistics-1668796634" target="_blank" rel="noopener" style="color:var(--accent); font-weight:600;">D&iacute;az, L&uuml;ders &amp; Wagner (2016), <em>Chile 1810&ndash;2010. La Rep&uacute;blica en cifras</em></a> &mdash; the definitive national historical-statistics compendium.</li>
+        <li style="font-size:14px;"><a href="https://www.economia.uc.cl/docs/doctra/dt-187.pdf" target="_blank" rel="noopener" style="color:var(--accent); font-weight:600;">Braun et al. (1998), <em>Econom&iacute;a Chilena 1810&ndash;1995</em></a> &mdash; its freely available predecessor (PUC).</li>
+        <li style="font-size:14px;"><a href="https://www.lac.ox.ac.uk/research-projects/moxlad-database" target="_blank" rel="noopener" style="color:var(--accent); font-weight:600;">MOxLAD</a> &mdash; comparable Latin American economic series, 1870&ndash;2010.</li>
+        <li style="font-size:14px;"><a href="https://clio-infra.eu/Countries/Chile.html" target="_blank" rel="noopener" style="color:var(--accent); font-weight:600;">CLIO-Infra (Chile)</a> &mdash; global historical indicators (GDP, population, wages, inequality).</li>
+        <li style="font-size:14px;"><a href="https://www.rug.nl/ggdc/historicaldevelopment/maddison/" target="_blank" rel="noopener" style="color:var(--accent); font-weight:600;">Maddison Project</a> &mdash; long-run GDP per capita.</li>
+        <li style="font-size:14px;"><a href="https://wid.world/country/chile/" target="_blank" rel="noopener" style="color:var(--accent); font-weight:600;">World Inequality Database (Chile)</a> &mdash; income and wealth inequality.</li>
+      </ul>
+
+      <h3 style="font-weight:600; margin:22px 0 8px; font-size:16px;">Primary sources &amp; companion scholarship</h3>
+      <ul style="list-style:none; padding:0; margin:0; display:grid; gap:10px;">
+        <li style="font-size:14px;"><a href="https://www.memoriachilena.gob.cl/" target="_blank" rel="noopener" style="color:var(--accent); font-weight:600;">Memoria Chilena</a> &mdash; digitized censuses, yearbooks, and historical documents (Biblioteca Nacional).</li>
+        <li style="font-size:14px;"><a href="https://www.bcn.cl/" target="_blank" rel="noopener" style="color:var(--accent); font-weight:600;">Biblioteca del Congreso Nacional (BCN)</a> &mdash; legislation, electoral and territorial history.</li>
+        <li style="font-size:14px;">Llorca-Ja&ntilde;a, M. (ed.) (2026), <em>Historia econ&oacute;mica regional de Chile</em> (Fondo de Cultura Econ&oacute;mica) &mdash; companion regional economic history.</li>
+      </ul>
+      <p class="ss-foot caption">Links open in a new tab. This atlas is not affiliated with these sources; they are listed as a service to researchers.</p>
+    </section>
+
     <section id="downloads" class="static-section">
       <h2 class="ss-title serif">Downloads</h2>
       <p class="ss-body">

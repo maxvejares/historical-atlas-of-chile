@@ -1,6 +1,6 @@
 {
   "platform_scope_start": 1810,
-  "platform_scope_end": 1990,
+  "platform_scope_end": 1992,
   "rationale": "1810 marks the start of the Chilean republican period and the canonical lower bound of the project's historical panel. Pre-1865 censuses (Egaña 1813, 1835, 1843, 1854) are included with methodological caveat flags rather than excluded; affected cells carry [pre_1865_census=<year>;caveats=<descriptor>] notes prefixes. 1990 marks the democratic transition; post-1990 data is digitally-native and structurally different from the historical archive (INE microdata, BC APIs, ministry datasets), deferred to a future window-extension phase rather than retired.",
   "applies_to": [
     "variable_family_manifest.csv (valid_years_pattern clipping; scope_status)",

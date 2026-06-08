@@ -40,7 +40,11 @@ export async function loadManifest() {
   // => the full catalog, unfiltered.
   const _disabledIds = (typeof window !== 'undefined' && Array.isArray(window.__DISABLED_INDICATORS))
     ? window.__DISABLED_INDICATORS : [];
-  _manifest = _disabledIds.length
+  // _full = the resolution universe: every indicator except source-disabled
+  // ones. byId / resolveCanonical / relatedTo index this FULL set, so a direct
+  // URL to a retired, alternate-variant, or alternate-currency indicator still
+  // resolves and the "Related series" links still point somewhere.
+  const _full = _disabledIds.length
     ? (() => { const ds = new Set(_disabledIds); return m.filter(v => !ds.has(v.id)); })()
     : m;
   _stats = s;
@@ -52,12 +56,12 @@ export async function loadManifest() {
   } else {
     _scope = { start: 1840, end: 1990 };
   }
-  _byId = new Map(_manifest.map(v => [v.id, v]));
+  _byId = new Map(_full.map(v => [v.id, v]));
   // Also index by display_id and by aliases so URLs that cite a renamed or
   // retired indicator still resolve. (curation overlay 01 — duplicates &
   // renames keep the canonical entry but add display_id + aliases lists;
   // a citation pasted before the rename should not 404.)
-  for (const v of _manifest) {
+  for (const v of _full) {
     if (v.display_id && !_byId.has(v.display_id)) _byId.set(v.display_id, v);
     if (Array.isArray(v.aliases)) {
       for (const a of v.aliases) {
@@ -77,6 +81,7 @@ export async function loadManifest() {
   // pointers (variant_of, merged_into, currency_view_of) are set by
   // apply_curation_01_duplicates.py; the canonical does not know its
   // alternates, so we invert the relation here for the "Related series" footer.
+  // Built from _full so the canonical can still link to hidden alternates.
   _relatedTo = new Map();
   const bucket = (canon, key, id) => {
     if (!canon) return;
@@ -84,11 +89,22 @@ export async function loadManifest() {
     if (!r) { r = { alternate_source: [], retired_into: [], alternate_currency: [] }; _relatedTo.set(canon, r); }
     r[key].push(id);
   };
-  for (const v of _manifest) {
+  for (const v of _full) {
     if (v.variant_of) bucket(v.variant_of, 'alternate_source', v.id);
     if (v.merged_into) bucket(v.merged_into, 'retired_into', v.id);
     if (v.currency_view_of) bucket(v.currency_view_of, 'alternate_currency', v.id);
   }
+  // _manifest = the BROWSE-VISIBLE catalog: the full set minus indicators that
+  // should never appear in the topic grid, browse nav, search, national picker,
+  // or hero counts — retired entries, alternate-source / alternate-currency
+  // variants of a canonical series, and unit_splice_corruption ratio series
+  // whose values are not yet reconciled (curation tasks 3 & 5). All of these
+  // remain reachable by direct URL through _byId above.
+  const _HIDDEN_STATUS = new Set(['retired', 'alternate_variant', 'alternate_currency']);
+  _manifest = _full.filter(v =>
+    !_HIDDEN_STATUS.has(v.presentation_status) &&
+    v.data_quality_flag !== 'unit_splice_corruption'
+  );
   return _manifest;
 }
 

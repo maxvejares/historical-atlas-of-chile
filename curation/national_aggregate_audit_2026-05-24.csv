@@ -1,0 +1,112 @@
+indicator_id,scale_available,has_national_sibling,sibling_id,summability_verdict,aggregator_rule,notes
+alumnos_hombres_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='pupils'; fmt=count; fam=None; pcd=user_choice
+alumnos_mujeres_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='pupils'; fmt=count; fam=None; pcd=user_choice
+alumnos_total_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='pupils'; fmt=count; fam=None; pcd=user_choice
+bank_offices_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='offices'; fmt=count; fam=None; pcd=default_raw
+bankruptcies_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='bankruptcies'; fmt=count; fam=None; pcd=default_raw
+bautismos_1865_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='baptisms'; fmt=count; fam=None; pcd=default_raw
+bautismos_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='baptisms'; fmt=count; fam=None; pcd=default_raw
+calificados_1869_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='voters'; fmt=count; fam=None; pcd=default_raw
+carceles_entrados_1869_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='prisoners'; fmt=count; fam=None; pcd=default_raw
+casados_1854_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='persons'; fmt=count; fam=None; pcd=default_raw
+correos_cartas_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='letters'; fmt=count; fam=None; pcd=default_raw
+correos_impresos_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='items'; fmt=count; fam=None; pcd=default_raw
+court_cases_filed_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='cases'; fmt=count; fam=None; pcd=default_raw
+crimenes_1859_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='crimes'; fmt=count; fam=None; pcd=default_raw
+defunciones,province,true,crude_birth_rate,national_sibling,use national-scale series directly,unit='deaths'; fmt=count; fam=mortality_natality_long_series; pcd=default_pc
+defunciones_1858_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='deaths'; fmt=count; fam=None; pcd=default_pc
+defunciones_1865_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='deaths'; fmt=count; fam=None; pcd=default_pc
+defunciones_hist_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='deaths'; fmt=count; fam=None; pcd=default_pc
+diputados_1920_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='deputies'; fmt=count; fam=None; pcd=default_raw
+escuelas_asistencia_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='pupils'; fmt=count; fam=None; pcd=user_choice
+escuelas_matricula_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='pupils'; fmt=count; fam=None; pcd=user_choice
+foreigners_1895_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='persons'; fmt=count; fam=None; pcd=default_raw
+hospital_admissions_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='admissions'; fmt=count; fam=None; pcd=default_raw
+hospital_beds_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='beds'; fmt=count; fam=None; pcd=default_raw
+hospitals_count_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='hospitals'; fmt=count; fam=None; pcd=default_raw
+hospitals_count_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='hospitals'; fmt=count; fam=None; pcd=default_raw
+land_tax_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='pesos'; fmt=count; fam=None; pcd=default_raw
+literates_subnational,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='persons'; fmt=count; fam=None; pcd=default_raw
+matrimonios,province,true,crude_birth_rate,national_sibling,use national-scale series directly,unit='marriages'; fmt=count; fam=mortality_natality_long_series; pcd=default_raw
+matrimonios_1858_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='marriages'; fmt=count; fam=None; pcd=default_raw
+matrimonios_1865_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='marriages'; fmt=count; fam=None; pcd=default_raw
+matrimonios_hist_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='marriages'; fmt=count; fam=None; pcd=default_raw
+municipal_salidas_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='pesos'; fmt=currency; fam=None; pcd=default_raw
+n_hacendados_legs,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='legislators'; fmt=count; fam=None; pcd=user_choice
+n_landowners_1875_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='landowners'; fmt=count; fam=None; pcd=default_raw
+nacimientos,province,true,crude_birth_rate,national_sibling,use national-scale series directly,unit='births'; fmt=count; fam=mortality_natality_long_series; pcd=default_pc
+nacimientos_1858_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='births'; fmt=count; fam=None; pcd=default_pc
+nacimientos_1924_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='births'; fmt=count; fam=None; pcd=default_pc
+occ_agricultores_1875_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='men'; fmt=count; fam=None; pcd=default_raw
+occ_agricultura_1920_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='workers'; fmt=count; fam=None; pcd=default_raw
+patentes_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='patentes'; fmt=count; fam=None; pcd=default_raw
+pct_inmigrantes_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='%'; fmt=share; fam=None; pcd=default_raw
+pct_protestante_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='%'; fmt=share; fam=None; pcd=default_raw
+pct_urbana_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='%'; fmt=share; fam=None; pcd=default_raw
+police_force_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='officers'; fmt=count; fam=None; pcd=default_pc
+post_offices_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='offices'; fmt=count; fam=None; pcd=default_raw
+reos_aprehendidos_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='persons'; fmt=count; fam=None; pcd=default_raw
+reos_entrados_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='prisoners'; fmt=count; fam=None; pcd=default_raw
+school_matricula_ext_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='pupils'; fmt=count; fam=None; pcd=default_raw
+schools_count_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='schools'; fmt=count; fam=None; pcd=default_raw
+senadores_1920_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='senators'; fmt=count; fam=None; pcd=default_raw
+tasa_matrimonios_por_mil,province,true,crude_birth_rate,national_sibling,use national-scale series directly,"unit='per 1,000 population'; fmt=rate; fam=mortality_natality_long_series; pcd=default_raw"
+total_population,department;province,true,"total_population (same id, national scale)",national_sibling,use national-scale series directly,unit='persons'; fmt=count; fam=total_population_subnational; pcd=user_choice
+vacunados_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='persons vaccinated'; fmt=count; fam=None; pcd=default_raw
+viruela_defunciones_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='deaths'; fmt=count; fam=None; pcd=default_pc
+virus_repartido_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='doses'; fmt=count; fam=None; pcd=default_raw
+votos_municipales_1870_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='votes'; fmt=count; fam=None; pcd=default_raw
+votos_presidente_1871_dept,department,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='votes'; fmt=count; fam=None; pcd=default_raw
+wheat_1924_prov,province,true,pob_urbana_nat,national_sibling,use national-scale series directly,unit='quintals'; fmt=count; fam=None; pcd=default_raw
+densidad_hab_por_km2,province,false,,not_defined,show 'National aggregate not defined for a count indicator' caption,unit='persons per km²'; fmt=count; fam=rural_urban_share_long_series; pcd=default_raw
+enfranchised_pc,department,false,,not_defined,show 'National aggregate not defined for a count indicator' caption,unit='voters per capita'; fmt=count; fam=electoral_subnational; pcd=default_raw
+gini_avaluo_1874,department,false,,not_defined,show 'National aggregate not defined for a count indicator' caption,unit='Gini coefficient (0-1)'; fmt=count; fam=landholding_avaluo; pcd=default_raw
+legislator_surname_persistence_1833_1891,department,false,,not_defined,show 'National aggregate not defined for a count indicator' caption,unit='index (0-1)'; fmt=count; fam=landholding_avaluo; pcd=default_raw
+manorial_treatment,department,false,,not_defined,show 'National aggregate not defined for a count indicator' caption,unit='0/1 indicator'; fmt=count; fam=landholding_manorial; pcd=not_applicable
+muni_police_share,department,false,,not_defined,show 'National aggregate not defined for a share indicator' caption,unit='%'; fmt=share; fam=municipal_finance; pcd=default_raw
+muni_subsidy_share,department,false,,not_defined,show 'National aggregate not defined for a share indicator' caption,unit='%'; fmt=share; fam=municipal_finance; pcd=default_raw
+pct_pgb_provincial,province,false,,not_defined,show 'National aggregate not defined for a share indicator' caption,unit='%'; fmt=share; fam=provincial_gdp_share_1966_1970; pcd=default_raw
+pct_poblacion_urbana,province,false,,not_defined,show 'National aggregate not defined for a share indicator' caption,unit='%'; fmt=share; fam=rural_urban_share_long_series; pcd=default_raw
+pres_has_gobernador,department,false,,not_defined,show 'National aggregate not defined for a count indicator' caption,unit='0/1 indicator'; fmt=count; fam=state_officials_named; pcd=not_applicable
+pres_has_juez,department,false,,not_defined,show 'National aggregate not defined for a count indicator' caption,unit='0/1 indicator'; fmt=count; fam=state_officials_named; pcd=not_applicable
+pres_has_reg_civil,department,false,,not_defined,show 'National aggregate not defined for a count indicator' caption,unit='0/1 indicator'; fmt=count; fam=state_officials_named; pcd=not_applicable
+pubemp_per_capita,province,false,,not_defined,show 'National aggregate not defined for a count indicator' caption,unit='employees per capita'; fmt=count; fam=public_employment_subnational; pcd=default_raw
+top5_avaluo_share_1874,department,false,,not_defined,show 'National aggregate not defined for a share indicator' caption,unit='%'; fmt=share; fam=landholding_avaluo; pcd=default_raw
+alumnos_h,province,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='pupils'; fmt=count; fam=school_enrollment_subnational; pcd=user_choice
+alumnos_m,province,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='pupils'; fmt=count; fam=school_enrollment_subnational; pcd=user_choice
+alumnos_total,province,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='pupils'; fmt=count; fam=school_enrollment_subnational; pcd=user_choice
+avaluo_total_1874,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='current pesos'; fmt=count; fam=landholding_avaluo; pcd=default_raw
+enfranchised,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='persons'; fmt=count; fam=electoral_subnational; pcd=default_raw
+enfranchised_peasant,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='persons'; fmt=count; fam=electoral_subnational; pcd=default_pc
+enfranchised_totalpop,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='persons'; fmt=count; fam=electoral_subnational; pcd=default_pc
+engineers,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='persons'; fmt=count; fam=occupations_canonical_subnational; pcd=default_pc
+escuelas_h,province,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='schools'; fmt=count; fam=school_enrollment_subnational; pcd=user_choice
+escuelas_m,province,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='schools'; fmt=count; fam=school_enrollment_subnational; pcd=user_choice
+escuelas_total,province,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='schools'; fmt=count; fam=school_enrollment_subnational; pcd=user_choice
+lawyer,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='persons'; fmt=count; fam=occupations_canonical_subnational; pcd=default_pc
+matrimonios_total,province,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='marriages'; fmt=count; fam=marriages_age_cohort; pcd=default_pc
+max_terms_single_legislator_1833_1891,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='terms'; fmt=count; fam=landholding_avaluo; pcd=user_choice
+military,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='persons'; fmt=count; fam=occupations_canonical_subnational; pcd=default_pc
+muni_entradas_locales,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='pesos'; fmt=currency; fam=municipal_finance; pcd=user_choice
+muni_policia_ornato,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='current pesos'; fmt=count; fam=municipal_finance; pcd=user_choice
+muni_policia_seguridad,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='current pesos'; fmt=count; fam=municipal_finance; pcd=user_choice
+muni_subvencion_gobierno,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='current pesos'; fmt=count; fam=municipal_finance; pcd=user_choice
+muni_total_revenue,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='pesos'; fmt=currency; fam=municipal_finance; pcd=user_choice
+n_legislators,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='legislators'; fmt=count; fam=landholding_avaluo; pcd=user_choice
+n_taxpayers_rol_1874,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='taxpayers'; fmt=count; fam=landholding_avaluo; pcd=default_raw
+n_unique_legislator_surnames_1833_1891,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='surnames'; fmt=count; fam=landholding_avaluo; pcd=user_choice
+n_unique_legislators_1833_1891,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='legislators'; fmt=count; fam=landholding_avaluo; pcd=user_choice
+peasant,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='persons'; fmt=count; fam=occupations_canonical_subnational; pcd=default_pc
+poblacion_rural,province,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='persons'; fmt=count; fam=urban_rural_population_subnational; pcd=default_pc
+poblacion_urbana,province,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='persons'; fmt=count; fam=urban_rural_population_subnational; pcd=default_pc
+police,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='officers'; fmt=count; fam=occupations_canonical_subnational; pcd=default_pc
+pubemp,department;province,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='employees'; fmt=count; fam=occupations_canonical_subnational; pcd=default_pc
+register_voters,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='persons'; fmt=count; fam=electoral_subnational; pcd=default_raw
+ruralpop,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='persons'; fmt=count; fam=urban_rural_population_subnational; pcd=user_choice
+sna_estate_count_1874,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='estates'; fmt=count; fam=landholding_sna; pcd=default_raw
+sna_estate_price_mean_1874,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='current pesos'; fmt=count; fam=landholding_sna; pcd=default_raw
+sufragantes,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='persons'; fmt=count; fam=electoral_subnational; pcd=default_raw
+superficie_km2,province,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='square kilometers'; fmt=count; fam=geo_metadata_extended; pcd=default_raw
+teacher,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='teachers'; fmt=count; fam=occupations_canonical_subnational; pcd=default_pc
+total_avaluo_rol_1874,department,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='current pesos'; fmt=count; fam=landholding_avaluo; pcd=default_raw
+totexp,province,false,,sum_across_units,sum window._data[scale].data[year][*][id] across units,unit='pesos'; fmt=currency; fam=fiscal_expenditure_categorical; pcd=default_raw

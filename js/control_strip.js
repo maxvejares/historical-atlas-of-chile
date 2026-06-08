@@ -6,7 +6,7 @@
 import * as M from './manifest.js';
 import { createYearSlider } from './year_slider.js';
 
-const SCALES = ['national', 'department', 'province'];
+const SCALES = ['national', 'department', 'province', 'commune'];
 
 export function createControlStrip(host, { onSelect }) {
   host.classList.add('control-strip');

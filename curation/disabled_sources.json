@@ -1,0 +1,20 @@
+{
+  "_comment": "Source-level display toggle for the public atlas. A disabled source's indicators are hidden from the platform (topic grid, browse nav, national chart picker, search, hero counts) WITHOUT touching any data file. The master CSV and all generated data keep every Braun row intact. To re-enable a source: set its \"disabled\" to false, then run `python3 scripts/apply_source_disable.py` and `python3 scripts/build_atlas_bundle.py`. The id lists below are computed by the apply script from variable_manifest.json source attribution; do not hand-edit them.",
+  "policy_doc": "An indicator is hidden only when EVERY one of its sources matches the disabled pattern (a source-pure indicator). Indicators that mix a disabled source with a source you collected are KEPT and listed under mixed_kept (they carry your own data; Braun only extends the long-run tail).",
+  "sources": [
+    {
+      "key": "braun_1998",
+      "label": "Braun et al. 1998. Estadísticas Históricas Chile 1810-1995 (PUC DT 187)",
+      "match": [
+        "braun"
+      ],
+      "disabled": true,
+      "computed": {
+        "generated": "2026-06-07",
+        "master_md5": "52f22192f5d441c1ca494b5aea21c5f8",
+        "disabled_indicator_ids": [],
+        "mixed_kept": []
+      }
+    }
+  ]
+}

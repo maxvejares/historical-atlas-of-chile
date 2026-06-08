@@ -49,6 +49,16 @@ const MAINLAND_BOUNDS = [[-56.0, -76.0], [-17.5, -66.5]];
 const MAINLAND_PADDING = [20, 20];
 const CENSUS_GEO_YEARS_DEPT = [1833, 1843, 1854, 1865, 1875, 1885, 1895, 1907, 1920];
 const CENSUS_GEO_YEARS_PROV = [1826, 1833, 1843, 1854, 1865, 1875, 1885, 1895, 1907, 1920, 1924];
+// Comuna geometry: a 1935 boundary set (277 comunas, built 2026-06-07 by
+// dissolving the modern CUT polygons into their 1935 parents per a decree-cited
+// crosswalk) plus the modern 2018 CUT set. 1935 census data renders on the 1935
+// frame; the 1970 and 1992 data are keyed to modern CUTs and render on 2018.
+const CENSUS_GEO_YEARS_COMMUNE = [1935, 2018];
+function geoYearsFor(scale) {
+  return scale === 'department' ? CENSUS_GEO_YEARS_DEPT
+       : scale === 'commune'    ? CENSUS_GEO_YEARS_COMMUNE
+       : CENSUS_GEO_YEARS_PROV;
+}
 
 function nearestGeoYear(year, available) {
   let best = available[0], bestD = Math.abs(best - year);
@@ -199,12 +209,23 @@ function resolvePcode(key) {
   return key;
 }
 
+/** Resolve a data key to a canonical ccode (5-digit CUT). The commune_data
+ *  block is already keyed by CUT (resolved upstream by comuna_mapping.py), so
+ *  this is an identity passthrough that joins directly to the geojson ccode. */
+function resolveCcode(key) {
+  return key;
+}
+
 /** Extract the canonical code from a GeoJSON feature. */
 function featureCode(f, scale) {
   if (scale === 'department') {
     // Prefer dcode property (string panel key); fall back to normalizeKey
     if (f.properties.dcode && typeof f.properties.dcode === 'string') return f.properties.dcode;
     return normalizeKey(f.properties.department || f.properties.name || '');
+  }
+  if (scale === 'commune') {
+    // Comuna features carry the 5-digit CUT in `ccode`.
+    return f.properties.ccode || normalizeKey(f.properties.comuna || f.properties.name || '');
   }
   // Province: pcode may be string (1854+) or numeric (legacy 1865–1920)
   if (f.properties.pcode && typeof f.properties.pcode === 'string') return f.properties.pcode;
@@ -436,7 +457,10 @@ export function createMapView(host) {
     if (!lastState.variable || !lastState.year) return;
     const meta = M.byId(lastState.variable);
     if (!meta) return;
-    const block = lastState.scale === 'department' ? window._data.department_data : window._data.province_data;
+    const block = lastState.scale === 'department' ? window._data.department_data
+                : lastState.scale === 'commune'    ? window._data.commune_data
+                : window._data.province_data;
+    if (!block) return;
     const yd = block.data[String(lastState.year)] || {};
     const valueHead = meta.display_label || meta.label || meta.id;
     const measUnit = meta.display_unit || '';
@@ -477,11 +501,20 @@ export function createMapView(host) {
   }
 
   async function loadGeoJSON(scale, year) {
-    const yrs = scale === 'department' ? CENSUS_GEO_YEARS_DEPT : CENSUS_GEO_YEARS_PROV;
-    const geoYear = nearestGeoYear(year, yrs);
+    const yrs = geoYearsFor(scale);
+    // Commune frames are sparse (1935, 2018) and the data ccodes are vintage-
+    // specific: 1935 census joins the 1935 dissolve, while 1970/1992 are keyed
+    // to modern CUTs and must use 2018. A plain nearest-year would misroute 1970
+    // to 1935, so pick explicitly at a mid-century break.
+    const geoYear = scale === 'commune'
+      ? (Number(year) <= 1953 ? 1935 : 2018)
+      : nearestGeoYear(year, yrs);
     const key = `${scale}_${geoYear}`;
     if (geoCache.has(key)) return geoCache.get(key);
-    const path = `data/${scale === 'department' ? 'departments' : 'provinces'}_${geoYear}.geojson`;
+    const fileStem = scale === 'department' ? 'departments'
+                   : scale === 'commune'    ? 'communes'
+                   : 'provinces';
+    const path = `data/${fileStem}_${geoYear}.geojson`;
     const r = await fetch(path);
     if (!r.ok) throw new Error(`GeoJSON fetch failed: ${path} -> ${r.status}`);
     const j = await r.json();
@@ -490,10 +523,15 @@ export function createMapView(host) {
   }
 
   function buildValueMap(scale, year, variable, perCapita) {
-    const block = scale === 'department' ? window._data.department_data : window._data.province_data;
+    const block = scale === 'department' ? window._data.department_data
+                : scale === 'commune'    ? window._data.commune_data
+                : window._data.province_data;
+    if (!block) return {};
     const yearData = block.data[String(year)];
     if (!yearData) return {};
-    const resolve = scale === 'department' ? resolveDcode : resolvePcode;
+    const resolve = scale === 'department' ? resolveDcode
+                  : scale === 'commune'    ? resolveCcode
+                  : resolvePcode;
     const out = {};
     for (const [unit, vars] of Object.entries(yearData)) {
       if (vars[variable] == null || Number.isNaN(vars[variable])) continue;
@@ -606,8 +644,8 @@ export function createMapView(host) {
       srcBlock.textContent = '';
       return;
     }
-    if (scale !== 'department' && scale !== 'province') {
-      mapEl.innerHTML = `<div class="map-empty-state">Map view is for department and province scale; '${escapeHTML(scale)}' is a national-scale variable. Use the chart instead.</div>`;
+    if (scale !== 'department' && scale !== 'province' && scale !== 'commune') {
+      mapEl.innerHTML = `<div class="map-empty-state">Map view is for department, province, and commune scale; '${escapeHTML(scale)}' is a national-scale variable. Use the chart instead.</div>`;
       srcBlock.textContent = '';
       return;
     }
@@ -694,7 +732,7 @@ export function createMapView(host) {
     // distribution so the info card's default state can show highest/median.
     // Territory features (frontier/unorganized/disputed) are excluded from
     // coverage counts — they carry no administrative data.
-    const nameField = scale === 'department' ? 'department' : 'provincia';
+    const nameField = scale === 'department' ? 'department' : scale === 'commune' ? 'comuna' : 'provincia';
     let matched = 0;
     const matchedValues = [];
     const matchedEntries = []; // {name, value} for every matched feature
@@ -817,7 +855,7 @@ export function createMapView(host) {
     // Name how many units in the active geometry frame carry data. The count
     // is the matched intersection of geometry features and data (P1 fix),
     // already computed above as `matched` / `total`.
-    const scaleNoun = scale === 'department' ? 'departments' : 'provinces';
+    const scaleNoun = scale === 'department' ? 'departments' : scale === 'commune' ? 'comunas' : 'provinces';
     covCaptionEl.style.display = 'block';
     covCaptionEl.textContent = `${matched} of ${total} ${scaleNoun} mapped · ${year}` +
       (perCapita ? ' · per capita' : '');
@@ -859,7 +897,7 @@ export function createMapView(host) {
     // Subtle notice when the geometry year is merely the closest available;
     // a LOUD notice when the slider year is more than one frame interval past
     // the latest available frame (post-1928 data on pre-1928 boundaries).
-    const yrs = scale === 'department' ? CENSUS_GEO_YEARS_DEPT : CENSUS_GEO_YEARS_PROV;
+    const yrs = geoYearsFor(scale);
     const geoYear = nearestGeoYear(year, yrs);
     const latestFrame = yrs[yrs.length - 1];
     const lastInterval = yrs[yrs.length - 1] - yrs[yrs.length - 2];
