@@ -39,12 +39,12 @@
     "source_documents": [
       "Véjares, Maximiliano. Forthcoming. Compiled state-capacity dataset, Chile, 1935. Net Zero Industrial Policy Lab, Johns Hopkins University."
     ],
-    "topic_category": "economy",
+    "topic_category": "agriculture",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Véjares, compiled state-capacity dataset (Chile, 1935), author's compilation",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#3b6d11",
     "definition": "",
     "coverage_statement": "1 year(s) 1935, 210 observations",
     "commit_status_by_scale": {
@@ -96,12 +96,12 @@
     "source_documents": [
       "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)"
     ],
-    "topic_category": "economy",
+    "topic_category": "agriculture",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#3b6d11",
     "definition": "Apple production in metric tons by province in 1974, from ODEPA's Estadísticas Agropecuarias fruit returns.",
     "coverage_statement": "1 year(s) 1974, 12 province-level observations",
     "commit_status_by_scale": {
@@ -1231,10 +1231,10 @@
       "province": "committed"
     },
     "published_by_scale": {
-      "province": "complete"
+      "province": "sparse"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": "sparse",
     "breaks": [
       {
         "id": "boundary_conara_1974",
@@ -1256,7 +1256,8 @@
         "citation": "Meller (2000); Ffrench-Davis (2001).",
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
-    ]
+    ],
+    "catalog_visibility": "research_only"
   },
   {
     "id": "leche_vendida_plantas_miles_lts",
@@ -1299,12 +1300,12 @@
     "source_documents": [
       "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)"
     ],
-    "topic_category": "economy",
+    "topic_category": "agriculture",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#3b6d11",
     "definition": "Milk delivered to processing plants in thousands of litres by province, 1973 to 1974, from ODEPA's Estadísticas Agropecuarias.",
     "coverage_statement": "2 year(s) 1973-1974, 40 province-level observations",
     "commit_status_by_scale": {
@@ -1336,7 +1337,8 @@
         "citation": "Meller (2000); Ffrench-Davis (2001).",
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
-    ]
+    ],
+    "catalog_visibility": "research_only"
   },
   {
     "id": "pea_production",
@@ -1593,12 +1595,12 @@
     "source_documents": [
       "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)"
     ],
-    "topic_category": "economy",
+    "topic_category": "agriculture",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#3b6d11",
     "definition": "Pig stock in head by province, 1965 to 1974, from ODEPA's Estadísticas Agropecuarias.",
     "coverage_statement": "8 year(s) 1965-1973, 200 province-level observations",
     "commit_status_by_scale": {
@@ -1894,10 +1896,10 @@
       "province": "committed"
     },
     "published_by_scale": {
-      "province": "complete"
+      "province": "sparse"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": "sparse",
     "breaks": [
       {
         "id": "boundary_conara_1974",
@@ -1919,7 +1921,8 @@
         "citation": "Meller (2000); Ffrench-Davis (2001).",
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
-    ]
+    ],
+    "catalog_visibility": "research_only"
   },
   {
     "id": "existencias_ovinos_cabezas",
@@ -1969,12 +1972,12 @@
     "source_documents": [
       "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)"
     ],
-    "topic_category": "economy",
+    "topic_category": "agriculture",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#3b6d11",
     "definition": "Sheep stock in head by province, 1965 to 1974, from ODEPA's Estadísticas Agropecuarias.",
     "coverage_statement": "9 year(s) 1965-1974, 225 province-level observations",
     "commit_status_by_scale": {
@@ -2058,12 +2061,12 @@
     "source_documents": [
       "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)"
     ],
-    "topic_category": "economy",
+    "topic_category": "agriculture",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#3b6d11",
     "definition": "Table grape production in metric tons by province in 1974, from ODEPA's Estadísticas Agropecuarias fruit returns.",
     "coverage_statement": "1 year(s) 1974, 9 province-level observations",
     "commit_status_by_scale": {
@@ -2141,10 +2144,10 @@
       "province": "committed"
     },
     "published_by_scale": {
-      "province": "complete"
+      "province": "sparse"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": "sparse",
     "breaks": [
       {
         "id": "boundary_conara_1974",
@@ -2166,7 +2169,8 @@
         "citation": "Meller (2000); Ffrench-Davis (2001).",
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
-    ]
+    ],
+    "catalog_visibility": "research_only"
   },
   {
     "id": "wheat_production",
@@ -2431,10 +2435,10 @@
       "province": "committed"
     },
     "published_by_scale": {
-      "province": "complete"
+      "province": "sparse"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": "sparse",
     "breaks": [
       {
         "id": "boundary_conara_1974",
@@ -2456,7 +2460,8 @@
         "citation": "Meller (2000); Ffrench-Davis (2001).",
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
-    ]
+    ],
+    "catalog_visibility": "research_only"
   },
   {
     "id": "wine_production",
@@ -3042,12 +3047,12 @@
     "source_documents": [
       "Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos)"
     ],
-    "topic_category": "agriculture",
+    "topic_category": "demography",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos)",
     "per_capita_default": "default_raw",
-    "accent": "#3b6d11",
+    "accent": "#0E1A2B",
     "definition": "",
     "coverage_statement": "1 year(s) 1952, 25 province-level observations",
     "commit_status_by_scale": {
@@ -3634,12 +3639,12 @@
       "Dirección General de Estadística. 1931. X Censo de Población de la República de Chile, 27 de noviembre de 1930. Santiago.",
       "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), province population tables. Santiago: Imprenta Nacional."
     ],
-    "topic_category": "economy",
+    "topic_category": "demography",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Sinopsis Estadística i Jeográfica de Chile (19th c.)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#0E1A2B",
     "definition": "Province territorial extent in square kilometers as reported by the statistical agency, Anuario Estadístico de Chile 1935 (Table 8). The five observation years span the 1883 (War of the Pacific annexations) and 1928 (regionalization) boundary changes; values for the same province across these breaks are not directly comparable.",
     "coverage_statement": "5 year(s) 1854-1935, 85 province-level observations",
     "commit_status_by_scale": {
@@ -23312,12 +23317,12 @@
     "source_documents": [
       "Véjares, Maximiliano. Forthcoming. Compiled historical dataset, Chile, pre-1973, multi-source. Net Zero Industrial Policy Lab, Johns Hopkins University."
     ],
-    "topic_category": "economy",
+    "topic_category": "politics",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#4a3970",
     "definition": "Votes cast in national elections, 1935-1970, from the electoral-participation series. Read against the registered and voting-age populations it tracks the mid-century expansion of the franchise.",
     "coverage_statement": "10 year(s) 1935-1970, 10 national observations",
     "commit_status_by_scale": {
@@ -23593,12 +23598,12 @@
     "source_documents": [
       "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
     ],
-    "topic_category": "economy",
+    "topic_category": "housing",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#7a4a3a",
     "definition": "",
     "coverage_statement": "1 year(s) 1992, 335 observations",
     "commit_status_by_scale": {
@@ -23650,12 +23655,12 @@
     "source_documents": [
       "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
     ],
-    "topic_category": "economy",
+    "topic_category": "housing",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#7a4a3a",
     "definition": "Private occupied dwellings with electric lighting by comuna in 1992, from the 1992 census housing characterization.",
     "coverage_statement": "1 year(s) 1992, 335 observations",
     "commit_status_by_scale": {
@@ -23707,12 +23712,12 @@
     "source_documents": [
       "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
     ],
-    "topic_category": "economy",
+    "topic_category": "housing",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#7a4a3a",
     "definition": "",
     "coverage_statement": "1 year(s) 1992, 335 observations",
     "commit_status_by_scale": {
@@ -23764,12 +23769,12 @@
     "source_documents": [
       "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
     ],
-    "topic_category": "economy",
+    "topic_category": "housing",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#7a4a3a",
     "definition": "",
     "coverage_statement": "1 year(s) 1992, 335 observations",
     "commit_status_by_scale": {
@@ -23821,12 +23826,12 @@
     "source_documents": [
       "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
     ],
-    "topic_category": "economy",
+    "topic_category": "housing",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#7a4a3a",
     "definition": "Private occupied dwellings supplied with water from the public network by comuna in 1992, from the 1992 census housing characterization.",
     "coverage_statement": "1 year(s) 1992, 335 observations",
     "commit_status_by_scale": {
@@ -23878,12 +23883,12 @@
     "source_documents": [
       "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
     ],
-    "topic_category": "economy",
+    "topic_category": "housing",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#7a4a3a",
     "definition": "Private occupied dwellings connected to a sewerage system by comuna in 1992, from the 1992 census housing characterization.",
     "coverage_statement": "1 year(s) 1992, 335 observations",
     "commit_status_by_scale": {
@@ -23935,12 +23940,12 @@
     "source_documents": [
       "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
     ],
-    "topic_category": "economy",
+    "topic_category": "housing",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#7a4a3a",
     "definition": "",
     "coverage_statement": "1 year(s) 1992, 335 observations",
     "commit_status_by_scale": {
@@ -23992,12 +23997,12 @@
     "source_documents": [
       "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
     ],
-    "topic_category": "economy",
+    "topic_category": "housing",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#7a4a3a",
     "definition": "",
     "coverage_statement": "1 year(s) 1992, 335 observations",
     "commit_status_by_scale": {
@@ -24049,12 +24054,12 @@
     "source_documents": [
       "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
     ],
-    "topic_category": "economy",
+    "topic_category": "housing",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#7a4a3a",
     "definition": "",
     "coverage_statement": "1 year(s) 1992, 335 observations",
     "commit_status_by_scale": {
@@ -24106,12 +24111,12 @@
     "source_documents": [
       "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
     ],
-    "topic_category": "economy",
+    "topic_category": "housing",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#7a4a3a",
     "definition": "",
     "coverage_statement": "1 year(s) 1992, 335 observations",
     "commit_status_by_scale": {
@@ -24163,12 +24168,12 @@
     "source_documents": [
       "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
     ],
-    "topic_category": "economy",
+    "topic_category": "housing",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#7a4a3a",
     "definition": "Total occupied dwellings, private and collective, counted by comuna in the 1992 population and housing census (INE, volume Ciudades, Pueblos y Aldeas).",
     "coverage_statement": "1 year(s) 1992, 335 observations",
     "commit_status_by_scale": {
@@ -24220,12 +24225,12 @@
     "source_documents": [
       "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
     ],
-    "topic_category": "economy",
+    "topic_category": "housing",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#7a4a3a",
     "definition": "Number of households (hogares) counted by comuna in the 1992 population and housing census.",
     "coverage_statement": "1 year(s) 1992, 335 observations",
     "commit_status_by_scale": {
@@ -24277,12 +24282,12 @@
     "source_documents": [
       "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
     ],
-    "topic_category": "economy",
+    "topic_category": "housing",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#7a4a3a",
     "definition": "",
     "coverage_statement": "1 year(s) 1992, 335 observations",
     "commit_status_by_scale": {
@@ -24334,12 +24339,12 @@
     "source_documents": [
       "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
     ],
-    "topic_category": "economy",
+    "topic_category": "housing",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#7a4a3a",
     "definition": "Owner occupied private dwellings by comuna in 1992 (tenure reported as propia), from the 1992 census housing characterization.",
     "coverage_statement": "1 year(s) 1992, 335 observations",
     "commit_status_by_scale": {
@@ -24391,12 +24396,12 @@
     "source_documents": [
       "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
     ],
-    "topic_category": "economy",
+    "topic_category": "housing",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#7a4a3a",
     "definition": "",
     "coverage_statement": "1 year(s) 1992, 335 observations",
     "commit_status_by_scale": {
@@ -24448,12 +24453,12 @@
     "source_documents": [
       "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
     ],
-    "topic_category": "economy",
+    "topic_category": "housing",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#7a4a3a",
     "definition": "",
     "coverage_statement": "1 year(s) 1992, 335 observations",
     "commit_status_by_scale": {
@@ -24505,12 +24510,12 @@
     "source_documents": [
       "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
     ],
-    "topic_category": "economy",
+    "topic_category": "housing",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#7a4a3a",
     "definition": "",
     "coverage_statement": "1 year(s) 1992, 335 observations",
     "commit_status_by_scale": {
@@ -24562,12 +24567,12 @@
     "source_documents": [
       "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
     ],
-    "topic_category": "economy",
+    "topic_category": "housing",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#7a4a3a",
     "definition": "",
     "coverage_statement": "1 year(s) 1992, 335 observations",
     "commit_status_by_scale": {
@@ -25406,12 +25411,12 @@
       }
     },
     "source_documents": [],
-    "topic_category": "economy",
+    "topic_category": "infrastructure",
     "semantic_zero": true,
     "source_quality": "ocr",
     "source_document": "",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#555555",
     "definition": "Number of dwellings recorded in the construction and housing series, 1952-1990.",
     "coverage_statement": "32 year(s) 1952-1990, 32 national observations",
     "commit_status_by_scale": {
@@ -28159,12 +28164,12 @@
       "Véjares, Maximiliano. Forthcoming. Department-level historical dataset, Chile, 19th century. Compiled from primary archival sources. Net Zero Industrial Policy Lab, Johns Hopkins University.",
       "Dirección General de Estadística. 1918. Anuario Estadístico de la República de Chile, año 1917, enfranchisement section. Santiago."
     ],
-    "topic_category": "agriculture",
+    "topic_category": "labor",
     "semantic_zero": false,
     "source_quality": "clean",
     "source_document": "Véjares, Department-level historical dataset (Chile, 19th c.), author's compilation",
     "per_capita_default": "default_pc",
-    "accent": "#3b6d11",
+    "accent": "#2c5060",
     "definition": "Department-level count of agricultural workers (the 19th-century Chilean rural laborer occupations: peón, inquilino, gañán, jornalero), Véjares department-level historical dataset. The 'peasant' label is editorially loaded; per the duplicate-resolution memo, this indicator is scheduled to merge into a renamed agricultural_workers_department. The historiographical debate over what to call this class is documented in Bauer (1975) and Bengoa (2015).",
     "coverage_statement": "10 year(s) 1862-1920, 648 department-level observations",
     "commit_status_by_scale": {
@@ -28768,12 +28773,12 @@
       "Oficina Central de Estadística. 1863. Anuario Estadístico de la República de Chile, año 1862 (Tomo III). Santiago: Imprenta Nacional.",
       "Oficina Central de Estadística. 1873. Anuario Estadístico de la República de Chile, año 1872. Santiago: Imprenta Nacional."
     ],
-    "topic_category": "agriculture",
+    "topic_category": "politics",
     "semantic_zero": false,
     "source_quality": "clean",
     "source_document": "Anuario Estadístico de Chile, 1920",
     "per_capita_default": "default_pc",
-    "accent": "#3b6d11",
+    "accent": "#4a3970",
     "definition": "Number of enfranchised voters classified as agricultural workers (peasants) in the same department, from the Anuario Estadístico de Chile 1920. A sub-component of total enfranchised used in the Landholding paper.",
     "coverage_statement": "3 year(s) 1862-1920, 190 department-level observations",
     "commit_status_by_scale": {
@@ -28892,12 +28897,12 @@
     "source_documents": [
       "Véjares, Maximiliano. Forthcoming. Department-level historical dataset, Chile, 19th century (legislator–landowner linkage). Net Zero Industrial Policy Lab, Johns Hopkins University."
     ],
-    "topic_category": "agriculture",
+    "topic_category": "politics",
     "semantic_zero": true,
     "source_quality": "ocr",
     "source_document": "",
     "per_capita_default": "user_choice",
-    "accent": "#3b6d11",
+    "accent": "#4a3970",
     "definition": "Number of legislators representing the department who were classified as hacendados (large landowners) by occupation, source attribution incomplete in the manifest. A direct measure of landlord representation in the 19th-century Congress and a core variable in the Landholding paper's argument.",
     "coverage_statement": "3 year(s) 1865-1885, 137 department-level observations",
     "commit_status_by_scale": {
@@ -32283,12 +32288,12 @@
     "source_documents": [
       "Véjares, Maximiliano. Forthcoming. Compiled state-capacity dataset, Chile, 1935. Net Zero Industrial Policy Lab, Johns Hopkins University."
     ],
-    "topic_category": "economy",
+    "topic_category": "fiscal",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Véjares, compiled state-capacity dataset (Chile, 1935), author's compilation",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#2c2c2a",
     "definition": "",
     "coverage_statement": "1 year(s) 1935, 271 observations",
     "commit_status_by_scale": {
@@ -32340,12 +32345,12 @@
     "source_documents": [
       "Véjares, Maximiliano. Forthcoming. Compiled state-capacity dataset, Chile, 1935. Net Zero Industrial Policy Lab, Johns Hopkins University."
     ],
-    "topic_category": "economy",
+    "topic_category": "fiscal",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Véjares, compiled state-capacity dataset (Chile, 1935), author's compilation",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#2c2c2a",
     "definition": "",
     "coverage_statement": "1 year(s) 1935, 271 observations",
     "commit_status_by_scale": {
@@ -32397,12 +32402,12 @@
     "source_documents": [
       "Véjares, Maximiliano. Forthcoming. Compiled state-capacity dataset, Chile, 1935. Net Zero Industrial Policy Lab, Johns Hopkins University."
     ],
-    "topic_category": "economy",
+    "topic_category": "fiscal",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Véjares, compiled state-capacity dataset (Chile, 1935), author's compilation",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#2c2c2a",
     "definition": "",
     "coverage_statement": "1 year(s) 1935, 271 observations",
     "commit_status_by_scale": {
@@ -38676,12 +38681,12 @@
     "source_documents": [
       "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I). Santiago: Imprenta Nacional."
     ],
-    "topic_category": "economy",
+    "topic_category": "demography",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Anuario Estadístico 1860",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#0E1A2B",
     "definition": "Crude mortality rate of Chile in the 1850s, deaths as a share of population, from the early vital-statistics returns.",
     "coverage_statement": "10 year(s) 1849-1858, 10 national observations",
     "commit_status_by_scale": {
@@ -38910,12 +38915,12 @@
     "source_documents": [
       "Anuario Estadistico de la Republica de Chile, Ano 1926, Vol. I Demografia (Direccion General de Estadistica)"
     ],
-    "topic_category": "economy",
+    "topic_category": "demography",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Anuario Estadistico de la Republica de Chile, Ano 1926, Vol. I Demografia (Direccion General de Estadistica)",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#0E1A2B",
     "definition": "",
     "coverage_statement": "1 year(s) 1926, 24 province-level observations; 1 year(s) 1926, 83 department-level observations",
     "commit_status_by_scale": {

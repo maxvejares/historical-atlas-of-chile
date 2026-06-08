@@ -4,7 +4,14 @@
 import * as M from './manifest.js';
 
 export const TOPICS = [
-  { id: "economy",        label: "Economy",        landing: "real_gdp_per_capita",         desc: "GDP, growth, exchange rates, sectoral shares." },
+  // Landings must point at a LIVE, CLEAN canonical id — not a retired/merged
+  // alias, a dropped id, OR a series fenced off by a render guard. economy was
+  // real_gdp_per_capita (retired → real_gdp). fiscal was fiscal_revenue_of_gdp
+  // (absent from the manifest); revenue_of_gdp was a wrong first fix — it is
+  // marked complete but carries data_quality_flag=unit_splice_corruption and is
+  // withheld pending unit reconciliation, so it would land on the withheld
+  // message. Use fiscal_revenue_millions: canonical, no flag, complete, 181 yrs.
+  { id: "economy",        label: "Economy",        landing: "real_gdp",                    desc: "GDP, growth, exchange rates, sectoral shares." },
   { id: "demography",     label: "Demography",     landing: "total_population",            desc: "Population, vital statistics, urbanization." },
   { id: "politics",       label: "Politics",       landing: "n_legislators",               desc: "Suffrage, legislators, elections, franchise reform." },
   { id: "agriculture",    label: "Agriculture",    landing: "wheat_production",            desc: "Crops, estates, agrarian structure, peasants." },
@@ -12,7 +19,8 @@ export const TOPICS = [
   { id: "labor",          label: "Labor",          landing: "total_labor_force",           desc: "Workforce, occupational composition, participation." },
   { id: "education",      label: "Education",      landing: "primary_school_enrollment",   desc: "Schools, students, literacy, enrollment." },
   { id: "infrastructure", label: "Infrastructure", landing: "railway_network_length",      desc: "Railways, telephones, ports, electricity." },
-  { id: "fiscal",         label: "Fiscal",         landing: "fiscal_revenue_of_gdp",       desc: "Revenue, expenditure, debt, taxes." },
+  { id: "housing",        label: "Housing",        landing: "viviendas_total_1992",        desc: "Dwellings, tenure, water, sewerage, electricity (1992)." },
+  { id: "fiscal",         label: "Fiscal",         landing: "fiscal_revenue_millions",     desc: "Revenue, expenditure, debt, taxes." },
   { id: "trade",          label: "Trade",          landing: "trade_openness_of_gdp",       desc: "Exports, imports, trade composition, openness." },
 ];
 
