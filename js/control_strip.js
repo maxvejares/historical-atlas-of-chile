@@ -132,6 +132,10 @@ export function createControlStrip(host, { onSelect }) {
   // can be styled independently of the variable name.
   let varOptions = [];
   let varHighlight = -1;
+  // Picker grouping: the snapshot ("Single year") group is collapsible. Default
+  // expanded so nothing is hidden on first view; the grouping itself is the
+  // proactive signal.
+  let snapshotCollapsed = false;
 
   function escapeHTML(s) {
     return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -158,19 +162,63 @@ export function createControlStrip(host, { onSelect }) {
     return null;
   }
 
+  // One option row. `i` is the index into varOptions (so keyboard highlight and
+  // selection stay correct even with group headers interleaved in the DOM).
+  function optionRowHTML(v, i) {
+    const name = escapeHTML(v.display_label || v.label);
+    const badge = badgeForOption(v);
+    const badgeHTML = badge
+      ? `<span class="opt-badge tier-${badge.tier}">${badge.label}</span>`
+      : '';
+    // Proactive temporal cue for sparse rows: spell out the actual observed
+    // years so the reader sees a thin 2–3 point series BEFORE clicking. The
+    // existing per-scale coverage badge stays in place alongside this.
+    let yearsHTML = '';
+    if (M.classifyTemporal(v, state.scale) === 'sparse') {
+      const ys = M.yearsForScale(v, state.scale);
+      yearsHTML = `<span class="opt-years">${ys.length} years: ${ys.join(', ')}</span>`;
+    }
+    const sel = v.id === state.variable ? ' aria-selected="true"' : '';
+    const hl  = i === varHighlight ? ' is-highlighted' : '';
+    return `<li role="option" class="var-option${hl}" data-id="${escapeHTML(v.id)}"${sel}>
+      <span class="opt-label">${name}</span>${badgeHTML}${yearsHTML}
+    </li>`;
+  }
+
+  // Render the picker as two mode groups, classified with classifyTemporal at
+  // the CURRENT scale: a "Time series" group first (series + sparse), then a
+  // collapsible "Single year" group (snapshots). varOptions is pre-sorted
+  // series-then-snapshot in populateVariables, so the indices are contiguous
+  // and keyboard order matches what the eye sees. Re-runs on every scale change
+  // (setScale -> populateVariables), so an indicator moves groups live.
   function renderVarListbox() {
-    varListbox.innerHTML = varOptions.map((v, i) => {
-      const name = escapeHTML(v.display_label || v.label);
-      const badge = badgeForOption(v);
-      const badgeHTML = badge
-        ? `<span class="opt-badge tier-${badge.tier}">${badge.label}</span>`
-        : '';
-      const sel = v.id === state.variable ? ' aria-selected="true"' : '';
-      const hl  = i === varHighlight ? ' is-highlighted' : '';
-      return `<li role="option" class="var-option${hl}" data-id="${escapeHTML(v.id)}"${sel}>
-        <span class="opt-label">${name}</span>${badgeHTML}
-      </li>`;
-    }).join('');
+    const series = [], snaps = [];
+    varOptions.forEach((v, i) => {
+      (M.classifyTemporal(v, state.scale) === 'snapshot' ? snaps : series).push({ v, i });
+    });
+    let html = '';
+    if (series.length) {
+      html += `<li class="var-group-head" role="presentation">Time series</li>`;
+      html += series.map(({ v, i }) => optionRowHTML(v, i)).join('');
+    }
+    if (snaps.length) {
+      html += `<li class="var-group-head var-group-toggle" role="presentation" data-toggle="snapshot" aria-expanded="${!snapshotCollapsed}">`
+        + `<span class="vg-label">Single year</span> <span class="vg-count">${snaps.length}</span>`
+        + `<span class="vg-chev">${snapshotCollapsed ? '▸' : '▾'}</span></li>`;
+      if (!snapshotCollapsed) html += snaps.map(({ v, i }) => optionRowHTML(v, i)).join('');
+    }
+    if (!series.length && !snaps.length) {
+      html = `<li class="var-group-head" role="presentation">No indicators at this scale</li>`;
+    }
+    varListbox.innerHTML = html;
+  }
+
+  function isNavigable(i) {
+    const v = varOptions[i];
+    if (!v) return false;
+    // A collapsed snapshot row is not keyboard-reachable until expanded.
+    if (snapshotCollapsed && M.classifyTemporal(v, state.scale) === 'snapshot') return false;
+    return true;
   }
 
   function renderVarTrigger() {
@@ -195,6 +243,10 @@ export function createControlStrip(host, { onSelect }) {
       varListbox.hidden = false;
       varTrigger.setAttribute('aria-expanded', 'true');
       varHighlight = Math.max(0, varOptions.findIndex(v => v.id === state.variable));
+      // If the selected indicator is a snapshot, expand the Single-year group
+      // so the highlighted row is visible rather than hidden behind the collapse.
+      const cur = varOptions[varHighlight];
+      if (cur && M.classifyTemporal(cur, state.scale) === 'snapshot') snapshotCollapsed = false;
       renderVarListbox();
       // scroll the highlighted row into view
       const node = varListbox.querySelector('.is-highlighted');
@@ -221,7 +273,12 @@ export function createControlStrip(host, { onSelect }) {
   function moveHighlight(delta) {
     if (!varOptions.length) return;
     if (varListbox.hidden) { setVarOpen(true); return; }
-    varHighlight = (varHighlight + delta + varOptions.length) % varOptions.length;
+    let i = varHighlight;
+    for (let k = 0; k < varOptions.length; k++) {
+      i = (i + delta + varOptions.length) % varOptions.length;
+      if (isNavigable(i)) break;
+    }
+    varHighlight = i;
     renderVarListbox();
     const node = varListbox.querySelector('.is-highlighted');
     if (node) node.scrollIntoView({ block: 'nearest' });
@@ -243,6 +300,9 @@ export function createControlStrip(host, { onSelect }) {
     }
   });
   varListbox.addEventListener('click', e => {
+    // Clicking the "Single year" header toggles the collapsible group.
+    const tg = e.target.closest('.var-group-toggle');
+    if (tg) { snapshotCollapsed = !snapshotCollapsed; renderVarListbox(); return; }
     const li = e.target.closest('.var-option');
     if (!li) return;
     selectVarById(li.dataset.id);
@@ -250,8 +310,9 @@ export function createControlStrip(host, { onSelect }) {
   varListbox.addEventListener('mousemove', e => {
     const li = e.target.closest('.var-option');
     if (!li) return;
-    const i = [...varListbox.children].indexOf(li);
-    if (i !== varHighlight) {
+    // Index by id, not DOM position — group-header <li>s are interleaved.
+    const i = varOptions.findIndex(v => v.id === li.dataset.id);
+    if (i >= 0 && i !== varHighlight) {
       varHighlight = i;
       renderVarListbox();
     }
@@ -264,8 +325,14 @@ export function createControlStrip(host, { onSelect }) {
 
   function populateVariables() {
     const vars = listForCurrentScale().filter(v => (v.topic_category || v.category) === state.category);
-    // Alphabetical sort
-    vars.sort((a, b) => (a.display_label || a.label).localeCompare(b.display_label || b.label));
+    // Sort by mode (time series first, single-year snapshots last), then
+    // alphabetically within each group — matches the two-group render order so
+    // keyboard navigation tracks the visible order. Reclassified at the current
+    // scale, so a scale change re-sorts the list (an indicator can move groups).
+    const snapRank = v => (M.classifyTemporal(v, state.scale) === 'snapshot' ? 1 : 0);
+    vars.sort((a, b) =>
+      (snapRank(a) - snapRank(b)) ||
+      (a.display_label || a.label).localeCompare(b.display_label || b.label));
     varOptions = vars;
     if (!state.variable || !vars.find(v => v.id === state.variable)) {
       state.variable = vars[0]?.id || null;

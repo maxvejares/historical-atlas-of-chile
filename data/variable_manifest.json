@@ -299,7 +299,7 @@
     "source_document": "",
     "per_capita_default": "user_choice",
     "accent": "#3b6d11",
-    "definition": "Annual national production of barley in metric tons, compiled by Braun et al. (1998) from the Anuario Estadístico and Sinopsis series through 1929 and from the Direccion General de Estadistica (and INE after 1970) thereafter. Pre-1880 figures are partial and reflect the agricultural reporting capacity of the early Anuarios.",
+    "definition": "Annual national production of barley in metric tons, compiled from the Anuario Estadístico and Sinopsis series through 1929 and from the Direccion General de Estadistica (and INE after 1970) thereafter. Pre-1880 figures are partial and reflect the agricultural reporting capacity of the early Anuarios.",
     "coverage_statement": "131 year(s) 1860-1990, 131 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -507,7 +507,7 @@
     "source_document": "",
     "per_capita_default": "user_choice",
     "accent": "#3b6d11",
-    "definition": "Annual national production of dry beans in metric tons, Braun et al. (1998) compilation. Beans were a staple of the Chilean diet and a significant 19th-century export to neighboring Andean economies; the series reflects both subsistence and export production.",
+    "definition": "Annual national production of dry beans in metric tons. Beans were a staple of the Chilean diet and a significant 19th-century export to neighboring Andean economies; the series reflects both subsistence and export production.",
     "coverage_statement": "131 year(s) 1860-1990, 131 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -665,7 +665,7 @@
     "source_document": "",
     "per_capita_default": "user_choice",
     "accent": "#3b6d11",
-    "definition": "Annual head of cattle slaughtered nationally for meat, Braun et al. (1998) compilation. The series ends in 1940 because later cattle statistics changed methodology and unit (carcass weight rather than head); the post-1940 figures live under a different indicator family.",
+    "definition": "Annual head of cattle slaughtered nationally for meat. The series ends in 1940 because later cattle statistics changed methodology and unit (carcass weight rather than head); the post-1940 figures live under a different indicator family.",
     "coverage_statement": "81 year(s) 1860-1940, 81 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -935,7 +935,7 @@
     "source_document": "",
     "per_capita_default": "user_choice",
     "accent": "#3b6d11",
-    "definition": "Annual national chickpea production in metric tons, Braun et al. (1998) compilation. Chickpeas were a minor but persistent rotation crop in the central valley; coverage is intermittent before 1900.",
+    "definition": "Annual national chickpea production in metric tons. Chickpeas were a minor but persistent rotation crop in the central valley; coverage is intermittent before 1900.",
     "coverage_statement": "127 year(s) 1860-1990, 127 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -1143,7 +1143,7 @@
     "source_document": "",
     "per_capita_default": "user_choice",
     "accent": "#3b6d11",
-    "definition": "Annual national maize production in metric tons, Braun et al. (1998) compilation. Maize was a central component of Chilean agriculture from colonial origins; the modern series reflects both feed and food production.",
+    "definition": "Annual national maize production in metric tons. Maize was a central component of Chilean agriculture from colonial origins; the modern series reflects both feed and food production.",
     "coverage_statement": "131 year(s) 1860-1990, 131 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -1514,7 +1514,7 @@
     "source_document": "",
     "per_capita_default": "user_choice",
     "accent": "#3b6d11",
-    "definition": "Annual national production of dry peas in metric tons, Braun et al. (1998) compilation. A minor crop relative to wheat and beans; coverage is partial in early decades.",
+    "definition": "Annual national production of dry peas in metric tons. A minor crop relative to wheat and beans; coverage is partial in early decades.",
     "coverage_statement": "131 year(s) 1860-1990, 131 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -1808,7 +1808,7 @@
     "source_document": "",
     "per_capita_default": "user_choice",
     "accent": "#3b6d11",
-    "definition": "Annual national potato production in metric tons, Braun et al. (1998) compilation. Potatoes expanded as a southern Chilean crop after the 1850s German immigration to Valdivia and Llanquihue; the series captures that geographic expansion.",
+    "definition": "Annual national potato production in metric tons. Potatoes expanded as a southern Chilean crop after the 1850s German immigration to Valdivia and Llanquihue; the series captures that geographic expansion.",
     "coverage_statement": "131 year(s) 1860-1990, 131 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -2346,7 +2346,7 @@
     "source_document": "",
     "per_capita_default": "user_choice",
     "accent": "#3b6d11",
-    "definition": "Annual national wheat production in metric tons, Braun et al. (1998) compilation. Chile was a major wheat exporter to California, Australia, and Britain during the 1850s-1880s 'cereal cycle'; the series tracks both that export boom and the later transition to import dependence.",
+    "definition": "Annual national wheat production in metric tons. Chile was a major wheat exporter to California, Australia, and Britain during the 1850s-1880s 'cereal cycle'; the series tracks both that export boom and the later transition to import dependence.",
     "coverage_statement": "131 year(s) 1860-1990, 131 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -2602,7 +2602,7 @@
     "source_document": "",
     "per_capita_default": "user_choice",
     "accent": "#3b6d11",
-    "definition": "Annual national wine production in hectoliters, Braun et al. (1998) compilation. The series ends in 1955 because later production figures are reported in liters and under different reporting conventions; the post-1955 figures are not in this series.",
+    "definition": "Annual national wine production in hectoliters. The series ends in 1955 because later production figures are reported in liters and under different reporting conventions; the post-1955 figures are not in this series.",
     "coverage_statement": "96 year(s) 1860-1955, 96 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -3671,8 +3671,8 @@
   },
   {
     "id": "poblacion_rural",
-    "label": "Rural Population",
-    "display_label": "Rural Population",
+    "label": "Rural population (province)",
+    "display_label": "Rural population (province)",
     "category": "Demographics",
     "source_type": "census",
     "format_hint": "count",
@@ -3880,8 +3880,8 @@
   },
   {
     "id": "ruralpop",
-    "label": "Rural population",
-    "display_label": "Rural population",
+    "label": "Rural population (department)",
+    "display_label": "Rural population (department)",
     "category": "Demographics",
     "source_type": "compiled",
     "format_hint": "count",
@@ -4140,8 +4140,8 @@
   },
   {
     "id": "poblacion_urbana",
-    "label": "Urban Population",
-    "display_label": "Urban Population",
+    "label": "Urban population (province)",
+    "display_label": "Urban population (province)",
     "category": "Demographics",
     "source_type": "census",
     "format_hint": "count",
@@ -4349,8 +4349,8 @@
   },
   {
     "id": "pob_urbana_nat",
-    "label": "Urban population",
-    "display_label": "Urban population",
+    "label": "Urban population (national)",
+    "display_label": "Urban population (national)",
     "category": "Demographics",
     "source_type": "compiled",
     "format_hint": "count",
@@ -4804,7 +4804,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#3b6d11",
-    "definition": "Real GDP of the agricultural sector (crops, livestock, forestry, fishing) in constant 1996 pesos, Braun et al. (1998) compilation. The agricultural share of Chilean GDP fell from roughly 30 percent in 1860 to under 10 percent by 1990; this series shows the absolute level behind that compositional shift.",
+    "definition": "Real GDP of the agricultural sector (crops, livestock, forestry, fishing) in constant 1996 pesos. The agricultural share of Chilean GDP fell from roughly 30 percent in 1860 to under 10 percent by 1990; this series shows the absolute level behind that compositional shift.",
     "coverage_statement": "131 year(s) 1860-1990, 131 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -5028,7 +5028,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#5b3f8e",
-    "definition": "Value of agricultural exports (crops, livestock products, wood, fish), Braun et al. (1998) compilation. Chile's agricultural exports peaked in absolute and relative terms during the 1850s–1880s wheat-export cycle and then declined relative to mining exports.",
+    "definition": "Value of agricultural exports (crops, livestock products, wood, fish). Chile's agricultural exports peaked in absolute and relative terms during the 1850s–1880s wheat-export cycle and then declined relative to mining exports.",
     "coverage_statement": "147 year(s) 1844-1990, 147 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -5254,7 +5254,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#5b3f8e",
-    "definition": "Agricultural exports as a percentage of total exports by value, Braun et al. (1998) compilation.",
+    "definition": "Agricultural exports as a percentage of total exports by value.",
     "coverage_statement": "147 year(s) 1844-1990, 147 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -5462,7 +5462,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#3b6d11",
-    "definition": "Agricultural sector value-added as a percentage of GDP, Braun et al. (1998) compilation. The complement to manufacturing_share_of_gdp, mining_share_of_gdp, construction_share_of_gdp, and services_share_of_gdp; the five together approximately sum to 100 percent in any given year.",
+    "definition": "Agricultural sector value-added as a percentage of GDP. The complement to manufacturing_share_of_gdp, mining_share_of_gdp, construction_share_of_gdp, and services_share_of_gdp; the five together approximately sum to 100 percent in any given year.",
     "coverage_statement": "131 year(s) 1860-1990, 131 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -5867,7 +5867,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#5b3f8e",
-    "definition": "Value of capital-goods imports (machinery, transportation equipment, construction materials), Braun et al. (1998) compilation. The series ends in 1937; later capital-goods imports are tracked under different indicators that follow the 1929 customs-classification revision.",
+    "definition": "Value of capital-goods imports (machinery, transportation equipment, construction materials). The series ends in 1937; later capital-goods imports are tracked under different indicators that follow the 1929 customs-classification revision.",
     "coverage_statement": "94 year(s) 1844-1937, 94 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -6055,7 +6055,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#555555",
-    "definition": "Real GDP of the construction sector in constant 1996 pesos, Braun et al. (1998) compilation. The series tracks the major Chilean public works booms (the 1880s nitrate-revenue construction, the 1930s import-substitution infrastructure, the 1960s Frei-era housing, the 1990s post-transition expansion).",
+    "definition": "Real GDP of the construction sector in constant 1996 pesos. The series tracks the major Chilean public works booms (the 1880s nitrate-revenue construction, the 1930s import-substitution infrastructure, the 1960s Frei-era housing, the 1990s post-transition expansion).",
     "coverage_statement": "131 year(s) 1860-1990, 131 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -6263,7 +6263,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#555555",
-    "definition": "Construction sector value-added as a percentage of GDP, Braun et al. (1998) compilation.",
+    "definition": "Construction sector value-added as a percentage of GDP.",
     "coverage_statement": "131 year(s) 1860-1990, 131 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -6434,7 +6434,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#5b3f8e",
-    "definition": "Value of consumer-goods imports, Braun et al. (1998) compilation. The series ends in 1937; same caveat as capital_goods_imports.",
+    "definition": "Value of consumer-goods imports. The series ends in 1937; same caveat as capital_goods_imports.",
     "coverage_statement": "94 year(s) 1844-1937, 94 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -6978,7 +6978,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
-    "definition": "Military and defense outlays as a percentage of total central-government fiscal expenditure, Braun et al. (1998) compilation. The published series carries unit-splice corruption: maximum observed value is 99,952 against a natural ceiling of 100, indicating raw expenditure values were spliced into the share series across at least part of the period. Do not cite this series until the upstream reconciliation lands; the underlying primary sources (Memoria de Hacienda, Mamalakis 1980) remain usable.",
+    "definition": "Military and defense outlays as a percentage of total central-government fiscal expenditure. The published series carries unit-splice corruption: maximum observed value is 99,952 against a natural ceiling of 100, indicating raw expenditure values were spliced into the share series across at least part of the period. Do not cite this series until the upstream reconciliation lands; the underlying primary sources (Memoria de Hacienda, Mamalakis 1980) remain usable.",
     "coverage_statement": "149 year(s) 1833-1990, 149 national observations",
     "quarantine_reason": "bounded_unit_overflow: max=99952 exceeds % ceiling 100",
     "commit_status_by_scale": {
@@ -7237,7 +7237,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#1f4e79",
-    "definition": "Military and defense outlays as a percentage of GDP, Braun et al. (1998) compilation. The published series carries unit-splice corruption (max 873,202; natural ceiling 100). Same caveat as defense_share_of_expenditure: do not cite until reconciled upstream.",
+    "definition": "Military and defense outlays as a percentage of GDP. The published series carries unit-splice corruption (max 873,202; natural ceiling 100). Same caveat as defense_share_of_expenditure: do not cite until reconciled upstream.",
     "coverage_statement": "180 year(s) 1811-1990, 180 national observations",
     "quarantine_reason": "bounded_unit_overflow: max=873202 exceeds % ceiling 100",
     "commit_status_by_scale": {
@@ -7474,7 +7474,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
-    "definition": "Revenue from direct taxes (property, income, profit, capital gains) as a percentage of total fiscal revenue, Braun et al. (1998) compilation. The published series carries unit-splice corruption (max 4,124,934). Do not cite until reconciled upstream.",
+    "definition": "Revenue from direct taxes (property, income, profit, capital gains) as a percentage of total fiscal revenue. The published series carries unit-splice corruption (max 4,124,934). Do not cite until reconciled upstream.",
     "coverage_statement": "158 year(s) 1833-1990, 158 national observations",
     "quarantine_reason": "bounded_unit_overflow: max=4.12493e+06 exceeds % ceiling 100",
     "commit_status_by_scale": {
@@ -7767,7 +7767,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
-    "definition": "Education outlays as a percentage of total central-government fiscal expenditure, Braun et al. (1998) compilation. This is the executed-spending series; the parallel budget-law series (education_share_of_budget_law / budget_education_share) reports approved rather than executed shares. Definitions of the two should be read together when both appear in research.",
+    "definition": "Education outlays as a percentage of total central-government fiscal expenditure. This is the executed-spending series; the parallel budget-law series (education_share_of_budget_law / budget_education_share) reports approved rather than executed shares. Definitions of the two should be read together when both appear in research.",
     "coverage_statement": "157 year(s) 1833-1990, 157 national observations",
     "quarantine_reason": "bounded_unit_overflow: max=514394 exceeds % ceiling 100",
     "commit_status_by_scale": {
@@ -8098,7 +8098,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#5b3f8e",
-    "definition": "Total exports as a percentage of GDP, Braun et al. (1998) compilation. The series likely carries the same unit-splice family as the other ratio series in this block; verify before citing.",
+    "definition": "Total exports as a percentage of GDP. The series likely carries the same unit-splice family as the other ratio series in this block; verify before citing.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -8396,7 +8396,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#5b3f8e",
-    "definition": "Total exports valued in millions of 1995 pesos, Braun et al. (1998) compilation. The constant-1995-peso deflator handles the currency reforms; this is the primary long-run measure of Chilean export performance.",
+    "definition": "Total exports valued in millions of 1995 pesos. The constant-1995-peso deflator handles the currency reforms; this is the primary long-run measure of Chilean export performance.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -8698,7 +8698,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#5b3f8e",
-    "definition": "Total exports valued in current US dollars, Braun et al. (1998) compilation. Useful for cross-country comparison but not for real growth, which requires deflation.",
+    "definition": "Total exports valued in current US dollars. Useful for cross-country comparison but not for real growth, which requires deflation.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -8996,7 +8996,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#5b3f8e",
-    "definition": "Total exports in current US dollars divided by total population, Braun et al. (1998) compilation.",
+    "definition": "Total exports in current US dollars divided by total population.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -9284,7 +9284,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
-    "definition": "Outstanding external public debt as a percentage of GDP, Braun et al. (1998) compilation. The Chilean sovereign debt history includes major restructurings (1830s default, 1842 settlement, 1879 War of the Pacific suspension, 1932 default, 1980s rescheduling) that produce step-changes in the series; these are real, not data artifacts.",
+    "definition": "Outstanding external public debt as a percentage of GDP. The Chilean sovereign debt history includes major restructurings (1830s default, 1842 settlement, 1879 War of the Pacific suspension, 1932 default, 1980s rescheduling) that produce step-changes in the series; these are real, not data artifacts.",
     "coverage_statement": "169 year(s) 1822-1990, 169 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -9530,7 +9530,7 @@
     "source_document": "",
     "per_capita_default": "user_choice",
     "accent": "#2c2c2a",
-    "definition": "Outstanding stock of external public debt in millions of pesos, Braun et al. (1998) compilation. The nominal-peso unit makes this series uninterpretable across the 1925, 1960, and 1975 currency reforms without deflation; the break-annotation register flags these.",
+    "definition": "Outstanding stock of external public debt in millions of pesos. The nominal-peso unit makes this series uninterpretable across the 1925, 1960, and 1975 currency reforms without deflation; the break-annotation register flags these.",
     "coverage_statement": "169 year(s) 1822-1990, 169 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -9795,7 +9795,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
-    "definition": "Revenue from customs duties and other taxes on foreign trade as a percentage of total fiscal revenue, Braun et al. (1998) compilation. The published series carries unit-splice corruption (max 2,034,308). Do not cite until reconciled upstream. The underlying fact — that Chilean public finance was dominated by customs revenue through the saltpeter era — is documented in Mamalakis (1976) and Braun directly and remains historically true.",
+    "definition": "Revenue from customs duties and other taxes on foreign trade as a percentage of total fiscal revenue. The published series carries unit-splice corruption (max 2,034,308). Do not cite until reconciled upstream. The underlying fact — that Chilean public finance was dominated by customs revenue through the saltpeter era — is documented in Mamalakis (1976) and remains historically true.",
     "coverage_statement": "158 year(s) 1833-1990, 158 national observations",
     "quarantine_reason": "bounded_unit_overflow: max=2.03431e+06 exceeds % ceiling 100",
     "commit_status_by_scale": {
@@ -10055,7 +10055,7 @@
     "source_document": "",
     "per_capita_default": "user_choice",
     "accent": "#2c2c2a",
-    "definition": "Total central-government fiscal revenue in millions of pesos, Braun et al. (1998) compilation. The nominal-peso unit crosses the 1925 (Central Bank founding), 1960 (escudo), and 1975 (new peso) currency reforms without rescaling at the cell level; the break-annotation register documents these. For deflated comparison, see fiscal_revenue_pesos at a narrower window or use the GDP-share series.",
+    "definition": "Total central-government fiscal revenue in millions of pesos. The nominal-peso unit crosses the 1925 (Central Bank founding), 1960 (escudo), and 1975 (new peso) currency reforms without rescaling at the cell level; the break-annotation register documents these. For deflated comparison, see fiscal_revenue_pesos at a narrower window or use the GDP-share series.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -10403,7 +10403,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
-    "definition": "Central-government fiscal surplus (revenue minus expenditure) as a percentage of GDP, Braun et al. (1998) compilation. The Chilean fiscal record includes substantial deficits during the wars of independence (1810–1818), the War of the Pacific (1879–1884), the 1930s Great Depression, and the 1971–1973 Unidad Popular years; the series captures all of these.",
+    "definition": "Central-government fiscal surplus (revenue minus expenditure) as a percentage of GDP. The Chilean fiscal record includes substantial deficits during the wars of independence (1810–1818), the War of the Pacific (1879–1884), the 1930s Great Depression, and the 1971–1973 Unidad Popular years; the series captures all of these.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -11019,7 +11019,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
-    "definition": "Total central-government fiscal expenditure in millions of pesos, Braun et al. (1998) compilation. The nominal-peso caveats from fiscal_revenue_millions apply.",
+    "definition": "Total central-government fiscal expenditure in millions of pesos. The nominal-peso caveats from fiscal_revenue_millions apply.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -11367,7 +11367,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
-    "definition": "Central-government fiscal surplus expressed in real (deflated) pesos, Braun et al. (1998) compilation. The deflator and base year for the 'real pesos' construction are not standardized across the full 1810–1990 window; the convention shifts across publication periods, and the 1973–1976 inflation-index dispute documented in the break-annotation register affects the deflator for that window.",
+    "definition": "Central-government fiscal surplus expressed in real (deflated) pesos. The deflator and base year for the 'real pesos' construction are not standardized across the full 1810–1990 window; the convention shifts across publication periods, and the 1973–1976 inflation-index dispute documented in the break-annotation register affects the deflator for that window.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -11799,7 +11799,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
-    "definition": "Central-government fiscal expenditure as a percentage of GDP, Braun et al. (1998) compilation. The published series carries unit-splice corruption (max 3,771; natural ceiling 100). Do not cite until reconciled upstream.",
+    "definition": "Central-government fiscal expenditure as a percentage of GDP. The published series carries unit-splice corruption (max 3,771; natural ceiling 100). Do not cite until reconciled upstream.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "quarantine_reason": "bounded_unit_overflow: max=3771 exceeds % ceiling 100",
     "commit_status_by_scale": {
@@ -12428,7 +12428,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
-    "definition": "Health outlays as a percentage of total central-government fiscal expenditure, Braun et al. (1998) compilation. The published series carries unit-splice corruption (max 947,706). Do not cite until reconciled upstream.",
+    "definition": "Health outlays as a percentage of total central-government fiscal expenditure. The published series carries unit-splice corruption (max 947,706). Do not cite until reconciled upstream.",
     "coverage_statement": "150 year(s) 1833-1990, 150 national observations",
     "quarantine_reason": "bounded_unit_overflow: max=947706 exceeds % ceiling 100",
     "commit_status_by_scale": {
@@ -12688,7 +12688,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#5b3f8e",
-    "definition": "Real value of exports adjusted by terms of trade, expressed as an index, Braun et al. (1998) compilation. The series measures the volume of imports Chile could buy with its export earnings, which captures terms-of-trade effects that simple export-volume series miss.",
+    "definition": "Real value of exports adjusted by terms of trade, expressed as an index. The series measures the volume of imports Chile could buy with its export earnings, which captures terms-of-trade effects that simple export-volume series miss.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -12946,7 +12946,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#5b3f8e",
-    "definition": "Total imports as a percentage of GDP, Braun et al. (1998) compilation.",
+    "definition": "Total imports as a percentage of GDP.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -13244,7 +13244,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#5b3f8e",
-    "definition": "Total imports valued in millions of 1995 pesos, Braun et al. (1998) compilation.",
+    "definition": "Total imports valued in millions of 1995 pesos.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -13546,7 +13546,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#5b3f8e",
-    "definition": "Total imports valued in current US dollars, Braun et al. (1998) compilation.",
+    "definition": "Total imports valued in current US dollars.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -13844,7 +13844,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#5b3f8e",
-    "definition": "Total imports in current US dollars divided by total population, Braun et al. (1998) compilation.",
+    "definition": "Total imports in current US dollars divided by total population.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -14120,7 +14120,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
-    "definition": "Revenue from indirect taxes (sales, VAT after 1975, excise, stamps) as a percentage of total fiscal revenue, Braun et al. (1998) compilation. Indirect taxation became dominant after the 1975 introduction of VAT (IVA); the series shows the transition.",
+    "definition": "Revenue from indirect taxes (sales, VAT after 1975, excise, stamps) as a percentage of total fiscal revenue. Indirect taxation became dominant after the 1975 introduction of VAT (IVA); the series shows the transition.",
     "coverage_statement": "157 year(s) 1833-1990, 157 national observations",
     "quarantine_reason": "bounded_unit_overflow: max=3.26709e+06 exceeds % ceiling 100",
     "commit_status_by_scale": {
@@ -14293,7 +14293,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#5b3f8e",
-    "definition": "Value of intermediate-goods imports (industrial inputs, semi-finished products), Braun et al. (1998) compilation. Series ends in 1937.",
+    "definition": "Value of intermediate-goods imports (industrial inputs, semi-finished products). Series ends in 1937.",
     "coverage_statement": "94 year(s) 1844-1937, 94 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -14622,7 +14622,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
-    "definition": "Revenue from internal taxes (all non-customs taxation) as a percentage of total fiscal revenue, Braun et al. (1998) compilation. The complement to external_taxes_share_of_revenue; together the two should sum to approximately 100 percent of tax revenue. Inherits the same unit-splice concerns.",
+    "definition": "Revenue from internal taxes (all non-customs taxation) as a percentage of total fiscal revenue. The complement to external_taxes_share_of_revenue; together the two should sum to approximately 100 percent of tax revenue. Inherits the same unit-splice concerns.",
     "coverage_statement": "158 year(s) 1833-1990, 158 national observations",
     "quarantine_reason": "bounded_unit_overflow: max=2.17957e+06 exceeds % ceiling 100",
     "commit_status_by_scale": {
@@ -14832,7 +14832,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#1f4e79",
-    "definition": "Real GDP of the manufacturing sector in constant 1996 pesos, Braun et al. (1998) compilation. The Chilean manufacturing sector grew under import-substitution industrialization (1930s–1973), contracted under the 1973–1983 liberalization, and stabilized at a lower share thereafter.",
+    "definition": "Real GDP of the manufacturing sector in constant 1996 pesos. The Chilean manufacturing sector grew under import-substitution industrialization (1930s–1973), contracted under the 1973–1983 liberalization, and stabilized at a lower share thereafter.",
     "coverage_statement": "131 year(s) 1860-1990, 131 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -15056,7 +15056,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#5b3f8e",
-    "definition": "Value of manufactured exports, Braun et al. (1998) compilation. The manufacturing-export share was negligible through most of Chilean history and only rose modestly after the 1985 export-diversification push.",
+    "definition": "Value of manufactured exports. The manufacturing-export share was negligible through most of Chilean history and only rose modestly after the 1985 export-diversification push.",
     "coverage_statement": "147 year(s) 1844-1990, 147 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -15282,7 +15282,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#5b3f8e",
-    "definition": "Manufacturing exports as a percentage of total exports, Braun et al. (1998) compilation.",
+    "definition": "Manufacturing exports as a percentage of total exports.",
     "coverage_statement": "147 year(s) 1844-1990, 147 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -15490,7 +15490,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#1f4e79",
-    "definition": "Manufacturing sector value-added as a percentage of GDP, Braun et al. (1998) compilation.",
+    "definition": "Manufacturing sector value-added as a percentage of GDP.",
     "coverage_statement": "131 year(s) 1860-1990, 131 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -15698,7 +15698,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#8a5a00",
-    "definition": "Real GDP of the mining sector in constant 1996 pesos, Braun et al. (1998) compilation. The series captures the nitrate era (peaking ca. 1929 at over 30 percent of GDP), the post-1929 collapse, the rise of copper, the 1971 nationalization, and the post-1990 expansion.",
+    "definition": "Real GDP of the mining sector in constant 1996 pesos. The series captures the nitrate era (peaking ca. 1929 at over 30 percent of GDP), the post-1929 collapse, the rise of copper, the 1971 nationalization, and the post-1990 expansion.",
     "coverage_statement": "131 year(s) 1860-1990, 131 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -15922,7 +15922,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#5b3f8e",
-    "definition": "Value of mining exports (copper, saltpeter, silver, gold, coal, iron, other minerals), Braun et al. (1998) compilation. The dominant Chilean export category from roughly 1880 forward.",
+    "definition": "Value of mining exports (copper, saltpeter, silver, gold, coal, iron, other minerals). The dominant Chilean export category from roughly 1880 forward.",
     "coverage_statement": "147 year(s) 1844-1990, 147 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -16148,7 +16148,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#5b3f8e",
-    "definition": "Mining exports as a percentage of total exports, Braun et al. (1998) compilation. The series shows the rise of nitrate (peaking ca. 1929 at over 70 percent of exports), the post-1929 transition to copper, and the 20th-century persistence of copper dominance.",
+    "definition": "Mining exports as a percentage of total exports. The series shows the rise of nitrate (peaking ca. 1929 at over 70 percent of exports), the post-1929 transition to copper, and the 20th-century persistence of copper dominance.",
     "coverage_statement": "147 year(s) 1844-1990, 147 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -16413,7 +16413,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#8a5a00",
-    "definition": "Mining sector value-added as a percentage of GDP, Braun et al. (1998) compilation.",
+    "definition": "Mining sector value-added as a percentage of GDP.",
     "coverage_statement": "131 year(s) 1860-1990, 131 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -16648,7 +16648,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
-    "definition": "Revenue from mining taxes (export duties on nitrate, copper royalties, the post-1971 copper nationalization remittances) as a percentage of total fiscal revenue, Braun et al. (1998) compilation. The series tracks Chile's resource-revenue dependence through the saltpeter era (1880s–1920s) and the post-1971 copper era.",
+    "definition": "Revenue from mining taxes (export duties on nitrate, copper royalties, the post-1971 copper nationalization remittances) as a percentage of total fiscal revenue. The series tracks Chile's resource-revenue dependence through the saltpeter era (1880s–1920s) and the post-1971 copper era.",
     "coverage_statement": "158 year(s) 1833-1990, 158 national observations",
     "quarantine_reason": "bounded_unit_overflow: max=928877 exceeds % ceiling 100",
     "commit_status_by_scale": {
@@ -17287,7 +17287,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
-    "definition": "Revenue from miscellaneous taxes not captured under direct, indirect, customs, or mining tax categories, as a percentage of total fiscal revenue. Braun et al. (1998) compilation.",
+    "definition": "Revenue from miscellaneous taxes not captured under direct, indirect, customs, or mining tax categories, as a percentage of total fiscal revenue..",
     "coverage_statement": "158 year(s) 1833-1990, 158 national observations",
     "quarantine_reason": "bounded_unit_overflow: max=1.95449e+06 exceeds % ceiling 100",
     "commit_status_by_scale": {
@@ -17957,7 +17957,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#1f4e79",
-    "definition": "Chile's real gross domestic product expressed in constant 1996 pesos, Braun et al. (1998) compilation. The series is the canonical reconstruction of Chilean long-run output for the 1810–1990 period; pre-1860 figures are extrapolated from population and partial output data, and pre-1880 figures should be read as estimates rather than measurements.",
+    "definition": "Chile's real gross domestic product expressed in constant 1996 pesos. The series is the canonical reconstruction of Chilean long-run output for the 1810–1990 period; pre-1860 figures are extrapolated from population and partial output data, and pre-1880 figures should be read as estimates rather than measurements.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -18241,7 +18241,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#0E1A2B",
-    "definition": "Year-over-year growth rate of real GDP, Braun et al. (1998) compilation. The 1810 cell carries a single-cell corruption (max value 139,277 percent vs the plausible series median around 3 percent) that the audit flags for upstream quarantine; the remaining series is interpretable.",
+    "definition": "Year-over-year growth rate of real GDP. The 1810 cell carries a single-cell corruption (max value 139,277 percent vs the plausible series median around 3 percent) that the audit flags for upstream quarantine; the remaining series is interpretable.",
     "coverage_statement": "180 year(s) 1811-1990, 180 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -18523,7 +18523,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#1f4e79",
-    "definition": "Real GDP divided by total population, Braun et al. (1998) compilation. The most-cited indicator of Chilean long-run living standards. Chile's per-capita GDP fell behind Argentina's in the early 20th century, lost ground further during the 1970s, and converged again after 1985.",
+    "definition": "Real GDP divided by total population. The most-cited indicator of Chilean long-run living standards. Chile's per-capita GDP fell behind Argentina's in the early 20th century, lost ground further during the 1970s, and converged again after 1985.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -18806,7 +18806,7 @@
     "source_document": "",
     "per_capita_default": "not_applicable",
     "accent": "#0E1A2B",
-    "definition": "Year-over-year growth rate of real GDP per capita, Braun et al. (1998) compilation.",
+    "definition": "Year-over-year growth rate of real GDP per capita.",
     "coverage_statement": "180 year(s) 1811-1990, 180 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -19087,7 +19087,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#1f4e79",
-    "definition": "Real GDP divided by total labor force, Braun et al. (1998) compilation. A productivity measure complementary to per-capita GDP; the divergence between the two reflects changes in the labor-force-to-population ratio (driven by demography, female participation, and age structure).",
+    "definition": "Real GDP divided by total labor force. A productivity measure complementary to per-capita GDP; the divergence between the two reflects changes in the labor-force-to-population ratio (driven by demography, female participation, and age structure).",
     "coverage_statement": "180 year(s) 1811-1990, 180 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -19369,7 +19369,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
-    "definition": "Total central-government fiscal revenue as a percentage of GDP, Braun et al. (1998) compilation. The published series carries severe unit-splice corruption: 180 of 181 non-null cells exceed 1,000 (against a natural ceiling of 100); the maximum observed value is 3,744,236 at 1972. Only the 1810 cell (3.76) is plausible. Do not cite this series until the upstream reconciliation lands.",
+    "definition": "Total central-government fiscal revenue as a percentage of GDP. The published series carries severe unit-splice corruption: 180 of 181 non-null cells exceed 1,000 (against a natural ceiling of 100); the maximum observed value is 3,744,236 at 1972. Only the 1810 cell (3.76) is plausible. Do not cite this series until the upstream reconciliation lands.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "quarantine_reason": "bounded_unit_overflow: max=3.74424e+06 exceeds % ceiling 100",
     "commit_status_by_scale": {
@@ -19579,7 +19579,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#1f4e79",
-    "definition": "Real GDP of the services sector in constant 1996 pesos, Braun et al. (1998) compilation. The services sector includes commerce, transport, communications, finance, government, and personal services; the residual after the four goods-producing sectors.",
+    "definition": "Real GDP of the services sector in constant 1996 pesos. The services sector includes commerce, transport, communications, finance, government, and personal services; the residual after the four goods-producing sectors.",
     "coverage_statement": "131 year(s) 1860-1990, 131 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -19787,7 +19787,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#1f4e79",
-    "definition": "Services sector value-added as a percentage of GDP, Braun et al. (1998) compilation. The services share rose from roughly 35 percent in 1860 to roughly 55 percent by 1990, tracking Chile's structural transformation from a primary-export to a services-anchored economy.",
+    "definition": "Services sector value-added as a percentage of GDP. The services share rose from roughly 35 percent in 1860 to roughly 55 percent by 1990, tracking Chile's structural transformation from a primary-export to a services-anchored economy.",
     "coverage_statement": "131 year(s) 1860-1990, 131 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -20854,7 +20854,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#5b3f8e",
-    "definition": "Sum of total exports and total imports as a percentage of GDP, Braun et al. (1998) compilation. A standard measure of trade integration.",
+    "definition": "Sum of total exports and total imports as a percentage of GDP. A standard measure of trade integration.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -21268,7 +21268,7 @@
     "source_document": "",
     "per_capita_default": "user_choice",
     "accent": "#235a4a",
-    "definition": "Total enrollment in higher education institutions (universities, technical institutes), Braun et al. (1998) compilation. The Chilean higher-education system was small and elite through the 19th century and expanded sharply after 1960; the series tracks both phases.",
+    "definition": "Total enrollment in higher education institutions (universities, technical institutes). The Chilean higher-education system was small and elite through the 19th century and expanded sharply after 1960; the series tracks both phases.",
     "coverage_statement": "139 year(s) 1852-1990, 139 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -21610,7 +21610,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#235a4a",
-    "definition": "Primary-school enrollment as a percentage of total school enrollment, Braun et al. (1998) compilation. Reflects the changing structure of Chilean education as secondary and higher education expanded in the 20th century.",
+    "definition": "Primary-school enrollment as a percentage of total school enrollment. Reflects the changing structure of Chilean education as secondary and higher education expanded in the 20th century.",
     "coverage_statement": "139 year(s) 1852-1990, 139 national observations",
     "quarantine_reason": "bounded_unit_overflow: max=604857 exceeds % ceiling 100",
     "commit_status_by_scale": {
@@ -21888,7 +21888,7 @@
     "source_document": "",
     "per_capita_default": "user_choice",
     "accent": "#235a4a",
-    "definition": "Total primary-school enrollment, Braun et al. (1998) compilation. Chilean primary education expanded under the 1860 Ley General de Instrucción Primaria and again under the 1920 Ley de Instrucción Primaria Obligatoria; the series captures both expansions.",
+    "definition": "Total primary-school enrollment. Chilean primary education expanded under the 1860 Ley General de Instrucción Primaria and again under the 1920 Ley de Instrucción Primaria Obligatoria; the series captures both expansions.",
     "coverage_statement": "139 year(s) 1852-1990, 139 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -22096,8 +22096,8 @@
   },
   {
     "id": "escuelas_total",
-    "label": "Schools (total)",
-    "display_label": "Schools",
+    "label": "Schools (province)",
+    "display_label": "Schools (province)",
     "category": "Education",
     "source_type": "compiled",
     "format_hint": "count",
@@ -22401,7 +22401,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#235a4a",
-    "definition": "Secondary-school enrollment as a percentage of total school enrollment, Braun et al. (1998) compilation.",
+    "definition": "Secondary-school enrollment as a percentage of total school enrollment.",
     "coverage_statement": "139 year(s) 1852-1990, 139 national observations",
     "quarantine_reason": "bounded_unit_overflow: max=2.59169e+06 exceeds % ceiling 100",
     "commit_status_by_scale": {
@@ -22622,7 +22622,7 @@
     "source_document": "",
     "per_capita_default": "user_choice",
     "accent": "#235a4a",
-    "definition": "Total secondary-school enrollment, Braun et al. (1998) compilation. Secondary education was largely the preserve of the elite-serving liceos and private establishments in the 19th century; the series captures the 20th-century expansion.",
+    "definition": "Total secondary-school enrollment. Secondary education was largely the preserve of the elite-serving liceos and private establishments in the 19th century; the series captures the 20th-century expansion.",
     "coverage_statement": "139 year(s) 1852-1990, 139 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -22906,7 +22906,7 @@
     "source_document": "Sinopsis Estadística i Jeográfica de Chile (19th c.)",
     "per_capita_default": "user_choice",
     "accent": "#235a4a",
-    "definition": "Total enrollment across primary, secondary, and higher education combined, Braun et al. (1998) compilation. The denominator for the primary, secondary, and higher-education share series.",
+    "definition": "Total enrollment across primary, secondary, and higher education combined. The denominator for the primary, secondary, and higher-education share series.",
     "coverage_statement": "139 year(s) 1852-1990, 139 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -24737,7 +24737,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#555555",
-    "definition": "Annual electricity production in gigawatt-hours, Braun et al. (1998) compilation. The 1860 figure is essentially zero; the series captures the buildout of Chilean electrical generation under both private (1900–1943) and state (Empresa Nacional de Electricidad, ENDESA, founded 1943) regimes.",
+    "definition": "Annual electricity production in gigawatt-hours. The 1860 figure is essentially zero; the series captures the buildout of Chilean electrical generation under both private (1900–1943) and state (Empresa Nacional de Electricidad, ENDESA, founded 1943) regimes.",
     "coverage_statement": "110 year(s) 1860-1990, 110 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -24946,7 +24946,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#1f4e79",
-    "definition": "Index of manufacturing production, Braun et al. (1998) compilation. The base year and weighting scheme should be verified against the source documentation; the series provides relative magnitudes useful for growth comparisons but absolute interpretation requires the base specification.",
+    "definition": "Index of manufacturing production. The base year and weighting scheme should be verified against the source documentation; the series provides relative magnitudes useful for growth comparisons but absolute interpretation requires the base specification.",
     "coverage_statement": "131 year(s) 1860-1990, 131 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -25135,7 +25135,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#555555",
-    "definition": "Annual natural gas consumption in millions of cubic meters, Braun et al. (1998) compilation. Pre-1960 figures are essentially zero; the series captures the development of Chilean natural gas use from the southern Magallanes fields and from Argentine pipeline imports.",
+    "definition": "Annual natural gas consumption in millions of cubic meters. Pre-1960 figures are essentially zero; the series captures the development of Chilean natural gas use from the southern Magallanes fields and from Argentine pipeline imports.",
     "coverage_statement": "110 year(s) 1860-1990, 110 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -25306,7 +25306,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#555555",
-    "definition": "Annual air-passenger movements through Chilean airports, Braun et al. (1998) compilation. Pre-1930 figures are zero or near-zero (commercial aviation began in 1929 with LAN's predecessor); the series captures the post-1930 development.",
+    "definition": "Annual air-passenger movements through Chilean airports. Pre-1930 figures are zero or near-zero (commercial aviation began in 1929 with LAN's predecessor); the series captures the post-1930 development.",
     "coverage_statement": "92 year(s) 1890-1990, 92 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -25597,7 +25597,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#555555",
-    "definition": "Annual tonnage of cargo moved through Chilean ports, Braun et al. (1998) compilation. Valparaíso was the dominant Pacific port through the 1890s; San Antonio and the saltpeter-era northern ports (Iquique, Antofagasta) grew thereafter; the post-1973 shift to specialized terminals reshaped the geography.",
+    "definition": "Annual tonnage of cargo moved through Chilean ports. Valparaíso was the dominant Pacific port through the 1890s; San Antonio and the saltpeter-era northern ports (Iquique, Antofagasta) grew thereafter; the post-1973 shift to specialized terminals reshaped the geography.",
     "coverage_statement": "101 year(s) 1890-1990, 101 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -25776,7 +25776,7 @@
     "source_document": "",
     "per_capita_default": "user_choice",
     "accent": "#555555",
-    "definition": "Total kilometers of privately-owned railway track in Chile, Braun et al. (1998) compilation. The complement to state_owned_railway_length. The 19th-century railway buildout was a mix of private (mining and agricultural) and state-promoted lines; the 1884 nationalization of the central trunk reshaped the balance.",
+    "definition": "Total kilometers of privately-owned railway track in Chile. The complement to state_owned_railway_length. The 19th-century railway buildout was a mix of private (mining and agricultural) and state-promoted lines; the 1884 nationalization of the central trunk reshaped the balance.",
     "coverage_statement": "98 year(s) 1876-1987, 98 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -25906,7 +25906,7 @@
     "source_document": "Anuario Estadístico 1935, Tabla 36",
     "per_capita_default": "user_choice",
     "accent": "#555555",
-    "definition": "Total kilometers of railway track (private + state), Braun et al. (1998) compilation. The sum of private_railway_length and state_owned_railway_length; the indicator most directly useful for tracking the overall railway network's geographic extent.",
+    "definition": "Total kilometers of railway track (private + state). The sum of private_railway_length and state_owned_railway_length; the indicator most directly useful for tracking the overall railway network's geographic extent.",
     "coverage_statement": "51 year(s) 1890-1987, 51 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -26093,7 +26093,7 @@
     "source_document": "",
     "per_capita_default": "user_choice",
     "accent": "#555555",
-    "definition": "Total kilometers of state-owned railway track, Braun et al. (1998) compilation. The state railway operator (Empresa de los Ferrocarriles del Estado, EFE, founded 1884) became dominant in the central and southern Chilean network; the series shows its expansion through the 20th century and contraction after 1990.",
+    "definition": "Total kilometers of state-owned railway track. The state railway operator (Empresa de los Ferrocarriles del Estado, EFE, founded 1884) became dominant in the central and southern Chilean network; the series shows its expansion through the 20th century and contraction after 1990.",
     "coverage_statement": "109 year(s) 1876-1990, 109 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -26257,7 +26257,7 @@
     "source_document": "",
     "per_capita_default": "user_choice",
     "accent": "#555555",
-    "definition": "Number of telephones in service in Chile, Braun et al. (1998) compilation. The series begins implausibly early (1868); the first commercial telephone service in Chile started in 1879. Pre-1879 figures should be read with skepticism or are likely encoding errors.",
+    "definition": "Number of telephones in service in Chile. The series begins implausibly early (1868); the first commercial telephone service in Chile started in 1879. Pre-1879 figures should be read with skepticism or are likely encoding errors.",
     "coverage_statement": "85 year(s) 1868-1990, 85 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -27004,7 +27004,7 @@
     "source_document": "",
     "per_capita_default": "user_choice",
     "accent": "#8a5a00",
-    "definition": "Annual national coal production in metric tons, Braun et al. (1998) compilation. Chilean coal came primarily from the Arauco and Concepción coalfields; output rose through the 19th-century industrial era, peaked mid-20th century, and declined as cheaper imported coal and natural gas displaced domestic production.",
+    "definition": "Annual national coal production in metric tons. Chilean coal came primarily from the Arauco and Concepción coalfields; output rose through the 19th-century industrial era, peaked mid-20th century, and declined as cheaper imported coal and natural gas displaced domestic production.",
     "coverage_statement": "131 year(s) 1860-1990, 131 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -27212,7 +27212,7 @@
     "source_document": "",
     "per_capita_default": "user_choice",
     "accent": "#8a5a00",
-    "definition": "Annual national copper production in metric tons, Braun et al. (1998) compilation. Chile was a major world copper producer through the 19th century (the Chuquicamata-era expansion came after 1915 under US Anaconda and Kennecott ownership; the 1971 nationalization placed the major mines under Codelco).",
+    "definition": "Annual national copper production in metric tons. Chile was a major world copper producer through the 19th century (the Chuquicamata-era expansion came after 1915 under US Anaconda and Kennecott ownership; the 1971 nationalization placed the major mines under Codelco).",
     "coverage_statement": "131 year(s) 1860-1990, 131 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -27492,7 +27492,7 @@
     "source_document": "",
     "per_capita_default": "user_choice",
     "accent": "#8a5a00",
-    "definition": "Annual national gold production in kilograms, Braun et al. (1998) compilation. Chilean gold output was modest after the colonial era; the series captures occasional rushes (the 1850s Atacama deposits, the 1930s Andacollo expansion) and small-scale persistent production.",
+    "definition": "Annual national gold production in kilograms. Chilean gold output was modest after the colonial era; the series captures occasional rushes (the 1850s Atacama deposits, the 1930s Andacollo expansion) and small-scale persistent production.",
     "coverage_statement": "131 year(s) 1860-1990, 131 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -27694,7 +27694,7 @@
     "source_document": "",
     "per_capita_default": "user_choice",
     "accent": "#8a5a00",
-    "definition": "Annual national saltpeter (sodium nitrate) production in metric tons, Braun et al. (1998) compilation. The saltpeter industry dominated Chilean exports and fiscal revenue from the 1880s through 1929; the post-1930 decline was rapid and the series ends in 1984 when commercial production effectively ceased.",
+    "definition": "Annual national saltpeter (sodium nitrate) production in metric tons. The saltpeter industry dominated Chilean exports and fiscal revenue from the 1880s through 1929; the post-1930 decline was rapid and the series ends in 1984 when commercial production effectively ceased.",
     "coverage_statement": "125 year(s) 1860-1984, 125 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -27923,7 +27923,7 @@
     "source_document": "",
     "per_capita_default": "user_choice",
     "accent": "#8a5a00",
-    "definition": "Annual national silver production in kilograms, Braun et al. (1998) compilation. The major Chilean silver booms (Chañarcillo from 1832, Caracoles from 1870) shaped 19th-century mining geography.",
+    "definition": "Annual national silver production in kilograms. The major Chilean silver booms (Chañarcillo from 1832, Caracoles from 1870) shaped 19th-century mining geography.",
     "coverage_statement": "131 year(s) 1860-1990, 131 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -28079,7 +28079,7 @@
     "source_document": "",
     "per_capita_default": "user_choice",
     "accent": "#8a5a00",
-    "definition": "Annual national sulfur production in metric tons, Braun et al. (1998) compilation. A small but persistent volcanic-arc industry; the series ends in 1975 when domestic production was displaced by petroleum-derived sulfur.",
+    "definition": "Annual national sulfur production in metric tons. A small but persistent volcanic-arc industry; the series ends in 1975 when domestic production was displaced by petroleum-derived sulfur.",
     "coverage_statement": "79 year(s) 1887-1975, 79 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -28116,8 +28116,8 @@
   },
   {
     "id": "peasant",
-    "label": "Agricultural Workers",
-    "display_label": "Agricultural Workers",
+    "label": "Agricultural workers (rural laborers)",
+    "display_label": "Agricultural workers (rural laborers)",
     "category": "Occupations",
     "source_type": "anuario",
     "format_hint": "count",
@@ -29670,7 +29670,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c5060",
-    "definition": "Total female labor force (women employed plus women unemployed and seeking work), Braun et al. (1998) compilation. The 1976 ENE redefinition affects comparability across that year; see break-annotation register.",
+    "definition": "Total female labor force (women employed plus women unemployed and seeking work). The 1976 ENE redefinition affects comparability across that year; see break-annotation register.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -29930,7 +29930,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c5060",
-    "definition": "Female labor force as a percentage of working-age female population, Braun et al. (1998) compilation. The Chilean female participation rate was low by international standards through the 20th century; rose sharply after 1980.",
+    "definition": "Female labor force as a percentage of working-age female population. The Chilean female participation rate was low by international standards through the 20th century; rose sharply after 1980.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -30189,7 +30189,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c5060",
-    "definition": "Total labor force as a percentage of working-age population (both sexes), Braun et al. (1998) compilation.",
+    "definition": "Total labor force as a percentage of working-age population (both sexes).",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -30726,7 +30726,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c5060",
-    "definition": "Total male labor force, Braun et al. (1998) compilation.",
+    "definition": "Total male labor force.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -30986,7 +30986,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c5060",
-    "definition": "Male labor force as a percentage of working-age male population, Braun et al. (1998) compilation.",
+    "definition": "Male labor force as a percentage of working-age male population.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -31323,7 +31323,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c5060",
-    "definition": "Total labor force (male + female, employed + unemployed), Braun et al. (1998) compilation.",
+    "definition": "Total labor force (male + female, employed + unemployed).",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -31654,7 +31654,7 @@
     "source_document": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Vol. 2",
     "per_capita_default": "user_choice",
     "accent": "#0E1A2B",
-    "definition": "Total population of the unit (national, province, or department), the canonical population indicator at each of the three scales. The national series draws from Braun et al. (1998); the subnational series stitch together census enumerations (1865, 1875, 1885, 1895, 1907, 1920, 1930, 1940, 1952, 1960, 1970, 1982, 1992), Mamalakis (1980) intercensal estimates, and Véjares department-level extraction. Per the duplicate-resolution memo, the totalpop, poblacion_total_titled_dept, and poblacion_extended entries fold into this canonical.",
+    "definition": "Total population of the unit (national, province, or department), the canonical population indicator at each of the three scales. The national series draws; the subnational series stitch together census enumerations (1865, 1875, 1885, 1895, 1907, 1920, 1930, 1940, 1952, 1960, 1970, 1982, 1992), Mamalakis (1980) intercensal estimates, and Véjares department-level extraction. Per the duplicate-resolution memo, the totalpop, poblacion_total_titled_dept, and poblacion_extended entries fold into this canonical.",
     "coverage_statement": "152 year(s) 1835-1990, 152 national observations; 17 year(s) 1835-1970, 352 province-level observations; 8 year(s) 1835-1878, 274 department-level observations; 3 year(s) 1935-1992, 811 observations",
     "commit_status_by_scale": {
       "national": "committed",
@@ -32212,7 +32212,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c5060",
-    "definition": "Number of persons unemployed and seeking work, Braun et al. (1998) compilation. The 1976 ENE redefinition and the 1981–1985 PEM/POJH emergency-employment programs disrupt comparability; the series should be read with the break-annotation register active.",
+    "definition": "Number of persons unemployed and seeking work. The 1976 ENE redefinition and the 1981–1985 PEM/POJH emergency-employment programs disrupt comparability; the series should be read with the break-annotation register active.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -32587,8 +32587,8 @@
   },
   {
     "id": "agricultural_workers",
-    "label": "Agricultural Workers",
-    "display_label": "Agricultural Workers",
+    "label": "Agricultural workers (national)",
+    "display_label": "Agricultural workers (national)",
     "category": "Sectoral Employment",
     "source_type": "compiled",
     "format_hint": "count",
@@ -32809,7 +32809,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#3b6d11",
-    "definition": "Persons employed in the agricultural sector (crops, livestock, forestry, fishing) at national scale, Braun et al. (1998) compilation. The agricultural workforce was the majority of the Chilean labor force through the late 19th century and declined to under 15 percent by 1990.",
+    "definition": "Persons employed in the agricultural sector (crops, livestock, forestry, fishing) at national scale. The agricultural workforce was the majority of the Chilean labor force through the late 19th century and declined to under 15 percent by 1990.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -33069,7 +33069,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#555555",
-    "definition": "Persons employed in the construction sector at national scale, Braun et al. (1998) compilation.",
+    "definition": "Persons employed in the construction sector at national scale.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -33329,7 +33329,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c5060",
-    "definition": "Persons employed in the manufacturing sector at national scale, Braun et al. (1998) compilation. The manufacturing workforce grew under import-substitution industrialization (1930–1973) and contracted under post-1973 liberalization.",
+    "definition": "Persons employed in the manufacturing sector at national scale. The manufacturing workforce grew under import-substitution industrialization (1930–1973) and contracted under post-1973 liberalization.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -33589,7 +33589,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#8a5a00",
-    "definition": "Persons employed in the mining sector at national scale, Braun et al. (1998) compilation. The series tracks the 19th-century silver and copper booms, the nitrate era peak (1900–1930), the post-1929 collapse, and the post-1971 Codelco era.",
+    "definition": "Persons employed in the mining sector at national scale. The series tracks the 19th-century silver and copper booms, the nitrate era peak (1900–1930), the post-1929 collapse, and the post-1971 Codelco era.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -33849,7 +33849,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c5060",
-    "definition": "Persons employed in the services sector (commerce, transport, finance, government, personal services) at national scale, Braun et al. (1998) compilation. The dominant employment category by the late 20th century.",
+    "definition": "Persons employed in the services sector (commerce, transport, finance, government, personal services) at national scale. The dominant employment category by the late 20th century.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -34209,8 +34209,8 @@
   },
   {
     "id": "occ_agricultura_1920_dept",
-    "label": "Agricultural workers (department, 1920)",
-    "display_label": "Agricultural workers",
+    "label": "Agricultural workers (1920 census)",
+    "display_label": "Agricultural workers (1920 census)",
     "category": "Uncategorized",
     "source_type": "census",
     "format_hint": "count",
@@ -35471,8 +35471,8 @@
   },
   {
     "id": "hospitals_count_dept",
-    "label": "Hospitals (department, 1930-1940)",
-    "display_label": "Hospitals",
+    "label": "Hospitals (department)",
+    "display_label": "Hospitals (department)",
     "category": "Uncategorized",
     "source_type": "compiled",
     "format_hint": "count",
@@ -35533,8 +35533,8 @@
   },
   {
     "id": "hospitals_count_prov",
-    "label": "Hospitals (province, 1924)",
-    "display_label": "Hospitals",
+    "label": "Hospitals (province)",
+    "display_label": "Hospitals (province)",
     "category": "Uncategorized",
     "source_type": "sinopsis",
     "format_hint": "count",
@@ -37331,7 +37331,7 @@
   {
     "id": "schools_count_dept",
     "label": "Schools (department)",
-    "display_label": "Schools",
+    "display_label": "Schools (department)",
     "category": "Uncategorized",
     "source_type": "compiled",
     "format_hint": "count",
@@ -38598,7 +38598,7 @@
     "source_document": "",
     "per_capita_default": "not_applicable",
     "accent": "#0E1A2B",
-    "definition": "Number of deaths per 1,000 population per year, Braun et al. (1998) compilation. The Chilean mortality transition began around 1900 and accelerated after 1930; the series tracks the decline from roughly 30 per 1,000 in the 1850s to under 6 per 1,000 by 1990. Inspect for the same unit-splice pattern as crude_birth_rate before citing.",
+    "definition": "Number of deaths per 1,000 population per year. The Chilean mortality transition began around 1900 and accelerated after 1930; the series tracks the decline from roughly 30 per 1,000 in the 1850s to under 6 per 1,000 by 1990. Inspect for the same unit-splice pattern as crude_birth_rate before citing.",
     "coverage_statement": "143 year(s) 1848-1990, 143 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -39111,7 +39111,7 @@
     "source_document": "",
     "per_capita_default": "not_applicable",
     "accent": "#0E1A2B",
-    "definition": "Number of deaths under age 1 per 1,000 live births per year, Braun et al. (1998) compilation. The published series carries unit-splice corruption (median 31,199 against a natural ceiling around 300 in the worst historical cases). Do not cite until upstream reconciliation; the underlying Chilean infant-mortality decline from roughly 250 per 1,000 in 1900 to under 20 per 1,000 by 1990 is well-documented in secondary literature.",
+    "definition": "Number of deaths under age 1 per 1,000 live births per year. The published series carries unit-splice corruption (median 31,199 against a natural ceiling around 300 in the worst historical cases). Do not cite until upstream reconciliation; the underlying Chilean infant-mortality decline from roughly 250 per 1,000 in 1900 to under 20 per 1,000 by 1990 is well-documented in secondary literature.",
     "coverage_statement": "134 year(s) 1848-1990, 134 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -39744,7 +39744,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#0E1A2B",
-    "definition": "Annual rate of natural population increase (births minus deaths, as a percent of population), Braun et al. (1998) compilation. Excludes migration; the complement to net_migration_rate.",
+    "definition": "Annual rate of natural population increase (births minus deaths, as a percent of population). Excludes migration; the complement to net_migration_rate.",
     "coverage_statement": "143 year(s) 1848-1990, 143 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -39964,7 +39964,7 @@
     "source_document": "",
     "per_capita_default": "not_applicable",
     "accent": "#0E1A2B",
-    "definition": "Net migration (immigrants minus emigrants) per 1,000 population per year, Braun et al. (1998) compilation. Chile was a modest net immigrant country in the late 19th century, became net emigrant during the 1970s, and returned to net immigration after 1990.",
+    "definition": "Net migration (immigrants minus emigrants) per 1,000 population per year. Chile was a modest net immigrant country in the late 19th century, became net emigrant during the 1970s, and returned to net immigration after 1990.",
     "coverage_statement": "143 year(s) 1848-1990, 143 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -40277,7 +40277,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#0E1A2B",
-    "definition": "Annual rate of total population growth (natural increase plus net migration), Braun et al. (1998) compilation.",
+    "definition": "Annual rate of total population growth (natural increase plus net migration).",
     "coverage_statement": "143 year(s) 1848-1990, 143 national observations",
     "commit_status_by_scale": {
       "national": "committed"

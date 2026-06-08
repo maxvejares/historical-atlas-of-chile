@@ -305,6 +305,7 @@ export function createMapView(host) {
         <div class="mic-meta">Click to pin</div>
         <div class="mic-value">—</div>
       </div>
+      <div class="map-distribution" style="display:none"></div>
     </div>
     <div class="chart-alt-note variable-flag is-warning" style="display:none"></div>
     <div class="map-research-note variable-flag is-soft" style="display:none"></div>
@@ -375,7 +376,19 @@ export function createMapView(host) {
       const bx = xS(b.year);
       svg += `<line x1="${bx.toFixed(1)}" y1="${mT}" x2="${bx.toFixed(1)}" y2="${mT + plotH}" stroke="#94918A" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>`;
     }
-    svg += `<path d="${d}" fill="none" stroke="#7A1E2B" stroke-width="1.5"/>`;
+    // Sparse series (2–3 observations) or an explicit rendering_mode of 'dots'
+    // render as discrete markers, never a connecting line that fakes
+    // interpolation across the gaps. classifyTemporal is the single arbiter.
+    const sb = meta.scales && meta.scales[scale];
+    const dotsOnly = M.classifyTemporal(meta, scale) === 'sparse'
+      || (sb && sb.rendering_mode === 'dots');
+    if (dotsOnly) {
+      for (const [x, v] of pairs) {
+        svg += `<circle cx="${xS(x).toFixed(1)}" cy="${yS(v).toFixed(1)}" r="2.2" fill="#7A1E2B"/>`;
+      }
+    } else {
+      svg += `<path d="${d}" fill="none" stroke="#7A1E2B" stroke-width="1.5"/>`;
+    }
     // Year marker
     if (year != null && year >= xMin && year <= xMax) {
       const mx = xS(year);
@@ -459,6 +472,7 @@ export function createMapView(host) {
       { detail: { scale: a.dataset.relScale || null, variable: a.dataset.relId } }));
   });
   const infoEl = host.querySelector('.map-info-card');
+  const distEl = host.querySelector('.map-distribution');
   const researchNoteEl = host.querySelector('.map-research-note');
   const legend = host.querySelector('.map-legend');
   const srcBlock = host.querySelector('.map-source-block');
@@ -641,6 +655,50 @@ export function createMapView(host) {
       <div class="mic-meta" style="font-style:italic">${note || 'No administrative data'}</div>`;
   }
 
+  // Snapshot distribution panel. When an indicator is a single-year snapshot at
+  // the active scale there is no time depth to scrub, so in place of the
+  // suppressed scrubber/play/sparkline we summarize the one year that exists:
+  // a histogram of the value across the mapped units plus the top and bottom
+  // few. Reads the same `distribution` the info card uses (entries sorted
+  // descending, median, total).
+  function renderDistribution(distribution, meta, year, perCapita, scaleNoun) {
+    if (!distribution || !distribution.entries.length) {
+      distEl.style.display = 'none'; distEl.innerHTML = ''; return;
+    }
+    const fmtUnit = perCapita ? '%' : meta.display_unit;
+    const fmtHint = perCapita ? 'rate' : meta.format_hint;
+    const entries = distribution.entries;          // descending by value
+    const vals = entries.map(e => e.value);
+    const min = Math.min(...vals), max = Math.max(...vals);
+    const NB = 12, span = (max - min) || 1;
+    const bins = new Array(NB).fill(0);
+    for (const v of vals) {
+      let b = Math.floor(((v - min) / span) * NB);
+      if (b >= NB) b = NB - 1; if (b < 0) b = 0;
+      bins[b]++;
+    }
+    const bmax = Math.max(...bins, 1);
+    const barsHTML = bins.map(c =>
+      `<span class="dist-bar" style="height:${Math.max(2, Math.round((c / bmax) * 100))}%" title="${c} ${scaleNoun}"></span>`
+    ).join('');
+    const unitRow = e =>
+      `<div class="dist-unit"><span class="du-name">${escapeHTML(e.name)}</span>`
+      + `<span class="du-val num">${fmt(e.value, fmtHint, fmtUnit)}</span></div>`;
+    const topN = entries.slice(0, 3);
+    const botN = entries.slice(-3).reverse();
+    distEl.style.display = 'block';
+    distEl.innerHTML = `
+      <div class="dist-overline overline">${year} snapshot · ${entries.length} ${scaleNoun}</div>
+      <div class="dist-hist" role="img" aria-label="Distribution of ${escapeHTML(meta.display_label || meta.label)} across ${scaleNoun}, ${year}">${barsHTML}</div>
+      <div class="dist-axis"><span class="num">${fmt(min, fmtHint, fmtUnit)}</span><span class="num">${fmt(max, fmtHint, fmtUnit)}</span></div>
+      <div class="dist-lists">
+        <div class="dist-col"><div class="dist-col-h">Highest</div>${topN.map(unitRow).join('')}</div>
+        <div class="dist-col"><div class="dist-col-h">Lowest</div>${botN.map(unitRow).join('')}</div>
+      </div>
+      <div class="dist-note">Single-year snapshot — no time series at this scale, so the timeline and national trend are hidden.</div>
+    `;
+  }
+
   function escapeHTML(s) {
     return String(s ?? '').replace(/[&<>"]/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]));
   }
@@ -659,6 +717,7 @@ export function createMapView(host) {
     relatedEl.style.display = 'none'; relatedEl.innerHTML = '';
     altNoteEl.style.display = 'none'; altNoteEl.innerHTML = '';
     sparkEl.style.display = 'none'; sparkEl.innerHTML = '';
+    distEl.style.display = 'none'; distEl.innerHTML = '';
     researchNoteEl.style.display = 'none'; researchNoteEl.textContent = '';
     await loadNationalAggregates();
 
@@ -871,8 +930,20 @@ export function createMapView(host) {
     // Track for cite/CSV
     lastState = { scale, variable, year, perCapita };
 
-    // National-aggregate sparkline above the map (Addendum 3).
-    renderSparkline(meta, scale, year, perCapita);
+    // Temporal mode at THIS scale decides the affordances (classifyTemporal is
+    // the single source of truth). A snapshot has no time depth: suppress the
+    // national-aggregate sparkline (it would imply a trend the mapped data does
+    // not have) and show a distribution panel for the one year instead. A
+    // series/sparse view keeps the sparkline (drawn as dots for sparse).
+    const tmode = M.classifyTemporal(meta, scale);
+    const distNoun = scale === 'department' ? 'departments' : scale === 'commune' ? 'comunas' : 'provinces';
+    if (tmode === 'snapshot') {
+      sparkEl.style.display = 'none'; sparkEl.innerHTML = '';
+      renderDistribution(distribution, meta, year, perCapita, distNoun);
+    } else {
+      distEl.style.display = 'none'; distEl.innerHTML = '';
+      renderSparkline(meta, scale, year, perCapita);
+    }
 
     // ── Item 1: coverage caption + sub-40% banner ────────────────────────
     // Name how many units in the active geometry frame carry data. The count

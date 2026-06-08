@@ -607,13 +607,22 @@ export function createChart(host) {
     }
 
     const cadence = blk.cadence;
-    // Time series always draws a connecting line; dots mark real observations
-    // for census/irregular cadences. Dots-only is never allowed — a manifest
-    // rendering_mode of 'dots' is upgraded to 'dots_with_line'.
+    // Time series draws a connecting line; dots mark real observations for
+    // census/irregular cadences.
     let renderingMode = blk.rendering_mode
       || ({annual: 'line', census: 'dots_with_line', irregular: 'dots_with_line'}[cadence])
       || 'dots_with_line';
-    if (renderingMode === 'dots') renderingMode = 'dots_with_line';
+    // A sparse series (2–3 observations at this scale) renders as bare dots at
+    // the observed years — a connecting line across decade gaps fakes
+    // interpolation. classifyTemporal is the single arbiter, shared with the
+    // picker, the badges, and the map. For denser series an explicit 'dots'
+    // mode is still upgraded to dots_with_line (the audited census rendering).
+    const temporalClass = M.classifyTemporal(meta, state.scale);
+    if (temporalClass === 'sparse') {
+      renderingMode = 'dots';
+    } else if (renderingMode === 'dots') {
+      renderingMode = 'dots_with_line';
+    }
     // ONE title (Fraunces) + ONE units caption (cadence + format only).
     // Source line below the chart carries provenance; we don't repeat it
     // in the chart head.

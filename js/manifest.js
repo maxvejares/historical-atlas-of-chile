@@ -190,6 +190,43 @@ export function isCrossSection(id, scale) {
   return !!blk && blk.valid_years.length <= 1;
 }
 
+// ── Temporal classification — the single source of truth ────────────────────
+// The same id can be a time series at one scale and a snapshot at another
+// (total_population is annual at national, census-cadence at province, a
+// three-point snapshot at commune), so temporal type is a property of the
+// (indicator, scale) PAIR, never a global tag on the indicator.
+//
+// yearsForScale returns that scale's distinct observed years, sorted. The
+// picker badge ("3 years: 1865, 1875, 1885") reads it directly.
+export function yearsForScale(meta, scale) {
+  const blk = meta && meta.scales && meta.scales[scale];
+  if (blk && Array.isArray(blk.valid_years) && blk.valid_years.length) {
+    return [...new Set(blk.valid_years)].sort((a, b) => a - b);
+  }
+  return [];
+}
+
+// classifyTemporal returns 'series', 'sparse', or 'snapshot' for the active
+// scale. Rule: count distinct years in that scale's valid_years — 4+ is a
+// series, exactly 1 is a snapshot, 2 or 3 is sparse. When the scale carries no
+// explicit year list, fall back to published_by_scale[scale]. EVERY consumer
+// (picker grouping, coverage badge, year scrubber, play control, sparkline,
+// chart rendering mode) calls this one function, so they can never disagree.
+export function classifyTemporal(meta, scale) {
+  if (!meta) return 'snapshot';
+  const n = yearsForScale(meta, scale).length;
+  if (n === 0) {
+    const pub = (meta.published_by_scale && meta.published_by_scale[scale]) || null;
+    if (pub === 'cross_section') return 'snapshot';
+    if (pub === 'sparse') return 'sparse';
+    if (pub === 'partial' || pub === 'complete') return 'series';
+    return 'snapshot';
+  }
+  if (n >= 4) return 'series';
+  if (n === 1) return 'snapshot';
+  return 'sparse';
+}
+
 // Should the chart render log y-axis by default?
 export function isLogByDefault(id, scale) {
   const blk = scaleBlock(id, scale);
