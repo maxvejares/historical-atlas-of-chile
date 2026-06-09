@@ -1077,8 +1077,12 @@ function autoDef(meta, blk) {
   const cad = blk.cadence === 'annual' ? 'annual observations'
             : blk.cadence === 'census' ? 'census-year observations'
             : 'irregular observations';
-  const src = M.sourceTypeName(meta.source_type);
-  return `${cad.charAt(0).toUpperCase() + cad.slice(1)} of ${ttl}, ${a}–${b}. Compiled from ${src}.`;
+  // Only claim a source when a concrete citation exists. For uncited/pending
+  // series, omit the "Compiled from" clause rather than substitute a
+  // source_type guess (which leaked DLW / a compilation label).
+  const src = M.hasConcreteSource(meta) ? M.sourceLine(meta) : null;
+  const base = `${cad.charAt(0).toUpperCase() + cad.slice(1)} of ${ttl}, ${a}–${b}.`;
+  return src ? `${base} Compiled from ${src}.` : base;
 }
 
 function escapeXML(s) {

@@ -292,7 +292,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario Estadístico de Chile (sección Agricultura), and Sociedad Nacional de Agricultura, various years."
+    ],
     "topic_category": "agriculture",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -331,7 +333,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "bean_production",
@@ -500,7 +502,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario Estadístico de Chile (sección Agricultura), and Sociedad Nacional de Agricultura, various years."
+    ],
     "topic_category": "agriculture",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -539,7 +543,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "cattle_output",
@@ -658,7 +662,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario Estadístico de Chile (sección Agricultura), and Sociedad Nacional de Agricultura, various years."
+    ],
     "topic_category": "agriculture",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -676,7 +682,7 @@
     "commit_status": "committed",
     "published": "complete",
     "data_quality_flag": "series_endpoint_methodological",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "existencias_bovinos_cabezas",
@@ -928,7 +934,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario Estadístico de Chile (sección Agricultura), and Sociedad Nacional de Agricultura, various years."
+    ],
     "topic_category": "agriculture",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -967,7 +975,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "maize_production",
@@ -1136,7 +1144,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario Estadístico de Chile (sección Agricultura), and Sociedad Nacional de Agricultura, various years."
+    ],
     "topic_category": "agriculture",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -1175,7 +1185,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "maiz_produccion_ton",
@@ -1507,7 +1517,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario Estadístico de Chile (sección Agricultura), and Sociedad Nacional de Agricultura, various years."
+    ],
     "topic_category": "agriculture",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -1546,7 +1558,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "existencias_porcinos_cabezas",
@@ -1801,7 +1813,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario Estadístico de Chile (sección Agricultura), and Sociedad Nacional de Agricultura, various years."
+    ],
     "topic_category": "agriculture",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -1840,7 +1854,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "papas_produccion_ton",
@@ -2339,7 +2353,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario Estadístico de Chile (sección Agricultura), and Sociedad Nacional de Agricultura, various years."
+    ],
     "topic_category": "agriculture",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -2378,8 +2394,8 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "units_note": "Pre-1929 figures may be in quintales métricos (0.1 MT) in source documents; Braun reports them in metric tons. Verify against the source if magnitude appears anomalous.",
-    "source_attribution_status": "no_recoverable_source"
+    "units_note": "Pre-1929 figures may be in quintales métricos (0.1 MT) in source documents; the compiled series reports them in metric tons. Verify against the source if magnitude appears anomalous.",
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "trigo_produccion_ton",
@@ -2595,7 +2611,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario Estadístico de Chile (sección Agricultura), and Sociedad Nacional de Agricultura, various years."
+    ],
     "topic_category": "agriculture",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -2613,7 +2631,7 @@
     "commit_status": "committed",
     "published": "complete",
     "data_quality_flag": "series_endpoint_methodological",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "catolicos_1952",
@@ -3920,7 +3938,9 @@
         "magnitude_hint": "log"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Censos de Población de Chile (Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas), various census years."
+    ],
     "topic_category": "demography",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -3942,7 +3962,7 @@
       "ruralpop"
     ],
     "data_quality_flag": "unit_mixed_across_period",
-    "source_attribution_status": "no_family_no_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "ruralpop_pct",
@@ -4395,7 +4415,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Censos de Población de Chile (Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas), various census years."
+    ],
     "topic_category": "demography",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -4438,7 +4460,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_family_no_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "poblacion_urbana_1970",
@@ -4635,7 +4657,7 @@
     "label": "Agricultural GDP",
     "display_label": "Agricultural GDP",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "currency",
     "display_unit": "constant 1996 pesos",
     "curated_subtitle": "Agricultural sector GDP, 1860–1990, constant 1996 pesos",
@@ -4813,7 +4835,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "methodological_ine_1970",
@@ -4836,7 +4858,8 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "agricultural_exports",
@@ -5021,7 +5044,9 @@
         "magnitude_hint": "log"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Superintendencia de Aduanas y Oficina Central de Estadística, Estadística Comercial de la República de Chile, and Banco Central de Chile, Comercio Exterior, various years."
+    ],
     "topic_category": "trade",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -5062,7 +5087,7 @@
     ],
     "units_note": "Unit field currently blank; verify whether series is in millions of 1995 pesos, current dollars, or millions of pesos current.",
     "data_quality_flag": "unit_unclear",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "agricultural_exports_share",
@@ -5247,7 +5272,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Superintendencia de Aduanas y Oficina Central de Estadística, Estadística Comercial de la República de Chile, and Banco Central de Chile, Comercio Exterior, various years."
+    ],
     "topic_category": "trade",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -5286,14 +5313,14 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "agriculture_share_of_gdp",
     "label": "Agriculture share of GDP",
     "display_label": "Agriculture share of GDP",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "share",
     "display_unit": "%",
     "curated_subtitle": "Agriculture as share of GDP, 1860–1990, percent",
@@ -5471,7 +5498,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "methodological_ine_1970",
@@ -5494,7 +5521,8 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "tariff_imports_avg",
@@ -5689,14 +5717,16 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Memoria del Ministerio de Hacienda and Dirección de Presupuestos y Contraloría General de la República, Cuenta de la Inversión / Cálculo de Entradas y Gastos, various years."
+    ],
     "topic_category": "trade",
     "semantic_zero": true,
     "source_quality": "ocr",
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#5b3f8e",
-    "definition": "Average ad valorem tariff applied to imports, from the long fiscal series of Díaz, Lüders & Wagner (2016).",
+    "definition": "Average ad valorem tariff applied to imports.",
     "coverage_statement": "157 year(s) 1833-1990, 157 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -5728,7 +5758,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_family_no_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "capital_goods_imports",
@@ -5860,7 +5890,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Superintendencia de Aduanas y Oficina Central de Estadística, Estadística Comercial de la República de Chile, and Banco Central de Chile, Comercio Exterior, various years."
+    ],
     "topic_category": "trade",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -5879,14 +5911,14 @@
     "published": "complete",
     "units_note": "millions of US dollars",
     "data_quality_flag": "unit_unclear",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "construction_gdp",
     "label": "Construction GDP",
     "display_label": "Construction GDP",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "currency",
     "display_unit": "constant 1996 pesos",
     "curated_subtitle": "Construction sector GDP, 1860–1990, constant 1996 pesos",
@@ -6064,7 +6096,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "methodological_ine_1970",
@@ -6087,14 +6119,15 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "construction_share_of_gdp",
     "label": "Construction share of GDP",
     "display_label": "Construction share of GDP",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "share",
     "display_unit": "%",
     "curated_subtitle": "Construction as share of GDP, 1860–1990, percent",
@@ -6272,7 +6305,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "methodological_ine_1970",
@@ -6295,7 +6328,8 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "consumer_goods_imports",
@@ -6427,7 +6461,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Superintendencia de Aduanas y Oficina Central de Estadística, Estadística Comercial de la República de Chile, and Banco Central de Chile, Comercio Exterior, various years."
+    ],
     "topic_category": "trade",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -6446,7 +6482,7 @@
     "published": "complete",
     "units_note": "millions of US dollars",
     "data_quality_flag": "unit_unclear",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "cpi_index",
@@ -6665,14 +6701,16 @@
         "magnitude_hint": "log"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Dirección General de Estadística e Instituto Nacional de Estadísticas, Índice de Precios al Consumidor, 1928 onward (figures before 1928 are historical reconstructions)."
+    ],
     "topic_category": "economy",
     "semantic_zero": true,
     "source_quality": "ocr",
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#1f4e79",
-    "definition": "Consumer price index for Chile, rebased to 1995 = 100, from Díaz, Lüders & Wagner (2016).",
+    "definition": "Consumer price index for Chile, rebased to 1995 = 100.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -6704,7 +6742,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_family_no_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "customs_revenue_nat",
@@ -6971,7 +7009,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Memoria del Ministerio de Hacienda and Dirección de Presupuestos y Contraloría General de la República, Cuenta de la Inversión / Cálculo de Entradas y Gastos, various years."
+    ],
     "topic_category": "fiscal",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -7012,14 +7052,14 @@
       }
     ],
     "data_quality_flag": "unit_splice_corruption",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "defense_spending_share_of_gdp",
     "label": "Defense spending (YoY % change)",
     "display_label": "Defense spending share of GDP",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "share",
     "display_unit": "%",
     "curated_subtitle": "Defense spending as share of GDP, 1811–1990, percent",
@@ -7247,7 +7287,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "methodological_ine_1970",
@@ -7271,7 +7311,8 @@
       }
     ],
     "data_quality_flag": "unit_splice_corruption",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "direct_taxes_share_of_revenue",
@@ -7467,7 +7508,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Memoria del Ministerio de Hacienda and Dirección de Presupuestos y Contraloría General de la República, Cuenta de la Inversión / Cálculo de Entradas y Gastos, various years."
+    ],
     "topic_category": "fiscal",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -7508,7 +7551,7 @@
       }
     ],
     "data_quality_flag": "unit_splice_corruption",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "poblacion_activa_1952",
@@ -7760,7 +7803,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Memoria del Ministerio de Hacienda and Dirección de Presupuestos y Contraloría General de la República, Cuenta de la Inversión / Cálculo de Entradas y Gastos, various years."
+    ],
     "topic_category": "fiscal",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -7801,7 +7846,7 @@
       }
     ],
     "data_quality_flag": "unit_splice_corruption",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "budget_education_share",
@@ -7879,7 +7924,7 @@
     "label": "Exports (% of GDP)",
     "display_label": "Exports (% of GDP)",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "share",
     "display_unit": "%",
     "curated_subtitle": "Exports as share of GDP, 1810–1990, percent",
@@ -8107,7 +8152,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "boundary_wop_tarapaca_1883",
@@ -8160,17 +8205,18 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       },
       {
-        "id": "source_transition_anuario_to_braun",
+        "id": "source_transition_anuario_to_compiled",
         "year": 1929,
         "kind": "source_transition",
-        "label": "Anuario primary → Braun et al. compilation",
-        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is typically primary archival readings from the Anuario, Sinopsis, and Memoria series, while the post-1929 segment relies on Braun et al. (1998), Mamalakis (1980), and Díaz, Lüders, and Wagner (DLW) compilations. The compilers harmonized definitions, sometimes with judgment calls that differ from the primary readings.",
+        "label": "Anuario primary → later compiled official series",
+        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is drawn from the primary archival series (Anuario Estadistico, Sinopsis, Memoria), while later years rely on subsequent official statistical series. Definitions were harmonized across the join and may differ slightly from the original primary readings.",
         "severity": "informational",
-        "citation": "Braun et al. (1998); Mamalakis (1980); Díaz, Lüders, and Wagner.",
+        "citation": "Primary Chilean statistical series (Anuario, Sinopsis, Memoria) and later official series.",
         "rule_for_chart": "Source caption attributes by year-segment per audit Finding 4.2. No vertical rule required unless a definitional revision crossed this date."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "exports_millions_1995_pesos",
@@ -8389,7 +8435,9 @@
         "magnitude_hint": "log"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Superintendencia de Aduanas y Oficina Central de Estadística, Estadística Comercial de la República de Chile, and Banco Central de Chile, Comercio Exterior, various years."
+    ],
     "topic_category": "trade",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -8458,17 +8506,17 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       },
       {
-        "id": "source_transition_anuario_to_braun",
+        "id": "source_transition_anuario_to_compiled",
         "year": 1929,
         "kind": "source_transition",
-        "label": "Anuario primary → Braun et al. compilation",
-        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is typically primary archival readings from the Anuario, Sinopsis, and Memoria series, while the post-1929 segment relies on Braun et al. (1998), Mamalakis (1980), and Díaz, Lüders, and Wagner (DLW) compilations. The compilers harmonized definitions, sometimes with judgment calls that differ from the primary readings.",
+        "label": "Anuario primary → later compiled official series",
+        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is drawn from the primary archival series (Anuario Estadistico, Sinopsis, Memoria), while later years rely on subsequent official statistical series. Definitions were harmonized across the join and may differ slightly from the original primary readings.",
         "severity": "informational",
-        "citation": "Braun et al. (1998); Mamalakis (1980); Díaz, Lüders, and Wagner.",
+        "citation": "Primary Chilean statistical series (Anuario, Sinopsis, Memoria) and later official series.",
         "rule_for_chart": "Source caption attributes by year-segment per audit Finding 4.2. No vertical rule required unless a definitional revision crossed this date."
       }
     ],
-    "source_attribution_status": "no_recoverable_source",
+    "source_attribution_status": "manually_attributed",
     "units_note": "millions 1995 pesos",
     "aliases": [
       "exports_per_capita_current_dollars"
@@ -8691,7 +8739,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Superintendencia de Aduanas y Oficina Central de Estadística, Estadística Comercial de la República de Chile, and Banco Central de Chile, Comercio Exterior, various years."
+    ],
     "topic_category": "trade",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -8760,17 +8810,17 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       },
       {
-        "id": "source_transition_anuario_to_braun",
+        "id": "source_transition_anuario_to_compiled",
         "year": 1929,
         "kind": "source_transition",
-        "label": "Anuario primary → Braun et al. compilation",
-        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is typically primary archival readings from the Anuario, Sinopsis, and Memoria series, while the post-1929 segment relies on Braun et al. (1998), Mamalakis (1980), and Díaz, Lüders, and Wagner (DLW) compilations. The compilers harmonized definitions, sometimes with judgment calls that differ from the primary readings.",
+        "label": "Anuario primary → later compiled official series",
+        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is drawn from the primary archival series (Anuario Estadistico, Sinopsis, Memoria), while later years rely on subsequent official statistical series. Definitions were harmonized across the join and may differ slightly from the original primary readings.",
         "severity": "informational",
-        "citation": "Braun et al. (1998); Mamalakis (1980); Díaz, Lüders, and Wagner.",
+        "citation": "Primary Chilean statistical series (Anuario, Sinopsis, Memoria) and later official series.",
         "rule_for_chart": "Source caption attributes by year-segment per audit Finding 4.2. No vertical rule required unless a definitional revision crossed this date."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "exports_per_capita_current_dollars",
@@ -8989,7 +9039,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Superintendencia de Aduanas y Oficina Central de Estadística, Estadística Comercial de la República de Chile, and Banco Central de Chile, Comercio Exterior, various years."
+    ],
     "topic_category": "trade",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -9058,17 +9110,17 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       },
       {
-        "id": "source_transition_anuario_to_braun",
+        "id": "source_transition_anuario_to_compiled",
         "year": 1929,
         "kind": "source_transition",
-        "label": "Anuario primary → Braun et al. compilation",
-        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is typically primary archival readings from the Anuario, Sinopsis, and Memoria series, while the post-1929 segment relies on Braun et al. (1998), Mamalakis (1980), and Díaz, Lüders, and Wagner (DLW) compilations. The compilers harmonized definitions, sometimes with judgment calls that differ from the primary readings.",
+        "label": "Anuario primary → later compiled official series",
+        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is drawn from the primary archival series (Anuario Estadistico, Sinopsis, Memoria), while later years rely on subsequent official statistical series. Definitions were harmonized across the join and may differ slightly from the original primary readings.",
         "severity": "informational",
-        "citation": "Braun et al. (1998); Mamalakis (1980); Díaz, Lüders, and Wagner.",
+        "citation": "Primary Chilean statistical series (Anuario, Sinopsis, Memoria) and later official series.",
         "rule_for_chart": "Source caption attributes by year-segment per audit Finding 4.2. No vertical rule required unless a definitional revision crossed this date."
       }
     ],
-    "source_attribution_status": "no_recoverable_source",
+    "source_attribution_status": "manually_attributed",
     "presentation_status": "retired",
     "merged_into": "exports_millions_1995_pesos"
   },
@@ -9077,7 +9129,7 @@
     "label": "External debt (YoY % change)",
     "display_label": "External debt share of GDP",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "share",
     "display_unit": "%",
     "curated_subtitle": "External public debt as share of GDP, 1822–1990, percent",
@@ -9293,7 +9345,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "methodological_ine_1970",
@@ -9316,7 +9368,8 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "external_public_debt",
@@ -9523,7 +9576,9 @@
         "magnitude_hint": "log"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Memoria del Ministerio de Hacienda and Dirección de Presupuestos y Contraloría General de la República, Cuenta de la Inversión / Cálculo de Entradas y Gastos, various years."
+    ],
     "topic_category": "fiscal",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -9592,7 +9647,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "external_taxes_share_of_revenue",
@@ -9788,7 +9843,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Memoria del Ministerio de Hacienda and Dirección de Presupuestos y Contraloría General de la República, Cuenta de la Inversión / Cálculo de Entradas y Gastos, various years."
+    ],
     "topic_category": "fiscal",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -9829,7 +9886,7 @@
       }
     ],
     "data_quality_flag": "unit_splice_corruption",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "fiscal_revenue_millions",
@@ -10048,7 +10105,9 @@
         "magnitude_hint": "log"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Memoria del Ministerio de Hacienda and Dirección de Presupuestos y Contraloría General de la República, Cuenta de la Inversión / Cálculo de Entradas y Gastos, various years."
+    ],
     "topic_category": "fiscal",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -10167,24 +10226,24 @@
         "rule_for_chart": "Vertical rule at 1981 on fiscal and labor series. Tooltip names the AFP reform."
       },
       {
-        "id": "source_transition_anuario_to_braun",
+        "id": "source_transition_anuario_to_compiled",
         "year": 1929,
         "kind": "source_transition",
-        "label": "Anuario primary → Braun et al. compilation",
-        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is typically primary archival readings from the Anuario, Sinopsis, and Memoria series, while the post-1929 segment relies on Braun et al. (1998), Mamalakis (1980), and Díaz, Lüders, and Wagner (DLW) compilations. The compilers harmonized definitions, sometimes with judgment calls that differ from the primary readings.",
+        "label": "Anuario primary → later compiled official series",
+        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is drawn from the primary archival series (Anuario Estadistico, Sinopsis, Memoria), while later years rely on subsequent official statistical series. Definitions were harmonized across the join and may differ slightly from the original primary readings.",
         "severity": "informational",
-        "citation": "Braun et al. (1998); Mamalakis (1980); Díaz, Lüders, and Wagner.",
+        "citation": "Primary Chilean statistical series (Anuario, Sinopsis, Memoria) and later official series.",
         "rule_for_chart": "Source caption attributes by year-segment per audit Finding 4.2. No vertical rule required unless a definitional revision crossed this date."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "fiscal_surplus_of_gdp",
     "label": "Fiscal Surplus (% of GDP)",
     "display_label": "Fiscal Surplus (% of GDP)",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "share",
     "display_unit": "%",
     "curated_subtitle": "Fiscal surplus as share of GDP, 1810–1990, percent",
@@ -10412,7 +10471,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "boundary_wop_tarapaca_1883",
@@ -10475,17 +10534,18 @@
         "rule_for_chart": "Vertical rule at 1981 on fiscal and labor series. Tooltip names the AFP reform."
       },
       {
-        "id": "source_transition_anuario_to_braun",
+        "id": "source_transition_anuario_to_compiled",
         "year": 1929,
         "kind": "source_transition",
-        "label": "Anuario primary → Braun et al. compilation",
-        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is typically primary archival readings from the Anuario, Sinopsis, and Memoria series, while the post-1929 segment relies on Braun et al. (1998), Mamalakis (1980), and Díaz, Lüders, and Wagner (DLW) compilations. The compilers harmonized definitions, sometimes with judgment calls that differ from the primary readings.",
+        "label": "Anuario primary → later compiled official series",
+        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is drawn from the primary archival series (Anuario Estadistico, Sinopsis, Memoria), while later years rely on subsequent official statistical series. Definitions were harmonized across the join and may differ slightly from the original primary readings.",
         "severity": "informational",
-        "citation": "Braun et al. (1998); Mamalakis (1980); Díaz, Lüders, and Wagner.",
+        "citation": "Primary Chilean statistical series (Anuario, Sinopsis, Memoria) and later official series.",
         "rule_for_chart": "Source caption attributes by year-segment per audit Finding 4.2. No vertical rule required unless a definitional revision crossed this date."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "fiscal_balance_gdp",
@@ -10711,7 +10771,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
-    "definition": "Central-government fiscal balance as a share of GDP, from Díaz, Lüders & Wagner (2016).",
+    "definition": "Central-government fiscal balance as a share of GDP.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -10720,7 +10780,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "boundary_wop_tarapaca_1883",
@@ -10783,17 +10843,18 @@
         "rule_for_chart": "Vertical rule at 1981 on fiscal and labor series. Tooltip names the AFP reform."
       },
       {
-        "id": "source_transition_anuario_to_braun",
+        "id": "source_transition_anuario_to_compiled",
         "year": 1929,
         "kind": "source_transition",
-        "label": "Anuario primary → Braun et al. compilation",
-        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is typically primary archival readings from the Anuario, Sinopsis, and Memoria series, while the post-1929 segment relies on Braun et al. (1998), Mamalakis (1980), and Díaz, Lüders, and Wagner (DLW) compilations. The compilers harmonized definitions, sometimes with judgment calls that differ from the primary readings.",
+        "label": "Anuario primary → later compiled official series",
+        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is drawn from the primary archival series (Anuario Estadistico, Sinopsis, Memoria), while later years rely on subsequent official statistical series. Definitions were harmonized across the join and may differ slightly from the original primary readings.",
         "severity": "informational",
-        "citation": "Braun et al. (1998); Mamalakis (1980); Díaz, Lüders, and Wagner.",
+        "citation": "Primary Chilean statistical series (Anuario, Sinopsis, Memoria) and later official series.",
         "rule_for_chart": "Source caption attributes by year-segment per audit Finding 4.2. No vertical rule required unless a definitional revision crossed this date."
       }
     ],
-    "source_attribution_status": "no_family_no_source"
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "fiscal_expenditure_millions",
@@ -11012,7 +11073,9 @@
         "magnitude_hint": "log"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Memoria del Ministerio de Hacienda and Dirección de Presupuestos y Contraloría General de la República, Cuenta de la Inversión / Cálculo de Entradas y Gastos, various years."
+    ],
     "topic_category": "fiscal",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -11131,17 +11194,17 @@
         "rule_for_chart": "Vertical rule at 1981 on fiscal and labor series. Tooltip names the AFP reform."
       },
       {
-        "id": "source_transition_anuario_to_braun",
+        "id": "source_transition_anuario_to_compiled",
         "year": 1929,
         "kind": "source_transition",
-        "label": "Anuario primary → Braun et al. compilation",
-        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is typically primary archival readings from the Anuario, Sinopsis, and Memoria series, while the post-1929 segment relies on Braun et al. (1998), Mamalakis (1980), and Díaz, Lüders, and Wagner (DLW) compilations. The compilers harmonized definitions, sometimes with judgment calls that differ from the primary readings.",
+        "label": "Anuario primary → later compiled official series",
+        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is drawn from the primary archival series (Anuario Estadistico, Sinopsis, Memoria), while later years rely on subsequent official statistical series. Definitions were harmonized across the join and may differ slightly from the original primary readings.",
         "severity": "informational",
-        "citation": "Braun et al. (1998); Mamalakis (1980); Díaz, Lüders, and Wagner.",
+        "citation": "Primary Chilean statistical series (Anuario, Sinopsis, Memoria) and later official series.",
         "rule_for_chart": "Source caption attributes by year-segment per audit Finding 4.2. No vertical rule required unless a definitional revision crossed this date."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "fiscal_surplus_real_pesos",
@@ -11360,7 +11423,9 @@
         "magnitude_hint": "log"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Memoria del Ministerio de Hacienda and Dirección de Presupuestos y Contraloría General de la República, Cuenta de la Inversión / Cálculo de Entradas y Gastos, various years."
+    ],
     "topic_category": "fiscal",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -11459,13 +11524,13 @@
         "rule_for_chart": "Vertical rule at 1981 on fiscal and labor series. Tooltip names the AFP reform."
       },
       {
-        "id": "source_transition_anuario_to_braun",
+        "id": "source_transition_anuario_to_compiled",
         "year": 1929,
         "kind": "source_transition",
-        "label": "Anuario primary → Braun et al. compilation",
-        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is typically primary archival readings from the Anuario, Sinopsis, and Memoria series, while the post-1929 segment relies on Braun et al. (1998), Mamalakis (1980), and Díaz, Lüders, and Wagner (DLW) compilations. The compilers harmonized definitions, sometimes with judgment calls that differ from the primary readings.",
+        "label": "Anuario primary → later compiled official series",
+        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is drawn from the primary archival series (Anuario Estadistico, Sinopsis, Memoria), while later years rely on subsequent official statistical series. Definitions were harmonized across the join and may differ slightly from the original primary readings.",
         "severity": "informational",
-        "citation": "Braun et al. (1998); Mamalakis (1980); Díaz, Lüders, and Wagner.",
+        "citation": "Primary Chilean statistical series (Anuario, Sinopsis, Memoria) and later official series.",
         "rule_for_chart": "Source caption attributes by year-segment per audit Finding 4.2. No vertical rule required unless a definitional revision crossed this date."
       },
       {
@@ -11484,7 +11549,7 @@
       }
     ],
     "data_quality_flag": "deflator_convention_drift",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "gov_current_revenue_nat",
@@ -11533,7 +11598,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Memoria del Ministerio de Hacienda and Dirección de Presupuestos y Contraloría General de la República, Cuenta de la Inversión / Cálculo de Entradas y Gastos, various years."
+    ],
     "topic_category": "fiscal",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -11573,14 +11640,14 @@
         "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
       }
     ],
-    "source_attribution_status": "source_pending_no_braun"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "expenditure_of_gdp",
     "label": "Government expenditure (YoY % change)",
     "display_label": "Expenditure (% of GDP)",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "share",
     "display_unit": "%",
     "curated_subtitle": "Fiscal expenditure as share of GDP, 1810–1990, percent",
@@ -11809,7 +11876,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "methodological_ine_1970",
@@ -11833,7 +11900,8 @@
       }
     ],
     "data_quality_flag": "unit_splice_corruption",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "expenditure_per_capita_real",
@@ -12052,7 +12120,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Memoria del Ministerio de Hacienda and Dirección de Presupuestos y Contraloría General de la República, Cuenta de la Inversión / Cálculo de Entradas y Gastos, various years."
+    ],
     "topic_category": "fiscal",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -12105,7 +12175,7 @@
         ]
       }
     ],
-    "source_attribution_status": "no_family_no_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "gross_fixed_capital",
@@ -12201,7 +12271,7 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#1f4e79",
-    "definition": "Real gross fixed capital formation, from the national-accounts series of Díaz, Lüders & Wagner (2016).",
+    "definition": "Real gross fixed capital formation.",
     "coverage_statement": "51 year(s) 1940-1990, 51 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -12210,7 +12280,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "methodological_ine_1970",
@@ -12233,7 +12303,8 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_family_no_source"
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "health_share_of_expenditure",
@@ -12421,7 +12492,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Memoria del Ministerio de Hacienda and Dirección de Presupuestos y Contraloría General de la República, Cuenta de la Inversión / Cálculo de Entradas y Gastos, various years."
+    ],
     "topic_category": "fiscal",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -12462,7 +12535,7 @@
       }
     ],
     "data_quality_flag": "unit_splice_corruption",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "import_capacity",
@@ -12681,7 +12754,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Superintendencia de Aduanas y Oficina Central de Estadística, Estadística Comercial de la República de Chile, and Banco Central de Chile, Comercio Exterior, various years."
+    ],
     "topic_category": "trade",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -12720,14 +12795,14 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "imports_of_gdp",
     "label": "Imports (% of GDP)",
     "display_label": "Imports (% of GDP)",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "share",
     "display_unit": "%",
     "curated_subtitle": "Imports as share of GDP, 1810–1990, percent",
@@ -12955,7 +13030,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "boundary_wop_tarapaca_1883",
@@ -13008,17 +13083,18 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       },
       {
-        "id": "source_transition_anuario_to_braun",
+        "id": "source_transition_anuario_to_compiled",
         "year": 1929,
         "kind": "source_transition",
-        "label": "Anuario primary → Braun et al. compilation",
-        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is typically primary archival readings from the Anuario, Sinopsis, and Memoria series, while the post-1929 segment relies on Braun et al. (1998), Mamalakis (1980), and Díaz, Lüders, and Wagner (DLW) compilations. The compilers harmonized definitions, sometimes with judgment calls that differ from the primary readings.",
+        "label": "Anuario primary → later compiled official series",
+        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is drawn from the primary archival series (Anuario Estadistico, Sinopsis, Memoria), while later years rely on subsequent official statistical series. Definitions were harmonized across the join and may differ slightly from the original primary readings.",
         "severity": "informational",
-        "citation": "Braun et al. (1998); Mamalakis (1980); Díaz, Lüders, and Wagner.",
+        "citation": "Primary Chilean statistical series (Anuario, Sinopsis, Memoria) and later official series.",
         "rule_for_chart": "Source caption attributes by year-segment per audit Finding 4.2. No vertical rule required unless a definitional revision crossed this date."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "imports_millions_1995_pesos",
@@ -13237,7 +13313,9 @@
         "magnitude_hint": "log"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Superintendencia de Aduanas y Oficina Central de Estadística, Estadística Comercial de la República de Chile, and Banco Central de Chile, Comercio Exterior, various years."
+    ],
     "topic_category": "trade",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -13306,17 +13384,17 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       },
       {
-        "id": "source_transition_anuario_to_braun",
+        "id": "source_transition_anuario_to_compiled",
         "year": 1929,
         "kind": "source_transition",
-        "label": "Anuario primary → Braun et al. compilation",
-        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is typically primary archival readings from the Anuario, Sinopsis, and Memoria series, while the post-1929 segment relies on Braun et al. (1998), Mamalakis (1980), and Díaz, Lüders, and Wagner (DLW) compilations. The compilers harmonized definitions, sometimes with judgment calls that differ from the primary readings.",
+        "label": "Anuario primary → later compiled official series",
+        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is drawn from the primary archival series (Anuario Estadistico, Sinopsis, Memoria), while later years rely on subsequent official statistical series. Definitions were harmonized across the join and may differ slightly from the original primary readings.",
         "severity": "informational",
-        "citation": "Braun et al. (1998); Mamalakis (1980); Díaz, Lüders, and Wagner.",
+        "citation": "Primary Chilean statistical series (Anuario, Sinopsis, Memoria) and later official series.",
         "rule_for_chart": "Source caption attributes by year-segment per audit Finding 4.2. No vertical rule required unless a definitional revision crossed this date."
       }
     ],
-    "source_attribution_status": "no_recoverable_source",
+    "source_attribution_status": "manually_attributed",
     "units_note": "millions 1995 pesos",
     "aliases": [
       "imports_per_capita_current_dollars"
@@ -13539,7 +13617,9 @@
         "magnitude_hint": "log"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Superintendencia de Aduanas y Oficina Central de Estadística, Estadística Comercial de la República de Chile, and Banco Central de Chile, Comercio Exterior, various years."
+    ],
     "topic_category": "trade",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -13608,17 +13688,17 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       },
       {
-        "id": "source_transition_anuario_to_braun",
+        "id": "source_transition_anuario_to_compiled",
         "year": 1929,
         "kind": "source_transition",
-        "label": "Anuario primary → Braun et al. compilation",
-        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is typically primary archival readings from the Anuario, Sinopsis, and Memoria series, while the post-1929 segment relies on Braun et al. (1998), Mamalakis (1980), and Díaz, Lüders, and Wagner (DLW) compilations. The compilers harmonized definitions, sometimes with judgment calls that differ from the primary readings.",
+        "label": "Anuario primary → later compiled official series",
+        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is drawn from the primary archival series (Anuario Estadistico, Sinopsis, Memoria), while later years rely on subsequent official statistical series. Definitions were harmonized across the join and may differ slightly from the original primary readings.",
         "severity": "informational",
-        "citation": "Braun et al. (1998); Mamalakis (1980); Díaz, Lüders, and Wagner.",
+        "citation": "Primary Chilean statistical series (Anuario, Sinopsis, Memoria) and later official series.",
         "rule_for_chart": "Source caption attributes by year-segment per audit Finding 4.2. No vertical rule required unless a definitional revision crossed this date."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "imports_per_capita_current_dollars",
@@ -13837,7 +13917,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Superintendencia de Aduanas y Oficina Central de Estadística, Estadística Comercial de la República de Chile, and Banco Central de Chile, Comercio Exterior, various years."
+    ],
     "topic_category": "trade",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -13906,17 +13988,17 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       },
       {
-        "id": "source_transition_anuario_to_braun",
+        "id": "source_transition_anuario_to_compiled",
         "year": 1929,
         "kind": "source_transition",
-        "label": "Anuario primary → Braun et al. compilation",
-        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is typically primary archival readings from the Anuario, Sinopsis, and Memoria series, while the post-1929 segment relies on Braun et al. (1998), Mamalakis (1980), and Díaz, Lüders, and Wagner (DLW) compilations. The compilers harmonized definitions, sometimes with judgment calls that differ from the primary readings.",
+        "label": "Anuario primary → later compiled official series",
+        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is drawn from the primary archival series (Anuario Estadistico, Sinopsis, Memoria), while later years rely on subsequent official statistical series. Definitions were harmonized across the join and may differ slightly from the original primary readings.",
         "severity": "informational",
-        "citation": "Braun et al. (1998); Mamalakis (1980); Díaz, Lüders, and Wagner.",
+        "citation": "Primary Chilean statistical series (Anuario, Sinopsis, Memoria) and later official series.",
         "rule_for_chart": "Source caption attributes by year-segment per audit Finding 4.2. No vertical rule required unless a definitional revision crossed this date."
       }
     ],
-    "source_attribution_status": "no_recoverable_source",
+    "source_attribution_status": "manually_attributed",
     "presentation_status": "retired",
     "merged_into": "imports_millions_1995_pesos"
   },
@@ -14113,7 +14195,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Memoria del Ministerio de Hacienda and Dirección de Presupuestos y Contraloría General de la República, Cuenta de la Inversión / Cálculo de Entradas y Gastos, various years."
+    ],
     "topic_category": "fiscal",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -14154,7 +14238,7 @@
       }
     ],
     "data_quality_flag": "unit_splice_corruption",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "intermediate_goods_imports",
@@ -14286,7 +14370,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Superintendencia de Aduanas y Oficina Central de Estadística, Estadística Comercial de la República de Chile, and Banco Central de Chile, Comercio Exterior, various years."
+    ],
     "topic_category": "trade",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -14305,7 +14391,7 @@
     "published": "complete",
     "units_note": "millions of US dollars",
     "data_quality_flag": "unit_unclear",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "internal_public_debt",
@@ -14401,7 +14487,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Memoria del Ministerio de Hacienda and Dirección de Presupuestos y Contraloría General de la República, Cuenta de la Inversión / Cálculo de Entradas y Gastos, various years."
+    ],
     "topic_category": "fiscal",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -14419,7 +14507,7 @@
     "commit_status": "committed",
     "published": "complete",
     "data_quality_flag": "source_attribution_missing",
-    "source_attribution_status": "source_pending_no_braun"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "internal_taxes_share_of_revenue",
@@ -14615,7 +14703,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Memoria del Ministerio de Hacienda and Dirección de Presupuestos y Contraloría General de la República, Cuenta de la Inversión / Cálculo de Entradas y Gastos, various years."
+    ],
     "topic_category": "fiscal",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -14656,14 +14746,14 @@
       }
     ],
     "data_quality_flag": "unit_splice_corruption",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "manufacturing_gdp",
     "label": "Manufacturing GDP",
     "display_label": "Manufacturing GDP",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "currency",
     "display_unit": "constant 1996 pesos",
     "curated_subtitle": "Manufacturing sector GDP, 1860–1990, constant 1996 pesos",
@@ -14841,7 +14931,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "methodological_ine_1970",
@@ -14864,7 +14954,8 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "manufacturing_exports",
@@ -15049,7 +15140,9 @@
         "magnitude_hint": "log"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Superintendencia de Aduanas y Oficina Central de Estadística, Estadística Comercial de la República de Chile, and Banco Central de Chile, Comercio Exterior, various years."
+    ],
     "topic_category": "trade",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -15090,7 +15183,7 @@
     ],
     "units_note": "Unit field currently blank.",
     "data_quality_flag": "unit_unclear",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "manufacturing_exports_share",
@@ -15275,7 +15368,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Superintendencia de Aduanas y Oficina Central de Estadística, Estadística Comercial de la República de Chile, and Banco Central de Chile, Comercio Exterior, various years."
+    ],
     "topic_category": "trade",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -15314,14 +15409,14 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "manufacturing_share_of_gdp",
     "label": "Manufacturing share of GDP",
     "display_label": "Manufacturing share of GDP",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "share",
     "display_unit": "%",
     "curated_subtitle": "Manufacturing as share of GDP, 1860–1990, percent",
@@ -15499,7 +15594,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "methodological_ine_1970",
@@ -15522,14 +15617,15 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "mining_gdp",
     "label": "Mining GDP",
     "display_label": "Mining GDP",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "currency",
     "display_unit": "constant 1996 pesos",
     "curated_subtitle": "Mining sector GDP, 1860–1990, constant 1996 pesos",
@@ -15707,7 +15803,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "methodological_ine_1970",
@@ -15730,7 +15826,8 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "mining_exports",
@@ -15915,7 +16012,9 @@
         "magnitude_hint": "log"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Superintendencia de Aduanas y Oficina Central de Estadística, Estadística Comercial de la República de Chile, and Banco Central de Chile, Comercio Exterior, various years."
+    ],
     "topic_category": "trade",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -15956,7 +16055,7 @@
     ],
     "units_note": "Unit field currently blank.",
     "data_quality_flag": "unit_unclear",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "mining_exports_share",
@@ -16141,7 +16240,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Superintendencia de Aduanas y Oficina Central de Estadística, Estadística Comercial de la República de Chile, and Banco Central de Chile, Comercio Exterior, various years."
+    ],
     "topic_category": "trade",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -16180,7 +16281,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "valor_minero_total_1914",
@@ -16244,7 +16345,7 @@
     "label": "Mining share of GDP",
     "display_label": "Mining share of GDP",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "share",
     "display_unit": "%",
     "curated_subtitle": "Mining as share of GDP, 1860–1990, percent",
@@ -16422,7 +16523,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "methodological_ine_1970",
@@ -16445,7 +16546,8 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "mining_taxes_share_of_revenue",
@@ -16641,7 +16743,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Memoria del Ministerio de Hacienda and Dirección de Presupuestos y Contraloría General de la República, Cuenta de la Inversión / Cálculo de Entradas y Gastos, various years."
+    ],
     "topic_category": "fiscal",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -16682,7 +16786,7 @@
       }
     ],
     "data_quality_flag": "unit_splice_corruption",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "mint_receipts_national",
@@ -17280,7 +17384,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Memoria del Ministerio de Hacienda and Dirección de Presupuestos y Contraloría General de la República, Cuenta de la Inversión / Cálculo de Entradas y Gastos, various years."
+    ],
     "topic_category": "fiscal",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -17321,7 +17427,7 @@
       }
     ],
     "data_quality_flag": "unit_splice_corruption",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "peso_exchange_rate",
@@ -17417,7 +17523,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Memoria del Ministerio de Hacienda and Dirección de Presupuestos y Contraloría General de la República, Cuenta de la Inversión / Cálculo de Entradas y Gastos, various years."
+    ],
     "topic_category": "economy",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -17435,7 +17543,7 @@
     "commit_status": "committed",
     "published": "complete",
     "data_quality_flag": "source_attribution_missing",
-    "source_attribution_status": "source_pending_no_braun"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "muni_police_share",
@@ -17501,7 +17609,7 @@
     "label": "Provincial GDP share",
     "display_label": "Provincial GDP share",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "share",
     "display_unit": "%",
     "curated_subtitle": "Province share of national GDP, 1966–1970, percent",
@@ -17738,7 +17846,7 @@
     "label": "Real GDP",
     "display_label": "Real GDP",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "currency",
     "display_unit": "constant 1996 pesos",
     "curated_subtitle": "Real GDP, 1810–1990, constant 1996 pesos",
@@ -17966,7 +18074,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "methodological_ine_1970",
@@ -17989,13 +18097,13 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       },
       {
-        "id": "source_transition_anuario_to_braun",
+        "id": "source_transition_anuario_to_compiled",
         "year": 1929,
         "kind": "source_transition",
-        "label": "Anuario primary → Braun et al. compilation",
-        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is typically primary archival readings from the Anuario, Sinopsis, and Memoria series, while the post-1929 segment relies on Braun et al. (1998), Mamalakis (1980), and Díaz, Lüders, and Wagner (DLW) compilations. The compilers harmonized definitions, sometimes with judgment calls that differ from the primary readings.",
+        "label": "Anuario primary → later compiled official series",
+        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is drawn from the primary archival series (Anuario Estadistico, Sinopsis, Memoria), while later years rely on subsequent official statistical series. Definitions were harmonized across the join and may differ slightly from the original primary readings.",
         "severity": "informational",
-        "citation": "Braun et al. (1998); Mamalakis (1980); Díaz, Lüders, and Wagner.",
+        "citation": "Primary Chilean statistical series (Anuario, Sinopsis, Memoria) and later official series.",
         "rule_for_chart": "Source caption attributes by year-segment per audit Finding 4.2. No vertical rule required unless a definitional revision crossed this date."
       },
       {
@@ -18013,17 +18121,18 @@
         ]
       }
     ],
-    "source_attribution_status": "no_recoverable_source",
+    "source_attribution_status": "discarded_no_primary_source",
     "aliases": [
       "real_gdp_per_capita"
-    ]
+    ],
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "real_gdp_growth_rate",
     "label": "Real GDP growth rate",
     "display_label": "Real GDP growth rate",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "rate",
     "display_unit": "%",
     "curated_subtitle": "Real GDP growth rate, 1810–1990, percent (year-over-year)",
@@ -18250,7 +18359,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "methodological_ine_1970",
@@ -18273,13 +18382,13 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       },
       {
-        "id": "source_transition_anuario_to_braun",
+        "id": "source_transition_anuario_to_compiled",
         "year": 1929,
         "kind": "source_transition",
-        "label": "Anuario primary → Braun et al. compilation",
-        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is typically primary archival readings from the Anuario, Sinopsis, and Memoria series, while the post-1929 segment relies on Braun et al. (1998), Mamalakis (1980), and Díaz, Lüders, and Wagner (DLW) compilations. The compilers harmonized definitions, sometimes with judgment calls that differ from the primary readings.",
+        "label": "Anuario primary → later compiled official series",
+        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is drawn from the primary archival series (Anuario Estadistico, Sinopsis, Memoria), while later years rely on subsequent official statistical series. Definitions were harmonized across the join and may differ slightly from the original primary readings.",
         "severity": "informational",
-        "citation": "Braun et al. (1998); Mamalakis (1980); Díaz, Lüders, and Wagner.",
+        "citation": "Primary Chilean statistical series (Anuario, Sinopsis, Memoria) and later official series.",
         "rule_for_chart": "Source caption attributes by year-segment per audit Finding 4.2. No vertical rule required unless a definitional revision crossed this date."
       },
       {
@@ -18297,14 +18406,15 @@
         ]
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "real_gdp_per_capita",
     "label": "Real GDP per capita",
     "display_label": "Real GDP per capita",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "currency",
     "display_unit": "constant 1996 pesos per capita",
     "curated_subtitle": "Real GDP per capita, 1810–1990, constant 1996 pesos per capita",
@@ -18532,7 +18642,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "methodological_ine_1970",
@@ -18555,13 +18665,13 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       },
       {
-        "id": "source_transition_anuario_to_braun",
+        "id": "source_transition_anuario_to_compiled",
         "year": 1929,
         "kind": "source_transition",
-        "label": "Anuario primary → Braun et al. compilation",
-        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is typically primary archival readings from the Anuario, Sinopsis, and Memoria series, while the post-1929 segment relies on Braun et al. (1998), Mamalakis (1980), and Díaz, Lüders, and Wagner (DLW) compilations. The compilers harmonized definitions, sometimes with judgment calls that differ from the primary readings.",
+        "label": "Anuario primary → later compiled official series",
+        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is drawn from the primary archival series (Anuario Estadistico, Sinopsis, Memoria), while later years rely on subsequent official statistical series. Definitions were harmonized across the join and may differ slightly from the original primary readings.",
         "severity": "informational",
-        "citation": "Braun et al. (1998); Mamalakis (1980); Díaz, Lüders, and Wagner.",
+        "citation": "Primary Chilean statistical series (Anuario, Sinopsis, Memoria) and later official series.",
         "rule_for_chart": "Source caption attributes by year-segment per audit Finding 4.2. No vertical rule required unless a definitional revision crossed this date."
       },
       {
@@ -18579,8 +18689,8 @@
         ]
       }
     ],
-    "source_attribution_status": "no_recoverable_source",
-    "presentation_status": "retired",
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source",
     "merged_into": "real_gdp"
   },
   {
@@ -18588,7 +18698,7 @@
     "label": "Real GDP per capita growth rate",
     "display_label": "Real GDP per capita growth rate",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "rate",
     "display_unit": "%",
     "curated_subtitle": "Real GDP per capita growth rate, 1811–1990, percent (YoY)",
@@ -18815,7 +18925,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "methodological_ine_1970",
@@ -18838,13 +18948,13 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       },
       {
-        "id": "source_transition_anuario_to_braun",
+        "id": "source_transition_anuario_to_compiled",
         "year": 1929,
         "kind": "source_transition",
-        "label": "Anuario primary → Braun et al. compilation",
-        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is typically primary archival readings from the Anuario, Sinopsis, and Memoria series, while the post-1929 segment relies on Braun et al. (1998), Mamalakis (1980), and Díaz, Lüders, and Wagner (DLW) compilations. The compilers harmonized definitions, sometimes with judgment calls that differ from the primary readings.",
+        "label": "Anuario primary → later compiled official series",
+        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is drawn from the primary archival series (Anuario Estadistico, Sinopsis, Memoria), while later years rely on subsequent official statistical series. Definitions were harmonized across the join and may differ slightly from the original primary readings.",
         "severity": "informational",
-        "citation": "Braun et al. (1998); Mamalakis (1980); Díaz, Lüders, and Wagner.",
+        "citation": "Primary Chilean statistical series (Anuario, Sinopsis, Memoria) and later official series.",
         "rule_for_chart": "Source caption attributes by year-segment per audit Finding 4.2. No vertical rule required unless a definitional revision crossed this date."
       },
       {
@@ -18862,14 +18972,15 @@
         ]
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "real_gdp_per_worker",
     "label": "Real GDP per worker",
     "display_label": "Real GDP per worker",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "currency",
     "display_unit": "constant 1996 pesos per worker",
     "curated_subtitle": "Real GDP per worker, 1811–1990, constant 1996 pesos per worker",
@@ -19096,7 +19207,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "methodological_ine_1970",
@@ -19119,13 +19230,13 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       },
       {
-        "id": "source_transition_anuario_to_braun",
+        "id": "source_transition_anuario_to_compiled",
         "year": 1929,
         "kind": "source_transition",
-        "label": "Anuario primary → Braun et al. compilation",
-        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is typically primary archival readings from the Anuario, Sinopsis, and Memoria series, while the post-1929 segment relies on Braun et al. (1998), Mamalakis (1980), and Díaz, Lüders, and Wagner (DLW) compilations. The compilers harmonized definitions, sometimes with judgment calls that differ from the primary readings.",
+        "label": "Anuario primary → later compiled official series",
+        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is drawn from the primary archival series (Anuario Estadistico, Sinopsis, Memoria), while later years rely on subsequent official statistical series. Definitions were harmonized across the join and may differ slightly from the original primary readings.",
         "severity": "informational",
-        "citation": "Braun et al. (1998); Mamalakis (1980); Díaz, Lüders, and Wagner.",
+        "citation": "Primary Chilean statistical series (Anuario, Sinopsis, Memoria) and later official series.",
         "rule_for_chart": "Source caption attributes by year-segment per audit Finding 4.2. No vertical rule required unless a definitional revision crossed this date."
       },
       {
@@ -19143,14 +19254,15 @@
         ]
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "revenue_of_gdp",
     "label": "Revenue (% of GDP)",
     "display_label": "Revenue (% of GDP)",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "share",
     "display_unit": "%",
     "curated_subtitle": "Fiscal revenue as share of GDP, 1810–1990, percent",
@@ -19379,7 +19491,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "methodological_ine_1970",
@@ -19403,14 +19515,15 @@
       }
     ],
     "data_quality_flag": "unit_splice_corruption",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "services_gdp",
     "label": "Services GDP",
     "display_label": "Services GDP",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "currency",
     "display_unit": "constant 1996 pesos",
     "curated_subtitle": "Services sector GDP, 1860–1990, constant 1996 pesos",
@@ -19588,7 +19701,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "methodological_ine_1970",
@@ -19611,14 +19724,15 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "services_share_of_gdp",
     "label": "Services share of GDP",
     "display_label": "Services share of GDP",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "share",
     "display_unit": "%",
     "curated_subtitle": "Services as share of GDP, 1860–1990, percent",
@@ -19796,7 +19910,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "methodological_ine_1970",
@@ -19819,7 +19933,8 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "shipping_tonnage_entered",
@@ -20635,7 +20750,7 @@
     "label": "Trade Openness (% of GDP)",
     "display_label": "Trade Openness (% of GDP)",
     "category": "Economy",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "share",
     "display_unit": "%",
     "curated_subtitle": "Trade openness (exports + imports) as share of GDP, 1810–1990, percent",
@@ -20863,7 +20978,7 @@
       "national": "complete"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": false,
     "breaks": [
       {
         "id": "methodological_ine_1970",
@@ -20886,7 +21001,8 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "discarded_no_primary_source",
+    "presentation_status": "discarded_no_primary_source"
   },
   {
     "id": "escuelas_h",
@@ -24730,7 +24846,9 @@
         "magnitude_hint": "log"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario Estadístico de Chile (sección Industria/Energía), and Empresa Nacional de Electricidad (ENDESA), various years."
+    ],
     "topic_category": "infrastructure",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -24770,7 +24888,7 @@
       }
     ],
     "data_quality_flag": "unit_splice_corruption",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "manufacturing_production_index",
@@ -24939,7 +25057,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Dirección General de Estadística e Instituto Nacional de Estadísticas and Sociedad de Fomento Fabril (SOFOFA), índice de producción industrial, various years."
+    ],
     "topic_category": "economy",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -24978,7 +25098,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "natural_gas_consumption",
@@ -25410,7 +25530,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Censos de Población y Vivienda de Chile (Dirección General de Estadística e Instituto Nacional de Estadísticas), various census years."
+    ],
     "topic_category": "infrastructure",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -25449,7 +25571,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "source_pending_no_braun"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "port_traffic",
@@ -26835,7 +26957,7 @@
     "label": "Coal production",
     "display_label": "Coal production",
     "category": "Mining",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "count",
     "display_unit": "metric tons",
     "curated_subtitle": "National coal production, 1860–1990, metric tons",
@@ -26997,7 +27119,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario Estadístico de Chile (sección Minería), and Sociedad Nacional de Minería, Estadística Minera de Chile, various years."
+    ],
     "topic_category": "mining",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -27036,14 +27160,14 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "copper_production",
     "label": "Copper production",
     "display_label": "Copper production",
     "category": "Mining",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "count",
     "display_unit": "metric tons",
     "curated_subtitle": "National copper production, 1860–1990, metric tons",
@@ -27205,7 +27329,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario Estadístico de Chile (sección Minería), and Sociedad Nacional de Minería, Estadística Minera de Chile, various years."
+    ],
     "topic_category": "mining",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -27254,7 +27380,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "copper_production_value_nat",
@@ -27323,7 +27449,7 @@
     "label": "Gold production",
     "display_label": "Gold production",
     "category": "Mining",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "count",
     "display_unit": "kilograms",
     "curated_subtitle": "National gold production, 1860–1990, kilograms",
@@ -27485,7 +27611,9 @@
         "magnitude_hint": "log"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario Estadístico de Chile (sección Minería), and Sociedad Nacional de Minería, Estadística Minera de Chile, various years."
+    ],
     "topic_category": "mining",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -27524,14 +27652,14 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "saltpeter_production",
     "label": "Saltpeter production",
     "display_label": "Saltpeter production",
     "category": "Mining",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "count",
     "display_unit": "metric tons",
     "curated_subtitle": "National saltpeter production, 1860–1984, metric tons",
@@ -27687,7 +27815,9 @@
         "magnitude_hint": "log"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario Estadístico de Chile (sección Minería), and Sociedad Nacional de Minería, Estadística Minera de Chile, various years."
+    ],
     "topic_category": "mining",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -27746,7 +27876,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source",
+    "source_attribution_status": "manually_attributed",
     "data_quality_flag": "unit_splice_corruption"
   },
   {
@@ -27754,7 +27884,7 @@
     "label": "Silver production",
     "display_label": "Silver production",
     "category": "Mining",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "count",
     "display_unit": "kilograms",
     "curated_subtitle": "National silver production, 1860–1990, kilograms",
@@ -27916,7 +28046,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario Estadístico de Chile (sección Minería), and Sociedad Nacional de Minería, Estadística Minera de Chile, various years."
+    ],
     "topic_category": "mining",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -27955,14 +28087,14 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "sulfur_production",
     "label": "Sulfur production",
     "display_label": "Sulfur production",
     "category": "Mining",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "compiled",
     "format_hint": "count",
     "display_unit": "metric tons",
     "curated_subtitle": "National sulfur production, 1887–1975, metric tons",
@@ -28072,7 +28204,9 @@
         "magnitude_hint": "log"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario Estadístico de Chile (sección Minería), and Sociedad Nacional de Minería, Estadística Minera de Chile, various years."
+    ],
     "topic_category": "mining",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -28112,7 +28246,7 @@
       }
     ],
     "data_quality_flag": "sparse_observations",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "peasant",
@@ -29212,7 +29346,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press."
+    ],
     "topic_category": "economy",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -29251,7 +29387,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "source_pending_no_braun"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "wages_total_nat",
@@ -29308,7 +29444,9 @@
         "magnitude_hint": "log"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press."
+    ],
     "topic_category": "economy",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -29347,14 +29485,14 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "source_pending_no_braun"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "active_population_nat",
     "label": "Economically active population",
     "display_label": "Economically active population",
     "category": "Population & Labor",
-    "source_type": "diaz_luders_wagner",
+    "source_type": "mamalakis",
     "format_hint": "count",
     "display_unit": "thousands of persons",
     "curated_subtitle": "economically active population, national, 1960–1978, thousands of persons",
@@ -29663,7 +29801,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Censos de Población de Chile (Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas), various census years."
+    ],
     "topic_category": "labor",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -29704,7 +29844,7 @@
     ],
     "units_note": "Unit field currently blank; should read 'persons'.",
     "data_quality_flag": "methodological_break_1976",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "female_labor_force_participation_rate",
@@ -29923,7 +30063,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Censos de Población de Chile (Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas), various census years."
+    ],
     "topic_category": "labor",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -29963,7 +30105,7 @@
       }
     ],
     "data_quality_flag": "methodological_break_1976",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "labor_participation_rate",
@@ -30182,7 +30324,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Censos de Población de Chile (Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas), various census years."
+    ],
     "topic_category": "labor",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -30222,7 +30366,7 @@
       }
     ],
     "data_quality_flag": "methodological_break_1976",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "labor_force_total",
@@ -30441,14 +30585,16 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Censos de Población de Chile (Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas), various census years."
+    ],
     "topic_category": "labor",
     "semantic_zero": true,
     "source_quality": "ocr",
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#2c5060",
-    "definition": "Total national labour force, from the labour-force series of Díaz, Lüders & Wagner (2016).",
+    "definition": "Total national labour force.",
     "coverage_statement": "181 year(s) 1810-1990, 181 national observations",
     "commit_status_by_scale": {
       "national": "committed"
@@ -30500,7 +30646,7 @@
         "rule_for_chart": "Vertical rule at 1981 on fiscal and labor series. Tooltip names the AFP reform."
       }
     ],
-    "source_attribution_status": "no_family_no_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "male_labor_force",
@@ -30719,7 +30865,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Censos de Población de Chile (Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas), various census years."
+    ],
     "topic_category": "labor",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -30760,7 +30908,7 @@
     ],
     "units_note": "Unit field currently blank; should read 'persons'.",
     "data_quality_flag": "methodological_break_1976",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "male_labor_force_participation_rate",
@@ -30979,7 +31127,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Censos de Población de Chile (Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas), various census years."
+    ],
     "topic_category": "labor",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -31019,7 +31169,7 @@
       }
     ],
     "data_quality_flag": "methodological_break_1976",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "labor_obreros_share_nat",
@@ -31068,7 +31218,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Censos de Población de Chile (Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas), various census years."
+    ],
     "topic_category": "economy",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -31097,7 +31249,7 @@
         "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
       }
     ],
-    "source_attribution_status": "source_pending_no_braun"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "total_labor_force",
@@ -31316,7 +31468,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Censos de Población de Chile (Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas), various census years."
+    ],
     "topic_category": "labor",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -31367,7 +31521,7 @@
     ],
     "units_note": "Unit field currently blank; should read 'persons'.",
     "data_quality_flag": "methodological_break_1976",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "total_population",
@@ -31752,13 +31906,13 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       },
       {
-        "id": "source_transition_anuario_to_braun",
+        "id": "source_transition_anuario_to_compiled",
         "year": 1929,
         "kind": "source_transition",
-        "label": "Anuario primary → Braun et al. compilation",
-        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is typically primary archival readings from the Anuario, Sinopsis, and Memoria series, while the post-1929 segment relies on Braun et al. (1998), Mamalakis (1980), and Díaz, Lüders, and Wagner (DLW) compilations. The compilers harmonized definitions, sometimes with judgment calls that differ from the primary readings.",
+        "label": "Anuario primary → later compiled official series",
+        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is drawn from the primary archival series (Anuario Estadistico, Sinopsis, Memoria), while later years rely on subsequent official statistical series. Definitions were harmonized across the join and may differ slightly from the original primary readings.",
         "severity": "informational",
-        "citation": "Braun et al. (1998); Mamalakis (1980); Díaz, Lüders, and Wagner.",
+        "citation": "Primary Chilean statistical series (Anuario, Sinopsis, Memoria) and later official series.",
         "rule_for_chart": "Source caption attributes by year-segment per audit Finding 4.2. No vertical rule required unless a definitional revision crossed this date."
       },
       {
@@ -31836,7 +31990,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press."
+    ],
     "topic_category": "labor",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -31885,7 +32041,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "source_pending_no_braun"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "unemployment_total_nat",
@@ -31937,7 +32093,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press."
+    ],
     "topic_category": "economy",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -31986,7 +32144,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "source_pending_no_braun"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "unemployed_labor_force",
@@ -32205,7 +32363,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Censos de Población de Chile (Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas), various census years."
+    ],
     "topic_category": "labor",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -32246,7 +32406,7 @@
     ],
     "units_note": "Unit field currently blank; should read 'persons'.",
     "data_quality_flag": "methodological_break_1976",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "income",
@@ -32544,7 +32704,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Memoria del Ministerio de Hacienda and Dirección de Presupuestos y Contraloría General de la República, Cuenta de la Inversión / Cálculo de Entradas y Gastos, various years."
+    ],
     "topic_category": "economy",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -32583,7 +32745,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "source_pending_no_braun"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "agricultural_workers",
@@ -32802,7 +32964,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Censos de Población de Chile (Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas), various census years."
+    ],
     "topic_category": "agriculture",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -32843,7 +33007,7 @@
     ],
     "units_note": "Unit field currently blank; should read 'persons'.",
     "data_quality_flag": "methodological_break_1976",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "construction_workers",
@@ -33062,7 +33226,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Censos de Población de Chile (Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas), various census years."
+    ],
     "topic_category": "infrastructure",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -33103,7 +33269,7 @@
     ],
     "units_note": "Unit field currently blank; should read 'persons'.",
     "data_quality_flag": "methodological_break_1976",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "manufacturing_workers",
@@ -33322,7 +33488,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Censos de Población de Chile (Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas), various census years."
+    ],
     "topic_category": "labor",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -33363,7 +33531,7 @@
     ],
     "units_note": "Unit field currently blank; should read 'persons'.",
     "data_quality_flag": "methodological_break_1976",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "mining_workers",
@@ -33582,7 +33750,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Censos de Población de Chile (Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas), various census years."
+    ],
     "topic_category": "mining",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -33623,7 +33793,7 @@
     ],
     "units_note": "Unit field currently blank; should read 'persons'.",
     "data_quality_flag": "methodological_break_1976",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "service_workers",
@@ -33842,7 +34012,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Censos de Población de Chile (Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas), various census years."
+    ],
     "topic_category": "labor",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -33883,7 +34055,7 @@
     ],
     "units_note": "Unit field currently blank; should read 'persons'.",
     "data_quality_flag": "methodological_break_1976",
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "employment_total_nat",
@@ -33938,7 +34110,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press."
+    ],
     "topic_category": "economy",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -33977,7 +34151,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "source_pending_no_braun"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "police1920",
@@ -34544,7 +34718,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), movimiento de población (nacimientos, defunciones y matrimonios por provincia, 1849–1858). Santiago: Imprenta Nacional."
+    ],
     "topic_category": "demography",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -34565,7 +34741,7 @@
     "aliases": [
       "nacimientos_1858_prov"
     ],
-    "source_attribution_status": "no_family_no_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "nacimientos_1924_prov",
@@ -35034,7 +35210,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), movimiento de población (nacimientos, defunciones y matrimonios por provincia, 1849–1858). Santiago: Imprenta Nacional."
+    ],
     "topic_category": "demography",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -35055,7 +35233,7 @@
     "aliases": [
       "defunciones_1858_prov"
     ],
-    "source_attribution_status": "no_family_no_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "diputados_1920_prov",
@@ -35926,7 +36104,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), movimiento de población (nacimientos, defunciones y matrimonios por provincia, 1849–1858). Santiago: Imprenta Nacional."
+    ],
     "topic_category": "demography",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -35947,7 +36127,7 @@
     "aliases": [
       "matrimonios_1858_prov"
     ],
-    "source_attribution_status": "no_family_no_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "casados_1854_prov",
@@ -38065,7 +38245,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Servicio de Registro Civil e Identificación and Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario de Demografía, with the Censos de Población de Chile, various years."
+    ],
     "topic_category": "demography",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -38105,7 +38287,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_family_no_source",
+    "source_attribution_status": "manually_attributed",
     "data_quality_flag": "unit_splice_corruption"
   },
   {
@@ -38591,7 +38773,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Servicio de Registro Civil e Identificación and Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario de Demografía, with the Censos de Población de Chile, various years."
+    ],
     "topic_category": "demography",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -38630,7 +38814,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "mortality_rate_nat",
@@ -39104,7 +39288,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Servicio de Registro Civil e Identificación and Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario de Demografía, with the Censos de Población de Chile, various years."
+    ],
     "topic_category": "demography",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -39143,7 +39329,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "nacimientos",
@@ -39737,7 +39923,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Servicio de Registro Civil e Identificación and Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario de Demografía, with the Censos de Población de Chile, various years."
+    ],
     "topic_category": "demography",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -39776,7 +39964,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "net_migration_rate",
@@ -39957,7 +40145,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Servicio de Registro Civil e Identificación and Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario de Demografía, with the Censos de Población de Chile, various years."
+    ],
     "topic_category": "demography",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -39996,7 +40186,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   },
   {
     "id": "totalpop",
@@ -40270,7 +40460,9 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [],
+    "source_documents": [
+      "Servicio de Registro Civil e Identificación and Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario de Demografía, with the Censos de Población de Chile, various years."
+    ],
     "topic_category": "demography",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -40349,13 +40541,13 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       },
       {
-        "id": "source_transition_anuario_to_braun",
+        "id": "source_transition_anuario_to_compiled",
         "year": 1929,
         "kind": "source_transition",
-        "label": "Anuario primary → Braun et al. compilation",
-        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is typically primary archival readings from the Anuario, Sinopsis, and Memoria series, while the post-1929 segment relies on Braun et al. (1998), Mamalakis (1980), and Díaz, Lüders, and Wagner (DLW) compilations. The compilers harmonized definitions, sometimes with judgment calls that differ from the primary readings.",
+        "label": "Anuario primary → later compiled official series",
+        "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is drawn from the primary archival series (Anuario Estadistico, Sinopsis, Memoria), while later years rely on subsequent official statistical series. Definitions were harmonized across the join and may differ slightly from the original primary readings.",
         "severity": "informational",
-        "citation": "Braun et al. (1998); Mamalakis (1980); Díaz, Lüders, and Wagner.",
+        "citation": "Primary Chilean statistical series (Anuario, Sinopsis, Memoria) and later official series.",
         "rule_for_chart": "Source caption attributes by year-segment per audit Finding 4.2. No vertical rule required unless a definitional revision crossed this date."
       },
       {
@@ -40373,6 +40565,6 @@
         ]
       }
     ],
-    "source_attribution_status": "no_recoverable_source"
+    "source_attribution_status": "manually_attributed"
   }
 ]

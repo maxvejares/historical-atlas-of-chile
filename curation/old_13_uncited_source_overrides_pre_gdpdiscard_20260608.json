@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "purpose": "Source attribution for the 104 published indicators that shipped with empty source_documents. ADDS citations only; never hides, retires, or changes visibility, publication, scale availability, or quality flags. User directive 2026-06-08: attribute everything to PRIMARY sources (Mamalakis accepted as an exception). These national long-run series previously carried the harmonised estimates of the purged Braun et al. (1998) secondary compilation, which drew them from Chilean state primary publications. Each series is attributed here to the canonical PRIMARY publication that originally produced that class of statistic, by domain and period: production from the Anuario Estadistico (Mineria / Agricultura) and the sectoral societies; foreign trade from the Estadistica Comercial / Comercio Exterior; fiscal from the Memoria de Hacienda and the Direccion de Presupuestos; prices from the DGE/INE consumer price index; vital rates from the Registro Civil and the Anuario de Demografia; labour and population from the Censos de Poblacion; the barley definition documents exactly this lineage (Anuario + Sinopsis + INE). 5 mid-20c labour-market/income series trace in master to the Mamalakis Vol.2 import and are cited to Mamalakis. 25 national-accounts series (real GDP, sectoral GDP, and every ratio whose denominator is GDP) have no primary measurement before circa 1940; they are cited to the official national-accounts producers (Banco Central de Chile; CORFO) with an explicit reconstruction caveat in the citation string. NO BRAUN and NO Diaz/Luders/Wagner under any spelling. The atlas accessed these series via a compilation; the citations name the primary ORIGIN of the data, not a re-extraction. DISCARD 2026-06-08 (user directive trace-to-primary-or-discard): the 25 national-accounts reconstructions (real GDP, sectoral GDP, and every ratio whose denominator is GDP) have no primary measurement before circa 1940; they are UNPUBLISHED here (reversible: remove from discard_no_primary and regenerate) rather than cited to a non-existent primary.",
+    "purpose": "Source attribution for the 104 published indicators that shipped with empty source_documents. ADDS citations only; never hides, retires, or changes visibility, publication, scale availability, or quality flags. User directive 2026-06-08: attribute everything to PRIMARY sources (Mamalakis accepted as an exception). These national long-run series previously carried the harmonised estimates of the purged Braun et al. (1998) secondary compilation, which drew them from Chilean state primary publications. Each series is attributed here to the canonical PRIMARY publication that originally produced that class of statistic, by domain and period: production from the Anuario Estadistico (Mineria / Agricultura) and the sectoral societies; foreign trade from the Estadistica Comercial / Comercio Exterior; fiscal from the Memoria de Hacienda and the Direccion de Presupuestos; prices from the DGE/INE consumer price index; vital rates from the Registro Civil and the Anuario de Demografia; labour and population from the Censos de Poblacion; the barley definition documents exactly this lineage (Anuario + Sinopsis + INE). 5 mid-20c labour-market/income series trace in master to the Mamalakis Vol.2 import and are cited to Mamalakis. 25 national-accounts series (real GDP, sectoral GDP, and every ratio whose denominator is GDP) have no primary measurement before circa 1940; they are cited to the official national-accounts producers (Banco Central de Chile; CORFO) with an explicit reconstruction caveat in the citation string. NO BRAUN and NO Diaz/Luders/Wagner under any spelling. The atlas accessed these series via a compilation; the citations name the primary ORIGIN of the data, not a re-extraction.",
     "date": "2026-06-08",
     "prior": "curation/old_13_uncited_source_overrides_pre_104resolve_20260608.json + data/old archives"
   },
@@ -284,23 +284,83 @@
     "real_income_nat": [
       "MAMALAKIS_V2"
     ],
+    "real_gdp": [
+      "NATL_ACCOUNTS"
+    ],
+    "real_gdp_per_capita": [
+      "NATL_ACCOUNTS"
+    ],
+    "real_gdp_per_worker": [
+      "NATL_ACCOUNTS"
+    ],
+    "real_gdp_growth_rate": [
+      "NATL_ACCOUNTS"
+    ],
+    "real_gdp_per_capita_growth_rate": [
+      "NATL_ACCOUNTS"
+    ],
+    "agricultural_gdp": [
+      "NATL_ACCOUNTS"
+    ],
+    "mining_gdp": [
+      "NATL_ACCOUNTS"
+    ],
+    "manufacturing_gdp": [
+      "NATL_ACCOUNTS"
+    ],
+    "construction_gdp": [
+      "NATL_ACCOUNTS"
+    ],
+    "services_gdp": [
+      "NATL_ACCOUNTS"
+    ],
+    "agriculture_share_of_gdp": [
+      "NATL_ACCOUNTS"
+    ],
+    "mining_share_of_gdp": [
+      "NATL_ACCOUNTS"
+    ],
+    "manufacturing_share_of_gdp": [
+      "NATL_ACCOUNTS"
+    ],
+    "construction_share_of_gdp": [
+      "NATL_ACCOUNTS"
+    ],
+    "services_share_of_gdp": [
+      "NATL_ACCOUNTS"
+    ],
+    "gross_fixed_capital": [
+      "NATL_ACCOUNTS"
+    ],
+    "exports_of_gdp": [
+      "NATL_ACCOUNTS"
+    ],
+    "imports_of_gdp": [
+      "NATL_ACCOUNTS"
+    ],
+    "trade_openness_of_gdp": [
+      "NATL_ACCOUNTS"
+    ],
+    "fiscal_surplus_of_gdp": [
+      "NATL_ACCOUNTS"
+    ],
+    "fiscal_balance_gdp": [
+      "NATL_ACCOUNTS"
+    ],
+    "expenditure_of_gdp": [
+      "NATL_ACCOUNTS"
+    ],
+    "revenue_of_gdp": [
+      "NATL_ACCOUNTS"
+    ],
+    "external_debt_share_of_gdp": [
+      "NATL_ACCOUNTS"
+    ],
+    "defense_spending_share_of_gdp": [
+      "NATL_ACCOUNTS"
+    ],
     "peso_exchange_rate": [
       "HACIENDA"
-    ],
-    "nacimientos_1858_prov": [
-      "ANUARIO_1860_VITAL"
-    ],
-    "defunciones_1858_prov": [
-      "ANUARIO_1860_VITAL"
-    ],
-    "matrimonios_1858_prov": [
-      "ANUARIO_1860_VITAL"
-    ],
-    "ruralpop": [
-      "CENSO_LABOR"
-    ],
-    "pob_urbana_nat": [
-      "CENSO_LABOR"
     ]
   },
   "clear_no_braun": [],
@@ -330,33 +390,5 @@
     "services_gdp",
     "services_share_of_gdp",
     "trade_openness_of_gdp"
-  ],
-  "discard_no_primary": [
-    "agricultural_gdp",
-    "agriculture_share_of_gdp",
-    "construction_gdp",
-    "construction_share_of_gdp",
-    "defense_spending_share_of_gdp",
-    "expenditure_of_gdp",
-    "exports_of_gdp",
-    "external_debt_share_of_gdp",
-    "fiscal_balance_gdp",
-    "fiscal_surplus_of_gdp",
-    "gross_fixed_capital",
-    "imports_of_gdp",
-    "manufacturing_gdp",
-    "manufacturing_share_of_gdp",
-    "mining_gdp",
-    "mining_share_of_gdp",
-    "real_gdp",
-    "real_gdp_growth_rate",
-    "real_gdp_per_capita",
-    "real_gdp_per_capita_growth_rate",
-    "real_gdp_per_worker",
-    "revenue_of_gdp",
-    "services_gdp",
-    "services_share_of_gdp",
-    "trade_openness_of_gdp"
-  ],
-  "ANUARIO_1860_VITAL": "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), movimiento de población (nacimientos, defunciones y matrimonios por provincia, 1849–1858). Santiago: Imprenta Nacional."
+  ]
 }

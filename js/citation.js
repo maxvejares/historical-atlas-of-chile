@@ -23,9 +23,16 @@ function escape(s) { return String(s ?? ''); }
 
 // Year-specific source tweaks (e.g. census year, anuario tomo)
 function originalCitation(meta, state) {
+  // Pending series carry no concrete document: never substitute a source_type
+  // guess (that leaked "Díaz, Lüders & Wagner" / a compilation label onto
+  // uncited series). Surface the honest pending state instead.
+  if (M.isPendingAttribution(meta)) return M.PENDING_ATTRIBUTION_LABEL;
   // Prefer the cleaned `source_documents[0]` over the filename-shorthand
   // `source_document` (UX2 C6); M.sourceLine encodes that preference.
   const primary = M.sourceLine(meta);
+  // A curated citation in source_documents always wins over the source_type
+  // guess: a Mamalakis-sourced but DLW-typed series must cite Mamalakis.
+  if (M.hasConcreteSource(meta)) return primary;
   const yr = state.year || (meta.scales[state.scale]?.year_range?.[0] ?? '');
   switch (meta.source_type) {
     case 'census':
@@ -36,10 +43,8 @@ function originalCitation(meta, state) {
       return primary || `Memoria del Ministerio (${yr}).`;
     case 'sinopsis':
       return primary || `Sinopsis Estadística de Chile, ${yr}.`;
-    case 'diaz_luders_wagner':
-      return 'Díaz, J., Lüders, R., & Wagner, G. (2016). La República en Cifras: Chile 1810–2010.';
     default:
-      return primary || 'Aggregated multi-source compilation.';
+      return primary || M.PENDING_ATTRIBUTION_LABEL;
   }
 }
 
@@ -58,15 +63,9 @@ export function buildCitation(meta, state, format = 'apa') {
   const link = isPrimary ? ' ' + stableUrl(state) : '';
 
   if (format === 'apa') {
-    if (meta.source_type === 'diaz_luders_wagner') {
-      return `Díaz, J., Lüders, R., & Wagner, G. (2016). La República en Cifras: Chile 1810–2010. Variable: ${variable}. Accessed via ${PROJECT_NAME}, ${accessed}.`;
-    }
     return `${original} Variable: ${variable}. Accessed via ${PROJECT_NAME}, ${accessed}.${link}`;
   }
   if (format === 'chicago') {
-    if (meta.source_type === 'diaz_luders_wagner') {
-      return `Díaz, José, Rolf Lüders, and Gert Wagner. La República en Cifras: Chile 1810–2010. 2016. Variable: "${variable}." Accessed via ${PROJECT_NAME}, ${accessed}.`;
-    }
     return `${original} Variable: "${variable}." Accessed via ${PROJECT_NAME}, ${accessed}.${link}`;
   }
   // plain

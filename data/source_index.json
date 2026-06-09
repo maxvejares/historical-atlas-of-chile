@@ -375,19 +375,6 @@
       ]
     },
     {
-      "document": "Braun, Juan, Matías Braun, Ignacio Briones, and José Díaz. 1998. Economía Chilena 1810–1995: Estadísticas Históricas. Documento de Trabajo 187. Santiago: Instituto de Economía, Pontificia Universidad Católica de Chile.",
-      "group": "External Academic",
-      "n_tables": 24,
-      "n_rows": 54084,
-      "year_range": [
-        1810,
-        1995
-      ],
-      "geo_levels": [
-        "national"
-      ]
-    },
-    {
       "document": "Humud, Carlos. 1969. La Política Económica de Chile entre 1830 y 1930. Universidad de Chile.",
       "group": "External Academic",
       "n_tables": 5,

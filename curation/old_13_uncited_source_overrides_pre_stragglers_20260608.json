@@ -286,21 +286,6 @@
     ],
     "peso_exchange_rate": [
       "HACIENDA"
-    ],
-    "nacimientos_1858_prov": [
-      "ANUARIO_1860_VITAL"
-    ],
-    "defunciones_1858_prov": [
-      "ANUARIO_1860_VITAL"
-    ],
-    "matrimonios_1858_prov": [
-      "ANUARIO_1860_VITAL"
-    ],
-    "ruralpop": [
-      "CENSO_LABOR"
-    ],
-    "pob_urbana_nat": [
-      "CENSO_LABOR"
     ]
   },
   "clear_no_braun": [],
@@ -357,6 +342,5 @@
     "services_gdp",
     "services_share_of_gdp",
     "trade_openness_of_gdp"
-  ],
-  "ANUARIO_1860_VITAL": "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), movimiento de población (nacimientos, defunciones y matrimonios por provincia, 1849–1858). Santiago: Imprenta Nacional."
+  ]
 }

@@ -51,7 +51,7 @@
     "wheat_production": {
       "subtitle": "National wheat production, 1860–1990, metric tons",
       "definition": "Annual national wheat production in metric tons, Braun et al. (1998) compilation. Chile was a major wheat exporter to California, Australia, and Britain during the 1850s-1880s 'cereal cycle'; the series tracks both that export boom and the later transition to import dependence.",
-      "units_note": "Pre-1929 figures may be in quintales métricos (0.1 MT) in source documents; Braun reports them in metric tons. Verify against the source if magnitude appears anomalous."
+      "units_note": "Pre-1929 figures may be in quintales métricos (0.1 MT) in source documents; the compiled series reports them in metric tons. Verify against the source if magnitude appears anomalous."
     },
     "wine_production": {
       "subtitle": "National wine production, 1860–1955, hectoliters",

@@ -213,15 +213,15 @@
       "rule_for_chart": "Vertical rule at 1981 on fiscal and labor series. Tooltip names the AFP reform."
     },
     {
-      "id": "source_transition_anuario_to_braun",
+      "id": "source_transition_anuario_to_compiled",
       "year": 1929,
       "kind": "source_transition",
-      "label": "Anuario primary → Braun et al. compilation",
-      "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is typically primary archival readings from the Anuario, Sinopsis, and Memoria series, while the post-1929 segment relies on Braun et al. (1998), Mamalakis (1980), and Díaz, Lüders, and Wagner (DLW) compilations. The compilers harmonized definitions, sometimes with judgment calls that differ from the primary readings.",
+      "label": "Anuario primary → later compiled official series",
+      "description": "For long-run national series (GDP, fiscal aggregates, foreign trade, demographics), the pre-1929 segment is drawn from the primary archival series (Anuario Estadistico, Sinopsis, Memoria), while later years rely on subsequent official statistical series. Definitions were harmonized across the join and may differ slightly from the original primary readings.",
       "scope": "national",
       "applies_to_indicator_pattern": "^(real_gdp|fiscal_|exports_|imports_|total_population).*",
       "severity": "informational",
-      "citation": "Braun et al. (1998); Mamalakis (1980); Díaz, Lüders, and Wagner.",
+      "citation": "Primary Chilean statistical series (Anuario, Sinopsis, Memoria) and later official series.",
       "rule_for_chart": "Source caption attributes by year-segment per audit Finding 4.2. No vertical rule required unless a definitional revision crossed this date."
     },
     {

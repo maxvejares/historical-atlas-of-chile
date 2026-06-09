@@ -298,13 +298,36 @@ export function tierLabel(id) {
 // filename-style shorthand for some indicators (UX2 C6). Prefer the cleaned
 // `source_documents[0]` over `source_document` when both exist and disagree;
 // otherwise fall back through the singular field and the source-type name.
+// Honest pending-attribution surface. A published series with no concrete
+// source document is "pending", not blank and not guessable: surfacing the
+// source_type fallback here leaked "Díaz, Lüders & Wagner" / "Multiple primary
+// sources (compilation)" onto series whose real (purged-secondary) provenance
+// could not be honestly re-cited. `source_attribution_status` records why.
+export const PENDING_ATTRIBUTION_LABEL = 'Source pending attribution';
+export function hasConcreteSource(meta) {
+  if (!meta) return false;
+  const docs = Array.isArray(meta.source_documents) ? meta.source_documents : [];
+  const first = docs.find(d => d && String(d).trim());
+  return Boolean(first || (meta.source_document && String(meta.source_document).trim()));
+}
+
+// A series is pending when it carries no concrete source document. The absence
+// of a document is authoritative; source_attribution_status names the reason
+// (no_recoverable_source, source_pending_no_braun, source_attribution_missing,
+// no_family_no_source) for the UI to surface.
+export function isPendingAttribution(meta) {
+  return Boolean(meta) && !hasConcreteSource(meta);
+}
+
 export function sourceLine(meta) {
   if (!meta) return '';
   const docs = Array.isArray(meta.source_documents) ? meta.source_documents : [];
   const clean = docs[0];
   const single = meta.source_document;
   if (clean && single && clean !== single) return clean;
-  return single || clean || sourceTypeName(meta.source_type);
+  // Never substitute a source_type guess for a missing citation — that is the
+  // blank-fallback leak. An uncited series reads as honestly pending.
+  return single || clean || PENDING_ATTRIBUTION_LABEL;
 }
 
 // Source-type readable name
@@ -314,7 +337,7 @@ export function sourceTypeName(t) {
     anuario: "Anuario Estadístico de Chile",
     memoria: "Memoria ministerial",
     sinopsis: "Sinopsis Estadística de Chile",
-    diaz_luders_wagner: "Díaz, Lüders & Wagner (2016)",
+    mamalakis: "Mamalakis, Historical Statistics of Chile",
     compiled: "Multiple primary sources (compilation)",
   }[t] || t);
 }

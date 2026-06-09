@@ -146,11 +146,21 @@ def run(mani, nagg, html):
         if e.get('published') in ('complete', 'partial') and not e.get('source_documents') and not e.get('source_document'):
             warn('NO_SOURCE', f'{e["id"]} is published ({e["published"]}) with no source_document(s)')
 
-    # 10. no Braun attribution may leak into any user-visible field (purged M150)
+    # 10. no purged secondary compilation (Braun OR Díaz-Lüders-Wagner) may leak
+    # into any user-visible or shipped field. Scans text fields, breaks, and the
+    # source_type enum; catches both "braun" and the DLW lineage. (purged M150;
+    # extended 2026-06-08 to DLW + breaks/units_note/source_type/rule_for_chart)
+    SECONDARY = ('braun', 'lüders', 'luders', 'díaz, l', 'diaz, l',
+                 'república en cifras', 'republica en cifras', 'diaz_luders_wagner')
+    LEAK_FIELDS = ('definition', 'curated_subtitle', 'display_label', 'label',
+                   'source_document', 'source_documents', 'units_note',
+                   'coverage_statement', 'source_type', 'breaks', 'rule_for_chart')
     for e in mani:
-        for field in ('definition', 'curated_subtitle', 'display_label', 'source_document'):
-            if 'braun' in str(e.get(field) or '').lower():
-                err('BRAUN_LEAK', f'{e["id"]} {field} still mentions Braun (purged source)')
+        for field in LEAK_FIELDS:
+            blob = json.dumps(e.get(field), ensure_ascii=False).lower() if e.get(field) is not None else ''
+            hit = next((w for w in SECONDARY if w in blob), None)
+            if hit:
+                err('BRAUN_LEAK', f'{e["id"]} {field} mentions a purged secondary source ("{hit}")')
 
     # 11. scale_availability must agree with the presence of a scales block
     for e in mani:

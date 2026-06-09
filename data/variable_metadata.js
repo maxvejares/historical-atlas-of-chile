@@ -55,22 +55,22 @@ window._variableMetadata = {
     "desnutricion_total_nat": { label: "Child malnutrition rate", source: "Datos pre 73'.xlsx", unit: "%", format: "percent", palette: "sequential", geo_levels: ["national"] },
     "copper_production_value_nat": { label: "Copper production value", source: "Sinopsis Estadistica de Chile 1924-27", unit: "gold pesos (18d)", format: "currency", palette: "sequential", geo_levels: ["national"] },
     "mortality_rate_nat": { label: "Crude mortality rate", source: "Anuario Estadístico 1860", unit: "%", format: "percent", palette: "sequential", geo_levels: ["national"] },
-    "pob_urbana_nat": { label: "Urban population", source: "Braun et al. 1998. Estadísticas Históricas Chile 1810-1995 (PUC DT 187)", unit: "persons", format: "count", palette: "sequential", geo_levels: ["national"] },
+    "pob_urbana_nat": { label: "Urban population", source: "Primary sources (see indicator metadata)", unit: "persons", format: "count", palette: "sequential", geo_levels: ["national"] },
     "real_income_nat": { label: "Average real income", source: "Datos pre 73'", unit: "index", format: "count", palette: "sequential", geo_levels: ["national"] },
     "social_spending_real_nat": { label: "Real social expenditure", source: "Datos pre 73'", unit: "index", format: "count", palette: "sequential", geo_levels: ["national"] },
     "exports_total_nat": { label: "Total exports", source: "Sinopsis Estadistica - Chile 1924-1927", unit: "pesos (18d)", format: "currency", palette: "sequential", geo_levels: ["national"] },
     "total_trade_nat": { label: "Total foreign trade", source: "Aldana, Abelardo. 1914. Resumen Hacienda Publica Chile 1833-1914", unit: "pesos", format: "currency", palette: "sequential", geo_levels: ["national"] },
     "unemployment_total_nat": { label: "Total unemployment (quarterly survey)", source: "Datos Mamalakis 1", unit: "persons", format: "count", palette: "sequential", geo_levels: ["national"] },
     "wages_total_nat": { label: "Average registered monthly wage", source: "Datos Mamalakis 1", unit: "pesos", format: "currency", palette: "sequential", geo_levels: ["national"] },
-    "tariff_imports_avg": { label: "Average import tariff rate", source: "Braun et al. 1998. Estadísticas Históricas Chile 1810-1995 (PUC DT 187)", unit: "%", format: "percent", palette: "sequential", geo_levels: ["national"] },
-    "cpi_index": { label: "Consumer price index (1995 = 100)", source: "Braun et al. 1998. Estadísticas Históricas Chile 1810-1995 (PUC DT 187)", unit: "index, 1995 = 100", format: "count", palette: "sequential", geo_levels: ["national"] },
-    "fiscal_balance_gdp": { label: "Fiscal balance (% of GDP)", source: "Braun et al. 1998. Estadísticas Históricas Chile 1810-1995 (PUC DT 187)", unit: "%", format: "percent", palette: "sequential", geo_levels: ["national"] },
-    "labor_force_total": { label: "Labour force, total", source: "Braun et al. 1998. Estadísticas Históricas Chile 1810-1995 (PUC DT 187)", unit: "workers", format: "count", palette: "sequential", geo_levels: ["national"] },
-    "gross_fixed_capital": { label: "Gross fixed capital formation (real)", source: "Braun et al. 1998. Estadísticas Históricas Chile 1810-1995 (PUC DT 187)", unit: "millions of 1995 pesos", format: "count", palette: "sequential", geo_levels: ["national"] },
+    "tariff_imports_avg": { label: "Average import tariff rate", source: "Primary sources (see indicator metadata)", unit: "%", format: "percent", palette: "sequential", geo_levels: ["national"] },
+    "cpi_index": { label: "Consumer price index (1995 = 100)", source: "Primary sources (see indicator metadata)", unit: "index, 1995 = 100", format: "count", palette: "sequential", geo_levels: ["national"] },
+    "fiscal_balance_gdp": { label: "Fiscal balance (% of GDP)", source: "Primary sources (see indicator metadata)", unit: "%", format: "percent", palette: "sequential", geo_levels: ["national"] },
+    "labor_force_total": { label: "Labour force, total", source: "Primary sources (see indicator metadata)", unit: "workers", format: "count", palette: "sequential", geo_levels: ["national"] },
+    "gross_fixed_capital": { label: "Gross fixed capital formation (real)", source: "Primary sources (see indicator metadata)", unit: "millions of 1995 pesos", format: "count", palette: "sequential", geo_levels: ["national"] },
     "fiscal_revenue_pesos": { label: "Total fiscal revenue (pesos)", source: "Aldana 1914. Resumen de la Hacienda Pública de Chile 1833-1914", unit: "pesos", format: "currency", palette: "sequential", geo_levels: ["national"] },
     "fiscal_revenue_gbp": { label: "Total fiscal revenue (British Foreign Office, GBP)", source: "Aldana 1914. Resumen de la Hacienda Pública de Chile 1833-1914", unit: "GBP", format: "currency", palette: "sequential", geo_levels: ["national"] },
-    "birth_rate_national": { label: "Birth rate (per 1,000)", source: "Braun et al. 1998. Estadísticas Históricas Chile 1810-1995 (PUC DT 187)", unit: "per 1,000 population", format: "count", palette: "sequential", geo_levels: ["national"] },
-    "expenditure_per_capita_real": { label: "Government expenditure per capita", source: "Braun et al. 1998. Estadísticas Históricas Chile 1810-1995 (PUC DT 187)", unit: "pesos (1995)", format: "count", palette: "sequential", geo_levels: ["national"] },
+    "birth_rate_national": { label: "Birth rate (per 1,000)", source: "Primary sources (see indicator metadata)", unit: "per 1,000 population", format: "count", palette: "sequential", geo_levels: ["national"] },
+    "expenditure_per_capita_real": { label: "Government expenditure per capita", source: "Primary sources (see indicator metadata)", unit: "pesos (1995)", format: "count", palette: "sequential", geo_levels: ["national"] },
     "shipping_tonnage_entered": { label: "Shipping tonnage entered", source: "summary_finances_customs.csv", unit: "tons", format: "count", palette: "sequential", geo_levels: ["national"] },
     "mint_receipts_national": { label: "Mint receipts", source: "Aldana 1914. Resumen de la Hacienda Pública de Chile 1833-1914", unit: "pesos", format: "currency", palette: "sequential", geo_levels: ["national"] },
     "literates_subnational": { label: "People who can read (department, census years)", source: "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation.", unit: "persons", format: "count", palette: "sequential", geo_levels: ["department"] },
@@ -190,93 +190,93 @@ window._variableMetadata = {
     /* Keyed by the full label string used in national_timeseries.js */
 
     "Total Population": {
-        label: "Total population", source: "Díaz, Lüders & Wagner (2016)",
+        label: "Total population", source: "Primary sources (see indicator metadata)",
         unit: "persons", format: "count", palette: "sequential",
         geo_levels: ["national"], accent: "#1f4e79"
     },
     "Total Labor Force": {
-        label: "Total labor force", source: "Díaz, Lüders & Wagner (2016)",
+        label: "Total labor force", source: "Primary sources (see indicator metadata)",
         unit: "persons", format: "count", palette: "sequential",
         geo_levels: ["national"], accent: "#1f4e79"
     },
     "Labor Participation Rate": {
-        label: "Labor force participation rate", source: "Díaz, Lüders & Wagner (2016)",
+        label: "Labor force participation rate", source: "Primary sources (see indicator metadata)",
         unit: "%", format: "percent", palette: "sequential",
         geo_levels: ["national"], accent: "#1f4e79"
     },
     "Agricultural Workers": {
-        label: "Agricultural workers", source: "Díaz, Lüders & Wagner (2016)",
+        label: "Agricultural workers", source: "Primary sources (see indicator metadata)",
         unit: "persons", format: "count", palette: "sequential",
         geo_levels: ["national"], accent: "#3b6d11"
     },
     "Mining Workers": {
-        label: "Mining workers", source: "Díaz, Lüders & Wagner (2016)",
+        label: "Mining workers", source: "Primary sources (see indicator metadata)",
         unit: "persons", format: "count", palette: "sequential",
         geo_levels: ["national"], accent: "#8a5a00"
     },
     "Manufacturing Workers": {
-        label: "Manufacturing workers", source: "Díaz, Lüders & Wagner (2016)",
+        label: "Manufacturing workers", source: "Primary sources (see indicator metadata)",
         unit: "persons", format: "count", palette: "sequential",
         geo_levels: ["national"], accent: "#5a3b8a"
     },
     "Service Workers": {
-        label: "Service workers", source: "Díaz, Lüders & Wagner (2016)",
+        label: "Service workers", source: "Primary sources (see indicator metadata)",
         unit: "persons", format: "count", palette: "sequential",
         geo_levels: ["national"], accent: "#3b6d11"
     },
     "Construction Workers": {
-        label: "Construction workers", source: "Díaz, Lüders & Wagner (2016)",
+        label: "Construction workers", source: "Primary sources (see indicator metadata)",
         unit: "persons", format: "count", palette: "sequential",
         geo_levels: ["national"], accent: "#5a3b8a"
     },
     "Exports (millions 1995 pesos)": {
-        label: "Exports", source: "Díaz, Lüders & Wagner (2016)",
+        label: "Exports", source: "Primary sources (see indicator metadata)",
         unit: "millions of 1995 pesos", format: "currency", palette: "sequential",
         geo_levels: ["national"], accent: "#1f4e79"
     },
     "Imports (millions 1995 pesos)": {
-        label: "Imports", source: "Díaz, Lüders & Wagner (2016)",
+        label: "Imports", source: "Primary sources (see indicator metadata)",
         unit: "millions of 1995 pesos", format: "currency", palette: "sequential",
         geo_levels: ["national"], accent: "#8b0000"
     },
     "Exports (% of GDP)": {
-        label: "Exports", source: "Díaz, Lüders & Wagner (2016)",
+        label: "Exports", source: "Primary sources (see indicator metadata)",
         unit: "% of GDP", format: "percent", palette: "sequential",
         geo_levels: ["national"], accent: "#1f4e79"
     },
     "Imports (% of GDP)": {
-        label: "Imports", source: "Díaz, Lüders & Wagner (2016)",
+        label: "Imports", source: "Primary sources (see indicator metadata)",
         unit: "% of GDP", format: "percent", palette: "sequential",
         geo_levels: ["national"], accent: "#8b0000"
     },
     "Trade Openness (% of GDP)": {
-        label: "Trade openness", source: "Díaz, Lüders & Wagner (2016)",
+        label: "Trade openness", source: "Primary sources (see indicator metadata)",
         unit: "% of GDP", format: "percent", palette: "sequential",
         geo_levels: ["national"], accent: "#1f4e79"
     },
     "Fiscal Revenue (millions)": {
-        label: "Fiscal revenue", source: "Díaz, Lüders & Wagner (2016)",
+        label: "Fiscal revenue", source: "Primary sources (see indicator metadata)",
         unit: "millions of 1995 pesos", format: "currency", palette: "sequential",
         geo_levels: ["national"], accent: "#1f4e79"
     },
     "Fiscal Expenditure (millions)": {
-        label: "Fiscal expenditure", source: "Díaz, Lüders & Wagner (2016)",
+        label: "Fiscal expenditure", source: "Primary sources (see indicator metadata)",
         unit: "millions of 1995 pesos", format: "currency", palette: "sequential",
         geo_levels: ["national"], accent: "#8b0000"
     },
     "Revenue (% of GDP)": {
-        label: "Fiscal revenue", source: "Díaz, Lüders & Wagner (2016)",
+        label: "Fiscal revenue", source: "Primary sources (see indicator metadata)",
         unit: "% of GDP", format: "percent", palette: "sequential",
         geo_levels: ["national"], accent: "#1f4e79"
     },
     "Expenditure (% of GDP)": {
-        label: "Fiscal expenditure", source: "Díaz, Lüders & Wagner (2016)",
+        label: "Fiscal expenditure", source: "Primary sources (see indicator metadata)",
         unit: "% of GDP", format: "percent", palette: "sequential",
         geo_levels: ["national"], accent: "#8b0000"
     },
     "Fiscal Surplus (% of GDP)": {
         label: "Fiscal balance",
-        source: "Díaz, Lüders & Wagner (2016)",
+        source: "Primary sources (see indicator metadata)",
         unit: "% of GDP", format: "percent", palette: "diverging",
         midpoint: 0, geo_levels: ["national"], accent: "#1f4e79"
     },
@@ -1198,19 +1198,19 @@ window._familyMetadata = {
     crime_statistics_criminales: { display_name: "Crime statistics (criminales by crime type / estado civil)", geo_levels: ["national"], n_member_variables: 155, n_observations: 310, per_capita_default: "default_pc", source_type: "anuario", units: "count", valid_years_pattern: "1869-1869", zeros_are_real: "sometimes" },
     customs_revenue: { display_name: "Customs revenue (aduanas)", geo_levels: ["national"], n_member_variables: 2, n_observations: 98, per_capita_default: "user_choice", source_type: "memoria", units: "currency_pesos", valid_years_pattern: "1817-1890", zeros_are_real: "sometimes" },
     demographic_indices_1976: { display_name: "Demographic indices (dependency, masculinity, ageing)", geo_levels: ["country", "region"], n_member_variables: 3, n_observations: 30, per_capita_default: "default_raw", source_type: "compiled", units: "rate", valid_years_pattern: "1976-1976", zeros_are_real: "never" },
-    dlw_commodity_production: { display_name: "Commodity production volumes (national, DLW long series)", geo_levels: ["departamento", "national", "provincia"], n_member_variables: 19, n_observations: 3906, per_capita_default: "user_choice", source_type: "diaz_luders_wagner", units: "physical_quantity", valid_years_pattern: "1860-1995", zeros_are_real: "sometimes" },
-    dlw_demographics_capitalized: { display_name: "DLW national demographic series (capitalized)", geo_levels: ["national"], n_member_variables: 8, n_observations: 1636, per_capita_default: "default_raw", source_type: "diaz_luders_wagner", units: "rate", valid_years_pattern: "1810-1995", zeros_are_real: "never" },
-    dlw_exports_categorical_lower: { display_name: "Exports by sector (DLW lowercase, mill_usd / pct)", geo_levels: ["national"], n_member_variables: 8, n_observations: 2432, per_capita_default: "user_choice", source_type: "diaz_luders_wagner", units: "currency_usd", valid_years_pattern: "1844-1995", zeros_are_real: "sometimes" },
-    dlw_fiscal_capitalized: { display_name: "DLW fiscal series (capitalized: Trib_, Ing_, G_, Gastos_, Gasto_)", geo_levels: ["national"], n_member_variables: 33, n_observations: 4582, per_capita_default: "default_raw", source_type: "diaz_luders_wagner", units: "currency_pesos_1995", valid_years_pattern: "1810-1995", zeros_are_real: "sometimes" },
-    dlw_fiscal_share_series: { display_name: "Diaz-Lüders-Wagner fiscal share series (national)", geo_levels: ["national"], n_member_variables: 13, n_observations: 2826, per_capita_default: "default_raw", source_type: "diaz_luders_wagner", units: "pct", valid_years_pattern: "1810-1995", zeros_are_real: "sometimes" },
-    dlw_gdp_series: { display_name: "Diaz-Lüders-Wagner GDP series (national, 1810-1995)", geo_levels: ["national"], n_member_variables: 6, n_observations: 2226, per_capita_default: "default_raw", source_type: "diaz_luders_wagner", units: "currency_pesos_1995", valid_years_pattern: "1810-1995", zeros_are_real: "never" },
-    dlw_imports_categorical_lower: { display_name: "Imports by category (DLW lowercase, mill_usd / pct)", geo_levels: ["national"], n_member_variables: 8, n_observations: 1504, per_capita_default: "user_choice", source_type: "diaz_luders_wagner", units: "currency_usd", valid_years_pattern: "1844-1937", zeros_are_real: "sometimes" },
-    dlw_investment_capitalized: { display_name: "DLW investment / capital formation (capitalized)", geo_levels: ["national"], n_member_variables: 12, n_observations: 672, per_capita_default: "default_raw", source_type: "diaz_luders_wagner", units: "currency_pesos_1995", valid_years_pattern: "1940-1995", zeros_are_real: "sometimes" },
-    dlw_labor_capitalized: { display_name: "DLW labor force series (capitalized)", geo_levels: ["national"], n_member_variables: 20, n_observations: 3321, per_capita_default: "default_pc", source_type: "diaz_luders_wagner", units: "count", valid_years_pattern: "1810-1995", zeros_are_real: "never" },
-    dlw_labor_force_national: { display_name: "Diaz-Lüders-Wagner labor force shares (national)", geo_levels: ["national"], n_member_variables: 13, n_observations: 4806, per_capita_default: "default_raw", source_type: "diaz_luders_wagner", units: "pct", valid_years_pattern: "1810-1995", zeros_are_real: "never" },
-    dlw_monetary_capitalized: { display_name: "DLW monetary aggregates and price indices (capitalized)", geo_levels: ["national"], n_member_variables: 36, n_observations: 5760, per_capita_default: "default_raw", source_type: "diaz_luders_wagner", units: "index", valid_years_pattern: "1810-1995", zeros_are_real: "never" },
-    dlw_pib_capitalized: { display_name: "DLW national accounts: PIB nominal/real/sectoral (capitalized)", geo_levels: ["country", "national"], n_member_variables: 25, n_observations: 5552, per_capita_default: "default_raw", source_type: "diaz_luders_wagner", units: "currency_pesos_1995", valid_years_pattern: "1810-1995", zeros_are_real: "never" },
-    dlw_trade_series: { display_name: "Diaz-Lüders-Wagner trade series (national, 1810-1995)", geo_levels: ["national"], n_member_variables: 13, n_observations: 4806, per_capita_default: "user_choice", source_type: "diaz_luders_wagner", units: "currency_pesos_1995", valid_years_pattern: "1810-1995", zeros_are_real: "sometimes" },
+    dlw_commodity_production: { display_name: "Commodity production volumes (national long series)", geo_levels: ["departamento", "national", "provincia"], n_member_variables: 19, n_observations: 3906, per_capita_default: "user_choice", source_type: "compiled", units: "physical_quantity", valid_years_pattern: "1860-1995", zeros_are_real: "sometimes" },
+    dlw_demographics_capitalized: { display_name: "National demographic series", geo_levels: ["national"], n_member_variables: 8, n_observations: 1636, per_capita_default: "default_raw", source_type: "compiled", units: "rate", valid_years_pattern: "1810-1995", zeros_are_real: "never" },
+    dlw_exports_categorical_lower: { display_name: "Exports by sector (national)", geo_levels: ["national"], n_member_variables: 8, n_observations: 2432, per_capita_default: "user_choice", source_type: "compiled", units: "currency_usd", valid_years_pattern: "1844-1995", zeros_are_real: "sometimes" },
+    dlw_fiscal_capitalized: { display_name: "National fiscal series", geo_levels: ["national"], n_member_variables: 33, n_observations: 4582, per_capita_default: "default_raw", source_type: "compiled", units: "currency_pesos_1995", valid_years_pattern: "1810-1995", zeros_are_real: "sometimes" },
+    dlw_fiscal_share_series: { display_name: "Fiscal composition shares (national)", geo_levels: ["national"], n_member_variables: 13, n_observations: 2826, per_capita_default: "default_raw", source_type: "compiled", units: "pct", valid_years_pattern: "1810-1995", zeros_are_real: "sometimes" },
+    dlw_gdp_series: { display_name: "National accounts: GDP series", geo_levels: ["national"], n_member_variables: 6, n_observations: 2226, per_capita_default: "default_raw", source_type: "compiled", units: "currency_pesos_1995", valid_years_pattern: "1810-1995", zeros_are_real: "never" },
+    dlw_imports_categorical_lower: { display_name: "Imports by category (national)", geo_levels: ["national"], n_member_variables: 8, n_observations: 1504, per_capita_default: "user_choice", source_type: "compiled", units: "currency_usd", valid_years_pattern: "1844-1937", zeros_are_real: "sometimes" },
+    dlw_investment_capitalized: { display_name: "Investment and capital formation (national)", geo_levels: ["national"], n_member_variables: 12, n_observations: 672, per_capita_default: "default_raw", source_type: "compiled", units: "currency_pesos_1995", valid_years_pattern: "1940-1995", zeros_are_real: "sometimes" },
+    dlw_labor_capitalized: { display_name: "Labour force series (national)", geo_levels: ["national"], n_member_variables: 20, n_observations: 3321, per_capita_default: "default_pc", source_type: "compiled", units: "count", valid_years_pattern: "1810-1995", zeros_are_real: "never" },
+    dlw_labor_force_national: { display_name: "Labour force shares (national)", geo_levels: ["national"], n_member_variables: 13, n_observations: 4806, per_capita_default: "default_raw", source_type: "compiled", units: "pct", valid_years_pattern: "1810-1995", zeros_are_real: "never" },
+    dlw_monetary_capitalized: { display_name: "Monetary aggregates and price indices (national)", geo_levels: ["national"], n_member_variables: 36, n_observations: 5760, per_capita_default: "default_raw", source_type: "compiled", units: "index", valid_years_pattern: "1810-1995", zeros_are_real: "never" },
+    dlw_pib_capitalized: { display_name: "National accounts: GDP (nominal, real, sectoral)", geo_levels: ["country", "national"], n_member_variables: 25, n_observations: 5552, per_capita_default: "default_raw", source_type: "compiled", units: "currency_pesos_1995", valid_years_pattern: "1810-1995", zeros_are_real: "never" },
+    dlw_trade_series: { display_name: "Trade series (national)", geo_levels: ["national"], n_member_variables: 13, n_observations: 4806, per_capita_default: "user_choice", source_type: "compiled", units: "currency_pesos_1995", valid_years_pattern: "1810-1995", zeros_are_real: "sometimes" },
     economic_activity_provincial: { display_name: "Provincial economic activity panel (1952-1970, holding pen)", geo_levels: ["country", "province"], n_member_variables: 14, n_observations: 1106, per_capita_default: "default_pc", source_type: "compiled", units: "count", valid_years_pattern: "1854-1983", zeros_are_real: "sometimes" },
     economically_active_population: { display_name: "Economically active population (PEA)", geo_levels: ["country", "national"], n_member_variables: 25, n_observations: 336, per_capita_default: "default_pc", source_type: "compiled", units: "count", valid_years_pattern: "1860-1995", zeros_are_real: "never" },
     education_enrollment_matricula: { display_name: "Education enrollment (matrícula, anuario series)", geo_levels: ["national", "province"], n_member_variables: 19, n_observations: 1915, per_capita_default: "default_pc", source_type: "anuario", units: "count", valid_years_pattern: "1852-1995", zeros_are_real: "never" },

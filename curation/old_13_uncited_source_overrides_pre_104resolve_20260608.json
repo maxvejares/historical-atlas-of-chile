@@ -1,0 +1,27 @@
+{
+  "_meta": {
+    "purpose": "Source attribution for published indicators whose source_documents were empty. ADDS citations only; never hides or deletes any indicator. User directive 2026-06-03: NO BRAUN in the atlas. The subnational set is attributed from its already-attributed twin indicators (all non-Braun). The national economic set is NOT attributed here because its source was lost and could not be confirmed as non-Braun; it is cleared to 'source_pending' (kept visible, no Braun citation) for resolution next session.",
+    "date": "2026-06-03"
+  },
+  "ANUARIO_1860_SCHOOLS": "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), schools by province, 1853–1858. Santiago: Imprenta Nacional.",
+  "MAMALAKIS_V2": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press.",
+  "VEJARES_COMPILATION": "Véjares, Maximiliano. Forthcoming. Department-level historical dataset, Chile, 19th century (legislator–landowner linkage). Net Zero Industrial Policy Lab, Johns Hopkins University.",
+  "overrides": {
+    "escuelas_h": ["ANUARIO_1860_SCHOOLS"],
+    "escuelas_m": ["ANUARIO_1860_SCHOOLS"],
+    "escuelas_total": ["ANUARIO_1860_SCHOOLS"],
+    "alumnos_h": ["ANUARIO_1860_SCHOOLS"],
+    "alumnos_m": ["ANUARIO_1860_SCHOOLS"],
+    "alumnos_total": ["ANUARIO_1860_SCHOOLS"],
+    "matrimonios_total": ["Oficina Central de Estadística. 1872. Anuario Estadístico de la República de Chile, año 1871. Santiago: Imprenta Nacional.", "Ministerio del Interior. 1891. Memoria del Ministerio del Interior, año 1890, Tomo II. Santiago."],
+    "pct_pgb_provincial": ["MAMALAKIS_V2"],
+    "n_hacendados_legs": ["VEJARES_COMPILATION"],
+    "pct_protestante_prov": ["Dirección General de Estadística. Censo de Población de Chile, cuadro de religión por provincia. Santiago. (source to confirm)"]
+  },
+  "clear_no_braun": [
+    "gov_current_revenue_nat", "internal_public_debt", "peso_exchange_rate",
+    "social_spending_real_nat", "real_income_nat", "wages_total_nat",
+    "labor_obreros_share_nat", "labor_force_quarterly_nat",
+    "unemployment_total_nat", "employment_total_nat", "viviendas_nat"
+  ]
+}

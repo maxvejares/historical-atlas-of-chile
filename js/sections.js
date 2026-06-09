@@ -26,13 +26,13 @@ const SOURCE_GROUPS = [
   { id: 'primary_government', name: 'Primary Chilean government publications',
     blurb: 'Censuses, statistical yearbooks, ministerial reports, and government compilations issued by Chilean state agencies.' },
   { id: 'compiled_academic', name: 'Compiled academic statistics',
-    blurb: 'Long-run series compiled from primary archives by economic historians: Díaz, Lüders & Wagner; Mamalakis; Aldana; Molina; Sinopsis retrospectivas.' },
+    blurb: 'Long-run series compiled from primary archives by economic historians: Mamalakis; Aldana; Molina; Sinopsis retrospectivas.' },
   { id: 'institutional', name: 'Specialized institutional sources',
     blurb: 'Bulletins and yearbooks from Chilean trade associations and sectoral institutions: Sociedad Nacional de Agricultura, SOFOFA, Boletín del Trabajo.' },
   { id: 'secondary_academic', name: 'Foreign and academic secondary sources',
     blurb: 'Academic monographs and reference databases compiled outside the Chilean government corpus: Bauer, Cariola/Sunkel, Biblioteca del Congreso Nacional, project working files.' },
-  { id: 'pending_attribution', name: 'Other sources',
-    blurb: 'Additional variables compiled from miscellaneous historical sources.' },
+  { id: 'pending_attribution', name: 'Source pending attribution',
+    blurb: 'Published series whose underlying primary source is not yet established. These remain visible, but the atlas does not assert a source it cannot trace. Where a series originated in a secondary compilation that has been withdrawn, or in a working file with no recorded provenance, it is held here until a primary (or accepted historical) source is confirmed.' },
 ];
 
 const GROUP_RULES = [
@@ -41,9 +41,8 @@ const GROUP_RULES = [
     /\bmemoria\b/i, /\bpresupuesto\b/i, /\bcatastro\b/i, /\brol de aval/i,
   ]],
   ['compiled_academic', [
-    /d[ií]az/i, /l[üu]ders/i, /\bwagner\b/i, /\bmamalakis\b/i,
+    /\bmamalakis\b/i,
     /\baldana\b/i, /\bmolina\b/i, /\bmiquel\b/i, /\bmartner\b/i,
-    /\bbraun\b/i,
   ]],
   ['institutional', [
     /\bsociedad nacional/i, /\bsofofa\b/i, /\bbolet[ií]n del trabajo\b/i,
@@ -77,7 +76,10 @@ function buildSourceRegistry(filterVar) {
       ? v.source_documents
       : (v.source_document ? [v.source_document] : []);
     if (!docs.length) {
-      groupMap.pending_attribution.pendingVars.push({ id: v.id, label: v.display_label || v.label });
+      groupMap.pending_attribution.pendingVars.push({
+        id: v.id, label: v.display_label || v.label,
+        status: v.source_attribution_status || null,
+      });
       continue;
     }
     for (const d of docs) {
@@ -117,19 +119,31 @@ function renderDocItem(d) {
     </li>`;
 }
 
+// Human-readable reason for a pending source_attribution_status.
+const PENDING_STATUS_REASON = {
+  no_recoverable_source: 'no recoverable source',
+  no_family_no_source: 'no recoverable source',
+  source_pending_no_braun: 'prior source withdrawn; primary pending',
+  source_attribution_missing: 'source attribution incomplete',
+  pending: 'source pending',
+};
+
 function renderPendingItem(varList) {
   if (!varList.length) return '';
   return `
     <li class="src-doc src-doc-pending">
       <details class="src-doc-details">
         <summary>
-          <span class="sd-name sd-pending-label">Variables awaiting source attribution</span>
+          <span class="sd-name sd-pending-label">Source pending attribution</span>
           <span class="sd-count caption num">${varList.length} variable${varList.length === 1 ? '' : 's'}</span>
         </summary>
         <ul class="sd-vars">
-          ${varList.slice().sort((a, b) => a.label.localeCompare(b.label)).map(v => `
-            <li><a href="#variable=${encodeURIComponent(v.id)}">${escapeS(v.label)}</a></li>
-          `).join('')}
+          ${varList.slice().sort((a, b) => a.label.localeCompare(b.label)).map(v => {
+            const reason = v.status && PENDING_STATUS_REASON[v.status];
+            return `<li><a href="#variable=${encodeURIComponent(v.id)}">${escapeS(v.label)}</a>${
+              reason ? ` <span class="caption" style="color:var(--ink-muted)">— ${escapeS(reason)}</span>` : ''
+            }</li>`;
+          }).join('')}
         </ul>
       </details>
     </li>`;

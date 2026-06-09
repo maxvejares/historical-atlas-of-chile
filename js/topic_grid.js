@@ -9,9 +9,10 @@ export const TOPICS = [
   // real_gdp_per_capita (retired → real_gdp). fiscal was fiscal_revenue_of_gdp
   // (absent from the manifest); revenue_of_gdp was a wrong first fix — it is
   // marked complete but carries data_quality_flag=unit_splice_corruption and is
-  // withheld pending unit reconciliation, so it would land on the withheld
-  // message. Use fiscal_revenue_millions: canonical, no flag, complete, 181 yrs.
-  { id: "economy",        label: "Economy",        landing: "real_gdp",                    desc: "GDP, growth, exchange rates, sectoral shares." },
+  // real_gdp and the sectoral/ratio GDP series were discarded (no primary source
+  // before national accounting begins ~1940). Land Economy on cpi_index: a
+  // primary-sourced (DGE/INE) macro series, complete and national.
+  { id: "economy",        label: "Economy",        landing: "cpi_index",                   desc: "Prices, fiscal accounts, trade, exchange rates." },
   { id: "demography",     label: "Demography",     landing: "total_population",            desc: "Population, vital statistics, urbanization." },
   { id: "politics",       label: "Politics",       landing: "n_legislators",               desc: "Suffrage, legislators, elections, franchise reform." },
   { id: "agriculture",    label: "Agriculture",    landing: "wheat_production",            desc: "Crops, estates, agrarian structure, peasants." },
@@ -21,7 +22,7 @@ export const TOPICS = [
   { id: "infrastructure", label: "Infrastructure", landing: "railway_network_length",      desc: "Railways, telephones, ports, electricity." },
   { id: "housing",        label: "Housing",        landing: "viviendas_total_1992",        desc: "Dwellings, tenure, water, sewerage, electricity (1992)." },
   { id: "fiscal",         label: "Fiscal",         landing: "fiscal_revenue_millions",     desc: "Revenue, expenditure, debt, taxes." },
-  { id: "trade",          label: "Trade",          landing: "trade_openness_of_gdp",       desc: "Exports, imports, trade composition, openness." },
+  { id: "trade",          label: "Trade",          landing: "exports_in_current_dollars",  desc: "Exports, imports, trade composition." },
 ];
 
 function pickLanding(t) {

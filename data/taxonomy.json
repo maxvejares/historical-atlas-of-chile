@@ -1,1837 +1,1837 @@
 {
- "generated": "2026-05-17",
- "categories": [
-  {
-   "id": "demographics",
-   "label": "Demographics & Population",
-   "description": "Population counts, vital statistics, urbanization, migration",
-   "n_families": 26,
-   "n_observations": 35170
-  },
-  {
-   "id": "fiscal",
-   "label": "Fiscal & Public Finance",
-   "description": "Revenue, expenditure, debt, customs, budget, taxes",
-   "n_families": 22,
-   "n_observations": 42205
-  },
-  {
-   "id": "trade",
-   "label": "Trade & Commerce",
-   "description": "Exports, imports, trade openness, commercial activity",
-   "n_families": 10,
-   "n_observations": 19316
-  },
-  {
-   "id": "education",
-   "label": "Education",
-   "description": "Schools, enrollment, literacy, secondary education",
-   "n_families": 14,
-   "n_observations": 5220
-  },
-  {
-   "id": "agriculture",
-   "label": "Agriculture & Land",
-   "description": "Crops, livestock, estates, agrarian labor, land tenure",
-   "n_families": 10,
-   "n_observations": 24998
-  },
-  {
-   "id": "mining",
-   "label": "Mining & Industry",
-   "description": "Mining production, industrial output, manufacturing",
-   "n_families": 5,
-   "n_observations": 9465
-  },
-  {
-   "id": "labor",
-   "label": "Labor & Employment",
-   "description": "Workforce, occupations, employment, wages, disputes",
-   "n_families": 17,
-   "n_observations": 40426
-  },
-  {
-   "id": "infrastructure",
-   "label": "Infrastructure & Transport",
-   "description": "Railways, telegraph, post, roads, housing",
-   "n_families": 7,
-   "n_observations": 4008
-  },
-  {
-   "id": "justice",
-   "label": "Justice & Security",
-   "description": "Courts, crime, police, prisons, juvenile justice",
-   "n_families": 6,
-   "n_observations": 2866
-  },
-  {
-   "id": "politics",
-   "label": "Politics & Elections",
-   "description": "Elections, suffrage, legislators, governance",
-   "n_families": 7,
-   "n_observations": 7555
-  },
-  {
-   "id": "health",
-   "label": "Health & Hospitals",
-   "description": "Hospital admissions, public health, social spending",
-   "n_families": 2,
-   "n_observations": 3135
-  },
-  {
-   "id": "national_accounts",
-   "label": "National Accounts",
-   "description": "GDP, national income, investment, monetary aggregates",
-   "n_families": 7,
-   "n_observations": 18455
-  },
-  {
-   "id": "religion",
-   "label": "Religion & Society",
-   "description": "Religious affiliation, clergy",
-   "n_families": 1,
-   "n_observations": 165
-  },
-  {
-   "id": "military",
-   "label": "Military",
-   "description": "Armed forces, military spending",
-   "n_families": 1,
-   "n_observations": 387
-  }
- ],
- "families": [
-  {
-   "id": "age_specific_fertility",
-   "label": "Age-specific fertility rates",
-   "category": "demographics",
-   "units": "rate",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 27,
-   "n_observations": 225
-  },
-  {
-   "id": "agrarian_labor_indicators",
-   "label": "Agrarian labor indicators",
-   "category": "agriculture",
-   "units": "count",
-   "source_type": "external_academic",
-   "geo_levels": [
-    "commune",
-    "department",
-    "municipality"
-   ],
-   "n_variables": 4,
-   "n_observations": 1007
-  },
-  {
-   "id": "agricultural_census_1930_commune",
-   "label": "Agricultural holdings, commune level",
-   "category": "agriculture",
-   "units": "count",
-   "source_type": "census",
-   "geo_levels": [
-    "commune",
-    "comuna",
-    "department"
-   ],
-   "n_variables": 16,
-   "n_observations": 7251
-  },
-  {
-   "id": "agriculture_province_1924",
-   "label": "Agriculture province 1924",
-   "category": "agriculture",
-   "units": "physical_quantity",
-   "source_type": "anuario",
-   "geo_levels": [
-    "province"
-   ],
-   "n_variables": 7,
-   "n_observations": 372
-  },
-  {
-   "id": "agriculture_province_1935",
-   "label": "Agriculture/livestock province 1935",
-   "category": "agriculture",
-   "units": "physical_quantity",
-   "source_type": "anuario",
-   "geo_levels": [
-    "department",
-    "province"
-   ],
-   "n_variables": 30,
-   "n_observations": 1013
-  },
-  {
-   "id": "anuario_1875_trailing_year",
-   "label": "Agricultural statistics 1875",
-   "category": "agriculture",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "province"
-   ],
-   "n_variables": 6,
-   "n_observations": 354
-  },
-  {
-   "id": "auto_alumnos_h_yyyy",
-   "label": "Auto Alumnos H Yyyy",
-   "category": "education",
-   "units": "count",
-   "source_type": "compiled",
-   "geo_levels": [
-    "province"
-   ],
-   "n_variables": 4,
-   "n_observations": 80
-  },
-  {
-   "id": "auto_alumnos_m_yyyy",
-   "label": "Auto Alumnos M Yyyy",
-   "category": "education",
-   "units": "count",
-   "source_type": "compiled",
-   "geo_levels": [
-    "province"
-   ],
-   "n_variables": 4,
-   "n_observations": 80
-  },
-  {
-   "id": "auto_alumnos_total_yyyy",
-   "label": "Auto Alumnos Total Yyyy",
-   "category": "education",
-   "units": "count",
-   "source_type": "compiled",
-   "geo_levels": [
-    "province"
-   ],
-   "n_variables": 4,
-   "n_observations": 80
-  },
-  {
-   "id": "auto_entrada_periodo_yyyy_yyyy_ordinaria_pesos",
-   "label": "Auto Entrada Periodo Yyyy Yyyy Ordinaria Pesos",
-   "category": "fiscal",
-   "units": "count",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 3,
-   "n_observations": 6
-  },
-  {
-   "id": "auto_escuelas_h_yyyy",
-   "label": "Auto Escuelas H Yyyy",
-   "category": "education",
-   "units": "count",
-   "source_type": "compiled",
-   "geo_levels": [
-    "province"
-   ],
-   "n_variables": 4,
-   "n_observations": 80
-  },
-  {
-   "id": "auto_escuelas_m_yyyy",
-   "label": "Auto Escuelas M Yyyy",
-   "category": "education",
-   "units": "count",
-   "source_type": "compiled",
-   "geo_levels": [
-    "province"
-   ],
-   "n_variables": 4,
-   "n_observations": 80
-  },
-  {
-   "id": "auto_escuelas_total_yyyy",
-   "label": "Auto Escuelas Total Yyyy",
-   "category": "education",
-   "units": "count",
-   "source_type": "compiled",
-   "geo_levels": [
-    "province"
-   ],
-   "n_variables": 4,
-   "n_observations": 80
-  },
-  {
-   "id": "auto_gasto_gobierno_yyyy",
-   "label": "Auto Gasto Gobierno Yyyy",
-   "category": "fiscal",
-   "units": "count",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 3,
-   "n_observations": 7
-  },
-  {
-   "id": "auto_pop_censal_yyyy",
-   "label": "Auto Pop Censal Yyyy",
-   "category": "demographics",
-   "units": "count",
-   "source_type": "compiled",
-   "geo_levels": [
-    "department",
-    "national",
-    "province"
-   ],
-   "n_variables": 8,
-   "n_observations": 1036
-  },
-  {
-   "id": "banking_subnational",
-   "label": "Banking offices by province",
-   "category": "trade",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "national",
-    "province"
-   ],
-   "n_variables": 11,
-   "n_observations": 400
-  },
-  {
-   "id": "bankruptcies_subnational",
-   "label": "Bankruptcies declared by province",
-   "category": "trade",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "national",
-    "province"
-   ],
-   "n_variables": 2,
-   "n_observations": 120
-  },
-  {
-   "id": "british_foreign_office_fiscal_gbp",
-   "label": "Fiscal accounts in pounds sterling",
-   "category": "fiscal",
-   "units": "currency_gbp",
-   "source_type": "external_academic",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 21,
-   "n_observations": 1702
-  },
-  {
-   "id": "british_foreign_office_sof",
-   "label": "British Foreign Office",
-   "category": "fiscal",
-   "units": "currency_gbp",
-   "source_type": "external_academic",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 12,
-   "n_observations": 202
-  },
-  {
-   "id": "budget",
-   "label": "Annual budget",
-   "category": "fiscal",
-   "units": "currency_pesos",
-   "source_type": "memoria",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 4,
-   "n_observations": 101
-  },
-  {
-   "id": "chilean_fiscal_pesos",
-   "label": "Chilean fiscal: customs / tax / revenue in pesos",
-   "category": "fiscal",
-   "units": "currency_pesos",
-   "source_type": "memoria",
-   "geo_levels": [
-    "city",
-    "national"
-   ],
-   "n_variables": 21,
-   "n_observations": 1959
-  },
-  {
-   "id": "church_records_baptisms",
-   "label": "Baptisms",
-   "category": "demographics",
-   "units": "count",
-   "source_type": "compiled",
-   "geo_levels": [
-    "department"
-   ],
-   "n_variables": 2,
-   "n_observations": 51
-  },
-  {
-   "id": "church_records_deaths",
-   "label": "Deaths",
-   "category": "demographics",
-   "units": "count",
-   "source_type": "compiled",
-   "geo_levels": [
-    "department"
-   ],
-   "n_variables": 2,
-   "n_observations": 25
-  },
-  {
-   "id": "church_records_marriages",
-   "label": "Marriages",
-   "category": "demographics",
-   "units": "count",
-   "source_type": "compiled",
-   "geo_levels": [
-    "department"
-   ],
-   "n_variables": 2,
-   "n_observations": 49
-  },
-  {
-   "id": "court_statistics",
-   "label": "Court statistics",
-   "category": "justice",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "province"
-   ],
-   "n_variables": 7,
-   "n_observations": 298
-  },
-  {
-   "id": "crime_statistics_1859",
-   "label": "Crime statistics 1859",
-   "category": "justice",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "province"
-   ],
-   "n_variables": 11,
-   "n_observations": 160
-  },
-  {
-   "id": "crime_statistics_criminales",
-   "label": "Crime statistics",
-   "category": "justice",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 155,
-   "n_observations": 310
-  },
-  {
-   "id": "customs_revenue",
-   "label": "Customs revenue",
-   "category": "fiscal",
-   "units": "currency_pesos",
-   "source_type": "memoria",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 3,
-   "n_observations": 98
-  },
-  {
-   "id": "demographic_indices_1976",
-   "label": "Demographic indices",
-   "category": "demographics",
-   "units": "rate",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national",
-    "region"
-   ],
-   "n_variables": 3,
-   "n_observations": 45
-  },
-  {
-   "id": "dlw_commodity_production",
-   "label": "Commodity production volumes",
-   "category": "agriculture",
-   "units": "physical_quantity",
-   "source_type": "diaz_luders_wagner",
-   "geo_levels": [
-    "department",
-    "national",
-    "province"
-   ],
-   "n_variables": 19,
-   "n_observations": 5857
-  },
-  {
-   "id": "dlw_demographics_capitalized",
-   "label": "Demographic indicators",
-   "category": "demographics",
-   "units": "rate",
-   "source_type": "diaz_luders_wagner",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 8,
-   "n_observations": 2839
-  },
-  {
-   "id": "dlw_exports_categorical_lower",
-   "label": "Exports by sector",
-   "category": "trade",
-   "units": "currency_usd",
-   "source_type": "diaz_luders_wagner",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 8,
-   "n_observations": 3648
-  },
-  {
-   "id": "dlw_fiscal_capitalized",
-   "label": "Fiscal revenue and expenditure",
-   "category": "fiscal",
-   "units": "currency_pesos_1995",
-   "source_type": "diaz_luders_wagner",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 35,
-   "n_observations": 9520
-  },
-  {
-   "id": "dlw_fiscal_share_series",
-   "label": "Fiscal aggregates as shares of GDP",
-   "category": "fiscal",
-   "units": "pct",
-   "source_type": "diaz_luders_wagner",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 13,
-   "n_observations": 6573
-  },
-  {
-   "id": "dlw_gdp_series",
-   "label": "Gross domestic product",
-   "category": "national_accounts",
-   "units": "currency_pesos_1995",
-   "source_type": "diaz_luders_wagner",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 6,
-   "n_observations": 3339
-  },
-  {
-   "id": "dlw_imports_categorical_lower",
-   "label": "Imports by category",
-   "category": "trade",
-   "units": "currency_usd",
-   "source_type": "diaz_luders_wagner",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 8,
-   "n_observations": 2256
-  },
-  {
-   "id": "dlw_investment_capitalized",
-   "label": "Investment and capital formation",
-   "category": "national_accounts",
-   "units": "currency_pesos_1995",
-   "source_type": "diaz_luders_wagner",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 13,
-   "n_observations": 1344
-  },
-  {
-   "id": "dlw_labor_capitalized",
-   "label": "Labor force",
-   "category": "labor",
-   "units": "count",
-   "source_type": "diaz_luders_wagner",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 21,
-   "n_observations": 6642
-  },
-  {
-   "id": "dlw_labor_force_national",
-   "label": "Labor force shares by sector",
-   "category": "labor",
-   "units": "pct",
-   "source_type": "diaz_luders_wagner",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 13,
-   "n_observations": 7254
-  },
-  {
-   "id": "dlw_monetary_capitalized",
-   "label": "Monetary aggregates and price indices",
-   "category": "national_accounts",
-   "units": "index",
-   "source_type": "diaz_luders_wagner",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 37,
-   "n_observations": 11520
-  },
-  {
-   "id": "dlw_pib_capitalized",
-   "label": "GDP, nominal, real, and sectoral",
-   "category": "mining",
-   "units": "currency_pesos_1995",
-   "source_type": "diaz_luders_wagner",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 25,
-   "n_observations": 8872
-  },
-  {
-   "id": "dlw_trade_series",
-   "label": "Exports and imports",
-   "category": "trade",
-   "units": "currency_pesos_1995",
-   "source_type": "diaz_luders_wagner",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 13,
-   "n_observations": 7254
-  },
-  {
-   "id": "economic_activity_provincial",
-   "label": "Provincial economic activity",
-   "category": "national_accounts",
-   "units": "count",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national",
-    "province"
-   ],
-   "n_variables": 15,
-   "n_observations": 1636
-  },
-  {
-   "id": "economically_active_population",
-   "label": "Economically active population",
-   "category": "labor",
-   "units": "count",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 25,
-   "n_observations": 472
-  },
-  {
-   "id": "education_enrollment_matricula",
-   "label": "Education enrollment",
-   "category": "education",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "national",
-    "province"
-   ],
-   "n_variables": 13,
-   "n_observations": 2954
-  },
-  {
-   "id": "education_matricula_extended",
-   "label": "Enrollment and attendance",
-   "category": "education",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "department",
-    "national",
-    "province"
-   ],
-   "n_variables": 9,
-   "n_observations": 308
-  },
-  {
-   "id": "education_spending",
-   "label": "Education expenditure",
-   "category": "education",
-   "units": "currency_pesos",
-   "source_type": "memoria",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 15,
-   "n_observations": 120
-  },
-  {
-   "id": "electoral_municipal_subnational",
-   "label": "Municipal elections",
-   "category": "politics",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "department",
-    "national"
-   ],
-   "n_variables": 3,
-   "n_observations": 220
-  },
-  {
-   "id": "electoral_participation_1935_1970_national",
-   "label": "Electoral participation national 1935-1970",
-   "category": "politics",
-   "units": "count",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 6,
-   "n_observations": 93
-  },
-  {
-   "id": "electoral_presidential_subnational",
-   "label": "Presidential-elector elections",
-   "category": "politics",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "department",
-    "national"
-   ],
-   "n_variables": 3,
-   "n_observations": 219
-  },
-  {
-   "id": "electoral_subnational",
-   "label": "Electoral panel",
-   "category": "politics",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "department",
-    "national",
-    "province"
-   ],
-   "n_variables": 31,
-   "n_observations": 4506
-  },
-  {
-   "id": "employment_quarterly_sectoral",
-   "label": "Employment by sector",
-   "category": "labor",
-   "units": "count",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 538,
-   "n_observations": 770
-  },
-  {
-   "id": "ethnicity_indigenous",
-   "label": "Ethnicity / indigenous population",
-   "category": "demographics",
-   "units": "count",
-   "source_type": "census",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 3,
-   "n_observations": 10
-  },
-  {
-   "id": "exchange_rate",
-   "label": "Exchange rate",
-   "category": "trade",
-   "units": "rate",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 1,
-   "n_observations": 68
-  },
-  {
-   "id": "expenditure_per_capita",
-   "label": "Expenditure per capita",
-   "category": "fiscal",
-   "units": "currency_pesos",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 2,
-   "n_observations": 558
-  },
-  {
-   "id": "export_duties",
-   "label": "Export duties by commodity",
-   "category": "fiscal",
-   "units": "currency_pesos",
-   "source_type": "memoria",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 12,
-   "n_observations": 45
-  },
-  {
-   "id": "fiscal_categorical_lower",
-   "label": "Fiscal categorical lowercase",
-   "category": "fiscal",
-   "units": "currency_pesos",
-   "source_type": "memoria",
-   "geo_levels": [
-    "national",
-    "province"
-   ],
-   "n_variables": 20,
-   "n_observations": 148
-  },
-  {
-   "id": "fiscal_expenditure_categorical",
-   "label": "Fiscal expenditure",
-   "category": "fiscal",
-   "units": "currency_pesos",
-   "source_type": "memoria",
-   "geo_levels": [
-    "department",
-    "municipality",
-    "national",
-    "province"
-   ],
-   "n_variables": 86,
-   "n_observations": 5250
-  },
-  {
-   "id": "fiscal_revenue_categorical",
-   "label": "Fiscal revenue",
-   "category": "fiscal",
-   "units": "currency_pesos",
-   "source_type": "memoria",
-   "geo_levels": [
-    "department",
-    "national",
-    "province"
-   ],
-   "n_variables": 27,
-   "n_observations": 1242
-  },
-  {
-   "id": "government_accounts",
-   "label": "Government accounts",
-   "category": "fiscal",
-   "units": "currency_pesos",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 183,
-   "n_observations": 1560
-  },
-  {
-   "id": "hospital_statistics",
-   "label": "Hospital statistics",
-   "category": "health",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "city",
-    "department",
-    "national",
-    "province"
-   ],
-   "n_variables": 43,
-   "n_observations": 2815
-  },
-  {
-   "id": "household_consumption_indicators",
-   "label": "Household consumption indicators",
-   "category": "labor",
-   "units": "pct",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 86,
-   "n_observations": 167
-  },
-  {
-   "id": "household_dwellings",
-   "label": "Household dwellings panel",
-   "category": "infrastructure",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 12,
-   "n_observations": 26
-  },
-  {
-   "id": "housing_surface",
-   "label": "Building and housing surface",
-   "category": "infrastructure",
-   "units": "physical_quantity",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 13,
-   "n_observations": 640
-  },
-  {
-   "id": "juvenile_justice",
-   "label": "Juvenile justice",
-   "category": "justice",
-   "units": "count",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 2,
-   "n_observations": 20
-  },
-  {
-   "id": "labor_disputes",
-   "label": "Labor disputes",
-   "category": "labor",
-   "units": "count",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 4,
-   "n_observations": 4
-  },
-  {
-   "id": "labor_force_participation_extended",
-   "label": "Labor force participation extended",
-   "category": "labor",
-   "units": "count",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 43,
-   "n_observations": 164
-  },
-  {
-   "id": "labor_force_quarterly_sectoral",
-   "label": "Labor force by sector",
-   "category": "labor",
-   "units": "count",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 1086,
-   "n_observations": 1091
-  },
-  {
-   "id": "landholding_avaluo",
-   "label": "Landholding: avaluo and Rol",
-   "category": "agriculture",
-   "units": "currency_pesos",
-   "source_type": "compiled",
-   "geo_levels": [
-    "constituency",
-    "department"
-   ],
-   "n_variables": 25,
-   "n_observations": 5980
-  },
-  {
-   "id": "landholding_extended",
-   "label": "Landholding extended",
-   "category": "agriculture",
-   "units": "count",
-   "source_type": "external_academic",
-   "geo_levels": [
-    "department",
-    "province"
-   ],
-   "n_variables": 17,
-   "n_observations": 1133
-  },
-  {
-   "id": "landholding_manorial",
-   "label": "Landholding: manorial classification",
-   "category": "agriculture",
-   "units": "boolean",
-   "source_type": "external_academic",
-   "geo_levels": [
-    "department"
-   ],
-   "n_variables": 3,
-   "n_observations": 789
-  },
-  {
-   "id": "landholding_sna",
-   "label": "Landholding: SNA estates 1874",
-   "category": "agriculture",
-   "units": "count",
-   "source_type": "external_academic",
-   "geo_levels": [
-    "department"
-   ],
-   "n_variables": 4,
-   "n_observations": 1242
-  },
-  {
-   "id": "legislators_province_1920",
-   "label": "Legislators by province 1920",
-   "category": "politics",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "province"
-   ],
-   "n_variables": 4,
-   "n_observations": 138
-  },
-  {
-   "id": "life_expectancy_provincial",
-   "label": "Life expectancy provincial",
-   "category": "demographics",
-   "units": "rate",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national",
-    "province",
-    "region"
-   ],
-   "n_variables": 12,
-   "n_observations": 276
-  },
-  {
-   "id": "literacy_subnational",
-   "label": "Literacy",
-   "category": "education",
-   "units": "rate",
-   "source_type": "census",
-   "geo_levels": [
-    "department",
-    "national",
-    "province"
-   ],
-   "n_variables": 28,
-   "n_observations": 677
-  },
-  {
-   "id": "macroeconomic_indicators",
-   "label": "Macroeconomic indicators",
-   "category": "national_accounts",
-   "units": "rate",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 14,
-   "n_observations": 50
-  },
-  {
-   "id": "malnutrition_indicators",
-   "label": "Malnutrition indicators",
-   "category": "labor",
-   "units": "pct",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 5,
-   "n_observations": 60
-  },
-  {
-   "id": "marital_status_subnational",
-   "label": "Marital status",
-   "category": "demographics",
-   "units": "count",
-   "source_type": "census",
-   "geo_levels": [
-    "national",
-    "province"
-   ],
-   "n_variables": 14,
-   "n_observations": 234
-  },
-  {
-   "id": "marriages_age_cohort",
-   "label": "Marriages by age cohort",
-   "category": "demographics",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "national",
-    "province"
-   ],
-   "n_variables": 18,
-   "n_observations": 855
-  },
-  {
-   "id": "migration_internal",
-   "label": "Internal migration",
-   "category": "demographics",
-   "units": "count",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national",
-    "province",
-    "region"
-   ],
-   "n_variables": 10,
-   "n_observations": 303
-  },
-  {
-   "id": "military_force_count",
-   "label": "Military force counts",
-   "category": "military",
-   "units": "count",
-   "source_type": "memoria",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 51,
-   "n_observations": 387
-  },
-  {
-   "id": "mining_establishments",
-   "label": "Mining establishments by class",
-   "category": "mining",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "department",
-    "province"
-   ],
-   "n_variables": 19,
-   "n_observations": 84
-  },
-  {
-   "id": "mining_production_pesos_oro",
-   "label": "Mining production",
-   "category": "mining",
-   "units": "currency_pesos_oro_18d",
-   "source_type": "anuario",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 5,
-   "n_observations": 66
-  },
-  {
-   "id": "ministry_budget_1845_1878",
-   "label": "Ministry budget allocations",
-   "category": "fiscal",
-   "units": "currency_pesos",
-   "source_type": "sinopsis",
-   "geo_levels": [
-    "national",
-    "province"
-   ],
-   "n_variables": 24,
-   "n_observations": 2125
-  },
-  {
-   "id": "monetary_minting",
-   "label": "Mint receipts and monetary aggregates",
-   "category": "fiscal",
-   "units": "currency_pesos",
-   "source_type": "memoria",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 3,
-   "n_observations": 196
-  },
-  {
-   "id": "mortality_categorical",
-   "label": "Mortality by cause / category",
-   "category": "demographics",
-   "units": "rate",
-   "source_type": "anuario",
-   "geo_levels": [
-    "national",
-    "province"
-   ],
-   "n_variables": 23,
-   "n_observations": 172
-  },
-  {
-   "id": "mortality_natality_long_series",
-   "label": "Mortality / natality long series",
-   "category": "demographics",
-   "units": "rate",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national",
-    "province"
-   ],
-   "n_variables": 95,
-   "n_observations": 5104
-  },
-  {
-   "id": "municipal_finance",
-   "label": "Municipal finance",
-   "category": "fiscal",
-   "units": "currency_pesos",
-   "source_type": "sinopsis",
-   "geo_levels": [
-    "commune",
-    "department",
-    "municipality",
-    "national",
-    "province"
-   ],
-   "n_variables": 40,
-   "n_observations": 4244
-  },
-  {
-   "id": "natality_categorical",
-   "label": "Natality / birth rate categorical",
-   "category": "demographics",
-   "units": "rate",
-   "source_type": "anuario",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 2,
-   "n_observations": 444
-  },
-  {
-   "id": "national_accounts_numbered",
-   "label": "National accounts numbered Spanish categories",
-   "category": "national_accounts",
-   "units": "currency_pesos",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 17,
-   "n_observations": 240
-  },
-  {
-   "id": "occupation_categories_subnational",
-   "label": "Occupation aggregates",
-   "category": "labor",
-   "units": "count",
-   "source_type": "census",
-   "geo_levels": [
-    "department"
-   ],
-   "n_variables": 19,
-   "n_observations": 628
-  },
-  {
-   "id": "occupations_canonical_subnational",
-   "label": "Occupations by area",
-   "category": "labor",
-   "units": "count",
-   "source_type": "census",
-   "geo_levels": [
-    "department",
-    "province"
-   ],
-   "n_variables": 7,
-   "n_observations": 8715
-  },
-  {
-   "id": "occupations_profesion_subnational",
-   "label": "Detailed occupations",
-   "category": "labor",
-   "units": "count",
-   "source_type": "census",
-   "geo_levels": [
-    "national",
-    "province"
-   ],
-   "n_variables": 1884,
-   "n_observations": 10460
-  },
-  {
-   "id": "occupations_year_prefix_19c",
-   "label": "Occupations panel year-prefix 19c",
-   "category": "labor",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "province"
-   ],
-   "n_variables": 76,
-   "n_observations": 1436
-  },
-  {
-   "id": "police_subnational",
-   "label": "Police force subnational",
-   "category": "justice",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "commune",
-    "department"
-   ],
-   "n_variables": 4,
-   "n_observations": 206
-  },
-  {
-   "id": "population_density",
-   "label": "Population density",
-   "category": "demographics",
-   "units": "rate",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 1,
-   "n_observations": 3
-  },
-  {
-   "id": "population_growth",
-   "label": "Population growth",
-   "category": "demographics",
-   "units": "rate",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 2,
-   "n_observations": 888
-  },
-  {
-   "id": "population_subset_demographic",
-   "label": "Population subsets",
-   "category": "demographics",
-   "units": "count",
-   "source_type": "census",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 35,
-   "n_observations": 186
-  },
-  {
-   "id": "port_shipping_volume",
-   "label": "Port shipping volume",
-   "category": "trade",
-   "units": "count",
-   "source_type": "memoria",
-   "geo_levels": [
-    "city",
-    "national"
-   ],
-   "n_variables": 7,
-   "n_observations": 686
-  },
-  {
-   "id": "post_offices",
-   "label": "Post offices",
-   "category": "infrastructure",
-   "units": "count",
-   "source_type": "sinopsis",
-   "geo_levels": [
-    "department"
-   ],
-   "n_variables": 4,
-   "n_observations": 96
-  },
-  {
-   "id": "postal_volume",
-   "label": "Postal volume",
-   "category": "infrastructure",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "national",
-    "province"
-   ],
-   "n_variables": 65,
-   "n_observations": 380
-  },
-  {
-   "id": "prisons",
-   "label": "Prison / corrections",
-   "category": "justice",
-   "units": "count",
-   "source_type": "memoria",
-   "geo_levels": [
-    "city",
-    "national",
-    "province"
-   ],
-   "n_variables": 101,
-   "n_observations": 1872
-  },
-  {
-   "id": "production_categorical",
-   "label": "Production categories",
-   "category": "mining",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "national",
-    "province"
-   ],
-   "n_variables": 12,
-   "n_observations": 135
-  },
-  {
-   "id": "provincial_gdp_share_1966_1970",
-   "label": "Provincial GDP shares and growth",
-   "category": "national_accounts",
-   "units": "pct",
-   "source_type": "compiled",
-   "geo_levels": [
-    "province",
-    "region"
-   ],
-   "n_variables": 4,
-   "n_observations": 326
-  },
-  {
-   "id": "public_debt",
-   "label": "Public debt",
-   "category": "fiscal",
-   "units": "currency_pesos",
-   "source_type": "memoria",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 84,
-   "n_observations": 3115
-  },
-  {
-   "id": "public_employment_subnational",
-   "label": "Public employment per capita",
-   "category": "labor",
-   "units": "rate",
-   "source_type": "external_academic",
-   "geo_levels": [
-    "department",
-    "province"
-   ],
-   "n_variables": 1,
-   "n_observations": 444
-  },
-  {
-   "id": "railways",
-   "label": "Railways",
-   "category": "infrastructure",
-   "units": "currency_pesos",
-   "source_type": "memoria",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 26,
-   "n_observations": 100
-  },
-  {
-   "id": "real_income_sectoral",
-   "label": "Real income by sector",
-   "category": "mining",
-   "units": "currency_pesos_1995",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 12,
-   "n_observations": 308
-  },
-  {
-   "id": "religion_subnational",
-   "label": "Religion subnational",
-   "category": "religion",
-   "units": "count",
-   "source_type": "census",
-   "geo_levels": [
-    "national",
-    "province"
-   ],
-   "n_variables": 18,
-   "n_observations": 165
-  },
-  {
-   "id": "rural_urban_share_long_series",
-   "label": "Rural/urban population share long series",
-   "category": "demographics",
-   "units": "pct",
-   "source_type": "compiled",
-   "geo_levels": [
-    "macro_region",
-    "national",
-    "province"
-   ],
-   "n_variables": 13,
-   "n_observations": 2264
-  },
-  {
-   "id": "school_enrollment_subnational",
-   "label": "School enrollment",
-   "category": "education",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "department",
-    "national",
-    "province"
-   ],
-   "n_variables": 10,
-   "n_observations": 492
-  },
-  {
-   "id": "schools_count_subnational",
-   "label": "Schools",
-   "category": "education",
-   "units": "count",
-   "source_type": "census",
-   "geo_levels": [
-    "department"
-   ],
-   "n_variables": 5,
-   "n_observations": 81
-  },
-  {
-   "id": "schools_subnational_monograph",
-   "label": "Schools by department",
-   "category": "education",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "department",
-    "province"
-   ],
-   "n_variables": 7,
-   "n_observations": 70
-  },
-  {
-   "id": "secondary_education_panel",
-   "label": "Secondary education panel",
-   "category": "education",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 19,
-   "n_observations": 38
-  },
-  {
-   "id": "social_spending",
-   "label": "Government social spending",
-   "category": "health",
-   "units": "currency_pesos",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national",
-    "province"
-   ],
-   "n_variables": 18,
-   "n_observations": 320
-  },
-  {
-   "id": "state_capacity_1899_dept",
-   "label": "Dept state capacity 1899",
-   "category": "politics",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "commune"
-   ],
-   "n_variables": 8,
-   "n_observations": 1330
-  },
-  {
-   "id": "state_ministers_1865_1897",
-   "label": "Ministerial budgets 1865-1897",
-   "category": "fiscal",
-   "units": "currency_pesos",
-   "source_type": "memoria",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 11,
-   "n_observations": 590
-  },
-  {
-   "id": "state_officials_named",
-   "label": "Named state officials",
-   "category": "politics",
-   "units": "count",
-   "source_type": "memoria",
-   "geo_levels": [
-    "department"
-   ],
-   "n_variables": 5,
-   "n_observations": 1049
-  },
-  {
-   "id": "state_owned_enterprises",
-   "label": "State-owned enterprise share of sector",
-   "category": "infrastructure",
-   "units": "pct",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 7,
-   "n_observations": 26
-  },
-  {
-   "id": "subnational_population_lowercase",
-   "label": "Subnational population",
-   "category": "demographics",
-   "units": "count",
-   "source_type": "census",
-   "geo_levels": [
-    "department",
-    "national",
-    "nationality",
-    "province",
-    "religion"
-   ],
-   "n_variables": 110,
-   "n_observations": 4362
-  },
-  {
-   "id": "subnational_population_titled",
-   "label": "Subnational population, Spanish title-case columns",
-   "category": "demographics",
-   "units": "count",
-   "source_type": "census",
-   "geo_levels": [
-    "department",
-    "national",
-    "province"
-   ],
-   "n_variables": 51,
-   "n_observations": 3971
-  },
-  {
-   "id": "tariff_rates",
-   "label": "Tariff rates",
-   "category": "fiscal",
-   "units": "pct",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 3,
-   "n_observations": 566
-  },
-  {
-   "id": "tax_landholding",
-   "label": "Land tax: contribución, arrears, delinquency, compliance",
-   "category": "fiscal",
-   "units": "currency_pesos",
-   "source_type": "compiled",
-   "geo_levels": [
-    "department",
-    "national",
-    "province"
-   ],
-   "n_variables": 8,
-   "n_observations": 2398
-  },
-  {
-   "id": "total_population_subnational",
-   "label": "Total population",
-   "category": "demographics",
-   "units": "count",
-   "source_type": "census",
-   "geo_levels": [
-    "commune",
-    "department",
-    "municipality",
-    "national",
-    "province",
-    "religion"
-   ],
-   "n_variables": 10,
-   "n_observations": 7233
-  },
-  {
-   "id": "trade_exports",
-   "label": "Exports",
-   "category": "trade",
-   "units": "currency_pesos",
-   "source_type": "memoria",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 9,
-   "n_observations": 400
-  },
-  {
-   "id": "trade_imports",
-   "label": "Imports",
-   "category": "trade",
-   "units": "currency_pesos",
-   "source_type": "memoria",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 26,
-   "n_observations": 3742
-  },
-  {
-   "id": "trade_total_categorical",
-   "label": "Total trade and trade categories",
-   "category": "trade",
-   "units": "currency_pesos",
-   "source_type": "memoria",
-   "geo_levels": [
-    "city",
-    "national"
-   ],
-   "n_variables": 25,
-   "n_observations": 742
-  },
-  {
-   "id": "transport_1935_province",
-   "label": "Transport 1935 province",
-   "category": "infrastructure",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "national",
-    "province"
-   ],
-   "n_variables": 20,
-   "n_observations": 2740
-  },
-  {
-   "id": "unemployment_quarterly_sectoral",
-   "label": "Unemployment by sector",
-   "category": "labor",
-   "units": "count",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 932,
-   "n_observations": 1181
-  },
-  {
-   "id": "urban_rural_population_subnational",
-   "label": "Urban and rural population",
-   "category": "demographics",
-   "units": "count",
-   "source_type": "census",
-   "geo_levels": [
-    "commune",
-    "department",
-    "national",
-    "province"
-   ],
-   "n_variables": 4,
-   "n_observations": 2182
-  },
-  {
-   "id": "urbanization_share",
-   "label": "Urbanization share",
-   "category": "demographics",
-   "units": "pct",
-   "source_type": "compiled",
-   "geo_levels": [
-    "municipality",
-    "national",
-    "province"
-   ],
-   "n_variables": 9,
-   "n_observations": 673
-  },
-  {
-   "id": "vital_statistics_1858_province",
-   "label": "Vital statistics 1858",
-   "category": "demographics",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "national",
-    "province"
-   ],
-   "n_variables": 65,
-   "n_observations": 934
-  },
-  {
-   "id": "vital_statistics_subnational",
-   "label": "Vital statistics",
-   "category": "demographics",
-   "units": "count",
-   "source_type": "anuario",
-   "geo_levels": [
-    "department",
-    "national"
-   ],
-   "n_variables": 16,
-   "n_observations": 806
-  },
-  {
-   "id": "wages_official",
-   "label": "Official salaries",
-   "category": "labor",
-   "units": "currency_pesos",
-   "source_type": "memoria",
-   "geo_levels": [
-    "national"
-   ],
-   "n_variables": 2,
-   "n_observations": 94
-  },
-  {
-   "id": "wages_sectoral",
-   "label": "Wages by economic sector",
-   "category": "labor",
-   "units": "currency_pesos_1995",
-   "source_type": "compiled",
-   "geo_levels": [
-    "national",
-    "region"
-   ],
-   "n_variables": 28,
-   "n_observations": 844
-  },
-  {
-   "id": "epidemic_vaccination",
-   "label": "Smallpox vaccination and epidemic mortality",
-   "category": "health",
-   "units": "count",
-   "source_type": "memoria",
-   "geo_levels": [
-    "department"
-   ],
-   "n_variables": 3,
-   "n_observations": 0
-  },
-  {
-   "id": "business_licences",
-   "label": "Business licences",
-   "category": "fiscal",
-   "units": "count",
-   "source_type": "memoria",
-   "geo_levels": [
-    "province"
-   ],
-   "n_variables": 1,
-   "n_observations": 0
-  }
- ]
+  "generated": "2026-05-17",
+  "categories": [
+    {
+      "id": "demographics",
+      "label": "Demographics & Population",
+      "description": "Population counts, vital statistics, urbanization, migration",
+      "n_families": 26,
+      "n_observations": 35170
+    },
+    {
+      "id": "fiscal",
+      "label": "Fiscal & Public Finance",
+      "description": "Revenue, expenditure, debt, customs, budget, taxes",
+      "n_families": 22,
+      "n_observations": 42205
+    },
+    {
+      "id": "trade",
+      "label": "Trade & Commerce",
+      "description": "Exports, imports, trade openness, commercial activity",
+      "n_families": 10,
+      "n_observations": 19316
+    },
+    {
+      "id": "education",
+      "label": "Education",
+      "description": "Schools, enrollment, literacy, secondary education",
+      "n_families": 14,
+      "n_observations": 5220
+    },
+    {
+      "id": "agriculture",
+      "label": "Agriculture & Land",
+      "description": "Crops, livestock, estates, agrarian labor, land tenure",
+      "n_families": 10,
+      "n_observations": 24998
+    },
+    {
+      "id": "mining",
+      "label": "Mining & Industry",
+      "description": "Mining production, industrial output, manufacturing",
+      "n_families": 5,
+      "n_observations": 9465
+    },
+    {
+      "id": "labor",
+      "label": "Labor & Employment",
+      "description": "Workforce, occupations, employment, wages, disputes",
+      "n_families": 17,
+      "n_observations": 40426
+    },
+    {
+      "id": "infrastructure",
+      "label": "Infrastructure & Transport",
+      "description": "Railways, telegraph, post, roads, housing",
+      "n_families": 7,
+      "n_observations": 4008
+    },
+    {
+      "id": "justice",
+      "label": "Justice & Security",
+      "description": "Courts, crime, police, prisons, juvenile justice",
+      "n_families": 6,
+      "n_observations": 2866
+    },
+    {
+      "id": "politics",
+      "label": "Politics & Elections",
+      "description": "Elections, suffrage, legislators, governance",
+      "n_families": 7,
+      "n_observations": 7555
+    },
+    {
+      "id": "health",
+      "label": "Health & Hospitals",
+      "description": "Hospital admissions, public health, social spending",
+      "n_families": 2,
+      "n_observations": 3135
+    },
+    {
+      "id": "national_accounts",
+      "label": "National Accounts",
+      "description": "GDP, national income, investment, monetary aggregates",
+      "n_families": 7,
+      "n_observations": 18455
+    },
+    {
+      "id": "religion",
+      "label": "Religion & Society",
+      "description": "Religious affiliation, clergy",
+      "n_families": 1,
+      "n_observations": 165
+    },
+    {
+      "id": "military",
+      "label": "Military",
+      "description": "Armed forces, military spending",
+      "n_families": 1,
+      "n_observations": 387
+    }
+  ],
+  "families": [
+    {
+      "id": "age_specific_fertility",
+      "label": "Age-specific fertility rates",
+      "category": "demographics",
+      "units": "rate",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 27,
+      "n_observations": 225
+    },
+    {
+      "id": "agrarian_labor_indicators",
+      "label": "Agrarian labor indicators",
+      "category": "agriculture",
+      "units": "count",
+      "source_type": "external_academic",
+      "geo_levels": [
+        "commune",
+        "department",
+        "municipality"
+      ],
+      "n_variables": 4,
+      "n_observations": 1007
+    },
+    {
+      "id": "agricultural_census_1930_commune",
+      "label": "Agricultural holdings, commune level",
+      "category": "agriculture",
+      "units": "count",
+      "source_type": "census",
+      "geo_levels": [
+        "commune",
+        "comuna",
+        "department"
+      ],
+      "n_variables": 16,
+      "n_observations": 7251
+    },
+    {
+      "id": "agriculture_province_1924",
+      "label": "Agriculture province 1924",
+      "category": "agriculture",
+      "units": "physical_quantity",
+      "source_type": "anuario",
+      "geo_levels": [
+        "province"
+      ],
+      "n_variables": 7,
+      "n_observations": 372
+    },
+    {
+      "id": "agriculture_province_1935",
+      "label": "Agriculture/livestock province 1935",
+      "category": "agriculture",
+      "units": "physical_quantity",
+      "source_type": "anuario",
+      "geo_levels": [
+        "department",
+        "province"
+      ],
+      "n_variables": 30,
+      "n_observations": 1013
+    },
+    {
+      "id": "anuario_1875_trailing_year",
+      "label": "Agricultural statistics 1875",
+      "category": "agriculture",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "province"
+      ],
+      "n_variables": 6,
+      "n_observations": 354
+    },
+    {
+      "id": "auto_alumnos_h_yyyy",
+      "label": "Auto Alumnos H Yyyy",
+      "category": "education",
+      "units": "count",
+      "source_type": "compiled",
+      "geo_levels": [
+        "province"
+      ],
+      "n_variables": 4,
+      "n_observations": 80
+    },
+    {
+      "id": "auto_alumnos_m_yyyy",
+      "label": "Auto Alumnos M Yyyy",
+      "category": "education",
+      "units": "count",
+      "source_type": "compiled",
+      "geo_levels": [
+        "province"
+      ],
+      "n_variables": 4,
+      "n_observations": 80
+    },
+    {
+      "id": "auto_alumnos_total_yyyy",
+      "label": "Auto Alumnos Total Yyyy",
+      "category": "education",
+      "units": "count",
+      "source_type": "compiled",
+      "geo_levels": [
+        "province"
+      ],
+      "n_variables": 4,
+      "n_observations": 80
+    },
+    {
+      "id": "auto_entrada_periodo_yyyy_yyyy_ordinaria_pesos",
+      "label": "Auto Entrada Periodo Yyyy Yyyy Ordinaria Pesos",
+      "category": "fiscal",
+      "units": "count",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 3,
+      "n_observations": 6
+    },
+    {
+      "id": "auto_escuelas_h_yyyy",
+      "label": "Auto Escuelas H Yyyy",
+      "category": "education",
+      "units": "count",
+      "source_type": "compiled",
+      "geo_levels": [
+        "province"
+      ],
+      "n_variables": 4,
+      "n_observations": 80
+    },
+    {
+      "id": "auto_escuelas_m_yyyy",
+      "label": "Auto Escuelas M Yyyy",
+      "category": "education",
+      "units": "count",
+      "source_type": "compiled",
+      "geo_levels": [
+        "province"
+      ],
+      "n_variables": 4,
+      "n_observations": 80
+    },
+    {
+      "id": "auto_escuelas_total_yyyy",
+      "label": "Auto Escuelas Total Yyyy",
+      "category": "education",
+      "units": "count",
+      "source_type": "compiled",
+      "geo_levels": [
+        "province"
+      ],
+      "n_variables": 4,
+      "n_observations": 80
+    },
+    {
+      "id": "auto_gasto_gobierno_yyyy",
+      "label": "Auto Gasto Gobierno Yyyy",
+      "category": "fiscal",
+      "units": "count",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 3,
+      "n_observations": 7
+    },
+    {
+      "id": "auto_pop_censal_yyyy",
+      "label": "Auto Pop Censal Yyyy",
+      "category": "demographics",
+      "units": "count",
+      "source_type": "compiled",
+      "geo_levels": [
+        "department",
+        "national",
+        "province"
+      ],
+      "n_variables": 8,
+      "n_observations": 1036
+    },
+    {
+      "id": "banking_subnational",
+      "label": "Banking offices by province",
+      "category": "trade",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "national",
+        "province"
+      ],
+      "n_variables": 11,
+      "n_observations": 400
+    },
+    {
+      "id": "bankruptcies_subnational",
+      "label": "Bankruptcies declared by province",
+      "category": "trade",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "national",
+        "province"
+      ],
+      "n_variables": 2,
+      "n_observations": 120
+    },
+    {
+      "id": "british_foreign_office_fiscal_gbp",
+      "label": "Fiscal accounts in pounds sterling",
+      "category": "fiscal",
+      "units": "currency_gbp",
+      "source_type": "external_academic",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 21,
+      "n_observations": 1702
+    },
+    {
+      "id": "british_foreign_office_sof",
+      "label": "British Foreign Office",
+      "category": "fiscal",
+      "units": "currency_gbp",
+      "source_type": "external_academic",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 12,
+      "n_observations": 202
+    },
+    {
+      "id": "budget",
+      "label": "Annual budget",
+      "category": "fiscal",
+      "units": "currency_pesos",
+      "source_type": "memoria",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 4,
+      "n_observations": 101
+    },
+    {
+      "id": "chilean_fiscal_pesos",
+      "label": "Chilean fiscal: customs / tax / revenue in pesos",
+      "category": "fiscal",
+      "units": "currency_pesos",
+      "source_type": "memoria",
+      "geo_levels": [
+        "city",
+        "national"
+      ],
+      "n_variables": 21,
+      "n_observations": 1959
+    },
+    {
+      "id": "church_records_baptisms",
+      "label": "Baptisms",
+      "category": "demographics",
+      "units": "count",
+      "source_type": "compiled",
+      "geo_levels": [
+        "department"
+      ],
+      "n_variables": 2,
+      "n_observations": 51
+    },
+    {
+      "id": "church_records_deaths",
+      "label": "Deaths",
+      "category": "demographics",
+      "units": "count",
+      "source_type": "compiled",
+      "geo_levels": [
+        "department"
+      ],
+      "n_variables": 2,
+      "n_observations": 25
+    },
+    {
+      "id": "church_records_marriages",
+      "label": "Marriages",
+      "category": "demographics",
+      "units": "count",
+      "source_type": "compiled",
+      "geo_levels": [
+        "department"
+      ],
+      "n_variables": 2,
+      "n_observations": 49
+    },
+    {
+      "id": "court_statistics",
+      "label": "Court statistics",
+      "category": "justice",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "province"
+      ],
+      "n_variables": 7,
+      "n_observations": 298
+    },
+    {
+      "id": "crime_statistics_1859",
+      "label": "Crime statistics 1859",
+      "category": "justice",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "province"
+      ],
+      "n_variables": 11,
+      "n_observations": 160
+    },
+    {
+      "id": "crime_statistics_criminales",
+      "label": "Crime statistics",
+      "category": "justice",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 155,
+      "n_observations": 310
+    },
+    {
+      "id": "customs_revenue",
+      "label": "Customs revenue",
+      "category": "fiscal",
+      "units": "currency_pesos",
+      "source_type": "memoria",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 3,
+      "n_observations": 98
+    },
+    {
+      "id": "demographic_indices_1976",
+      "label": "Demographic indices",
+      "category": "demographics",
+      "units": "rate",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national",
+        "region"
+      ],
+      "n_variables": 3,
+      "n_observations": 45
+    },
+    {
+      "id": "dlw_commodity_production",
+      "label": "Commodity production volumes",
+      "category": "agriculture",
+      "units": "physical_quantity",
+      "source_type": "compiled",
+      "geo_levels": [
+        "department",
+        "national",
+        "province"
+      ],
+      "n_variables": 19,
+      "n_observations": 5857
+    },
+    {
+      "id": "dlw_demographics_capitalized",
+      "label": "Demographic indicators",
+      "category": "demographics",
+      "units": "rate",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 8,
+      "n_observations": 2839
+    },
+    {
+      "id": "dlw_exports_categorical_lower",
+      "label": "Exports by sector",
+      "category": "trade",
+      "units": "currency_usd",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 8,
+      "n_observations": 3648
+    },
+    {
+      "id": "dlw_fiscal_capitalized",
+      "label": "Fiscal revenue and expenditure",
+      "category": "fiscal",
+      "units": "currency_pesos_1995",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 35,
+      "n_observations": 9520
+    },
+    {
+      "id": "dlw_fiscal_share_series",
+      "label": "Fiscal aggregates as shares of GDP",
+      "category": "fiscal",
+      "units": "pct",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 13,
+      "n_observations": 6573
+    },
+    {
+      "id": "dlw_gdp_series",
+      "label": "Gross domestic product",
+      "category": "national_accounts",
+      "units": "currency_pesos_1995",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 6,
+      "n_observations": 3339
+    },
+    {
+      "id": "dlw_imports_categorical_lower",
+      "label": "Imports by category",
+      "category": "trade",
+      "units": "currency_usd",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 8,
+      "n_observations": 2256
+    },
+    {
+      "id": "dlw_investment_capitalized",
+      "label": "Investment and capital formation",
+      "category": "national_accounts",
+      "units": "currency_pesos_1995",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 13,
+      "n_observations": 1344
+    },
+    {
+      "id": "dlw_labor_capitalized",
+      "label": "Labor force",
+      "category": "labor",
+      "units": "count",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 21,
+      "n_observations": 6642
+    },
+    {
+      "id": "dlw_labor_force_national",
+      "label": "Labor force shares by sector",
+      "category": "labor",
+      "units": "pct",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 13,
+      "n_observations": 7254
+    },
+    {
+      "id": "dlw_monetary_capitalized",
+      "label": "Monetary aggregates and price indices",
+      "category": "national_accounts",
+      "units": "index",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 37,
+      "n_observations": 11520
+    },
+    {
+      "id": "dlw_pib_capitalized",
+      "label": "GDP, nominal, real, and sectoral",
+      "category": "mining",
+      "units": "currency_pesos_1995",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 25,
+      "n_observations": 8872
+    },
+    {
+      "id": "dlw_trade_series",
+      "label": "Exports and imports",
+      "category": "trade",
+      "units": "currency_pesos_1995",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 13,
+      "n_observations": 7254
+    },
+    {
+      "id": "economic_activity_provincial",
+      "label": "Provincial economic activity",
+      "category": "national_accounts",
+      "units": "count",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national",
+        "province"
+      ],
+      "n_variables": 15,
+      "n_observations": 1636
+    },
+    {
+      "id": "economically_active_population",
+      "label": "Economically active population",
+      "category": "labor",
+      "units": "count",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 25,
+      "n_observations": 472
+    },
+    {
+      "id": "education_enrollment_matricula",
+      "label": "Education enrollment",
+      "category": "education",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "national",
+        "province"
+      ],
+      "n_variables": 13,
+      "n_observations": 2954
+    },
+    {
+      "id": "education_matricula_extended",
+      "label": "Enrollment and attendance",
+      "category": "education",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "department",
+        "national",
+        "province"
+      ],
+      "n_variables": 9,
+      "n_observations": 308
+    },
+    {
+      "id": "education_spending",
+      "label": "Education expenditure",
+      "category": "education",
+      "units": "currency_pesos",
+      "source_type": "memoria",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 15,
+      "n_observations": 120
+    },
+    {
+      "id": "electoral_municipal_subnational",
+      "label": "Municipal elections",
+      "category": "politics",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "department",
+        "national"
+      ],
+      "n_variables": 3,
+      "n_observations": 220
+    },
+    {
+      "id": "electoral_participation_1935_1970_national",
+      "label": "Electoral participation national 1935-1970",
+      "category": "politics",
+      "units": "count",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 6,
+      "n_observations": 93
+    },
+    {
+      "id": "electoral_presidential_subnational",
+      "label": "Presidential-elector elections",
+      "category": "politics",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "department",
+        "national"
+      ],
+      "n_variables": 3,
+      "n_observations": 219
+    },
+    {
+      "id": "electoral_subnational",
+      "label": "Electoral panel",
+      "category": "politics",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "department",
+        "national",
+        "province"
+      ],
+      "n_variables": 31,
+      "n_observations": 4506
+    },
+    {
+      "id": "employment_quarterly_sectoral",
+      "label": "Employment by sector",
+      "category": "labor",
+      "units": "count",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 538,
+      "n_observations": 770
+    },
+    {
+      "id": "ethnicity_indigenous",
+      "label": "Ethnicity / indigenous population",
+      "category": "demographics",
+      "units": "count",
+      "source_type": "census",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 3,
+      "n_observations": 10
+    },
+    {
+      "id": "exchange_rate",
+      "label": "Exchange rate",
+      "category": "trade",
+      "units": "rate",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 1,
+      "n_observations": 68
+    },
+    {
+      "id": "expenditure_per_capita",
+      "label": "Expenditure per capita",
+      "category": "fiscal",
+      "units": "currency_pesos",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 2,
+      "n_observations": 558
+    },
+    {
+      "id": "export_duties",
+      "label": "Export duties by commodity",
+      "category": "fiscal",
+      "units": "currency_pesos",
+      "source_type": "memoria",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 12,
+      "n_observations": 45
+    },
+    {
+      "id": "fiscal_categorical_lower",
+      "label": "Fiscal categorical lowercase",
+      "category": "fiscal",
+      "units": "currency_pesos",
+      "source_type": "memoria",
+      "geo_levels": [
+        "national",
+        "province"
+      ],
+      "n_variables": 20,
+      "n_observations": 148
+    },
+    {
+      "id": "fiscal_expenditure_categorical",
+      "label": "Fiscal expenditure",
+      "category": "fiscal",
+      "units": "currency_pesos",
+      "source_type": "memoria",
+      "geo_levels": [
+        "department",
+        "municipality",
+        "national",
+        "province"
+      ],
+      "n_variables": 86,
+      "n_observations": 5250
+    },
+    {
+      "id": "fiscal_revenue_categorical",
+      "label": "Fiscal revenue",
+      "category": "fiscal",
+      "units": "currency_pesos",
+      "source_type": "memoria",
+      "geo_levels": [
+        "department",
+        "national",
+        "province"
+      ],
+      "n_variables": 27,
+      "n_observations": 1242
+    },
+    {
+      "id": "government_accounts",
+      "label": "Government accounts",
+      "category": "fiscal",
+      "units": "currency_pesos",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 183,
+      "n_observations": 1560
+    },
+    {
+      "id": "hospital_statistics",
+      "label": "Hospital statistics",
+      "category": "health",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "city",
+        "department",
+        "national",
+        "province"
+      ],
+      "n_variables": 43,
+      "n_observations": 2815
+    },
+    {
+      "id": "household_consumption_indicators",
+      "label": "Household consumption indicators",
+      "category": "labor",
+      "units": "pct",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 86,
+      "n_observations": 167
+    },
+    {
+      "id": "household_dwellings",
+      "label": "Household dwellings panel",
+      "category": "infrastructure",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 12,
+      "n_observations": 26
+    },
+    {
+      "id": "housing_surface",
+      "label": "Building and housing surface",
+      "category": "infrastructure",
+      "units": "physical_quantity",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 13,
+      "n_observations": 640
+    },
+    {
+      "id": "juvenile_justice",
+      "label": "Juvenile justice",
+      "category": "justice",
+      "units": "count",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 2,
+      "n_observations": 20
+    },
+    {
+      "id": "labor_disputes",
+      "label": "Labor disputes",
+      "category": "labor",
+      "units": "count",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 4,
+      "n_observations": 4
+    },
+    {
+      "id": "labor_force_participation_extended",
+      "label": "Labor force participation extended",
+      "category": "labor",
+      "units": "count",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 43,
+      "n_observations": 164
+    },
+    {
+      "id": "labor_force_quarterly_sectoral",
+      "label": "Labor force by sector",
+      "category": "labor",
+      "units": "count",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 1086,
+      "n_observations": 1091
+    },
+    {
+      "id": "landholding_avaluo",
+      "label": "Landholding: avaluo and Rol",
+      "category": "agriculture",
+      "units": "currency_pesos",
+      "source_type": "compiled",
+      "geo_levels": [
+        "constituency",
+        "department"
+      ],
+      "n_variables": 25,
+      "n_observations": 5980
+    },
+    {
+      "id": "landholding_extended",
+      "label": "Landholding extended",
+      "category": "agriculture",
+      "units": "count",
+      "source_type": "external_academic",
+      "geo_levels": [
+        "department",
+        "province"
+      ],
+      "n_variables": 17,
+      "n_observations": 1133
+    },
+    {
+      "id": "landholding_manorial",
+      "label": "Landholding: manorial classification",
+      "category": "agriculture",
+      "units": "boolean",
+      "source_type": "external_academic",
+      "geo_levels": [
+        "department"
+      ],
+      "n_variables": 3,
+      "n_observations": 789
+    },
+    {
+      "id": "landholding_sna",
+      "label": "Landholding: SNA estates 1874",
+      "category": "agriculture",
+      "units": "count",
+      "source_type": "external_academic",
+      "geo_levels": [
+        "department"
+      ],
+      "n_variables": 4,
+      "n_observations": 1242
+    },
+    {
+      "id": "legislators_province_1920",
+      "label": "Legislators by province 1920",
+      "category": "politics",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "province"
+      ],
+      "n_variables": 4,
+      "n_observations": 138
+    },
+    {
+      "id": "life_expectancy_provincial",
+      "label": "Life expectancy provincial",
+      "category": "demographics",
+      "units": "rate",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national",
+        "province",
+        "region"
+      ],
+      "n_variables": 12,
+      "n_observations": 276
+    },
+    {
+      "id": "literacy_subnational",
+      "label": "Literacy",
+      "category": "education",
+      "units": "rate",
+      "source_type": "census",
+      "geo_levels": [
+        "department",
+        "national",
+        "province"
+      ],
+      "n_variables": 28,
+      "n_observations": 677
+    },
+    {
+      "id": "macroeconomic_indicators",
+      "label": "Macroeconomic indicators",
+      "category": "national_accounts",
+      "units": "rate",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 14,
+      "n_observations": 50
+    },
+    {
+      "id": "malnutrition_indicators",
+      "label": "Malnutrition indicators",
+      "category": "labor",
+      "units": "pct",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 5,
+      "n_observations": 60
+    },
+    {
+      "id": "marital_status_subnational",
+      "label": "Marital status",
+      "category": "demographics",
+      "units": "count",
+      "source_type": "census",
+      "geo_levels": [
+        "national",
+        "province"
+      ],
+      "n_variables": 14,
+      "n_observations": 234
+    },
+    {
+      "id": "marriages_age_cohort",
+      "label": "Marriages by age cohort",
+      "category": "demographics",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "national",
+        "province"
+      ],
+      "n_variables": 18,
+      "n_observations": 855
+    },
+    {
+      "id": "migration_internal",
+      "label": "Internal migration",
+      "category": "demographics",
+      "units": "count",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national",
+        "province",
+        "region"
+      ],
+      "n_variables": 10,
+      "n_observations": 303
+    },
+    {
+      "id": "military_force_count",
+      "label": "Military force counts",
+      "category": "military",
+      "units": "count",
+      "source_type": "memoria",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 51,
+      "n_observations": 387
+    },
+    {
+      "id": "mining_establishments",
+      "label": "Mining establishments by class",
+      "category": "mining",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "department",
+        "province"
+      ],
+      "n_variables": 19,
+      "n_observations": 84
+    },
+    {
+      "id": "mining_production_pesos_oro",
+      "label": "Mining production",
+      "category": "mining",
+      "units": "currency_pesos_oro_18d",
+      "source_type": "anuario",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 5,
+      "n_observations": 66
+    },
+    {
+      "id": "ministry_budget_1845_1878",
+      "label": "Ministry budget allocations",
+      "category": "fiscal",
+      "units": "currency_pesos",
+      "source_type": "sinopsis",
+      "geo_levels": [
+        "national",
+        "province"
+      ],
+      "n_variables": 24,
+      "n_observations": 2125
+    },
+    {
+      "id": "monetary_minting",
+      "label": "Mint receipts and monetary aggregates",
+      "category": "fiscal",
+      "units": "currency_pesos",
+      "source_type": "memoria",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 3,
+      "n_observations": 196
+    },
+    {
+      "id": "mortality_categorical",
+      "label": "Mortality by cause / category",
+      "category": "demographics",
+      "units": "rate",
+      "source_type": "anuario",
+      "geo_levels": [
+        "national",
+        "province"
+      ],
+      "n_variables": 23,
+      "n_observations": 172
+    },
+    {
+      "id": "mortality_natality_long_series",
+      "label": "Mortality / natality long series",
+      "category": "demographics",
+      "units": "rate",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national",
+        "province"
+      ],
+      "n_variables": 95,
+      "n_observations": 5104
+    },
+    {
+      "id": "municipal_finance",
+      "label": "Municipal finance",
+      "category": "fiscal",
+      "units": "currency_pesos",
+      "source_type": "sinopsis",
+      "geo_levels": [
+        "commune",
+        "department",
+        "municipality",
+        "national",
+        "province"
+      ],
+      "n_variables": 40,
+      "n_observations": 4244
+    },
+    {
+      "id": "natality_categorical",
+      "label": "Natality / birth rate categorical",
+      "category": "demographics",
+      "units": "rate",
+      "source_type": "anuario",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 2,
+      "n_observations": 444
+    },
+    {
+      "id": "national_accounts_numbered",
+      "label": "National accounts numbered Spanish categories",
+      "category": "national_accounts",
+      "units": "currency_pesos",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 17,
+      "n_observations": 240
+    },
+    {
+      "id": "occupation_categories_subnational",
+      "label": "Occupation aggregates",
+      "category": "labor",
+      "units": "count",
+      "source_type": "census",
+      "geo_levels": [
+        "department"
+      ],
+      "n_variables": 19,
+      "n_observations": 628
+    },
+    {
+      "id": "occupations_canonical_subnational",
+      "label": "Occupations by area",
+      "category": "labor",
+      "units": "count",
+      "source_type": "census",
+      "geo_levels": [
+        "department",
+        "province"
+      ],
+      "n_variables": 7,
+      "n_observations": 8715
+    },
+    {
+      "id": "occupations_profesion_subnational",
+      "label": "Detailed occupations",
+      "category": "labor",
+      "units": "count",
+      "source_type": "census",
+      "geo_levels": [
+        "national",
+        "province"
+      ],
+      "n_variables": 1884,
+      "n_observations": 10460
+    },
+    {
+      "id": "occupations_year_prefix_19c",
+      "label": "Occupations panel year-prefix 19c",
+      "category": "labor",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "province"
+      ],
+      "n_variables": 76,
+      "n_observations": 1436
+    },
+    {
+      "id": "police_subnational",
+      "label": "Police force subnational",
+      "category": "justice",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "commune",
+        "department"
+      ],
+      "n_variables": 4,
+      "n_observations": 206
+    },
+    {
+      "id": "population_density",
+      "label": "Population density",
+      "category": "demographics",
+      "units": "rate",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 1,
+      "n_observations": 3
+    },
+    {
+      "id": "population_growth",
+      "label": "Population growth",
+      "category": "demographics",
+      "units": "rate",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 2,
+      "n_observations": 888
+    },
+    {
+      "id": "population_subset_demographic",
+      "label": "Population subsets",
+      "category": "demographics",
+      "units": "count",
+      "source_type": "census",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 35,
+      "n_observations": 186
+    },
+    {
+      "id": "port_shipping_volume",
+      "label": "Port shipping volume",
+      "category": "trade",
+      "units": "count",
+      "source_type": "memoria",
+      "geo_levels": [
+        "city",
+        "national"
+      ],
+      "n_variables": 7,
+      "n_observations": 686
+    },
+    {
+      "id": "post_offices",
+      "label": "Post offices",
+      "category": "infrastructure",
+      "units": "count",
+      "source_type": "sinopsis",
+      "geo_levels": [
+        "department"
+      ],
+      "n_variables": 4,
+      "n_observations": 96
+    },
+    {
+      "id": "postal_volume",
+      "label": "Postal volume",
+      "category": "infrastructure",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "national",
+        "province"
+      ],
+      "n_variables": 65,
+      "n_observations": 380
+    },
+    {
+      "id": "prisons",
+      "label": "Prison / corrections",
+      "category": "justice",
+      "units": "count",
+      "source_type": "memoria",
+      "geo_levels": [
+        "city",
+        "national",
+        "province"
+      ],
+      "n_variables": 101,
+      "n_observations": 1872
+    },
+    {
+      "id": "production_categorical",
+      "label": "Production categories",
+      "category": "mining",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "national",
+        "province"
+      ],
+      "n_variables": 12,
+      "n_observations": 135
+    },
+    {
+      "id": "provincial_gdp_share_1966_1970",
+      "label": "Provincial GDP shares and growth",
+      "category": "national_accounts",
+      "units": "pct",
+      "source_type": "compiled",
+      "geo_levels": [
+        "province",
+        "region"
+      ],
+      "n_variables": 4,
+      "n_observations": 326
+    },
+    {
+      "id": "public_debt",
+      "label": "Public debt",
+      "category": "fiscal",
+      "units": "currency_pesos",
+      "source_type": "memoria",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 84,
+      "n_observations": 3115
+    },
+    {
+      "id": "public_employment_subnational",
+      "label": "Public employment per capita",
+      "category": "labor",
+      "units": "rate",
+      "source_type": "external_academic",
+      "geo_levels": [
+        "department",
+        "province"
+      ],
+      "n_variables": 1,
+      "n_observations": 444
+    },
+    {
+      "id": "railways",
+      "label": "Railways",
+      "category": "infrastructure",
+      "units": "currency_pesos",
+      "source_type": "memoria",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 26,
+      "n_observations": 100
+    },
+    {
+      "id": "real_income_sectoral",
+      "label": "Real income by sector",
+      "category": "mining",
+      "units": "currency_pesos_1995",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 12,
+      "n_observations": 308
+    },
+    {
+      "id": "religion_subnational",
+      "label": "Religion subnational",
+      "category": "religion",
+      "units": "count",
+      "source_type": "census",
+      "geo_levels": [
+        "national",
+        "province"
+      ],
+      "n_variables": 18,
+      "n_observations": 165
+    },
+    {
+      "id": "rural_urban_share_long_series",
+      "label": "Rural/urban population share long series",
+      "category": "demographics",
+      "units": "pct",
+      "source_type": "compiled",
+      "geo_levels": [
+        "macro_region",
+        "national",
+        "province"
+      ],
+      "n_variables": 13,
+      "n_observations": 2264
+    },
+    {
+      "id": "school_enrollment_subnational",
+      "label": "School enrollment",
+      "category": "education",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "department",
+        "national",
+        "province"
+      ],
+      "n_variables": 10,
+      "n_observations": 492
+    },
+    {
+      "id": "schools_count_subnational",
+      "label": "Schools",
+      "category": "education",
+      "units": "count",
+      "source_type": "census",
+      "geo_levels": [
+        "department"
+      ],
+      "n_variables": 5,
+      "n_observations": 81
+    },
+    {
+      "id": "schools_subnational_monograph",
+      "label": "Schools by department",
+      "category": "education",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "department",
+        "province"
+      ],
+      "n_variables": 7,
+      "n_observations": 70
+    },
+    {
+      "id": "secondary_education_panel",
+      "label": "Secondary education panel",
+      "category": "education",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 19,
+      "n_observations": 38
+    },
+    {
+      "id": "social_spending",
+      "label": "Government social spending",
+      "category": "health",
+      "units": "currency_pesos",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national",
+        "province"
+      ],
+      "n_variables": 18,
+      "n_observations": 320
+    },
+    {
+      "id": "state_capacity_1899_dept",
+      "label": "Dept state capacity 1899",
+      "category": "politics",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "commune"
+      ],
+      "n_variables": 8,
+      "n_observations": 1330
+    },
+    {
+      "id": "state_ministers_1865_1897",
+      "label": "Ministerial budgets 1865-1897",
+      "category": "fiscal",
+      "units": "currency_pesos",
+      "source_type": "memoria",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 11,
+      "n_observations": 590
+    },
+    {
+      "id": "state_officials_named",
+      "label": "Named state officials",
+      "category": "politics",
+      "units": "count",
+      "source_type": "memoria",
+      "geo_levels": [
+        "department"
+      ],
+      "n_variables": 5,
+      "n_observations": 1049
+    },
+    {
+      "id": "state_owned_enterprises",
+      "label": "State-owned enterprise share of sector",
+      "category": "infrastructure",
+      "units": "pct",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 7,
+      "n_observations": 26
+    },
+    {
+      "id": "subnational_population_lowercase",
+      "label": "Subnational population",
+      "category": "demographics",
+      "units": "count",
+      "source_type": "census",
+      "geo_levels": [
+        "department",
+        "national",
+        "nationality",
+        "province",
+        "religion"
+      ],
+      "n_variables": 110,
+      "n_observations": 4362
+    },
+    {
+      "id": "subnational_population_titled",
+      "label": "Subnational population, Spanish title-case columns",
+      "category": "demographics",
+      "units": "count",
+      "source_type": "census",
+      "geo_levels": [
+        "department",
+        "national",
+        "province"
+      ],
+      "n_variables": 51,
+      "n_observations": 3971
+    },
+    {
+      "id": "tariff_rates",
+      "label": "Tariff rates",
+      "category": "fiscal",
+      "units": "pct",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 3,
+      "n_observations": 566
+    },
+    {
+      "id": "tax_landholding",
+      "label": "Land tax: contribución, arrears, delinquency, compliance",
+      "category": "fiscal",
+      "units": "currency_pesos",
+      "source_type": "compiled",
+      "geo_levels": [
+        "department",
+        "national",
+        "province"
+      ],
+      "n_variables": 8,
+      "n_observations": 2398
+    },
+    {
+      "id": "total_population_subnational",
+      "label": "Total population",
+      "category": "demographics",
+      "units": "count",
+      "source_type": "census",
+      "geo_levels": [
+        "commune",
+        "department",
+        "municipality",
+        "national",
+        "province",
+        "religion"
+      ],
+      "n_variables": 10,
+      "n_observations": 7233
+    },
+    {
+      "id": "trade_exports",
+      "label": "Exports",
+      "category": "trade",
+      "units": "currency_pesos",
+      "source_type": "memoria",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 9,
+      "n_observations": 400
+    },
+    {
+      "id": "trade_imports",
+      "label": "Imports",
+      "category": "trade",
+      "units": "currency_pesos",
+      "source_type": "memoria",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 26,
+      "n_observations": 3742
+    },
+    {
+      "id": "trade_total_categorical",
+      "label": "Total trade and trade categories",
+      "category": "trade",
+      "units": "currency_pesos",
+      "source_type": "memoria",
+      "geo_levels": [
+        "city",
+        "national"
+      ],
+      "n_variables": 25,
+      "n_observations": 742
+    },
+    {
+      "id": "transport_1935_province",
+      "label": "Transport 1935 province",
+      "category": "infrastructure",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "national",
+        "province"
+      ],
+      "n_variables": 20,
+      "n_observations": 2740
+    },
+    {
+      "id": "unemployment_quarterly_sectoral",
+      "label": "Unemployment by sector",
+      "category": "labor",
+      "units": "count",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 932,
+      "n_observations": 1181
+    },
+    {
+      "id": "urban_rural_population_subnational",
+      "label": "Urban and rural population",
+      "category": "demographics",
+      "units": "count",
+      "source_type": "census",
+      "geo_levels": [
+        "commune",
+        "department",
+        "national",
+        "province"
+      ],
+      "n_variables": 4,
+      "n_observations": 2182
+    },
+    {
+      "id": "urbanization_share",
+      "label": "Urbanization share",
+      "category": "demographics",
+      "units": "pct",
+      "source_type": "compiled",
+      "geo_levels": [
+        "municipality",
+        "national",
+        "province"
+      ],
+      "n_variables": 9,
+      "n_observations": 673
+    },
+    {
+      "id": "vital_statistics_1858_province",
+      "label": "Vital statistics 1858",
+      "category": "demographics",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "national",
+        "province"
+      ],
+      "n_variables": 65,
+      "n_observations": 934
+    },
+    {
+      "id": "vital_statistics_subnational",
+      "label": "Vital statistics",
+      "category": "demographics",
+      "units": "count",
+      "source_type": "anuario",
+      "geo_levels": [
+        "department",
+        "national"
+      ],
+      "n_variables": 16,
+      "n_observations": 806
+    },
+    {
+      "id": "wages_official",
+      "label": "Official salaries",
+      "category": "labor",
+      "units": "currency_pesos",
+      "source_type": "memoria",
+      "geo_levels": [
+        "national"
+      ],
+      "n_variables": 2,
+      "n_observations": 94
+    },
+    {
+      "id": "wages_sectoral",
+      "label": "Wages by economic sector",
+      "category": "labor",
+      "units": "currency_pesos_1995",
+      "source_type": "compiled",
+      "geo_levels": [
+        "national",
+        "region"
+      ],
+      "n_variables": 28,
+      "n_observations": 844
+    },
+    {
+      "id": "epidemic_vaccination",
+      "label": "Smallpox vaccination and epidemic mortality",
+      "category": "health",
+      "units": "count",
+      "source_type": "memoria",
+      "geo_levels": [
+        "department"
+      ],
+      "n_variables": 3,
+      "n_observations": 0
+    },
+    {
+      "id": "business_licences",
+      "label": "Business licences",
+      "category": "fiscal",
+      "units": "count",
+      "source_type": "memoria",
+      "geo_levels": [
+        "province"
+      ],
+      "n_variables": 1,
+      "n_observations": 0
+    }
+  ]
 }
