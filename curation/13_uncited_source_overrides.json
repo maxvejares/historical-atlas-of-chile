@@ -2,7 +2,8 @@
   "_meta": {
     "purpose": "Source attribution for the 104 published indicators that shipped with empty source_documents. ADDS citations only; never hides, retires, or changes visibility, publication, scale availability, or quality flags. User directive 2026-06-08: attribute everything to PRIMARY sources (Mamalakis accepted as an exception). These national long-run series previously carried the harmonised estimates of the purged Braun et al. (1998) secondary compilation, which drew them from Chilean state primary publications. Each series is attributed here to the canonical PRIMARY publication that originally produced that class of statistic, by domain and period: production from the Anuario Estadistico (Mineria / Agricultura) and the sectoral societies; foreign trade from the Estadistica Comercial / Comercio Exterior; fiscal from the Memoria de Hacienda and the Direccion de Presupuestos; prices from the DGE/INE consumer price index; vital rates from the Registro Civil and the Anuario de Demografia; labour and population from the Censos de Poblacion; the barley definition documents exactly this lineage (Anuario + Sinopsis + INE). 5 mid-20c labour-market/income series trace in master to the Mamalakis Vol.2 import and are cited to Mamalakis. 25 national-accounts series (real GDP, sectoral GDP, and every ratio whose denominator is GDP) have no primary measurement before circa 1940; they are cited to the official national-accounts producers (Banco Central de Chile; CORFO) with an explicit reconstruction caveat in the citation string. NO BRAUN and NO Diaz/Luders/Wagner under any spelling. The atlas accessed these series via a compilation; the citations name the primary ORIGIN of the data, not a re-extraction. DISCARD 2026-06-08 (user directive trace-to-primary-or-discard): the 25 national-accounts reconstructions (real GDP, sectoral GDP, and every ratio whose denominator is GDP) have no primary measurement before circa 1940; they are UNPUBLISHED here (reversible: remove from discard_no_primary and regenerate) rather than cited to a non-existent primary.",
     "date": "2026-06-08",
-    "prior": "curation/old_13_uncited_source_overrides_pre_104resolve_20260608.json + data/old archives"
+    "prior": "curation/old_13_uncited_source_overrides_pre_104resolve_20260608.json + data/old archives",
+    "taxshares_note": "2026-06-09: the six *_taxes_share_of_revenue ids were DLW levels mislabeled as % and re-attributed to the generic HACIENDA line; five are now RECONSTRUCTED from primary levels by curation 15 (removed from this override map), internal_taxes_share_of_revenue is discarded (folded into indirect). The six revenue_*_pesos level indicators carry the enumerated MEMORIAS_HACIENDA_19C citation."
   },
   "ANUARIO_MINERIA": "Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario Estadístico de Chile (sección Minería), and Sociedad Nacional de Minería, Estadística Minera de Chile, various years.",
   "ANUARIO_AGRO": "Oficina Central de Estadística, Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario Estadístico de Chile (sección Agricultura), and Sociedad Nacional de Agricultura, various years.",
@@ -167,24 +168,6 @@
     "expenditure_per_capita_real": [
       "HACIENDA"
     ],
-    "direct_taxes_share_of_revenue": [
-      "HACIENDA"
-    ],
-    "indirect_taxes_share_of_revenue": [
-      "HACIENDA"
-    ],
-    "internal_taxes_share_of_revenue": [
-      "HACIENDA"
-    ],
-    "external_taxes_share_of_revenue": [
-      "HACIENDA"
-    ],
-    "mining_taxes_share_of_revenue": [
-      "HACIENDA"
-    ],
-    "other_taxes_share_of_revenue": [
-      "HACIENDA"
-    ],
     "defense_share_of_expenditure": [
       "HACIENDA"
     ],
@@ -301,6 +284,24 @@
     ],
     "pob_urbana_nat": [
       "CENSO_LABOR"
+    ],
+    "revenue_customs_pesos": [
+      "MEMORIAS_HACIENDA_19C"
+    ],
+    "revenue_direct_taxes_pesos": [
+      "MEMORIAS_HACIENDA_19C"
+    ],
+    "revenue_indirect_taxes_pesos": [
+      "MEMORIAS_HACIENDA_19C"
+    ],
+    "revenue_mining_taxes_pesos": [
+      "MEMORIAS_HACIENDA_19C"
+    ],
+    "revenue_other_taxes_pesos": [
+      "MEMORIAS_HACIENDA_19C"
+    ],
+    "revenue_total_ordinary_pesos": [
+      "MEMORIAS_HACIENDA_19C"
     ]
   },
   "clear_no_braun": [],
@@ -356,7 +357,9 @@
     "revenue_of_gdp",
     "services_gdp",
     "services_share_of_gdp",
-    "trade_openness_of_gdp"
+    "trade_openness_of_gdp",
+    "internal_taxes_share_of_revenue"
   ],
-  "ANUARIO_1860_VITAL": "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), movimiento de población (nacimientos, defunciones y matrimonios por provincia, 1849–1858). Santiago: Imprenta Nacional."
+  "ANUARIO_1860_VITAL": "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), movimiento de población (nacimientos, defunciones y matrimonios por provincia, 1849–1858). Santiago: Imprenta Nacional.",
+  "MEMORIAS_HACIENDA_19C": "Memoria del Ministerio de Hacienda 1861, 1870, 1876, 1880, and 1889 (cuadros comparativos de las entradas ordinarias), and Oficina Central de Estadistica, Anuario Estadistico de la Republica de Chile 1860 (entradas fiscales por ramos, 1846-1852). Santiago: Imprenta Nacional. Per-ramo levels transcribed and reconciled to each cuadro's printed total."
 }
