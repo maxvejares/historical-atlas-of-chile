@@ -34347,12 +34347,12 @@
     "source_documents": [
       "Véjares, Maximiliano. Forthcoming. Department-level historical dataset, Chile, 19th century. Compiled from primary archival sources. Net Zero Industrial Policy Lab, Johns Hopkins University."
     ],
-    "topic_category": "economy",
+    "topic_category": "demography",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation.",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#0E1A2B",
     "definition": "Baptisms entered in parish registers by department in 1865. Before the civil registry baptisms are the working proxy for births, and the parish returns are the earliest near-complete departmental vital series.",
     "coverage_statement": "1 year(s) 1865, 51 department-level observations",
     "commit_status_by_scale": {
@@ -34408,12 +34408,12 @@
     "source_documents": [
       "Oficina Central de Estadística. 1872. Anuario Estadístico de la República de Chile, año 1871. Santiago: Imprenta Nacional."
     ],
-    "topic_category": "economy",
+    "topic_category": "demography",
     "semantic_zero": true,
     "source_quality": "clean",
     "source_document": "Anuario Estadístico de Chile, 1871",
     "per_capita_default": "default_raw",
-    "accent": "#1f4e79",
+    "accent": "#0E1A2B",
     "definition": "Baptisms registered by department in 1869, from the vital-statistics table of the Anuario Estadístico 1871. In the pre-civil-registry period baptisms are the working proxy for births.",
     "coverage_statement": "1 year(s) 1869, 54 department-level observations",
     "commit_status_by_scale": {
@@ -37815,6 +37815,70 @@
     "units_note": "1924"
   },
   {
+    "id": "bautismos",
+    "label": "Baptisms (parish registers)",
+    "display_label": "Baptisms (parish registers)",
+    "category": "Vital statistics",
+    "source_type": "anuario",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Baptisms (parish registers), by department, 1876–1880",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": true,
+      "commune": false
+    },
+    "scales": {
+      "department": {
+        "cadence": "annual",
+        "valid_years": [
+          1876,
+          1877,
+          1878,
+          1879,
+          1880
+        ],
+        "year_range": [
+          1876,
+          1880
+        ],
+        "n_observations": 270,
+        "magnitude": {
+          "min": 22.0,
+          "max": 9724.0,
+          "median": 1066.0,
+          "orders_of_magnitude": 2.65,
+          "hint": "linear"
+        },
+        "rendering_mode": "line",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1876-1877 (Yumpu 56511011)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511013)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1878-1879 (Yumpu 56511018)"
+    ],
+    "topic_category": "demography",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
+    "per_capita_default": "default_raw",
+    "accent": "#0E1A2B",
+    "definition": "",
+    "coverage_statement": "5 year(s) 1876-1880, 270 department-level observations",
+    "commit_status_by_scale": {
+      "department": "committed"
+    },
+    "published_by_scale": {
+      "department": "complete"
+    },
+    "commit_status": "committed",
+    "published": "complete"
+  },
+  {
     "id": "birth_rate_national",
     "label": "Birth rate (per 1,000)",
     "display_label": "Birth rate (per 1,000)",
@@ -38297,10 +38361,13 @@
       }
     },
     "source_documents": [
+      "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1876-1877 (Yumpu 56511011)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511013)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1878-1879 (Yumpu 56511018)",
       "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 29. Santiago.",
-      "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I). Santiago: Imprenta Nacional.",
       "Anuario Estadistico de la Republica de Chile, Ano 1926, Vol. I Demografia (Direccion General de Estadistica)",
-      "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, vital statistics by province. Santiago."
+      "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I). Santiago: Imprenta Nacional."
     ],
     "topic_category": "demography",
     "semantic_zero": true,
@@ -38642,7 +38709,7 @@
     "scale_availability": {
       "national": false,
       "province": true,
-      "department": false,
+      "department": true,
       "commune": false
     },
     "scales": {
@@ -38667,28 +38734,57 @@
         },
         "rendering_mode": "dots",
         "magnitude_hint": "auto"
+      },
+      "department": {
+        "cadence": "annual",
+        "valid_years": [
+          1876,
+          1877,
+          1878,
+          1879,
+          1880
+        ],
+        "year_range": [
+          1876,
+          1880
+        ],
+        "n_observations": 270,
+        "magnitude": {
+          "min": 13.0,
+          "max": 8601.0,
+          "median": 726.0,
+          "orders_of_magnitude": 2.82,
+          "hint": "linear"
+        },
+        "rendering_mode": "line",
+        "magnitude_hint": "auto"
       }
     },
     "source_documents": [
-      "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 29. Santiago.",
-      "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I). Santiago: Imprenta Nacional."
+      "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1876-1877 (Yumpu 56511011)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511013)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1878-1879 (Yumpu 56511018)",
+      "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 29. Santiago."
     ],
     "topic_category": "demography",
     "semantic_zero": true,
     "source_quality": "clean",
-    "source_document": "Sinopsis Estadística de Chile, 1924–1927, p. 29",
+    "source_document": "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
     "per_capita_default": "default_pc",
     "accent": "#0E1A2B",
     "definition": "Annual count of deaths by province, Sinopsis Estadística de Chile 1924–1927 and earlier Anuario sources. Per the duplicate-resolution memo, scheduled to merge with defunciones_1858_prov into a renamed deaths_province indicator.",
-    "coverage_statement": "3 year(s) 1900-1935, 60 province-level observations",
+    "coverage_statement": "3 year(s) 1900-1935, 60 province-level observations; 5 year(s) 1876-1880, 270 department-level observations",
     "commit_status_by_scale": {
-      "province": "committed"
+      "province": "committed",
+      "department": "committed"
     },
     "published_by_scale": {
-      "province": "sparse"
+      "province": "sparse",
+      "department": "complete"
     },
     "commit_status": "committed",
-    "published": "sparse",
+    "published": "complete",
     "display_id": "deaths_province",
     "aliases": [
       "defunciones"
@@ -39199,10 +39295,13 @@
       }
     },
     "source_documents": [
+      "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1876-1877 (Yumpu 56511011)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511013)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1878-1879 (Yumpu 56511018)",
       "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 29. Santiago.",
-      "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I). Santiago: Imprenta Nacional.",
       "Anuario Estadistico de la Republica de Chile, Ano 1926, Vol. I Demografia (Direccion General de Estadistica)",
-      "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, vital statistics by province. Santiago."
+      "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I). Santiago: Imprenta Nacional."
     ],
     "topic_category": "demography",
     "semantic_zero": true,
@@ -39257,7 +39356,7 @@
     "scale_availability": {
       "national": false,
       "province": true,
-      "department": false,
+      "department": true,
       "commune": false
     },
     "scales": {
@@ -39282,28 +39381,57 @@
         },
         "rendering_mode": "dots",
         "magnitude_hint": "auto"
+      },
+      "department": {
+        "cadence": "annual",
+        "valid_years": [
+          1876,
+          1877,
+          1878,
+          1879,
+          1880
+        ],
+        "year_range": [
+          1876,
+          1880
+        ],
+        "n_observations": 269,
+        "magnitude": {
+          "min": 5.0,
+          "max": 1922.0,
+          "median": 171.0,
+          "orders_of_magnitude": 2.58,
+          "hint": "linear"
+        },
+        "rendering_mode": "line",
+        "magnitude_hint": "auto"
       }
     },
     "source_documents": [
-      "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 29. Santiago.",
-      "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, vital statistics by province. Santiago."
+      "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1876-1877 (Yumpu 56511011)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511013)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1878-1879 (Yumpu 56511018)",
+      "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 29. Santiago."
     ],
     "topic_category": "demography",
     "semantic_zero": true,
     "source_quality": "clean",
-    "source_document": "Sinopsis Estadística de Chile, 1924–1927, p. 29",
+    "source_document": "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
     "per_capita_default": "default_raw",
     "accent": "#0E1A2B",
     "definition": "Annual count of marriages by province, Sinopsis Estadística de Chile 1924–1927. Per the duplicate-resolution memo, scheduled to merge with matrimonios_total, matrimonios_1858_prov, and matrimonios_hist_dept into a renamed marriages_province indicator.",
-    "coverage_statement": "3 year(s) 1900-1935, 60 province-level observations",
+    "coverage_statement": "3 year(s) 1900-1935, 60 province-level observations; 5 year(s) 1876-1880, 269 department-level observations",
     "commit_status_by_scale": {
-      "province": "committed"
+      "province": "committed",
+      "department": "committed"
     },
     "published_by_scale": {
-      "province": "sparse"
+      "province": "sparse",
+      "department": "complete"
     },
     "commit_status": "committed",
-    "published": "sparse",
+    "published": "complete",
     "display_id": "marriages_province",
     "aliases": [
       "matrimonios"
