@@ -32178,7 +32178,7 @@
           1890,
           1895
         ],
-        "n_observations": 24,
+        "n_observations": 28,
         "magnitude": {
           "min": 2.0,
           "max": 5.0,
@@ -32204,7 +32204,7 @@
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
     "definition": "",
-    "coverage_statement": "1 year(s) 1894, 2 province-level observations; 5 year(s) 1890-1895, 24 department-level observations",
+    "coverage_statement": "1 year(s) 1894, 2 province-level observations; 5 year(s) 1890-1895, 28 department-level observations",
     "commit_status_by_scale": {
       "province": "cross_section",
       "department": "committed"
@@ -32265,7 +32265,7 @@
           1890,
           1895
         ],
-        "n_observations": 24,
+        "n_observations": 28,
         "magnitude": {
           "min": 400.0,
           "max": 800.0,
@@ -32291,7 +32291,7 @@
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
     "definition": "",
-    "coverage_statement": "1 year(s) 1894, 2 province-level observations; 5 year(s) 1890-1895, 24 department-level observations",
+    "coverage_statement": "1 year(s) 1894, 2 province-level observations; 5 year(s) 1890-1895, 28 department-level observations",
     "commit_status_by_scale": {
       "province": "cross_section",
       "department": "committed"
@@ -32352,7 +32352,7 @@
           1890,
           1895
         ],
-        "n_observations": 24,
+        "n_observations": 28,
         "magnitude": {
           "min": 3060.0,
           "max": 18900.0,
@@ -32378,7 +32378,7 @@
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
     "definition": "",
-    "coverage_statement": "1 year(s) 1894, 2 province-level observations; 5 year(s) 1890-1895, 24 department-level observations",
+    "coverage_statement": "1 year(s) 1894, 2 province-level observations; 5 year(s) 1890-1895, 28 department-level observations",
     "commit_status_by_scale": {
       "province": "cross_section",
       "department": "committed"
