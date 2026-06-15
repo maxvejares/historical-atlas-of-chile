@@ -21122,10 +21122,7 @@
         "magnitude_hint": "log"
       }
     },
-    "source_documents": [
-      "Anuario Estadistico de la Republica de Chile, Ano 1914, Vol. V Instruccion",
-      "Oficina Central de Estadística. ca. 1858. Sinopsis Estadística i Jeográfica de la República de Chile. Santiago: Imprenta Nacional."
-    ],
+    "source_documents": [],
     "topic_category": "education",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -21165,7 +21162,7 @@
       }
     ],
     "units_note": "Unit field currently blank; should read 'students'.",
-    "source_attribution_status": "inherited_from_family_sibling"
+    "source_attribution_status": "no_family_no_source"
   },
   {
     "id": "alumnos_h",
@@ -21464,10 +21461,7 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [
-      "Anuario Estadistico de la Republica de Chile, Ano 1914, Vol. V Instruccion",
-      "Oficina Central de Estadística. ca. 1858. Sinopsis Estadística i Jeográfica de la República de Chile. Santiago: Imprenta Nacional."
-    ],
+    "source_documents": [],
     "topic_category": "education",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -21507,7 +21501,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "inherited_from_family_sibling",
+    "source_attribution_status": "no_family_no_source",
     "data_quality_flag": "unit_splice_corruption"
   },
   {
@@ -21742,10 +21736,7 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [
-      "Anuario Estadistico de la Republica de Chile, Ano 1914, Vol. V Instruccion",
-      "Oficina Central de Estadística. ca. 1858. Sinopsis Estadística i Jeográfica de la República de Chile. Santiago: Imprenta Nacional."
-    ],
+    "source_documents": [],
     "topic_category": "education",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -21785,7 +21776,7 @@
       }
     ],
     "units_note": "pupils",
-    "source_attribution_status": "inherited_from_family_sibling"
+    "source_attribution_status": "no_family_no_source"
   },
   {
     "id": "matricula_total_1914",
@@ -22255,10 +22246,7 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [
-      "Anuario Estadistico de la Republica de Chile, Ano 1914, Vol. V Instruccion",
-      "Oficina Central de Estadística. ca. 1858. Sinopsis Estadística i Jeográfica de la República de Chile. Santiago: Imprenta Nacional."
-    ],
+    "source_documents": [],
     "topic_category": "education",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -22298,7 +22286,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "inherited_from_family_sibling",
+    "source_attribution_status": "no_family_no_source",
     "data_quality_flag": "unit_splice_corruption"
   },
   {
@@ -22476,10 +22464,7 @@
         "magnitude_hint": "log"
       }
     },
-    "source_documents": [
-      "Anuario Estadistico de la Republica de Chile, Ano 1914, Vol. V Instruccion",
-      "Oficina Central de Estadística. ca. 1858. Sinopsis Estadística i Jeográfica de la República de Chile. Santiago: Imprenta Nacional."
-    ],
+    "source_documents": [],
     "topic_category": "education",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -22519,7 +22504,7 @@
       }
     ],
     "units_note": "Unit field currently blank; should read 'pupils'.",
-    "source_attribution_status": "inherited_from_family_sibling"
+    "source_attribution_status": "no_family_no_source"
   },
   {
     "id": "alumnos_total",
@@ -24994,9 +24979,7 @@
         "magnitude_hint": "log"
       }
     },
-    "source_documents": [
-      "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, Tabla 36. Santiago."
-    ],
+    "source_documents": [],
     "topic_category": "infrastructure",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -25035,7 +25018,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "inherited_from_family_sibling"
+    "source_attribution_status": "no_family_no_source"
   },
   {
     "id": "air_passenger_movement",
@@ -25165,9 +25148,7 @@
         "magnitude_hint": "log"
       }
     },
-    "source_documents": [
-      "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, Tabla 36. Santiago."
-    ],
+    "source_documents": [],
     "topic_category": "infrastructure",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -25208,7 +25189,7 @@
     ],
     "units_note": "Unit field currently blank; should read 'passengers'.",
     "data_quality_flag": "sparse_early_observations",
-    "source_attribution_status": "inherited_from_family_sibling"
+    "source_attribution_status": "no_family_no_source"
   },
   {
     "id": "viviendas_nat",
@@ -25458,9 +25439,7 @@
         "magnitude_hint": "log"
       }
     },
-    "source_documents": [
-      "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, Tabla 36. Santiago."
-    ],
+    "source_documents": [],
     "topic_category": "infrastructure",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -25501,7 +25480,7 @@
     ],
     "units_note": "Unit field currently blank; should read 'tons'.",
     "data_quality_flag": "unit_splice_corruption",
-    "source_attribution_status": "inherited_from_family_sibling"
+    "source_attribution_status": "no_family_no_source"
   },
   {
     "id": "private_railway_length",
@@ -25637,9 +25616,7 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [
-      "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, Tabla 36. Santiago."
-    ],
+    "source_documents": [],
     "topic_category": "infrastructure",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -25678,7 +25655,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "inherited_from_family_sibling"
+    "source_attribution_status": "no_family_no_source"
   },
   {
     "id": "railway_network_length",
@@ -25954,9 +25931,7 @@
         "magnitude_hint": "auto"
       }
     },
-    "source_documents": [
-      "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, Tabla 36. Santiago."
-    ],
+    "source_documents": [],
     "topic_category": "infrastructure",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -25995,7 +25970,7 @@
         "rule_for_chart": "Light vertical rule at 1973 on long-run series. Tooltip notes the political-economic discontinuity without making a substantive judgment. Comparison across this break is methodologically legitimate but readers should know the regime change."
       }
     ],
-    "source_attribution_status": "inherited_from_family_sibling"
+    "source_attribution_status": "no_family_no_source"
   },
   {
     "id": "telephones_in_service",
@@ -26118,9 +26093,7 @@
         "magnitude_hint": "log"
       }
     },
-    "source_documents": [
-      "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, Tabla 36. Santiago."
-    ],
+    "source_documents": [],
     "topic_category": "infrastructure",
     "semantic_zero": true,
     "source_quality": "ocr",
@@ -26161,7 +26134,7 @@
     ],
     "units_note": "Unit field currently blank; should read 'telephones'.",
     "data_quality_flag": "anomalous_early_values",
-    "source_attribution_status": "inherited_from_family_sibling"
+    "source_attribution_status": "no_family_no_source"
   },
   {
     "id": "menores_control_nat",
