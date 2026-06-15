@@ -17,6 +17,12 @@
 */
 
 window._variableMetadata = {
+    "pres_int_n_posts": { label: "Budgeted administrative posts, Interior (1890-1896)", short: "Interior posts (budget)", source: "Lei de Presupuestos del Ministerio del Interior, Chile (1890-1896)", unit: "posts", format: "count", palette: "sequential", geo_levels: ["department","province"] },
+    "pres_int_sueldos_pesos": { label: "Budgeted salaries, Interior administration (1890-1896)", short: "Interior salaries (budget)", source: "Lei de Presupuestos del Ministerio del Interior, Chile (1890-1896)", unit: "pesos", format: "currency", palette: "sequential", geo_levels: ["department","province"] },
+    "pres_int_operativos_pesos": { label: "Budgeted operating expenses, Interior administration (1890-1896)", short: "Interior operating (budget)", source: "Lei de Presupuestos del Ministerio del Interior, Chile (1890-1896)", unit: "pesos", format: "currency", palette: "sequential", geo_levels: ["department","province"] },
+    "pres_jus_corte_n_posts": { label: "Budgeted court posts, Justice (Cortes de Apelaciones, 1891-1896)", short: "Court posts (budget)", source: "Lei de Presupuestos del Ministerio de Justicia, Chile (1891-1896)", unit: "posts", format: "count", palette: "sequential", geo_levels: ["city"] },
+    "pres_jus_corte_sueldos_pesos": { label: "Budgeted court salaries, Justice (Cortes de Apelaciones, 1891-1896)", short: "Court salaries (budget)", source: "Lei de Presupuestos del Ministerio de Justicia, Chile (1891-1896)", unit: "pesos", format: "currency", palette: "sequential", geo_levels: ["city"] },
+    "pres_jus_corte_operativos_pesos": { label: "Budgeted court operating expenses, Justice (Cortes de Apelaciones, 1891-1896)", short: "Court operating (budget)", source: "Lei de Presupuestos del Ministerio de Justicia, Chile (1891-1896)", unit: "pesos", format: "currency", palette: "sequential", geo_levels: ["city"] },
     "salitre_production_dept": { label: "Nitrate production (department, 1911-1923)", source: "Sinopsis Estadistica de Chile 1924-27", unit: "metric tons", format: "count", palette: "sequential", geo_levels: ["department"] },
     "poblacion_censal_dept": { label: "Census population (department)", source: "Sinopsis Estadistica - Chile 1924-1927", unit: "persons", format: "count", palette: "sequential", geo_levels: ["department"] },
     "bautismos_1865_dept": { label: "Baptisms (department, 1865)", source: "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation.", unit: "baptisms", format: "count", palette: "sequential", geo_levels: ["department"] },
@@ -1155,6 +1161,12 @@ window._variableToFamily = {
     pres_has_gobernador: "state_officials_named",
     pres_has_juez: "state_officials_named",
     pres_has_reg_civil: "state_officials_named",
+    pres_int_n_posts: "budget_personnel_subnational",
+    pres_int_operativos_pesos: "budget_operating_subnational",
+    pres_int_sueldos_pesos: "budget_salaries_subnational",
+    pres_jus_corte_n_posts: "budget_personnel_subnational",
+    pres_jus_corte_operativos_pesos: "budget_operating_subnational",
+    pres_jus_corte_sueldos_pesos: "budget_salaries_subnational",
     pubemp: "occupations_canonical_subnational",
     pubemp_per_capita: "public_employment_subnational",
     superficie_km2: "geo_metadata_extended",

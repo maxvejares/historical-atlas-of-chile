@@ -32130,6 +32130,267 @@
     "source_attribution_status": "manually_attributed"
   },
   {
+    "id": "pres_int_n_posts",
+    "label": "Budgeted administrative posts, Interior (1890-1896)",
+    "display_label": "Budgeted administrative posts, Interior (1890-1896)",
+    "category": "Public finance",
+    "source_type": "compiled",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Budgeted administrative posts, Interior (1890-1896), by department, 1890–1895",
+    "scale_availability": {
+      "national": false,
+      "province": true,
+      "department": true,
+      "commune": false
+    },
+    "scales": {
+      "province": {
+        "cadence": "irregular",
+        "valid_years": [
+          1894
+        ],
+        "year_range": [
+          1894,
+          1894
+        ],
+        "n_observations": 2,
+        "magnitude": {
+          "min": 5.0,
+          "max": 7.0,
+          "median": 7.0,
+          "orders_of_magnitude": 0.15,
+          "hint": "linear"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "auto"
+      },
+      "department": {
+        "cadence": "annual",
+        "valid_years": [
+          1890,
+          1892,
+          1893,
+          1894,
+          1895
+        ],
+        "year_range": [
+          1890,
+          1895
+        ],
+        "n_observations": 24,
+        "magnitude": {
+          "min": 2.0,
+          "max": 5.0,
+          "median": 2.0,
+          "orders_of_magnitude": 0.4,
+          "hint": "linear"
+        },
+        "rendering_mode": "line",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Lei de Presupuestos 1890, Ministerio del Interior",
+      "Lei de Presupuestos 1893, Ministerio del Interior",
+      "Lei de Presupuestos 1894, Ministerio del Interior",
+      "Lei de Presupuestos 1895, Ministerio del Interior",
+      "Lei de Presupuestos 1892, Ministerio del Interior"
+    ],
+    "topic_category": "fiscal",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Lei de Presupuestos 1890, Ministerio del Interior",
+    "per_capita_default": "default_raw",
+    "accent": "#2c2c2a",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1894, 2 province-level observations; 5 year(s) 1890-1895, 24 department-level observations",
+    "commit_status_by_scale": {
+      "province": "cross_section",
+      "department": "committed"
+    },
+    "published_by_scale": {
+      "province": "sparse",
+      "department": "partial"
+    },
+    "commit_status": "committed",
+    "published": "partial"
+  },
+  {
+    "id": "pres_int_operativos_pesos",
+    "label": "Budgeted operating expenses, Interior administration (1890-1896)",
+    "display_label": "Budgeted operating expenses, Interior administration (1890-1896)",
+    "category": "Public finance",
+    "source_type": "compiled",
+    "format_hint": "currency",
+    "display_unit": "pesos",
+    "curated_subtitle": "Budgeted operating expenses, Interior administration (1890-1896), by department, 1890–1895, pesos",
+    "scale_availability": {
+      "national": false,
+      "province": true,
+      "department": true,
+      "commune": false
+    },
+    "scales": {
+      "province": {
+        "cadence": "irregular",
+        "valid_years": [
+          1894
+        ],
+        "year_range": [
+          1894,
+          1894
+        ],
+        "n_observations": 2,
+        "magnitude": {
+          "min": 800.0,
+          "max": 800.0,
+          "median": 800.0,
+          "orders_of_magnitude": 0.0,
+          "hint": "linear"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "auto"
+      },
+      "department": {
+        "cadence": "annual",
+        "valid_years": [
+          1890,
+          1892,
+          1893,
+          1894,
+          1895
+        ],
+        "year_range": [
+          1890,
+          1895
+        ],
+        "n_observations": 24,
+        "magnitude": {
+          "min": 400.0,
+          "max": 800.0,
+          "median": 500.0,
+          "orders_of_magnitude": 0.3,
+          "hint": "linear"
+        },
+        "rendering_mode": "line",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Lei de Presupuestos 1890, Ministerio del Interior",
+      "Lei de Presupuestos 1893, Ministerio del Interior",
+      "Lei de Presupuestos 1894, Ministerio del Interior",
+      "Lei de Presupuestos 1895, Ministerio del Interior",
+      "Lei de Presupuestos 1892, Ministerio del Interior"
+    ],
+    "topic_category": "fiscal",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Lei de Presupuestos 1890, Ministerio del Interior",
+    "per_capita_default": "default_raw",
+    "accent": "#2c2c2a",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1894, 2 province-level observations; 5 year(s) 1890-1895, 24 department-level observations",
+    "commit_status_by_scale": {
+      "province": "cross_section",
+      "department": "committed"
+    },
+    "published_by_scale": {
+      "province": "sparse",
+      "department": "partial"
+    },
+    "commit_status": "committed",
+    "published": "partial"
+  },
+  {
+    "id": "pres_int_sueldos_pesos",
+    "label": "Budgeted salaries, Interior administration (1890-1896)",
+    "display_label": "Budgeted salaries, Interior administration (1890-1896)",
+    "category": "Public finance",
+    "source_type": "compiled",
+    "format_hint": "currency",
+    "display_unit": "pesos",
+    "curated_subtitle": "Budgeted salaries, Interior administration (1890-1896), by department, 1890–1895, pesos",
+    "scale_availability": {
+      "national": false,
+      "province": true,
+      "department": true,
+      "commune": false
+    },
+    "scales": {
+      "province": {
+        "cadence": "irregular",
+        "valid_years": [
+          1894
+        ],
+        "year_range": [
+          1894,
+          1894
+        ],
+        "n_observations": 2,
+        "magnitude": {
+          "min": 7420.0,
+          "max": 8700.0,
+          "median": 8700.0,
+          "orders_of_magnitude": 0.07,
+          "hint": "linear"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "auto"
+      },
+      "department": {
+        "cadence": "annual",
+        "valid_years": [
+          1890,
+          1892,
+          1893,
+          1894,
+          1895
+        ],
+        "year_range": [
+          1890,
+          1895
+        ],
+        "n_observations": 24,
+        "magnitude": {
+          "min": 3060.0,
+          "max": 18900.0,
+          "median": 3660.0,
+          "orders_of_magnitude": 0.79,
+          "hint": "linear"
+        },
+        "rendering_mode": "line",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Lei de Presupuestos 1890, Ministerio del Interior",
+      "Lei de Presupuestos 1893, Ministerio del Interior",
+      "Lei de Presupuestos 1894, Ministerio del Interior",
+      "Lei de Presupuestos 1895, Ministerio del Interior",
+      "Lei de Presupuestos 1892, Ministerio del Interior"
+    ],
+    "topic_category": "fiscal",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Lei de Presupuestos 1890, Ministerio del Interior",
+    "per_capita_default": "default_raw",
+    "accent": "#2c2c2a",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1894, 2 province-level observations; 5 year(s) 1890-1895, 24 department-level observations",
+    "commit_status_by_scale": {
+      "province": "cross_section",
+      "department": "committed"
+    },
+    "published_by_scale": {
+      "province": "sparse",
+      "department": "partial"
+    },
+    "commit_status": "committed",
+    "published": "partial"
+  },
+  {
     "id": "income",
     "label": "Municipal income (1935)",
     "display_label": "Municipal income (1935)",
