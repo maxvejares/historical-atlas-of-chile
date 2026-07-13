@@ -40325,7 +40325,11 @@
           1872,
           1873,
           1875,
+          1876,
+          1877,
           1878,
+          1879,
+          1880,
           1881,
           1884,
           1885,
@@ -40341,11 +40345,11 @@
           1862,
           1952
         ],
-        "n_observations": 1127,
+        "n_observations": 1346,
         "magnitude": {
           "min": 195.0,
           "max": 1387860.0,
-          "median": 29715.0,
+          "median": 29826.0,
           "orders_of_magnitude": 3.85,
           "hint": "log"
         },
@@ -40356,8 +40360,8 @@
     "source_documents": [
       "Véjares, Maximiliano. Forthcoming. Department-level historical dataset, Chile, 19th century. Compiled from primary archival sources. Net Zero Industrial Policy Lab, Johns Hopkins University.",
       "Véjares, Maximiliano. Forthcoming. Compiled state-capacity dataset, Chile, 1935. Net Zero Industrial Policy Lab, Johns Hopkins University.",
-      "Oficina Central de Estadística. ca. 1885. Anuario Estadístico de la República de Chile, Tomo XXIV. Santiago: Imprenta Nacional.",
-      "Oficina Central de Estadística. 1882. Anuario Estadístico de la República de Chile, año 1881, enfranchisement section. Santiago: Imprenta Nacional."
+      "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
+      "Oficina Central de Estadística. ca. 1885. Anuario Estadístico de la República de Chile, Tomo XXIV. Santiago: Imprenta Nacional."
     ],
     "topic_category": "demography",
     "semantic_zero": true,
@@ -40366,7 +40370,7 @@
     "per_capita_default": "user_choice",
     "accent": "#0E1A2B",
     "definition": "Department-level total population, Véjares department-level historical dataset. Per the duplicate-resolution memo, this indicator is scheduled to merge into the canonical total_population at department scale.",
-    "coverage_statement": "19 year(s) 1862-1952, 1127 department-level observations",
+    "coverage_statement": "23 year(s) 1862-1952, 1346 department-level observations",
     "commit_status_by_scale": {
       "department": "committed"
     },

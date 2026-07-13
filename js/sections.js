@@ -211,9 +211,9 @@ export function createSections(host) {
         journalistic, and pedagogical use.
       </p>
       <p class="ss-body">
-        The database contains 95,466 observations drawn from 164 source documents,
-        covering 138 indicator families across five geographic levels (department,
-        province, national, city, and macro-region). Every observation carries a
+        The database contains 110,572 observations drawn from 216 source documents,
+        covering 149 indicator families across six geographic levels (commune,
+        department, province, national, city, and macro-region). Every observation carries a
         quality flag and a source citation. The extraction pipeline, audit
         framework, and known limitations are documented in the methodology.
       </p>
@@ -276,11 +276,11 @@ export function createSections(host) {
         <div style="background:var(--surface); border:1px solid var(--rule); border-radius:var(--radius); padding:20px;">
           <p style="font-weight:600; margin-bottom:8px;">Dataset (CSV)</p>
           <p style="font-size:13px; color:var(--ink-muted); margin-bottom:12px;">
-            95,466 observations in long format. 13-column canonical schema.
+            110,572 observations in long format. 14-column canonical schema.
             Excludes Braun et al.&nbsp;(1998), available separately from PUC.
           </p>
           <a href="data/chile_historical_database_v1.csv" download
-             style="color:var(--accent); font-weight:600;">Download CSV (19 MB)</a>
+             style="color:var(--accent); font-weight:600;">Download CSV (24 MB)</a>
         </div>
         <div style="background:var(--surface); border:1px solid var(--rule); border-radius:var(--radius); padding:20px;">
           <p style="font-weight:600; margin-bottom:8px;">Codebook (PDF)</p>
