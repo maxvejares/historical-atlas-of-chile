@@ -519,6 +519,71 @@ export function createMapView(host) {
   let layer = null;
   let pinned = null;
   const geoCache = new Map();
+  // State of the CURRENT render, read by the style/event closures at event
+  // time. Because the closures read `cur` rather than capturing per-render
+  // locals, a year change within the same geometry frame can restyle the
+  // existing layer in place (layer.setStyle) instead of tearing it down and
+  // rebuilding every polygon + handler — the old per-slider-tick hot path.
+  let cur = {};
+  let lastGeoJSON = null;
+
+  function nameFieldFor(scale) {
+    return scale === 'department' ? 'department' : scale === 'commune' ? 'comuna' : 'provincia';
+  }
+
+  function featureStyle(f) {
+    // Territory zones get distinct styling (not data-driven)
+    if (isTerritory(f)) {
+      const tt = f.properties.territory_type;
+      return TERRITORY_STYLES[tt] || TERRITORY_STYLES.unorganized;
+    }
+    const code = featureCode(f, cur.scale);
+    const v = cur.values ? cur.values[code] : null;
+    if (v == null) return { fillColor: NO_DATA_FILL, fillOpacity: 0.7, color: NO_DATA_STROKE, weight: 0.6, dashArray: '2 3' };
+    const c = cur.breaks.length ? colorFor(v, cur.breaks) : SEQ[Math.min(SEQ.length - 1, Math.floor(((v - cur.min) / Math.max(1, cur.max - cur.min)) * SEQ.length))];
+    return { fillColor: c, fillOpacity: 0.86, color: '#FAFAF7', weight: 0.5 };
+  }
+
+  function wireFeature(f, ly) {
+    // Territory zones: show label on hover but no data
+    if (isTerritory(f)) {
+      const label = f.properties.province || f.properties.department || 'Unorganized territory';
+      const note = f.properties.note || '';
+      ly.on('mouseover', () => {
+        if (pinned) return;
+        ly.setStyle({ weight: 1.5, color: '#666' });
+        setInfoTerritory(label, note);
+      });
+      ly.on('mouseout', () => {
+        if (pinned) return;
+        layer.resetStyle(ly);
+        setInfoDefault(cur.distribution, cur.meta, cur.year, cur.perCapita);
+      });
+      return;
+    }
+    ly.on('mouseover', () => {
+      if (pinned) return;
+      const v = cur.values[featureCode(f, cur.scale)];
+      const displayName = f.properties[nameFieldFor(cur.scale)] || f.properties.name;
+      ly.setStyle({ weight: 1.5, color: HOVER_STROKE });
+      ly.bringToFront();
+      if (v != null) setInfo(displayName, cur.year, v, cur.meta, cur.perCapita); else setInfoDefault(cur.distribution, cur.meta, cur.year, cur.perCapita);
+    });
+    ly.on('mouseout', () => {
+      if (pinned) return;
+      layer.resetStyle(ly);
+      setInfoDefault(cur.distribution, cur.meta, cur.year, cur.perCapita);
+    });
+    ly.on('click', () => {
+      const v = cur.values[featureCode(f, cur.scale)];
+      const displayName = f.properties[nameFieldFor(cur.scale)] || f.properties.name;
+      if (pinned === ly) { pinned = null; layer.resetStyle(ly); setInfoDefault(cur.distribution, cur.meta, cur.year, cur.perCapita); return; }
+      if (pinned) layer.resetStyle(pinned);
+      pinned = ly;
+      ly.setStyle({ weight: 2, color: HOVER_STROKE });
+      if (v != null) setInfo(displayName, cur.year, v, cur.meta, cur.perCapita); else setInfoDefault(cur.distribution, cur.meta, cur.year, cur.perCapita);
+    });
+  }
 
   function ensureMap() {
     if (map) return map;
@@ -707,7 +772,6 @@ export function createMapView(host) {
     // Defensive diagnostic: surface the call shape to the console so a stuck
     // map can be debugged from DevTools. Cheap; only logs when this function
     // is invoked at all.
-    try { console.log('[map_view] render called', { scale, variable, year, perCapita }); } catch (_) {}
 
     // Never hide the entire host — that strands the user with no explanation.
     // Show an explanatory placeholder inside the host instead.
@@ -787,7 +851,6 @@ export function createMapView(host) {
       values = buildValueMap(scale, year, variable, false);
     }
     perCapita = effectivePerCapita;
-    try { console.log('[map_view] buildValueMap →', Object.keys(values).length, 'units have values for', variable, 'at', scale, year); } catch (_) {}
 
     // If buildValueMap returned ZERO units with data, render a clear empty-
     // state explaining what happened. Don't fall through to a blank Leaflet
@@ -846,64 +909,23 @@ export function createMapView(host) {
     const min = matchedValues.length ? Math.min(...matchedValues) : 0;
     const max = matchedValues.length ? Math.max(...matchedValues) : 1;
 
-    if (layer) { map.removeLayer(layer); layer = null; }
-    pinned = null;
-    layer = L.geoJSON(geoJSON, {
-      style: f => {
-        // Territory zones get distinct styling (not data-driven)
-        if (isTerritory(f)) {
-          const tt = f.properties.territory_type;
-          return TERRITORY_STYLES[tt] || TERRITORY_STYLES.unorganized;
-        }
-        const code = featureCode(f, scale);
-        const v = values[code];
-        if (v == null) return { fillColor: NO_DATA_FILL, fillOpacity: 0.7, color: NO_DATA_STROKE, weight: 0.6, dashArray: '2 3' };
-        const c = breaks.length ? colorFor(v, breaks) : SEQ[Math.min(SEQ.length - 1, Math.floor(((v - min) / Math.max(1, max - min)) * SEQ.length))];
-        return { fillColor: c, fillOpacity: 0.86, color: '#FAFAF7', weight: 0.5 };
-      },
-      onEachFeature: (f, ly) => {
-        // Territory zones: show label on hover but no data
-        if (isTerritory(f)) {
-          const label = f.properties.province || f.properties.department || 'Unorganized territory';
-          const note = f.properties.note || '';
-          ly.on('mouseover', () => {
-            if (pinned) return;
-            ly.setStyle({ weight: 1.5, color: '#666' });
-            setInfoTerritory(label, note);
-          });
-          ly.on('mouseout', () => {
-            if (pinned) return;
-            layer.resetStyle(ly);
-            setInfoDefault(distribution, meta, year, perCapita);
-          });
-          return;
-        }
-        const code = featureCode(f, scale);
-        const v = values[code];
-        const displayName = f.properties[nameField] || f.properties.name;
-        ly.on('mouseover', () => {
-          if (pinned) return;
-          ly.setStyle({ weight: 1.5, color: HOVER_STROKE });
-          ly.bringToFront();
-          if (v != null) setInfo(displayName, year, v, meta, perCapita); else setInfoDefault(distribution, meta, year, perCapita);
-        });
-        ly.on('mouseout', () => {
-          if (pinned) return;
-          layer.resetStyle(ly);
-          setInfoDefault(distribution, meta, year, perCapita);
-        });
-        ly.on('click', () => {
-          if (pinned === ly) { pinned = null; layer.resetStyle(ly); setInfoDefault(distribution, meta, year, perCapita); return; }
-          if (pinned) layer.resetStyle(pinned);
-          pinned = ly;
-          ly.setStyle({ weight: 2, color: HOVER_STROKE });
-          if (v != null) setInfo(displayName, year, v, meta, perCapita); else setInfoDefault(distribution, meta, year, perCapita);
-        });
-      },
-    }).addTo(map);
+    // Publish this render's state; featureStyle/wireFeature read it at event time.
+    cur = { values, breaks, min, max, year, meta, perCapita, distribution, scale };
 
-    // Tighten bbox to mainland Chile (don't fitBounds to GeoJSON which may extend offshore)
-    map.fitBounds(MAINLAND_BOUNDS, { animate: false, padding: MAINLAND_PADDING });
+    if (layer && lastGeoJSON === geoJSON) {
+      // Same geometry frame (slider tick, per-capita toggle): restyle in place.
+      if (pinned) { layer.resetStyle(pinned); pinned = null; }
+      layer.setStyle(featureStyle);
+    } else {
+      if (layer) { map.removeLayer(layer); layer = null; }
+      pinned = null;
+      layer = L.geoJSON(geoJSON, { style: featureStyle, onEachFeature: wireFeature }).addTo(map);
+      lastGeoJSON = geoJSON;
+      // Tighten bbox to mainland Chile (don't fitBounds to GeoJSON which may
+      // extend offshore); only on a geometry swap, so hover/zoom state survives
+      // ordinary year scrubbing.
+      map.fitBounds(MAINLAND_BOUNDS, { animate: false, padding: MAINLAND_PADDING });
+    }
 
     // Default info-card state shows the distribution summary for this view.
     setInfoDefault(distribution, meta, year, perCapita);

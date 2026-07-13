@@ -136,10 +136,20 @@ export function createYearSlider(host, { onChange }) {
     const y = nearestYear(pct);
     if (y != null) setYear(y);
   });
+  // Pointer events cover mouse, touch, and pen; touch-action:none keeps the
+  // page from scrolling while dragging the thumb on a phone.
+  trackEl.style.touchAction = 'none';
   let dragging = false;
-  trackEl.addEventListener('mousedown', e => { dragging = true; stopPlay(); });
-  window.addEventListener('mouseup', () => { dragging = false; });
-  window.addEventListener('mousemove', e => {
+  trackEl.addEventListener('pointerdown', e => {
+    dragging = true; stopPlay();
+    try { trackEl.setPointerCapture(e.pointerId); } catch (_) {}
+  });
+  trackEl.addEventListener('pointerup', e => {
+    dragging = false;
+    try { trackEl.releasePointerCapture(e.pointerId); } catch (_) {}
+  });
+  trackEl.addEventListener('pointercancel', () => { dragging = false; });
+  trackEl.addEventListener('pointermove', e => {
     if (!dragging) return;
     const r = trackEl.getBoundingClientRect();
     const pct = Math.max(0, Math.min(100, ((e.clientX - r.left) / r.width) * 100));

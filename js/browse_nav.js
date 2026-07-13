@@ -316,7 +316,7 @@ function renderGeoTab(container, { onSelectVariable, typeFilter }) {
   const manifest = M.manifest() || [];
 
   // Count variables available at each level
-  const levels = ['national', 'province', 'department'];
+  const levels = ['national', 'province', 'department', 'commune'];
   const counts = {};
   for (const lvl of levels) {
     counts[lvl] = manifest.filter(v => v.published !== false && v.scale_availability[lvl] && tf(v) && isPublishable(v)).length;
@@ -333,7 +333,7 @@ function renderGeoTab(container, { onSelectVariable, typeFilter }) {
             <button class="geo-level-btn" data-level="${lvl}">
               <span class="gl-label">${lvl.charAt(0).toUpperCase() + lvl.slice(1)}</span>
               <span class="gl-count">${counts[lvl]} variables</span>
-              <span class="gl-desc">${{national: 'Country-level time series', province: 'Data at the province level', department: 'Data at the department level'}[lvl]}</span>
+              <span class="gl-desc">${{national: 'Country-level time series', province: 'Data at the province level', department: 'Data at the department level', commune: 'Data at the comuna level (post-1891)'}[lvl]}</span>
             </button>
           `).join('')}
         </div>

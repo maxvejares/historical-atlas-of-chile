@@ -171,6 +171,33 @@ def run(mani, nagg, html):
             if has and not avail:
                 warn('SCALE_MISMATCH', f'{e["id"]} has a scales.{sc} block but scale_availability.{sc} is false')
 
+def check_bundle_drift(repo, mani, html):
+    """The single-file bundle must be at least as new as every sidecar it
+    inlines, and its inline manifest must MATCH the sidecar byte-for-byte
+    (as JSON). This is the failure that shipped twice in June 2026: sidecars
+    regenerated + committed while the inline HTML stayed at an older build,
+    silently hiding new indicators from the live site."""
+    html_path = os.path.join(repo, 'historical_atlas_of_chile.html')
+    html_mtime = os.path.getmtime(html_path)
+    SIDEBARS = ['data/window_data.js', 'data/variable_metadata.js',
+                'data/variable_manifest.json', 'data/dataset_stats.json',
+                'data/manifest_globals.json', 'data/national_aggregates.json']
+    for rel in SIDEBARS:
+        p = os.path.join(repo, rel)
+        if os.path.exists(p) and os.path.getmtime(p) > html_mtime + 1:
+            err('BUNDLE_STALE', f'{rel} is newer than the bundle HTML — rerun scripts/build_atlas_bundle.py')
+    inline_mani = extract_inline(html, 'variable_manifest')
+    if inline_mani is None:
+        err('BUNDLE_NO_MANIFEST', 'no __INLINE_variable_manifest block found in the bundle HTML')
+    elif json.dumps(inline_mani, sort_keys=True) != json.dumps(mani, sort_keys=True):
+        inl = {e.get('id') for e in inline_mani} if isinstance(inline_mani, list) else set()
+        side = {e.get('id') for e in mani}
+        only_side = sorted(side - inl)[:5]
+        only_inl = sorted(inl - side)[:5]
+        err('BUNDLE_DRIFT', 'inline variable_manifest differs from data/variable_manifest.json '
+            f'(sidecar-only ids: {only_side or "none"}; inline-only ids: {only_inl or "none"}; '
+            'content may also differ) — rerun scripts/build_atlas_bundle.py')
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--repo', default=os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -178,6 +205,7 @@ def main():
     mani, nagg, html = load(a.repo)
     print(f'Loaded {len(mani)} indicators, {len(nagg)} national aggregates, {len(html)} bytes HTML\n')
     run(mani, nagg, html)
+    check_bundle_drift(a.repo, mani, html)
     if ERRORS:
         print(f'ERRORS ({len(ERRORS)}):')
         for c, m in ERRORS: print(f'  [{c}] {m}')

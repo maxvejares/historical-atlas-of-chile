@@ -816,6 +816,279 @@
       "subtitle": "Total population growth rate, 1848–1990, percent",
       "definition": "Annual rate of total population growth (natural increase plus net migration), Braun et al. (1998) compilation.",
       "_corrected": "Braun TABLA 7.5 re-extraction 2026-05-23 (was: potentially_unit_splice)"
+    },
+    "_DEBTFIX_2026_07_13": "Definitions supplied 2026-07-13 for the 66 browse-visible indicators the curation audit found undefined: Censo 1952 province block, Censo 1970/1992 comuna blocks, 1913-14 instrucción, 1926 demografía, 1928 población media, primary revenue-by-category series, presupuestos Interior, nitrate, 1914 mining value, Yumpu baptisms, and the regime-state 1935 comuna assembly.",
+    "catolicos_1952": {
+      "subtitle": "Catholic population, by province, 1952, persons",
+      "definition": "Persons declaring the Catholic religion in the 1952 population census, by province, from Censo 1952, Tomo 1 (Resumen del País), Servicio Nacional de Estadística y Censos. Religion was self-declared by respondents. A single-year cross-section; protestantes_1952 and sin_religion_1952 carry the remaining declared categories."
+    },
+    "protestantes_1952": {
+      "subtitle": "Protestant and Evangelical population, by province, 1952, persons",
+      "definition": "Persons declaring a Protestant or Evangelical religion in the 1952 population census, by province, from Censo 1952, Tomo 1 (Resumen del País), Servicio Nacional de Estadística y Censos. Religion was self-declared by respondents. A single-year cross-section; the companion indicators are catolicos_1952 and sin_religion_1952."
+    },
+    "sin_religion_1952": {
+      "subtitle": "Population declaring no religion, by province, 1952, persons",
+      "definition": "Persons declaring no religion in the 1952 population census, by province, from Censo 1952, Tomo 1 (Resumen del País), Servicio Nacional de Estadística y Censos. Religion was self-declared, so the category mixes irreligion with refusal to name a denomination. A single-year cross-section."
+    },
+    "chilenos_total_1952": {
+      "subtitle": "Chilean-born population, by province, 1952, persons",
+      "definition": "Population of Chilean nationality counted in the 1952 census, by province, from Censo 1952, Tomo 1 (Resumen del País), Servicio Nacional de Estadística y Censos. The complement of extranjeros_total_1952 within the census total. A single-year cross-section."
+    },
+    "extranjeros_total_1952": {
+      "subtitle": "Foreign-born population, by province, 1952, persons",
+      "definition": "Foreign nationals counted in the 1952 population census, by province, from Censo 1952, Tomo 1 (Resumen del País), Servicio Nacional de Estadística y Censos. Continues the foreigner counts the 19th-century censuses reported by department. A single-year cross-section."
+    },
+    "superficie_km2_1952": {
+      "subtitle": "Territorial area, by province, 1952, square kilometers",
+      "definition": "Territorial extent of each province in square kilometers as printed in Censo 1952, Tomo 1 (Resumen del País), Servicio Nacional de Estadística y Censos. Reflects the administrative boundaries in force at the 1952 census and serves as the denominator of densidad_1952. A single-year cross-section."
+    },
+    "densidad_1952": {
+      "subtitle": "Population density, by province, 1952, persons per km²",
+      "definition": "Population per square kilometer at the 1952 census, by province, as printed in Censo 1952, Tomo 1 (Resumen del País), Servicio Nacional de Estadística y Censos: the ratio of the census population to the provincial area (superficie_km2_1952). A single-year cross-section."
+    },
+    "casados_1952": {
+      "subtitle": "Married population aged 15 and over, by province, 1952, persons",
+      "definition": "Persons aged 15 and over declaring themselves married at the 1952 census, by province, from the civil-status table of Censo 1952, Tomo 1 (Resumen del País), Servicio Nacional de Estadística y Censos. A single-year cross-section; solteros_1952 and viudos_1952 carry the other civil-status categories."
+    },
+    "solteros_1952": {
+      "subtitle": "Single population aged 15 and over, by province, 1952, persons",
+      "definition": "Persons aged 15 and over declaring themselves single at the 1952 census, by province, from the civil-status table of Censo 1952, Tomo 1 (Resumen del País), Servicio Nacional de Estadística y Censos. A single-year cross-section; casados_1952 and viudos_1952 carry the other civil-status categories."
+    },
+    "viudos_1952": {
+      "subtitle": "Widowed population aged 15 and over, by province, 1952, persons",
+      "definition": "Persons aged 15 and over declaring themselves widowed at the 1952 census, by province, from the civil-status table of Censo 1952, Tomo 1 (Resumen del País), Servicio Nacional de Estadística y Censos. A single-year cross-section; casados_1952 and solteros_1952 carry the other civil-status categories."
+    },
+    "poblacion_activa_1952": {
+      "subtitle": "Economically active population, by province, 1952, persons",
+      "definition": "Economically active population at the 1952 census, by province, from Censo 1952, Tomo 1 (Resumen del País), Servicio Nacional de Estadística y Censos: persons who declared an occupation or were seeking work, under the census definition of the labor force. A single-year cross-section."
+    },
+    "con_instruccion_primaria_1952": {
+      "subtitle": "Population with primary schooling, by province, 1952, persons",
+      "definition": "Persons reporting primary school as their level of instruction at the 1952 census, by province, from Censo 1952, Tomo 1 (Resumen del País), Servicio Nacional de Estadística y Censos. Measures attainment declared to enumerators, not enrollment. A single-year cross-section; secondary and university attainment are separate indicators."
+    },
+    "con_instruccion_secundaria_1952": {
+      "subtitle": "Population with secondary schooling, by province, 1952, persons",
+      "definition": "Persons reporting secondary school as their level of instruction at the 1952 census, by province, from Censo 1952, Tomo 1 (Resumen del País), Servicio Nacional de Estadística y Censos. Measures attainment declared to enumerators, not enrollment. A single-year cross-section."
+    },
+    "con_instruccion_universitaria_1952": {
+      "subtitle": "Population with university education, by province, 1952, persons",
+      "definition": "Persons reporting university-level instruction at the 1952 census, by province, from Censo 1952, Tomo 1 (Resumen del País), Servicio Nacional de Estadística y Censos. Measures attainment declared to enumerators, not enrollment. A single-year cross-section."
+    },
+    "poblacion_hombres_1970": {
+      "subtitle": "Male population, by comuna, 1970, persons",
+      "definition": "Male population counted by comuna at the 1970 population census. Extracted from the CIREN folletos Características Básicas de la Población; the printed hombres + mujeres = total identity holds for every comuna. Coverage follows the folleto set processed to date, so a few comunas are absent."
+    },
+    "poblacion_mujeres_1970": {
+      "subtitle": "Female population, by comuna, 1970, persons",
+      "definition": "Female population counted by comuna at the 1970 population census. Extracted from the CIREN folletos Características Básicas de la Población; the printed hombres + mujeres = total identity holds for every comuna. Coverage follows the folleto set processed to date, so a few comunas are absent."
+    },
+    "poblacion_urbana_1970": {
+      "subtitle": "Urban population, by comuna, 1970, persons",
+      "definition": "Population living in localities classified as urban by the 1970 census, by comuna. Extracted from the CIREN folletos Características Básicas de la Población; the printed hombres + mujeres = total identity holds for every comuna. Coverage follows the folleto set processed to date, so a few comunas are absent."
+    },
+    "poblacion_rural_1970": {
+      "subtitle": "Rural population, by comuna, 1970, persons",
+      "definition": "Population living outside localities classified as urban by the 1970 census, by comuna. Extracted from the CIREN folletos Características Básicas de la Población; the printed hombres + mujeres = total identity holds for every comuna. Coverage follows the folleto set processed to date, so a few comunas are absent."
+    },
+    "poblacion_urbana_hombres_1970": {
+      "subtitle": "Urban male population, by comuna, 1970, persons",
+      "definition": "Male population living in localities classified as urban by the 1970 census, by comuna. Extracted from the CIREN folletos Características Básicas de la Población; the printed hombres + mujeres = total identity holds for every comuna. Coverage follows the folleto set processed to date, so a few comunas are absent."
+    },
+    "poblacion_urbana_mujeres_1970": {
+      "subtitle": "Urban female population, by comuna, 1970, persons",
+      "definition": "Female population living in localities classified as urban by the 1970 census, by comuna. Extracted from the CIREN folletos Características Básicas de la Población; the printed hombres + mujeres = total identity holds for every comuna. Coverage follows the folleto set processed to date, so a few comunas are absent."
+    },
+    "poblacion_rural_hombres_1970": {
+      "subtitle": "Rural male population, by comuna, 1970, persons",
+      "definition": "Male population living outside localities classified as urban by the 1970 census, by comuna. Extracted from the CIREN folletos Características Básicas de la Población; the printed hombres + mujeres = total identity holds for every comuna. Coverage follows the folleto set processed to date, so a few comunas are absent."
+    },
+    "poblacion_rural_mujeres_1970": {
+      "subtitle": "Rural female population, by comuna, 1970, persons",
+      "definition": "Female population living outside localities classified as urban by the 1970 census, by comuna. Extracted from the CIREN folletos Características Básicas de la Población; the printed hombres + mujeres = total identity holds for every comuna. Coverage follows the folleto set processed to date, so a few comunas are absent."
+    },
+    "poblacion_hombres_1992": {
+      "subtitle": "Male population, by comuna, 1992, persons",
+      "definition": "Male population counted by comuna at the 1992 population and housing census, from the born-digital INE census volume (Cuadro 1). Comuna totals reconcile to the national census population. A single-year cross-section."
+    },
+    "poblacion_mujeres_1992": {
+      "subtitle": "Female population, by comuna, 1992, persons",
+      "definition": "Female population counted by comuna at the 1992 population and housing census, from the born-digital INE census volume (Cuadro 1). Comuna totals reconcile to the national census population. A single-year cross-section."
+    },
+    "viviendas_particulares_1992": {
+      "subtitle": "Private dwellings, by comuna, 1992, dwellings",
+      "definition": "Private (household) dwellings counted by comuna in the 1992 population and housing census (INE, volume Ciudades, Pueblos y Aldeas). Excludes collective dwellings such as hospitals, barracks, and convents, carried in viviendas_colectivas_1992."
+    },
+    "viviendas_colectivas_1992": {
+      "subtitle": "Collective dwellings, by comuna, 1992, dwellings",
+      "definition": "Collective dwellings, such as hospitals, barracks, convents, hotels, and other institutional quarters, counted by comuna in the 1992 population and housing census (INE, volume Ciudades, Pueblos y Aldeas). The complement of viviendas_particulares_1992 within total dwellings."
+    },
+    "viviendas_permanentes_1992": {
+      "subtitle": "Permanent dwellings, by comuna, 1992, dwellings",
+      "definition": "Dwellings of permanent construction (houses and apartments) as classified by the census, counted by comuna in the 1992 population and housing census (INE, volume Ciudades, Pueblos y Aldeas). Semi-permanent and mobile structures are carried in the companion indicators."
+    },
+    "viviendas_semipermanentes_1992": {
+      "subtitle": "Semi-permanent dwellings, by comuna, 1992, dwellings",
+      "definition": "Dwellings of semi-permanent construction, such as mejoras and mediaguas, as classified by the census, counted by comuna in the 1992 population and housing census (INE, volume Ciudades, Pueblos y Aldeas). An indicator of precarious housing stock."
+    },
+    "viviendas_moviles_otros_1992": {
+      "subtitle": "Mobile and other dwellings, by comuna, 1992, dwellings",
+      "definition": "Mobile dwellings (tents, wagons, boats) and other structures not classifiable as permanent or semi-permanent, counted by comuna in the 1992 population and housing census (INE, volume Ciudades, Pueblos y Aldeas). The residual dwelling-type category; counts are small in most comunas."
+    },
+    "viviendas_tenencia_arrendada_1992": {
+      "subtitle": "Rented dwellings, by comuna, 1992, dwellings",
+      "definition": "Occupied dwellings whose households declared rented tenure, counted by comuna in the 1992 population and housing census (INE, volume Ciudades, Pueblos y Aldeas). Owner-occupied and other tenure forms are carried in the companion tenure indicators."
+    },
+    "viviendas_tenencia_otra_1992": {
+      "subtitle": "Dwellings under other tenure, by comuna, 1992, dwellings",
+      "definition": "Occupied dwellings under tenure other than ownership or rental, such as ceded, employer-provided, or usufruct arrangements, counted by comuna in the 1992 population and housing census (INE, volume Ciudades, Pueblos y Aldeas)."
+    },
+    "viviendas_agua_con_caneria_1992": {
+      "subtitle": "Dwellings with piped water, by comuna, 1992, dwellings",
+      "definition": "Dwellings with piped water inside the dwelling, counted by comuna in the 1992 population and housing census (INE, volume Ciudades, Pueblos y Aldeas). A basic-services indicator; the complement is split between viviendas_agua_sin_caneria_1992 and viviendas_agua_otra_fuente_1992."
+    },
+    "viviendas_agua_sin_caneria_1992": {
+      "subtitle": "Dwellings without piped water, by comuna, 1992, dwellings",
+      "definition": "Dwellings whose water supply is not piped into the dwelling, counted by comuna in the 1992 population and housing census (INE, volume Ciudades, Pueblos y Aldeas). A basic-services deficit indicator."
+    },
+    "viviendas_agua_otra_fuente_1992": {
+      "subtitle": "Dwellings using another water source, by comuna, 1992, dwellings",
+      "definition": "Dwellings drawing water from sources other than a piped network, such as wells, rivers, or water trucks, counted by comuna in the 1992 population and housing census (INE, volume Ciudades, Pueblos y Aldeas). Concentrated in rural comunas."
+    },
+    "viviendas_sin_alumbrado_electrico_1992": {
+      "subtitle": "Dwellings without electric lighting, by comuna, 1992, dwellings",
+      "definition": "Dwellings without electric lighting, counted by comuna in the 1992 population and housing census (INE, volume Ciudades, Pueblos y Aldeas). A basic-services deficit indicator; by 1992 counts are small outside rural comunas."
+    },
+    "viviendas_sin_alcantarillado_1992": {
+      "subtitle": "Dwellings without sewerage, by comuna, 1992, dwellings",
+      "definition": "Dwellings without connection to a sewerage system, counted by comuna in the 1992 population and housing census (INE, volume Ciudades, Pueblos y Aldeas). A basic-services deficit indicator, higher in rural and peri-urban comunas."
+    },
+    "poblacion_media_1928": {
+      "subtitle": "Estimated mid-year population, by department and province, 1928, persons",
+      "definition": "Estimated mid-year (media) population for 1928, by department and province, from the Anuario Estadístico de Chile 1928 (Dirección General de Estadística). An administrative intercensal estimate between the 1920 and 1930 censuses, not a census enumeration. A single-year cross-section."
+    },
+    "ruralpop_pct": {
+      "subtitle": "Rural population share, by comuna, 1935, %",
+      "definition": "Share of the comuna population classified as rural, in %, in the 1935 commune frame, from the curated research assembly regime-state 1935.xlsx, the author's compilation of official mid-1930s comuna statistics. The assembly carries no page-level citation, so the series documents a compilation rather than a direct extraction. A single-year cross-section used as a control in the regime-state analyses."
+    },
+    "revenue_customs_pesos": {
+      "subtitle": "Customs revenue, national, 1846–1888, nominal pesos",
+      "definition": "Ordinary fiscal revenue collected by the customs houses (aduanas), in nominal pesos, 1846-1888. The dominant single source of state revenue throughout the period. Compiled from the ramo-level receipts printed in the Anuario Estadístico de Chile 1860 and the Memorias del Ministerio de Hacienda; category totals are sums of the primary ramos as printed, with each cell citing its source volume.",
+      "units_note": "Nominal pesos of the day; no deflation applied across the series."
+    },
+    "revenue_direct_taxes_pesos": {
+      "subtitle": "Direct tax revenue, national, 1846–1888, nominal pesos",
+      "definition": "Ordinary fiscal revenue from direct contributions, chiefly the agricultural land tax (catastro) and related levies on property and income, in nominal pesos, 1846-1888. Compiled from the ramo-level receipts printed in the Anuario Estadístico de Chile 1860 and the Memorias del Ministerio de Hacienda; category totals are sums of the primary ramos as printed, with each cell citing its source volume.",
+      "units_note": "Nominal pesos of the day; no deflation applied across the series."
+    },
+    "revenue_indirect_taxes_pesos": {
+      "subtitle": "Indirect and internal tax revenue, national, 1846–1888, nominal pesos",
+      "definition": "Ordinary fiscal revenue from internal indirect taxation, including the alcabala transfer tax, stamped paper, and commercial patentes (assigned to this category by convention), in nominal pesos, 1846-1888. Compiled from the ramo-level receipts printed in the Anuario Estadístico de Chile 1860 and the Memorias del Ministerio de Hacienda; category totals are sums of the primary ramos as printed, with each cell citing its source volume.",
+      "units_note": "Nominal pesos of the day; no deflation applied across the series."
+    },
+    "revenue_mining_taxes_pesos": {
+      "subtitle": "Mining tax revenue, national, 1846–1888, nominal pesos",
+      "definition": "Ordinary fiscal revenue from levies specific to mining, in nominal pesos, 1846-1888. Recorded as zero before the nitrate era by construction, since pre-nitrate mining receipts flowed through other ramos. Compiled from the ramo-level receipts printed in the Anuario Estadístico de Chile 1860 and the Memorias del Ministerio de Hacienda; category totals are sums of the primary ramos as printed, with each cell citing its source volume.",
+      "units_note": "Nominal pesos of the day; no deflation applied across the series."
+    },
+    "revenue_other_taxes_pesos": {
+      "subtitle": "Other ordinary revenue, national, 1846–1888, nominal pesos",
+      "definition": "Residual ordinary fiscal revenue outside the customs, direct, indirect, and mining categories, in nominal pesos, 1846-1888; before 1853 it includes the diezmo (tithe) receipts, assigned here by convention. Compiled from the ramo-level receipts printed in the Anuario Estadístico de Chile 1860 and the Memorias del Ministerio de Hacienda; category totals are sums of the primary ramos as printed, with each cell citing its source volume.",
+      "units_note": "Nominal pesos of the day; no deflation applied across the series."
+    },
+    "revenue_total_ordinary_pesos": {
+      "subtitle": "Total ordinary fiscal revenue, national, 1846–1888, nominal pesos",
+      "definition": "Total ordinary fiscal revenue of the central state, in nominal pesos, 1846-1888: the sum of the customs, direct, indirect, mining, and other categories. Compiled from the ramo-level receipts printed in the Anuario Estadístico de Chile 1860 and the Memorias del Ministerio de Hacienda; category totals are sums of the primary ramos as printed, with each cell citing its source volume.",
+      "units_note": "Nominal pesos of the day; no deflation applied across the series."
+    },
+    "valor_minero_total_1914": {
+      "subtitle": "Mining production value, by province, 1914, pesos",
+      "definition": "Total declared value of mining and metallurgical production by province in 1914, in nominal pesos, from the Anuario Estadístico de Chile 1914, Vol. VII (Minería y Metalurgia). A single-year cross-section dominated by the nitrate provinces of the north."
+    },
+    "salitre_production_tons": {
+      "subtitle": "Nitrate (salitre) production, national, 1880–1927, metric tons",
+      "definition": "Annual national production of nitrate (salitre) in metric tons, 1880-1927, from the retrospective series of the Sinopsis Estadística de Chile 1900 and 1924-27. Nitrate was the export backbone of the post-War of the Pacific economy and the base of the export tax that dominated fiscal revenue until the synthetic-nitrate collapse."
+    },
+    "escuelas_publicas_primarias_1913": {
+      "subtitle": "Public primary schools, by province, 1913, schools",
+      "definition": "Number of public primary schools in operation by province in 1913, from the Anuario Estadístico de Chile 1913, Vol. V (Instrucción). Private schools are excluded. A single-year cross-section; escuelas_1914 carries the following year."
+    },
+    "escuelas_1914": {
+      "subtitle": "Public primary schools, by province, 1914, schools",
+      "definition": "Number of public primary schools in operation by province in 1914, from the Anuario Estadístico de Chile 1914, Vol. V (Instrucción). Private schools are excluded. A single-year cross-section; the companion enrollment and attendance indicators are matricula_total_1914 and asistencia_media_total_1914."
+    },
+    "matricula_total_1914": {
+      "subtitle": "Primary school enrollment, by province, 1914, pupils",
+      "definition": "Pupils enrolled (matrícula) in public primary schools by province in 1914, from the Anuario Estadístico de Chile 1914, Vol. V (Instrucción). Enrollment overstates effective schooling; average attendance (asistencia_media_total_1914) is the stricter measure. A single-year cross-section."
+    },
+    "asistencia_media_total_1914": {
+      "subtitle": "Average primary school attendance, by province, 1914, pupils",
+      "definition": "Average daily attendance (asistencia media) in public primary schools by province in 1914, from the Anuario Estadístico de Chile 1914, Vol. V (Instrucción). The stricter measure of effective schooling, typically well below enrollment (matricula_total_1914). A single-year cross-section."
+    },
+    "pres_int_n_posts": {
+      "subtitle": "Budgeted administrative posts, Interior, by province and department, 1890–1896, posts",
+      "definition": "Number of budgeted posts (plazas) in the territorial administration, from the annual Lei de Presupuestos of the Ministerio del Interior, 1890-1896. These are authorized appropriations for the territorial administration (intendencias and gobernaciones), not executed spending."
+    },
+    "pres_int_sueldos_pesos": {
+      "subtitle": "Budgeted salaries, Interior, by province and department, 1890–1896, nominal pesos",
+      "definition": "Salary appropriations (sueldos fijos) in nominal pesos for the territorial administration, from the annual Lei de Presupuestos of the Ministerio del Interior, 1890-1896. These are authorized appropriations for the territorial administration (intendencias and gobernaciones), not executed spending."
+    },
+    "pres_int_operativos_pesos": {
+      "subtitle": "Budgeted operating expenses, Interior, by province and department, 1890–1896, nominal pesos",
+      "definition": "Operating-expense appropriations (gastos variables) in nominal pesos for the territorial administration, from the annual Lei de Presupuestos of the Ministerio del Interior, 1890-1896. These are authorized appropriations for the territorial administration (intendencias and gobernaciones), not executed spending."
+    },
+    "income": {
+      "subtitle": "Municipal income, by comuna, 1935, nominal pesos",
+      "definition": "Total municipal revenue by comuna, in nominal pesos, for 1935, from the curated research assembly regime-state 1935.xlsx, the author's compilation of official mid-1930s comuna statistics. The assembly carries no page-level citation, so the series documents a compilation rather than a direct extraction. A single-year cross-section; taxincome and salaries carry the tax-revenue and salary-spending components."
+    },
+    "taxincome": {
+      "subtitle": "Municipal tax income, by comuna, 1935, nominal pesos",
+      "definition": "Municipal revenue raised through local taxation by comuna, in nominal pesos, for 1935, from the curated research assembly regime-state 1935.xlsx, the author's compilation of official mid-1930s comuna statistics. The assembly carries no page-level citation, so the series documents a compilation rather than a direct extraction. A component of income; the ratio of the two measures local fiscal effort."
+    },
+    "salaries": {
+      "subtitle": "Municipal salary spending, by comuna, 1935, nominal pesos",
+      "definition": "Municipal spending on salaries by comuna, in nominal pesos, for 1935, from the curated research assembly regime-state 1935.xlsx, the author's compilation of official mid-1930s comuna statistics. The assembly carries no page-level citation, so the series documents a compilation rather than a direct extraction. A single-year cross-section."
+    },
+    "pubadm": {
+      "subtitle": "Public administration spending, by comuna, 1935, nominal pesos",
+      "definition": "Spending on public administration by comuna, in nominal pesos, for 1935, from the curated research assembly regime-state 1935.xlsx, the author's compilation of official mid-1930s comuna statistics. The assembly carries no page-level citation, so the series documents a compilation rather than a direct extraction. A proxy for the local presence of the state. A single-year cross-section.",
+      "units_note": "The assembly codebook carries no unit statement; nominal pesos inferred from magnitudes consistent with the municipal budget columns."
+    },
+    "police1920": {
+      "subtitle": "Police personnel, by comuna, 1920, persons",
+      "definition": "Police personnel stationed in the comuna in 1920, keyed to the 1935 commune frame, from the curated research assembly regime-state 1935.xlsx, the author's compilation of official mid-1930s comuna statistics. The assembly carries no page-level citation, so the series documents a compilation rather than a direct extraction. Only 133 comunas carry a value; missing comunas are absent from the source, not zeros. A single-year cross-section."
+    },
+    "inquilinaje": {
+      "subtitle": "Inquilinaje share, by comuna, 1935, proportion",
+      "definition": "Share of resident tenant labor (inquilinos) in the comuna, recorded as a proportion (values range 0 to 0.14), for 1935, from the curated research assembly regime-state 1935.xlsx, the author's compilation of official mid-1930s comuna statistics. The assembly carries no page-level citation, so the series documents a compilation rather than a direct extraction. Inquilinaje was the labor institution of the manorial estate system of the Central Valley. A single-year cross-section."
+    },
+    "enf1920": {
+      "subtitle": "Enfranchised voters, by comuna, 1920, persons",
+      "definition": "Registered (enfranchised) voters in 1920, keyed to the 1935 commune frame, from the curated research assembly regime-state 1935.xlsx, the author's compilation of official mid-1930s comuna statistics. The assembly carries no page-level citation, so the series documents a compilation rather than a direct extraction drawn from the author's enfranchisement data collection 1862-1920. Comuna values sum to 328,034 nationally, matching the registered electorate of the 1920 election. A single-year cross-section."
+    },
+    "enfrural": {
+      "subtitle": "Rural enfranchisement rate, by comuna, 1920, proportion",
+      "definition": "Rural enfranchisement in 1920 recorded as a small proportion (values below 0.005), keyed to the 1935 commune frame, from the curated research assembly regime-state 1935.xlsx, the author's compilation of official mid-1930s comuna statistics. The assembly carries no page-level citation, so the series documents a compilation rather than a direct extraction. The assembly does not document the denominator of the rate, so the base population is unresolved; use with caution.",
+      "data_quality_flag": "unit_unclear"
+    },
+    "bautismos": {
+      "subtitle": "Baptisms, by department, 1876–1880, baptisms",
+      "definition": "Baptisms registered by department, 1876-1880, from the vital-statistics cuadros of the Anuario Estadístico de la República de Chile entregas for those years (read from the Yumpu page images of the yearbook collection). Before the civil registry opened in 1885, parish baptisms are the working proxy for births. Column sums verified against printed or errata-corrected national totals."
+    },
+    "nacimientos_1926": {
+      "subtitle": "Registered births, by department and province, 1926, births",
+      "definition": "Births registered by the civil registry in 1926, by department and province, from the Anuario Estadístico de Chile 1926, Vol. I (Demografía), Dirección General de Estadística. A single-year cross-section."
+    },
+    "defunciones_1926": {
+      "subtitle": "Registered deaths, by department and province, 1926, deaths",
+      "definition": "Deaths registered by the civil registry in 1926, by department and province, from the Anuario Estadístico de Chile 1926, Vol. I (Demografía), Dirección General de Estadística. A single-year cross-section."
+    },
+    "matrimonios_1926": {
+      "subtitle": "Registered marriages, by department and province, 1926, marriages",
+      "definition": "Marriages registered by the civil registry in 1926, by department and province, from the Anuario Estadístico de Chile 1926, Vol. I (Demografía), Dirección General de Estadística. A single-year cross-section."
+    },
+    "mortalidad_infantil_1926": {
+      "subtitle": "Infant deaths, by department and province, 1926, deaths under age one",
+      "definition": "Deaths of infants under one year of age registered in 1926, by department and province, from the Anuario Estadístico de Chile 1926, Vol. I (Demografía). A count of infant deaths, not a rate; divide by registered births (nacimientos_1926) for an infant mortality rate. A single-year cross-section."
     }
   },
   "_subtitles_only_for_already_defined": {
