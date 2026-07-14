@@ -490,6 +490,131 @@ export function createMapView(host) {
   csvBtn.addEventListener('click', () => downloadCSV());
   actionsEl.appendChild(csvBtn);
 
+  const mapPngBtn = document.createElement('button');
+  mapPngBtn.className = 'csv-btn png-btn';
+  mapPngBtn.textContent = 'Download PNG';
+  mapPngBtn.addEventListener('click', () => downloadMapPNG());
+  actionsEl.appendChild(mapPngBtn);
+
+  // OWID-style table view of the current selection (unit, value, flag),
+  // sorted descending. Toggles below the map; re-renders on every render().
+  const tableBtn = document.createElement('button');
+  tableBtn.className = 'csv-btn table-btn';
+  tableBtn.textContent = 'View table';
+  let tableOpen = false;
+  const tableWrap = document.createElement('div');
+  tableWrap.className = 'map-table-wrap';
+  tableWrap.style.cssText = 'display:none; max-height:420px; overflow:auto; margin-top:14px; border:1px solid var(--rule, #E4DFD2);';
+  tableBtn.addEventListener('click', () => {
+    tableOpen = !tableOpen;
+    tableBtn.textContent = tableOpen ? 'Hide table' : 'View table';
+    tableWrap.style.display = tableOpen ? '' : 'none';
+    if (tableOpen) renderTable();
+  });
+  actionsEl.appendChild(tableBtn);
+  actionsEl.parentNode.appendChild(tableWrap);
+
+  function renderTable() {
+    if (!cur.values || !cur.meta) { tableWrap.innerHTML = ''; return; }
+    const names = {};
+    if (lastGeoJSON) {
+      for (const f of lastGeoJSON.features) {
+        if (isTerritory(f)) continue;
+        const code = featureCode(f, cur.scale);
+        if (code) names[code] = f.properties[nameFieldFor(cur.scale)] || f.properties.name || code;
+      }
+    }
+    const rows = Object.entries(cur.values)
+      .map(([code, v]) => ({ code, v, name: names[code] || code, qf: cur.cellFlags && cur.cellFlags[code] }))
+      .sort((a, b) => b.v - a.v);
+    const unit = cur.perCapita ? 'per 100,000' : (cur.meta.display_unit || '');
+    tableWrap.innerHTML = `
+      <table style="width:100%; border-collapse:collapse; font-size:13px;">
+        <thead><tr style="text-align:left; border-bottom:1px solid #C9C0AC;">
+          <th style="padding:6px 10px;">#</th>
+          <th style="padding:6px 10px;">${cur.scale.charAt(0).toUpperCase() + cur.scale.slice(1)}</th>
+          <th style="padding:6px 10px; text-align:right;">${(cur.meta.display_label || cur.meta.label)}${unit ? ` (${unit})` : ''} · ${cur.year}</th>
+          <th style="padding:6px 10px;">Flag</th>
+        </tr></thead>
+        <tbody>${rows.map((r, i) => `
+          <tr style="border-bottom:1px solid #EEE9DC;">
+            <td class="num" style="padding:4px 10px; color:#94918A;">${i + 1}</td>
+            <td style="padding:4px 10px;">${r.name}</td>
+            <td class="num" style="padding:4px 10px; text-align:right;">${fmt(r.v, cur.perCapita ? 'rate' : cur.meta.format_hint, cur.perCapita ? '' : cur.meta.display_unit)}</td>
+            <td style="padding:4px 10px; color:#8A6D3B;">${r.qf ? r.qf.replace('_', ' ') : ''}</td>
+          </tr>`).join('')}
+        </tbody>
+      </table>`;
+  }
+
+  function downloadMapPNG() {
+    // Export the choropleth as a clean cartographic PNG: the Leaflet SVG
+    // overlay (boundaries + fills) on a paper background with a typeset
+    // title/source block, NO basemap tiles (matches the project's
+    // publication figure style, and avoids tile-CORS canvas tainting).
+    if (!lastState.variable || !map || !layer) return;
+    const meta = M.byId(lastState.variable);
+    const svgNode = mapEl.querySelector('.leaflet-overlay-pane svg');
+    if (!svgNode || !meta) return;
+    const mapRect = mapEl.getBoundingClientRect();
+    const svgRect = svgNode.getBoundingClientRect();
+    const clone = svgNode.cloneNode(true);
+    clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    clone.setAttribute('width', svgRect.width);
+    clone.setAttribute('height', svgRect.height);
+    const xml = new XMLSerializer().serializeToString(clone);
+    const svgUrl = URL.createObjectURL(new Blob([xml], { type: 'image/svg+xml;charset=utf-8' }));
+    const img = new Image();
+    const SCALEF = 2, HEADER = 92, FOOTER = 46;
+    img.onload = () => {
+      const canvas = document.createElement('canvas');
+      canvas.width = mapRect.width * SCALEF;
+      canvas.height = (mapRect.height + HEADER + FOOTER) * SCALEF;
+      const ctx = canvas.getContext('2d');
+      ctx.fillStyle = '#FDFCF8';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      // title block (top, left-aligned, bold; description under it)
+      ctx.fillStyle = '#1A1712';
+      ctx.font = `bold ${15 * SCALEF}px Georgia, serif`;
+      ctx.fillText((meta.display_label || meta.label) + (lastState.perCapita ? ' (per 100,000)' : ''), 16 * SCALEF, 30 * SCALEF);
+      ctx.font = `${11 * SCALEF}px Georgia, serif`;
+      ctx.fillStyle = '#5A554C';
+      const scaleNoun = lastState.scale.charAt(0).toUpperCase() + lastState.scale.slice(1) + 's';
+      ctx.fillText(`${scaleNoun}, ${lastState.year} · Historical Atlas of Chile`, 16 * SCALEF, 50 * SCALEF);
+      // color ramp swatches
+      SEQ.forEach((c, i) => {
+        ctx.fillStyle = c;
+        ctx.fillRect((16 + i * 22) * SCALEF, 62 * SCALEF, 20 * SCALEF, 10 * SCALEF);
+      });
+      // the map itself, offset for the SVG pane's padding around the viewport
+      ctx.save();
+      ctx.beginPath();
+      ctx.rect(0, HEADER * SCALEF, mapRect.width * SCALEF, mapRect.height * SCALEF);
+      ctx.clip();
+      ctx.drawImage(img,
+        (svgRect.left - mapRect.left) * SCALEF,
+        (HEADER + svgRect.top - mapRect.top) * SCALEF,
+        svgRect.width * SCALEF, svgRect.height * SCALEF);
+      ctx.restore();
+      // source line
+      ctx.fillStyle = '#5A554C';
+      ctx.font = `italic ${10 * SCALEF}px Georgia, serif`;
+      const src = (M.sourceLine(meta) || '').slice(0, 140);
+      ctx.fillText(`Source: ${src}`, 16 * SCALEF, (HEADER + mapRect.height + 28) * SCALEF);
+      URL.revokeObjectURL(svgUrl);
+      canvas.toBlob(blob => {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${lastState.variable}_${lastState.scale}_${lastState.year}.png`;
+        a.click();
+        URL.revokeObjectURL(url);
+      }, 'image/png');
+    };
+    img.onerror = () => URL.revokeObjectURL(svgUrl);
+    img.src = svgUrl;
+  }
+
   function downloadCSV() {
     if (!lastState.variable || !lastState.year) return;
     const meta = M.byId(lastState.variable);
@@ -541,6 +666,12 @@ export function createMapView(host) {
     const v = cur.values ? cur.values[code] : null;
     if (v == null) return { fillColor: NO_DATA_FILL, fillOpacity: 0.7, color: NO_DATA_STROKE, weight: 0.6, dashArray: '2 3' };
     const c = cur.breaks.length ? colorFor(v, cur.breaks) : SEQ[Math.min(SEQ.length - 1, Math.floor(((v - cur.min) / Math.max(1, cur.max - cur.min)) * SEQ.length))];
+    const qf = cur.cellFlags && cur.cellFlags[code];
+    if (qf) {
+      // Non-observed cell (estimated / reconstructed / needs_review): lighter
+      // fill + dashed neutral stroke so it reads as provisional at a glance.
+      return { fillColor: c, fillOpacity: 0.45, color: '#8A8378', weight: 1.1, dashArray: '4 3' };
+    }
     return { fillColor: c, fillOpacity: 0.86, color: '#FAFAF7', weight: 0.5 };
   }
 
@@ -567,7 +698,7 @@ export function createMapView(host) {
       const displayName = f.properties[nameFieldFor(cur.scale)] || f.properties.name;
       ly.setStyle({ weight: 1.5, color: HOVER_STROKE });
       ly.bringToFront();
-      if (v != null) setInfo(displayName, cur.year, v, cur.meta, cur.perCapita); else setInfoDefault(cur.distribution, cur.meta, cur.year, cur.perCapita);
+      if (v != null) setInfo(displayName, cur.year, v, cur.meta, cur.perCapita, cur.cellFlags && cur.cellFlags[featureCode(f, cur.scale)]); else setInfoDefault(cur.distribution, cur.meta, cur.year, cur.perCapita);
     });
     ly.on('mouseout', () => {
       if (pinned) return;
@@ -581,7 +712,7 @@ export function createMapView(host) {
       if (pinned) layer.resetStyle(pinned);
       pinned = ly;
       ly.setStyle({ weight: 2, color: HOVER_STROKE });
-      if (v != null) setInfo(displayName, cur.year, v, cur.meta, cur.perCapita); else setInfoDefault(cur.distribution, cur.meta, cur.year, cur.perCapita);
+      if (v != null) setInfo(displayName, cur.year, v, cur.meta, cur.perCapita, cur.cellFlags && cur.cellFlags[featureCode(f, cur.scale)]); else setInfoDefault(cur.distribution, cur.meta, cur.year, cur.perCapita);
     });
   }
 
@@ -622,6 +753,28 @@ export function createMapView(host) {
     const j = await r.json();
     geoCache.set(key, j);
     return j;
+  }
+
+  // Sparse quality-flag lookup for the current view: code -> flag string
+  // (estimated | reconstructed | needs_review). Only non-observed cells have
+  // entries (see regenerate_ui_data.py flags sidecar).
+  function buildFlagMap(scale, year, variable) {
+    const block = scale === 'department' ? window._data.department_data
+                : scale === 'commune'    ? window._data.commune_data
+                : window._data.province_data;
+    const yearFlags = block && block.flags && block.flags[String(year)];
+    if (!yearFlags) return {};
+    const resolve = scale === 'department' ? resolveDcode
+                  : scale === 'commune'    ? resolveCcode
+                  : resolvePcode;
+    const out = {};
+    for (const [unit, vars] of Object.entries(yearFlags)) {
+      if (!vars[variable]) continue;
+      const code = resolve(unit);
+      if (code === null) continue;
+      out[code] = vars[variable];
+    }
+    return out;
   }
 
   function buildValueMap(scale, year, variable, perCapita) {
@@ -692,13 +845,20 @@ export function createMapView(host) {
     `;
   }
 
-  function setInfo(name, year, value, meta, perCapita) {
+  const FLAG_LABEL = {
+    estimated: 'Estimated value (source-flagged estimate)',
+    reconstructed: 'Reconstructed value (interpolated, not directly observed)',
+    needs_review: 'Provisional value (pending audit review)',
+  };
+
+  function setInfo(name, year, value, meta, perCapita, qf) {
     infoEl.classList.remove('is-empty');
     const valStr = perCapita ? fmt(value, 'rate', '%') : fmt(value, meta.format_hint, meta.display_unit);
     infoEl.innerHTML = `<div class="mic-name serif">${name}</div>
       <div class="mic-meta">${year} · ${(meta.display_label || meta.label)}</div>
       <div class="mic-value num">${valStr}</div>
-      <div class="mic-value-sub">${perCapita ? 'per 100,000 population' : mapUnitCaption(meta)}</div>`;
+      <div class="mic-value-sub">${perCapita ? 'per 100,000 population' : mapUnitCaption(meta)}</div>
+      ${qf ? `<div class="mic-flag caption" style="margin-top:6px; color:#8A6D3B;">◌ ${FLAG_LABEL[qf] || qf}</div>` : ''}`;
   }
 
   // Map unit caption (M032 / polish C1). Two-tier fallback chain:
@@ -851,6 +1011,7 @@ export function createMapView(host) {
       values = buildValueMap(scale, year, variable, false);
     }
     perCapita = effectivePerCapita;
+    const cellFlags = buildFlagMap(scale, year, variable);
 
     // If buildValueMap returned ZERO units with data, render a clear empty-
     // state explaining what happened. Don't fall through to a blank Leaflet
@@ -910,7 +1071,7 @@ export function createMapView(host) {
     const max = matchedValues.length ? Math.max(...matchedValues) : 1;
 
     // Publish this render's state; featureStyle/wireFeature read it at event time.
-    cur = { values, breaks, min, max, year, meta, perCapita, distribution, scale };
+    cur = { values, breaks, min, max, year, meta, perCapita, distribution, scale, cellFlags };
 
     if (layer && lastGeoJSON === geoJSON) {
       // Same geometry frame (slider tick, per-capita toggle): restyle in place.
@@ -936,6 +1097,21 @@ export function createMapView(host) {
     legend.querySelector('.ml-title').textContent = (meta.display_label || meta.label) + (perCapita ? ' (per 100,000)' : '');
     legend.querySelector('.ml-units').textContent = perCapita ? 'rate per 100,000 population' : mapUnitCaption(meta);
     legend.querySelector('.ml-ramp').innerHTML = SEQ.map(c => `<span style="background:${c}"></span>`).join('');
+    {
+      let fn = legend.querySelector('.ml-flagnote');
+      if (!fn) {
+        fn = document.createElement('div');
+        fn.className = 'ml-flagnote caption';
+        fn.style.cssText = 'margin-top:6px; color:#8A6D3B; font-size:11px;';
+        legend.appendChild(fn);
+      }
+      const nFlagged = Object.keys(cellFlags || {}).length;
+      fn.textContent = nFlagged
+        ? `Dashed, lightened units (${nFlagged}): estimated, reconstructed, or pending-review values.`
+        : '';
+      fn.style.display = nFlagged ? '' : 'none';
+    }
+    if (tableOpen) renderTable();
     legend.querySelector('.ml-min').textContent = fmt(min, perCapita ? 'rate' : meta.format_hint, perCapita ? '' : meta.display_unit);
     legend.querySelector('.ml-max').textContent = fmt(max, perCapita ? 'rate' : meta.format_hint, perCapita ? '' : meta.display_unit);
     const cov = legend.querySelector('.ml-cov');

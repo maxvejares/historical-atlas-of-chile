@@ -28,7 +28,10 @@ function readHashState() {
   };
 }
 
+let _applyingHistory = false;
+
 function writeHashState(s) {
+  if (_applyingHistory) return;   // popstate replay must not write history
   const p = new URLSearchParams();
   if (s.scale)    p.set('scale', s.scale);
   // Serialize a comparison set as `variables=`; a single series as `variable=`.
@@ -40,7 +43,15 @@ function writeHashState(s) {
   if (s.year != null) p.set('year', String(s.year));
   if (s.perCapita) p.set('pc', '1');
   const newHash = '#' + p.toString();
-  if (location.hash !== newHash) history.replaceState(null, '', newHash);
+  if (location.hash === newHash) return;
+  // History granularity: a new indicator or scale is a navigation (pushState,
+  // so Back works); a year scrub or per-capita flip on the same view is not
+  // (replaceState, so the slider doesn't flood the history stack).
+  const cur = new URLSearchParams(location.hash.slice(1));
+  const navChanged = cur.get('scale') !== p.get('scale')
+    || (cur.get('variable') || cur.get('variables') || '') !== (p.get('variable') || p.get('variables') || '');
+  if (navChanged && cur.toString() !== '') history.pushState(null, '', newHash);
+  else history.replaceState(null, '', newHash);
 }
 
 // Does this manifest entry express a per-capita identity (so a deep link to it
@@ -215,6 +226,22 @@ async function _atlasInit() {
   } else {
     strip.mount({ scale: h.scale || 'national' });
   }
+
+  // Back/forward: re-apply the hash state through the control strip. The
+  // _applyingHistory latch keeps the replayed onSelect from re-writing history.
+  window.addEventListener('popstate', () => {
+    const hs = readHashState();
+    if (!hs.variable || !M.byId(hs.variable)) return;
+    const meta = M.byId(hs.variable);
+    _applyingHistory = true;
+    try {
+      strip.mount({ scale: hs.scale || 'national', variable: hs.variable,
+        category: meta.topic_category || meta.category,
+        year: hs.year, perCapita: hs.pc ? true : null });
+    } finally {
+      setTimeout(() => { _applyingHistory = false; }, 0);
+    }
+  });
 
   createFooter(document.getElementById('ftr'), { lastUpdated: (typeof window !== 'undefined' && window.__BUILD_DATE) || null });
 

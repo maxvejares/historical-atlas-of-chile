@@ -285,8 +285,8 @@ export function createSections(host) {
         <div style="background:var(--surface); border:1px solid var(--rule); border-radius:var(--radius); padding:20px;">
           <p style="font-weight:600; margin-bottom:8px;">Codebook (PDF)</p>
           <p style="font-size:13px; color:var(--ink-muted); margin-bottom:12px;">
-            128 indicator families with definitions, units, geographic coverage,
-            year ranges, and primary sources.
+            287 indicators across 149 families with definitions, units,
+            geographic coverage, year ranges, and primary sources.
           </p>
           <a href="data/codebook_v1.pdf" download
              style="color:var(--accent); font-weight:600;">Download Codebook</a>
