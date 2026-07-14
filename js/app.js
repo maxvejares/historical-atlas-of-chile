@@ -216,7 +216,7 @@ async function _atlasInit() {
     strip.mount({ scale: h.scale || 'national' });
   }
 
-  createFooter(document.getElementById('ftr'), { lastUpdated: new Date().toISOString().slice(0, 10) });
+  createFooter(document.getElementById('ftr'), { lastUpdated: (typeof window !== 'undefined' && window.__BUILD_DATE) || null });
 
   // Source-page variable clicks: re-mount the control strip on the chosen var.
   window.addEventListener('atlas:nav', (e) => {

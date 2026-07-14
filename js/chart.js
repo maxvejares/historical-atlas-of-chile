@@ -288,6 +288,12 @@ export function createChart(host) {
   csvBtn.addEventListener('click', () => downloadCSV());
   actionsEl.appendChild(csvBtn);
 
+  const pngBtn = document.createElement('button');
+  pngBtn.className = 'csv-btn png-btn';
+  pngBtn.textContent = 'Download PNG';
+  pngBtn.addEventListener('click', () => downloadPNG());
+  actionsEl.appendChild(pngBtn);
+
   // Compare button + same-scale variable picker (issue #12)
   const compareBtn = document.createElement('button');
   compareBtn.className = 'compare-btn';
@@ -351,6 +357,41 @@ export function createChart(host) {
     const a = document.createElement('a');
     a.href = url; a.download = name; a.click();
     URL.revokeObjectURL(url);
+  }
+
+  function downloadPNG() {
+    // The chart is a plain inline SVG, so export = serialize -> raster via
+    // canvas at 2x for crisp text. Fonts fall back to system serif in the
+    // raster; acceptable for a citation-grade figure export.
+    if (!state.id) return;
+    const vb = (svgEl.getAttribute('viewBox') || '0 0 1200 510').split(/\s+/).map(Number);
+    const w = vb[2] || 1200, h = vb[3] || 510;
+    const clone = svgEl.cloneNode(true);
+    clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    clone.setAttribute('width', w); clone.setAttribute('height', h);
+    clone.style.background = '#FDFCF8';
+    const xml = new XMLSerializer().serializeToString(clone);
+    const svgUrl = URL.createObjectURL(new Blob([xml], { type: 'image/svg+xml;charset=utf-8' }));
+    const img = new Image();
+    img.onload = () => {
+      const canvas = document.createElement('canvas');
+      canvas.width = w * 2; canvas.height = h * 2;
+      const ctx = canvas.getContext('2d');
+      ctx.fillStyle = '#FDFCF8';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+      URL.revokeObjectURL(svgUrl);
+      canvas.toBlob(blob => {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${state.id}_${state.scale}.png`;
+        a.click();
+        URL.revokeObjectURL(url);
+      }, 'image/png');
+    };
+    img.onerror = () => URL.revokeObjectURL(svgUrl);
+    img.src = svgUrl;
   }
 
   function downloadCSV() {
