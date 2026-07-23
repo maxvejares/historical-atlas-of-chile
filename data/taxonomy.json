@@ -163,7 +163,7 @@
         "department",
         "province"
       ],
-      "n_variables": 30,
+      "n_variables": 31,
       "n_observations": 1013
     },
     {
@@ -791,7 +791,7 @@
       "geo_levels": [
         "national"
       ],
-      "n_variables": 12,
+      "n_variables": 13,
       "n_observations": 45
     },
     {
@@ -1202,7 +1202,7 @@
         "national",
         "province"
       ],
-      "n_variables": 40,
+      "n_variables": 42,
       "n_observations": 4244
     },
     {

@@ -29820,6 +29820,75 @@
     "source_attribution_status": "manually_attributed"
   },
   {
+    "id": "salitre_production_dept",
+    "label": "Nitrate production (department, 1911-1923)",
+    "display_label": "Nitrate production (department, 1911-1923)",
+    "category": "Mining",
+    "source_type": "sinopsis",
+    "format_hint": "count",
+    "display_unit": "metric tons",
+    "curated_subtitle": "Nitrate production (department, 1911-1923), by department, 1911–1923, metric tons",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": true,
+      "commune": false
+    },
+    "scales": {
+      "department": {
+        "cadence": "annual",
+        "valid_years": [
+          1911,
+          1912,
+          1913,
+          1914,
+          1915,
+          1916,
+          1917,
+          1918,
+          1919,
+          1920,
+          1921,
+          1922,
+          1923
+        ],
+        "year_range": [
+          1911,
+          1923
+        ],
+        "n_observations": 36,
+        "magnitude": {
+          "min": 130017.0,
+          "max": 1392921.0,
+          "median": 457426.0,
+          "orders_of_magnitude": 1.03,
+          "hint": "linear"
+        },
+        "rendering_mode": "line",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927. Santiago."
+    ],
+    "topic_category": "mining",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Sinopsis Estadística de Chile, 1924–1927",
+    "per_capita_default": "default_raw",
+    "accent": "#8a5a00",
+    "definition": "Nitrate (salitre) extracted in each department, 1911-1923, from the provincial agricultural and mining returns compiled for the Anuario Estadístico. A measure of the nitrate economy that anchored Chilean fiscal capacity before 1930.",
+    "coverage_statement": "13 year(s) 1911-1923, 36 department-level observations",
+    "commit_status_by_scale": {
+      "department": "committed"
+    },
+    "published_by_scale": {
+      "department": "complete"
+    },
+    "commit_status": "committed",
+    "published": "complete"
+  },
+  {
     "id": "saltpeter_production",
     "label": "Saltpeter production",
     "display_label": "Saltpeter production",
@@ -35361,6 +35430,134 @@
     "published": "partial"
   },
   {
+    "id": "patentes_fiscales_monto_dept",
+    "label": "Business licence revenue (department)",
+    "display_label": "Business licence revenue (department)",
+    "category": "Public finance",
+    "source_type": "anuario",
+    "format_hint": "currency",
+    "display_unit": "pesos",
+    "curated_subtitle": "Business licence revenue (department), by department, 1876–1880, pesos",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": true,
+      "commune": false
+    },
+    "scales": {
+      "department": {
+        "cadence": "annual",
+        "valid_years": [
+          1876,
+          1877,
+          1878,
+          1879,
+          1880
+        ],
+        "year_range": [
+          1876,
+          1880
+        ],
+        "n_observations": 292,
+        "magnitude": {
+          "min": 31.5,
+          "max": 212213.25,
+          "median": 1072.0,
+          "orders_of_magnitude": 3.83,
+          "hint": "log"
+        },
+        "rendering_mode": "line",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1878-1879 (Yumpu 56511018)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1876-1877 (Yumpu 56511011)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511013)"
+    ],
+    "topic_category": "fiscal",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
+    "per_capita_default": "default_raw",
+    "accent": "#2c2c2a",
+    "definition": "Valor of the patentes fiscales issued by department, 1876-1880, in pesos, from the Anuario Estadistico patentes cuadros. Every year reconciles exactly against the printed province and national totals. Same coverage caveats as the licence-count series (Rancagua absent 1880; Copiapo 1880 city only; Angol 1877 and San Carlos 1878 repeat prior-year returns).",
+    "coverage_statement": "5 year(s) 1876-1880, 292 department-level observations",
+    "commit_status_by_scale": {
+      "department": "committed"
+    },
+    "published_by_scale": {
+      "department": "complete"
+    },
+    "commit_status": "committed",
+    "published": "complete"
+  },
+  {
+    "id": "patentes_fiscales_numero_dept",
+    "label": "Business licences issued (department)",
+    "display_label": "Business licences issued (department)",
+    "category": "Public finance",
+    "source_type": "anuario",
+    "format_hint": "count",
+    "display_unit": "patentes",
+    "curated_subtitle": "Business licences issued (department), by department, 1876–1880, patentes",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": true,
+      "commune": false
+    },
+    "scales": {
+      "department": {
+        "cadence": "annual",
+        "valid_years": [
+          1876,
+          1877,
+          1878,
+          1879,
+          1880
+        ],
+        "year_range": [
+          1876,
+          1880
+        ],
+        "n_observations": 292,
+        "magnitude": {
+          "min": 11.0,
+          "max": 3852.0,
+          "median": 132.0,
+          "orders_of_magnitude": 2.54,
+          "hint": "linear"
+        },
+        "rendering_mode": "line",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1878-1879 (Yumpu 56511018)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1876-1877 (Yumpu 56511011)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511013)"
+    ],
+    "topic_category": "fiscal",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
+    "per_capita_default": "default_raw",
+    "accent": "#2c2c2a",
+    "definition": "Patentes fiscales (business licences under the Lei de 22 de diciembre de 1866) issued by department, 1876-1880, from the Anuario Estadistico patentes cuadros. Counts cover all licence classes. A proxy for the formal commercial economy. Coverage caveats carried in the row notes: Rancagua is absent from the 1880 tables (returns not received), Copiapo 1880 covers the city only, and the 1877 Angol and 1878 San Carlos figures repeat the prior year's returns.",
+    "coverage_statement": "5 year(s) 1876-1880, 292 department-level observations",
+    "commit_status_by_scale": {
+      "department": "committed"
+    },
+    "published_by_scale": {
+      "department": "complete"
+    },
+    "commit_status": "committed",
+    "published": "complete"
+  },
+  {
     "id": "patentes_prov",
     "label": "Business licences issued (province, 1852-1858)",
     "display_label": "Business licences issued",
@@ -35483,8 +35680,8 @@
   },
   {
     "id": "municipal_salidas_dept",
-    "label": "Municipal expenditure (department)",
-    "display_label": "Municipal expenditure (department)",
+    "label": "Municipal budgeted expenditure (department)",
+    "display_label": "Municipal budgeted expenditure (department)",
     "category": "Public finance",
     "source_type": "memoria",
     "format_hint": "currency",
@@ -35529,8 +35726,137 @@
     "source_document": "Ministerio del Interior. 1891. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1890, Tomo I. Santiago.",
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
-    "definition": "Municipal expenditure aggregated to the department, from the municipal-finance tables of the Memorias del Interior (1877, 1889). 1889 combines the alcalde and gobernador expenditure lines.",
+    "definition": "Budgeted (presupuesto) municipal expenditure aggregated to the department, from the municipal-finance tables of the Memorias del Interior (1877, 1889). 1889 combines the alcalde and gobernador expenditure lines. Distinct from the executed gastos series drawn from the Anuarios.",
     "coverage_statement": "2 year(s) 1877-1889, 113 department-level observations",
+    "commit_status_by_scale": {
+      "department": "committed"
+    },
+    "published_by_scale": {
+      "department": "sparse"
+    },
+    "commit_status": "committed",
+    "published": "sparse"
+  },
+  {
+    "id": "municipal_entradas_dept",
+    "label": "Municipal budgeted revenue (department)",
+    "display_label": "Municipal budgeted revenue (department)",
+    "category": "Public finance",
+    "source_type": "memoria",
+    "format_hint": "currency",
+    "display_unit": "pesos",
+    "curated_subtitle": "municipal revenue, by department, 1877–1889, pesos",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": true,
+      "commune": false
+    },
+    "scales": {
+      "department": {
+        "cadence": "irregular",
+        "valid_years": [
+          1877,
+          1889
+        ],
+        "year_range": [
+          1877,
+          1889
+        ],
+        "n_observations": 113,
+        "magnitude": {
+          "min": 350.0,
+          "max": 1942774.64,
+          "median": 14794.0,
+          "orders_of_magnitude": 3.74,
+          "hint": "log"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "Ministerio del Interior. 1878. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1877. Santiago.",
+      "Ministerio del Interior. 1891. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1890, Tomo I. Santiago."
+    ],
+    "topic_category": "fiscal",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Ministerio del Interior. 1878. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1877. Santiago.",
+    "per_capita_default": "default_raw",
+    "accent": "#2c2c2a",
+    "definition": "Budgeted (presupuesto) municipal revenue aggregated to the department, from the municipal-finance tables of the Memorias del Interior (1877, 1889). Distinct from the executed entradas series drawn from the Anuarios.",
+    "coverage_statement": "2 year(s) 1877-1889, 113 department-level observations",
+    "commit_status_by_scale": {
+      "department": "committed"
+    },
+    "published_by_scale": {
+      "department": "sparse"
+    },
+    "commit_status": "committed",
+    "published": "sparse",
+    "presentation_status": "alternate_variant",
+    "variant_of": "muni_total_revenue"
+  },
+  {
+    "id": "municipal_total_gastos_dept",
+    "label": "Municipal expenditure (department)",
+    "display_label": "Municipal expenditure (department)",
+    "category": "Public finance",
+    "source_type": "anuario",
+    "format_hint": "currency",
+    "display_unit": "pesos",
+    "curated_subtitle": "Municipal expenditure (department), by department, 1876–1892, pesos",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": true,
+      "commune": false
+    },
+    "scales": {
+      "department": {
+        "cadence": "irregular",
+        "valid_years": [
+          1876,
+          1877,
+          1878,
+          1879,
+          1880,
+          1890,
+          1891,
+          1892
+        ],
+        "year_range": [
+          1876,
+          1892
+        ],
+        "n_observations": 393,
+        "magnitude": {
+          "min": 293.57,
+          "max": 2961280.74,
+          "median": 13755.16,
+          "orders_of_magnitude": 4.0,
+          "hint": "log"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "Anuario Estadistico de la Republica de Chile 1879-1880 (Yumpu 56511022)",
+      "Anuario Estadistico de la Republica de Chile 1890-1891-1892 (Yumpu 56511021)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511013)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511018)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1876-1877 (Yumpu 56511011)"
+    ],
+    "topic_category": "fiscal",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Anuario Estadistico de la Republica de Chile 1879-1880 (Yumpu 56511022)",
+    "per_capita_default": "default_raw",
+    "accent": "#2c2c2a",
+    "definition": "Executed municipal expenditure (gastos) by department, the sum of the nine inversion line-items (police of ornato and security, public works, public instruction, beneficencia, prisoner upkeep, office salaries, debt interest, extraordinary outlays), from the Anuario Estadistico cuadros 'Entradas i gastos municipales' for 1876-1880 and 1890-1892. Distinct from the budgeted (presupuesto) series of the Memorias del Interior.",
+    "coverage_statement": "8 year(s) 1876-1892, 393 department-level observations",
     "commit_status_by_scale": {
       "department": "committed"
     },
@@ -35598,14 +35924,14 @@
     "published": "cross_section"
   },
   {
-    "id": "municipal_entradas_dept",
+    "id": "municipal_total_revenue_dept",
     "label": "Municipal revenue (department)",
     "display_label": "Municipal revenue (department)",
     "category": "Public finance",
-    "source_type": "memoria",
+    "source_type": "anuario",
     "format_hint": "currency",
     "display_unit": "pesos",
-    "curated_subtitle": "municipal revenue, by department, 1877–1889, pesos",
+    "curated_subtitle": "Municipal revenue (department), by department, 1876–1892, pesos",
     "scale_availability": {
       "national": false,
       "province": false,
@@ -35616,19 +35942,25 @@
       "department": {
         "cadence": "irregular",
         "valid_years": [
+          1876,
           1877,
-          1889
+          1878,
+          1879,
+          1880,
+          1890,
+          1891,
+          1892
         ],
         "year_range": [
-          1877,
-          1889
+          1876,
+          1892
         ],
-        "n_observations": 113,
+        "n_observations": 393,
         "magnitude": {
-          "min": 350.0,
-          "max": 1942774.64,
-          "median": 14794.0,
-          "orders_of_magnitude": 3.74,
+          "min": 324.24,
+          "max": 2964472.18,
+          "median": 14522.78,
+          "orders_of_magnitude": 3.96,
           "hint": "log"
         },
         "rendering_mode": "dots",
@@ -35636,17 +35968,20 @@
       }
     },
     "source_documents": [
-      "Ministerio del Interior. 1878. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1877. Santiago.",
-      "Ministerio del Interior. 1891. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1890, Tomo I. Santiago."
+      "Anuario Estadistico de la Republica de Chile 1879-1880 (Yumpu 56511022)",
+      "Anuario Estadistico de la Republica de Chile 1890-1891-1892 (Yumpu 56511021)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511013)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511018)",
+      "Anuario Estadistico de la Republica de Chile, entrega 1876-1877 (Yumpu 56511011)"
     ],
     "topic_category": "fiscal",
     "semantic_zero": true,
     "source_quality": "clean",
-    "source_document": "Ministerio del Interior. 1878. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1877. Santiago.",
+    "source_document": "Anuario Estadistico de la Republica de Chile 1879-1880 (Yumpu 56511022)",
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
-    "definition": "Total municipal revenue aggregated to the department, from the municipal-finance tables of the Memorias del Interior (1877, 1889).",
-    "coverage_statement": "2 year(s) 1877-1889, 113 department-level observations",
+    "definition": "Executed municipal revenue (entradas) by department: local receipts plus the central-government subvencion, from the Anuario Estadistico cuadros 'Entradas i gastos municipales en los departamentos de la Republica' for 1876-1880 and 1890-1892. Distinct from the budgeted (presupuesto) series of the Memorias del Interior. No cuadro was published for 1881-1889; the 1890-1892 rosters cover only the municipalities that reported to the Oficina after the War of the Pacific and the 1891 civil war.",
+    "coverage_statement": "8 year(s) 1876-1892, 393 department-level observations",
     "commit_status_by_scale": {
       "department": "committed"
     },
@@ -35654,9 +35989,7 @@
       "department": "sparse"
     },
     "commit_status": "committed",
-    "published": "sparse",
-    "presentation_status": "alternate_variant",
-    "variant_of": "muni_total_revenue"
+    "published": "sparse"
   },
   {
     "id": "salaries",
@@ -37878,6 +38211,79 @@
     "commit_status": "cross_section",
     "published": "cross_section",
     "units_note": "The assembly codebook carries no unit statement; nominal pesos inferred from magnitudes consistent with the municipal budget columns."
+  },
+  {
+    "id": "copper_export_duty_nat",
+    "label": "Copper export duty rate",
+    "display_label": "Copper export duty rate",
+    "category": "Trade",
+    "source_type": "compiled",
+    "format_hint": "rate",
+    "display_unit": "%",
+    "curated_subtitle": "Copper export duty rate, national, 1835–1897, %",
+    "scale_availability": {
+      "national": true,
+      "province": false,
+      "department": false,
+      "commune": false
+    },
+    "scales": {
+      "national": {
+        "cadence": "irregular",
+        "valid_years": [
+          1835,
+          1840,
+          1852,
+          1864,
+          1897
+        ],
+        "year_range": [
+          1835,
+          1897
+        ],
+        "n_observations": 5,
+        "magnitude": {
+          "min": 1.5,
+          "max": 6.0,
+          "median": 5.0,
+          "orders_of_magnitude": 0.6,
+          "hint": "linear"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Humud - Politica economica en Chile 1830-1930"
+    ],
+    "topic_category": "trade",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Humud - Politica economica en Chile 1830-1930",
+    "per_capita_default": "default_raw",
+    "accent": "#5b3f8e",
+    "definition": "Ad valorem export duty levied on copper, a 19th-century instrument of mining fiscal policy.",
+    "coverage_statement": "5 year(s) 1835-1897, 5 national observations",
+    "commit_status_by_scale": {
+      "national": "committed"
+    },
+    "published_by_scale": {
+      "national": "sparse"
+    },
+    "commit_status": "committed",
+    "published": "sparse",
+    "breaks": [
+      {
+        "id": "boundary_wop_antofagasta_1884",
+        "year": 1884,
+        "kind": "boundary",
+        "label": "Antofagasta annexed (Pacto de Tregua)",
+        "description": "The Pacto de Tregua of April 4, 1884 transferred Antofagasta from Bolivia to Chilean administration; the formal cession came with the Treaty of Peace and Friendship of 1904. The 1884 pact is the working date for the data; Antofagasta enters Chilean statistical reporting from this year.",
+        "severity": "warning",
+        "citation": "Pacto de Tregua, 4 de abril de 1884; Treaty of Peace and Friendship of 1904; Sater (2007), Andean Tragedy.",
+        "rule_for_chart": "Vertical rule at 1884. The pre-1883 baseline excludes both Tarapacá and Antofagasta and is the relevant comparison year for the new territories."
+      }
+    ]
   },
   {
     "id": "bautismos_1865_dept",
