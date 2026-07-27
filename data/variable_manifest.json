@@ -2692,6 +2692,291 @@
     "source_attribution_status": "manually_attributed"
   },
   {
+    "id": "municipal_entradas_pesos",
+    "label": "Municipal entradas pesos",
+    "display_label": "Municipal entradas pesos",
+    "category": "Commune-level",
+    "source_type": "memoria",
+    "format_hint": "currency",
+    "display_unit": "pesos",
+    "curated_subtitle": "Municipal entradas pesos, 1892, pesos",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1892
+        ],
+        "year_range": [
+          1892,
+          1892
+        ],
+        "n_observations": 68,
+        "magnitude": {
+          "min": 3084.22,
+          "max": 2160560.26,
+          "median": 43070.0,
+          "orders_of_magnitude": 2.85,
+          "hint": "linear"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Memoria del Interior 1893 Tomo I"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Memoria del Interior 1893 Tomo I",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1892, 68 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
+    "id": "municipal_presupuesto_pesos",
+    "label": "Municipal presupuesto pesos",
+    "display_label": "Municipal presupuesto pesos",
+    "category": "Commune-level",
+    "source_type": "memoria",
+    "format_hint": "currency",
+    "display_unit": "pesos",
+    "curated_subtitle": "Municipal presupuesto pesos, 1895, pesos",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1895
+        ],
+        "year_range": [
+          1895,
+          1895
+        ],
+        "n_observations": 166,
+        "magnitude": {
+          "min": 2150.0,
+          "max": 3422701.36,
+          "median": 25179.0,
+          "orders_of_magnitude": 3.2,
+          "hint": "log"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
+      }
+    },
+    "source_documents": [
+      "Memoria del Interior 1895"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Memoria del Interior 1895",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1895, 166 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
+    "id": "municipal_salidas_alcalde_pesos",
+    "label": "Municipal salidas alcalde pesos",
+    "display_label": "Municipal salidas alcalde pesos",
+    "category": "Commune-level",
+    "source_type": "memoria",
+    "format_hint": "currency",
+    "display_unit": "pesos",
+    "curated_subtitle": "Municipal salidas alcalde pesos, 1892, pesos",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1892
+        ],
+        "year_range": [
+          1892,
+          1892
+        ],
+        "n_observations": 68,
+        "magnitude": {
+          "min": 743.22,
+          "max": 712923.21,
+          "median": 17823.72,
+          "orders_of_magnitude": 2.98,
+          "hint": "linear"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Memoria del Interior 1893 Tomo I"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Memoria del Interior 1893 Tomo I",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1892, 68 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
+    "id": "municipal_salidas_gobernador_pesos",
+    "label": "Municipal salidas gobernador pesos",
+    "display_label": "Municipal salidas gobernador pesos",
+    "category": "Commune-level",
+    "source_type": "memoria",
+    "format_hint": "currency",
+    "display_unit": "pesos",
+    "curated_subtitle": "Municipal salidas gobernador pesos, 1892, pesos",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1892
+        ],
+        "year_range": [
+          1892,
+          1892
+        ],
+        "n_observations": 68,
+        "magnitude": {
+          "min": 2341.0,
+          "max": 1447797.05,
+          "median": 23054.0,
+          "orders_of_magnitude": 2.79,
+          "hint": "linear"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Memoria del Interior 1893 Tomo I"
+    ],
+    "topic_category": "economy",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Memoria del Interior 1893 Tomo I",
+    "per_capita_default": "default_raw",
+    "accent": "#1f4e79",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1892, 68 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
+    "id": "poblacion_municipalidad",
+    "label": "Poblacion municipalidad",
+    "display_label": "Poblacion municipalidad",
+    "category": "Commune-level",
+    "source_type": "memoria",
+    "format_hint": "count",
+    "display_unit": "",
+    "curated_subtitle": "Poblacion municipalidad, 1892",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": false,
+      "commune": true
+    },
+    "scales": {
+      "commune": {
+        "cadence": "irregular",
+        "valid_years": [
+          1892
+        ],
+        "year_range": [
+          1892,
+          1892
+        ],
+        "n_observations": 103,
+        "magnitude": {
+          "min": 1811.0,
+          "max": 21332.0,
+          "median": 7938.0,
+          "orders_of_magnitude": 1.07,
+          "hint": "linear"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Memoria del Interior 1893 Tomo I"
+    ],
+    "topic_category": "demography",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Memoria del Interior 1893 Tomo I",
+    "per_capita_default": "default_raw",
+    "accent": "#0E1A2B",
+    "definition": "",
+    "coverage_statement": "1 year(s) 1892, 103 observations",
+    "commit_status_by_scale": {
+      "commune": "cross_section"
+    },
+    "published_by_scale": {
+      "commune": "cross_section"
+    },
+    "commit_status": "cross_section",
+    "published": "cross_section"
+  },
+  {
     "id": "bautismos_dept",
     "label": "Baptisms (department, 1869)",
     "display_label": "Baptisms (department, 1869)",
@@ -2819,7 +3104,7 @@
     "label": "Births (province, 1924)",
     "display_label": "Births (province, 1924)",
     "category": "Demographics",
-    "source_type": "sinopsis",
+    "source_type": "memoria",
     "format_hint": "count",
     "display_unit": "births",
     "curated_subtitle": "births, by province, 1924, births",
@@ -2852,7 +3137,8 @@
       }
     },
     "source_documents": [
-      "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 32. Santiago."
+      "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 32. Santiago.",
+      "Memoria del Interior 1893 Tomo III"
     ],
     "topic_category": "demography",
     "semantic_zero": true,
@@ -36553,6 +36839,8 @@
     },
     "source_documents": [
       "Ministerio del Interior. 1888. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1887. Santiago.",
+      "Ministerio del Interior. 1893. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1892, Tomo II. Santiago.",
+      "Memoria del Interior 1895",
       "Ministerio del Interior. 1891. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1890, Tomo I. Santiago."
     ],
     "topic_category": "demography",
@@ -36671,12 +36959,14 @@
       }
     },
     "source_documents": [
-      "Ministerio del Interior. 1891. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1890, Tomo I. Santiago."
+      "Ministerio del Interior. 1893. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1892, Tomo II. Santiago.",
+      "Ministerio del Interior. 1891. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1890, Tomo I. Santiago.",
+      "Memoria del Interior 1893 Tomo I"
     ],
     "topic_category": "economy",
     "semantic_zero": true,
     "source_quality": "clean",
-    "source_document": "Ministerio del Interior. 1891. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1890, Tomo I. Santiago.",
+    "source_document": "Memoria del Interior 1892 Tomo II",
     "per_capita_default": "default_raw",
     "accent": "#1f4e79",
     "definition": "Smallpox vaccine (cowpox 'virus') distributed to each department in 1889, from the Reparto de Virus table of the Memoria del Interior 1890.",
@@ -38893,13 +39183,13 @@
       }
     },
     "source_documents": [
+      "Anuario Estadistico de la Republica de Chile 1925 (Yumpu 56511059)",
+      "Anuario Estadistico de la Republica de Chile 1931-1935 (Yumpu 56511070)",
+      "Anuario Estadistico de la Republica de Chile 1940 (Yumpu 56511096)",
       "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
-      "Anuario Estadistico de la Republica de Chile, entrega 1876-1877 (Yumpu 56511011)",
-      "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511013)",
-      "Anuario Estadistico de la Republica de Chile, entrega 1878-1879 (Yumpu 56511018)",
-      "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 29. Santiago.",
+      "Anuario Estadistico de la Republica de Chile 1930 (Yumpu 56511071)",
       "Anuario Estadistico de la Republica de Chile, Ano 1926, Vol. I Demografia (Direccion General de Estadistica)",
-      "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I). Santiago: Imprenta Nacional."
+      "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 29. Santiago."
     ],
     "topic_category": "demography",
     "semantic_zero": true,
@@ -39249,74 +39539,92 @@
         "cadence": "irregular",
         "valid_years": [
           1900,
+          1920,
+          1921,
+          1922,
+          1923,
           1924,
-          1935
+          1925,
+          1930,
+          1931,
+          1934,
+          1935,
+          1940
         ],
         "year_range": [
           1900,
-          1935
+          1940
         ],
-        "n_observations": 60,
+        "n_observations": 263,
         "magnitude": {
           "min": 135.0,
-          "max": 24892.0,
+          "max": 29094.0,
           "median": 3861.0,
-          "orders_of_magnitude": 2.27,
+          "orders_of_magnitude": 2.33,
           "hint": "linear"
         },
         "rendering_mode": "dots",
         "magnitude_hint": "auto"
       },
       "department": {
-        "cadence": "annual",
+        "cadence": "irregular",
         "valid_years": [
           1876,
           1877,
           1878,
           1879,
-          1880
+          1880,
+          1921,
+          1922,
+          1923,
+          1924,
+          1925,
+          1930,
+          1931,
+          1935,
+          1940
         ],
         "year_range": [
           1876,
-          1880
+          1940
         ],
-        "n_observations": 270,
+        "n_observations": 957,
         "magnitude": {
           "min": 13.0,
-          "max": 8601.0,
-          "median": 726.0,
-          "orders_of_magnitude": 2.82,
-          "hint": "linear"
+          "max": 25636.0,
+          "median": 863.0,
+          "orders_of_magnitude": 3.29,
+          "hint": "log"
         },
-        "rendering_mode": "line",
-        "magnitude_hint": "auto"
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
       }
     },
     "source_documents": [
+      "Anuario Estadistico de la Republica de Chile 1925 (Yumpu 56511059)",
+      "Anuario Estadistico de la Republica de Chile 1931-1935 (Yumpu 56511070)",
+      "Anuario Estadistico de la Republica de Chile 1940 (Yumpu 56511096)",
       "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
-      "Anuario Estadistico de la Republica de Chile, entrega 1876-1877 (Yumpu 56511011)",
-      "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511013)",
-      "Anuario Estadistico de la Republica de Chile, entrega 1878-1879 (Yumpu 56511018)",
-      "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 29. Santiago."
+      "Anuario Estadistico de la Republica de Chile 1930 (Yumpu 56511071)"
     ],
     "topic_category": "demography",
     "semantic_zero": true,
     "source_quality": "clean",
-    "source_document": "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
+    "source_document": "Anuario Estadistico de la Republica de Chile 1925 (Yumpu 56511059)",
     "per_capita_default": "default_pc",
     "accent": "#0E1A2B",
     "definition": "Annual count of deaths by province, Sinopsis Estadística de Chile 1924–1927 and earlier Anuario sources. Per the duplicate-resolution memo, scheduled to merge with defunciones_1858_prov into a renamed deaths_province indicator.",
-    "coverage_statement": "3 year(s) 1900-1935, 60 province-level observations; 5 year(s) 1876-1880, 270 department-level observations",
+    "coverage_statement": "12 year(s) 1900-1940, 263 province-level observations; 14 year(s) 1876-1940, 957 department-level observations",
     "commit_status_by_scale": {
       "province": "committed",
       "department": "committed"
     },
     "published_by_scale": {
       "province": "sparse",
-      "department": "complete"
+      "department": "sparse"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": "sparse",
     "display_id": "deaths_province",
     "aliases": [
       "defunciones"
@@ -39727,19 +40035,27 @@
         "cadence": "irregular",
         "valid_years": [
           1900,
+          1920,
+          1921,
+          1922,
+          1923,
           1924,
-          1935
+          1925,
+          1930,
+          1931,
+          1935,
+          1940
         ],
         "year_range": [
           1900,
-          1935
+          1940
         ],
-        "n_observations": 60,
+        "n_observations": 244,
         "magnitude": {
           "min": 273.0,
-          "max": 32867.0,
-          "median": 4621.0,
-          "orders_of_magnitude": 2.08,
+          "max": 35432.0,
+          "median": 5212.0,
+          "orders_of_magnitude": 2.11,
           "hint": "linear"
         },
         "rendering_mode": "dots",
@@ -39747,17 +40063,20 @@
       }
     },
     "source_documents": [
-      "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 29. Santiago.",
-      "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I). Santiago: Imprenta Nacional."
+      "Anuario Estadistico de la Republica de Chile 1925 (Yumpu 56511059)",
+      "Anuario Estadistico de la Republica de Chile 1931-1935 (Yumpu 56511070)",
+      "Anuario Estadistico de la Republica de Chile 1940 (Yumpu 56511096)",
+      "Anuario Estadistico de la Republica de Chile 1930 (Yumpu 56511071)",
+      "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 29. Santiago."
     ],
     "topic_category": "demography",
     "semantic_zero": true,
     "source_quality": "clean",
-    "source_document": "Sinopsis Estadística de Chile, 1924–1927, p. 29",
+    "source_document": "Anuario Estadistico de la Republica de Chile 1925 (Yumpu 56511059)",
     "per_capita_default": "default_pc",
     "accent": "#0E1A2B",
     "definition": "Annual count of live births by province, Sinopsis Estadística de Chile 1924–1927. Per the duplicate-resolution memo, scheduled to merge with nacimientos_1858_prov and nacimientos_1924_prov into a renamed births_province indicator.",
-    "coverage_statement": "3 year(s) 1900-1935, 60 province-level observations",
+    "coverage_statement": "11 year(s) 1900-1940, 244 province-level observations",
     "commit_status_by_scale": {
       "province": "committed"
     },
@@ -39827,13 +40146,13 @@
       }
     },
     "source_documents": [
+      "Anuario Estadistico de la Republica de Chile 1925 (Yumpu 56511059)",
+      "Anuario Estadistico de la Republica de Chile 1931-1935 (Yumpu 56511070)",
+      "Anuario Estadistico de la Republica de Chile 1940 (Yumpu 56511096)",
       "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
-      "Anuario Estadistico de la Republica de Chile, entrega 1876-1877 (Yumpu 56511011)",
-      "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511013)",
-      "Anuario Estadistico de la Republica de Chile, entrega 1878-1879 (Yumpu 56511018)",
-      "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 29. Santiago.",
+      "Anuario Estadistico de la Republica de Chile 1930 (Yumpu 56511071)",
       "Anuario Estadistico de la Republica de Chile, Ano 1926, Vol. I Demografia (Direccion General de Estadistica)",
-      "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I). Santiago: Imprenta Nacional."
+      "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 29. Santiago."
     ],
     "topic_category": "demography",
     "semantic_zero": true,
@@ -39896,74 +40215,91 @@
         "cadence": "irregular",
         "valid_years": [
           1900,
+          1920,
+          1921,
+          1922,
+          1923,
           1924,
-          1935
+          1925,
+          1930,
+          1931,
+          1935,
+          1940
         ],
         "year_range": [
           1900,
-          1935
+          1940
         ],
-        "n_observations": 60,
+        "n_observations": 244,
         "magnitude": {
           "min": 26.0,
-          "max": 9111.0,
-          "median": 790.0,
-          "orders_of_magnitude": 2.54,
+          "max": 12269.0,
+          "median": 847.0,
+          "orders_of_magnitude": 2.67,
           "hint": "linear"
         },
         "rendering_mode": "dots",
         "magnitude_hint": "auto"
       },
       "department": {
-        "cadence": "annual",
+        "cadence": "irregular",
         "valid_years": [
           1876,
           1877,
           1878,
           1879,
-          1880
+          1880,
+          1921,
+          1922,
+          1923,
+          1924,
+          1925,
+          1930,
+          1931,
+          1935,
+          1940
         ],
         "year_range": [
           1876,
-          1880
+          1940
         ],
-        "n_observations": 269,
+        "n_observations": 957,
         "magnitude": {
           "min": 5.0,
-          "max": 1922.0,
-          "median": 171.0,
-          "orders_of_magnitude": 2.58,
-          "hint": "linear"
+          "max": 11088.0,
+          "median": 209.0,
+          "orders_of_magnitude": 3.35,
+          "hint": "log"
         },
-        "rendering_mode": "line",
-        "magnitude_hint": "auto"
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
       }
     },
     "source_documents": [
+      "Anuario Estadistico de la Republica de Chile 1925 (Yumpu 56511059)",
+      "Anuario Estadistico de la Republica de Chile 1931-1935 (Yumpu 56511070)",
+      "Anuario Estadistico de la Republica de Chile 1940 (Yumpu 56511096)",
       "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
-      "Anuario Estadistico de la Republica de Chile, entrega 1876-1877 (Yumpu 56511011)",
-      "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511013)",
-      "Anuario Estadistico de la Republica de Chile, entrega 1878-1879 (Yumpu 56511018)",
-      "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 29. Santiago."
+      "Anuario Estadistico de la Republica de Chile 1930 (Yumpu 56511071)"
     ],
     "topic_category": "demography",
     "semantic_zero": true,
     "source_quality": "clean",
-    "source_document": "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
+    "source_document": "Anuario Estadistico de la Republica de Chile 1925 (Yumpu 56511059)",
     "per_capita_default": "default_raw",
     "accent": "#0E1A2B",
     "definition": "Annual count of marriages by province, Sinopsis Estadística de Chile 1924–1927. Per the duplicate-resolution memo, scheduled to merge with matrimonios_total, matrimonios_1858_prov, and matrimonios_hist_dept into a renamed marriages_province indicator.",
-    "coverage_statement": "3 year(s) 1900-1935, 60 province-level observations; 5 year(s) 1876-1880, 269 department-level observations",
+    "coverage_statement": "11 year(s) 1900-1940, 244 province-level observations; 14 year(s) 1876-1940, 957 department-level observations",
     "commit_status_by_scale": {
       "province": "committed",
       "department": "committed"
     },
     "published_by_scale": {
       "province": "sparse",
-      "department": "complete"
+      "department": "sparse"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": "sparse",
     "display_id": "marriages_province",
     "aliases": [
       "matrimonios"
@@ -40067,7 +40403,7 @@
     "label": "Marriages (modern era)",
     "display_label": "Marriages (modern era)",
     "category": "Vital statistics",
-    "source_type": "compiled",
+    "source_type": "memoria",
     "format_hint": "count",
     "display_unit": "marriages",
     "curated_subtitle": "Marriages at province scale, 1969–1973, count (scheduled merge)",
@@ -40079,8 +40415,9 @@
     },
     "scales": {
       "province": {
-        "cadence": "annual",
+        "cadence": "irregular",
         "valid_years": [
+          1892,
           1969,
           1970,
           1971,
@@ -40088,18 +40425,18 @@
           1973
         ],
         "year_range": [
-          1969,
+          1892,
           1973
         ],
-        "n_observations": 45,
+        "n_observations": 47,
         "magnitude": {
-          "min": 312.0,
+          "min": 116.0,
           "max": 11068.0,
-          "median": 2337.0,
-          "orders_of_magnitude": 1.55,
+          "median": 2189.0,
+          "orders_of_magnitude": 1.98,
           "hint": "linear"
         },
-        "rendering_mode": "line",
+        "rendering_mode": "dots",
         "magnitude_hint": "auto"
       }
     },
@@ -40109,25 +40446,35 @@
     ],
     "topic_category": "demography",
     "semantic_zero": true,
-    "source_quality": "ocr",
-    "source_document": "",
+    "source_quality": "clean",
+    "source_document": "Memoria del Interior 1893 Tomo III",
     "per_capita_default": "default_pc",
     "accent": "#0E1A2B",
     "definition": "Annual count of marriages by province in the modern era, 1969–1973. Source attribution incomplete in the manifest. Scheduled to merge into marriages_province.",
-    "coverage_statement": "5 year(s) 1969-1973, 45 province-level observations",
+    "coverage_statement": "6 year(s) 1892-1973, 47 province-level observations",
     "commit_status_by_scale": {
       "province": "committed"
     },
     "published_by_scale": {
-      "province": "complete"
+      "province": "sparse"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": "sparse",
     "display_id": "marriages_province",
     "aliases": [
       "matrimonios_total"
     ],
     "breaks": [
+      {
+        "id": "boundary_regionalization_1928",
+        "year": 1928,
+        "kind": "boundary",
+        "label": "Provincial reorganization (DFL 8,582)",
+        "description": "Decreto con Fuerza de Ley 8,582 of 1927, in force 1928, redrew Chile's provincial map. Some 19th-century departments merged, new provinces were created from departmental groupings, and several department names persisted into different boundary contexts. The 52-panel that anchors this dataset is built from the pre-1928 frame; post-1928 departments map imperfectly to it.",
+        "severity": "blocker",
+        "citation": "Decreto con Fuerza de Ley 8,582 de 1927; Cavieres (1988), División político-administrativa de Chile.",
+        "rule_for_chart": "All department and province series should annotate 1928 as a boundary discontinuity. Cross-break comparisons of the same named department before and after 1928 are not on the same geography and should carry a notice. The platform's choice of 1920 as the last department GeoJSON frame predates this reform; users mapping post-1928 data onto pre-1928 geometry are looking at a fiction."
+      },
       {
         "id": "methodological_ine_1970",
         "year": 1970,
