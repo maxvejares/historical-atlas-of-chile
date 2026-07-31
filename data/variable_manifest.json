@@ -1195,7 +1195,7 @@
     "source_type": "compiled",
     "format_hint": "count",
     "display_unit": "metric tons",
-    "curated_subtitle": "Maize production, tons (1972–1974), by province, 1972–1974, metric tons",
+    "curated_subtitle": "Maize production, tons (1972–1974), by province, 1965–1974, metric tons",
     "scale_availability": {
       "national": false,
       "province": true,
@@ -1204,25 +1204,26 @@
     },
     "scales": {
       "province": {
-        "cadence": "annual",
+        "cadence": "irregular",
         "valid_years": [
+          1965,
           1972,
           1973,
           1974
         ],
         "year_range": [
-          1972,
+          1965,
           1974
         ],
-        "n_observations": 54,
+        "n_observations": 56,
         "magnitude": {
           "min": 13.0,
           "max": 140923.0,
-          "median": 4119.0,
+          "median": 4022.0,
           "orders_of_magnitude": 4.04,
           "hint": "log"
         },
-        "rendering_mode": "line",
+        "rendering_mode": "dots",
         "magnitude_hint": "log"
       }
     },
@@ -1236,7 +1237,7 @@
     "per_capita_default": "default_raw",
     "accent": "#3b6d11",
     "definition": "Maize production in metric tons by province, 1972 to 1974, from ODEPA's Estadísticas Agropecuarias.",
-    "coverage_statement": "3 year(s) 1972-1974, 54 province-level observations",
+    "coverage_statement": "4 year(s) 1965-1974, 56 province-level observations",
     "commit_status_by_scale": {
       "province": "committed"
     },
@@ -1255,6 +1256,16 @@
         "severity": "blocker",
         "citation": "Decreto-Ley 575 de 1974; ODEPLAN/CONARA (1976), Chile hacia un nuevo destino.",
         "rule_for_chart": "Department and province series should not be drawn past 1974 without a notice; the data after this date originates from region-level reporting back-cast to the older units, which is interpolation. Recommended: terminate department/province series at 1973 by default with an option to view the back-cast extension."
+      },
+      {
+        "id": "methodological_ine_1970",
+        "year": 1970,
+        "kind": "methodological",
+        "label": "INE replaces SNEC",
+        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
+        "severity": "informational",
+        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
+        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
       },
       {
         "id": "political_unidad_popular_1973",
@@ -1864,7 +1875,7 @@
     "source_type": "compiled",
     "format_hint": "count",
     "display_unit": "metric tons",
-    "curated_subtitle": "Potato production, tons (1972–1974), by province, 1972–1974, metric tons",
+    "curated_subtitle": "Potato production, tons (1972–1974), by province, 1965–1974, metric tons",
     "scale_availability": {
       "national": false,
       "province": true,
@@ -1873,25 +1884,26 @@
     },
     "scales": {
       "province": {
-        "cadence": "annual",
+        "cadence": "irregular",
         "valid_years": [
+          1965,
           1972,
           1973,
           1974
         ],
         "year_range": [
-          1972,
+          1965,
           1974
         ],
-        "n_observations": 67,
+        "n_observations": 69,
         "magnitude": {
           "min": 167.0,
           "max": 148967.0,
-          "median": 24221.0,
+          "median": 20671.0,
           "orders_of_magnitude": 2.95,
           "hint": "linear"
         },
-        "rendering_mode": "line",
+        "rendering_mode": "dots",
         "magnitude_hint": "auto"
       }
     },
@@ -1905,7 +1917,7 @@
     "per_capita_default": "default_raw",
     "accent": "#3b6d11",
     "definition": "Potato production in metric tons by province, 1972 to 1974, from ODEPA's Estadísticas Agropecuarias.",
-    "coverage_statement": "3 year(s) 1972-1974, 67 province-level observations",
+    "coverage_statement": "4 year(s) 1965-1974, 69 province-level observations",
     "commit_status_by_scale": {
       "province": "committed"
     },
@@ -1924,6 +1936,16 @@
         "severity": "blocker",
         "citation": "Decreto-Ley 575 de 1974; ODEPLAN/CONARA (1976), Chile hacia un nuevo destino.",
         "rule_for_chart": "Department and province series should not be drawn past 1974 without a notice; the data after this date originates from region-level reporting back-cast to the older units, which is interpolation. Recommended: terminate department/province series at 1973 by default with an option to view the back-cast extension."
+      },
+      {
+        "id": "methodological_ine_1970",
+        "year": 1970,
+        "kind": "methodological",
+        "label": "INE replaces SNEC",
+        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
+        "severity": "informational",
+        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
+        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
       },
       {
         "id": "political_unidad_popular_1973",
@@ -2112,7 +2134,7 @@
     "source_type": "compiled",
     "format_hint": "count",
     "display_unit": "hectares",
-    "curated_subtitle": "Wheat area sown, hectares (1972–1974), by province, 1972–1974, hectares",
+    "curated_subtitle": "Wheat area sown, hectares (1972–1974), by province, 1965–1974, hectares",
     "scale_availability": {
       "national": false,
       "province": true,
@@ -2121,25 +2143,26 @@
     },
     "scales": {
       "province": {
-        "cadence": "annual",
+        "cadence": "irregular",
         "valid_years": [
+          1965,
           1972,
           1973,
           1974
         ],
         "year_range": [
-          1972,
+          1965,
           1974
         ],
-        "n_observations": 66,
+        "n_observations": 69,
         "magnitude": {
           "min": 90.0,
           "max": 110650.0,
-          "median": 13030.0,
+          "median": 11430.0,
           "orders_of_magnitude": 3.09,
           "hint": "log"
         },
-        "rendering_mode": "line",
+        "rendering_mode": "dots",
         "magnitude_hint": "log"
       }
     },
@@ -2153,7 +2176,7 @@
     "per_capita_default": "default_raw",
     "accent": "#3b6d11",
     "definition": "Area sown with wheat in hectares by province, 1972 to 1974, from ODEPA's Estadísticas Agropecuarias.",
-    "coverage_statement": "3 year(s) 1972-1974, 66 province-level observations",
+    "coverage_statement": "4 year(s) 1965-1974, 69 province-level observations",
     "commit_status_by_scale": {
       "province": "committed"
     },
@@ -2172,6 +2195,16 @@
         "severity": "blocker",
         "citation": "Decreto-Ley 575 de 1974; ODEPLAN/CONARA (1976), Chile hacia un nuevo destino.",
         "rule_for_chart": "Department and province series should not be drawn past 1974 without a notice; the data after this date originates from region-level reporting back-cast to the older units, which is interpolation. Recommended: terminate department/province series at 1973 by default with an option to view the back-cast extension."
+      },
+      {
+        "id": "methodological_ine_1970",
+        "year": 1970,
+        "kind": "methodological",
+        "label": "INE replaces SNEC",
+        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
+        "severity": "informational",
+        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
+        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
       },
       {
         "id": "political_unidad_popular_1973",
@@ -2463,7 +2496,7 @@
     "source_type": "compiled",
     "format_hint": "count",
     "display_unit": "metric tons",
-    "curated_subtitle": "Wheat production, tons (1972–1974), by province, 1972–1974, metric tons",
+    "curated_subtitle": "Wheat production, tons (1972–1974), by province, 1965–1974, metric tons",
     "scale_availability": {
       "national": false,
       "province": true,
@@ -2472,25 +2505,26 @@
     },
     "scales": {
       "province": {
-        "cadence": "annual",
+        "cadence": "irregular",
         "valid_years": [
+          1965,
           1972,
           1973,
           1974
         ],
         "year_range": [
-          1972,
+          1965,
           1974
         ],
-        "n_observations": 66,
+        "n_observations": 69,
         "magnitude": {
           "min": 60.0,
           "max": 160443.0,
-          "median": 12227.0,
+          "median": 11913.0,
           "orders_of_magnitude": 3.43,
           "hint": "log"
         },
-        "rendering_mode": "line",
+        "rendering_mode": "dots",
         "magnitude_hint": "log"
       }
     },
@@ -2504,7 +2538,7 @@
     "per_capita_default": "default_raw",
     "accent": "#3b6d11",
     "definition": "Wheat production in metric tons by province, 1972 to 1974, from ODEPA's Estadísticas Agropecuarias.",
-    "coverage_statement": "3 year(s) 1972-1974, 66 province-level observations",
+    "coverage_statement": "4 year(s) 1965-1974, 69 province-level observations",
     "commit_status_by_scale": {
       "province": "committed"
     },
@@ -2523,6 +2557,16 @@
         "severity": "blocker",
         "citation": "Decreto-Ley 575 de 1974; ODEPLAN/CONARA (1976), Chile hacia un nuevo destino.",
         "rule_for_chart": "Department and province series should not be drawn past 1974 without a notice; the data after this date originates from region-level reporting back-cast to the older units, which is interpolation. Recommended: terminate department/province series at 1973 by default with an option to view the back-cast extension."
+      },
+      {
+        "id": "methodological_ine_1970",
+        "year": 1970,
+        "kind": "methodological",
+        "label": "INE replaces SNEC",
+        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
+        "severity": "informational",
+        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
+        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
       },
       {
         "id": "political_unidad_popular_1973",
@@ -39185,11 +39229,11 @@
     "source_documents": [
       "Anuario Estadistico de la Republica de Chile 1925 (Yumpu 56511059)",
       "Anuario Estadistico de la Republica de Chile 1931-1935 (Yumpu 56511070)",
-      "Anuario Estadistico de la Republica de Chile 1940 (Yumpu 56511096)",
-      "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
-      "Anuario Estadistico de la Republica de Chile 1930 (Yumpu 56511071)",
+      "Anuario Estadistico de la Republica de Chile 1926 (Yumpu 56511049)",
+      "Anuario Estadistico de Chile 1936 (Yumpu 56511081)",
+      "Anuario Estadistico de la Republica de Chile 1948 (Yumpu 56511094)",
       "Anuario Estadistico de la Republica de Chile, Ano 1926, Vol. I Demografia (Direccion General de Estadistica)",
-      "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 29. Santiago."
+      "Anuario Estadistico de la Republica de Chile 1945 (Yumpu 56511087)"
     ],
     "topic_category": "demography",
     "semantic_zero": true,
@@ -39545,22 +39589,38 @@
           1923,
           1924,
           1925,
+          1926,
+          1927,
+          1928,
+          1929,
           1930,
           1931,
+          1933,
           1934,
           1935,
-          1940
+          1936,
+          1937,
+          1938,
+          1939,
+          1940,
+          1942,
+          1943,
+          1944,
+          1945,
+          1946,
+          1947,
+          1948
         ],
         "year_range": [
           1900,
-          1940
+          1948
         ],
-        "n_observations": 263,
+        "n_observations": 618,
         "magnitude": {
-          "min": 135.0,
-          "max": 29094.0,
-          "median": 3861.0,
-          "orders_of_magnitude": 2.33,
+          "min": 31.0,
+          "max": 29312.0,
+          "median": 3534.0,
+          "orders_of_magnitude": 2.98,
           "hint": "linear"
         },
         "rendering_mode": "dots",
@@ -39579,21 +39639,37 @@
           1923,
           1924,
           1925,
+          1926,
+          1928,
+          1929,
           1930,
           1931,
+          1933,
+          1934,
           1935,
-          1940
+          1936,
+          1937,
+          1938,
+          1939,
+          1940,
+          1942,
+          1943,
+          1944,
+          1945,
+          1946,
+          1947,
+          1948
         ],
         "year_range": [
           1876,
-          1940
+          1948
         ],
-        "n_observations": 957,
+        "n_observations": 2208,
         "magnitude": {
           "min": 13.0,
-          "max": 25636.0,
-          "median": 863.0,
-          "orders_of_magnitude": 3.29,
+          "max": 26093.0,
+          "median": 832.0,
+          "orders_of_magnitude": 3.3,
           "hint": "log"
         },
         "rendering_mode": "dots",
@@ -39603,9 +39679,9 @@
     "source_documents": [
       "Anuario Estadistico de la Republica de Chile 1925 (Yumpu 56511059)",
       "Anuario Estadistico de la Republica de Chile 1931-1935 (Yumpu 56511070)",
-      "Anuario Estadistico de la Republica de Chile 1940 (Yumpu 56511096)",
-      "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
-      "Anuario Estadistico de la Republica de Chile 1930 (Yumpu 56511071)"
+      "Anuario Estadistico de la Republica de Chile 1926 (Yumpu 56511049)",
+      "Anuario Estadistico de Chile 1936 (Yumpu 56511081)",
+      "Anuario Estadistico de la Republica de Chile 1948 (Yumpu 56511094)"
     ],
     "topic_category": "demography",
     "semantic_zero": true,
@@ -39614,17 +39690,17 @@
     "per_capita_default": "default_pc",
     "accent": "#0E1A2B",
     "definition": "Annual count of deaths by province, Sinopsis Estadística de Chile 1924–1927 and earlier Anuario sources. Per the duplicate-resolution memo, scheduled to merge with defunciones_1858_prov into a renamed deaths_province indicator.",
-    "coverage_statement": "12 year(s) 1900-1940, 263 province-level observations; 14 year(s) 1876-1940, 957 department-level observations",
+    "coverage_statement": "28 year(s) 1900-1948, 618 province-level observations; 30 year(s) 1876-1948, 2208 department-level observations",
     "commit_status_by_scale": {
       "province": "committed",
       "department": "committed"
     },
     "published_by_scale": {
-      "province": "sparse",
+      "province": "partial",
       "department": "sparse"
     },
     "commit_status": "committed",
-    "published": "sparse",
+    "published": "partial",
     "display_id": "deaths_province",
     "aliases": [
       "defunciones"
@@ -40041,21 +40117,38 @@
           1923,
           1924,
           1925,
+          1926,
+          1927,
+          1928,
+          1929,
           1930,
           1931,
+          1933,
+          1934,
           1935,
-          1940
+          1936,
+          1937,
+          1938,
+          1939,
+          1940,
+          1942,
+          1943,
+          1944,
+          1945,
+          1946,
+          1947,
+          1948
         ],
         "year_range": [
           1900,
-          1940
+          1948
         ],
-        "n_observations": 244,
+        "n_observations": 629,
         "magnitude": {
-          "min": 273.0,
-          "max": 35432.0,
-          "median": 5212.0,
-          "orders_of_magnitude": 2.11,
+          "min": 199.0,
+          "max": 51580.0,
+          "median": 5031.0,
+          "orders_of_magnitude": 2.41,
           "hint": "linear"
         },
         "rendering_mode": "dots",
@@ -40065,9 +40158,9 @@
     "source_documents": [
       "Anuario Estadistico de la Republica de Chile 1925 (Yumpu 56511059)",
       "Anuario Estadistico de la Republica de Chile 1931-1935 (Yumpu 56511070)",
-      "Anuario Estadistico de la Republica de Chile 1940 (Yumpu 56511096)",
-      "Anuario Estadistico de la Republica de Chile 1930 (Yumpu 56511071)",
-      "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 29. Santiago."
+      "Anuario Estadistico de Chile 1936 (Yumpu 56511081)",
+      "Anuario Estadistico de la Republica de Chile 1945 (Yumpu 56511087)",
+      "Anuario Estadistico de la Republica de Chile 1948 (Yumpu 56511094)"
     ],
     "topic_category": "demography",
     "semantic_zero": true,
@@ -40076,15 +40169,15 @@
     "per_capita_default": "default_pc",
     "accent": "#0E1A2B",
     "definition": "Annual count of live births by province, Sinopsis Estadística de Chile 1924–1927. Per the duplicate-resolution memo, scheduled to merge with nacimientos_1858_prov and nacimientos_1924_prov into a renamed births_province indicator.",
-    "coverage_statement": "11 year(s) 1900-1940, 244 province-level observations",
+    "coverage_statement": "28 year(s) 1900-1948, 629 province-level observations",
     "commit_status_by_scale": {
       "province": "committed"
     },
     "published_by_scale": {
-      "province": "sparse"
+      "province": "partial"
     },
     "commit_status": "committed",
-    "published": "sparse",
+    "published": "partial",
     "display_id": "births_province",
     "aliases": [
       "nacimientos"
@@ -40148,11 +40241,11 @@
     "source_documents": [
       "Anuario Estadistico de la Republica de Chile 1925 (Yumpu 56511059)",
       "Anuario Estadistico de la Republica de Chile 1931-1935 (Yumpu 56511070)",
-      "Anuario Estadistico de la Republica de Chile 1940 (Yumpu 56511096)",
-      "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
-      "Anuario Estadistico de la Republica de Chile 1930 (Yumpu 56511071)",
+      "Anuario Estadistico de la Republica de Chile 1926 (Yumpu 56511049)",
+      "Anuario Estadistico de Chile 1936 (Yumpu 56511081)",
+      "Anuario Estadistico de la Republica de Chile 1948 (Yumpu 56511094)",
       "Anuario Estadistico de la Republica de Chile, Ano 1926, Vol. I Demografia (Direccion General de Estadistica)",
-      "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 29. Santiago."
+      "Anuario Estadistico de la Republica de Chile 1945 (Yumpu 56511087)"
     ],
     "topic_category": "demography",
     "semantic_zero": true,
@@ -40221,21 +40314,38 @@
           1923,
           1924,
           1925,
+          1926,
+          1927,
+          1928,
+          1929,
           1930,
           1931,
+          1933,
+          1934,
           1935,
-          1940
+          1936,
+          1937,
+          1938,
+          1939,
+          1940,
+          1942,
+          1943,
+          1944,
+          1945,
+          1946,
+          1947,
+          1948
         ],
         "year_range": [
           1900,
-          1940
+          1948
         ],
-        "n_observations": 244,
+        "n_observations": 628,
         "magnitude": {
           "min": 26.0,
-          "max": 12269.0,
-          "median": 847.0,
-          "orders_of_magnitude": 2.67,
+          "max": 15541.0,
+          "median": 953.0,
+          "orders_of_magnitude": 2.78,
           "hint": "linear"
         },
         "rendering_mode": "dots",
@@ -40254,21 +40364,37 @@
           1923,
           1924,
           1925,
+          1926,
+          1928,
+          1929,
           1930,
           1931,
+          1933,
+          1934,
           1935,
-          1940
+          1936,
+          1937,
+          1938,
+          1939,
+          1940,
+          1942,
+          1943,
+          1944,
+          1945,
+          1946,
+          1947,
+          1948
         ],
         "year_range": [
           1876,
-          1940
+          1948
         ],
-        "n_observations": 957,
+        "n_observations": 2227,
         "magnitude": {
           "min": 5.0,
-          "max": 11088.0,
-          "median": 209.0,
-          "orders_of_magnitude": 3.35,
+          "max": 13844.0,
+          "median": 255.0,
+          "orders_of_magnitude": 3.44,
           "hint": "log"
         },
         "rendering_mode": "dots",
@@ -40278,9 +40404,9 @@
     "source_documents": [
       "Anuario Estadistico de la Republica de Chile 1925 (Yumpu 56511059)",
       "Anuario Estadistico de la Republica de Chile 1931-1935 (Yumpu 56511070)",
-      "Anuario Estadistico de la Republica de Chile 1940 (Yumpu 56511096)",
-      "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
-      "Anuario Estadistico de la Republica de Chile 1930 (Yumpu 56511071)"
+      "Anuario Estadistico de la Republica de Chile 1926 (Yumpu 56511049)",
+      "Anuario Estadistico de Chile 1936 (Yumpu 56511081)",
+      "Anuario Estadistico de la Republica de Chile 1945 (Yumpu 56511087)"
     ],
     "topic_category": "demography",
     "semantic_zero": true,
@@ -40289,17 +40415,17 @@
     "per_capita_default": "default_raw",
     "accent": "#0E1A2B",
     "definition": "Annual count of marriages by province, Sinopsis Estadística de Chile 1924–1927. Per the duplicate-resolution memo, scheduled to merge with matrimonios_total, matrimonios_1858_prov, and matrimonios_hist_dept into a renamed marriages_province indicator.",
-    "coverage_statement": "11 year(s) 1900-1940, 244 province-level observations; 14 year(s) 1876-1940, 957 department-level observations",
+    "coverage_statement": "28 year(s) 1900-1948, 628 province-level observations; 30 year(s) 1876-1948, 2227 department-level observations",
     "commit_status_by_scale": {
       "province": "committed",
       "department": "committed"
     },
     "published_by_scale": {
-      "province": "sparse",
+      "province": "partial",
       "department": "sparse"
     },
     "commit_status": "committed",
-    "published": "sparse",
+    "published": "partial",
     "display_id": "marriages_province",
     "aliases": [
       "matrimonios"
