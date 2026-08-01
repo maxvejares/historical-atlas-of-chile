@@ -56,12 +56,35 @@ export async function loadManifest() {
   } else {
     _scope = { start: 1840, end: 1990 };
   }
-  _byId = new Map(_full.map(v => [v.id, v]));
-  // Also index by display_id and by aliases so URLs that cite a renamed or
-  // retired indicator still resolve. (curation overlay 01 — duplicates &
-  // renames keep the canonical entry but add display_id + aliases lists;
-  // a citation pasted before the rename should not 404.)
-  for (const v of _full) {
+  // _visible = the BROWSE-VISIBLE catalog: the full set minus indicators that
+  // should never appear in the topic grid, browse nav, search, national picker,
+  // or hero counts — retired entries, alternate-source / alternate-currency
+  // variants of a canonical series, indicators discarded for want of a primary
+  // source, and unit_splice_corruption ratio series whose values are not yet
+  // reconciled (curation tasks 3 & 5).
+  //
+  // Chunk 0.5 (findings D1-02, D1-04): withholding used to be catalog-only.
+  // _byId indexed the UNFILTERED set, so a withheld indicator still rendered
+  // with full chrome from a bookmarked or shared URL, and
+  // discarded_no_primary_source was absent from the hidden set altogether, so
+  // 22 such indicators shipped 17,229 datapoints. _byId is now indexed on the
+  // filtered set: a withheld id resolves to undefined and the caller falls back
+  // to its default. Consequence accepted with the fix: a URL citing a retired
+  // id no longer redirects to its canonical.
+  const _HIDDEN_STATUS = new Set([
+    'retired', 'alternate_variant', 'alternate_currency', 'discarded_no_primary_source',
+  ]);
+  const _visible = _full.filter(v =>
+    !_HIDDEN_STATUS.has(v.presentation_status) &&
+    v.data_quality_flag !== 'unit_splice_corruption'
+  );
+
+  _byId = new Map(_visible.map(v => [v.id, v]));
+  // Also index by display_id and by aliases so URLs that cite a renamed
+  // indicator still resolve. (curation overlay 01 — duplicates & renames keep
+  // the canonical entry but add display_id + aliases lists; a citation pasted
+  // before the rename should not 404.)
+  for (const v of _visible) {
     if (v.display_id && !_byId.has(v.display_id)) _byId.set(v.display_id, v);
     if (Array.isArray(v.aliases)) {
       for (const a of v.aliases) {
@@ -94,17 +117,7 @@ export async function loadManifest() {
     if (v.merged_into) bucket(v.merged_into, 'retired_into', v.id);
     if (v.currency_view_of) bucket(v.currency_view_of, 'alternate_currency', v.id);
   }
-  // _manifest = the BROWSE-VISIBLE catalog: the full set minus indicators that
-  // should never appear in the topic grid, browse nav, search, national picker,
-  // or hero counts — retired entries, alternate-source / alternate-currency
-  // variants of a canonical series, and unit_splice_corruption ratio series
-  // whose values are not yet reconciled (curation tasks 3 & 5). All of these
-  // remain reachable by direct URL through _byId above.
-  const _HIDDEN_STATUS = new Set(['retired', 'alternate_variant', 'alternate_currency']);
-  _manifest = _full.filter(v =>
-    !_HIDDEN_STATUS.has(v.presentation_status) &&
-    v.data_quality_flag !== 'unit_splice_corruption'
-  );
+  _manifest = _visible;
   return _manifest;
 }
 

@@ -3554,11 +3554,11 @@
           1928,
           1928
         ],
-        "n_observations": 64,
+        "n_observations": 71,
         "magnitude": {
           "min": 3890.0,
           "max": 691482.0,
-          "median": 44776.0,
+          "median": 42135.0,
           "orders_of_magnitude": 2.25,
           "hint": "linear"
         },
@@ -3576,7 +3576,7 @@
     "per_capita_default": "default_raw",
     "accent": "#0E1A2B",
     "definition": "Estimated mid-year (media) population for 1928, by department and province, from the Anuario Estadístico de Chile 1928 (Dirección General de Estadística). An administrative intercensal estimate between the 1920 and 1930 censuses, not a census enumeration. A single-year cross-section.",
-    "coverage_statement": "1 year(s) 1928, 17 province-level observations; 1 year(s) 1928, 64 department-level observations",
+    "coverage_statement": "1 year(s) 1928, 17 province-level observations; 1 year(s) 1928, 71 department-level observations",
     "commit_status_by_scale": {
       "province": "cross_section",
       "department": "cross_section"
@@ -25078,11 +25078,11 @@
           1862,
           1921
         ],
-        "n_observations": 866,
+        "n_observations": 868,
         "magnitude": {
           "min": 41.0,
           "max": 42319.0,
-          "median": 1347.0,
+          "median": 1351.0,
           "orders_of_magnitude": 3.01,
           "hint": "log"
         },
@@ -25104,7 +25104,7 @@
     "per_capita_default": "default_raw",
     "accent": "#4a3970",
     "definition": "Number of enfranchised voters (calificados, the term used in the 19th-century electoral law) by department, Véjares department-level historical dataset. The base for the enfranchised_pc series and the analytical core of the Landholding paper's argument about landlord influence on the 19th-century franchise.",
-    "coverage_statement": "15 year(s) 1862-1921, 866 department-level observations",
+    "coverage_statement": "15 year(s) 1862-1921, 868 department-level observations",
     "commit_status_by_scale": {
       "department": "committed"
     },
@@ -30846,7 +30846,7 @@
           1862,
           1920
         ],
-        "n_observations": 648,
+        "n_observations": 652,
         "magnitude": {
           "min": 1.0,
           "max": 19481.0,
@@ -30869,7 +30869,7 @@
     "per_capita_default": "default_pc",
     "accent": "#2c5060",
     "definition": "Department-level count of agricultural workers (the 19th-century Chilean rural laborer occupations: peón, inquilino, gañán, jornalero), Véjares department-level historical dataset. The 'peasant' label is editorially loaded; per the duplicate-resolution memo, this indicator is scheduled to merge into a renamed agricultural_workers_department. The historiographical debate over what to call this class is documented in Bauer (1975) and Bengoa (2015).",
-    "coverage_statement": "10 year(s) 1862-1920, 648 department-level observations",
+    "coverage_statement": "10 year(s) 1862-1920, 652 department-level observations",
     "commit_status_by_scale": {
       "department": "committed"
     },
@@ -30977,7 +30977,7 @@
           1865,
           1920
         ],
-        "n_observations": 430,
+        "n_observations": 436,
         "magnitude": {
           "min": 1.0,
           "max": 948.0,
@@ -30999,7 +30999,7 @@
     "per_capita_default": "default_pc",
     "accent": "#2c5060",
     "definition": "Department-level count of persons reporting 'ingeniero' (engineer) as their occupation in the 1865–1920 censuses, Véjares department-level historical dataset. A small but informative measure of technical professions and the geographic distribution of the modernizing middle class.",
-    "coverage_statement": "6 year(s) 1865-1920, 430 department-level observations",
+    "coverage_statement": "6 year(s) 1865-1920, 436 department-level observations",
     "commit_status_by_scale": {
       "department": "committed"
     },
@@ -31098,7 +31098,7 @@
           1865,
           1920
         ],
-        "n_observations": 430,
+        "n_observations": 436,
         "magnitude": {
           "min": 1.0,
           "max": 1000.0,
@@ -31120,7 +31120,7 @@
     "per_capita_default": "default_pc",
     "accent": "#2c5060",
     "definition": "Department-level count of persons reporting 'abogado' (lawyer) as their occupation in the 1865–1920 censuses, Véjares department-level historical dataset. A measure of the legal-administrative profession; lawyers were highly concentrated in Santiago and Valparaíso.",
-    "coverage_statement": "6 year(s) 1865-1920, 430 department-level observations",
+    "coverage_statement": "6 year(s) 1865-1920, 436 department-level observations",
     "commit_status_by_scale": {
       "department": "committed"
     },
@@ -31161,7 +31161,7 @@
           1865,
           1920
         ],
-        "n_observations": 430,
+        "n_observations": 436,
         "magnitude": {
           "min": 1.0,
           "max": 3434.0,
@@ -31183,7 +31183,7 @@
     "per_capita_default": "default_pc",
     "accent": "#2c5060",
     "definition": "Department-level count of persons reporting military occupations (oficial, soldado, marino) in the 1865–1920 censuses, Véjares department-level historical dataset. Concentrated in garrison towns (Santiago, Valparaíso, Concepción, post-WoP northern departments).",
-    "coverage_statement": "6 year(s) 1865-1920, 430 department-level observations",
+    "coverage_statement": "6 year(s) 1865-1920, 436 department-level observations",
     "commit_status_by_scale": {
       "department": "committed"
     },
@@ -31221,7 +31221,7 @@
           1895,
           1920
         ],
-        "n_observations": 242,
+        "n_observations": 246,
         "magnitude": {
           "min": 3.0,
           "max": 2690.0,
@@ -31243,7 +31243,7 @@
     "per_capita_default": "default_pc",
     "accent": "#2c5060",
     "definition": "Department-level count of persons reporting police occupations in the 1895–1920 censuses, Véjares department-level historical dataset. The pre-Carabineros (1927) era included municipal police, departmental policía de seguridad, and gendarmes; the census occupation code aggregates them.",
-    "coverage_statement": "3 year(s) 1895-1920, 242 department-level observations",
+    "coverage_statement": "3 year(s) 1895-1920, 246 department-level observations",
     "commit_status_by_scale": {
       "department": "committed"
     },
@@ -31309,7 +31309,7 @@
           1865,
           1920
         ],
-        "n_observations": 433,
+        "n_observations": 437,
         "magnitude": {
           "min": 1.0,
           "max": 3599.0,
@@ -31333,7 +31333,7 @@
     "per_capita_default": "default_pc",
     "accent": "#2c5060",
     "definition": "Count of public employees (all branches and levels of government) at department or province scale, Véjares department-level historical dataset. The aggregate corresponding to the specific governance-presence indicators (pres_has_gobernador, pres_has_juez, pres_has_reg_civil).",
-    "coverage_statement": "6 year(s) 1865-1920, 84 province-level observations; 6 year(s) 1865-1920, 433 department-level observations",
+    "coverage_statement": "6 year(s) 1865-1920, 84 province-level observations; 6 year(s) 1865-1920, 437 department-level observations",
     "commit_status_by_scale": {
       "province": "committed",
       "department": "committed"
@@ -31455,11 +31455,11 @@
           1875,
           1920
         ],
-        "n_observations": 376,
+        "n_observations": 382,
         "magnitude": {
           "min": 1.0,
           "max": 3196.0,
-          "median": 31.0,
+          "median": 32.0,
           "orders_of_magnitude": 3.5,
           "hint": "log"
         },
@@ -31477,7 +31477,7 @@
     "per_capita_default": "default_pc",
     "accent": "#2c5060",
     "definition": "Department-level count of persons reporting teaching occupations (preceptor, profesor, maestra) in the 1875–1920 censuses, Véjares department-level historical dataset. Reflects the buildout of the primary-education system under the 1860 Ley de Instrucción Primaria.",
-    "coverage_statement": "5 year(s) 1875-1920, 376 department-level observations",
+    "coverage_statement": "5 year(s) 1875-1920, 382 department-level observations",
     "commit_status_by_scale": {
       "department": "committed"
     },
@@ -31699,7 +31699,7 @@
         "magnitude": {
           "min": 3225.0,
           "max": 553498.0,
-          "median": 28458.0,
+          "median": 28606.0,
           "orders_of_magnitude": 2.23,
           "hint": "linear"
         },
@@ -35547,7 +35547,7 @@
           1890,
           1895
         ],
-        "n_observations": 28,
+        "n_observations": 29,
         "magnitude": {
           "min": 2.0,
           "max": 5.0,
@@ -35573,7 +35573,7 @@
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
     "definition": "Number of budgeted posts (plazas) in the territorial administration, from the annual Lei de Presupuestos of the Ministerio del Interior, 1890-1896. These are authorized appropriations for the territorial administration (intendencias and gobernaciones), not executed spending.",
-    "coverage_statement": "1 year(s) 1894, 2 province-level observations; 5 year(s) 1890-1895, 28 department-level observations",
+    "coverage_statement": "1 year(s) 1894, 2 province-level observations; 5 year(s) 1890-1895, 29 department-level observations",
     "commit_status_by_scale": {
       "province": "cross_section",
       "department": "committed"
@@ -35634,7 +35634,7 @@
           1890,
           1895
         ],
-        "n_observations": 28,
+        "n_observations": 29,
         "magnitude": {
           "min": 400.0,
           "max": 800.0,
@@ -35660,7 +35660,7 @@
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
     "definition": "Operating-expense appropriations (gastos variables) in nominal pesos for the territorial administration, from the annual Lei de Presupuestos of the Ministerio del Interior, 1890-1896. These are authorized appropriations for the territorial administration (intendencias and gobernaciones), not executed spending.",
-    "coverage_statement": "1 year(s) 1894, 2 province-level observations; 5 year(s) 1890-1895, 28 department-level observations",
+    "coverage_statement": "1 year(s) 1894, 2 province-level observations; 5 year(s) 1890-1895, 29 department-level observations",
     "commit_status_by_scale": {
       "province": "cross_section",
       "department": "committed"
@@ -35721,7 +35721,7 @@
           1890,
           1895
         ],
-        "n_observations": 28,
+        "n_observations": 29,
         "magnitude": {
           "min": 3060.0,
           "max": 18900.0,
@@ -35747,7 +35747,7 @@
     "per_capita_default": "default_raw",
     "accent": "#2c2c2a",
     "definition": "Salary appropriations (sueldos fijos) in nominal pesos for the territorial administration, from the annual Lei de Presupuestos of the Ministerio del Interior, 1890-1896. These are authorized appropriations for the territorial administration (intendencias and gobernaciones), not executed spending.",
-    "coverage_statement": "1 year(s) 1894, 2 province-level observations; 5 year(s) 1890-1895, 28 department-level observations",
+    "coverage_statement": "1 year(s) 1894, 2 province-level observations; 5 year(s) 1890-1895, 29 department-level observations",
     "commit_status_by_scale": {
       "province": "cross_section",
       "department": "committed"
@@ -38709,11 +38709,11 @@
           1876,
           1880
         ],
-        "n_observations": 270,
+        "n_observations": 273,
         "magnitude": {
           "min": 22.0,
           "max": 9724.0,
-          "median": 1066.0,
+          "median": 1064.0,
           "orders_of_magnitude": 2.65,
           "hint": "linear"
         },
@@ -38734,7 +38734,7 @@
     "per_capita_default": "default_raw",
     "accent": "#0E1A2B",
     "definition": "Baptisms registered by department, 1876-1880, from the vital-statistics cuadros of the Anuario Estadístico de la República de Chile entregas for those years (read from the Yumpu page images of the yearbook collection). Before the civil registry opened in 1885, parish baptisms are the working proxy for births. Column sums verified against printed or errata-corrected national totals.",
-    "coverage_statement": "5 year(s) 1876-1880, 270 department-level observations",
+    "coverage_statement": "5 year(s) 1876-1880, 273 department-level observations",
     "commit_status_by_scale": {
       "department": "committed"
     },
@@ -39013,7 +39013,7 @@
           1926,
           1926
         ],
-        "n_observations": 83,
+        "n_observations": 95,
         "magnitude": {
           "min": 242.0,
           "max": 24469.0,
@@ -39035,7 +39035,7 @@
     "per_capita_default": "default_pc",
     "accent": "#0E1A2B",
     "definition": "Births registered by the civil registry in 1926, by department and province, from the Anuario Estadístico de Chile 1926, Vol. I (Demografía), Dirección General de Estadística. A single-year cross-section.",
-    "coverage_statement": "1 year(s) 1926, 24 province-level observations; 1 year(s) 1926, 83 department-level observations",
+    "coverage_statement": "1 year(s) 1926, 24 province-level observations; 1 year(s) 1926, 95 department-level observations",
     "commit_status_by_scale": {
       "province": "cross_section",
       "department": "cross_section"
@@ -39233,7 +39233,8 @@
       "Anuario Estadistico de Chile 1936 (Yumpu 56511081)",
       "Anuario Estadistico de la Republica de Chile 1948 (Yumpu 56511094)",
       "Anuario Estadistico de la Republica de Chile, Ano 1926, Vol. I Demografia (Direccion General de Estadistica)",
-      "Anuario Estadistico de la Republica de Chile 1945 (Yumpu 56511087)"
+      "Anuario Estadistico de la Republica de Chile 1945 (Yumpu 56511087)",
+      "Memoria del Interior 1893 Tomo III"
     ],
     "topic_category": "demography",
     "semantic_zero": true,
@@ -39664,11 +39665,11 @@
           1876,
           1948
         ],
-        "n_observations": 2208,
+        "n_observations": 2507,
         "magnitude": {
           "min": 13.0,
           "max": 26093.0,
-          "median": 832.0,
+          "median": 792.0,
           "orders_of_magnitude": 3.3,
           "hint": "log"
         },
@@ -39690,7 +39691,7 @@
     "per_capita_default": "default_pc",
     "accent": "#0E1A2B",
     "definition": "Annual count of deaths by province, Sinopsis Estadística de Chile 1924–1927 and earlier Anuario sources. Per the duplicate-resolution memo, scheduled to merge with defunciones_1858_prov into a renamed deaths_province indicator.",
-    "coverage_statement": "28 year(s) 1900-1948, 618 province-level observations; 30 year(s) 1876-1948, 2208 department-level observations",
+    "coverage_statement": "28 year(s) 1900-1948, 618 province-level observations; 30 year(s) 1876-1948, 2507 department-level observations",
     "commit_status_by_scale": {
       "province": "committed",
       "department": "committed"
@@ -39765,11 +39766,11 @@
           1926,
           1926
         ],
-        "n_observations": 83,
+        "n_observations": 95,
         "magnitude": {
           "min": 176.0,
           "max": 19825.0,
-          "median": 803.0,
+          "median": 792.0,
           "orders_of_magnitude": 2.05,
           "hint": "linear"
         },
@@ -39787,7 +39788,7 @@
     "per_capita_default": "default_pc",
     "accent": "#0E1A2B",
     "definition": "Deaths registered by the civil registry in 1926, by department and province, from the Anuario Estadístico de Chile 1926, Vol. I (Demografía), Dirección General de Estadística. A single-year cross-section.",
-    "coverage_statement": "1 year(s) 1926, 23 province-level observations; 1 year(s) 1926, 83 department-level observations",
+    "coverage_statement": "1 year(s) 1926, 23 province-level observations; 1 year(s) 1926, 95 department-level observations",
     "commit_status_by_scale": {
       "province": "cross_section",
       "department": "cross_section"
@@ -39844,7 +39845,7 @@
           1926,
           1926
         ],
-        "n_observations": 83,
+        "n_observations": 95,
         "magnitude": {
           "min": 58.0,
           "max": 7045.0,
@@ -39866,7 +39867,7 @@
     "per_capita_default": "default_raw",
     "accent": "#0E1A2B",
     "definition": "Deaths of infants under one year of age registered in 1926, by department and province, from the Anuario Estadístico de Chile 1926, Vol. I (Demografía). A count of infant deaths, not a rate; divide by registered births (nacimientos_1926) for an infant mortality rate. A single-year cross-section.",
-    "coverage_statement": "1 year(s) 1926, 24 province-level observations; 1 year(s) 1926, 83 department-level observations",
+    "coverage_statement": "1 year(s) 1926, 24 province-level observations; 1 year(s) 1926, 95 department-level observations",
     "commit_status_by_scale": {
       "province": "cross_section",
       "department": "cross_section"
@@ -40245,7 +40246,8 @@
       "Anuario Estadistico de Chile 1936 (Yumpu 56511081)",
       "Anuario Estadistico de la Republica de Chile 1948 (Yumpu 56511094)",
       "Anuario Estadistico de la Republica de Chile, Ano 1926, Vol. I Demografia (Direccion General de Estadistica)",
-      "Anuario Estadistico de la Republica de Chile 1945 (Yumpu 56511087)"
+      "Anuario Estadistico de la Republica de Chile 1945 (Yumpu 56511087)",
+      "Memoria del Interior 1893 Tomo III"
     ],
     "topic_category": "demography",
     "semantic_zero": true,
@@ -40389,11 +40391,11 @@
           1876,
           1948
         ],
-        "n_observations": 2227,
+        "n_observations": 2529,
         "magnitude": {
           "min": 5.0,
           "max": 13844.0,
-          "median": 255.0,
+          "median": 247.0,
           "orders_of_magnitude": 3.44,
           "hint": "log"
         },
@@ -40415,7 +40417,7 @@
     "per_capita_default": "default_raw",
     "accent": "#0E1A2B",
     "definition": "Annual count of marriages by province, Sinopsis Estadística de Chile 1924–1927. Per the duplicate-resolution memo, scheduled to merge with matrimonios_total, matrimonios_1858_prov, and matrimonios_hist_dept into a renamed marriages_province indicator.",
-    "coverage_statement": "28 year(s) 1900-1948, 628 province-level observations; 30 year(s) 1876-1948, 2227 department-level observations",
+    "coverage_statement": "28 year(s) 1900-1948, 628 province-level observations; 30 year(s) 1876-1948, 2529 department-level observations",
     "commit_status_by_scale": {
       "province": "committed",
       "department": "committed"
@@ -40490,11 +40492,11 @@
           1926,
           1926
         ],
-        "n_observations": 83,
+        "n_observations": 95,
         "magnitude": {
           "min": 38.0,
           "max": 5798.0,
-          "median": 214.0,
+          "median": 209.0,
           "orders_of_magnitude": 2.18,
           "hint": "linear"
         },
@@ -40512,7 +40514,7 @@
     "per_capita_default": "default_raw",
     "accent": "#0E1A2B",
     "definition": "Marriages registered by the civil registry in 1926, by department and province, from the Anuario Estadístico de Chile 1926, Vol. I (Demografía), Dirección General de Estadística. A single-year cross-section.",
-    "coverage_statement": "1 year(s) 1926, 24 province-level observations; 1 year(s) 1926, 83 department-level observations",
+    "coverage_statement": "1 year(s) 1926, 24 province-level observations; 1 year(s) 1926, 95 department-level observations",
     "commit_status_by_scale": {
       "province": "cross_section",
       "department": "cross_section"
@@ -41232,11 +41234,11 @@
           1862,
           1952
         ],
-        "n_observations": 1346,
+        "n_observations": 1354,
         "magnitude": {
           "min": 195.0,
           "max": 1387860.0,
-          "median": 29826.0,
+          "median": 29942.0,
           "orders_of_magnitude": 3.85,
           "hint": "log"
         },
@@ -41257,7 +41259,7 @@
     "per_capita_default": "user_choice",
     "accent": "#0E1A2B",
     "definition": "Department-level total population, Véjares department-level historical dataset. Per the duplicate-resolution memo, this indicator is scheduled to merge into the canonical total_population at department scale.",
-    "coverage_statement": "23 year(s) 1862-1952, 1346 department-level observations",
+    "coverage_statement": "23 year(s) 1862-1952, 1354 department-level observations",
     "commit_status_by_scale": {
       "department": "committed"
     },

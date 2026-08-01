@@ -81,17 +81,23 @@ function varsForFamily(familyId) {
   // Match by checking if the variable's category or id relates to the family
   // The manifest doesn't store family_id directly, so we use the window._variableToFamily map
   const vToF = window._variableToFamily || {};
-  return manifest.filter(v => vToF[v.id] === familyId && isPublishable(v));
+  // The `published !== false` test is the one every other enumeration applies
+  // (listForScale, listByTopic, topicCounts). Omitting it here let a discarded
+  // indicator surface inside a family drill-down (chunk 0.5, finding D1-04).
+  return manifest.filter(v => vToF[v.id] === familyId && v.published !== false && isPublishable(v));
 }
 
 // Curation filter — drop indicators that should not surface in browse.
 // Reads fields set by the curation overlay scripts (apply_curation_NN.py).
 function isPublishable(v) {
   if (!v) return false;
-  // Retired and alternate-variant indicators stay reachable by URL but do
-  // not appear in browse grids. (concept_duplication_resolution.md)
+  // Retired, alternate-variant, alternate-currency and discarded indicators do
+  // not appear in browse grids. This list must stay identical to
+  // manifest.js _HIDDEN_STATUS; it had drifted, omitting alternate_currency
+  // and discarded_no_primary_source (chunk 0.5, findings D1-02 / D1-04).
   const ps = v.presentation_status;
-  if (ps === 'retired' || ps === 'alternate_variant') return false;
+  if (ps === 'retired' || ps === 'alternate_variant'
+      || ps === 'alternate_currency' || ps === 'discarded_no_primary_source') return false;
   // Indicators with whole-series unit-splice corruption are suppressed
   // until upstream reconciliation lands. (audit Finding 2.1)
   if (v.data_quality_flag === 'unit_splice_corruption') return false;
