@@ -1,5 +1,17 @@
 // OWID-style landing grid: 10 topic cards. Counts come from the manifest.
 // Click jumps to a representative landing variable.
+//
+// Chunk 2.2 (finding D2-05): six landings were re-pointed because their
+// previous targets (cpi_index, wheat_production, copper_production,
+// total_labor_force, primary_school_enrollment, exports_in_current_dollars)
+// were withdrawn as unattributable — they rendered with no row in master,
+// long_master, staging or extractions. Each now points at the best-covered
+// surviving indicator in its topic. The build gate caught this; pickLanding()
+// below would have fallen back silently.
+//
+// Trade is the one to watch: `copper_export_duty_nat` carries 5 cells, and it
+// is the ONLY surviving trade indicator. That topic was built almost entirely
+// on series nothing on disk could source.
 
 import * as M from './manifest.js';
 
@@ -12,17 +24,17 @@ export const TOPICS = [
   // real_gdp and the sectoral/ratio GDP series were discarded (no primary source
   // before national accounting begins ~1940). Land Economy on cpi_index: a
   // primary-sourced (DGE/INE) macro series, complete and national.
-  { id: "economy",        label: "Economy",        landing: "cpi_index",                   desc: "Prices, fiscal accounts, trade, exchange rates." },
+  { id: "economy",        label: "Economy",        landing: "municipal_presupuesto_pesos",                   desc: "Prices, fiscal accounts, trade, exchange rates." },
   { id: "demography",     label: "Demography",     landing: "total_population",            desc: "Population, vital statistics, urbanization." },
   { id: "politics",       label: "Politics",       landing: "n_legislators",               desc: "Suffrage, legislators, elections, franchise reform." },
-  { id: "agriculture",    label: "Agriculture",    landing: "wheat_production",            desc: "Crops, estates, agrarian structure, peasants." },
-  { id: "mining",         label: "Mining",         landing: "copper_production",           desc: "Copper, coal, gold, silver, saltpeter, sulfur." },
-  { id: "labor",          label: "Labor",          landing: "total_labor_force",           desc: "Workforce, occupational composition, participation." },
-  { id: "education",      label: "Education",      landing: "primary_school_enrollment",   desc: "Schools, students, literacy, enrollment." },
+  { id: "agriculture",    label: "Agriculture",    landing: "existencias_bovinos_cabezas",            desc: "Crops, estates, agrarian structure, peasants." },
+  { id: "mining",         label: "Mining",         landing: "coal_production",           desc: "Copper, coal, gold, silver, saltpeter, sulfur." },
+  { id: "labor",          label: "Labor",          landing: "peasant",           desc: "Workforce, occupational composition, participation." },
+  { id: "education",      label: "Education",      landing: "total_school_enrollment",   desc: "Schools, students, literacy, enrollment." },
   { id: "infrastructure", label: "Infrastructure", landing: "railway_network_length",      desc: "Railways, telephones, ports, electricity." },
   { id: "housing",        label: "Housing",        landing: "viviendas_total_1992",        desc: "Dwellings, tenure, water, sewerage, electricity (1992)." },
   { id: "fiscal",         label: "Fiscal",         landing: "fiscal_revenue_millions",     desc: "Revenue, expenditure, debt, taxes." },
-  { id: "trade",          label: "Trade",          landing: "exports_in_current_dollars",  desc: "Exports, imports, trade composition." },
+  { id: "trade",          label: "Trade",          landing: "copper_export_duty_nat",  desc: "Exports, imports, trade composition." },
 ];
 
 function pickLanding(t) {
