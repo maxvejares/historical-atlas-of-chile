@@ -1,0 +1,20 @@
+[
+  {
+    "id": "pct_gasto_guerra",
+    "level": "national",
+    "label": "Expenditure on War as % of total fiscal spending",
+    "category": "Public finance"
+  },
+  {
+    "id": "pct_gasto_marina",
+    "level": "national",
+    "label": "Expenditure on the Navy as % of total fiscal spending",
+    "category": "Public finance"
+  },
+  {
+    "id": "pct_gasto_hacienda",
+    "level": "national",
+    "label": "Expenditure on the Treasury as % of total fiscal spending",
+    "category": "Public finance"
+  }
+]

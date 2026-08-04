@@ -7,8 +7,8 @@
   ],
   "n_census_years": 15,
   "n_categories": 11,
-  "n_variables_total": 995,
-  "n_variables_department": 386,
-  "n_variables_province": 397,
-  "n_variables_national": 182
+  "n_variables_total": 1066,
+  "n_variables_department": 387,
+  "n_variables_province": 428,
+  "n_variables_national": 221
 }

@@ -1,613 +1,396 @@
 {
-  "generated": "2026-08-03T10:18:21",
+  "generated": "2026-08-03T10:18:21 | updated 2026-08-03 (source-line recovery)",
   "doctrine": "G3 does not demand that everything be published. It demands that every exclusion be a decision ON THE RECORD. Each entry here is a technical exclusion that can be checked against the data. Judgements that are the owner's — the population-series arbitration, the source policy on the author's own department compilation, the G1b doctrine conflict — are deliberately NOT recorded here and keep G3 failing until they are taken.",
   "decisions": {
     "tonnage_cleared|national": {
       "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 35,
-      "source_document": "summary_finances_customs.csv"
-    },
-    "giros_emitidos_num|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 19,
-      "source_document": "anuario_1935_money_orders_province.csv"
-    },
-    "giros_emitidos_valor|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 19,
-      "source_document": "anuario_1935_money_orders_province.csv"
-    },
-    "giros_pagados_num|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 19,
-      "source_document": "anuario_1935_money_orders_province.csv"
-    },
-    "giros_pagados_valor|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 19,
-      "source_document": "anuario_1935_money_orders_province.csv"
-    },
-    "inscritos_registro_general|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 19,
-      "source_document": "anuario_1935_elections_province.csv"
-    },
-    "inscritos_registro_municipal|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 19,
-      "source_document": "anuario_1935_elections_province.csv"
-    },
-    "inscritos_total|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 19,
-      "source_document": "anuario_1935_elections_province.csv"
-    },
-    "ovejunos_beneficiados|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 19,
-      "source_document": "anuario_1935_livestock_slaughter_province.csv"
-    },
-    "ovejunos_carnes_kg|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 19,
-      "source_document": "anuario_1935_livestock_slaughter_province.csv"
-    },
-    "ovejunos_consumo_kg_per_hab|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 19,
-      "source_document": "anuario_1935_livestock_slaughter_province.csv"
-    },
-    "pct_ebriedad|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 19,
-      "source_document": "anuario_1935_crime_province.csv"
-    },
-    "pct_participacion|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 19,
-      "source_document": "anuario_1935_elections_province.csv"
-    },
-    "poblacion_calculada_1935|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 19,
-      "source_document": "anuario_1935_prison_inmates_province.csv"
-    },
-    "reos_ebriedad|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 19,
-      "source_document": "anuario_1935_crime_province.csv"
-    },
-    "reos_ingresados_1935|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 19,
-      "source_document": "anuario_1935_prison_inmates_province.csv"
-    },
-    "reos_por_1000_hab|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 19,
-      "source_document": "anuario_1935_prison_inmates_province.csv"
-    },
-    "total_reos_aprehendidos|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 19,
-      "source_document": "anuario_1935_crime_province.csv"
-    },
-    "vacunos_beneficiados|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 19,
-      "source_document": "anuario_1935_livestock_slaughter_province.csv"
-    },
-    "vacunos_carnes_kg|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 19,
-      "source_document": "anuario_1935_livestock_slaughter_province.csv"
-    },
-    "vacunos_consumo_kg_per_hab|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 19,
-      "source_document": "anuario_1935_livestock_slaughter_province.csv"
-    },
-    "votantes_registro_general|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 19,
-      "source_document": "anuario_1935_elections_province.csv"
-    },
-    "votantes_registro_municipal|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 19,
-      "source_document": "anuario_1935_elections_province.csv"
-    },
-    "votantes_total|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 19,
-      "source_document": "anuario_1935_elections_province.csv"
-    },
-    "automoviles_arriendo|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 17,
-      "source_document": "anuario_1935_vehicles_province.csv"
-    },
-    "automoviles_particulares|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 17,
-      "source_document": "anuario_1935_vehicles_province.csv"
-    },
-    "bicicletas|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 17,
-      "source_document": "anuario_1935_vehicles_province.csv"
-    },
-    "valor_total_pesos|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 17,
-      "source_document": "anuario_1935_mining_production_province.csv"
-    },
-    "caminos_automoviles_carretas_km|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 16,
-      "source_document": "anuario_1935_roads_province.csv"
-    },
-    "caminos_troperos_km|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 16,
-      "source_document": "anuario_1935_roads_province.csv"
-    },
-    "total_km|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 16,
-      "source_document": "anuario_1935_roads_province.csv"
-    },
-    "camiones|province": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
-      "cells": 15,
-      "source_document": "anuario_1935_vehicles_province.csv"
+      "code": "source_policy_compilation",
+      "cells": 37,
+      "source_document": "summary_finances_customs.csv",
+      "reason": "The source line resolves, so the recorded reason was wrong, but it resolves to an author compilation (`Véjares, compiled fiscal and customs series`), which V2_PLAN decision 4 puts outside the catalog. The canonicalization table separately infers Aldana 1914 for the same file and the two attributions disagree; until that is settled the series has no citation the source policy admits. The values themselves are coherent, 3.8M in 1875 rising to 27.6M in 1911, so this is a provenance decision and not a data defect."
     },
     "poblacion|province": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 98,
       "source_document": "Datos pre 73'.xlsx"
     },
     "pct_protestante|province": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 48,
       "source_document": "Datos pre 73'"
     },
     "poblacion_protestante|province": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 48,
       "source_document": "Datos pre 73'"
     },
     "pct_viviendas|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 32,
       "source_document": "Datos pre 73'"
     },
     "urban_population_count|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 30,
       "source_document": "Datos pre 73'.xlsx"
     },
     "tasa_mortalidad_infantil_por_mil|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 26,
       "source_document": "Datos pre 73'"
     },
     "tasa_natalidad_por_mil|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 26,
       "source_document": "Datos pre 73'"
     },
     "gasto_real|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 24,
       "source_document": "Datos pre 73'"
     },
     "ingreso_real|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 24,
       "source_document": "Datos pre 73'"
     },
     "pct_inmigrantes|province": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 24,
       "source_document": "Datos pre 73'.xlsx"
     },
     "pgb_real|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 24,
       "source_document": "Datos pre 73'"
     },
     "poblacion_inmigrante|province": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 24,
       "source_document": "Datos pre 73'.xlsx"
     },
     "poblacion_nacida_presente|province": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 24,
       "source_document": "Datos pre 73'"
     },
     "reservas_brutas|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 23,
       "source_document": "Datos pre 73'"
     },
     "nivel_educacional_n_escuelas_publicas|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 16,
       "source_document": "Datos pre 73'.xlsx"
     },
     "urbanizacion_pct|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 16,
       "source_document": "Datos pre 73'.xlsx"
     },
     "pct_servicios|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 15,
       "source_document": "Datos pre 73'"
     },
     "poblacion_ciudades_1960|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 15,
       "source_document": "Datos pre 73'.xlsx"
     },
     "poblacion_ciudades_1970|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 15,
       "source_document": "Datos pre 73'.xlsx"
     },
     "urbanizacion_pct_2|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 13,
       "source_document": "Datos pre 73'.xlsx"
     },
     "gasto_fiscal_asistencia_social|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 12,
       "source_document": "Datos pre 73'"
     },
     "gasto_fiscal_desarrollo_regional|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 12,
       "source_document": "Datos pre 73'"
     },
     "gasto_fiscal_educacion|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 12,
       "source_document": "Datos pre 73'"
     },
     "gasto_fiscal_prevision|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 12,
       "source_document": "Datos pre 73'"
     },
     "gasto_fiscal_social_total|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 12,
       "source_document": "Datos pre 73'"
     },
     "gasto_fiscal_vivienda|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 12,
       "source_document": "Datos pre 73'"
     },
     "cuenta_gobierno_10_transferencias_corrientes_a_personas|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "cuenta_gobierno_11_transferencias_corrientes_al_extranjero|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "cuenta_gobierno_12_ahorro|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "cuenta_gobierno_1_ingresos_precedentes_de_sus_propiedades_y_empresas|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "cuenta_gobierno_2_menos_intereses_pagados_por_el_gobierno_general|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "cuenta_gobierno_3_impuestos_indirectos|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "cuenta_gobierno_4_impuestos_directos_a_empresas|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "cuenta_gobierno_51_impuestos_directos_a_personas|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "cuenta_gobierno_52_imposiciones_recibidas_por_cajas_de_previsin|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "cuenta_gobierno_5_impuestos_directos_a_personas_e_imposiciones_en_caja_de_previsin|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "cuenta_gobierno_6_otras_transferencias_corrientes_recibidas_de_las_personas|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "cuenta_gobierno_8_gastos_en_consumo|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "cuenta_gobierno_9_subvenciones|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "cuenta_gobierno_entradas_corrientes|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "cuenta_gobierno_gastos_corrientes|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "pct_poblacion_ocupada_empleadores|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "pct_poblacion_ocupada_empleados|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "pct_poblacion_ocupada_familiares_y_otros|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "pct_poblacion_ocupada_independientes|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "pct_poblacion_ocupada_obreros|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "poblacion_ocupada_empleadores_miles|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "poblacion_ocupada_empleados_miles|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "poblacion_ocupada_familiares_y_otros_miles|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "poblacion_ocupada_independientes_miles|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "poblacion_ocupada_obreros_miles|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "poblacion_ocupada_total_miles|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
     "poblacion_desocupada_pct|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 10,
       "source_document": "Datos pre 73'.xlsx"
     },
     "poblacion_ocupada_count_1968|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 10,
       "source_document": "Datos pre 73'.xlsx"
     },
     "poblacion_ocupada_miles_1966|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 10,
       "source_document": "Datos pre 73'.xlsx"
     },
@@ -956,57 +739,57 @@
     },
     "num_viviendas|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the malformed national-time-series import CLAUDE.md lists as still open, the twin of the `Datos Mamalakis.xlsx` block M153 quarantined. Not publishable until re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 31,
       "source_document": "Datos pre 73'"
     },
     "pct_industria_comercio|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the malformed national-time-series import CLAUDE.md lists as still open, the twin of the `Datos Mamalakis.xlsx` block M153 quarantined. Not publishable until re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 31,
       "source_document": "Datos pre 73'"
     },
     "superficie_edificacion_m2|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the malformed national-time-series import CLAUDE.md lists as still open, the twin of the `Datos Mamalakis.xlsx` block M153 quarantined. Not publishable until re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 31,
       "source_document": "Datos pre 73'"
     },
     "superficie_industria_comercio_m2|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the malformed national-time-series import CLAUDE.md lists as still open, the twin of the `Datos Mamalakis.xlsx` block M153 quarantined. Not publishable until re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 31,
       "source_document": "Datos pre 73'"
     },
     "superficie_viviendas_m2|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the malformed national-time-series import CLAUDE.md lists as still open, the twin of the `Datos Mamalakis.xlsx` block M153 quarantined. Not publishable until re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 31,
       "source_document": "Datos pre 73'"
     },
     "deuda_externa_mediano_largo_plazo|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the malformed national-time-series import CLAUDE.md lists as still open, the twin of the `Datos Mamalakis.xlsx` block M153 quarantined. Not publishable until re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 22,
       "source_document": "Datos pre 73'"
     },
     "deuda_externa_general|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the malformed national-time-series import CLAUDE.md lists as still open, the twin of the `Datos Mamalakis.xlsx` block M153 quarantined. Not publishable until re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 20,
       "source_document": "Datos pre 73'"
     },
     "gasto_fiscal_salud|national": {
       "decision": "excluded",
-      "code": "quarantined_import",
-      "reason": "`Datos pre 73` is the malformed national-time-series import CLAUDE.md lists as still open, the twin of the `Datos Mamalakis.xlsx` block M153 quarantined. Not publishable until re-imported as clean national rows.",
+      "code": "source_policy_working_compilation",
+      "reason": "RE-TRIAGED 2026-08-03; the previous reason was wrong. It claimed `Datos pre 73` carries the M153 malformation, sectors and age groups in geographic_unit plus fractional years encoding a month. Tested pair by pair against both defects, all 63 pairs are CLEAN: every geographic_unit is `Chile` or a named province, and not one row in the whole 4,233-row block carries a fractional year. The quarantine had been applied to the source wholesale rather than to these pairs. The real ground is SOURCE POLICY. `Datos pre 73` is a multi-source author working compilation; the citation cleaner resolves it to nothing, so publishing would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. Its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of the 63 pairs have no other source behind a single row, so there is no primary attribution to fall back on. V2_PLAN decision 4 puts compilations outside the catalog and decision 3 fenced the author's own department compilation on the same reasoning. OPEN FOR THE OWNER, and it is not symmetric with the catalog: the DOWNLOAD still carries 3,293 `Datos pre 73` rows, because the decision-3 fence names `Data Chile complete.xlsx` and this file by name and G7 tests for those strings only. Fencing it in both products would be consistent with decision 3; admitting it to both would be consistent too. Withholding it from one and shipping it in the other is the site/download divergence the G1b decision closed everywhere else.",
       "cells": 11,
       "source_document": "Datos pre 73'"
     },
@@ -1017,278 +800,19 @@
       "cells": 208,
       "source_document": "Data Chile complete.xlsx"
     },
-    "votos_emitidos|department": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records either a build-artefact filename or a `User-curated assembly` note. Publishing would make apply_curation_05 inherit a family sibling's citation. Repair the source line first. `tonnage_entered` additionally comes from summary_finances_customs.csv, which chunk 5.1 flagged with 20 implausible cells.",
-      "cells": 45,
-      "source_document": "User-curated assembly (enfranchised 1881.xlsx)"
-    },
     "tonnage_entered|national": {
       "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records either a build-artefact filename or a `User-curated assembly` note. Publishing would make apply_curation_05 inherit a family sibling's citation. Repair the source line first. `tonnage_entered` additionally comes from summary_finances_customs.csv, which chunk 5.1 flagged with 20 implausible cells.",
-      "cells": 28,
-      "source_document": "summary_finances_customs.csv"
-    },
-    "ingreso_real_promedio_agriculture|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 13,
-      "source_document": "Datos Mamalakis 1"
-    },
-    "ingreso_real_promedio_total|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 13,
-      "source_document": "Datos Mamalakis 1"
-    },
-    "ingreso_real_promedio_commerce|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 13,
-      "source_document": "Datos Mamalakis 1"
-    },
-    "ingreso_real_promedio_construction|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 13,
-      "source_document": "Datos Mamalakis 1"
-    },
-    "ingreso_real_promedio_finance|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 13,
-      "source_document": "Datos Mamalakis 1"
-    },
-    "ingreso_real_promedio_fisheries|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 13,
-      "source_document": "Datos Mamalakis 1"
-    },
-    "ingreso_real_promedio_industries|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 13,
-      "source_document": "Datos Mamalakis 1"
-    },
-    "ingreso_real_promedio_mining|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 13,
-      "source_document": "Datos Mamalakis 1"
-    },
-    "ingreso_real_promedio_services|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 13,
-      "source_document": "Datos Mamalakis 1"
-    },
-    "ingreso_real_promedio_transportation_and_communications|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 13,
-      "source_document": "Datos Mamalakis 1"
-    },
-    "salario_real_promedio_agriculture|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 13,
-      "source_document": "Datos Mamalakis 1"
-    },
-    "salario_real_promedio_all_industries_per_employee|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 13,
-      "source_document": "Datos Mamalakis 1"
-    },
-    "salario_real_promedio_central_and_municipal_governments|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 13,
-      "source_document": "Datos Mamalakis 1"
-    },
-    "salario_real_promedio_commerce|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 13,
-      "source_document": "Datos Mamalakis 1"
-    },
-    "salario_real_promedio_construction|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 13,
-      "source_document": "Datos Mamalakis 1"
-    },
-    "salario_real_promedio_finance|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 13,
-      "source_document": "Datos Mamalakis 1"
-    },
-    "salario_real_promedio_fisheries|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 13,
-      "source_document": "Datos Mamalakis 1"
-    },
-    "salario_real_promedio_industries|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 13,
-      "source_document": "Datos Mamalakis 1"
-    },
-    "salario_real_promedio_mining|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 13,
-      "source_document": "Datos Mamalakis 1"
-    },
-    "salario_real_promedio_services|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 13,
-      "source_document": "Datos Mamalakis 1"
-    },
-    "salario_real_promedio_transportation_and_communications|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 13,
-      "source_document": "Datos Mamalakis 1"
-    },
-    "salario_real_promedio_utilities|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 13,
-      "source_document": "Datos Mamalakis 1"
+      "code": "unit_mixture_wrong_limb_survives",
+      "cells": 38,
+      "source_document": "summary_finances_customs.csv",
+      "reason": "Not a source-line defect. The series carries two incompatible scales: 24 cells read 5,483 to 14,965 and 8 read 3.69M to 24.6M, and it is the MILLIONS that are right — 1907 entered 24,645,751 against tonnage_cleared 24,159,898 the same year, while the small limb is off by three orders of magnitude. Every million-scale cell carries needs_review, so G1b withholds exactly the correct values and publishes only the corrupt ones. G6 cannot catch it either: with the correct limb stripped the survivor climbs 5,483 to 14,965 with no step over 10x. Publishing this would ship a wrong series through green gates. Re-audit the small limb against the printed cuadro before reconsidering."
     },
     "salario_mensual_registrado_domestic_help|national": {
       "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 17,
-      "source_document": "Datos Mamalakis 1"
-    },
-    "matrimonios_15-19|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 10,
-      "source_document": "Datos Mamalakis"
-    },
-    "matrimonios_20-24|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 10,
-      "source_document": "Datos Mamalakis"
-    },
-    "matrimonios_25-29|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 10,
-      "source_document": "Datos Mamalakis"
-    },
-    "matrimonios_30-34|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 10,
-      "source_document": "Datos Mamalakis"
-    },
-    "matrimonios_35-39|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 10,
-      "source_document": "Datos Mamalakis"
-    },
-    "matrimonios_40-44|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 10,
-      "source_document": "Datos Mamalakis"
-    },
-    "matrimonios_45-49|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 10,
-      "source_document": "Datos Mamalakis"
-    },
-    "matrimonios_50-54|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 10,
-      "source_document": "Datos Mamalakis"
-    },
-    "matrimonios_55-59|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 10,
-      "source_document": "Datos Mamalakis"
-    },
-    "matrimonios_60-64|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 10,
-      "source_document": "Datos Mamalakis"
-    },
-    "matrimonios_65-69|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 10,
-      "source_document": "Datos Mamalakis"
-    },
-    "matrimonios_70-74|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 10,
-      "source_document": "Datos Mamalakis"
-    },
-    "matrimonios_mas_de_75|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 10,
-      "source_document": "Datos Mamalakis"
-    },
-    "matrimonios_bajo_15|national": {
-      "decision": "excluded",
-      "code": "source_line_unusable",
-      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
-      "cells": 10,
-      "source_document": "Datos Mamalakis"
+      "code": "unit_splice_unresolved",
+      "cells": 20,
+      "source_document": "Datos Mamalakis 1",
+      "reason": "Every row is annotated `Escudos de cada año`, but the escudo did not exist until 1960 and the series starts in 1944, so the unit label cannot hold across the whole run. The values break at the 1975 currency reform: 1,548 in 1973 against 9.83 in 1974. G1b withholds the three needs_review cells of 1971-73, which leaves a published series that steps straight from 4.40 in 1958 to 9.83 in 1974 across a sixteen-year gap and two currency reforms with no break annotation and no step large enough for G6 to see. Same class as the seven unit_splice_corruption series already withheld. Needs the deflator and the reform boundary before it publishes."
     },
     "occupation_total|province": {
       "decision": "excluded",
@@ -1296,6 +820,55 @@
       "reason": "The geographic_unit on these rows is an OCCUPATION (`Abogados, procuradores, escribanos`, `Costureras`, `Eclesiásticos...`), not a province. These are the NATIONAL 1854 occupational totals mislabelled as province-level — the same dimension-wearing-a-geography defect as the partner-country trade series (chunk 4.3). Nothing resolves to a province key, so nothing renders. Re-key as national occupation variables, then expose.",
       "cells": 20,
       "source_document": "Anuario Estadístico 1860, Census 1854"
+    },
+    "totexp|province": {
+      "decision": "excluded",
+      "code": "fenced_data_chile",
+      "cells": 638,
+      "source_document": "Data Chile complete.xlsx",
+      "reason": "Decision 3 (owner, 2026-08-03) fences `Data Chile complete.xlsx` out of both the catalog and the download. Every promotable cell of this series comes from that workbook, so unlike `totalpop` or `peasant` there is no primary-sourced remainder to keep and the series leaves the catalog whole. The rows stay in master and the fence is reversible. Recorded here 2026-08-03: the fence was applied but never written as a decision, and a stale candidate list hid the omission from G3."
+    },
+    "engineers|department": {
+      "decision": "excluded",
+      "code": "fenced_data_chile",
+      "cells": 313,
+      "source_document": "Data Chile complete.xlsx",
+      "reason": "Decision 3 (owner, 2026-08-03) fences `Data Chile complete.xlsx` out of both the catalog and the download. Every promotable cell of this series comes from that workbook, so unlike `totalpop` or `peasant` there is no primary-sourced remainder to keep and the series leaves the catalog whole. The rows stay in master and the fence is reversible. Recorded here 2026-08-03: the fence was applied but never written as a decision, and a stale candidate list hid the omission from G3."
+    },
+    "lawyer|department": {
+      "decision": "excluded",
+      "code": "fenced_data_chile",
+      "cells": 304,
+      "source_document": "Data Chile complete.xlsx",
+      "reason": "Decision 3 (owner, 2026-08-03) fences `Data Chile complete.xlsx` out of both the catalog and the download. Every promotable cell of this series comes from that workbook, so unlike `totalpop` or `peasant` there is no primary-sourced remainder to keep and the series leaves the catalog whole. The rows stay in master and the fence is reversible. Recorded here 2026-08-03: the fence was applied but never written as a decision, and a stale candidate list hid the omission from G3."
+    },
+    "military|department": {
+      "decision": "excluded",
+      "code": "fenced_data_chile",
+      "cells": 302,
+      "source_document": "Data Chile complete.xlsx",
+      "reason": "Decision 3 (owner, 2026-08-03) fences `Data Chile complete.xlsx` out of both the catalog and the download. Every promotable cell of this series comes from that workbook, so unlike `totalpop` or `peasant` there is no primary-sourced remainder to keep and the series leaves the catalog whole. The rows stay in master and the fence is reversible. Recorded here 2026-08-03: the fence was applied but never written as a decision, and a stale candidate list hid the omission from G3."
+    },
+    "teacher|department": {
+      "decision": "excluded",
+      "code": "fenced_data_chile",
+      "cells": 255,
+      "source_document": "Data Chile complete.xlsx",
+      "reason": "Decision 3 (owner, 2026-08-03) fences `Data Chile complete.xlsx` out of both the catalog and the download. Every promotable cell of this series comes from that workbook, so unlike `totalpop` or `peasant` there is no primary-sourced remainder to keep and the series leaves the catalog whole. The rows stay in master and the fence is reversible. Recorded here 2026-08-03: the fence was applied but never written as a decision, and a stale candidate list hid the omission from G3."
+    },
+    "police|department": {
+      "decision": "excluded",
+      "code": "fenced_data_chile",
+      "cells": 163,
+      "source_document": "Data Chile complete.xlsx",
+      "reason": "Decision 3 (owner, 2026-08-03) fences `Data Chile complete.xlsx` out of both the catalog and the download. Every promotable cell of this series comes from that workbook, so unlike `totalpop` or `peasant` there is no primary-sourced remainder to keep and the series leaves the catalog whole. The rows stay in master and the fence is reversible. Recorded here 2026-08-03: the fence was applied but never written as a decision, and a stale candidate list hid the omission from G3."
+    },
+    "post1877_n_post_offices|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "cells": 33,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation",
+      "reason": "V2_PLAN decision 4 keeps period monographs and excludes compilations, and decision 3 extends the same treatment to the author's own department compilation, which is the only source behind this series. Rows stay in master; reversible."
     }
   }
 }

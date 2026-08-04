@@ -1401,33 +1401,51 @@
     },
     "pct_gasto_culto": {
       "scales": [
-        "national"
+        "province"
       ],
-      "reason": "Withdrawn 2026-08-03 for a level defect, which was repaired the same day: the rows now sit at national level with geographic_unit `Chile`. The withdrawal STANDS on a different ground. This series is a second name for the already exposed `gasto_share_pct_culto`, agreeing on all 13 of 13 cells, and publishing both would breach M098 rule 2. The six heads with no exposed twin (guerra, hacienda, marina, colonizacion, industria, obras publicas) were released instead."
+      "reason": "Withdrawn 2026-08-03 (V2 Phase 2, G5). Master stores these rows at province level with geographic_unit `total republica`, an aggregate the province resolver correctly drops, so nothing can render. The data is NATIONAL wearing a province label. A Phase 3 level fix, after which it can be exposed at national level."
+    },
+    "pct_gasto_guerra": {
+      "scales": [
+        "province"
+      ],
+      "reason": "Withdrawn 2026-08-03 (V2 Phase 2, G5). Master stores these rows at province level with geographic_unit `total republica`, an aggregate the province resolver correctly drops, so nothing can render. The data is NATIONAL wearing a province label. A Phase 3 level fix, after which it can be exposed at national level."
+    },
+    "pct_gasto_hacienda": {
+      "scales": [
+        "province"
+      ],
+      "reason": "Withdrawn 2026-08-03 (V2 Phase 2, G5). Master stores these rows at province level with geographic_unit `total republica`, an aggregate the province resolver correctly drops, so nothing can render. The data is NATIONAL wearing a province label. A Phase 3 level fix, after which it can be exposed at national level."
     },
     "pct_gasto_instruccion_publica": {
       "scales": [
-        "national"
+        "province"
       ],
-      "reason": "Withdrawn 2026-08-03 for a level defect, which was repaired the same day: the rows now sit at national level with geographic_unit `Chile`. The withdrawal STANDS on a different ground. This series is a second name for the already exposed `gasto_share_pct_instruccion_publica`, agreeing on all 13 of 13 cells, and publishing both would breach M098 rule 2. The six heads with no exposed twin (guerra, hacienda, marina, colonizacion, industria, obras publicas) were released instead."
+      "reason": "Withdrawn 2026-08-03 (V2 Phase 2, G5). Master stores these rows at province level with geographic_unit `total republica`, an aggregate the province resolver correctly drops, so nothing can render. The data is NATIONAL wearing a province label. A Phase 3 level fix, after which it can be exposed at national level."
     },
     "pct_gasto_interior": {
       "scales": [
-        "national"
+        "province"
       ],
-      "reason": "Withdrawn 2026-08-03 for a level defect, which was repaired the same day: the rows now sit at national level with geographic_unit `Chile`. The withdrawal STANDS on a different ground. This series is a second name for the already exposed `gasto_share_pct_interior`, agreeing on all 13 of 13 cells, and publishing both would breach M098 rule 2. The six heads with no exposed twin (guerra, hacienda, marina, colonizacion, industria, obras publicas) were released instead."
+      "reason": "Withdrawn 2026-08-03 (V2 Phase 2, G5). Master stores these rows at province level with geographic_unit `total republica`, an aggregate the province resolver correctly drops, so nothing can render. The data is NATIONAL wearing a province label. A Phase 3 level fix, after which it can be exposed at national level."
     },
     "pct_gasto_justicia": {
       "scales": [
-        "national"
+        "province"
       ],
-      "reason": "Withdrawn 2026-08-03 for a level defect, which was repaired the same day: the rows now sit at national level with geographic_unit `Chile`. The withdrawal STANDS on a different ground. This series is a second name for the already exposed `gasto_share_pct_justicia`, agreeing on all 13 of 13 cells, and publishing both would breach M098 rule 2. The six heads with no exposed twin (guerra, hacienda, marina, colonizacion, industria, obras publicas) were released instead."
+      "reason": "Withdrawn 2026-08-03 (V2 Phase 2, G5). Master stores these rows at province level with geographic_unit `total republica`, an aggregate the province resolver correctly drops, so nothing can render. The data is NATIONAL wearing a province label. A Phase 3 level fix, after which it can be exposed at national level."
+    },
+    "pct_gasto_marina": {
+      "scales": [
+        "province"
+      ],
+      "reason": "Withdrawn 2026-08-03 (V2 Phase 2, G5). Master stores these rows at province level with geographic_unit `total republica`, an aggregate the province resolver correctly drops, so nothing can render. The data is NATIONAL wearing a province label. A Phase 3 level fix, after which it can be exposed at national level."
     },
     "pct_gasto_relaciones_exteriores": {
       "scales": [
-        "national"
+        "province"
       ],
-      "reason": "Withdrawn 2026-08-03 for a level defect, which was repaired the same day: the rows now sit at national level with geographic_unit `Chile`. The withdrawal STANDS on a different ground. This series is a second name for the already exposed `gasto_share_pct_relaciones_esteriores`, agreeing on all 13 of 13 cells, and publishing both would breach M098 rule 2. The six heads with no exposed twin (guerra, hacienda, marina, colonizacion, industria, obras publicas) were released instead."
+      "reason": "Withdrawn 2026-08-03 (V2 Phase 2, G5). Master stores these rows at province level with geographic_unit `total republica`, an aggregate the province resolver correctly drops, so nothing can render. The data is NATIONAL wearing a province label. A Phase 3 level fix, after which it can be exposed at national level."
     },
     "asistencia_media_escuelas_fiscales": {
       "scales": [

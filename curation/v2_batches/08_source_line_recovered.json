@@ -1,0 +1,410 @@
+[
+  {
+    "id": "inscritos_registro_general",
+    "level": "province",
+    "label": "Electoral register, general roll, registered voters",
+    "category": "Electoral"
+  },
+  {
+    "id": "inscritos_registro_municipal",
+    "level": "province",
+    "label": "Electoral register, municipal roll, registered voters",
+    "category": "Electoral"
+  },
+  {
+    "id": "inscritos_total",
+    "level": "province",
+    "label": "Electoral register, total registered voters",
+    "category": "Electoral"
+  },
+  {
+    "id": "votantes_registro_general",
+    "level": "province",
+    "label": "Votes cast, general roll",
+    "category": "Electoral"
+  },
+  {
+    "id": "votantes_registro_municipal",
+    "level": "province",
+    "label": "Votes cast, municipal roll",
+    "category": "Electoral"
+  },
+  {
+    "id": "votantes_total",
+    "level": "province",
+    "label": "Votes cast, total",
+    "category": "Electoral"
+  },
+  {
+    "id": "pct_participacion",
+    "level": "province",
+    "label": "Turnout, votes cast as % of registered voters",
+    "category": "Electoral"
+  },
+  {
+    "id": "votos_emitidos",
+    "level": "department",
+    "label": "Votes cast, 1881 congressional election",
+    "category": "Electoral"
+  },
+  {
+    "id": "vacunos_beneficiados",
+    "level": "province",
+    "label": "Cattle slaughtered, head",
+    "category": "Agriculture"
+  },
+  {
+    "id": "vacunos_carnes_kg",
+    "level": "province",
+    "label": "Beef produced, kilograms",
+    "category": "Agriculture"
+  },
+  {
+    "id": "vacunos_consumo_kg_per_hab",
+    "level": "province",
+    "label": "Beef consumption per inhabitant, kilograms",
+    "category": "Agriculture"
+  },
+  {
+    "id": "ovejunos_beneficiados",
+    "level": "province",
+    "label": "Sheep slaughtered, head",
+    "category": "Agriculture"
+  },
+  {
+    "id": "ovejunos_carnes_kg",
+    "level": "province",
+    "label": "Mutton produced, kilograms",
+    "category": "Agriculture"
+  },
+  {
+    "id": "ovejunos_consumo_kg_per_hab",
+    "level": "province",
+    "label": "Mutton consumption per inhabitant, kilograms",
+    "category": "Agriculture"
+  },
+  {
+    "id": "giros_emitidos_num",
+    "level": "province",
+    "label": "Postal money orders issued, number",
+    "category": "Infrastructure"
+  },
+  {
+    "id": "giros_emitidos_valor",
+    "level": "province",
+    "label": "Postal money orders issued, value in pesos",
+    "category": "Infrastructure"
+  },
+  {
+    "id": "giros_pagados_num",
+    "level": "province",
+    "label": "Postal money orders paid, number",
+    "category": "Infrastructure"
+  },
+  {
+    "id": "giros_pagados_valor",
+    "level": "province",
+    "label": "Postal money orders paid, value in pesos",
+    "category": "Infrastructure"
+  },
+  {
+    "id": "automoviles_particulares",
+    "level": "province",
+    "label": "Motor cars in private use, registered",
+    "category": "Infrastructure"
+  },
+  {
+    "id": "automoviles_arriendo",
+    "level": "province",
+    "label": "Motor cars for hire, registered",
+    "category": "Infrastructure"
+  },
+  {
+    "id": "camiones",
+    "level": "province",
+    "label": "Lorries registered",
+    "category": "Infrastructure"
+  },
+  {
+    "id": "bicicletas",
+    "level": "province",
+    "label": "Bicycles registered",
+    "category": "Infrastructure"
+  },
+  {
+    "id": "caminos_automoviles_carretas_km",
+    "level": "province",
+    "label": "Roads carrying motor and cart traffic, kilometres",
+    "category": "Infrastructure"
+  },
+  {
+    "id": "caminos_troperos_km",
+    "level": "province",
+    "label": "Pack-trail roads, kilometres",
+    "category": "Infrastructure"
+  },
+  {
+    "id": "total_km",
+    "level": "province",
+    "label": "Road network, total kilometres",
+    "category": "Infrastructure"
+  },
+  {
+    "id": "total_reos_aprehendidos",
+    "level": "province",
+    "label": "Arrests, total",
+    "category": "Governance"
+  },
+  {
+    "id": "reos_ebriedad",
+    "level": "province",
+    "label": "Arrests for drunkenness",
+    "category": "Governance"
+  },
+  {
+    "id": "pct_ebriedad",
+    "level": "province",
+    "label": "Arrests for drunkenness as % of all arrests",
+    "category": "Governance"
+  },
+  {
+    "id": "reos_ingresados_1935",
+    "level": "province",
+    "label": "Prison admissions",
+    "category": "Governance"
+  },
+  {
+    "id": "reos_por_1000_hab",
+    "level": "province",
+    "label": "Prison admissions per 1,000 inhabitants",
+    "category": "Governance"
+  },
+  {
+    "id": "poblacion_calculada_1935",
+    "level": "province",
+    "label": "Population, official 1935 estimate",
+    "category": "Demographics"
+  },
+  {
+    "id": "valor_total_pesos",
+    "level": "province",
+    "label": "Mining production, total value in pesos",
+    "category": "Economy"
+  },
+  {
+    "id": "matrimonios_bajo_15",
+    "level": "national",
+    "label": "Marriages, age group under 15",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "matrimonios_15-19",
+    "level": "national",
+    "label": "Marriages, age group 15 to 19",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "matrimonios_20-24",
+    "level": "national",
+    "label": "Marriages, age group 20 to 24",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "matrimonios_25-29",
+    "level": "national",
+    "label": "Marriages, age group 25 to 29",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "matrimonios_30-34",
+    "level": "national",
+    "label": "Marriages, age group 30 to 34",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "matrimonios_35-39",
+    "level": "national",
+    "label": "Marriages, age group 35 to 39",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "matrimonios_40-44",
+    "level": "national",
+    "label": "Marriages, age group 40 to 44",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "matrimonios_45-49",
+    "level": "national",
+    "label": "Marriages, age group 45 to 49",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "matrimonios_50-54",
+    "level": "national",
+    "label": "Marriages, age group 50 to 54",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "matrimonios_55-59",
+    "level": "national",
+    "label": "Marriages, age group 55 to 59",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "matrimonios_60-64",
+    "level": "national",
+    "label": "Marriages, age group 60 to 64",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "matrimonios_65-69",
+    "level": "national",
+    "label": "Marriages, age group 65 to 69",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "matrimonios_70-74",
+    "level": "national",
+    "label": "Marriages, age group 70 to 74",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "matrimonios_mas_de_75",
+    "level": "national",
+    "label": "Marriages, age group 75 and over",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "ingreso_real_promedio_total",
+    "level": "national",
+    "label": "Average annual real earnings, all sectors",
+    "category": "Population & Labor"
+  },
+  {
+    "id": "ingreso_real_promedio_agriculture",
+    "level": "national",
+    "label": "Average annual real earnings, agriculture",
+    "category": "Population & Labor"
+  },
+  {
+    "id": "ingreso_real_promedio_mining",
+    "level": "national",
+    "label": "Average annual real earnings, mining",
+    "category": "Population & Labor"
+  },
+  {
+    "id": "ingreso_real_promedio_industries",
+    "level": "national",
+    "label": "Average annual real earnings, manufacturing",
+    "category": "Population & Labor"
+  },
+  {
+    "id": "ingreso_real_promedio_construction",
+    "level": "national",
+    "label": "Average annual real earnings, construction",
+    "category": "Population & Labor"
+  },
+  {
+    "id": "ingreso_real_promedio_commerce",
+    "level": "national",
+    "label": "Average annual real earnings, commerce",
+    "category": "Population & Labor"
+  },
+  {
+    "id": "ingreso_real_promedio_finance",
+    "level": "national",
+    "label": "Average annual real earnings, finance",
+    "category": "Population & Labor"
+  },
+  {
+    "id": "ingreso_real_promedio_services",
+    "level": "national",
+    "label": "Average annual real earnings, services",
+    "category": "Population & Labor"
+  },
+  {
+    "id": "ingreso_real_promedio_fisheries",
+    "level": "national",
+    "label": "Average annual real earnings, fisheries",
+    "category": "Population & Labor"
+  },
+  {
+    "id": "ingreso_real_promedio_transportation_and_communications",
+    "level": "national",
+    "label": "Average annual real earnings, transport and communications",
+    "category": "Population & Labor"
+  },
+  {
+    "id": "salario_real_promedio_all_industries_per_employee",
+    "level": "national",
+    "label": "Average annual real salary per employee, all industries",
+    "category": "Population & Labor"
+  },
+  {
+    "id": "salario_real_promedio_agriculture",
+    "level": "national",
+    "label": "Average annual real salary, agriculture",
+    "category": "Population & Labor"
+  },
+  {
+    "id": "salario_real_promedio_mining",
+    "level": "national",
+    "label": "Average annual real salary, mining",
+    "category": "Population & Labor"
+  },
+  {
+    "id": "salario_real_promedio_industries",
+    "level": "national",
+    "label": "Average annual real salary, manufacturing",
+    "category": "Population & Labor"
+  },
+  {
+    "id": "salario_real_promedio_construction",
+    "level": "national",
+    "label": "Average annual real salary, construction",
+    "category": "Population & Labor"
+  },
+  {
+    "id": "salario_real_promedio_commerce",
+    "level": "national",
+    "label": "Average annual real salary, commerce",
+    "category": "Population & Labor"
+  },
+  {
+    "id": "salario_real_promedio_finance",
+    "level": "national",
+    "label": "Average annual real salary, finance",
+    "category": "Population & Labor"
+  },
+  {
+    "id": "salario_real_promedio_services",
+    "level": "national",
+    "label": "Average annual real salary, services",
+    "category": "Population & Labor"
+  },
+  {
+    "id": "salario_real_promedio_fisheries",
+    "level": "national",
+    "label": "Average annual real salary, fisheries",
+    "category": "Population & Labor"
+  },
+  {
+    "id": "salario_real_promedio_utilities",
+    "level": "national",
+    "label": "Average annual real salary, utilities",
+    "category": "Population & Labor"
+  },
+  {
+    "id": "salario_real_promedio_transportation_and_communications",
+    "level": "national",
+    "label": "Average annual real salary, transport and communications",
+    "category": "Population & Labor"
+  },
+  {
+    "id": "salario_real_promedio_central_and_municipal_governments",
+    "level": "national",
+    "label": "Average annual real salary, central and municipal government",
+    "category": "Population & Labor"
+  }
+]

@@ -1,48 +1,48 @@
 {
   "_meta": {
-    "generated": "2026-08-03T15:23:06",
+    "generated": "2026-08-03T23:29:30",
     "generator": "scripts/build_point_gazetteer.py",
     "purpose": "Coordinates for the city- and port-level units master holds but window_data cannot carry, derived from communes_2018.geojson. Prerequisite for a point layer; carries no data itself.",
     "caveat": "Each coordinate is the representative point of the MODERN COMUNA sharing the unit's name. Good enough to place a dot on a national map, not a surveyed location, and wrong for any use that needs true placement.",
     "coverage": {
       "port": {
         "resolved": {
-          "units": 21,
-          "cells": 854
+          "units": 22,
+          "cells": 956
         },
         "unresolved": {
-          "units": 1,
-          "cells": 102
+          "units": 0,
+          "cells": 0
         },
         "unresolved_institution_as_geography": {
           "units": 0,
           "cells": 0
         },
         "unresolved_genuine_locality": {
-          "units": 1,
-          "cells": 102
+          "units": 0,
+          "cells": 0
         }
       },
       "city": {
         "resolved": {
-          "units": 247,
+          "units": 219,
           "cells": 4502
         },
         "unresolved": {
-          "units": 360,
-          "cells": 1973
+          "units": 238,
+          "cells": 934
         },
         "unresolved_institution_as_geography": {
-          "units": 121,
-          "cells": 1039
+          "units": 0,
+          "cells": 0
         },
         "unresolved_genuine_locality": {
-          "units": 239,
+          "units": 238,
           "cells": 934
         }
       }
     },
-    "duplicate_units": 30
+    "duplicate_units": 0
   },
   "points": {
     "city:Alto del Carmen": {
@@ -61,8 +61,8 @@
     "city:Ancud": {
       "name": "Ancud",
       "level": "city",
-      "cells": 29,
-      "variables": 26,
+      "cells": 49,
+      "variables": 28,
       "year_min": 1861,
       "year_max": 1909,
       "ccode": "10202",
@@ -113,8 +113,8 @@
     "city:Angol": {
       "name": "Angol",
       "level": "city",
-      "cells": 32,
-      "variables": 25,
+      "cells": 72,
+      "variables": 29,
       "year_min": 1875,
       "year_max": 1930,
       "ccode": "09201",
@@ -126,8 +126,8 @@
     "city:Antofagasta": {
       "name": "Antofagasta",
       "level": "city",
-      "cells": 33,
-      "variables": 26,
+      "cells": 73,
+      "variables": 30,
       "year_min": 1885,
       "year_max": 1930,
       "ccode": "02101",
@@ -373,8 +373,8 @@
     "city:Cauquenes": {
       "name": "Cauquenes",
       "level": "city",
-      "cells": 45,
-      "variables": 43,
+      "cells": 85,
+      "variables": 47,
       "year_min": 1861,
       "year_max": 1909,
       "ccode": "07201",
@@ -477,8 +477,8 @@
     "city:Chillan": {
       "name": "Chillan",
       "level": "city",
-      "cells": 49,
-      "variables": 37,
+      "cells": 89,
+      "variables": 41,
       "year_min": 1861,
       "year_max": 1930,
       "ccode": "16101",
@@ -490,23 +490,10 @@
     "city:Chillan Viejo": {
       "name": "Chillan Viejo",
       "level": "city",
-      "cells": 4,
-      "variables": 4,
-      "year_min": 1889,
-      "year_max": 1892,
-      "ccode": "16103",
-      "matched_comuna": "Chillán Viejo",
-      "lat": -36.684,
-      "lon": -72.21341,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:Chillan viejo": {
-      "name": "Chillan viejo",
-      "level": "city",
-      "cells": 4,
-      "variables": 4,
+      "cells": 8,
+      "variables": 8,
       "year_min": 1862,
-      "year_max": 1862,
+      "year_max": 1892,
       "ccode": "16103",
       "matched_comuna": "Chillán Viejo",
       "lat": -36.684,
@@ -659,10 +646,10 @@
     "city:Concepcion": {
       "name": "Concepcion",
       "level": "city",
-      "cells": 24,
-      "variables": 23,
+      "cells": 64,
+      "variables": 27,
       "year_min": 1861,
-      "year_max": 1894,
+      "year_max": 1909,
       "ccode": "08101",
       "matched_comuna": "Concepción",
       "lat": -36.8456,
@@ -711,10 +698,10 @@
     "city:Constitucion": {
       "name": "Constitucion",
       "level": "city",
-      "cells": 31,
-      "variables": 30,
+      "cells": 71,
+      "variables": 34,
       "year_min": 1861,
-      "year_max": 1894,
+      "year_max": 1909,
       "ccode": "07102",
       "matched_comuna": "Constitución",
       "lat": -35.35135,
@@ -737,10 +724,10 @@
     "city:Copiapo": {
       "name": "Copiapo",
       "level": "city",
-      "cells": 14,
-      "variables": 14,
+      "cells": 54,
+      "variables": 18,
       "year_min": 1889,
-      "year_max": 1894,
+      "year_max": 1909,
       "ccode": "03101",
       "matched_comuna": "Copiapó",
       "lat": -27.423,
@@ -841,10 +828,10 @@
     "city:Curico": {
       "name": "Curico",
       "level": "city",
-      "cells": 13,
-      "variables": 13,
+      "cells": 53,
+      "variables": 17,
       "year_min": 1889,
-      "year_max": 1894,
+      "year_max": 1909,
       "ccode": "07301",
       "matched_comuna": "Curicó",
       "lat": -35.2206,
@@ -1049,8 +1036,8 @@
     "city:Illapel": {
       "name": "Illapel",
       "level": "city",
-      "cells": 37,
-      "variables": 34,
+      "cells": 57,
+      "variables": 36,
       "year_min": 1861,
       "year_max": 1909,
       "ccode": "04201",
@@ -1075,8 +1062,8 @@
     "city:Iquique": {
       "name": "Iquique",
       "level": "city",
-      "cells": 38,
-      "variables": 28,
+      "cells": 78,
+      "variables": 32,
       "year_min": 1875,
       "year_max": 1930,
       "ccode": "01101",
@@ -1179,8 +1166,8 @@
     "city:Lebu": {
       "name": "Lebu",
       "level": "city",
-      "cells": 27,
-      "variables": 24,
+      "cells": 47,
+      "variables": 26,
       "year_min": 1886,
       "year_max": 1909,
       "ccode": "08201",
@@ -1218,8 +1205,8 @@
     "city:Linares": {
       "name": "Linares",
       "level": "city",
-      "cells": 42,
-      "variables": 35,
+      "cells": 82,
+      "variables": 39,
       "year_min": 1861,
       "year_max": 1930,
       "ccode": "07401",
@@ -1543,8 +1530,8 @@
     "city:Osorno": {
       "name": "Osorno",
       "level": "city",
-      "cells": 30,
-      "variables": 25,
+      "cells": 70,
+      "variables": 29,
       "year_min": 1861,
       "year_max": 1930,
       "ccode": "10301",
@@ -1556,8 +1543,8 @@
     "city:Ovalle": {
       "name": "Ovalle",
       "level": "city",
-      "cells": 39,
-      "variables": 33,
+      "cells": 59,
+      "variables": 35,
       "year_min": 1861,
       "year_max": 1930,
       "ccode": "04301",
@@ -1829,8 +1816,8 @@
     "city:Quillota": {
       "name": "Quillota",
       "level": "city",
-      "cells": 43,
-      "variables": 35,
+      "cells": 83,
+      "variables": 39,
       "year_min": 1861,
       "year_max": 1930,
       "ccode": "05501",
@@ -1894,8 +1881,8 @@
     "city:Rancagua": {
       "name": "Rancagua",
       "level": "city",
-      "cells": 176,
-      "variables": 59,
+      "cells": 216,
+      "variables": 63,
       "year_min": 1852,
       "year_max": 1930,
       "ccode": "06101",
@@ -1907,8 +1894,8 @@
     "city:Rengo": {
       "name": "Rengo",
       "level": "city",
-      "cells": 19,
-      "variables": 12,
+      "cells": 39,
+      "variables": 14,
       "year_min": 1861,
       "year_max": 1930,
       "ccode": "06115",
@@ -2349,8 +2336,8 @@
     "city:Talca": {
       "name": "Talca",
       "level": "city",
-      "cells": 61,
-      "variables": 47,
+      "cells": 101,
+      "variables": 51,
       "year_min": 1861,
       "year_max": 1930,
       "ccode": "07101",
@@ -2362,8 +2349,8 @@
     "city:Talcahuano": {
       "name": "Talcahuano",
       "level": "city",
-      "cells": 37,
-      "variables": 31,
+      "cells": 57,
+      "variables": 33,
       "year_min": 1861,
       "year_max": 1930,
       "ccode": "08110",
@@ -2375,8 +2362,8 @@
     "city:Taltal": {
       "name": "Taltal",
       "level": "city",
-      "cells": 33,
-      "variables": 26,
+      "cells": 53,
+      "variables": 28,
       "year_min": 1885,
       "year_max": 1930,
       "ccode": "02104",
@@ -2388,8 +2375,8 @@
     "city:Temuco": {
       "name": "Temuco",
       "level": "city",
-      "cells": 24,
-      "variables": 18,
+      "cells": 64,
+      "variables": 22,
       "year_min": 1885,
       "year_max": 1930,
       "ccode": "09101",
@@ -2466,10 +2453,10 @@
     "city:Tome": {
       "name": "Tome",
       "level": "city",
-      "cells": 7,
-      "variables": 7,
+      "cells": 27,
+      "variables": 9,
       "year_min": 1869,
-      "year_max": 1892,
+      "year_max": 1909,
       "ccode": "08111",
       "matched_comuna": "Tomé",
       "lat": -36.6016,
@@ -2492,10 +2479,10 @@
     "city:Traiguen": {
       "name": "Traiguen",
       "level": "city",
-      "cells": 13,
-      "variables": 13,
+      "cells": 53,
+      "variables": 17,
       "year_min": 1886,
-      "year_max": 1894,
+      "year_max": 1909,
       "ccode": "09210",
       "matched_comuna": "Traiguén",
       "lat": -38.24835,
@@ -2583,8 +2570,8 @@
     "city:Valdivia": {
       "name": "Valdivia",
       "level": "city",
-      "cells": 34,
-      "variables": 27,
+      "cells": 74,
+      "variables": 31,
       "year_min": 1861,
       "year_max": 1930,
       "ccode": "14101",
@@ -2609,10 +2596,10 @@
     "city:Valparaiso": {
       "name": "Valparaiso",
       "level": "city",
-      "cells": 33,
-      "variables": 26,
+      "cells": 73,
+      "variables": 30,
       "year_min": 1861,
-      "year_max": 1892,
+      "year_max": 1909,
       "ccode": "05101",
       "matched_comuna": "Valparaíso",
       "lat": -33.11405,
@@ -2661,8 +2648,8 @@
     "city:Victoria": {
       "name": "Victoria",
       "level": "city",
-      "cells": 22,
-      "variables": 14,
+      "cells": 42,
+      "variables": 16,
       "year_min": 1861,
       "year_max": 1930,
       "ccode": "09211",
@@ -2801,149 +2788,6 @@
       "lon": -71.90634,
       "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
     },
-    "city:ancud": {
-      "name": "ancud",
-      "level": "city",
-      "cells": 20,
-      "variables": 2,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "10202",
-      "matched_comuna": "Ancud",
-      "lat": -42.011,
-      "lon": -73.81243,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:angol": {
-      "name": "angol",
-      "level": "city",
-      "cells": 40,
-      "variables": 4,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "09201",
-      "matched_comuna": "Angol",
-      "lat": -37.8032,
-      "lon": -72.79329,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:antofagasta": {
-      "name": "antofagasta",
-      "level": "city",
-      "cells": 40,
-      "variables": 4,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "02101",
-      "matched_comuna": "Antofagasta",
-      "lat": -24.224,
-      "lon": -69.32619,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:cauquenes": {
-      "name": "cauquenes",
-      "level": "city",
-      "cells": 40,
-      "variables": 4,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "07201",
-      "matched_comuna": "Cauquenes",
-      "lat": -35.97375,
-      "lon": -72.3461,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:chillan": {
-      "name": "chillan",
-      "level": "city",
-      "cells": 40,
-      "variables": 4,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "16101",
-      "matched_comuna": "Chillán",
-      "lat": -36.62805,
-      "lon": -72.04218,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:concepcion": {
-      "name": "concepcion",
-      "level": "city",
-      "cells": 40,
-      "variables": 4,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "08101",
-      "matched_comuna": "Concepción",
-      "lat": -36.8456,
-      "lon": -72.95967,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:constitucion": {
-      "name": "constitucion",
-      "level": "city",
-      "cells": 40,
-      "variables": 4,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "07102",
-      "matched_comuna": "Constitución",
-      "lat": -35.35135,
-      "lon": -72.23015,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:copiapo": {
-      "name": "copiapo",
-      "level": "city",
-      "cells": 40,
-      "variables": 4,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "03101",
-      "matched_comuna": "Copiapó",
-      "lat": -27.423,
-      "lon": -69.85614,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:curico": {
-      "name": "curico",
-      "level": "city",
-      "cells": 40,
-      "variables": 4,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "07301",
-      "matched_comuna": "Curicó",
-      "lat": -35.2206,
-      "lon": -70.90629,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:illapel": {
-      "name": "illapel",
-      "level": "city",
-      "cells": 20,
-      "variables": 2,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "04201",
-      "matched_comuna": "Illapel",
-      "lat": -31.5926,
-      "lon": -70.94614,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:iquique": {
-      "name": "iquique",
-      "level": "city",
-      "cells": 40,
-      "variables": 4,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "01101",
-      "matched_comuna": "Iquique",
-      "lat": -20.2093,
-      "lon": -70.1633,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
     "city:la_serena": {
       "name": "la_serena",
       "level": "city",
@@ -2955,32 +2799,6 @@
       "matched_comuna": "La Serena",
       "lat": -29.83645,
       "lon": -71.09421,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:lebu": {
-      "name": "lebu",
-      "level": "city",
-      "cells": 20,
-      "variables": 2,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "08201",
-      "matched_comuna": "Lebu",
-      "lat": -37.62305,
-      "lon": -73.59656,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:linares": {
-      "name": "linares",
-      "level": "city",
-      "cells": 40,
-      "variables": 4,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "07401",
-      "matched_comuna": "Linares",
-      "lat": -35.97015,
-      "lon": -71.29506,
       "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
     },
     "city:los_andes": {
@@ -3009,32 +2827,6 @@
       "lon": -72.37204,
       "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
     },
-    "city:osorno": {
-      "name": "osorno",
-      "level": "city",
-      "cells": 40,
-      "variables": 4,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "10301",
-      "matched_comuna": "Osorno",
-      "lat": -40.60745,
-      "lon": -73.12359,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:ovalle": {
-      "name": "ovalle",
-      "level": "city",
-      "cells": 20,
-      "variables": 2,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "04301",
-      "matched_comuna": "Ovalle",
-      "lat": -30.76295,
-      "lon": -71.54705,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
     "city:puerto_montt": {
       "name": "puerto_montt",
       "level": "city",
@@ -3061,45 +2853,6 @@
       "lon": -71.34906,
       "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
     },
-    "city:quillota": {
-      "name": "quillota",
-      "level": "city",
-      "cells": 40,
-      "variables": 4,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "05501",
-      "matched_comuna": "Quillota",
-      "lat": -32.9007,
-      "lon": -71.29581,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:rancagua": {
-      "name": "rancagua",
-      "level": "city",
-      "cells": 40,
-      "variables": 4,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "06101",
-      "matched_comuna": "Rancagua",
-      "lat": -34.1241,
-      "lon": -70.81776,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:rengo": {
-      "name": "rengo",
-      "level": "city",
-      "cells": 20,
-      "variables": 2,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "06115",
-      "matched_comuna": "Rengo",
-      "lat": -34.442,
-      "lon": -70.76368,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
     "city:san_felipe": {
       "name": "san_felipe",
       "level": "city",
@@ -3124,123 +2877,6 @@
       "matched_comuna": "San Fernando",
       "lat": -34.74065,
       "lon": -70.58647,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:talca": {
-      "name": "talca",
-      "level": "city",
-      "cells": 40,
-      "variables": 4,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "07101",
-      "matched_comuna": "Talca",
-      "lat": -35.42145,
-      "lon": -71.60015,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:talcahuano": {
-      "name": "talcahuano",
-      "level": "city",
-      "cells": 20,
-      "variables": 2,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "08110",
-      "matched_comuna": "Talcahuano",
-      "lat": -36.70415,
-      "lon": -73.13353,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:taltal": {
-      "name": "taltal",
-      "level": "city",
-      "cells": 20,
-      "variables": 2,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "02104",
-      "matched_comuna": "Taltal",
-      "lat": -25.31665,
-      "lon": -69.78385,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:temuco": {
-      "name": "temuco",
-      "level": "city",
-      "cells": 40,
-      "variables": 4,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "09101",
-      "matched_comuna": "Temuco",
-      "lat": -38.6678,
-      "lon": -72.63157,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:tome": {
-      "name": "tome",
-      "level": "city",
-      "cells": 20,
-      "variables": 2,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "08111",
-      "matched_comuna": "Tomé",
-      "lat": -36.6016,
-      "lon": -72.88832,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:traiguen": {
-      "name": "traiguen",
-      "level": "city",
-      "cells": 40,
-      "variables": 4,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "09210",
-      "matched_comuna": "Traiguén",
-      "lat": -38.24835,
-      "lon": -72.67476,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:valdivia": {
-      "name": "valdivia",
-      "level": "city",
-      "cells": 40,
-      "variables": 4,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "14101",
-      "matched_comuna": "Valdivia",
-      "lat": -39.86055,
-      "lon": -73.07192,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:valparaiso": {
-      "name": "valparaiso",
-      "level": "city",
-      "cells": 40,
-      "variables": 4,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "05101",
-      "matched_comuna": "Valparaíso",
-      "lat": -33.11405,
-      "lon": -71.60882,
-      "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
-    },
-    "city:victoria": {
-      "name": "victoria",
-      "level": "city",
-      "cells": 20,
-      "variables": 2,
-      "year_min": 1900,
-      "year_max": 1909,
-      "ccode": "09211",
-      "matched_comuna": "Victoria",
-      "lat": -38.2985,
-      "lon": -72.23243,
       "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
     },
     "city:Ándes": {
@@ -3307,6 +2943,19 @@
       "lat": -27.23845,
       "lon": -70.80747,
       "placement": "representative point of the modern comuna of the same name; an approximation, not a surveyed coordinate"
+    },
+    "port:Carrizal Bajo": {
+      "name": "Carrizal Bajo",
+      "level": "port",
+      "cells": 102,
+      "variables": 14,
+      "year_min": 1874,
+      "year_max": 1900,
+      "ccode": "03304",
+      "matched_comuna": "Huasco",
+      "lat": -28.29295,
+      "lon": -71.08849,
+      "placement": "representative point of the PARENT comuna of Huasco; the locality has no modern comuna of its own, so this is a coarser approximation than a same-name match and locates the parent, not the place"
     },
     "port:Chañaral": {
       "name": "Chañaral",
@@ -4381,16 +4030,6 @@
       "reason": "no modern comuna of this name; most are 19c localities absorbed into a larger comuna, and placing them would mean inventing a coordinate",
       "defect": null
     },
-    "city:Calbuco; dispensaria": {
-      "name": "Calbuco; dispensaria",
-      "level": "city",
-      "cells": 1,
-      "variables": 1,
-      "year_min": 1893,
-      "year_max": 1893,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
     "city:Canadilla": {
       "name": "Canadilla",
       "level": "city",
@@ -4410,16 +4049,6 @@
       "year_max": 1892,
       "reason": "no modern comuna of this name; most are 19c localities absorbed into a larger comuna, and placing them would mean inventing a coordinate",
       "defect": null
-    },
-    "city:Carcel de Santiago": {
-      "name": "Carcel de Santiago",
-      "level": "city",
-      "cells": 25,
-      "variables": 25,
-      "year_min": 1869,
-      "year_max": 1869,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
     },
     "city:Carmen Alto": {
       "name": "Carmen Alto",
@@ -4460,36 +4089,6 @@
       "year_max": 1892,
       "reason": "no modern comuna of this name; most are 19c localities absorbed into a larger comuna, and placing them would mean inventing a coordinate",
       "defect": null
-    },
-    "city:Casa de Correccion de Santiago": {
-      "name": "Casa de Correccion de Santiago",
-      "level": "city",
-      "cells": 25,
-      "variables": 25,
-      "year_min": 1869,
-      "year_max": 1869,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Casa de Huérfanos / de Niños (Santiago)": {
-      "name": "Casa de Huérfanos / de Niños (Santiago)",
-      "level": "city",
-      "cells": 3,
-      "variables": 3,
-      "year_min": 1909,
-      "year_max": 1909,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Casa de Orates de Santiago": {
-      "name": "Casa de Orates de Santiago",
-      "level": "city",
-      "cells": 1,
-      "variables": 1,
-      "year_min": 1894,
-      "year_max": 1894,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
     },
     "city:Cañadilla": {
       "name": "Cañadilla",
@@ -4681,16 +4280,6 @@
       "reason": "no modern comuna of this name; most are 19c localities absorbed into a larger comuna, and placing them would mean inventing a coordinate",
       "defect": null
     },
-    "city:Constitucion; hospital, dispensaria y cementerio": {
-      "name": "Constitucion; hospital, dispensaria y cementerio",
-      "level": "city",
-      "cells": 1,
-      "variables": 1,
-      "year_min": 1893,
-      "year_max": 1893,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
     "city:Contabilidad": {
       "name": "Contabilidad",
       "level": "city",
@@ -4730,26 +4319,6 @@
       "year_max": 1893,
       "reason": "no modern comuna of this name; most are 19c localities absorbed into a larger comuna, and placing them would mean inventing a coordinate",
       "defect": null
-    },
-    "city:Curico, Hospicio": {
-      "name": "Curico, Hospicio",
-      "level": "city",
-      "cells": 1,
-      "variables": 1,
-      "year_min": 1893,
-      "year_max": 1893,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Curico, Hospital": {
-      "name": "Curico, Hospital",
-      "level": "city",
-      "cells": 1,
-      "variables": 1,
-      "year_min": 1893,
-      "year_max": 1893,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
     },
     "city:Direccion General": {
       "name": "Direccion General",
@@ -4891,986 +4460,6 @@
       "reason": "no modern comuna of this name; most are 19c localities absorbed into a larger comuna, and placing them would mean inventing a coordinate",
       "defect": null
     },
-    "city:Hospicio de Valparaiso": {
-      "name": "Hospicio de Valparaiso",
-      "level": "city",
-      "cells": 1,
-      "variables": 1,
-      "year_min": 1894,
-      "year_max": 1894,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital Clinica de Mujeres": {
-      "name": "Hospital Clinica de Mujeres",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital El Salvador": {
-      "name": "Hospital El Salvador",
-      "level": "city",
-      "cells": 8,
-      "variables": 8,
-      "year_min": 1894,
-      "year_max": 1894,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital San Borja": {
-      "name": "Hospital San Borja",
-      "level": "city",
-      "cells": 9,
-      "variables": 9,
-      "year_min": 1894,
-      "year_max": 1894,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital San Francisco de Borja (Santiago)": {
-      "name": "Hospital San Francisco de Borja (Santiago)",
-      "level": "city",
-      "cells": 133,
-      "variables": 7,
-      "year_min": 1840,
-      "year_max": 1858,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital San Juan de Dios de Santiago": {
-      "name": "Hospital San Juan de Dios de Santiago",
-      "level": "city",
-      "cells": 8,
-      "variables": 8,
-      "year_min": 1894,
-      "year_max": 1894,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital San Juan de Dios de Valparaiso": {
-      "name": "Hospital San Juan de Dios de Valparaiso",
-      "level": "city",
-      "cells": 8,
-      "variables": 8,
-      "year_min": 1894,
-      "year_max": 1894,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital San Vicente de Paul": {
-      "name": "Hospital San Vicente de Paul",
-      "level": "city",
-      "cells": 9,
-      "variables": 9,
-      "year_min": 1894,
-      "year_max": 1894,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Achao": {
-      "name": "Hospital de Achao",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Ancud": {
-      "name": "Hospital de Ancud",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Angol": {
-      "name": "Hospital de Angol",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Antofagasta": {
-      "name": "Hospital de Antofagasta",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Arauco": {
-      "name": "Hospital de Arauco",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Arica": {
-      "name": "Hospital de Arica",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Buin": {
-      "name": "Hospital de Buin",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Canete": {
-      "name": "Hospital de Canete",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Carrizal Alto": {
-      "name": "Hospital de Carrizal Alto",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Casablanca": {
-      "name": "Hospital de Casablanca",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Castro": {
-      "name": "Hospital de Castro",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Caupolican": {
-      "name": "Hospital de Caupolican",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Cauquenes": {
-      "name": "Hospital de Cauquenes",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Chanaral": {
-      "name": "Hospital de Chanaral",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Chanarcillo": {
-      "name": "Hospital de Chanarcillo",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Chillan": {
-      "name": "Hospital de Chillan",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Collipulli": {
-      "name": "Hospital de Collipulli",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Combarbala": {
-      "name": "Hospital de Combarbala",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Constitucion": {
-      "name": "Hospital de Constitucion",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Copiapo": {
-      "name": "Hospital de Copiapo",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Coquimbo": {
-      "name": "Hospital de Coquimbo",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Curepto": {
-      "name": "Hospital de Curepto",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Curico": {
-      "name": "Hospital de Curico",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Donihue": {
-      "name": "Hospital de Donihue",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Elqui": {
-      "name": "Hospital de Elqui",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Freirina": {
-      "name": "Hospital de Freirina",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Hombres de Concepcion": {
-      "name": "Hospital de Hombres de Concepcion",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Illapel": {
-      "name": "Hospital de Illapel",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Iquique": {
-      "name": "Hospital de Iquique",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de La Serena": {
-      "name": "Hospital de La Serena",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Laja": {
-      "name": "Hospital de Laja",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Lautaro": {
-      "name": "Hospital de Lautaro",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Lebu": {
-      "name": "Hospital de Lebu",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Ligua": {
-      "name": "Hospital de Ligua",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Limache": {
-      "name": "Hospital de Limache",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Linares": {
-      "name": "Hospital de Linares",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Llanquihue": {
-      "name": "Hospital de Llanquihue",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Loncomilla": {
-      "name": "Hospital de Loncomilla",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Lontue": {
-      "name": "Hospital de Lontue",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Los Andes": {
-      "name": "Hospital de Los Andes",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Maipo": {
-      "name": "Hospital de Maipo",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Mariluan": {
-      "name": "Hospital de Mariluan",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Melipilla": {
-      "name": "Hospital de Melipilla",
-      "level": "city",
-      "cells": 8,
-      "variables": 8,
-      "year_min": 1894,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Mujeres de Concepcion": {
-      "name": "Hospital de Mujeres de Concepcion",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Mulchen": {
-      "name": "Hospital de Mulchen",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Nueva Imperial": {
-      "name": "Hospital de Nueva Imperial",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Osorno": {
-      "name": "Hospital de Osorno",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Ovalle": {
-      "name": "Hospital de Ovalle",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Parral": {
-      "name": "Hospital de Parral",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Petorca": {
-      "name": "Hospital de Petorca",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Pisagua": {
-      "name": "Hospital de Pisagua",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Punta Arenas": {
-      "name": "Hospital de Punta Arenas",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Putaendo": {
-      "name": "Hospital de Putaendo",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Quillota": {
-      "name": "Hospital de Quillota",
-      "level": "city",
-      "cells": 8,
-      "variables": 8,
-      "year_min": 1893,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Quirihue": {
-      "name": "Hospital de Quirihue",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Rancagua": {
-      "name": "Hospital de Rancagua",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Rio Bueno": {
-      "name": "Hospital de Rio Bueno",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de San Agustin": {
-      "name": "Hospital de San Agustin",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de San Bernardo": {
-      "name": "Hospital de San Bernardo",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de San Bernardo i San Jose de Maipo": {
-      "name": "Hospital de San Bernardo i San Jose de Maipo",
-      "level": "city",
-      "cells": 1,
-      "variables": 1,
-      "year_min": 1894,
-      "year_max": 1894,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de San Carlos": {
-      "name": "Hospital de San Carlos",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de San Felipe": {
-      "name": "Hospital de San Felipe",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de San Fernando": {
-      "name": "Hospital de San Fernando",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de San Francisco de Borja": {
-      "name": "Hospital de San Francisco de Borja",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de San Jose": {
-      "name": "Hospital de San Jose",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de San Jose de Maipo": {
-      "name": "Hospital de San Jose de Maipo",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de San Juan de Dios (Santiago)": {
-      "name": "Hospital de San Juan de Dios (Santiago)",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de San Juan de Dios (Valparaiso)": {
-      "name": "Hospital de San Juan de Dios (Valparaiso)",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de San Juan de Dios de Valparaiso": {
-      "name": "Hospital de San Juan de Dios de Valparaiso",
-      "level": "city",
-      "cells": 1,
-      "variables": 1,
-      "year_min": 1894,
-      "year_max": 1894,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de San Juan de Dios, de Valparaiso": {
-      "name": "Hospital de San Juan de Dios, de Valparaiso",
-      "level": "city",
-      "cells": 1,
-      "variables": 1,
-      "year_min": 1893,
-      "year_max": 1893,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de San Vicente de Paul": {
-      "name": "Hospital de San Vicente de Paul",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Santa Isabel, de Lebu": {
-      "name": "Hospital de Santa Isabel, de Lebu",
-      "level": "city",
-      "cells": 1,
-      "variables": 1,
-      "year_min": 1893,
-      "year_max": 1893,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Tacna": {
-      "name": "Hospital de Tacna",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Talca": {
-      "name": "Hospital de Talca",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Talcahuano": {
-      "name": "Hospital de Talcahuano",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Taltal": {
-      "name": "Hospital de Taltal",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Temuco": {
-      "name": "Hospital de Temuco",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Tocopilla": {
-      "name": "Hospital de Tocopilla",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Tome": {
-      "name": "Hospital de Tome",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Traiguen": {
-      "name": "Hospital de Traiguen",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Union": {
-      "name": "Hospital de Union",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Valdivia": {
-      "name": "Hospital de Valdivia",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Vallenar": {
-      "name": "Hospital de Vallenar",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Vichuquen": {
-      "name": "Hospital de Vichuquen",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de Vina del Mar": {
-      "name": "Hospital de Vina del Mar",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital de hombres de Concepcion": {
-      "name": "Hospital de hombres de Concepcion",
-      "level": "city",
-      "cells": 5,
-      "variables": 5,
-      "year_min": 1862,
-      "year_max": 1894,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital del Salvador": {
-      "name": "Hospital del Salvador",
-      "level": "city",
-      "cells": 7,
-      "variables": 7,
-      "year_min": 1900,
-      "year_max": 1900,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital y Disp. de Illapel": {
-      "name": "Hospital y Disp. de Illapel",
-      "level": "city",
-      "cells": 1,
-      "variables": 1,
-      "year_min": 1893,
-      "year_max": 1893,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospital y cementerio de Melipilla": {
-      "name": "Hospital y cementerio de Melipilla",
-      "level": "city",
-      "cells": 1,
-      "variables": 1,
-      "year_min": 1893,
-      "year_max": 1893,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Hospitales de hombres i de mujeres de Concepcion": {
-      "name": "Hospitales de hombres i de mujeres de Concepcion",
-      "level": "city",
-      "cells": 1,
-      "variables": 1,
-      "year_min": 1862,
-      "year_max": 1862,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
     "city:Huerfanos Santiago": {
       "name": "Huerfanos Santiago",
       "level": "city",
@@ -5940,26 +4529,6 @@
       "year_max": 1892,
       "reason": "no modern comuna of this name; most are 19c localities absorbed into a larger comuna, and placing them would mean inventing a coordinate",
       "defect": null
-    },
-    "city:Lazareto de Valparaiso": {
-      "name": "Lazareto de Valparaiso",
-      "level": "city",
-      "cells": 1,
-      "variables": 1,
-      "year_min": 1894,
-      "year_max": 1894,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Lazaretos de Valparaiso": {
-      "name": "Lazaretos de Valparaiso",
-      "level": "city",
-      "cells": 1,
-      "variables": 1,
-      "year_min": 1893,
-      "year_max": 1893,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
     },
     "city:Llico": {
       "name": "Llico",
@@ -6200,26 +4769,6 @@
       "year_max": 1891,
       "reason": "no modern comuna of this name; most are 19c localities absorbed into a larger comuna, and placing them would mean inventing a coordinate",
       "defect": null
-    },
-    "city:Presidio de Santiago": {
-      "name": "Presidio de Santiago",
-      "level": "city",
-      "cells": 25,
-      "variables": 25,
-      "year_min": 1869,
-      "year_max": 1869,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Puchacay; dispensaria": {
-      "name": "Puchacay; dispensaria",
-      "level": "city",
-      "cells": 1,
-      "variables": 1,
-      "year_min": 1893,
-      "year_max": 1893,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
     },
     "city:Puerto de Coquimbo": {
       "name": "Puerto de Coquimbo",
@@ -6884,8 +5433,8 @@
     "city:Tacna": {
       "name": "Tacna",
       "level": "city",
-      "cells": 29,
-      "variables": 26,
+      "cells": 69,
+      "variables": 30,
       "year_min": 1886,
       "year_max": 1909,
       "reason": "no modern comuna of this name; most are 19c localities absorbed into a larger comuna, and placing them would mean inventing a coordinate",
@@ -6941,26 +5490,6 @@
       "reason": "no modern comuna of this name; most are 19c localities absorbed into a larger comuna, and placing them would mean inventing a coordinate",
       "defect": null
     },
-    "city:Union; hospital y dispensaria": {
-      "name": "Union; hospital y dispensaria",
-      "level": "city",
-      "cells": 1,
-      "variables": 1,
-      "year_min": 1893,
-      "year_max": 1893,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:Valparaíso — Dispensaría de Beneficencia": {
-      "name": "Valparaíso — Dispensaría de Beneficencia",
-      "level": "city",
-      "cells": 1,
-      "variables": 1,
-      "year_min": 1886,
-      "year_max": 1886,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
     "city:Villa Rica": {
       "name": "Villa Rica",
       "level": "city",
@@ -7001,16 +5530,6 @@
       "reason": "no modern comuna of this name; most are 19c localities absorbed into a larger comuna, and placing them would mean inventing a coordinate",
       "defect": null
     },
-    "city:instituto_nacional": {
-      "name": "instituto_nacional",
-      "level": "city",
-      "cells": 20,
-      "variables": 2,
-      "year_min": 1900,
-      "year_max": 1909,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
     "city:internado_barros_arana": {
       "name": "internado_barros_arana",
       "level": "city",
@@ -7020,86 +5539,6 @@
       "year_max": 1909,
       "reason": "no modern comuna of this name; most are 19c localities absorbed into a larger comuna, and placing them would mean inventing a coordinate",
       "defect": null
-    },
-    "city:liceo_aplicacion_hombres": {
-      "name": "liceo_aplicacion_hombres",
-      "level": "city",
-      "cells": 20,
-      "variables": 2,
-      "year_min": 1900,
-      "year_max": 1909,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:liceo_aplicacion_ninas": {
-      "name": "liceo_aplicacion_ninas",
-      "level": "city",
-      "cells": 20,
-      "variables": 2,
-      "year_min": 1900,
-      "year_max": 1909,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:liceo_ninas_santiago_n1": {
-      "name": "liceo_ninas_santiago_n1",
-      "level": "city",
-      "cells": 20,
-      "variables": 2,
-      "year_min": 1900,
-      "year_max": 1909,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:liceo_ninas_santiago_n2": {
-      "name": "liceo_ninas_santiago_n2",
-      "level": "city",
-      "cells": 20,
-      "variables": 2,
-      "year_min": 1900,
-      "year_max": 1909,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:liceo_ninas_santiago_n3": {
-      "name": "liceo_ninas_santiago_n3",
-      "level": "city",
-      "cells": 20,
-      "variables": 2,
-      "year_min": 1900,
-      "year_max": 1909,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:liceo_ninas_santiago_n4": {
-      "name": "liceo_ninas_santiago_n4",
-      "level": "city",
-      "cells": 20,
-      "variables": 2,
-      "year_min": 1900,
-      "year_max": 1909,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:liceo_ninas_santiago_n5": {
-      "name": "liceo_ninas_santiago_n5",
-      "level": "city",
-      "cells": 20,
-      "variables": 2,
-      "year_min": 1900,
-      "year_max": 1909,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
-    },
-    "city:liceo_santiago_n1": {
-      "name": "liceo_santiago_n1",
-      "level": "city",
-      "cells": 20,
-      "variables": 2,
-      "year_min": 1900,
-      "year_max": 1909,
-      "reason": "the unit is an INSTITUTION, not a place: the hospital, prison and liceo extractions stored the establishment as the geographic unit. Dimension wearing a geography; re-key to the host city before placing.",
-      "defect": "institution_as_geography"
     },
     "city:manuel_barros_borgono": {
       "name": "manuel_barros_borgono",
@@ -7120,148 +5559,7 @@
       "year_max": 1909,
       "reason": "no modern comuna of this name; most are 19c localities absorbed into a larger comuna, and placing them would mean inventing a coordinate",
       "defect": null
-    },
-    "city:tacna": {
-      "name": "tacna",
-      "level": "city",
-      "cells": 40,
-      "variables": 4,
-      "year_min": 1900,
-      "year_max": 1909,
-      "reason": "no modern comuna of this name; most are 19c localities absorbed into a larger comuna, and placing them would mean inventing a coordinate",
-      "defect": null
-    },
-    "port:Carrizal Bajo": {
-      "name": "Carrizal Bajo",
-      "level": "port",
-      "cells": 102,
-      "variables": 14,
-      "year_min": 1874,
-      "year_max": 1900,
-      "reason": "no modern comuna of this name; most are 19c localities absorbed into a larger comuna, and placing them would mean inventing a coordinate",
-      "defect": null
     }
   },
-  "duplicate_units": {
-    "city:ancud": [
-      "Ancud",
-      "ancud"
-    ],
-    "city:angol": [
-      "Angol",
-      "angol"
-    ],
-    "city:antofagasta": [
-      "Antofagasta",
-      "antofagasta"
-    ],
-    "city:cauquenes": [
-      "Cauquenes",
-      "cauquenes"
-    ],
-    "city:chillan": [
-      "Chillan",
-      "chillan"
-    ],
-    "city:chillan viejo": [
-      "Chillan Viejo",
-      "Chillan viejo"
-    ],
-    "city:concepcion": [
-      "Concepcion",
-      "concepcion"
-    ],
-    "city:constitucion": [
-      "Constitucion",
-      "constitucion"
-    ],
-    "city:copiapo": [
-      "Copiapo",
-      "copiapo"
-    ],
-    "city:curico": [
-      "Curico",
-      "curico"
-    ],
-    "city:illapel": [
-      "Illapel",
-      "illapel"
-    ],
-    "city:iquique": [
-      "Iquique",
-      "iquique"
-    ],
-    "city:lebu": [
-      "Lebu",
-      "lebu"
-    ],
-    "city:linares": [
-      "Linares",
-      "linares"
-    ],
-    "city:osorno": [
-      "Osorno",
-      "osorno"
-    ],
-    "city:ovalle": [
-      "Ovalle",
-      "ovalle"
-    ],
-    "city:quillota": [
-      "Quillota",
-      "quillota"
-    ],
-    "city:rancagua": [
-      "Rancagua",
-      "rancagua"
-    ],
-    "city:rengo": [
-      "Rengo",
-      "rengo"
-    ],
-    "city:talca": [
-      "Talca",
-      "talca"
-    ],
-    "city:talcahuano": [
-      "Talcahuano",
-      "talcahuano"
-    ],
-    "city:taltal": [
-      "Taltal",
-      "taltal"
-    ],
-    "city:temuco": [
-      "Temuco",
-      "temuco"
-    ],
-    "city:tome": [
-      "Tome",
-      "tome"
-    ],
-    "city:traiguen": [
-      "Traiguen",
-      "traiguen"
-    ],
-    "city:valdivia": [
-      "Valdivia",
-      "valdivia"
-    ],
-    "city:valparaiso": [
-      "Valparaiso",
-      "valparaiso"
-    ],
-    "city:victoria": [
-      "Victoria",
-      "victoria"
-    ],
-    "city:hospital de hombres de concepcion": [
-      "Hospital de Hombres de Concepcion",
-      "Hospital de hombres de Concepcion"
-    ],
-    "city:tacna": [
-      "Tacna",
-      "tacna"
-    ]
-  }
+  "duplicate_units": {}
 }

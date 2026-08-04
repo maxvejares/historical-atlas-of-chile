@@ -1,12 +1,12 @@
 {
   "_meta": {
-    "generated": "2026-08-03T17:47:28",
+    "generated": "2026-08-03T23:32:23",
     "generator": "scripts/build_indicator_metadata.py",
     "purpose": "M098-minimum definition and unit for indicators that reached the catalog without them. Derived from the label, measured coverage and source citation already on the indicator; nothing here is invented.",
     "doctrine": "apply_curation_16 fills a field ONLY when it is empty, so curated prose always wins and regenerating this cannot flatten it. An indicator promoted to the featured tier should have its definition hand-written in 04_indicator_definitions.json, which is applied first.",
-    "indicators": 916,
-    "definitions_generated": 831,
-    "units_generated": 916
+    "indicators": 984,
+    "definitions_generated": 899,
+    "units_generated": 984
   },
   "indicators": {
     "cultivos_praderas_alfalfa_ha": {
@@ -37,9 +37,21 @@
       "display_unit": "quintals per hectare",
       "definition": "Beans, yield, quintals per hectare. Coverage: 48 observations at province level across 3 years (1972 to 1974). Source: ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
+    "vacunos_consumo_kg_per_hab": {
+      "display_unit": "per inhabitant",
+      "definition": "Beef consumption per inhabitant, kilograms. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, livestock slaughtered by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "vacunos_carnes_kg": {
+      "display_unit": "count",
+      "definition": "Beef produced, kilograms. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, livestock slaughtered by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
     "beneficio_hembras_bovinas_cabezas": {
       "display_unit": "head",
       "definition": "Cattle slaughtered, female, head. Coverage: 75 observations at province level across 3 years (1972 to 1974). Source: ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "vacunos_beneficiados": {
+      "display_unit": "head",
+      "definition": "Cattle slaughtered, head. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, livestock slaughtered by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "beneficio_bovinos_machos_cabezas": {
       "display_unit": "head",
@@ -100,6 +112,14 @@
     "leche_valor_miles_pesos1974": {
       "display_unit": "thousand pesos",
       "definition": "Milk, value, thousand pesos of 1974. Coverage: 40 observations at province level across 2 years (1973 to 1974). Source: ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "ovejunos_consumo_kg_per_hab": {
+      "display_unit": "per inhabitant",
+      "definition": "Mutton consumption per inhabitant, kilograms. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, livestock slaughtered by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "ovejunos_carnes_kg": {
+      "display_unit": "count",
+      "definition": "Mutton produced, kilograms. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, livestock slaughtered by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "avena_superficie_ha": {
       "display_unit": "hectares",
@@ -212,6 +232,10 @@
     "centeno_rendimiento_qqha": {
       "display_unit": "quintals per hectare",
       "definition": "Rye, yield, quintals per hectare. Coverage: 37 observations at province level across 3 years (1972 to 1974). Source: ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "ovejunos_beneficiados": {
+      "display_unit": "head",
+      "definition": "Sheep slaughtered, head. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, livestock slaughtered by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "cultivos_sementeras_total_ha": {
       "display_unit": "hectares"
@@ -542,7 +566,7 @@
     },
     "poblacion_1875_total": {
       "display_unit": "persons",
-      "definition": "Population, 1875 (Memoria del Interior), measured in persons. Coverage: 17 observations at province level across year (1875). Source: Oficina Central de Estadística. 1908. Censo de la República de Chile levantado el 28 de Noviembre de 1907. Santiago: Sociedad Imprenta y Litografía Universo. and 16 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Population, 1875 (Memoria del Interior), measured in persons. Coverage: 17 observations at province level across year (1875). Source: Ministerio del Interior. 1875. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1875. Santiago: Imprenta Nacional. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "population": {
       "display_unit": "persons",
@@ -559,6 +583,10 @@
     "poblacion_1868_hombres": {
       "display_unit": "persons",
       "definition": "Population, male (1868), measured in persons. Coverage: 54 observations at department level across year (1868). Source: Oficina Central de Estadística. 1872. Anuario Estadístico de la República de Chile, año 1871. Santiago: Imprenta Nacional. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "poblacion_calculada_1935": {
+      "display_unit": "persons",
+      "definition": "Population, official 1935 estimate, measured in persons. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, prison admissions by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "protestantes_1952": {
       "display_unit": "persons"
@@ -581,7 +609,7 @@
     },
     "poblacion_1875_rural": {
       "display_unit": "persons",
-      "definition": "Rural population, 1875 (Memoria del Interior), measured in persons. Coverage: 17 observations at province level across year (1875). Source: Oficina Central de Estadística. 1908. Censo de la República de Chile levantado el 28 de Noviembre de 1907. Santiago: Sociedad Imprenta y Litografía Universo. and 16 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Rural population, 1875 (Memoria del Interior), measured in persons. Coverage: 17 observations at province level across year (1875). Source: Ministerio del Interior. 1875. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1875. Santiago: Imprenta Nacional. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "poblacion_rural_censo": {
       "display_unit": "persons",
@@ -631,7 +659,7 @@
     },
     "poblacion_total_miles": {
       "display_unit": "thousand pesos",
-      "definition": "Total population, thousands (Mamalakis), measured in thousand pesos. Coverage: 110 observations at national level across 110 years (1843 to 1990). Source: Oficina Central de Estadística. 1908. Censo de la República de Chile levantado el 28 de Noviembre de 1907. Santiago: Sociedad Imprenta y Litografía Universo. and 16 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Total population, thousands (Mamalakis), measured in thousand pesos. Coverage: 110 observations at national level across 110 years (1843 to 1990). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "poblacion_urbana_mujeres": {
       "display_unit": "persons",
@@ -663,7 +691,7 @@
     },
     "poblacion_1875_urbana": {
       "display_unit": "persons",
-      "definition": "Urban population, 1875 (Memoria del Interior), measured in persons. Coverage: 17 observations at province level across year (1875). Source: Oficina Central de Estadística. 1908. Censo de la República de Chile levantado el 28 de Noviembre de 1907. Santiago: Sociedad Imprenta y Litografía Universo. and 16 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Urban population, 1875 (Memoria del Interior), measured in persons. Coverage: 17 observations at province level across year (1875). Source: Ministerio del Interior. 1875. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1875. Santiago: Imprenta Nacional. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "poblacion_urbana_censo": {
       "display_unit": "persons",
@@ -713,6 +741,10 @@
     },
     "poblacion_activa_1952": {
       "display_unit": "persons"
+    },
+    "valor_total_pesos": {
+      "display_unit": "pesos",
+      "definition": "Mining production, total value in pesos. Coverage: 17 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, value of mining production by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "salitre_production_tons": {
       "display_unit": "tonnes"
@@ -1174,6 +1206,18 @@
       "display_unit": "persons",
       "definition": "Deputies (1920), measured in persons. Coverage: 23 observations at province level across year (1920). Source: Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 39. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
+    "inscritos_registro_general": {
+      "display_unit": "persons",
+      "definition": "Electoral register, general roll, registered voters, measured in persons. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, electoral registration and turnout by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "inscritos_registro_municipal": {
+      "display_unit": "persons",
+      "definition": "Electoral register, municipal roll, registered voters, measured in persons. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, electoral registration and turnout by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "inscritos_total": {
+      "display_unit": "persons",
+      "definition": "Electoral register, total registered voters, measured in persons. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, electoral registration and turnout by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
     "electoral_inscripciones_1917": {
       "display_unit": "persons",
       "definition": "Electoral registrations (1917), measured in persons. Coverage: 22 observations at province level across year (1917). Source: Anuario Estadistico - Chile 1917 Vol III. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
@@ -1204,8 +1248,28 @@
       "display_unit": "persons",
       "definition": "Senators (1920), measured in persons. Coverage: 23 observations at province level across year (1920). Source: Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 39. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
+    "pct_participacion": {
+      "display_unit": "%",
+      "definition": "Turnout, votes cast as % of registered voters. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, electoral registration and turnout by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "votos_emitidos": {
+      "display_unit": "persons",
+      "definition": "Votes cast, 1881 congressional election, measured in persons. Coverage: 45 observations at department level across year (1881). Source: Oficina Central de Estadística. 1882. Anuario Estadístico de la República de Chile, año 1881, enfranchisement section. Santiago: Imprenta Nacional. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "votantes_registro_general": {
+      "display_unit": "persons",
+      "definition": "Votes cast, general roll, measured in persons. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, electoral registration and turnout by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
     "votos_municipales_1870": {
       "display_unit": "persons"
+    },
+    "votantes_registro_municipal": {
+      "display_unit": "persons",
+      "definition": "Votes cast, municipal roll, measured in persons. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, electoral registration and turnout by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "votantes_total": {
+      "display_unit": "persons",
+      "definition": "Votes cast, total, measured in persons. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, electoral registration and turnout by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "votos_presidente_1871": {
       "display_unit": "persons",
@@ -1226,6 +1290,18 @@
     "reos_aprehendidos_policia_comunal": {
       "display_unit": "persons",
       "definition": "Arrests by the communal police, measured in persons. Coverage: 17 observations at province level across year (1924). Source: Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "reos_ebriedad": {
+      "display_unit": "persons",
+      "definition": "Arrests for drunkenness, measured in persons. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, arrests by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "pct_ebriedad": {
+      "display_unit": "%",
+      "definition": "Arrests for drunkenness as % of all arrests. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, arrests by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "total_reos_aprehendidos": {
+      "display_unit": "persons",
+      "definition": "Arrests, total, measured in persons. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, arrests by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "causas_civiles_falladas": {
       "display_unit": "persons",
@@ -1280,7 +1356,7 @@
     },
     "police_gasto_municipal_pesos": {
       "display_unit": "pesos",
-      "definition": "Municipal police spending, pesos (1862). Coverage: 32 observations at department level across year (1862). Source: Ministerio del Interior. 1863. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1862. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Municipal police spending, pesos (1862). Coverage: 32 observations at department level across year (1862). Source: Ministerio del Interior. 1862. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1862. Santiago: Imprenta Nacional. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "reos_aprehendidos_total": {
       "display_unit": "persons",
@@ -1300,7 +1376,15 @@
     },
     "police_force_count": {
       "display_unit": "persons",
-      "definition": "Police personnel (1862), measured in persons. Coverage: 31 observations at department level across year (1862). Source: Ministerio del Interior. 1863. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1862. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Police personnel (1862), measured in persons. Coverage: 31 observations at department level across year (1862). Source: Ministerio del Interior. 1862. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1862. Santiago: Imprenta Nacional. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "reos_ingresados_1935": {
+      "display_unit": "persons",
+      "definition": "Prison admissions, measured in persons. Coverage: 18 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, prison admissions by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "reos_por_1000_hab": {
+      "display_unit": "per 1,000 inhabitants",
+      "definition": "Prison admissions per 1,000 inhabitants. Coverage: 18 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, prison admissions by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "reos_en_carceles": {
       "display_unit": "persons",
@@ -1350,20 +1434,28 @@
     "viviendas_semipermanentes_1992": {
       "display_unit": "dwellings"
     },
+    "bicicletas": {
+      "display_unit": "count",
+      "definition": "Bicycles registered. Coverage: 17 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, registered vehicles by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
     "correos_cartas": {
       "display_unit": "items"
     },
     "correos_cartas_por_habitante": {
       "display_unit": "per inhabitant",
-      "definition": "Letters posted per inhabitant. Coverage: 178 observations at department level across 3 years (1876 to 1878). Source: Ministerio del Interior. 1879. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1878. Santiago. and 1 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Letters posted per inhabitant. Coverage: 178 observations at department level across 3 years (1876 to 1878). Source: Ministerio del Interior. 1878. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1878. Santiago: Imprenta Nacional. and 1 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "correos_cartas_recibidas_1882": {
       "display_unit": "items",
-      "definition": "Letters received (1882), measured in items. Coverage: 60 observations at department level across year (1882). Source: Ministerio del Interior. 1884. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1883. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Letters received (1882), measured in items. Coverage: 60 observations at department level across year (1882). Source: Ministerio del Interior. 1883. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1883. Santiago: Imprenta Nacional. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "correos_cartas_recibidas_por_habitante_1882": {
       "display_unit": "per inhabitant",
-      "definition": "Letters received per inhabitant (1882). Coverage: 56 observations at department level across year (1882). Source: Ministerio del Interior. 1884. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1883. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Letters received per inhabitant (1882). Coverage: 56 observations at department level across year (1882). Source: Ministerio del Interior. 1883. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1883. Santiago: Imprenta Nacional. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "camiones": {
+      "display_unit": "count",
+      "definition": "Lorries registered. Coverage: 15 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, registered vehicles by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "postal_correspondencia_despachada": {
       "display_unit": "items",
@@ -1389,21 +1481,33 @@
       "display_unit": "pesos",
       "definition": "Mail received, value in pesos (1869). Coverage: 15 observations at province level across year (1869). Source: Memoria del Ministerio del Interior, 1870. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
+    "automoviles_arriendo": {
+      "display_unit": "count",
+      "definition": "Motor cars for hire, registered. Coverage: 17 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, registered vehicles by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "automoviles_particulares": {
+      "display_unit": "count",
+      "definition": "Motor cars in private use, registered. Coverage: 17 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, registered vehicles by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
     "transport_rios_navegables_km": {
       "display_unit": "km",
       "definition": "Navigable rivers, km (1860). Coverage: 8 observations at province level across year (1860). Source: Oficina Central de Estadística. 1860–1872. Anuario Estadístico de la República de Chile, Tomos I–XIII. Santiago: Imprenta Nacional. (2012 reissue: Instituto Nacional de Estadísticas.). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "correos_oficios_numero_1862": {
       "display_unit": "items",
-      "definition": "Official dispatches posted (1862), measured in items. Coverage: 38 observations at city level across year (1862). Source: Ministerio del Interior. 1863. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1862. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Official dispatches posted (1862), measured in items. Coverage: 38 observations at city level across year (1862). Source: Ministerio del Interior. 1862. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1862. Santiago: Imprenta Nacional. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "cartas_ordinarias_valor_pesos": {
       "display_unit": "pesos",
-      "definition": "Ordinary letter postage, pesos (1935). Coverage: 19 observations at province level across year (1935). Source: Memoria del Ministerio del Interior, 1870 and 5 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Ordinary letter postage, pesos (1935). Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, postal traffic by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "cartas_ordinarias_num": {
       "display_unit": "items",
-      "definition": "Ordinary letters posted (1935), measured in items. Coverage: 19 observations at province level across year (1935). Source: Memoria del Ministerio del Interior, 1870 and 5 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Ordinary letters posted (1935), measured in items. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, postal traffic by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "caminos_troperos_km": {
+      "display_unit": "km",
+      "definition": "Pack-trail roads, kilometres, measured in km. Coverage: 16 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, road length by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "correos_objetos": {
       "display_unit": "items",
@@ -1411,23 +1515,39 @@
     },
     "correos_total_numero_1862": {
       "display_unit": "items",
-      "definition": "Postal items handled (1862). Coverage: 38 observations at city level across year (1862). Source: Ministerio del Interior. 1863. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1862. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Postal items handled (1862). Coverage: 38 observations at city level across year (1862). Source: Ministerio del Interior. 1862. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1862. Santiago: Imprenta Nacional. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "jiro_postal_1869_existencia_pesos": {
       "display_unit": "pesos",
       "definition": "Postal money order balance, pesos (1869). Coverage: 28 observations at city level across year (1869). Source: Memoria del Ministerio del Interior, 1870. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
+    "giros_emitidos_num": {
+      "display_unit": "count",
+      "definition": "Postal money orders issued, number. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, money orders by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
     "jiro_postal_1869_cargo_pesos": {
       "display_unit": "pesos",
       "definition": "Postal money orders issued, pesos (1869). Coverage: 29 observations at city level across year (1869). Source: Memoria del Ministerio del Interior, 1870. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "giros_emitidos_valor": {
+      "display_unit": "pesos",
+      "definition": "Postal money orders issued, value in pesos. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, money orders by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "giros_pagados_num": {
+      "display_unit": "count",
+      "definition": "Postal money orders paid, number. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, money orders by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "jiro_postal_1869_data_pesos": {
       "display_unit": "pesos",
       "definition": "Postal money orders paid, pesos (1869). Coverage: 29 observations at city level across year (1869). Source: Memoria del Ministerio del Interior, 1870. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
+    "giros_pagados_valor": {
+      "display_unit": "pesos",
+      "definition": "Postal money orders paid, value in pesos. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, money orders by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
     "correos_total_pesos_1862": {
       "display_unit": "pesos",
-      "definition": "Postal revenue, pesos (1862). Coverage: 38 observations at city level across year (1862). Source: Ministerio del Interior. 1863. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1862. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Postal revenue, pesos (1862). Coverage: 38 observations at city level across year (1862). Source: Ministerio del Interior. 1862. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1862. Santiago: Imprenta Nacional. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "renta_correos": {
       "display_unit": "pesos",
@@ -1438,7 +1558,7 @@
     },
     "correos_impresos_numero_1862": {
       "display_unit": "items",
-      "definition": "Printed matter posted (1862), measured in items. Coverage: 33 observations at city level across year (1862). Source: Ministerio del Interior. 1863. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1862. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Printed matter posted (1862), measured in items. Coverage: 33 observations at city level across year (1862). Source: Ministerio del Interior. 1862. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1862. Santiago: Imprenta Nacional. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "ferrocarril_capital_particular": {
       "display_unit": "pesos",
@@ -1463,6 +1583,14 @@
     "transport_ferrocarriles_km": {
       "display_unit": "km",
       "definition": "Railways, km (1860). Coverage: 6 observations at province level across year (1860). Source: Oficina Central de Estadística. 1860–1872. Anuario Estadístico de la República de Chile, Tomos I–XIII. Santiago: Imprenta Nacional. (2012 reissue: Instituto Nacional de Estadísticas.). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "total_km": {
+      "display_unit": "km",
+      "definition": "Road network, total kilometres, measured in km. Coverage: 16 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, road length by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "caminos_automoviles_carretas_km": {
+      "display_unit": "km",
+      "definition": "Roads carrying motor and cart traffic, kilometres, measured in km. Coverage: 16 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, road length by province. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "transport_caminos_km": {
       "display_unit": "km",
@@ -2561,6 +2689,94 @@
       "display_unit": "persons",
       "definition": "Laws enacted, measured in persons. Coverage: 14 observations at national level across 14 years (1893 to 1917). Source: Anuario Estadistico - Chile 1917 Vol III. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
+    "ingreso_real_promedio_agriculture": {
+      "display_unit": "count",
+      "definition": "Average annual real earnings, agriculture. Coverage: 13 observations at national level across 13 years (1940 to 1952). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "ingreso_real_promedio_total": {
+      "display_unit": "count",
+      "definition": "Average annual real earnings, all sectors. Coverage: 13 observations at national level across 13 years (1940 to 1952). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "ingreso_real_promedio_commerce": {
+      "display_unit": "count",
+      "definition": "Average annual real earnings, commerce. Coverage: 13 observations at national level across 13 years (1940 to 1952). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "ingreso_real_promedio_construction": {
+      "display_unit": "count",
+      "definition": "Average annual real earnings, construction. Coverage: 13 observations at national level across 13 years (1940 to 1952). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "ingreso_real_promedio_finance": {
+      "display_unit": "count",
+      "definition": "Average annual real earnings, finance. Coverage: 13 observations at national level across 13 years (1940 to 1952). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "ingreso_real_promedio_fisheries": {
+      "display_unit": "count",
+      "definition": "Average annual real earnings, fisheries. Coverage: 13 observations at national level across 13 years (1940 to 1952). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "ingreso_real_promedio_industries": {
+      "display_unit": "count",
+      "definition": "Average annual real earnings, manufacturing. Coverage: 13 observations at national level across 13 years (1940 to 1952). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "ingreso_real_promedio_mining": {
+      "display_unit": "count",
+      "definition": "Average annual real earnings, mining. Coverage: 13 observations at national level across 13 years (1940 to 1952). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "ingreso_real_promedio_services": {
+      "display_unit": "count",
+      "definition": "Average annual real earnings, services. Coverage: 13 observations at national level across 13 years (1940 to 1952). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "ingreso_real_promedio_transportation_and_communications": {
+      "display_unit": "count",
+      "definition": "Average annual real earnings, transport and communications. Coverage: 13 observations at national level across 13 years (1940 to 1952). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "salario_real_promedio_all_industries_per_employee": {
+      "display_unit": "count",
+      "definition": "Average annual real salary per employee, all industries. Coverage: 13 observations at national level across 13 years (1940 to 1952). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "salario_real_promedio_agriculture": {
+      "display_unit": "count",
+      "definition": "Average annual real salary, agriculture. Coverage: 13 observations at national level across 13 years (1940 to 1952). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "salario_real_promedio_central_and_municipal_governments": {
+      "display_unit": "count",
+      "definition": "Average annual real salary, central and municipal government. Coverage: 13 observations at national level across 13 years (1940 to 1952). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "salario_real_promedio_commerce": {
+      "display_unit": "count",
+      "definition": "Average annual real salary, commerce. Coverage: 13 observations at national level across 13 years (1940 to 1952). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "salario_real_promedio_construction": {
+      "display_unit": "count",
+      "definition": "Average annual real salary, construction. Coverage: 13 observations at national level across 13 years (1940 to 1952). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "salario_real_promedio_finance": {
+      "display_unit": "count",
+      "definition": "Average annual real salary, finance. Coverage: 13 observations at national level across 13 years (1940 to 1952). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "salario_real_promedio_fisheries": {
+      "display_unit": "count",
+      "definition": "Average annual real salary, fisheries. Coverage: 13 observations at national level across 13 years (1940 to 1952). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "salario_real_promedio_industries": {
+      "display_unit": "count",
+      "definition": "Average annual real salary, manufacturing. Coverage: 13 observations at national level across 13 years (1940 to 1952). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "salario_real_promedio_mining": {
+      "display_unit": "count",
+      "definition": "Average annual real salary, mining. Coverage: 13 observations at national level across 13 years (1940 to 1952). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "salario_real_promedio_services": {
+      "display_unit": "count",
+      "definition": "Average annual real salary, services. Coverage: 13 observations at national level across 13 years (1940 to 1952). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "salario_real_promedio_transportation_and_communications": {
+      "display_unit": "count",
+      "definition": "Average annual real salary, transport and communications. Coverage: 13 observations at national level across 13 years (1940 to 1952). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "salario_real_promedio_utilities": {
+      "display_unit": "count",
+      "definition": "Average annual real salary, utilities. Coverage: 13 observations at national level across 13 years (1940 to 1952). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
     "census_population": {
       "display_unit": "persons",
       "definition": "Census population (INE), measured in persons. Coverage: 13 observations at national level across 13 years (1843 to 1970). Source: Mamalakis Vol 2, Table 1.2 (INE). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
@@ -2866,11 +3082,11 @@
     },
     "municipal_presupuesto_1861": {
       "display_unit": "pesos",
-      "definition": "Municipal budget, pesos (1861). Coverage: 49 observations at city level across year (1861). Source: Ministerio del Interior. 1863. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1862. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Municipal budget, pesos (1861). Coverage: 49 observations at city level across year (1861). Source: Ministerio del Interior. 1862. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1862. Santiago: Imprenta Nacional. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "municipal_presupuesto_1862": {
       "display_unit": "pesos",
-      "definition": "Municipal budget, pesos (1862). Coverage: 49 observations at city level across year (1862). Source: Ministerio del Interior. 1863. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1862. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Municipal budget, pesos (1862). Coverage: 49 observations at city level across year (1862). Source: Ministerio del Interior. 1862. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1862. Santiago: Imprenta Nacional. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "municipal_presupuesto_salidas_gobernador_1889": {
       "display_unit": "pesos",
@@ -2882,11 +3098,11 @@
     },
     "municipal_presupuesto_salidas_1877": {
       "display_unit": "pesos",
-      "definition": "Municipal budgeted expenditure, pesos (1877). Coverage: 60 observations at department level across year (1877). Source: Ministerio del Interior. 1878. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1877. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Municipal budgeted expenditure, pesos (1877). Coverage: 60 observations at department level across year (1877). Source: Ministerio del Interior. 1877. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1877. Santiago: Imprenta Nacional. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "municipal_presupuesto_entradas": {
       "display_unit": "pesos",
-      "definition": "Municipal budgeted revenue, pesos. Coverage: 115 observations at department level across 2 years (1877 to 1889). Source: Ministerio del Interior. 1878. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1877. Santiago. and 1 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Municipal budgeted revenue, pesos. Coverage: 115 observations at department level across 2 years (1877 to 1889). Source: Ministerio del Interior. 1877. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1877. Santiago: Imprenta Nacional. and 1 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "municipal_intereses_deudas": {
       "display_unit": "pesos",
@@ -2898,7 +3114,7 @@
     },
     "municipal_salidas_1861": {
       "display_unit": "pesos",
-      "definition": "Municipal expenditure, pesos (1861). Coverage: 46 observations at city level across year (1861). Source: Ministerio del Interior. 1863. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1862. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Municipal expenditure, pesos (1861). Coverage: 46 observations at city level across year (1861). Source: Ministerio del Interior. 1862. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1862. Santiago: Imprenta Nacional. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "municipal_total_gastos": {
       "display_unit": "pesos"
@@ -2912,11 +3128,11 @@
     },
     "renta_municipal_pesos": {
       "display_unit": "pesos",
-      "definition": "Municipal revenue, pesos. Coverage: 52 observations at department level across 2 years (1842 to 1844). Source: Memoria de Hacienda - Chile 1888 and 17 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Municipal revenue, pesos. Coverage: 52 observations at department level across 2 years (1842 to 1844). Source: Ministerio del Interior. 1844. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1844. Santiago: Imprenta del Estado. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "municipal_entradas_1861": {
       "display_unit": "pesos",
-      "definition": "Municipal revenue, pesos (1861). Coverage: 46 observations at city level across year (1861). Source: Ministerio del Interior. 1863. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1862. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Municipal revenue, pesos (1861). Coverage: 46 observations at city level across year (1861). Source: Ministerio del Interior. 1862. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1862. Santiago: Imprenta Nacional. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "municipal_ingresos_total": {
       "display_unit": "pesos",
@@ -3169,7 +3385,7 @@
     },
     "hospital_asignacion_fiscal_1879": {
       "display_unit": "pesos",
-      "definition": "Hospital fiscal allocation, pesos (1879). Coverage: 29 observations at city level across year (1879). Source: Ministerio del Interior. 1880. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1879. Santiago. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Hospital fiscal allocation, pesos (1879). Coverage: 29 observations at city level across year (1879). Source: Ministerio del Interior. 1879. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1879. Santiago: Imprenta Nacional. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "hospital_fiscal_subsidy_pesos": {
       "display_unit": "pesos",
@@ -3297,7 +3513,7 @@
     },
     "aduana_gastos_pesos": {
       "display_unit": "pesos",
-      "definition": "Customs administration costs, pesos. Coverage: 44 observations at port level across 3 years (1881 to 1887). Source: Memoria de Hacienda - Chile 1888 and 1 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Customs administration costs, pesos. Coverage: 47 observations at port level across 3 years (1881 to 1887). Source: Memoria de Hacienda - Chile 1888 and 1 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "customs_receipts_pesos": {
       "display_unit": "pesos",
@@ -3309,7 +3525,7 @@
     },
     "aduana_entradas_internacion_pesos": {
       "display_unit": "pesos",
-      "definition": "Customs receipts, import duty, pesos. Coverage: 51 observations at port level across 4 years (1876 to 1889). Source: Memoria de Hacienda - Chile 1888 and 4 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Customs receipts, import duty, pesos. Coverage: 64 observations at port level across 13 years (1876 to 1889). Source: Memoria de Hacienda - Chile 1888 and 4 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "aduana_entradas_exportacion_salitre_pesos": {
       "display_unit": "pesos",
@@ -3320,11 +3536,11 @@
     },
     "aduana_entradas_comisos_multas_pesos": {
       "display_unit": "pesos",
-      "definition": "Customs receipts, seizures and fines, pesos. Coverage: 30 observations at port level across 4 years (1876 to 1889). Source: Memoria de Hacienda - Chile 1876 and 4 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Customs receipts, seizures and fines, pesos. Coverage: 33 observations at port level across 4 years (1876 to 1889). Source: Memoria de Hacienda - Chile 1876 and 4 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "aduana_entradas_almacenaje_pesos": {
       "display_unit": "pesos",
-      "definition": "Customs receipts, warehousing, pesos. Coverage: 47 observations at port level across 4 years (1876 to 1889). Source: Memoria de Hacienda - Chile 1888 and 3 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Customs receipts, warehousing, pesos. Coverage: 56 observations at port level across 11 years (1876 to 1889). Source: Memoria de Hacienda - Chile 1888 and 3 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "aduana_entradas_muellaje_pesos": {
       "display_unit": "pesos",
@@ -3444,7 +3660,7 @@
     },
     "tasa_mortalidad_por_mil": {
       "display_unit": "per 1,000 inhabitants",
-      "definition": "Death rate per 1,000 inhabitants. Coverage: 61 observations at national level across 61 years (1900 to 1960). Source: Anuario Estadistico de la Republica de Chile 1925 (Yumpu 56511059) and 13 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Death rate per 1,000 inhabitants. Coverage: 61 observations at national level across 61 years (1900 to 1960). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "defunciones_1926": {
       "display_unit": "persons"
@@ -3489,7 +3705,7 @@
     },
     "muertes_mujeres": {
       "display_unit": "persons",
-      "definition": "Deaths, female (Mamalakis), measured in persons. Coverage: 41 observations at national level across 41 years (1901 to 1948). Source: Anuario Estadistico de la Republica de Chile 1925 (Yumpu 56511059) and 13 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Deaths, female (Mamalakis), measured in persons. Coverage: 41 observations at national level across 41 years (1901 to 1948). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "vital1869_defunciones_mujeres": {
       "display_unit": "persons",
@@ -3505,7 +3721,7 @@
     },
     "muertes_hombres": {
       "display_unit": "persons",
-      "definition": "Deaths, male (Mamalakis), measured in persons. Coverage: 41 observations at national level across 41 years (1901 to 1948). Source: Anuario Estadistico de la Republica de Chile 1925 (Yumpu 56511059) and 13 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Deaths, male (Mamalakis), measured in persons. Coverage: 41 observations at national level across 41 years (1901 to 1948). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "vital1869_defunciones_hombres": {
       "display_unit": "persons",
@@ -3552,11 +3768,11 @@
     },
     "nacidos_vivos_mujeres": {
       "display_unit": "persons",
-      "definition": "Live births, female, measured in persons. Coverage: 44 observations at national level across 44 years (1900 to 1946). Source: Anuario Estadistico de la Republica de Chile 1925 (Yumpu 56511059) and 13 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Live births, female, measured in persons. Coverage: 44 observations at national level across 44 years (1900 to 1946). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "nacidos_vivos_hombres": {
       "display_unit": "persons",
-      "definition": "Live births, male, measured in persons. Coverage: 44 observations at national level across 44 years (1900 to 1946). Source: Anuario Estadistico de la Republica de Chile 1925 (Yumpu 56511059) and 13 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Live births, male, measured in persons. Coverage: 44 observations at national level across 44 years (1900 to 1946). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "live_births_total": {
       "display_unit": "persons",
@@ -3581,9 +3797,65 @@
       "display_unit": "persons",
       "definition": "Marriages, 1869, measured in persons. Coverage: 54 observations at department level across year (1869). Source: Oficina Central de Estadística. 1872. Anuario Estadístico de la República de Chile, año 1871. Santiago: Imprenta Nacional. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
+    "matrimonios_15-19": {
+      "display_unit": "persons",
+      "definition": "Marriages, age group 15 to 19, measured in persons. Coverage: 10 observations at national level across 10 years (1964 to 1973). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "matrimonios_20-24": {
+      "display_unit": "persons",
+      "definition": "Marriages, age group 20 to 24, measured in persons. Coverage: 10 observations at national level across 10 years (1964 to 1973). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "matrimonios_25-29": {
+      "display_unit": "persons",
+      "definition": "Marriages, age group 25 to 29, measured in persons. Coverage: 10 observations at national level across 10 years (1964 to 1973). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "matrimonios_30-34": {
+      "display_unit": "persons",
+      "definition": "Marriages, age group 30 to 34, measured in persons. Coverage: 10 observations at national level across 10 years (1964 to 1973). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "matrimonios_35-39": {
+      "display_unit": "persons",
+      "definition": "Marriages, age group 35 to 39, measured in persons. Coverage: 10 observations at national level across 10 years (1964 to 1973). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "matrimonios_40-44": {
+      "display_unit": "persons",
+      "definition": "Marriages, age group 40 to 44, measured in persons. Coverage: 10 observations at national level across 10 years (1964 to 1973). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "matrimonios_45-49": {
+      "display_unit": "persons",
+      "definition": "Marriages, age group 45 to 49, measured in persons. Coverage: 10 observations at national level across 10 years (1964 to 1973). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "matrimonios_50-54": {
+      "display_unit": "persons",
+      "definition": "Marriages, age group 50 to 54, measured in persons. Coverage: 10 observations at national level across 10 years (1964 to 1973). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "matrimonios_55-59": {
+      "display_unit": "persons",
+      "definition": "Marriages, age group 55 to 59, measured in persons. Coverage: 10 observations at national level across 10 years (1964 to 1973). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "matrimonios_60-64": {
+      "display_unit": "persons",
+      "definition": "Marriages, age group 60 to 64, measured in persons. Coverage: 10 observations at national level across 10 years (1964 to 1973). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "matrimonios_65-69": {
+      "display_unit": "persons",
+      "definition": "Marriages, age group 65 to 69, measured in persons. Coverage: 10 observations at national level across 10 years (1964 to 1973). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "matrimonios_70-74": {
+      "display_unit": "persons",
+      "definition": "Marriages, age group 70 to 74, measured in persons. Coverage: 10 observations at national level across 10 years (1964 to 1973). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "matrimonios_mas_de_75": {
+      "display_unit": "persons",
+      "definition": "Marriages, age group 75 and over, measured in persons. Coverage: 10 observations at national level across 10 years (1964 to 1973). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
+    "matrimonios_bajo_15": {
+      "display_unit": "persons",
+      "definition": "Marriages, age group under 15, measured in persons. Coverage: 10 observations at national level across 10 years (1964 to 1973). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+    },
     "tasa_crecimiento_natural": {
       "display_unit": "persons",
-      "definition": "Rate of natural increase, measured in persons. Coverage: 50 observations at national level across 50 years (1900 to 1949). Source: Anuario Estadistico de la Republica de Chile 1925 (Yumpu 56511059) and 13 other source(s). Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
+      "definition": "Rate of natural increase, measured in persons. Coverage: 50 observations at national level across 50 years (1900 to 1949). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum; this indicator has not yet received a curated prose treatment."
     },
     "mortinatos": {
       "display_unit": "persons"
