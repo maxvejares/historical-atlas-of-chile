@@ -1089,6 +1089,178 @@
     "mortalidad_infantil_1926": {
       "subtitle": "Infant deaths, by department and province, 1926, deaths under age one",
       "definition": "Deaths of infants under one year of age registered in 1926, by department and province, from the Anuario Estadístico de Chile 1926, Vol. I (Demografía). A count of infant deaths, not a rate; divide by registered births (nacimientos_1926) for an infant mortality rate. A single-year cross-section."
+    },
+    "defunciones_menores_1ano": {
+      "subtitle": "Deaths before the first birthday",
+      "definition": "Deaths of children under one year of age, as returned by the civil register and compiled in the Anuario Estadístico. The series runs at department and province level from the early 1920s to 1948 and nationally back to 1851, which makes it one of the few welfare measures in the database with both a long national run and a subnational cross-section. It is a count, not a rate: to compare places, divide by live births in the same year rather than by population, because fertility differed sharply between the mining north and the agricultural centre."
+    },
+    "mortinatos": {
+      "subtitle": "Stillbirths",
+      "definition": "Stillbirths registered in the year. Chile counted these separately from infant deaths, so the series complements rather than duplicates deaths under one year. Coverage is national from 1900 and subnational from the 1920s. Registration of a stillbirth was less complete than of a live birth throughout the period, so levels are understated and the trend is more reliable than any single year."
+    },
+    "poblacion_hombres": {
+      "subtitle": "Male population",
+      "definition": "Men enumerated at the census. Published here as one series across census years rather than as a separate variable per census, which is what the source tables look like. Sex ratios in 19th century Chile depart sharply from parity in the nitrate and coal districts, where male labour migration dominated, and in the rural centre, where it ran the other way."
+    },
+    "poblacion_mujeres": {
+      "subtitle": "Female population",
+      "definition": "Women enumerated at the census, the companion series to the male count. Reading the two together is the quickest way to see labour migration in the north and its absence in the agricultural core."
+    },
+    "pop_censal": {
+      "subtitle": "Census population, Sinopsis retrospective",
+      "definition": "Department population at each census from 1865 to 1920, as restated in the Sinopsis Estadística of 1924 to 1927. The Sinopsis recomputed earlier censuses onto the boundaries of its own day, so its figures can differ from the original census volumes for any department whose limits moved. Where both exist the database keeps them as separate indicators rather than choosing between them."
+    },
+    "nacimientos_total": {
+      "subtitle": "Births, total",
+      "definition": "Live births registered nationally, running from 1849 to 1925 in the Sinopsis retrospective tables. Civil registration began in 1885, so figures before that year come from parish registers and undercount by a margin that varied with the reach of the clergy."
+    },
+    "defunciones_permil": {
+      "subtitle": "Deaths per 1,000 inhabitants",
+      "definition": "The crude death rate by province in 1924, as printed in the Sinopsis. Crude rates confound mortality with age structure: a province with a young migrant population will show a low crude rate even where conditions are poor, which is exactly the situation in the nitrate provinces."
+    },
+    "municipal_total_gastos": {
+      "subtitle": "Municipal expenditure, total",
+      "definition": "Total spending by the municipality, from the Anuario tables that run across 1876 to 1892. This is the headline line of the municipal accounts and the denominator for the individual spending heads published alongside it. Values are nominal pesos and the peso depreciated substantially over the period, so compare shares between places in a year before comparing levels across years."
+    },
+    "municipal_empleados_escritorio": {
+      "subtitle": "Clerical staff, municipal spending",
+      "definition": "Spending on the municipality's clerical establishment. Despite the name this is a peso amount and not a headcount, which the values settle: they carry centavos. Read against total expenditure it is the closest thing the 19th century accounts offer to a measure of local administrative capacity."
+    },
+    "municipal_manutencion_presos": {
+      "subtitle": "Prisoner maintenance, municipal spending",
+      "definition": "What the municipality spent feeding and housing prisoners. Chile placed this charge on the municipality rather than the treasury, so the line appears in local accounts and varies with whether the department seat held a gaol."
+    },
+    "municipal_instruccion_publica": {
+      "subtitle": "Public instruction, municipal spending",
+      "definition": "Municipal spending on schooling, distinct from the national education budget. It is often small or absent, which is itself the finding: primary instruction was overwhelmingly a central charge, and the municipal contribution marks the exceptions."
+    },
+    "municipal_obras_publicas": {
+      "subtitle": "Public works, municipal spending",
+      "definition": "Municipal spending on public works. Lumpy by nature, since a single bridge or water scheme dominates a small municipality's year, so a spike is usually a project rather than a trend."
+    },
+    "municipal_beneficencia": {
+      "subtitle": "Poor relief, municipal spending",
+      "definition": "Municipal spending on charitable relief. Zero in most municipalities in most years, because relief in Chile ran through the Juntas de Beneficencia and the church rather than the town council; the non-zero entries mark where the council took it on directly."
+    },
+    "fiscal_entradas_pesos": {
+      "subtitle": "Fiscal revenue",
+      "definition": "Total ordinary revenue of the Chilean treasury from 1833 to 1914, as compiled by Aldana in 1914 from the annual accounts. The series spans the shift from a customs based revenue system to one dominated by the nitrate export duty after 1880, which is the single largest structural break in Chilean public finance."
+    },
+    "fiscal_gastos_pesos": {
+      "subtitle": "Fiscal expenditure",
+      "definition": "Total treasury expenditure from 1833 to 1914 on Aldana's compilation, the counterpart to ordinary revenue. Deficit years cluster around the War of the Pacific and the 1891 civil war."
+    },
+    "renta_papel_sellado": {
+      "subtitle": "Stamped-paper duty revenue",
+      "definition": "Revenue from the stamped paper required for legal instruments, 1838 to 1914. A small head in absolute terms but a useful one: it tracks the volume of formal legal and commercial transactions rather than trade, so it moves differently from customs."
+    },
+    "renta_alcabala": {
+      "subtitle": "Alcabala revenue",
+      "definition": "The colonial sales tax on property transfers, retained after independence and reported to 1890. Its slow decline is a fiscal history in miniature, as the republic shifted the burden onto trade."
+    },
+    "aduana_entradas_pesos": {
+      "subtitle": "Customs receipts by port",
+      "definition": "Duty collected at each customs house, 1831 to 1889, from the Memorias de Hacienda. This is the port level series that gives the database its clearest picture of where Chilean trade actually entered the country, and it shows Valparaíso's dominance giving way to the northern nitrate ports. Published on the map at port level, each port placed at the representative point of the modern comuna of the same name."
+    },
+    "import_duty_rate_pct": {
+      "subtitle": "Import duty rate",
+      "definition": "Duties collected as a percentage of the value of imports, an effective rather than a statutory rate. It falls when high value low duty goods dominate the import bill, so it is a measure of the composition of trade as much as of tariff policy."
+    },
+    "profesion_agricultores_total": {
+      "subtitle": "Farmers",
+      "definition": "Persons returning agricultor as their occupation at the 1875 census. The census distinguished agricultores from labradores, and the two coexist in the same departments rather than substituting for one another, so they record different positions in the rural hierarchy rather than two words for the same job. Read the two together before drawing conclusions about the agrarian structure."
+    },
+    "profesion_jornaleros_total": {
+      "subtitle": "Day labourers",
+      "definition": "Persons returning jornalero at the 1875 census, the largest single occupational category in most departments and the closest thing the census offers to a count of unattached wage labour."
+    },
+    "profesion_sirvientes_total": {
+      "subtitle": "Servants",
+      "definition": "Domestic servants at the 1875 census. Overwhelmingly women, and concentrated in the cities and the large estates, which makes it a useful proxy for household wealth where no wealth measure exists."
+    },
+    "profesion_medicos_i_cirujanos_total": {
+      "subtitle": "Physicians and surgeons",
+      "definition": "Medical practitioners at the 1875 census. The printed census used two different row labels for this occupation in different departments, Médicos in some and Médicos i cirujanos in others, so the two were extracted as separate variables and each covered only part of the country. They are merged here into one indicator; the merge is lossless because the two never both report for the same department."
+    },
+    "profesion_profesores_i_preceptores_total": {
+      "subtitle": "Teachers and preceptors",
+      "definition": "Teaching staff at the 1875 census, merged from the two row labels the printed census used in different departments on the same basis as the medical count."
+    },
+    "profesion_cat_agricultura_total": {
+      "subtitle": "Occupied in agriculture",
+      "definition": "Persons in the agricultural category of the 1920 census occupational classification. The 1920 categories are broad groupings rather than the individual trades of 1875, so the two censuses are not directly comparable at this level of detail."
+    },
+    "existencias_bovinos_cabezas": {
+      "subtitle": "Cattle",
+      "definition": "Head of cattle returned by the agricultural statistics. Livestock counts of this period rest on declarations by owners with a tax interest in the answer, so treat levels as a floor and pay more attention to the geography than to the totals."
+    },
+    "existencias_ovinos_cabezas": {
+      "subtitle": "Sheep",
+      "definition": "Head of sheep. The far southern provinces dominate from the late 19th century as the Magallanes sheep economy develops, and that concentration is the main signal in the series."
+    },
+    "trigo_rendimiento_qqha": {
+      "subtitle": "Wheat yield",
+      "definition": "Wheat yield in metric quintals per hectare from the ODEPA agricultural statistics, 1965 to 1974. Yield is the ratio of two separately reported series, so a province with a small sown area can produce an implausible figure from a rounding error in either."
+    },
+    "cultivos_sementeras_total_ha": {
+      "subtitle": "Sown crops, area",
+      "definition": "Total area under sown crops by province in 1924 and 1925, from the Sinopsis. The companion pasture and tree crop series use the same classification, so the three sum to the cultivated area."
+    },
+    "liceos_hombres_matricula": {
+      "subtitle": "Liceo enrolment, boys",
+      "definition": "Boys enrolled in the state secondary liceos, by city, 1900 to 1909. The liceo network was small, deliberately selective and concentrated in provincial capitals, so this measures the reach of secondary schooling rather than its scale."
+    },
+    "liceos_ninas_matricula": {
+      "subtitle": "Liceo enrolment, girls",
+      "definition": "Girls enrolled in the state secondary liceos. Girls' liceos were founded later and in fewer cities than boys', and the gap between the two series is the clearest measure in the database of how unevenly secondary schooling opened to women."
+    },
+    "escuelas_primarias_matricula_total": {
+      "subtitle": "Primary school enrolment",
+      "definition": "Children enrolled in primary schools by department in 1909, from the Anuario. Enrolment is not attendance: the companion average attendance series runs well below it, and the ratio of the two is the more informative measure."
+    },
+    "matricula_total_hombres": {
+      "subtitle": "School enrolment, male",
+      "definition": "Boys enrolled in schools by province in 1900, from the Sinopsis. Reported alongside the female count and the separate returns for boys', girls' and mixed schools."
+    },
+    "correos_cartas": {
+      "subtitle": "Letters posted",
+      "definition": "Letters posted by department, drawn from the Memorias del Interior for 1876, 1877, 1878, 1881 and 1882. The source stores each year as its own variable; they are published here as one series, which is why a chart shows five cross-sections rather than an annual run. Postal traffic per head is one of the better available proxies for literacy and commercial activity before the census began measuring either."
+    },
+    "correos_impresos": {
+      "subtitle": "Printed matter posted",
+      "definition": "Newspapers, circulars and other printed matter posted by department across seven years between 1876 and 1886. It moves with the reach of the press rather than with private correspondence, so it complements the letter series."
+    },
+    "telegrafo_oficina_empleados": {
+      "subtitle": "Telegraph office staff",
+      "definition": "Staff employed at each telegraph office in 1891 and 1892, from the Memoria del Interior. With the companion count of instruments it maps the state's communications network at city level in the years around the civil war."
+    },
+    "inscriptos": {
+      "subtitle": "Registered electors",
+      "definition": "Men on the electoral register by department, 1915 to 1921. Registration in this period was a contested and locally administered process, so the series measures the outcome of that contest as much as it measures the eligible population."
+    },
+    "votos_municipales_1870": {
+      "subtitle": "Votes cast, municipal election of 1870",
+      "definition": "Votes recorded in the 1870 municipal elections by department, from the electoral census printed in the Anuario of 1871. Read against the count of calificados in the same table to get turnout among those qualified to vote."
+    },
+    "has_gobernador_interior": {
+      "subtitle": "Department has a resident governor",
+      "definition": "Whether the Memoria del Interior records a governor in residence in the department, 1867 to 1876. A crude but direct indicator of where the central state was physically present, and one of the few such measures available for the period."
+    },
+    "vacunados_total": {
+      "subtitle": "Persons vaccinated",
+      "definition": "Smallpox vaccinations performed, by department, in 1862, 1886 and 1889. The three years are the ones the Memorias del Interior reported at department level, and each follows an epidemic, so the series records the response to outbreaks rather than routine coverage."
+    },
+    "junta_vacuna_ingresos_total": {
+      "subtitle": "Vaccination board revenue",
+      "definition": "Income of the departmental Junta de Vacuna, 1889 to 1892. The boards were funded partly by a fiscal allocation and partly locally, and the split between the two is reported separately."
+    },
+    "viruela_defunciones": {
+      "subtitle": "Smallpox deaths",
+      "definition": "Deaths from smallpox by department, 1886 to 1894, spanning the severe epidemic of the early 1890s. Read with the vaccination series, which responds to it."
+    },
+    "viviendas_total_1992": {
+      "subtitle": "Dwellings, total (1992)",
+      "definition": "Total dwellings enumerated by the 1992 census at commune level, the denominator for the water, sewerage, lighting and tenure series published alongside it."
     }
   },
   "_subtitles_only_for_already_defined": {

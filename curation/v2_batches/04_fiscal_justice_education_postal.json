@@ -1,0 +1,482 @@
+[
+  {
+    "id": "fiscal_entradas_pesos",
+    "level": "national",
+    "label": "Fiscal revenue, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "fiscal_gastos_pesos",
+    "level": "national",
+    "label": "Fiscal expenditure, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "fiscal_presupuesto_gastos_pesos",
+    "level": "national",
+    "label": "Budgeted expenditure, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "fiscal_revenue_total_pesos_mc",
+    "level": "national",
+    "label": "Fiscal revenue, pesos of current currency",
+    "category": "Public finance"
+  },
+  {
+    "id": "fiscal_revenue_per_capita_pesos_mc",
+    "level": "national",
+    "label": "Fiscal revenue per inhabitant, pesos of current currency",
+    "category": "Public finance"
+  },
+  {
+    "id": "fiscal_revenue_total_pounds_gold18d",
+    "level": "national",
+    "label": "Fiscal revenue, pounds (gold, 18d)",
+    "category": "Public finance"
+  },
+  {
+    "id": "fiscal_expenditure_total_pesos_mc",
+    "level": "national",
+    "label": "Fiscal expenditure, pesos of current currency",
+    "category": "Public finance"
+  },
+  {
+    "id": "fiscal_expenditure_total_pounds_gold18d",
+    "level": "national",
+    "label": "Fiscal expenditure, pounds (gold, 18d)",
+    "category": "Public finance"
+  },
+  {
+    "id": "fiscal_income_ordinary_thousands_pesos",
+    "level": "national",
+    "label": "Ordinary fiscal income, thousand pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "fiscal_expenditure_total_thousands_pesos",
+    "level": "national",
+    "label": "Total fiscal expenditure, thousand pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "fiscal_expenditure_to_income_ratio_pct",
+    "level": "national",
+    "label": "Fiscal expenditure as % of income",
+    "category": "Public finance"
+  },
+  {
+    "id": "renta_total_fiscal_pesos",
+    "level": "national",
+    "label": "Total fiscal revenue, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "renta_papel_sellado",
+    "level": "national",
+    "label": "Stamped-paper duty revenue, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "renta_alcabala",
+    "level": "national",
+    "label": "Alcabala (sales tax) revenue, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "renta_especies_estancadas",
+    "level": "national",
+    "label": "State monopoly goods revenue, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "renta_aduanas_exportacion",
+    "level": "national",
+    "label": "Export customs revenue, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "renta_ramos_eventuales",
+    "level": "national",
+    "label": "Miscellaneous revenue, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "renta_alcabalas",
+    "level": "national",
+    "label": "Alcabalas revenue, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "renta_peajes",
+    "level": "national",
+    "label": "Toll revenue, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "gasto_total_pesos",
+    "level": "national",
+    "label": "Total expenditure, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "gasto_totales_con_existencia",
+    "level": "national",
+    "label": "Total expenditure including balances, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "gasto_culto",
+    "level": "national",
+    "label": "Expenditure on religion, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "gasto_justicia",
+    "level": "national",
+    "label": "Expenditure on justice, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "gasto_relaciones_exteriores",
+    "level": "national",
+    "label": "Expenditure on foreign affairs, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "min_interior",
+    "level": "national",
+    "label": "Ministry of the Interior budget, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "min_relaciones_exteriores",
+    "level": "national",
+    "label": "Ministry of Foreign Affairs budget, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "min_justicia",
+    "level": "national",
+    "label": "Ministry of Justice budget, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "min_culto",
+    "level": "national",
+    "label": "Ministry of Religion budget, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "min_instruccion_publica",
+    "level": "national",
+    "label": "Ministry of Public Instruction budget, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "min_hacienda",
+    "level": "national",
+    "label": "Ministry of the Treasury budget, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "min_guerra_ejercito",
+    "level": "national",
+    "label": "Ministry of War (army) budget, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "min_marina",
+    "level": "national",
+    "label": "Ministry of the Navy budget, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "gasto_share_pct_interior",
+    "level": "national",
+    "label": "Interior as % of expenditure",
+    "category": "Public finance"
+  },
+  {
+    "id": "gasto_share_pct_relaciones_esteriores",
+    "level": "national",
+    "label": "Foreign affairs as % of expenditure",
+    "category": "Public finance"
+  },
+  {
+    "id": "gasto_share_pct_justicia",
+    "level": "national",
+    "label": "Justice as % of expenditure",
+    "category": "Public finance"
+  },
+  {
+    "id": "gasto_share_pct_culto",
+    "level": "national",
+    "label": "Religion as % of expenditure",
+    "category": "Public finance"
+  },
+  {
+    "id": "gasto_share_pct_instruccion_publica",
+    "level": "national",
+    "label": "Public instruction as % of expenditure",
+    "category": "Public finance"
+  },
+  {
+    "id": "gasto_total_nacion",
+    "level": "province",
+    "label": "National expenditure, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "entradas_pesos",
+    "level": "national",
+    "label": "Revenue, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "gastos_pesos",
+    "level": "national",
+    "label": "Expenditure, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "gastos_18d_total",
+    "level": "national",
+    "label": "Total expenditure, pesos of 18d",
+    "category": "Public finance"
+  },
+  {
+    "id": "gastos_18d_per_hab",
+    "level": "national",
+    "label": "Expenditure per inhabitant, pesos of 18d",
+    "category": "Public finance"
+  },
+  {
+    "id": "deuda_18d_total",
+    "level": "national",
+    "label": "Total public debt, pesos of 18d",
+    "category": "Public finance"
+  },
+  {
+    "id": "deuda_18d_per_hab",
+    "level": "national",
+    "label": "Public debt per inhabitant, pesos of 18d",
+    "category": "Public finance"
+  },
+  {
+    "id": "deuda_exterior_18d_emitido_anual",
+    "level": "national",
+    "label": "External debt issued in the year, pesos of 18d",
+    "category": "Public finance"
+  },
+  {
+    "id": "deuda_externa_18d_intereses_pagados",
+    "level": "national",
+    "label": "External debt interest paid, pesos of 18d",
+    "category": "Public finance"
+  },
+  {
+    "id": "deuda_externa_18d_amortizacion_nominal",
+    "level": "national",
+    "label": "External debt amortisation, nominal, pesos of 18d",
+    "category": "Public finance"
+  },
+  {
+    "id": "deuda_externa_18d_saldo_circulacion",
+    "level": "national",
+    "label": "External debt in circulation, pesos of 18d",
+    "category": "Public finance"
+  },
+  {
+    "id": "renta_municipal_pesos",
+    "level": "department",
+    "label": "Municipal revenue, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "renta_catastro_pesos",
+    "level": "department",
+    "label": "Catastro (land tax) revenue, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "renta_diezmo_substitute_pesos",
+    "level": "department",
+    "label": "Tithe-substitute revenue, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "renta_diferencia_catastro_diezmo_pesos",
+    "level": "department",
+    "label": "Catastro minus tithe difference, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "renta_rural_calculada_pesos",
+    "level": "department",
+    "label": "Estimated rural income, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "entradas_fiscales",
+    "level": "department",
+    "label": "Fiscal revenue by department, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "entradas_percapita",
+    "level": "department",
+    "label": "Fiscal revenue per inhabitant, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "gastos_fiscales",
+    "level": "department",
+    "label": "Fiscal expenditure by department, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "gastos_percapita",
+    "level": "department",
+    "label": "Fiscal expenditure per inhabitant, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "reos_aprehendidos_total",
+    "level": "province",
+    "label": "Persons arrested",
+    "category": "Governance"
+  },
+  {
+    "id": "reos_aprehendidos_fiscales",
+    "level": "province",
+    "label": "Persons arrested by state police",
+    "category": "Governance"
+  },
+  {
+    "id": "reos_aprehendidos_policia_fiscal",
+    "level": "province",
+    "label": "Persons arrested by the fiscal police",
+    "category": "Governance"
+  },
+  {
+    "id": "reos_aprehendidos_comunales",
+    "level": "province",
+    "label": "Persons arrested by communal police",
+    "category": "Governance"
+  },
+  {
+    "id": "reos_aprehendidos_policia_comunal",
+    "level": "province",
+    "label": "Arrests by the communal police",
+    "category": "Governance"
+  },
+  {
+    "id": "reos_en_carceles",
+    "level": "province",
+    "label": "Prisoners held in gaol",
+    "category": "Governance"
+  },
+  {
+    "id": "reos_en_carceles_por_1000_hab",
+    "level": "province",
+    "label": "Prisoners per 1,000 inhabitants",
+    "category": "Governance"
+  },
+  {
+    "id": "reos_proporcion_por_100_hab",
+    "level": "province",
+    "label": "Prisoners per 100 inhabitants",
+    "category": "Governance"
+  },
+  {
+    "id": "school_expenditure_pesos_primary",
+    "level": "province",
+    "label": "Primary school expenditure by province, pesos",
+    "category": "Education"
+  },
+  {
+    "id": "schools_alumnos_total_general",
+    "level": "province",
+    "label": "Pupils enrolled, total",
+    "category": "Education"
+  },
+  {
+    "id": "schools_alumnos_total_hombres",
+    "level": "province",
+    "label": "Pupils enrolled, male",
+    "category": "Education"
+  },
+  {
+    "id": "schools_alumnos_total_mujeres",
+    "level": "province",
+    "label": "Pupils enrolled, female",
+    "category": "Education"
+  },
+  {
+    "id": "schools_alumnos_escuelas_hombres",
+    "level": "province",
+    "label": "Pupils in boys' schools",
+    "category": "Education"
+  },
+  {
+    "id": "schools_alumnos_escuelas_mujeres",
+    "level": "province",
+    "label": "Pupils in girls' schools",
+    "category": "Education"
+  },
+  {
+    "id": "schools_alumnos_mistas_hombres",
+    "level": "province",
+    "label": "Boys in mixed schools",
+    "category": "Education"
+  },
+  {
+    "id": "schools_alumnos_mistas_mujeres",
+    "level": "province",
+    "label": "Girls in mixed schools",
+    "category": "Education"
+  },
+  {
+    "id": "correos_cartas_por_habitante",
+    "level": "department",
+    "label": "Letters posted per inhabitant",
+    "category": "Infrastructure"
+  },
+  {
+    "id": "correos_cartas_recibidas_1882",
+    "level": "department",
+    "label": "Letters received (1882)",
+    "category": "Infrastructure"
+  },
+  {
+    "id": "correos_cartas_recibidas_por_habitante_1882",
+    "level": "department",
+    "label": "Letters received per inhabitant (1882)",
+    "category": "Infrastructure"
+  },
+  {
+    "id": "correos_1869_despachada_numero",
+    "level": "province",
+    "label": "Mail despatched, items (1869)",
+    "category": "Infrastructure"
+  },
+  {
+    "id": "correos_1869_despachada_valor_pesos",
+    "level": "province",
+    "label": "Mail despatched, value in pesos (1869)",
+    "category": "Infrastructure"
+  },
+  {
+    "id": "correos_1869_recibida_numero",
+    "level": "province",
+    "label": "Mail received, items (1869)",
+    "category": "Infrastructure"
+  },
+  {
+    "id": "correos_1869_recibida_valor_pesos",
+    "level": "province",
+    "label": "Mail received, value in pesos (1869)",
+    "category": "Infrastructure"
+  }
+]

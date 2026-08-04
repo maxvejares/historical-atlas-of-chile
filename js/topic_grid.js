@@ -9,6 +9,10 @@
 // surviving indicator in its topic. The build gate caught this; pickLanding()
 // below would have fallen back silently.
 //
+// R3 (2026-08-02): Trade now has ZERO indicators. copper_export_duty_nat was
+// itself unsourced and is withdrawn. The card renders empty until MOVE 2
+// extraction supplies a citable trade series. Do not borrow one from Economy.
+// Prior note, retained:
 // Trade is the one to watch: `copper_export_duty_nat` carries 5 cells, and it
 // is the ONLY surviving trade indicator. That topic was built almost entirely
 // on series nothing on disk could source.
@@ -28,13 +32,17 @@ export const TOPICS = [
   { id: "demography",     label: "Demography",     landing: "total_population",            desc: "Population, vital statistics, urbanization." },
   { id: "politics",       label: "Politics",       landing: "n_legislators",               desc: "Suffrage, legislators, elections, franchise reform." },
   { id: "agriculture",    label: "Agriculture",    landing: "existencias_bovinos_cabezas",            desc: "Crops, estates, agrarian structure, peasants." },
-  { id: "mining",         label: "Mining",         landing: "coal_production",           desc: "Copper, coal, gold, silver, saltpeter, sulfur." },
+  { id: "mining",         label: "Mining",         landing: "salitre_production_tons",           desc: "Copper, coal, gold, silver, saltpeter, sulfur." },
   { id: "labor",          label: "Labor",          landing: "peasant",           desc: "Workforce, occupational composition, participation." },
   { id: "education",      label: "Education",      landing: "total_school_enrollment",   desc: "Schools, students, literacy, enrollment." },
   { id: "infrastructure", label: "Infrastructure", landing: "railway_network_length",      desc: "Railways, telephones, ports, electricity." },
   { id: "housing",        label: "Housing",        landing: "viviendas_total_1992",        desc: "Dwellings, tenure, water, sewerage, electricity (1992)." },
-  { id: "fiscal",         label: "Fiscal",         landing: "fiscal_revenue_millions",     desc: "Revenue, expenditure, debt, taxes." },
-  { id: "trade",          label: "Trade",          landing: "copper_export_duty_nat",  desc: "Exports, imports, trade composition." },
+  // Landing moved off `totexp` on 2026-08-03: that series came wholly from
+  // `Data Chile complete.xlsx`, which decision 3 fenced, so it no longer exists
+  // in the catalog. `muni_total_revenue` is the widest-coverage fiscal series
+  // that survives, at 577 observations.
+  { id: "fiscal",         label: "Fiscal",         landing: "muni_total_revenue", desc: "Revenue, expenditure, debt, taxes." },
+  { id: "trade",          label: "Trade",          landing: "comercio_total_pesos",  desc: "Exports, imports, trade composition." },
 ];
 
 function pickLanding(t) {

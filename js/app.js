@@ -169,7 +169,7 @@ async function _atlasInit() {
     onSelect: ({ topic, variable }) => {
       if (!variable) return;
       const meta = M.byId(variable);
-      const scale = meta.scale_availability.national ? 'national' : (meta.scale_availability.department ? 'department' : (meta.scale_availability.province ? 'province' : 'commune'));
+      const scale = ['national','department','province','commune','port','city'].find(s => meta.scale_availability[s]) || 'national';
       strip.setSelection({ scale, variable });
       document.getElementById('control-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
     },
@@ -181,7 +181,7 @@ async function _atlasInit() {
       if (!variable) return;
       const meta = M.byId(variable);
       if (!meta) return;
-      const scale = meta.scale_availability.national ? 'national' : (meta.scale_availability.department ? 'department' : (meta.scale_availability.province ? 'province' : 'commune'));
+      const scale = ['national','department','province','commune','port','city'].find(s => meta.scale_availability[s]) || 'national';
       strip.setSelection({ scale, variable });
       document.getElementById('control-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
     },
@@ -214,7 +214,7 @@ async function _atlasInit() {
   }
   if (defaultId) {
     const meta = M.byId(defaultId);
-    let scale = h.scale || (meta.scale_availability.national ? 'national' : (meta.scale_availability.department ? 'department' : (meta.scale_availability.province ? 'province' : 'commune')));
+    let scale = h.scale || (['national','department','province','commune','port','city'].find(s => meta.scale_availability[s]) || 'national');
     if (initCompare.length) scale = 'national';  // comparison is a national-chart feature
     pendingCompareIds = initCompare;
     // Thread the hash year through so a deep link / pasted citation

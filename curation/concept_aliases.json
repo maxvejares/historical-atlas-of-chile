@@ -1,0 +1,115 @@
+{
+  "generated": "2026-08-03T10:05:43",
+  "generator": "scripts/concept_aliases.py (register hand-reviewed, disjointness machine-verified)",
+  "doctrine": "CATALOG LAYER ONLY. Master keeps every id the sources printed. An alias merges into its canonical only if the two share NO (level, unit, year) key; anything overlapping is M098 rule 2 arbitration for Phase 3, not an alias. One canonical NAME per concept, so a merged family does not end up with different ids for its male, female and total series.",
+  "groups": [
+    {
+      "canonical": "profesion_medicos_i_cirujanos_hombres",
+      "aliases": [
+        "profesion_medicos_hombres"
+      ],
+      "verified_disjoint": true,
+      "concept": "Physicians and surgeons",
+      "canonical_rows": 29,
+      "alias_rows": 23,
+      "shared_keys": 0,
+      "reason": "The Censo Jeneral 1875 profession tables print different row labels for this trade in different departments, so each id covers only part of the country. Their (level, unit, year) key sets are disjoint, so the merge arbitrates nothing and conserves every cell."
+    },
+    {
+      "canonical": "profesion_medicos_i_cirujanos_mujeres",
+      "aliases": [
+        "profesion_medicos_mujeres"
+      ],
+      "verified_disjoint": true,
+      "concept": "Physicians and surgeons",
+      "canonical_rows": 19,
+      "alias_rows": 23,
+      "shared_keys": 0,
+      "reason": "The Censo Jeneral 1875 profession tables print different row labels for this trade in different departments, so each id covers only part of the country. Their (level, unit, year) key sets are disjoint, so the merge arbitrates nothing and conserves every cell."
+    },
+    {
+      "canonical": "profesion_medicos_i_cirujanos_total",
+      "aliases": [
+        "profesion_medicos_total"
+      ],
+      "verified_disjoint": true,
+      "concept": "Physicians and surgeons",
+      "canonical_rows": 29,
+      "alias_rows": 23,
+      "shared_keys": 0,
+      "reason": "The Censo Jeneral 1875 profession tables print different row labels for this trade in different departments, so each id covers only part of the country. Their (level, unit, year) key sets are disjoint, so the merge arbitrates nothing and conserves every cell."
+    },
+    {
+      "canonical": "profesion_profesores_i_preceptores_hombres",
+      "aliases": [
+        "profesion_profesores_hombres"
+      ],
+      "verified_disjoint": true,
+      "concept": "Teachers and preceptors",
+      "canonical_rows": 35,
+      "alias_rows": 28,
+      "shared_keys": 0,
+      "reason": "The Censo Jeneral 1875 profession tables print different row labels for this trade in different departments, so each id covers only part of the country. Their (level, unit, year) key sets are disjoint, so the merge arbitrates nothing and conserves every cell."
+    },
+    {
+      "canonical": "profesion_profesores_i_preceptores_mujeres",
+      "aliases": [
+        "profesion_profesores_mujeres"
+      ],
+      "verified_disjoint": true,
+      "concept": "Teachers and preceptors",
+      "canonical_rows": 33,
+      "alias_rows": 28,
+      "shared_keys": 0,
+      "reason": "The Censo Jeneral 1875 profession tables print different row labels for this trade in different departments, so each id covers only part of the country. Their (level, unit, year) key sets are disjoint, so the merge arbitrates nothing and conserves every cell."
+    },
+    {
+      "canonical": "profesion_profesores_i_preceptores_total",
+      "aliases": [
+        "profesion_profesores_total"
+      ],
+      "verified_disjoint": true,
+      "concept": "Teachers and preceptors",
+      "canonical_rows": 38,
+      "alias_rows": 28,
+      "shared_keys": 0,
+      "reason": "The Censo Jeneral 1875 profession tables print different row labels for this trade in different departments, so each id covers only part of the country. Their (level, unit, year) key sets are disjoint, so the merge arbitrates nothing and conserves every cell."
+    },
+    {
+      "canonical": "profesion_hilanderas_i_tejedoras_hombres",
+      "aliases": [
+        "profesion_hilanderos_i_tejedores_hombres"
+      ],
+      "verified_disjoint": true,
+      "concept": "Spinners and weavers",
+      "canonical_rows": 33,
+      "alias_rows": 12,
+      "shared_keys": 0,
+      "reason": "The Censo Jeneral 1875 profession tables print different row labels for this trade in different departments, so each id covers only part of the country. Their (level, unit, year) key sets are disjoint, so the merge arbitrates nothing and conserves every cell."
+    },
+    {
+      "canonical": "profesion_hilanderas_i_tejedoras_mujeres",
+      "aliases": [
+        "profesion_hilanderos_i_tejedores_mujeres"
+      ],
+      "verified_disjoint": true,
+      "concept": "Spinners and weavers",
+      "canonical_rows": 33,
+      "alias_rows": 19,
+      "shared_keys": 0,
+      "reason": "The Censo Jeneral 1875 profession tables print different row labels for this trade in different departments, so each id covers only part of the country. Their (level, unit, year) key sets are disjoint, so the merge arbitrates nothing and conserves every cell."
+    },
+    {
+      "canonical": "profesion_hilanderas_i_tejedoras_total",
+      "aliases": [
+        "profesion_hilanderos_i_tejedores_total"
+      ],
+      "verified_disjoint": true,
+      "concept": "Spinners and weavers",
+      "canonical_rows": 33,
+      "alias_rows": 24,
+      "shared_keys": 0,
+      "reason": "The Censo Jeneral 1875 profession tables print different row labels for this trade in different departments, so each id covers only part of the country. Their (level, unit, year) key sets are disjoint, so the merge arbitrates nothing and conserves every cell."
+    }
+  ]
+}

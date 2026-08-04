@@ -443,9 +443,13 @@ export function createChart(host) {
         .filter(([_, v]) => v != null && !Number.isNaN(v));
       return { meta, pairs };
     }
-    // dept / province / commune scale: aggregate by year (sum across units, mean for rate-like)
+    // Subnational scales: aggregate by year (sum across units, mean for rate-like).
+    // Point scales (port, city) use the same block shape, so they aggregate the
+    // same way; only the map rendering differs.
     const block = scale === 'department' ? window._data.department_data
                 : scale === 'commune'    ? window._data.commune_data
+                : scale === 'port'       ? window._data.port_data
+                : scale === 'city'       ? window._data.city_data
                 : window._data.province_data;
     if (!block) return [];
     const out = [];

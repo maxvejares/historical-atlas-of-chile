@@ -1,0 +1,320 @@
+[
+  {
+    "id": "mortinatos",
+    "level": "department",
+    "label": "Stillbirths",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "mortinatos",
+    "level": "province",
+    "label": "Stillbirths",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "mortinatos",
+    "level": "national",
+    "label": "Stillbirths",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "defunciones_menores_1ano",
+    "level": "department",
+    "label": "Deaths under one year of age",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "defunciones_menores_1ano",
+    "level": "province",
+    "label": "Deaths under one year of age",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "defunciones_menores_1ano",
+    "level": "national",
+    "label": "Deaths under one year of age",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "defunciones_total",
+    "level": "department",
+    "label": "Deaths, total",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "nacimientos_total",
+    "level": "department",
+    "label": "Births, total",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "nacimientos_total",
+    "level": "national",
+    "label": "Births, total",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "nacimientos_legitimos",
+    "level": "province",
+    "label": "Births, legitimate",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "nacimientos_legitimos",
+    "level": "national",
+    "label": "Births, legitimate",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "nacimientos_ilegitimos",
+    "level": "province",
+    "label": "Births, illegitimate",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "nacimientos_ilegitimos",
+    "level": "national",
+    "label": "Births, illegitimate",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "nacimientos_hombres",
+    "level": "national",
+    "label": "Births, male",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "nacimientos_mujeres",
+    "level": "national",
+    "label": "Births, female",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "defunciones_hombres",
+    "level": "national",
+    "label": "Deaths, male",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "defunciones_mujeres",
+    "level": "national",
+    "label": "Deaths, female",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "defunciones_permil",
+    "level": "province",
+    "label": "Deaths per 1,000 inhabitants",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "defunciones_menores_1ano_permil",
+    "level": "province",
+    "label": "Infant deaths per 1,000 inhabitants",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "nacimientos_permil",
+    "level": "province",
+    "label": "Births per 1,000 inhabitants",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "nacimientos_ilegitimos_permil",
+    "level": "province",
+    "label": "Illegitimate births per 1,000 inhabitants",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "matrimonios_permil",
+    "level": "province",
+    "label": "Marriages per 1,000 inhabitants",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "defunciones_por_medicos",
+    "level": "province",
+    "label": "Deaths certified by a physician",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "defunciones_por_testigos",
+    "level": "province",
+    "label": "Deaths certified by witnesses",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "vital1869_bautismos_total",
+    "level": "department",
+    "label": "Baptisms, 1869",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "vital1869_bautismos_hombres",
+    "level": "department",
+    "label": "Baptisms, male, 1869",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "vital1869_bautismos_mujeres",
+    "level": "department",
+    "label": "Baptisms, female, 1869",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "vital1869_defunciones_total",
+    "level": "department",
+    "label": "Deaths, 1869",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "vital1869_defunciones_hombres",
+    "level": "department",
+    "label": "Deaths, male, 1869",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "vital1869_defunciones_mujeres",
+    "level": "department",
+    "label": "Deaths, female, 1869",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "vital1869_matrimonios_total",
+    "level": "department",
+    "label": "Marriages, 1869",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "vacunados_total",
+    "level": "department",
+    "label": "Persons vaccinated",
+    "category": "Public health"
+  },
+  {
+    "id": "vacunados_total",
+    "level": "province",
+    "label": "Persons vaccinated",
+    "category": "Public health"
+  },
+  {
+    "id": "vacunados_hombres",
+    "level": "department",
+    "label": "Persons vaccinated, male",
+    "category": "Public health"
+  },
+  {
+    "id": "vacunados_mujeres",
+    "level": "department",
+    "label": "Persons vaccinated, female",
+    "category": "Public health"
+  },
+  {
+    "id": "junta_vacuna_ingresos_total",
+    "level": "department",
+    "label": "Vaccination board revenue, pesos",
+    "category": "Public health"
+  },
+  {
+    "id": "junta_vacuna_egresos_total",
+    "level": "department",
+    "label": "Vaccination board expenditure, pesos",
+    "category": "Public health"
+  },
+  {
+    "id": "junta_vacuna_asignacion_fiscal",
+    "level": "department",
+    "label": "Vaccination board, fiscal allocation, pesos",
+    "category": "Public health"
+  },
+  {
+    "id": "junta_vacuna_ingresos_varios",
+    "level": "department",
+    "label": "Vaccination board, other revenue, pesos",
+    "category": "Public health"
+  },
+  {
+    "id": "municipal_total_gastos",
+    "level": "department",
+    "label": "Municipal expenditure, total, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "municipal_gastos_estraordinarios",
+    "level": "department",
+    "label": "Municipal extraordinary expenditure, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "municipal_empleados_escritorio",
+    "level": "department",
+    "label": "Clerical staff, municipal spending, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "municipal_manutencion_presos",
+    "level": "department",
+    "label": "Prisoner maintenance, municipal spending, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "municipal_instruccion_publica",
+    "level": "department",
+    "label": "Public instruction, municipal spending, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "municipal_obras_publicas",
+    "level": "department",
+    "label": "Public works, municipal spending, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "municipal_intereses_deudas",
+    "level": "department",
+    "label": "Municipal debt interest paid, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "municipal_sobrante",
+    "level": "department",
+    "label": "Municipal surplus, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "municipal_beneficencia",
+    "level": "department",
+    "label": "Poor relief, municipal spending, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "municipal_deficit",
+    "level": "department",
+    "label": "Municipal deficit, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "municipal_presupuesto_entradas",
+    "level": "department",
+    "label": "Municipal budgeted revenue, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "municipal_ingresos_total",
+    "level": "province",
+    "label": "Municipal revenue, total, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "municipalidad_extension_km2",
+    "level": "department",
+    "label": "Municipal area, km2",
+    "category": "Demographics"
+  },
+  {
+    "id": "municipalidad_poblacion_urbana",
+    "level": "department",
+    "label": "Urban population of the municipality",
+    "category": "Demographics"
+  }
+]

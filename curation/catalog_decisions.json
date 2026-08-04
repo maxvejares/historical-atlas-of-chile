@@ -1,0 +1,1301 @@
+{
+  "generated": "2026-08-03T10:18:21",
+  "doctrine": "G3 does not demand that everything be published. It demands that every exclusion be a decision ON THE RECORD. Each entry here is a technical exclusion that can be checked against the data. Judgements that are the owner's — the population-series arbitration, the source policy on the author's own department compilation, the G1b doctrine conflict — are deliberately NOT recorded here and keep G3 failing until they are taken.",
+  "decisions": {
+    "tonnage_cleared|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 35,
+      "source_document": "summary_finances_customs.csv"
+    },
+    "giros_emitidos_num|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 19,
+      "source_document": "anuario_1935_money_orders_province.csv"
+    },
+    "giros_emitidos_valor|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 19,
+      "source_document": "anuario_1935_money_orders_province.csv"
+    },
+    "giros_pagados_num|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 19,
+      "source_document": "anuario_1935_money_orders_province.csv"
+    },
+    "giros_pagados_valor|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 19,
+      "source_document": "anuario_1935_money_orders_province.csv"
+    },
+    "inscritos_registro_general|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 19,
+      "source_document": "anuario_1935_elections_province.csv"
+    },
+    "inscritos_registro_municipal|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 19,
+      "source_document": "anuario_1935_elections_province.csv"
+    },
+    "inscritos_total|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 19,
+      "source_document": "anuario_1935_elections_province.csv"
+    },
+    "ovejunos_beneficiados|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 19,
+      "source_document": "anuario_1935_livestock_slaughter_province.csv"
+    },
+    "ovejunos_carnes_kg|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 19,
+      "source_document": "anuario_1935_livestock_slaughter_province.csv"
+    },
+    "ovejunos_consumo_kg_per_hab|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 19,
+      "source_document": "anuario_1935_livestock_slaughter_province.csv"
+    },
+    "pct_ebriedad|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 19,
+      "source_document": "anuario_1935_crime_province.csv"
+    },
+    "pct_participacion|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 19,
+      "source_document": "anuario_1935_elections_province.csv"
+    },
+    "poblacion_calculada_1935|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 19,
+      "source_document": "anuario_1935_prison_inmates_province.csv"
+    },
+    "reos_ebriedad|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 19,
+      "source_document": "anuario_1935_crime_province.csv"
+    },
+    "reos_ingresados_1935|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 19,
+      "source_document": "anuario_1935_prison_inmates_province.csv"
+    },
+    "reos_por_1000_hab|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 19,
+      "source_document": "anuario_1935_prison_inmates_province.csv"
+    },
+    "total_reos_aprehendidos|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 19,
+      "source_document": "anuario_1935_crime_province.csv"
+    },
+    "vacunos_beneficiados|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 19,
+      "source_document": "anuario_1935_livestock_slaughter_province.csv"
+    },
+    "vacunos_carnes_kg|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 19,
+      "source_document": "anuario_1935_livestock_slaughter_province.csv"
+    },
+    "vacunos_consumo_kg_per_hab|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 19,
+      "source_document": "anuario_1935_livestock_slaughter_province.csv"
+    },
+    "votantes_registro_general|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 19,
+      "source_document": "anuario_1935_elections_province.csv"
+    },
+    "votantes_registro_municipal|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 19,
+      "source_document": "anuario_1935_elections_province.csv"
+    },
+    "votantes_total|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 19,
+      "source_document": "anuario_1935_elections_province.csv"
+    },
+    "automoviles_arriendo|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 17,
+      "source_document": "anuario_1935_vehicles_province.csv"
+    },
+    "automoviles_particulares|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 17,
+      "source_document": "anuario_1935_vehicles_province.csv"
+    },
+    "bicicletas|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 17,
+      "source_document": "anuario_1935_vehicles_province.csv"
+    },
+    "valor_total_pesos|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 17,
+      "source_document": "anuario_1935_mining_production_province.csv"
+    },
+    "caminos_automoviles_carretas_km|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 16,
+      "source_document": "anuario_1935_roads_province.csv"
+    },
+    "caminos_troperos_km|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 16,
+      "source_document": "anuario_1935_roads_province.csv"
+    },
+    "total_km|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 16,
+      "source_document": "anuario_1935_roads_province.csv"
+    },
+    "camiones|province": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "The only source_document master carries for this variable is a build-artefact filename, not a citable work. Publishing it would make apply_curation_05 inherit a family sibling's citation, which is how `cartas_ordinarias_num` (Anuario 1935) came to be attributed to the Memorias del Interior 1879/1884. Repair the source line, then expose. M098 rule 4.",
+      "cells": 15,
+      "source_document": "anuario_1935_vehicles_province.csv"
+    },
+    "poblacion|province": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 98,
+      "source_document": "Datos pre 73'.xlsx"
+    },
+    "pct_protestante|province": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 48,
+      "source_document": "Datos pre 73'"
+    },
+    "poblacion_protestante|province": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 48,
+      "source_document": "Datos pre 73'"
+    },
+    "pct_viviendas|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 32,
+      "source_document": "Datos pre 73'"
+    },
+    "urban_population_count|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 30,
+      "source_document": "Datos pre 73'.xlsx"
+    },
+    "tasa_mortalidad_infantil_por_mil|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 26,
+      "source_document": "Datos pre 73'"
+    },
+    "tasa_natalidad_por_mil|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 26,
+      "source_document": "Datos pre 73'"
+    },
+    "gasto_real|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 24,
+      "source_document": "Datos pre 73'"
+    },
+    "ingreso_real|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 24,
+      "source_document": "Datos pre 73'"
+    },
+    "pct_inmigrantes|province": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 24,
+      "source_document": "Datos pre 73'.xlsx"
+    },
+    "pgb_real|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 24,
+      "source_document": "Datos pre 73'"
+    },
+    "poblacion_inmigrante|province": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 24,
+      "source_document": "Datos pre 73'.xlsx"
+    },
+    "poblacion_nacida_presente|province": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 24,
+      "source_document": "Datos pre 73'"
+    },
+    "reservas_brutas|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 23,
+      "source_document": "Datos pre 73'"
+    },
+    "nivel_educacional_n_escuelas_publicas|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 16,
+      "source_document": "Datos pre 73'.xlsx"
+    },
+    "urbanizacion_pct|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 16,
+      "source_document": "Datos pre 73'.xlsx"
+    },
+    "pct_servicios|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 15,
+      "source_document": "Datos pre 73'"
+    },
+    "poblacion_ciudades_1960|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 15,
+      "source_document": "Datos pre 73'.xlsx"
+    },
+    "poblacion_ciudades_1970|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 15,
+      "source_document": "Datos pre 73'.xlsx"
+    },
+    "urbanizacion_pct_2|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 13,
+      "source_document": "Datos pre 73'.xlsx"
+    },
+    "gasto_fiscal_asistencia_social|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 12,
+      "source_document": "Datos pre 73'"
+    },
+    "gasto_fiscal_desarrollo_regional|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 12,
+      "source_document": "Datos pre 73'"
+    },
+    "gasto_fiscal_educacion|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 12,
+      "source_document": "Datos pre 73'"
+    },
+    "gasto_fiscal_prevision|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 12,
+      "source_document": "Datos pre 73'"
+    },
+    "gasto_fiscal_social_total|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 12,
+      "source_document": "Datos pre 73'"
+    },
+    "gasto_fiscal_vivienda|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 12,
+      "source_document": "Datos pre 73'"
+    },
+    "cuenta_gobierno_10_transferencias_corrientes_a_personas|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "cuenta_gobierno_11_transferencias_corrientes_al_extranjero|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "cuenta_gobierno_12_ahorro|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "cuenta_gobierno_1_ingresos_precedentes_de_sus_propiedades_y_empresas|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "cuenta_gobierno_2_menos_intereses_pagados_por_el_gobierno_general|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "cuenta_gobierno_3_impuestos_indirectos|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "cuenta_gobierno_4_impuestos_directos_a_empresas|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "cuenta_gobierno_51_impuestos_directos_a_personas|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "cuenta_gobierno_52_imposiciones_recibidas_por_cajas_de_previsin|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "cuenta_gobierno_5_impuestos_directos_a_personas_e_imposiciones_en_caja_de_previsin|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "cuenta_gobierno_6_otras_transferencias_corrientes_recibidas_de_las_personas|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "cuenta_gobierno_8_gastos_en_consumo|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "cuenta_gobierno_9_subvenciones|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "cuenta_gobierno_entradas_corrientes|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "cuenta_gobierno_gastos_corrientes|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "pct_poblacion_ocupada_empleadores|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "pct_poblacion_ocupada_empleados|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "pct_poblacion_ocupada_familiares_y_otros|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "pct_poblacion_ocupada_independientes|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "pct_poblacion_ocupada_obreros|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "poblacion_ocupada_empleadores_miles|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "poblacion_ocupada_empleados_miles|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "poblacion_ocupada_familiares_y_otros_miles|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "poblacion_ocupada_independientes_miles|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "poblacion_ocupada_obreros_miles|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "poblacion_ocupada_total_miles|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "poblacion_desocupada_pct|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 10,
+      "source_document": "Datos pre 73'.xlsx"
+    },
+    "poblacion_ocupada_count_1968|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 10,
+      "source_document": "Datos pre 73'.xlsx"
+    },
+    "poblacion_ocupada_miles_1966|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the same malformed national-time-series import that M153 quarantined for `Datos Mamalakis.xlsx`: sectors and age groups sit in geographic_unit and some rows carry a fractional year encoding a month. CLAUDE.md lists it as still open. Not publishable until it is re-imported as clean national rows.",
+      "cells": 10,
+      "source_document": "Datos pre 73'.xlsx"
+    },
+    "n_hospitals_1935|department": {
+      "decision": "excluded",
+      "code": "benchmark_year_in_name",
+      "reason": "The four-digit year in this id is a BENCHMARK the series is measured against, not the year of observation: its rows span several years. `avaluo_1874` carries 12 distinct years, `n_hospitals_1935` two. Publishing it under a name that asserts a single year would mislabel every cell. Needs a rename and a definition before exposure; this is the 754-row class recorded in the V2 Phase 1 register.",
+      "cells": 98,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "avaluo_1874|department": {
+      "decision": "excluded",
+      "code": "benchmark_year_in_name",
+      "reason": "The four-digit year in this id is a BENCHMARK the series is measured against, not the year of observation: its rows span several years. `avaluo_1874` carries 12 distinct years, `n_hospitals_1935` two. Publishing it under a name that asserts a single year would mislabel every cell. Needs a rename and a definition before exposure; this is the 754-row class recorded in the V2 Phase 1 register.",
+      "cells": 93,
+      "source_document": "Rol de Contribuyentes 1875"
+    },
+    "arrears_1882|department": {
+      "decision": "excluded",
+      "code": "benchmark_year_in_name",
+      "reason": "The four-digit year in this id is a BENCHMARK the series is measured against, not the year of observation: its rows span several years. `avaluo_1874` carries 12 distinct years, `n_hospitals_1935` two. Publishing it under a name that asserts a single year would mislabel every cell. Needs a rename and a definition before exposure; this is the 754-row class recorded in the V2 Phase 1 register.",
+      "cells": 61,
+      "source_document": "Memoria Hacienda 1882"
+    },
+    "poblacion_censo_1920|province": {
+      "decision": "excluded",
+      "code": "benchmark_year_in_name",
+      "reason": "The four-digit year in this id is a BENCHMARK the series is measured against, not the year of observation: its rows span several years. `avaluo_1874` carries 12 distinct years, `n_hospitals_1935` two. Publishing it under a name that asserts a single year would mislabel every cell. Needs a rename and a definition before exposure; this is the 754-row class recorded in the V2 Phase 1 register.",
+      "cells": 41,
+      "source_document": "Sinopsis Estadística 1924-27, p.39"
+    },
+    "manorial|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 550,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "sna_estate_price|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 308,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "sna_estates|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 308,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "delinquency_rate|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 264,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "all_top_share_of_revenue|province": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 58,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "herfindahl_top12|province": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 58,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "sum_all_taxpayers|province": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 58,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "sum_top12_taxpayers|province": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 58,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "top12_share_of_revenue|province": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 58,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "lit1875_leen_total_rate|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 50,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "lit1875_saben_escribir_total|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 50,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "lit1875_saben_leer_total|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 50,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "lit1920_leen_total_rate|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 50,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "sch1907_n_schools|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 50,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "cr1865_baptisms|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 49,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "lit1885_leen_total_rate|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 49,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "lit1885_saben_leer_total|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 49,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "lit1920_saben_leer_total|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 49,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "post1865_n_post_offices|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 49,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "cr1865_marriages|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 47,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "lit1885_saben_escribir_total|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 47,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "avaluo_pc_1875|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 46,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "compliance_1882|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 46,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "contribucion_pesos_1874|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 46,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "lit1895_saben_leer_total|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 46,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "log_avaluo_1874|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 46,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "lit1895_leen_total_rate|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 45,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "frac_hac_pre1874|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 43,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "n_hac_pre1874|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 43,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "n_leg_pre1874|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 43,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "has_juez_de_letras|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 28,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "cr1865_deaths_total|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 24,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "lit1895_saben_escribir_total|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 21,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "vital_mixed_sinopsis|department": {
+      "decision": "excluded",
+      "code": "fenced_author_compilation",
+      "reason": "FENCED by owner decision 2026-08-03, the same treatment V2_PLAN decision 3 gives `Data Chile complete.xlsx`. Rows stay in master; the indicator is excluded from the published catalog and (with decision 3, at Phase 3) from the CSV download. `Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation` is a compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets.",
+      "cells": 17,
+      "source_document": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th"
+    },
+    "trade_combined_with_chile_pesos|national": {
+      "decision": "excluded",
+      "code": "partner_country_as_geography",
+      "reason": "The geographic_unit on these rows is a PARTNER COUNTRY (argentina, bolivia, inglaterra, francia...) carried at national level. That is a dimension wearing a geography, the chunk 4.3 defect class: the atlas would render Chile's trade with France as if it were a Chilean place. Excluded until the partner is modelled as a dimension rather than a unit.",
+      "cells": 88,
+      "source_document": "Anuario Estadistico - Chile 1860-1872"
+    },
+    "imports_to_chile_pesos|national": {
+      "decision": "excluded",
+      "code": "partner_country_as_geography",
+      "reason": "The geographic_unit on these rows is a PARTNER COUNTRY (argentina, bolivia, inglaterra, francia...) carried at national level. That is a dimension wearing a geography, the chunk 4.3 defect class: the atlas would render Chile's trade with France as if it were a Chilean place. Excluded until the partner is modelled as a dimension rather than a unit.",
+      "cells": 75,
+      "source_document": "Anuario Estadistico - Chile 1860-1872"
+    },
+    "exports_from_chile_pesos|national": {
+      "decision": "excluded",
+      "code": "partner_country_as_geography",
+      "reason": "The geographic_unit on these rows is a PARTNER COUNTRY (argentina, bolivia, inglaterra, francia...) carried at national level. That is a dimension wearing a geography, the chunk 4.3 defect class: the atlas would render Chile's trade with France as if it were a Chilean place. Excluded until the partner is modelled as a dimension rather than a unit.",
+      "cells": 66,
+      "source_document": "Anuario Estadistico - Chile 1860-1872"
+    },
+    "entrada_18d_aduanas_exportacion|national": {
+      "decision": "excluded",
+      "code": "tier4_scrambled_source_page",
+      "reason": "The entrada_18d block sits on a Sinopsis page whose text layer is scrambled and which is queued for Tier-4 repair (extraction_output/tier4_magnitude_repair_queue_2026-08-02.md). The refill session excluded entrada_18d_aduanas_* for this reason and three siblings of this family (exportacion_18d_total, importacion_18d_total, exportacion_18d_per_hab) were withdrawn on G6 for OCR digit-drop. Provenance is sound and the values are not; that is exactly the pair of checks this project learned to run separately.",
+      "cells": 63,
+      "source_document": "Sinopsis Estadistica de la Republica de Chile 1924-1927"
+    },
+    "entrada_18d_aduanas_importacion|national": {
+      "decision": "excluded",
+      "code": "tier4_scrambled_source_page",
+      "reason": "The entrada_18d block sits on a Sinopsis page whose text layer is scrambled and which is queued for Tier-4 repair (extraction_output/tier4_magnitude_repair_queue_2026-08-02.md). The refill session excluded entrada_18d_aduanas_* for this reason and three siblings of this family (exportacion_18d_total, importacion_18d_total, exportacion_18d_per_hab) were withdrawn on G6 for OCR digit-drop. Provenance is sound and the values are not; that is exactly the pair of checks this project learned to run separately.",
+      "cells": 63,
+      "source_document": "Sinopsis Estadistica de la Republica de Chile 1924-1927"
+    },
+    "entrada_18d_impuestos_directos|national": {
+      "decision": "excluded",
+      "code": "tier4_scrambled_source_page",
+      "reason": "The entrada_18d block sits on a Sinopsis page whose text layer is scrambled and which is queued for Tier-4 repair (extraction_output/tier4_magnitude_repair_queue_2026-08-02.md). The refill session excluded entrada_18d_aduanas_* for this reason and three siblings of this family (exportacion_18d_total, importacion_18d_total, exportacion_18d_per_hab) were withdrawn on G6 for OCR digit-drop. Provenance is sound and the values are not; that is exactly the pair of checks this project learned to run separately.",
+      "cells": 63,
+      "source_document": "Sinopsis Estadistica de la Republica de Chile 1924-1927"
+    },
+    "entrada_18d_otras_entradas_ordinarias|national": {
+      "decision": "excluded",
+      "code": "tier4_scrambled_source_page",
+      "reason": "The entrada_18d block sits on a Sinopsis page whose text layer is scrambled and which is queued for Tier-4 repair (extraction_output/tier4_magnitude_repair_queue_2026-08-02.md). The refill session excluded entrada_18d_aduanas_* for this reason and three siblings of this family (exportacion_18d_total, importacion_18d_total, exportacion_18d_per_hab) were withdrawn on G6 for OCR digit-drop. Provenance is sound and the values are not; that is exactly the pair of checks this project learned to run separately.",
+      "cells": 63,
+      "source_document": "Sinopsis Estadistica de la Republica de Chile 1924-1927"
+    },
+    "entrada_18d_servicios_publicos|national": {
+      "decision": "excluded",
+      "code": "tier4_scrambled_source_page",
+      "reason": "The entrada_18d block sits on a Sinopsis page whose text layer is scrambled and which is queued for Tier-4 repair (extraction_output/tier4_magnitude_repair_queue_2026-08-02.md). The refill session excluded entrada_18d_aduanas_* for this reason and three siblings of this family (exportacion_18d_total, importacion_18d_total, exportacion_18d_per_hab) were withdrawn on G6 for OCR digit-drop. Provenance is sound and the values are not; that is exactly the pair of checks this project learned to run separately.",
+      "cells": 63,
+      "source_document": "Sinopsis Estadistica de la Republica de Chile 1924-1927"
+    },
+    "entrada_18d_total_entradas|national": {
+      "decision": "excluded",
+      "code": "tier4_scrambled_source_page",
+      "reason": "The entrada_18d block sits on a Sinopsis page whose text layer is scrambled and which is queued for Tier-4 repair (extraction_output/tier4_magnitude_repair_queue_2026-08-02.md). The refill session excluded entrada_18d_aduanas_* for this reason and three siblings of this family (exportacion_18d_total, importacion_18d_total, exportacion_18d_per_hab) were withdrawn on G6 for OCR digit-drop. Provenance is sound and the values are not; that is exactly the pair of checks this project learned to run separately.",
+      "cells": 63,
+      "source_document": "Sinopsis Estadistica de la Republica de Chile 1924-1927"
+    },
+    "entrada_18d_total_entradas_ordinarias|national": {
+      "decision": "excluded",
+      "code": "tier4_scrambled_source_page",
+      "reason": "The entrada_18d block sits on a Sinopsis page whose text layer is scrambled and which is queued for Tier-4 repair (extraction_output/tier4_magnitude_repair_queue_2026-08-02.md). The refill session excluded entrada_18d_aduanas_* for this reason and three siblings of this family (exportacion_18d_total, importacion_18d_total, exportacion_18d_per_hab) were withdrawn on G6 for OCR digit-drop. Provenance is sound and the values are not; that is exactly the pair of checks this project learned to run separately.",
+      "cells": 63,
+      "source_document": "Sinopsis Estadistica de la Republica de Chile 1924-1927"
+    },
+    "entradas_18d_per_hab|national": {
+      "decision": "excluded",
+      "code": "tier4_scrambled_source_page",
+      "reason": "The entrada_18d block sits on a Sinopsis page whose text layer is scrambled and which is queued for Tier-4 repair (extraction_output/tier4_magnitude_repair_queue_2026-08-02.md). The refill session excluded entrada_18d_aduanas_* for this reason and three siblings of this family (exportacion_18d_total, importacion_18d_total, exportacion_18d_per_hab) were withdrawn on G6 for OCR digit-drop. Provenance is sound and the values are not; that is exactly the pair of checks this project learned to run separately.",
+      "cells": 57,
+      "source_document": "Sinopsis Estadistica - Chile 1924-1927"
+    },
+    "num_viviendas|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the malformed national-time-series import CLAUDE.md lists as still open, the twin of the `Datos Mamalakis.xlsx` block M153 quarantined. Not publishable until re-imported as clean national rows.",
+      "cells": 31,
+      "source_document": "Datos pre 73'"
+    },
+    "pct_industria_comercio|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the malformed national-time-series import CLAUDE.md lists as still open, the twin of the `Datos Mamalakis.xlsx` block M153 quarantined. Not publishable until re-imported as clean national rows.",
+      "cells": 31,
+      "source_document": "Datos pre 73'"
+    },
+    "superficie_edificacion_m2|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the malformed national-time-series import CLAUDE.md lists as still open, the twin of the `Datos Mamalakis.xlsx` block M153 quarantined. Not publishable until re-imported as clean national rows.",
+      "cells": 31,
+      "source_document": "Datos pre 73'"
+    },
+    "superficie_industria_comercio_m2|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the malformed national-time-series import CLAUDE.md lists as still open, the twin of the `Datos Mamalakis.xlsx` block M153 quarantined. Not publishable until re-imported as clean national rows.",
+      "cells": 31,
+      "source_document": "Datos pre 73'"
+    },
+    "superficie_viviendas_m2|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the malformed national-time-series import CLAUDE.md lists as still open, the twin of the `Datos Mamalakis.xlsx` block M153 quarantined. Not publishable until re-imported as clean national rows.",
+      "cells": 31,
+      "source_document": "Datos pre 73'"
+    },
+    "deuda_externa_mediano_largo_plazo|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the malformed national-time-series import CLAUDE.md lists as still open, the twin of the `Datos Mamalakis.xlsx` block M153 quarantined. Not publishable until re-imported as clean national rows.",
+      "cells": 22,
+      "source_document": "Datos pre 73'"
+    },
+    "deuda_externa_general|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the malformed national-time-series import CLAUDE.md lists as still open, the twin of the `Datos Mamalakis.xlsx` block M153 quarantined. Not publishable until re-imported as clean national rows.",
+      "cells": 20,
+      "source_document": "Datos pre 73'"
+    },
+    "gasto_fiscal_salud|national": {
+      "decision": "excluded",
+      "code": "quarantined_import",
+      "reason": "`Datos pre 73` is the malformed national-time-series import CLAUDE.md lists as still open, the twin of the `Datos Mamalakis.xlsx` block M153 quarantined. Not publishable until re-imported as clean national rows.",
+      "cells": 11,
+      "source_document": "Datos pre 73'"
+    },
+    "ruralpop_count|department": {
+      "decision": "excluded",
+      "code": "fenced_data_chile",
+      "reason": "FENCED by V2_PLAN decision 3. Rows stay in master; excluded from the published catalog. Unlike the series already rendering from this file, this one was never exposed, so fencing it needs no withdrawal.",
+      "cells": 208,
+      "source_document": "Data Chile complete.xlsx"
+    },
+    "votos_emitidos|department": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records either a build-artefact filename or a `User-curated assembly` note. Publishing would make apply_curation_05 inherit a family sibling's citation. Repair the source line first. `tonnage_entered` additionally comes from summary_finances_customs.csv, which chunk 5.1 flagged with 20 implausible cells.",
+      "cells": 45,
+      "source_document": "User-curated assembly (enfranchised 1881.xlsx)"
+    },
+    "tonnage_entered|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records either a build-artefact filename or a `User-curated assembly` note. Publishing would make apply_curation_05 inherit a family sibling's citation. Repair the source line first. `tonnage_entered` additionally comes from summary_finances_customs.csv, which chunk 5.1 flagged with 20 implausible cells.",
+      "cells": 28,
+      "source_document": "summary_finances_customs.csv"
+    },
+    "ingreso_real_promedio_agriculture|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 13,
+      "source_document": "Datos Mamalakis 1"
+    },
+    "ingreso_real_promedio_total|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 13,
+      "source_document": "Datos Mamalakis 1"
+    },
+    "ingreso_real_promedio_commerce|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 13,
+      "source_document": "Datos Mamalakis 1"
+    },
+    "ingreso_real_promedio_construction|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 13,
+      "source_document": "Datos Mamalakis 1"
+    },
+    "ingreso_real_promedio_finance|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 13,
+      "source_document": "Datos Mamalakis 1"
+    },
+    "ingreso_real_promedio_fisheries|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 13,
+      "source_document": "Datos Mamalakis 1"
+    },
+    "ingreso_real_promedio_industries|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 13,
+      "source_document": "Datos Mamalakis 1"
+    },
+    "ingreso_real_promedio_mining|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 13,
+      "source_document": "Datos Mamalakis 1"
+    },
+    "ingreso_real_promedio_services|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 13,
+      "source_document": "Datos Mamalakis 1"
+    },
+    "ingreso_real_promedio_transportation_and_communications|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 13,
+      "source_document": "Datos Mamalakis 1"
+    },
+    "salario_real_promedio_agriculture|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 13,
+      "source_document": "Datos Mamalakis 1"
+    },
+    "salario_real_promedio_all_industries_per_employee|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 13,
+      "source_document": "Datos Mamalakis 1"
+    },
+    "salario_real_promedio_central_and_municipal_governments|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 13,
+      "source_document": "Datos Mamalakis 1"
+    },
+    "salario_real_promedio_commerce|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 13,
+      "source_document": "Datos Mamalakis 1"
+    },
+    "salario_real_promedio_construction|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 13,
+      "source_document": "Datos Mamalakis 1"
+    },
+    "salario_real_promedio_finance|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 13,
+      "source_document": "Datos Mamalakis 1"
+    },
+    "salario_real_promedio_fisheries|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 13,
+      "source_document": "Datos Mamalakis 1"
+    },
+    "salario_real_promedio_industries|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 13,
+      "source_document": "Datos Mamalakis 1"
+    },
+    "salario_real_promedio_mining|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 13,
+      "source_document": "Datos Mamalakis 1"
+    },
+    "salario_real_promedio_services|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 13,
+      "source_document": "Datos Mamalakis 1"
+    },
+    "salario_real_promedio_transportation_and_communications|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 13,
+      "source_document": "Datos Mamalakis 1"
+    },
+    "salario_real_promedio_utilities|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 13,
+      "source_document": "Datos Mamalakis 1"
+    },
+    "salario_mensual_registrado_domestic_help|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 17,
+      "source_document": "Datos Mamalakis 1"
+    },
+    "matrimonios_15-19|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 10,
+      "source_document": "Datos Mamalakis"
+    },
+    "matrimonios_20-24|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 10,
+      "source_document": "Datos Mamalakis"
+    },
+    "matrimonios_25-29|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 10,
+      "source_document": "Datos Mamalakis"
+    },
+    "matrimonios_30-34|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 10,
+      "source_document": "Datos Mamalakis"
+    },
+    "matrimonios_35-39|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 10,
+      "source_document": "Datos Mamalakis"
+    },
+    "matrimonios_40-44|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 10,
+      "source_document": "Datos Mamalakis"
+    },
+    "matrimonios_45-49|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 10,
+      "source_document": "Datos Mamalakis"
+    },
+    "matrimonios_50-54|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 10,
+      "source_document": "Datos Mamalakis"
+    },
+    "matrimonios_55-59|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 10,
+      "source_document": "Datos Mamalakis"
+    },
+    "matrimonios_60-64|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 10,
+      "source_document": "Datos Mamalakis"
+    },
+    "matrimonios_65-69|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 10,
+      "source_document": "Datos Mamalakis"
+    },
+    "matrimonios_70-74|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 10,
+      "source_document": "Datos Mamalakis"
+    },
+    "matrimonios_mas_de_75|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 10,
+      "source_document": "Datos Mamalakis"
+    },
+    "matrimonios_bajo_15|national": {
+      "decision": "excluded",
+      "code": "source_line_unusable",
+      "reason": "No citable source: master records the workbook label `Datos Mamalakis` / `Datos Mamalakis 1`, which the citation cleaner correctly resolves to nothing — unlike `Mamalakis Vol 2, Table 2.1 (DEC/INE)`, which resolves to a proper Mamalakis 1980 citation. Publishing these would make apply_curation_05 inherit a family sibling's citation, the misattribution class recorded for `cartas_ordinarias`. Re-attribute to the Mamalakis table these rows came from, then expose.",
+      "cells": 10,
+      "source_document": "Datos Mamalakis"
+    },
+    "occupation_total|province": {
+      "decision": "excluded",
+      "code": "dimension_as_geography",
+      "reason": "The geographic_unit on these rows is an OCCUPATION (`Abogados, procuradores, escribanos`, `Costureras`, `Eclesiásticos...`), not a province. These are the NATIONAL 1854 occupational totals mislabelled as province-level — the same dimension-wearing-a-geography defect as the partner-country trade series (chunk 4.3). Nothing resolves to a province key, so nothing renders. Re-key as national occupation variables, then expose.",
+      "cells": 20,
+      "source_document": "Anuario Estadístico 1860, Census 1854"
+    }
+  }
+}

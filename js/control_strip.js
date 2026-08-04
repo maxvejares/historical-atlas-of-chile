@@ -6,7 +6,10 @@
 import * as M from './manifest.js';
 import { createYearSlider } from './year_slider.js';
 
-const SCALES = ['national', 'department', 'province', 'commune'];
+// 'port' and 'city' are POINT scales (V2 Phase 4): same block shape, circle
+// markers instead of polygons. Tabs auto-hide when an indicator has no data
+// at a scale, so they only appear for the indicators that use them.
+const SCALES = ['national', 'department', 'province', 'commune', 'port', 'city'];
 
 export function createControlStrip(host, { onSelect }) {
   host.classList.add('control-strip');

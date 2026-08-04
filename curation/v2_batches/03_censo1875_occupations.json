@@ -1,0 +1,1682 @@
+[
+  {
+    "id": "profesion_agricultores_hombres",
+    "level": "department",
+    "label": "Farmers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_agricultores_mujeres",
+    "level": "department",
+    "label": "Farmers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_agricultores_total",
+    "level": "department",
+    "label": "Farmers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_carpinteros_hombres",
+    "level": "department",
+    "label": "Carpenters, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_carpinteros_mujeres",
+    "level": "department",
+    "label": "Carpenters, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_carpinteros_total",
+    "level": "department",
+    "label": "Carpenters",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_empleados_particulares_hombres",
+    "level": "department",
+    "label": "Private-sector employees, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_empleados_particulares_mujeres",
+    "level": "department",
+    "label": "Private-sector employees, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_empleados_particulares_total",
+    "level": "department",
+    "label": "Private-sector employees",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_empleados_publicos_hombres",
+    "level": "department",
+    "label": "Public employees, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_empleados_publicos_mujeres",
+    "level": "department",
+    "label": "Public employees, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_empleados_publicos_total",
+    "level": "department",
+    "label": "Public employees (1875 census)",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_gananes_hombres",
+    "level": "department",
+    "label": "Farm hands, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_gananes_mujeres",
+    "level": "department",
+    "label": "Farm hands, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_gananes_total",
+    "level": "department",
+    "label": "Farm hands",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_lavanderas_hombres",
+    "level": "department",
+    "label": "Laundresses, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_lavanderas_mujeres",
+    "level": "department",
+    "label": "Laundresses, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_lavanderas_total",
+    "level": "department",
+    "label": "Laundresses",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_militares_hombres",
+    "level": "department",
+    "label": "Military personnel, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_militares_mujeres",
+    "level": "department",
+    "label": "Military personnel, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_militares_total",
+    "level": "department",
+    "label": "Military personnel (1875 census)",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_propietarios_hombres",
+    "level": "department",
+    "label": "Property owners, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_propietarios_mujeres",
+    "level": "department",
+    "label": "Property owners, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_propietarios_total",
+    "level": "department",
+    "label": "Property owners",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_sastres_i_costureras_hombres",
+    "level": "department",
+    "label": "Tailors and seamstresses, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_sastres_i_costureras_mujeres",
+    "level": "department",
+    "label": "Tailors and seamstresses, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_sastres_i_costureras_total",
+    "level": "department",
+    "label": "Tailors and seamstresses",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_sirvientes_hombres",
+    "level": "department",
+    "label": "Servants, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_sirvientes_mujeres",
+    "level": "department",
+    "label": "Servants, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_sirvientes_total",
+    "level": "department",
+    "label": "Servants",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_zapateros_hombres",
+    "level": "department",
+    "label": "Shoemakers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_zapateros_mujeres",
+    "level": "department",
+    "label": "Shoemakers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_zapateros_total",
+    "level": "department",
+    "label": "Shoemakers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_comerciantes_hombres",
+    "level": "department",
+    "label": "Merchants, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_comerciantes_mujeres",
+    "level": "department",
+    "label": "Merchants, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_comerciantes_total",
+    "level": "department",
+    "label": "Merchants",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_labradores_hombres",
+    "level": "department",
+    "label": "Cultivators, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_labradores_total",
+    "level": "department",
+    "label": "Cultivators",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_eclesiasticos_hombres",
+    "level": "department",
+    "label": "Clergy, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_eclesiasticos_total",
+    "level": "department",
+    "label": "Clergy",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_profesores_i_preceptores_hombres",
+    "level": "department",
+    "label": "Teachers and preceptors, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_profesores_i_preceptores_mujeres",
+    "level": "department",
+    "label": "Teachers and preceptors, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_profesores_i_preceptores_total",
+    "level": "department",
+    "label": "Teachers and preceptors",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_herreros_hombres",
+    "level": "department",
+    "label": "Blacksmiths, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_herreros_total",
+    "level": "department",
+    "label": "Blacksmiths",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_panaderos_hombres",
+    "level": "department",
+    "label": "Bakers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_panaderos_mujeres",
+    "level": "department",
+    "label": "Bakers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_panaderos_total",
+    "level": "department",
+    "label": "Bakers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_albaniles_hombres",
+    "level": "department",
+    "label": "Bricklayers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_albaniles_total",
+    "level": "department",
+    "label": "Bricklayers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cigarreros_hombres",
+    "level": "department",
+    "label": "Cigar makers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cigarreros_mujeres",
+    "level": "department",
+    "label": "Cigar makers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cigarreros_total",
+    "level": "department",
+    "label": "Cigar makers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cocineros_hombres",
+    "level": "department",
+    "label": "Cooks, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cocineros_mujeres",
+    "level": "department",
+    "label": "Cooks, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cocineros_total",
+    "level": "department",
+    "label": "Cooks",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_matronas_mujeres",
+    "level": "department",
+    "label": "Midwives, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_matronas_total",
+    "level": "department",
+    "label": "Midwives",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_nodrizas_hombres",
+    "level": "department",
+    "label": "Wet nurses, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_nodrizas_mujeres",
+    "level": "department",
+    "label": "Wet nurses, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_nodrizas_total",
+    "level": "department",
+    "label": "Wet nurses",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_abastecedores_hombres",
+    "level": "department",
+    "label": "Provisioners, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_abastecedores_mujeres",
+    "level": "department",
+    "label": "Provisioners, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_abastecedores_total",
+    "level": "department",
+    "label": "Provisioners",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_hojalateros_hombres",
+    "level": "department",
+    "label": "Tinsmiths, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_hojalateros_total",
+    "level": "department",
+    "label": "Tinsmiths",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_mineros_hombres",
+    "level": "department",
+    "label": "Miners, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_mineros_mujeres",
+    "level": "department",
+    "label": "Miners, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_mineros_total",
+    "level": "department",
+    "label": "Miners",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_pintores_hombres",
+    "level": "department",
+    "label": "Painters, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_pintores_total",
+    "level": "department",
+    "label": "Painters",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_farmaceuticos_hombres",
+    "level": "department",
+    "label": "Pharmacists, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_farmaceuticos_mujeres",
+    "level": "department",
+    "label": "Pharmacists, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_farmaceuticos_total",
+    "level": "department",
+    "label": "Pharmacists",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_musicos_i_cantores_hombres",
+    "level": "department",
+    "label": "Musicians and singers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_musicos_i_cantores_mujeres",
+    "level": "department",
+    "label": "Musicians and singers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_musicos_i_cantores_total",
+    "level": "department",
+    "label": "Musicians and singers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_plateros_hombres",
+    "level": "department",
+    "label": "Silversmiths, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_plateros_total",
+    "level": "department",
+    "label": "Silversmiths",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_carniceros_hombres",
+    "level": "department",
+    "label": "Butchers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_carniceros_mujeres",
+    "level": "department",
+    "label": "Butchers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_carniceros_total",
+    "level": "department",
+    "label": "Butchers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_vendedores_ambulantes_hombres",
+    "level": "department",
+    "label": "Street vendors, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_vendedores_ambulantes_mujeres",
+    "level": "department",
+    "label": "Street vendors, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_vendedores_ambulantes_total",
+    "level": "department",
+    "label": "Street vendors",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_estudiantes_hombres",
+    "level": "department",
+    "label": "Students, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_estudiantes_mujeres",
+    "level": "department",
+    "label": "Students, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_estudiantes_total",
+    "level": "department",
+    "label": "Students (1875 census)",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_maquinistas_hombres",
+    "level": "department",
+    "label": "Machinists, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_maquinistas_mujeres",
+    "level": "department",
+    "label": "Machinists, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_maquinistas_total",
+    "level": "department",
+    "label": "Machinists",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_notarios_publicos_hombres",
+    "level": "department",
+    "label": "Notaries public, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_notarios_publicos_total",
+    "level": "department",
+    "label": "Notaries public",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_toneleros_hombres",
+    "level": "department",
+    "label": "Coopers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_toneleros_mujeres",
+    "level": "department",
+    "label": "Coopers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_toneleros_total",
+    "level": "department",
+    "label": "Coopers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_medicos_i_cirujanos_hombres",
+    "level": "department",
+    "label": "Physicians and surgeons, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_medicos_i_cirujanos_total",
+    "level": "department",
+    "label": "Physicians and surgeons",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_hilanderas_i_tejedoras_hombres",
+    "level": "department",
+    "label": "Spinners and weavers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_hilanderas_i_tejedoras_mujeres",
+    "level": "department",
+    "label": "Spinners and weavers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_hilanderas_i_tejedoras_total",
+    "level": "department",
+    "label": "Spinners and weavers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_molineros_hombres",
+    "level": "department",
+    "label": "Millers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_molineros_total",
+    "level": "department",
+    "label": "Millers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_pescadores_hombres",
+    "level": "department",
+    "label": "Fishermen, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_pescadores_mujeres",
+    "level": "department",
+    "label": "Fishermen, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_pescadores_total",
+    "level": "department",
+    "label": "Fishermen",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_bordadoras_hombres",
+    "level": "department",
+    "label": "Embroiderers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_bordadoras_mujeres",
+    "level": "department",
+    "label": "Embroiderers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_bordadoras_total",
+    "level": "department",
+    "label": "Embroiderers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_dulceros_hombres",
+    "level": "department",
+    "label": "Confectioners, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_dulceros_mujeres",
+    "level": "department",
+    "label": "Confectioners, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_dulceros_total",
+    "level": "department",
+    "label": "Confectioners",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_sombrereros_hombres",
+    "level": "department",
+    "label": "Hatters, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_sombrereros_mujeres",
+    "level": "department",
+    "label": "Hatters, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_sombrereros_total",
+    "level": "department",
+    "label": "Hatters",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_alfareros_mujeres",
+    "level": "department",
+    "label": "Potters, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_alfareros_total",
+    "level": "department",
+    "label": "Potters",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_bodegoneros_hombres",
+    "level": "department",
+    "label": "Cookshop keepers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_bodegoneros_mujeres",
+    "level": "department",
+    "label": "Cookshop keepers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_bodegoneros_total",
+    "level": "department",
+    "label": "Cookshop keepers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_carreteros_hombres",
+    "level": "department",
+    "label": "Carters, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_carreteros_mujeres",
+    "level": "department",
+    "label": "Carters, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_carreteros_total",
+    "level": "department",
+    "label": "Carters",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cat_agricultura_total",
+    "level": "department",
+    "label": "Occupied in agriculture",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cocheros_hombres",
+    "level": "department",
+    "label": "Coachmen, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cocheros_total",
+    "level": "department",
+    "label": "Coachmen",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cat_industria_total",
+    "level": "department",
+    "label": "Occupied in industry",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_ebanistas_hombres",
+    "level": "department",
+    "label": "Cabinetmakers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_ebanistas_mujeres",
+    "level": "department",
+    "label": "Cabinetmakers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_ebanistas_total",
+    "level": "department",
+    "label": "Cabinetmakers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_jornaleros_hombres",
+    "level": "department",
+    "label": "Day labourers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_jornaleros_mujeres",
+    "level": "department",
+    "label": "Day labourers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_jornaleros_total",
+    "level": "department",
+    "label": "Day labourers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_abogados_hombres",
+    "level": "department",
+    "label": "Lawyers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_abogados_mujeres",
+    "level": "department",
+    "label": "Lawyers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_abogados_total",
+    "level": "department",
+    "label": "Lawyers (1875 census)",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_arrieros_hombres",
+    "level": "department",
+    "label": "Muleteers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_arrieros_total",
+    "level": "department",
+    "label": "Muleteers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_carboneros_hombres",
+    "level": "department",
+    "label": "Charcoal burners, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_carboneros_mujeres",
+    "level": "department",
+    "label": "Charcoal burners, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_carboneros_total",
+    "level": "department",
+    "label": "Charcoal burners",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cat_bellas_artes_total",
+    "level": "department",
+    "label": "Occupied in the fine arts",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cat_comercio_total",
+    "level": "department",
+    "label": "Occupied in commerce",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cat_culto_total",
+    "level": "department",
+    "label": "Occupied in religious orders",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cat_ensenanza_total",
+    "level": "department",
+    "label": "Occupied in teaching",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cat_estudiantes_total",
+    "level": "department",
+    "label": "Students (1920 census category)",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cat_fuerza_publica_total",
+    "level": "department",
+    "label": "Armed forces and police",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cat_prof_liberales_total",
+    "level": "department",
+    "label": "Liberal professions",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cat_prof_medicas_total",
+    "level": "department",
+    "label": "Medical professions",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cat_prof_varias_total",
+    "level": "department",
+    "label": "Other professions",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cat_rentistas_total",
+    "level": "department",
+    "label": "Rentiers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cat_serv_domesticos_total",
+    "level": "department",
+    "label": "Domestic service",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cat_serv_publico_total",
+    "level": "department",
+    "label": "Public service",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cat_sin_profesion_total",
+    "level": "department",
+    "label": "Without an occupation",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cat_transportes_total",
+    "level": "department",
+    "label": "Occupied in transport",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_hortelanos_i_jardineros_hombres",
+    "level": "department",
+    "label": "Market gardeners and gardeners, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_hortelanos_i_jardineros_total",
+    "level": "department",
+    "label": "Market gardeners and gardeners",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_hoteleros_i_fondistas_hombres",
+    "level": "department",
+    "label": "Hotel and inn keepers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_hoteleros_i_fondistas_mujeres",
+    "level": "department",
+    "label": "Hotel and inn keepers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_hoteleros_i_fondistas_total",
+    "level": "department",
+    "label": "Hotel and inn keepers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_marinos_hombres",
+    "level": "department",
+    "label": "Seamen, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_marinos_total",
+    "level": "department",
+    "label": "Seamen",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_peluqueros_hombres",
+    "level": "department",
+    "label": "Barbers and hairdressers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_peluqueros_mujeres",
+    "level": "department",
+    "label": "Barbers and hairdressers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_peluqueros_total",
+    "level": "department",
+    "label": "Barbers and hairdressers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_silleteros_hombres",
+    "level": "department",
+    "label": "Chair makers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_silleteros_total",
+    "level": "department",
+    "label": "Chair makers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_talabarteros_i_rienderos_hombres",
+    "level": "department",
+    "label": "Saddlers and harness makers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_talabarteros_i_rienderos_total",
+    "level": "department",
+    "label": "Saddlers and harness makers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cat_mineria_total",
+    "level": "department",
+    "label": "Occupied in mining",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_curtidores_hombres",
+    "level": "department",
+    "label": "Tanners, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_curtidores_total",
+    "level": "department",
+    "label": "Tanners",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_injenieros_i_agrimensores_hombres",
+    "level": "department",
+    "label": "Engineers and surveyors, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_injenieros_i_agrimensores_mujeres",
+    "level": "department",
+    "label": "Engineers and surveyors, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_injenieros_i_agrimensores_total",
+    "level": "department",
+    "label": "Engineers and surveyors",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_pelloneros_i_montureros_hombres",
+    "level": "department",
+    "label": "Saddle-pad and saddle makers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_pelloneros_i_montureros_total",
+    "level": "department",
+    "label": "Saddle-pad and saddle makers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_aserradores_hombres",
+    "level": "department",
+    "label": "Sawyers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_aserradores_mujeres",
+    "level": "department",
+    "label": "Sawyers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_aserradores_total",
+    "level": "department",
+    "label": "Sawyers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_minaqueras_mujeres",
+    "level": "department",
+    "label": "Small-scale mine workers (minaqueras), female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_minaqueras_total",
+    "level": "department",
+    "label": "Small-scale mine workers (minaqueras)",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_canasteros_i_escoberos_hombres",
+    "level": "department",
+    "label": "Basket and broom makers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_canasteros_i_escoberos_total",
+    "level": "department",
+    "label": "Basket and broom makers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_carroceros_hombres",
+    "level": "department",
+    "label": "Coachbuilders, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_carroceros_total",
+    "level": "department",
+    "label": "Coachbuilders",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cerveceros_hombres",
+    "level": "department",
+    "label": "Brewers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cerveceros_total",
+    "level": "department",
+    "label": "Brewers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_fleteros_i_lancheros_hombres",
+    "level": "department",
+    "label": "Boatmen and lightermen, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_fleteros_i_lancheros_mujeres",
+    "level": "department",
+    "label": "Boatmen and lightermen, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_fleteros_i_lancheros_total",
+    "level": "department",
+    "label": "Boatmen and lightermen",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_telegrafistas_hombres",
+    "level": "department",
+    "label": "Telegraph operators, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_telegrafistas_total",
+    "level": "department",
+    "label": "Telegraph operators",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_fabricantes_de_tejas_i_ladrillos_hombres",
+    "level": "department",
+    "label": "Tile and brick makers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_fabricantes_de_tejas_i_ladrillos_total",
+    "level": "department",
+    "label": "Tile and brick makers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_mecanicos_hombres",
+    "level": "department",
+    "label": "Mechanics, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_mecanicos_mujeres",
+    "level": "department",
+    "label": "Mechanics, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_mecanicos_total",
+    "level": "department",
+    "label": "Mechanics",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_relojeros_i_joyeros_hombres",
+    "level": "department",
+    "label": "Watchmakers and jewellers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_relojeros_i_joyeros_mujeres",
+    "level": "department",
+    "label": "Watchmakers and jewellers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_relojeros_i_joyeros_total",
+    "level": "department",
+    "label": "Watchmakers and jewellers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_tipografos_hombres",
+    "level": "department",
+    "label": "Printers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_tipografos_mujeres",
+    "level": "department",
+    "label": "Printers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_tipografos_total",
+    "level": "department",
+    "label": "Printers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_ajentes_hombres",
+    "level": "department",
+    "label": "Agents, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_ajentes_mujeres",
+    "level": "department",
+    "label": "Agents, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_ajentes_total",
+    "level": "department",
+    "label": "Agents",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_jaboneros_i_veleros_hombres",
+    "level": "department",
+    "label": "Soap and candle makers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_jaboneros_i_veleros_total",
+    "level": "department",
+    "label": "Soap and candle makers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_canteros_hombres",
+    "level": "department",
+    "label": "Stonecutters, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_canteros_total",
+    "level": "department",
+    "label": "Stonecutters",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_modistas_hombres",
+    "level": "department",
+    "label": "Dressmakers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_modistas_mujeres",
+    "level": "department",
+    "label": "Dressmakers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_modistas_total",
+    "level": "department",
+    "label": "Dressmakers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_queseros_i_mantequilleros_hombres",
+    "level": "department",
+    "label": "Cheese and butter makers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_queseros_i_mantequilleros_mujeres",
+    "level": "department",
+    "label": "Cheese and butter makers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_queseros_i_mantequilleros_total",
+    "level": "department",
+    "label": "Cheese and butter makers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_fundidores_hombres",
+    "level": "department",
+    "label": "Smelters, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_fundidores_total",
+    "level": "department",
+    "label": "Smelters",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_tintoreros_hombres",
+    "level": "department",
+    "label": "Dyers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_tintoreros_mujeres",
+    "level": "department",
+    "label": "Dyers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_tintoreros_total",
+    "level": "department",
+    "label": "Dyers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_bodegueros_hombres",
+    "level": "department",
+    "label": "Warehouse keepers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_bodegueros_total",
+    "level": "department",
+    "label": "Warehouse keepers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_agricultores_total",
+    "level": "province",
+    "label": "Farmers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_carpinteros_total",
+    "level": "province",
+    "label": "Carpenters",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_comerciantes_total",
+    "level": "province",
+    "label": "Merchants",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_estereros_hombres",
+    "level": "department",
+    "label": "Mat makers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_estereros_mujeres",
+    "level": "department",
+    "label": "Mat makers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_estereros_total",
+    "level": "department",
+    "label": "Mat makers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_abastecedores_total",
+    "level": "province",
+    "label": "Provisioners",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_abogados_total",
+    "level": "province",
+    "label": "Lawyers (1875 census)",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_bodegoneros_total",
+    "level": "province",
+    "label": "Cookshop keepers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cocineros_total",
+    "level": "province",
+    "label": "Cooks",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_curtidores_total",
+    "level": "province",
+    "label": "Tanners",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_dulceros_total",
+    "level": "province",
+    "label": "Confectioners",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_empleados_particulares_total",
+    "level": "province",
+    "label": "Private-sector employees",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_fotografos_hombres",
+    "level": "department",
+    "label": "Photographers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_fotografos_mujeres",
+    "level": "department",
+    "label": "Photographers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_fotografos_total",
+    "level": "department",
+    "label": "Photographers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_hilanderas_i_tejedoras_total",
+    "level": "province",
+    "label": "Spinners and weavers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_injenieros_i_agrimensores_total",
+    "level": "province",
+    "label": "Engineers and surveyors",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_molineros_total",
+    "level": "province",
+    "label": "Millers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_musicos_i_cantores_hombres",
+    "level": "province",
+    "label": "Musicians and singers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_musicos_i_cantores_total",
+    "level": "province",
+    "label": "Musicians and singers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_panaderos_hombres",
+    "level": "province",
+    "label": "Bakers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_panaderos_total",
+    "level": "province",
+    "label": "Bakers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_profesores_de_musica_hombres",
+    "level": "department",
+    "label": "Music teachers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_profesores_de_musica_mujeres",
+    "level": "department",
+    "label": "Music teachers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_profesores_de_musica_total",
+    "level": "department",
+    "label": "Music teachers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_sastres_i_costureras_mujeres",
+    "level": "province",
+    "label": "Tailors and seamstresses, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_sastres_i_costureras_total",
+    "level": "province",
+    "label": "Tailors and seamstresses",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_albaniles_total",
+    "level": "province",
+    "label": "Bricklayers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_carboneros_total",
+    "level": "province",
+    "label": "Charcoal burners",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_carniceros_total",
+    "level": "province",
+    "label": "Butchers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_carretoneros_hombres",
+    "level": "department",
+    "label": "Dray drivers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_carretoneros_total",
+    "level": "department",
+    "label": "Dray drivers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cigarreros_total",
+    "level": "province",
+    "label": "Cigar makers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_colchoneros_hombres",
+    "level": "department",
+    "label": "Mattress makers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_colchoneros_mujeres",
+    "level": "department",
+    "label": "Mattress makers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_colchoneros_total",
+    "level": "department",
+    "label": "Mattress makers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_empleados_publicos_total",
+    "level": "province",
+    "label": "Public employees (1875 census)",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_militares_total",
+    "level": "province",
+    "label": "Military personnel (1875 census)",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_molineros_hombres",
+    "level": "province",
+    "label": "Millers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_plateros_total",
+    "level": "province",
+    "label": "Silversmiths",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_profesores_i_preceptores_total",
+    "level": "province",
+    "label": "Teachers and preceptors",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_arrieros_total",
+    "level": "province",
+    "label": "Muleteers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_canteros_total",
+    "level": "province",
+    "label": "Stonecutters",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_cerveceros_total",
+    "level": "province",
+    "label": "Brewers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_fabricantes_de_aguardiente_hombres",
+    "level": "department",
+    "label": "Aguardiente distillers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_fabricantes_de_aguardiente_mujeres",
+    "level": "department",
+    "label": "Aguardiente distillers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_fabricantes_de_aguardiente_total",
+    "level": "department",
+    "label": "Aguardiente distillers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_farmaceuticos_total",
+    "level": "province",
+    "label": "Pharmacists",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_fogoneros_hombres",
+    "level": "department",
+    "label": "Stokers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_fogoneros_mujeres",
+    "level": "department",
+    "label": "Stokers, female",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_fogoneros_total",
+    "level": "department",
+    "label": "Stokers",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_injenieros_i_agrimensores_hombres",
+    "level": "province",
+    "label": "Engineers and surveyors, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_labradores_total",
+    "level": "province",
+    "label": "Cultivators",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_procuradores_i_receptores_hombres",
+    "level": "department",
+    "label": "Attorneys and court receivers, male",
+    "category": "Occupations"
+  },
+  {
+    "id": "profesion_procuradores_i_receptores_total",
+    "level": "department",
+    "label": "Attorneys and court receivers",
+    "category": "Occupations"
+  }
+]

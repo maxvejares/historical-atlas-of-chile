@@ -1,0 +1,278 @@
+[
+  {
+    "id": "escuelas_primarias_matricula_total",
+    "level": "department",
+    "label": "Primary school enrolment, total",
+    "category": "Education"
+  },
+  {
+    "id": "escuelas_primarias_matricula_urbana",
+    "level": "department",
+    "label": "Primary school enrolment, urban",
+    "category": "Education"
+  },
+  {
+    "id": "escuelas_primarias_matricula_rural",
+    "level": "department",
+    "label": "Primary school enrolment, rural",
+    "category": "Education"
+  },
+  {
+    "id": "escuelas_primarias_asistencia_media_total",
+    "level": "department",
+    "label": "Primary school average attendance, total",
+    "category": "Education"
+  },
+  {
+    "id": "escuelas_primarias_asistencia_media_urbana",
+    "level": "department",
+    "label": "Primary school average attendance, urban",
+    "category": "Education"
+  },
+  {
+    "id": "escuelas_primarias_asistencia_media_rural",
+    "level": "department",
+    "label": "Primary school average attendance, rural",
+    "category": "Education"
+  },
+  {
+    "id": "escuelas_primarias_matricula_count",
+    "level": "national",
+    "label": "Primary school enrolment",
+    "category": "Education"
+  },
+  {
+    "id": "escuelas_primarias_asistencia_media_count",
+    "level": "national",
+    "label": "Primary school average attendance",
+    "category": "Education"
+  },
+  {
+    "id": "escuelas_primarias_fiscales_count",
+    "level": "national",
+    "label": "State primary schools",
+    "category": "Education"
+  },
+  {
+    "id": "escuelas_primarias_preceptores_ayudantes_count",
+    "level": "national",
+    "label": "Primary school teachers and assistants",
+    "category": "Education"
+  },
+  {
+    "id": "escuelas_primarias_gastos_total_pesos",
+    "level": "national",
+    "label": "Primary school expenditure, pesos",
+    "category": "Education"
+  },
+  {
+    "id": "escuelas_primarias_proporcion_asistencia_matricula_pct",
+    "level": "national",
+    "label": "Primary school attendance as % of enrolment",
+    "category": "Education"
+  },
+  {
+    "id": "matriculados_total",
+    "level": "department",
+    "label": "School enrolment, total",
+    "category": "Education"
+  },
+  {
+    "id": "matricula_total_hombres",
+    "level": "province",
+    "label": "School enrolment, male",
+    "category": "Education"
+  },
+  {
+    "id": "matricula_total_mujeres",
+    "level": "province",
+    "label": "School enrolment, female",
+    "category": "Education"
+  },
+  {
+    "id": "matricula_escuelas_hombres",
+    "level": "province",
+    "label": "Enrolment in boys' schools",
+    "category": "Education"
+  },
+  {
+    "id": "matricula_escuelas_mujeres",
+    "level": "province",
+    "label": "Enrolment in girls' schools",
+    "category": "Education"
+  },
+  {
+    "id": "matricula_escuelas_mixtas_hombres",
+    "level": "province",
+    "label": "Boys enrolled in mixed schools",
+    "category": "Education"
+  },
+  {
+    "id": "matricula_escuelas_mixtas_mujeres",
+    "level": "province",
+    "label": "Girls enrolled in mixed schools",
+    "category": "Education"
+  },
+  {
+    "id": "matricula_escuelas_fiscales",
+    "level": "province",
+    "label": "Enrolment in state schools",
+    "category": "Education"
+  },
+  {
+    "id": "matricula_hombres_1914",
+    "level": "province",
+    "label": "School enrolment, male (1914)",
+    "category": "Education"
+  },
+  {
+    "id": "matricula_mujeres_1914",
+    "level": "province",
+    "label": "School enrolment, female (1914)",
+    "category": "Education"
+  },
+  {
+    "id": "matricula_publica_primaria_total_1913",
+    "level": "province",
+    "label": "Public primary enrolment, total (1913)",
+    "category": "Education"
+  },
+  {
+    "id": "matricula_publica_primaria_hombres_1913",
+    "level": "province",
+    "label": "Public primary enrolment, male (1913)",
+    "category": "Education"
+  },
+  {
+    "id": "matricula_publica_primaria_mujeres_1913",
+    "level": "province",
+    "label": "Public primary enrolment, female (1913)",
+    "category": "Education"
+  },
+  {
+    "id": "cultivos_sementeras_total_ha",
+    "level": "province",
+    "label": "Sown crops, area, hectares",
+    "category": "Agriculture"
+  },
+  {
+    "id": "cultivos_sementeras_cereales_ha",
+    "level": "province",
+    "label": "Cereals, area sown, hectares",
+    "category": "Agriculture"
+  },
+  {
+    "id": "cultivos_sementeras_papas_ha",
+    "level": "province",
+    "label": "Potatoes, area sown, hectares",
+    "category": "Agriculture"
+  },
+  {
+    "id": "cultivos_sementeras_leguminosas_ha",
+    "level": "province",
+    "label": "Pulses, area sown, hectares",
+    "category": "Agriculture"
+  },
+  {
+    "id": "cultivos_praderas_total_ha",
+    "level": "province",
+    "label": "Pasture, area, hectares",
+    "category": "Agriculture"
+  },
+  {
+    "id": "cultivos_praderas_alfalfa_ha",
+    "level": "province",
+    "label": "Alfalfa pasture, area, hectares",
+    "category": "Agriculture"
+  },
+  {
+    "id": "cultivos_praderas_otros_pastos_ha",
+    "level": "province",
+    "label": "Other pasture, area, hectares",
+    "category": "Agriculture"
+  },
+  {
+    "id": "cultivos_arboricultura_total_ha",
+    "level": "province",
+    "label": "Tree crops, area, hectares",
+    "category": "Agriculture"
+  },
+  {
+    "id": "cultivos_arboricultura_frutales_ha",
+    "level": "province",
+    "label": "Fruit trees, area, hectares",
+    "category": "Agriculture"
+  },
+  {
+    "id": "cultivos_arboricultura_vinedos_ha",
+    "level": "province",
+    "label": "Vineyards, area, hectares",
+    "category": "Agriculture"
+  },
+  {
+    "id": "cultivos_arboricultura_forestales_ha",
+    "level": "province",
+    "label": "Forestry plantations, area, hectares",
+    "category": "Agriculture"
+  },
+  {
+    "id": "viruela_defunciones",
+    "level": "department",
+    "label": "Smallpox deaths",
+    "category": "Public health"
+  },
+  {
+    "id": "virus_repartido",
+    "level": "department",
+    "label": "Vaccine doses distributed",
+    "category": "Public health"
+  },
+  {
+    "id": "beneficencia_presupuesto_pesos",
+    "level": "department",
+    "label": "Charitable board budget, pesos",
+    "category": "Public health"
+  },
+  {
+    "id": "vacuna_vacunadores",
+    "level": "province",
+    "label": "Vaccinators employed",
+    "category": "Public health"
+  },
+  {
+    "id": "hospital_admissions",
+    "level": "province",
+    "label": "Hospital admissions",
+    "category": "Public health"
+  },
+  {
+    "id": "hospital_beds_total",
+    "level": "province",
+    "label": "Hospital beds",
+    "category": "Public health"
+  },
+  {
+    "id": "hospital_deaths",
+    "level": "province",
+    "label": "Hospital deaths",
+    "category": "Public health"
+  },
+  {
+    "id": "hospital_total_patients",
+    "level": "province",
+    "label": "Hospital patients treated",
+    "category": "Public health"
+  },
+  {
+    "id": "hospital_total_resources_pesos",
+    "level": "province",
+    "label": "Hospital total resources, pesos",
+    "category": "Public health"
+  },
+  {
+    "id": "hospital_fiscal_subsidy_pesos",
+    "level": "province",
+    "label": "Hospital fiscal subsidy, pesos",
+    "category": "Public health"
+  }
+]

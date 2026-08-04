@@ -1,0 +1,326 @@
+[
+  {
+    "id": "beneficio_bovinos_machos_cabezas",
+    "level": "province",
+    "label": "Cattle slaughtered, male, head",
+    "category": "Agriculture"
+  },
+  {
+    "id": "beneficio_hembras_bovinas_cabezas",
+    "level": "province",
+    "label": "Cattle slaughtered, female, head",
+    "category": "Agriculture"
+  },
+  {
+    "id": "papas_rendimiento_qqha",
+    "level": "province",
+    "label": "Potatoes, yield, quintals per hectare",
+    "category": "Agriculture"
+  },
+  {
+    "id": "papas_valor_miles_pesos1974",
+    "level": "province",
+    "label": "Potatoes, value, thousand pesos of 1974",
+    "category": "Agriculture"
+  },
+  {
+    "id": "cebada_rendimiento_qqha",
+    "level": "province",
+    "label": "Barley, yield, quintals per hectare",
+    "category": "Agriculture"
+  },
+  {
+    "id": "cebada_valor_miles_pesos1974",
+    "level": "province",
+    "label": "Barley, value, thousand pesos of 1974",
+    "category": "Agriculture"
+  },
+  {
+    "id": "trigo_rendimiento_qqha",
+    "level": "province",
+    "label": "Wheat, yield, quintals per hectare",
+    "category": "Agriculture"
+  },
+  {
+    "id": "trigo_valor_miles_pesos1974",
+    "level": "province",
+    "label": "Wheat, value, thousand pesos of 1974",
+    "category": "Agriculture"
+  },
+  {
+    "id": "avena_produccion_ton",
+    "level": "province",
+    "label": "Oats, production, tonnes",
+    "category": "Agriculture"
+  },
+  {
+    "id": "avena_rendimiento_qqha",
+    "level": "province",
+    "label": "Oats, yield, quintals per hectare",
+    "category": "Agriculture"
+  },
+  {
+    "id": "avena_superficie_ha",
+    "level": "province",
+    "label": "Oats, area sown, hectares",
+    "category": "Agriculture"
+  },
+  {
+    "id": "avena_valor_miles_pesos1974",
+    "level": "province",
+    "label": "Oats, value, thousand pesos of 1974",
+    "category": "Agriculture"
+  },
+  {
+    "id": "maiz_rendimiento_qqha",
+    "level": "province",
+    "label": "Maize, yield, quintals per hectare",
+    "category": "Agriculture"
+  },
+  {
+    "id": "maiz_valor_miles_pesos1974",
+    "level": "province",
+    "label": "Maize, value, thousand pesos of 1974",
+    "category": "Agriculture"
+  },
+  {
+    "id": "frejoles_produccion_ton",
+    "level": "province",
+    "label": "Beans, production, tonnes",
+    "category": "Agriculture"
+  },
+  {
+    "id": "frejoles_rendimiento_qqha",
+    "level": "province",
+    "label": "Beans, yield, quintals per hectare",
+    "category": "Agriculture"
+  },
+  {
+    "id": "frejoles_superficie_ha",
+    "level": "province",
+    "label": "Beans, area sown, hectares",
+    "category": "Agriculture"
+  },
+  {
+    "id": "frejoles_valor_miles_pesos1974",
+    "level": "province",
+    "label": "Beans, value, thousand pesos of 1974",
+    "category": "Agriculture"
+  },
+  {
+    "id": "arvejas_produccion_ton",
+    "level": "province",
+    "label": "Peas, production, tonnes",
+    "category": "Agriculture"
+  },
+  {
+    "id": "arvejas_rendimiento_qqha",
+    "level": "province",
+    "label": "Peas, yield, quintals per hectare",
+    "category": "Agriculture"
+  },
+  {
+    "id": "arvejas_valor_miles_pesos1974",
+    "level": "province",
+    "label": "Peas, value, thousand pesos of 1974",
+    "category": "Agriculture"
+  },
+  {
+    "id": "remolacha_produccion_ton",
+    "level": "province",
+    "label": "Sugar beet, production, tonnes",
+    "category": "Agriculture"
+  },
+  {
+    "id": "remolacha_rendimiento_qqha",
+    "level": "province",
+    "label": "Sugar beet, yield, quintals per hectare",
+    "category": "Agriculture"
+  },
+  {
+    "id": "remolacha_superficie_ha",
+    "level": "province",
+    "label": "Sugar beet, area sown, hectares",
+    "category": "Agriculture"
+  },
+  {
+    "id": "leche_valor_miles_pesos1974",
+    "level": "province",
+    "label": "Milk, value, thousand pesos of 1974",
+    "category": "Agriculture"
+  },
+  {
+    "id": "remolacha_valor_miles_pesos1974",
+    "level": "province",
+    "label": "Sugar beet, value, thousand pesos of 1974",
+    "category": "Agriculture"
+  },
+  {
+    "id": "lentejas_produccion_ton",
+    "level": "province",
+    "label": "Lentils, production, tonnes",
+    "category": "Agriculture"
+  },
+  {
+    "id": "lentejas_rendimiento_qqha",
+    "level": "province",
+    "label": "Lentils, yield, quintals per hectare",
+    "category": "Agriculture"
+  },
+  {
+    "id": "lentejas_superficie_ha",
+    "level": "province",
+    "label": "Lentils, area sown, hectares",
+    "category": "Agriculture"
+  },
+  {
+    "id": "lentejas_valor_miles_pesos1974",
+    "level": "province",
+    "label": "Lentils, value, thousand pesos of 1974",
+    "category": "Agriculture"
+  },
+  {
+    "id": "centeno_produccion_ton",
+    "level": "province",
+    "label": "Rye, production, tonnes",
+    "category": "Agriculture"
+  },
+  {
+    "id": "centeno_rendimiento_qqha",
+    "level": "province",
+    "label": "Rye, yield, quintals per hectare",
+    "category": "Agriculture"
+  },
+  {
+    "id": "centeno_superficie_ha",
+    "level": "province",
+    "label": "Rye, area sown, hectares",
+    "category": "Agriculture"
+  },
+  {
+    "id": "centeno_valor_miles_pesos1974",
+    "level": "province",
+    "label": "Rye, value, thousand pesos of 1974",
+    "category": "Agriculture"
+  },
+  {
+    "id": "garbanzos_produccion_ton",
+    "level": "province",
+    "label": "Chickpeas, production, tonnes",
+    "category": "Agriculture"
+  },
+  {
+    "id": "garbanzos_rendimiento_qqha",
+    "level": "province",
+    "label": "Chickpeas, yield, quintals per hectare",
+    "category": "Agriculture"
+  },
+  {
+    "id": "garbanzos_superficie_ha",
+    "level": "province",
+    "label": "Chickpeas, area sown, hectares",
+    "category": "Agriculture"
+  },
+  {
+    "id": "garbanzos_valor_miles_pesos1974",
+    "level": "province",
+    "label": "Chickpeas, value, thousand pesos of 1974",
+    "category": "Agriculture"
+  },
+  {
+    "id": "raps_produccion_ton",
+    "level": "province",
+    "label": "Rapeseed, production, tonnes",
+    "category": "Agriculture"
+  },
+  {
+    "id": "raps_rendimiento_qqha",
+    "level": "province",
+    "label": "Rapeseed, yield, quintals per hectare",
+    "category": "Agriculture"
+  },
+  {
+    "id": "raps_superficie_ha",
+    "level": "province",
+    "label": "Rapeseed, area sown, hectares",
+    "category": "Agriculture"
+  },
+  {
+    "id": "raps_valor_miles_pesos1974",
+    "level": "province",
+    "label": "Rapeseed, value, thousand pesos of 1974",
+    "category": "Agriculture"
+  },
+  {
+    "id": "maravilla_produccion_ton",
+    "level": "province",
+    "label": "Sunflower, production, tonnes",
+    "category": "Agriculture"
+  },
+  {
+    "id": "maravilla_rendimiento_qqha",
+    "level": "province",
+    "label": "Sunflower, yield, quintals per hectare",
+    "category": "Agriculture"
+  },
+  {
+    "id": "maravilla_superficie_ha",
+    "level": "province",
+    "label": "Sunflower, area sown, hectares",
+    "category": "Agriculture"
+  },
+  {
+    "id": "maravilla_valor_miles_pesos1974",
+    "level": "province",
+    "label": "Sunflower, value, thousand pesos of 1974",
+    "category": "Agriculture"
+  },
+  {
+    "id": "arroz_produccion_ton",
+    "level": "province",
+    "label": "Rice, production, tonnes",
+    "category": "Agriculture"
+  },
+  {
+    "id": "arroz_rendimiento_qqha",
+    "level": "province",
+    "label": "Rice, yield, quintals per hectare",
+    "category": "Agriculture"
+  },
+  {
+    "id": "arroz_superficie_ha",
+    "level": "province",
+    "label": "Rice, area sown, hectares",
+    "category": "Agriculture"
+  },
+  {
+    "id": "arroz_valor_miles_pesos1974",
+    "level": "province",
+    "label": "Rice, value, thousand pesos of 1974",
+    "category": "Agriculture"
+  },
+  {
+    "id": "tabaco_produccion_ton",
+    "level": "province",
+    "label": "Tobacco, production, tonnes",
+    "category": "Agriculture"
+  },
+  {
+    "id": "tabaco_rendimiento_qqha",
+    "level": "province",
+    "label": "Tobacco, yield, quintals per hectare",
+    "category": "Agriculture"
+  },
+  {
+    "id": "tabaco_superficie_ha",
+    "level": "province",
+    "label": "Tobacco, area sown, hectares",
+    "category": "Agriculture"
+  },
+  {
+    "id": "tabaco_valor_miles_pesos1974",
+    "level": "province",
+    "label": "Tobacco, value, thousand pesos of 1974",
+    "category": "Agriculture"
+  }
+]

@@ -1,0 +1,1040 @@
+[
+  {
+    "id": "poblacion_total",
+    "level": "commune",
+    "label": "Total population (census returns)",
+    "category": "Demographics"
+  },
+  {
+    "id": "pop_censal",
+    "level": "department",
+    "label": "Census population (Sinopsis 1924-27)",
+    "category": "Demographics"
+  },
+  {
+    "id": "poblacion_total",
+    "level": "province",
+    "label": "Total population (census returns)",
+    "category": "Demographics"
+  },
+  {
+    "id": "inscriptos",
+    "level": "department",
+    "label": "Registered electors",
+    "category": "Electoral"
+  },
+  {
+    "id": "poblacion",
+    "level": "department",
+    "label": "Population (Memoria del Interior)",
+    "category": "Demographics"
+  },
+  {
+    "id": "rural_population",
+    "level": "province",
+    "label": "Rural population (Mamalakis 1980)",
+    "category": "Demographics"
+  },
+  {
+    "id": "urban_population",
+    "level": "province",
+    "label": "Urban population (Mamalakis 1980)",
+    "category": "Demographics"
+  },
+  {
+    "id": "total_population_subnational",
+    "level": "province",
+    "label": "Total population (Mamalakis 1980)",
+    "category": "Demographics"
+  },
+  {
+    "id": "pop_censal",
+    "level": "province",
+    "label": "Census population (Sinopsis 1924-27)",
+    "category": "Demographics"
+  },
+  {
+    "id": "poblacion_total_miles",
+    "level": "national",
+    "label": "Total population, thousands (Mamalakis)",
+    "category": "Demographics"
+  },
+  {
+    "id": "population_total_thousands_mamalakis",
+    "level": "national",
+    "label": "Total population, thousands (Mamalakis 1980)",
+    "category": "Demographics"
+  },
+  {
+    "id": "total_population_thousands",
+    "level": "national",
+    "label": "Total population, thousands (DEC/INE/ODEPLAN)",
+    "category": "Demographics"
+  },
+  {
+    "id": "total_expenditure_gbp",
+    "level": "national",
+    "label": "Total expenditure, £",
+    "category": "Public finance"
+  },
+  {
+    "id": "total_revenue_gbp",
+    "level": "national",
+    "label": "Total revenue, £",
+    "category": "Public finance"
+  },
+  {
+    "id": "pop_rural",
+    "level": "province",
+    "label": "Rural population (Sinopsis)",
+    "category": "Demographics"
+  },
+  {
+    "id": "pop_urbana",
+    "level": "province",
+    "label": "Urban population (Sinopsis)",
+    "category": "Demographics"
+  },
+  {
+    "id": "pct_urbana",
+    "level": "province",
+    "label": "Urban population, % of total",
+    "category": "Demographics"
+  },
+  {
+    "id": "permil_ilegitimos",
+    "level": "national",
+    "label": "Illegitimate births per 1,000 births",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "permil_legitimos",
+    "level": "national",
+    "label": "Legitimate births per 1,000 births",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "post_office_gbp",
+    "level": "national",
+    "label": "Post office revenue, £",
+    "category": "Public finance"
+  },
+  {
+    "id": "numero_electores_1871",
+    "level": "department",
+    "label": "Presidential electors (1871)",
+    "category": "Electoral"
+  },
+  {
+    "id": "numero_municipales_1870",
+    "level": "department",
+    "label": "Municipal councillors (1870)",
+    "category": "Electoral"
+  },
+  {
+    "id": "poblacion_1868_hombres",
+    "level": "department",
+    "label": "Population, male (1868)",
+    "category": "Demographics"
+  },
+  {
+    "id": "poblacion_1868_mujeres",
+    "level": "department",
+    "label": "Population, female (1868)",
+    "category": "Demographics"
+  },
+  {
+    "id": "poblacion_1868_total",
+    "level": "department",
+    "label": "Population (1868)",
+    "category": "Demographics"
+  },
+  {
+    "id": "stamped_paper_gbp",
+    "level": "national",
+    "label": "Stamped paper revenue, £",
+    "category": "Public finance"
+  },
+  {
+    "id": "votos_municipales_1870",
+    "level": "department",
+    "label": "Votes cast, municipal election (1870)",
+    "category": "Electoral"
+  },
+  {
+    "id": "votos_presidente_1871",
+    "level": "department",
+    "label": "Votes for president (1871)",
+    "category": "Electoral"
+  },
+  {
+    "id": "poblacion_calculada",
+    "level": "province",
+    "label": "Estimated population (Sinopsis)",
+    "category": "Demographics"
+  },
+  {
+    "id": "balance_total_activo_pesos",
+    "level": "national",
+    "label": "Treasury assets, total, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "balance_total_pasivo_pesos",
+    "level": "national",
+    "label": "Treasury liabilities, total, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "cabotaje_total_pesos",
+    "level": "national",
+    "label": "Coastal trade, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "n_alumnos_fiscales_h",
+    "level": "province",
+    "label": "Pupils in state schools, male",
+    "category": "Education"
+  },
+  {
+    "id": "n_alumnos_fiscales_m",
+    "level": "province",
+    "label": "Pupils in state schools, female",
+    "category": "Education"
+  },
+  {
+    "id": "n_alumnos_fiscales_t",
+    "level": "province",
+    "label": "Pupils in state schools",
+    "category": "Education"
+  },
+  {
+    "id": "n_escuelas_fiscales_h",
+    "level": "province",
+    "label": "State schools for boys",
+    "category": "Education"
+  },
+  {
+    "id": "n_escuelas_fiscales_t",
+    "level": "province",
+    "label": "State schools",
+    "category": "Education"
+  },
+  {
+    "id": "monopoly_income_gbp",
+    "level": "national",
+    "label": "State monopoly income, £",
+    "category": "Public finance"
+  },
+  {
+    "id": "n_escuelas_fiscales_m",
+    "level": "province",
+    "label": "State schools for girls",
+    "category": "Education"
+  },
+  {
+    "id": "total_ordinary_revenue_gbp",
+    "level": "national",
+    "label": "Ordinary revenue, £",
+    "category": "Public finance"
+  },
+  {
+    "id": "excise_property_tax_gbp",
+    "level": "national",
+    "label": "Excise and property tax, £",
+    "category": "Public finance"
+  },
+  {
+    "id": "liability_deuda_interna_pesos",
+    "level": "national",
+    "label": "Internal debt liability, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "poblacion_total",
+    "level": "national",
+    "label": "Total population (census returns)",
+    "category": "Demographics"
+  },
+  {
+    "id": "grand_total_revenue_gbp",
+    "level": "national",
+    "label": "Grand total revenue, £",
+    "category": "Public finance"
+  },
+  {
+    "id": "alfabetos_1952",
+    "level": "province",
+    "label": "Literate persons (1952)",
+    "category": "Education"
+  },
+  {
+    "id": "alfabetos_mujeres_1952",
+    "level": "province",
+    "label": "Literate persons, female (1952)",
+    "category": "Education"
+  },
+  {
+    "id": "analfabetos_1952",
+    "level": "province",
+    "label": "Illiterate persons (1952)",
+    "category": "Education"
+  },
+  {
+    "id": "analfabetos_hombres_1952",
+    "level": "province",
+    "label": "Illiterate persons, male (1952)",
+    "category": "Education"
+  },
+  {
+    "id": "analfabetos_mujeres_1952",
+    "level": "province",
+    "label": "Illiterate persons, female (1952)",
+    "category": "Education"
+  },
+  {
+    "id": "anulados_1952",
+    "level": "province",
+    "label": "Annulled marriages (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "anulados_hombres_1952",
+    "level": "province",
+    "label": "Annulled marriages, male (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "anulados_mujeres_1952",
+    "level": "province",
+    "label": "Annulled marriages, female (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "casados_hombres_1952",
+    "level": "province",
+    "label": "Married persons, male (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "casados_mujeres_1952",
+    "level": "province",
+    "label": "Married persons, female (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "causas_civiles_falladas",
+    "level": "province",
+    "label": "Civil cases decided",
+    "category": "Governance"
+  },
+  {
+    "id": "causas_civiles_ingresadas",
+    "level": "province",
+    "label": "Civil cases filed",
+    "category": "Governance"
+  },
+  {
+    "id": "causas_criminales_falladas",
+    "level": "province",
+    "label": "Criminal cases decided",
+    "category": "Governance"
+  },
+  {
+    "id": "causas_criminales_ingresadas",
+    "level": "province",
+    "label": "Criminal cases filed",
+    "category": "Governance"
+  },
+  {
+    "id": "causas_total_falladas",
+    "level": "province",
+    "label": "Court cases decided, total",
+    "category": "Governance"
+  },
+  {
+    "id": "causas_total_ingresadas",
+    "level": "province",
+    "label": "Court cases filed, total",
+    "category": "Governance"
+  },
+  {
+    "id": "con_instruccion_especial_1952",
+    "level": "province",
+    "label": "With special education (1952)",
+    "category": "Education"
+  },
+  {
+    "id": "con_instruccion_especial_hombres_1952",
+    "level": "province",
+    "label": "With special education, male (1952)",
+    "category": "Education"
+  },
+  {
+    "id": "con_instruccion_especial_mujeres_1952",
+    "level": "province",
+    "label": "With special education, female (1952)",
+    "category": "Education"
+  },
+  {
+    "id": "con_instruccion_ignorada_1952",
+    "level": "province",
+    "label": "Education level unknown (1952)",
+    "category": "Education"
+  },
+  {
+    "id": "con_instruccion_ignorada_hombres_1952",
+    "level": "province",
+    "label": "Education level unknown, male (1952)",
+    "category": "Education"
+  },
+  {
+    "id": "con_instruccion_ignorada_mujeres_1952",
+    "level": "province",
+    "label": "Education level unknown, female (1952)",
+    "category": "Education"
+  },
+  {
+    "id": "con_instruccion_primaria_hombres_1952",
+    "level": "province",
+    "label": "With primary education, male (1952)",
+    "category": "Education"
+  },
+  {
+    "id": "con_instruccion_primaria_mujeres_1952",
+    "level": "province",
+    "label": "With primary education, female (1952)",
+    "category": "Education"
+  },
+  {
+    "id": "con_instruccion_secundaria_hombres_1952",
+    "level": "province",
+    "label": "With secondary education, male (1952)",
+    "category": "Education"
+  },
+  {
+    "id": "con_instruccion_secundaria_mujeres_1952",
+    "level": "province",
+    "label": "With secondary education, female (1952)",
+    "category": "Education"
+  },
+  {
+    "id": "con_instruccion_total_1952",
+    "level": "province",
+    "label": "With any formal education (1952)",
+    "category": "Education"
+  },
+  {
+    "id": "con_instruccion_total_hombres_1952",
+    "level": "province",
+    "label": "With any formal education, male (1952)",
+    "category": "Education"
+  },
+  {
+    "id": "con_instruccion_total_mujeres_1952",
+    "level": "province",
+    "label": "With any formal education, female (1952)",
+    "category": "Education"
+  },
+  {
+    "id": "con_instruccion_universitaria_hombres_1952",
+    "level": "province",
+    "label": "With university education, male (1952)",
+    "category": "Education"
+  },
+  {
+    "id": "con_instruccion_universitaria_mujeres_1952",
+    "level": "province",
+    "label": "With university education, female (1952)",
+    "category": "Education"
+  },
+  {
+    "id": "convivientes_1952",
+    "level": "province",
+    "label": "Persons cohabiting (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "convivientes_hombres_1952",
+    "level": "province",
+    "label": "Persons cohabiting, male (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "convivientes_mujeres_1952",
+    "level": "province",
+    "label": "Persons cohabiting, female (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "extranjeros_hombres_1952",
+    "level": "province",
+    "label": "Foreign nationals, male (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "extranjeros_mujeres_1952",
+    "level": "province",
+    "label": "Foreign nationals, female (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "ignorados_1952",
+    "level": "province",
+    "label": "Marital status unknown (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "ignorados_hombres_1952",
+    "level": "province",
+    "label": "Marital status unknown, male (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "ignorados_mujeres_1952",
+    "level": "province",
+    "label": "Marital status unknown, female (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "otra_religion_1952",
+    "level": "province",
+    "label": "Other religion (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "poblacion_15ymas_1952",
+    "level": "province",
+    "label": "Population aged 15 and over (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "poblacion_15ymas_hombres_1952",
+    "level": "province",
+    "label": "Population aged 15 and over, male (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "poblacion_15ymas_mujeres_1952",
+    "level": "province",
+    "label": "Population aged 15 and over, female (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "poblacion_inactiva_1952",
+    "level": "province",
+    "label": "Economically inactive population (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "poblacion_rural_censo",
+    "level": "province",
+    "label": "Rural population, census (Sinopsis)",
+    "category": "Demographics"
+  },
+  {
+    "id": "poblacion_urbana_censo",
+    "level": "province",
+    "label": "Urban population, census (Sinopsis)",
+    "category": "Demographics"
+  },
+  {
+    "id": "separados_1952",
+    "level": "province",
+    "label": "Separated persons (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "separados_hombres_1952",
+    "level": "province",
+    "label": "Separated persons, male (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "separados_mujeres_1952",
+    "level": "province",
+    "label": "Separated persons, female (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "solteros_hombres_1952",
+    "level": "province",
+    "label": "Single persons, male (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "solteros_mujeres_1952",
+    "level": "province",
+    "label": "Single persons, female (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "viudos_hombres_1952",
+    "level": "province",
+    "label": "Widowed persons, male (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "viudos_mujeres_1952",
+    "level": "province",
+    "label": "Widowed persons, female (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "alfabetos_hombres_1952",
+    "level": "province",
+    "label": "Literate persons, male (1952)",
+    "category": "Education"
+  },
+  {
+    "id": "chilenos_hombres_1952",
+    "level": "province",
+    "label": "Chilean nationals, male (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "estranjeros_hombres",
+    "level": "province",
+    "label": "Foreign nationals, male (1907)",
+    "category": "Demographics"
+  },
+  {
+    "id": "estranjeros_mujeres",
+    "level": "province",
+    "label": "Foreign nationals, female (1907)",
+    "category": "Demographics"
+  },
+  {
+    "id": "estranjeros_total",
+    "level": "province",
+    "label": "Foreign nationals (1907)",
+    "category": "Demographics"
+  },
+  {
+    "id": "liability_depositos_pesos",
+    "level": "national",
+    "label": "Deposits held, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "liability_deuda_externa_pesos",
+    "level": "national",
+    "label": "External debt liability, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "literacy_rate_pct_female",
+    "level": "province",
+    "label": "Literacy rate, female, % (1920)",
+    "category": "Education"
+  },
+  {
+    "id": "literacy_rate_pct_male",
+    "level": "province",
+    "label": "Literacy rate, male, % (1920)",
+    "category": "Education"
+  },
+  {
+    "id": "n_alumnos_municipales_h",
+    "level": "province",
+    "label": "Pupils in municipal schools, male",
+    "category": "Education"
+  },
+  {
+    "id": "n_alumnos_municipales_m",
+    "level": "province",
+    "label": "Pupils in municipal schools, female",
+    "category": "Education"
+  },
+  {
+    "id": "n_alumnos_municipales_t",
+    "level": "province",
+    "label": "Pupils in municipal schools",
+    "category": "Education"
+  },
+  {
+    "id": "n_hospitals",
+    "level": "province",
+    "label": "Hospitals (1924)",
+    "category": "Public health"
+  },
+  {
+    "id": "nacionales_hombres",
+    "level": "province",
+    "label": "Chilean nationals, male (1907)",
+    "category": "Demographics"
+  },
+  {
+    "id": "nacionales_mujeres",
+    "level": "province",
+    "label": "Chilean nationals, female (1907)",
+    "category": "Demographics"
+  },
+  {
+    "id": "nacionales_total",
+    "level": "province",
+    "label": "Chilean nationals (1907)",
+    "category": "Demographics"
+  },
+  {
+    "id": "num_hospitales",
+    "level": "province",
+    "label": "Hospitals, alternate return (1924)",
+    "category": "Public health"
+  },
+  {
+    "id": "pct_alfabetos",
+    "level": "province",
+    "label": "Literate, % of population (1907)",
+    "category": "Education"
+  },
+  {
+    "id": "poblacion_capital",
+    "level": "province",
+    "label": "Population of the provincial capital",
+    "category": "Demographics"
+  },
+  {
+    "id": "poblacion_censo",
+    "level": "province",
+    "label": "Census population (Sinopsis)",
+    "category": "Demographics"
+  },
+  {
+    "id": "rural_population",
+    "level": "national",
+    "label": "Rural population (Mamalakis 1980)",
+    "category": "Demographics"
+  },
+  {
+    "id": "saben_leer_hombres",
+    "level": "province",
+    "label": "Persons able to read, male (1907)",
+    "category": "Education"
+  },
+  {
+    "id": "saben_leer_mujeres",
+    "level": "province",
+    "label": "Persons able to read, female (1907)",
+    "category": "Education"
+  },
+  {
+    "id": "saben_leer_total",
+    "level": "province",
+    "label": "Persons able to read (1907)",
+    "category": "Education"
+  },
+  {
+    "id": "urban_population",
+    "level": "national",
+    "label": "Urban population (Mamalakis 1980)",
+    "category": "Demographics"
+  },
+  {
+    "id": "chilenos_mujeres_1952",
+    "level": "province",
+    "label": "Chilean nationals, female (1952)",
+    "category": "Demographics"
+  },
+  {
+    "id": "diputados",
+    "level": "province",
+    "label": "Deputies (1920)",
+    "category": "Electoral"
+  },
+  {
+    "id": "foreigners_americanos_1895",
+    "level": "province",
+    "label": "Foreign nationals from the Americas (1895)",
+    "category": "Demographics"
+  },
+  {
+    "id": "foreigners_europeos_1895",
+    "level": "province",
+    "label": "Foreign nationals from Europe (1895)",
+    "category": "Demographics"
+  },
+  {
+    "id": "foreigners_otras_nacionalidades_1895",
+    "level": "province",
+    "label": "Foreign nationals, other nationalities (1895)",
+    "category": "Demographics"
+  },
+  {
+    "id": "foreigners_total_1885",
+    "level": "province",
+    "label": "Foreign nationals (1885)",
+    "category": "Demographics"
+  },
+  {
+    "id": "foreigners_total_1895",
+    "level": "province",
+    "label": "Foreign nationals (1895)",
+    "category": "Demographics"
+  },
+  {
+    "id": "papas_cantidad_cosechada_qq_m",
+    "level": "province",
+    "label": "Potatoes harvested, metric quintals (1924)",
+    "category": "Agriculture"
+  },
+  {
+    "id": "papas_extension_hectareas",
+    "level": "province",
+    "label": "Potatoes, area, hectares (1924)",
+    "category": "Agriculture"
+  },
+  {
+    "id": "papas_rendimiento_por_hectarea_qq_m",
+    "level": "province",
+    "label": "Potatoes, yield per hectare, metric quintals (1924)",
+    "category": "Agriculture"
+  },
+  {
+    "id": "senadores",
+    "level": "province",
+    "label": "Senators (1920)",
+    "category": "Electoral"
+  },
+  {
+    "id": "literacy_rate_pct_total",
+    "level": "province",
+    "label": "Literacy rate, % (1920)",
+    "category": "Education"
+  },
+  {
+    "id": "national_estates_gbp",
+    "level": "national",
+    "label": "National estates revenue, £",
+    "category": "Public finance"
+  },
+  {
+    "id": "pct_alfabetos_rural",
+    "level": "province",
+    "label": "Literate, % rural population (1907)",
+    "category": "Education"
+  },
+  {
+    "id": "pct_alfabetos_urbano",
+    "level": "province",
+    "label": "Literate, % urban population (1907)",
+    "category": "Education"
+  },
+  {
+    "id": "propietarios_nacionales_hombres",
+    "level": "province",
+    "label": "Chilean property owners, male (1907)",
+    "category": "Demographics"
+  },
+  {
+    "id": "propietarios_nacionales_mujeres",
+    "level": "province",
+    "label": "Chilean property owners, female (1907)",
+    "category": "Demographics"
+  },
+  {
+    "id": "propietarios_nacionales_total",
+    "level": "province",
+    "label": "Chilean property owners (1907)",
+    "category": "Demographics"
+  },
+  {
+    "id": "literate_count",
+    "level": "province",
+    "label": "Literate persons (1920)",
+    "category": "Education"
+  },
+  {
+    "id": "trigo_blanco_extension_hectareas",
+    "level": "province",
+    "label": "White wheat, area, hectares (1924)",
+    "category": "Agriculture"
+  },
+  {
+    "id": "trigo_blanco_rendimiento_por_hectarea_qq_m",
+    "level": "province",
+    "label": "White wheat, yield per hectare, metric quintals (1924)",
+    "category": "Agriculture"
+  },
+  {
+    "id": "n_escuelas_municipales_t",
+    "level": "province",
+    "label": "Municipal schools",
+    "category": "Education"
+  },
+  {
+    "id": "trigo_blanco_cosechado_qq_m",
+    "level": "province",
+    "label": "White wheat harvested, metric quintals (1924)",
+    "category": "Agriculture"
+  },
+  {
+    "id": "population_hombres",
+    "level": "province",
+    "label": "Population, male (1854)",
+    "category": "Demographics"
+  },
+  {
+    "id": "population_total",
+    "level": "province",
+    "label": "Total population (Aldana 1914)",
+    "category": "Demographics"
+  },
+  {
+    "id": "n_escuelas_municipales_h",
+    "level": "province",
+    "label": "Municipal schools for boys",
+    "category": "Education"
+  },
+  {
+    "id": "n_escuelas_municipales_m",
+    "level": "province",
+    "label": "Municipal schools for girls",
+    "category": "Education"
+  },
+  {
+    "id": "share_colonizacion_pct",
+    "level": "national",
+    "label": "Colonisation as % of expenditure (Aldana 1914)",
+    "category": "Public finance"
+  },
+  {
+    "id": "share_culto_pct",
+    "level": "national",
+    "label": "Religion as % of expenditure (Aldana 1914)",
+    "category": "Public finance"
+  },
+  {
+    "id": "share_ferrocarriles_pct",
+    "level": "national",
+    "label": "Railways as % of expenditure (Aldana 1914)",
+    "category": "Public finance"
+  },
+  {
+    "id": "share_guerra_pct",
+    "level": "national",
+    "label": "War as % of expenditure (Aldana 1914)",
+    "category": "Public finance"
+  },
+  {
+    "id": "share_hacienda_pct",
+    "level": "national",
+    "label": "Treasury as % of expenditure (Aldana 1914)",
+    "category": "Public finance"
+  },
+  {
+    "id": "share_industria_pct",
+    "level": "national",
+    "label": "Industry as % of expenditure (Aldana 1914)",
+    "category": "Public finance"
+  },
+  {
+    "id": "share_instruccion_publica_pct",
+    "level": "national",
+    "label": "Public instruction as % of expenditure (Aldana 1914)",
+    "category": "Public finance"
+  },
+  {
+    "id": "share_justicia_pct",
+    "level": "national",
+    "label": "Justice as % of expenditure (Aldana 1914)",
+    "category": "Public finance"
+  },
+  {
+    "id": "share_marina_pct",
+    "level": "national",
+    "label": "Navy as % of expenditure (Aldana 1914)",
+    "category": "Public finance"
+  },
+  {
+    "id": "share_ministerio_interior_pct",
+    "level": "national",
+    "label": "Interior as % of expenditure (Aldana 1914)",
+    "category": "Public finance"
+  },
+  {
+    "id": "share_obras_publicas_pct",
+    "level": "national",
+    "label": "Public works as % of expenditure (Aldana 1914)",
+    "category": "Public finance"
+  },
+  {
+    "id": "share_relaciones_exteriores_pct",
+    "level": "national",
+    "label": "Foreign affairs as % of expenditure (Aldana 1914)",
+    "category": "Public finance"
+  },
+  {
+    "id": "fiscal_revenue_per_capita_pounds_gold18d",
+    "level": "national",
+    "label": "Fiscal revenue per inhabitant, pounds (gold, 18d)",
+    "category": "Public finance"
+  },
+  {
+    "id": "population_total",
+    "level": "national",
+    "label": "Total population (Aldana 1914)",
+    "category": "Demographics"
+  },
+  {
+    "id": "sof_stamped_paper",
+    "level": "national",
+    "label": "Stamped paper revenue, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "asset_ferrocarriles_equipo_pesos",
+    "level": "national",
+    "label": "Railway equipment assets, pesos",
+    "category": "Public finance"
+  },
+  {
+    "id": "population",
+    "level": "national",
+    "label": "Population, Aldana per-capita denominator",
+    "category": "Demographics"
+  },
+  {
+    "id": "revenue_per_capita_gbp",
+    "level": "national",
+    "label": "Revenue per inhabitant, £",
+    "category": "Public finance"
+  },
+  {
+    "id": "expenditure_per_capita_gbp",
+    "level": "national",
+    "label": "Expenditure per inhabitant, £",
+    "category": "Public finance"
+  },
+  {
+    "id": "births_legitimos_annual",
+    "level": "national",
+    "label": "Legitimate births",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "child_deaths_hombres_annual_under_7",
+    "level": "national",
+    "label": "Deaths under age 7, male",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "child_deaths_mujeres_annual_under_7",
+    "level": "national",
+    "label": "Deaths under age 7, female",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "child_deaths_total_annual_under_7",
+    "level": "national",
+    "label": "Deaths under age 7",
+    "category": "Vital statistics"
+  },
+  {
+    "id": "circulante_billetes_fiscales_vigente",
+    "level": "national",
+    "label": "Fiscal banknotes in circulation",
+    "category": "Public finance"
+  }
+]

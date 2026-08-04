@@ -71,10 +71,26 @@ const CENSUS_GEO_YEARS_PROV = [1826, 1833, 1843, 1854, 1865, 1875, 1885, 1895, 1
 // crosswalk) plus the modern 2018 CUT set. 1935 census data renders on the 1935
 // frame; the 1970 and 1992 data are keyed to modern CUTs and render on 2018.
 const CENSUS_GEO_YEARS_COMMUNE = [1935, 2018];
+// Point scales (V2 Phase 4). Ports and cities are drawn as circle markers from
+// data/{ports,cities}_points.geojson, whose coordinates come from the modern
+// comuna of the same name (see scripts/build_point_gazetteer.py). Points do not
+// move, so there is a single frame per scale rather than a census series.
+const POINT_SCALES = ['port', 'city'];
+function isPointScale(scale) { return POINT_SCALES.includes(scale); }
 function geoYearsFor(scale) {
   return scale === 'department' ? CENSUS_GEO_YEARS_DEPT
        : scale === 'commune'    ? CENSUS_GEO_YEARS_COMMUNE
+       : isPointScale(scale)    ? [0]
        : CENSUS_GEO_YEARS_PROV;
+}
+// One place that says which payload block a scale reads.
+function blockFor(scale) {
+  const d = window._data || {};
+  return scale === 'department' ? d.department_data
+       : scale === 'commune'    ? d.commune_data
+       : scale === 'port'       ? d.port_data
+       : scale === 'city'       ? d.city_data
+       : d.province_data;
 }
 
 function nearestGeoYear(year, available) {
@@ -235,6 +251,11 @@ function resolveCcode(key) {
 
 /** Extract the canonical code from a GeoJSON feature. */
 function featureCode(f, scale) {
+  if (isPointScale(scale)) {
+    // Point features carry `ucode`, the normalized unit name that
+    // regenerate_ui_data.py also uses as the payload key.
+    return f.properties.ucode || normalizeKey(f.properties.name || '');
+  }
   if (scale === 'department') {
     // Prefer dcode property (string panel key); fall back to normalizeKey
     if (f.properties.dcode && typeof f.properties.dcode === 'string') return f.properties.dcode;
@@ -619,9 +640,7 @@ export function createMapView(host) {
     if (!lastState.variable || !lastState.year) return;
     const meta = M.byId(lastState.variable);
     if (!meta) return;
-    const block = lastState.scale === 'department' ? window._data.department_data
-                : lastState.scale === 'commune'    ? window._data.commune_data
-                : window._data.province_data;
+    const block = blockFor(lastState.scale);
     if (!block) return;
     const yd = block.data[String(lastState.year)] || {};
     const valueHead = meta.display_label || meta.label || meta.id;
@@ -746,8 +765,13 @@ export function createMapView(host) {
     if (geoCache.has(key)) return geoCache.get(key);
     const fileStem = scale === 'department' ? 'departments'
                    : scale === 'commune'    ? 'communes'
+                   : scale === 'port'       ? 'ports'
+                   : scale === 'city'       ? 'cities'
                    : 'provinces';
-    const path = `data/${fileStem}_${geoYear}.geojson`;
+    // Point layers are a single static file; the polygon layers are per census frame.
+    const path = isPointScale(scale)
+      ? `data/${fileStem}_points.geojson`
+      : `data/${fileStem}_${geoYear}.geojson`;
     const r = await fetch(path);
     if (!r.ok) throw new Error(`GeoJSON fetch failed: ${path} -> ${r.status}`);
     const j = await r.json();
@@ -759,12 +783,13 @@ export function createMapView(host) {
   // (estimated | reconstructed | needs_review). Only non-observed cells have
   // entries (see regenerate_ui_data.py flags sidecar).
   function buildFlagMap(scale, year, variable) {
-    const block = scale === 'department' ? window._data.department_data
-                : scale === 'commune'    ? window._data.commune_data
-                : window._data.province_data;
+    const block = blockFor(scale);
     const yearFlags = block && block.flags && block.flags[String(year)];
     if (!yearFlags) return {};
-    const resolve = scale === 'department' ? resolveDcode
+    // Point payload keys are already the normalized unit name that
+    // featureCode() returns, so they join by identity.
+    const resolve = isPointScale(scale) ? (k => k)
+                  : scale === 'department' ? resolveDcode
                   : scale === 'commune'    ? resolveCcode
                   : resolvePcode;
     const out = {};
@@ -778,13 +803,14 @@ export function createMapView(host) {
   }
 
   function buildValueMap(scale, year, variable, perCapita) {
-    const block = scale === 'department' ? window._data.department_data
-                : scale === 'commune'    ? window._data.commune_data
-                : window._data.province_data;
+    const block = blockFor(scale);
     if (!block) return {};
     const yearData = block.data[String(year)];
     if (!yearData) return {};
-    const resolve = scale === 'department' ? resolveDcode
+    // Point payload keys are already the normalized unit name that
+    // featureCode() returns, so they join by identity.
+    const resolve = isPointScale(scale) ? (k => k)
+                  : scale === 'department' ? resolveDcode
                   : scale === 'commune'    ? resolveCcode
                   : resolvePcode;
     const out = {};
@@ -950,8 +976,10 @@ export function createMapView(host) {
       srcBlock.textContent = '';
       return;
     }
-    if (scale !== 'department' && scale !== 'province' && scale !== 'commune') {
-      mapEl.innerHTML = `<div class="map-empty-state">Map view is for department, province, and commune scale; '${escapeHTML(scale)}' is a national-scale variable. Use the chart instead.</div>`;
+    // Mappable scales: the three polygon scales plus the point scales added in
+    // V2 Phase 4. Anything else (national) has no geometry and belongs in the chart.
+    if (!['department', 'province', 'commune', ...POINT_SCALES].includes(scale)) {
+      mapEl.innerHTML = `<div class="map-empty-state">Map view is for department, province, commune, port and city scale; '${escapeHTML(scale)}' is a national-scale variable. Use the chart instead.</div>`;
       srcBlock.textContent = '';
       return;
     }
@@ -1038,7 +1066,8 @@ export function createMapView(host) {
     // distribution so the info card's default state can show highest/median.
     // Territory features (frontier/unorganized/disputed) are excluded from
     // coverage counts — they carry no administrative data.
-    const nameField = scale === 'department' ? 'department' : scale === 'commune' ? 'comuna' : 'provincia';
+    const nameField = isPointScale(scale) ? 'name'
+      : scale === 'department' ? 'department' : scale === 'commune' ? 'comuna' : 'provincia';
     let matched = 0;
     const matchedValues = [];
     const matchedEntries = []; // {name, value} for every matched feature
@@ -1080,7 +1109,24 @@ export function createMapView(host) {
     } else {
       if (layer) { map.removeLayer(layer); layer = null; }
       pinned = null;
-      layer = L.geoJSON(geoJSON, { style: featureStyle, onEachFeature: wireFeature }).addTo(map);
+      // Point scales draw circle markers instead of filled polygons. Radius is
+      // scaled by rank within the current view rather than by raw value, so a
+      // customs series spanning four orders of magnitude still produces a
+      // readable map; colour continues to carry the value through featureStyle.
+      const opts = { style: featureStyle, onEachFeature: wireFeature };
+      if (isPointScale(scale)) {
+        const ranked = [...matchedValues].sort((a, b) => a - b);
+        opts.pointToLayer = (feature, latlng) => {
+          const v = values[featureCode(feature, scale)];
+          let r = 4;
+          if (v != null && !Number.isNaN(v) && ranked.length > 1) {
+            const pos = ranked.filter(x => x <= v).length / ranked.length;
+            r = 4 + Math.round(pos * 10);
+          }
+          return L.circleMarker(latlng, { radius: r });
+        };
+      }
+      layer = L.geoJSON(geoJSON, opts).addTo(map);
       lastGeoJSON = geoJSON;
       // Tighten bbox to mainland Chile (don't fitBounds to GeoJSON which may
       // extend offshore); only on a geometry swap, so hover/zoom state survives
