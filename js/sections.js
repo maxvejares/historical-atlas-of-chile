@@ -221,6 +221,23 @@ export function createSections(host) {
   const nCat = stats.n_categories != null ? stats.n_categories : 'several';
   let activeVariable = null;
 
+  // Download-card copy from baked metadata (downloads.json). Each card states
+  // its own file's true rows/variables/sources; the two files are different
+  // products and must not share numbers.
+  const dlMeta = kind => M.downloadFiles().find(f => f.kind === kind) || null;
+  const dlHref = kind => {
+    const m = dlMeta(kind);
+    return m ? m.path : 'data/historical_atlas_of_chile_curated_v2.csv';
+  };
+  const dlDesc = kind => {
+    const m = dlMeta(kind);
+    if (!m) return '';
+    const rows = m.n_rows.toLocaleString('en-US');
+    const vars = m.n_variables.toLocaleString('en-US');
+    const srcs = m.n_source_documents != null ? m.n_source_documents.toLocaleString('en-US') : null;
+    return `${rows} observations, ${vars} variables${srcs ? `, ${srcs} source records` : ''}, long format.`;
+  };
+
   host.classList.add('static-sections');
   host.innerHTML = `
     <section id="sources" class="static-section">
@@ -309,13 +326,26 @@ export function createSections(host) {
       </p>
       <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:20px; margin:24px 0;">
         <div style="background:var(--surface); border:1px solid var(--rule); border-radius:var(--radius); padding:20px;">
-          <p style="font-weight:600; margin-bottom:8px;">Dataset (CSV)</p>
+          <p style="font-weight:600; margin-bottom:8px;">Curated dataset (CSV)</p>
           <p style="font-size:13px; color:var(--ink-muted); margin-bottom:12px;">
-            ${nObs} observations in long format. 14-column canonical schema.
-            Excludes Braun et al.&nbsp;(1998), available separately from PUC.
+            ${dlDesc('curated')} The catalog this site documents: every
+            published indicator, values exactly as the sources print them,
+            with a display-name column added for convenience. Matches the
+            codebook. Excludes Braun et al.&nbsp;(1998), available separately from PUC.
           </p>
-          <a href="data/chile_historical_database_v1.csv" download class="dl-csv-link"
-             style="color:var(--accent); font-weight:600;">Download CSV<span class="dl-csv-size"></span></a>
+          <a href="${dlHref('curated')}" download class="dl-link" data-kind="curated"
+             style="color:var(--accent); font-weight:600;">Download curated CSV<span class="dl-size"></span></a>
+        </div>
+        <div style="background:var(--surface); border:1px solid var(--rule); border-radius:var(--radius); padding:20px;">
+          <p style="font-weight:600; margin-bottom:8px;">Research extract (CSV)</p>
+          <p style="font-size:13px; color:var(--ink-muted); margin-bottom:12px;">
+            ${dlDesc('research_extract')} The full audited extraction behind
+            the catalog: raw variable names, all geographic levels, and
+            series still awaiting curation. Same 14-column schema and source
+            fidelity; expect to do your own harmonization.
+          </p>
+          <a href="${dlHref('research_extract')}" download class="dl-link" data-kind="research_extract"
+             style="color:var(--accent); font-weight:600;">Download research extract<span class="dl-size"></span></a>
         </div>
         <div style="background:var(--surface); border:1px solid var(--rule); border-radius:var(--radius); padding:20px;">
           <p style="font-weight:600; margin-bottom:8px;">Codebook (PDF)</p>
@@ -343,26 +373,13 @@ export function createSections(host) {
   // the exact file written to disk (run_m028.write_downloads_metadata). The
   // prior HEAD-request approach read GitHub Pages' Content-Length, which is
   // the gzip TRANSFER size, not the file size -- the card said "2 MB" for a
-  // 57.8 MB file (2026-08-18 second audit, B3). HEAD survives only as a
-  // fallback for dev servers with no baked metadata.
-  const dlSizeEl = host.querySelector('.dl-csv-size');
-  const dlLinkEl = host.querySelector('.dl-csv-link');
-  if (dlSizeEl && dlLinkEl) {
-    const href = dlLinkEl.getAttribute('href');
-    const baked = M.downloadFiles().find(f => href.endsWith(f.file));
-    const bakedMB = baked ? fmtMB(baked.bytes) : null;
-    if (bakedMB) {
-      dlSizeEl.textContent = ` (${bakedMB})`;
-    } else {
-      fetch(href, { method: 'HEAD' })
-        .then(r => {
-          const len = r.headers.get('content-length');
-          const mb = fmtMB(len ? Number(len) : null);
-          if (mb) dlSizeEl.textContent = ` (${mb})`;
-        })
-        .catch(() => {});
-    }
-  }
+  // 57.8 MB file (2026-08-18 second audit, B3).
+  host.querySelectorAll('.dl-link').forEach(link => {
+    const meta = dlMeta(link.dataset.kind);
+    const mb = meta ? fmtMB(meta.bytes) : null;
+    const sizeEl = link.querySelector('.dl-size');
+    if (mb && sizeEl) sizeEl.textContent = ` (${mb})`;
+  });
 
   const registryEl = host.querySelector('.src-registry');
 

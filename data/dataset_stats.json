@@ -13,6 +13,7 @@
   "n_variables_province": 404,
   "n_variables_national": 215,
   "n_source_documents": 148,
-  "n_observations": 202861,
-  "n_source_documents_full_extract": 241
+  "n_observations": 119567,
+  "n_source_documents_full_extract": 241,
+  "n_observations_full_extract": 202861
 }

@@ -20,7 +20,7 @@ G3  CATALOG        every qualifying variable is published or has a recorded reas
 G4  METADATA       every published indicator carries its M098 rule 4 block
 G5  RENDER         every indicator renders at every level it claims
 G6  PLAUSIBILITY   no published series has an unexplained magnitude step
-G7  DOWNLOAD       the CSV download contains exactly the published cells
+G7  DOWNLOAD       neither download CSV carries a fenced or excluded source
 
 See V2_PLAN.md for why each exists and what it cost to learn.
 """
@@ -39,7 +39,14 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ROOT = os.path.dirname(REPO)
 
 MASTER = os.path.join(ROOT, "data/chile_master_data.csv")
-DOWNLOAD = os.path.join(REPO, "data/chile_historical_database_v1.csv")
+# Two public downloads since the 2026-08-18 second-audit release: the curated
+# catalog file and the full research extract. G7's source/scope policy applies
+# to both. The legacy v1 filename stays served (untested) for one release so
+# old deep links resolve, then gets removed.
+DOWNLOADS = [
+    os.path.join(REPO, "data/historical_atlas_of_chile_curated_v2.csv"),
+    os.path.join(REPO, "data/historical_atlas_of_chile_research_extract_v2.csv"),
+]
 WINDOW = os.path.join(REPO, "data/window_data.js")
 MANIFEST = os.path.join(REPO, "data/variable_manifest.json")
 CANDIDATES = os.path.join(ROOT, "extraction_output/unexposed_indicator_candidates.csv")
@@ -338,15 +345,13 @@ def gate_g6(d):
 # ---------------------------------------------------------------- G7
 
 def gate_g7(d):
-    if not os.path.exists(DOWNLOAD):
-        report("G7", "download", False, "download CSV not found")
-        return
-    # NOT a variable-count parity test. The download is the full research dataset
-    # and the atlas is a curated view of it; those are legitimately different
-    # products and 6,619 variables shipping in the CSV but not on the site is
-    # correct behaviour, not a defect. What the download must actually satisfy is
-    # the source and scope policy: nothing from an excluded compilation, and
-    # nothing from a fenced file (decision 3, Data Chile complete.xlsx).
+    # NOT a variable-count parity test for the research extract: it is the
+    # full research dataset by design and legitimately ships variables the
+    # curated catalog withholds. (The CURATED file's variable-set parity with
+    # the published catalog is site gate S3's job.) What BOTH downloads must
+    # satisfy is the source and scope policy: nothing from an excluded
+    # compilation, and nothing from a fenced file (decision 3, Data Chile
+    # complete.xlsx).
     #
     # Decision 6 (2026-08-04). This gate used to name ONE fenced file as a regex
     # literal, `Data Chile complete`, while the catalog builder and the download
@@ -358,32 +363,37 @@ def gate_g7(d):
     sys.path.insert(0, os.path.join(ROOT, "scripts"))
     from fenced_sources import entries as fence_entries  # noqa: E402
 
-    dl = pd.read_csv(DOWNLOAD, dtype=str, low_memory=False)
-    src = dl.source_document.astype(str)
-
-    leaks = {}
-    for e in fence_entries():
-        pat = "|".join(e.get("match") or [])
-        if not pat:  # an entry with no pattern fences nothing; say so, don't skip silently
-            leaks[e.get("key", "?")] = -1
+    for path in DOWNLOADS:
+        label = os.path.basename(path)
+        if not os.path.exists(path):
+            report("G7", label, False, "download CSV not found")
             continue
-        n = int(src.str.contains(pat, case=False, na=False, regex=True).sum())
-        if n:
-            leaks[e.get("key", "?")] = n
+        dl = pd.read_csv(path, dtype=str, low_memory=False)
+        src = dl.source_document.astype(str)
 
-    excluded = src.str.contains(
-        r"braun|d[ıi]az.*l[uü]ders|república en cifras", case=False, na=False)
-    n_x = int(excluded.sum())
-    n_f = sum(v for v in leaks.values() if v > 0)
-    ok = not (leaks or n_x)
-    tested = len(fence_entries())
-    detail = (f"{len(dl):,} rows; {n_f:,} from {tested} fenced sources tested by name, "
-              f"{n_x:,} from an excluded compilation")
-    if leaks:
-        detail += " — leaking: " + ", ".join(
-            f"{k} ({'no match pattern' if v < 0 else f'{v:,} rows'})"
-            for k, v in sorted(leaks.items()))
-    report("G7", "download", ok, detail)
+        leaks = {}
+        for e in fence_entries():
+            pat = "|".join(e.get("match") or [])
+            if not pat:  # an entry with no pattern fences nothing; say so, don't skip silently
+                leaks[e.get("key", "?")] = -1
+                continue
+            n = int(src.str.contains(pat, case=False, na=False, regex=True).sum())
+            if n:
+                leaks[e.get("key", "?")] = n
+
+        excluded = src.str.contains(
+            r"braun|d[ıi]az.*l[uü]ders|república en cifras", case=False, na=False)
+        n_x = int(excluded.sum())
+        n_f = sum(v for v in leaks.values() if v > 0)
+        ok = not (leaks or n_x)
+        tested = len(fence_entries())
+        detail = (f"{len(dl):,} rows; {n_f:,} from {tested} fenced sources tested by name, "
+                  f"{n_x:,} from an excluded compilation")
+        if leaks:
+            detail += " — leaking: " + ", ".join(
+                f"{k} ({'no match pattern' if v < 0 else f'{v:,} rows'})"
+                for k, v in sorted(leaks.items()))
+        report("G7", label, ok, detail)
 
 
 def main() -> None:
