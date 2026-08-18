@@ -3679,23 +3679,24 @@ function createControlStrip(host, { onSelect }) {
     _lastSliderVar: null, _explicitYear: false };
 
   function refreshScaleTabs() {
-    // Hide scale tabs when variable is only available at one level
-    if (!state.variable) { tabsEl.style.display = ''; return; }
-    const meta = M.byId(state.variable);
-    if (!meta) { tabsEl.style.display = ''; return; }
-    const available = SCALES.filter(s => meta.scale_availability[s]);
-    if (available.length <= 1) {
-      tabsEl.style.display = 'none';
-    } else {
-      tabsEl.style.display = '';
-      // Disable tabs for unavailable scales
-      tabsEl.querySelectorAll('button').forEach(b => {
-        const avail = meta.scale_availability[b.dataset.scale];
-        b.disabled = !avail;
-        b.style.opacity = avail ? '' : '0.35';
-        b.style.cursor = avail ? '' : 'default';
-      });
-    }
+    // The tablist ALWAYS renders (2026-08-18 second audit, B8/B7, decision
+    // D4). Hiding it for single-scale variables stranded anyone who reached
+    // a port/city/cross-section view through search or a deep link: the only
+    // way back to another scale disappeared. A scale without data for the
+    // current variable renders muted but stays CLICKABLE; clicking it runs
+    // the existing cross-scale cascade in setScale (switch scale, fall back
+    // to the first available indicator there, flash a one-line notice).
+    tabsEl.style.display = '';
+    const meta = state.variable ? M.byId(state.variable) : null;
+    tabsEl.querySelectorAll('button').forEach(b => {
+      const avail = !meta || !!meta.scale_availability[b.dataset.scale];
+      b.disabled = false;
+      b.style.opacity = avail ? '' : '0.4';
+      b.style.cursor = 'pointer';
+      b.title = avail ? '' :
+        `No ${b.dataset.scale} data for ${meta.display_label || meta.label}. ` +
+        `Click to switch scale and pick another indicator.`;
+    });
   }
 
   function refreshPCToggle() {
@@ -4090,21 +4091,32 @@ function createControlStrip(host, { onSelect }) {
       populateCategories();
       populateVariables();
       refreshScaleTabs();
+      refreshPCToggle();
       refreshSlider();
       emit();
     },
-    setSelection({ scale, variable, pillar }) {
+    setSelection({ scale, variable, pillar, year }) {
       const meta = variable ? M.byId(variable) : null;
       if (!meta) return;
       const targetScale = meta.scale_availability.national ? 'national' : (meta.scale_availability.province ? 'province' : 'department');
       state.scale = scale || targetScale;
       state.pillar = pillar || null;
+      // Coverage-aware jump year (second audit, N3): search and browse jumps
+      // can name the year worth landing on (max coverage, or the year where
+      // the searched place has a value) instead of the slider's first-valid
+      // default (wheat used to land on 1965 with 3 of 25 provinces).
+      if (year != null) {
+        state.year = year;
+        state._explicitYear = true;
+        state._lastSliderVar = null;
+      }
       tabsEl.querySelectorAll('button').forEach(b => b.classList.toggle('is-active', b.dataset.scale === state.scale));
       state.category = meta.topic_category || meta.category;
       populateCategories();
       state.variable = meta.id;
       populateVariables();
       refreshScaleTabs();
+      refreshPCToggle();
       refreshSlider();
       emit();
     },
@@ -4461,12 +4473,28 @@ function createChart(host) {
     });
   }
 
+  // Escape / outside-click dismissal, same pattern as the cite popover
+  // (citation.js): the picker used to stay open floating over the Sources
+  // section until the next mount (second audit, N7).
+  function closeComparePanel() {
+    comparePanel.style.display = 'none';
+    document.removeEventListener('keydown', onCompareKeydown, true);
+    document.removeEventListener('click', onCompareOutsideClick, true);
+  }
+  function onCompareKeydown(e) {
+    if (e.key === 'Escape') closeComparePanel();
+  }
+  function onCompareOutsideClick(e) {
+    if (!comparePanel.contains(e.target) && !compareBtn.contains(e.target)) closeComparePanel();
+  }
   function toggleComparePanel() {
     if (comparePanel.style.display === 'none') {
       buildComparePanel();
       comparePanel.style.display = 'block';
+      document.addEventListener('keydown', onCompareKeydown, true);
+      document.addEventListener('click', onCompareOutsideClick, true);
     } else {
-      comparePanel.style.display = 'none';
+      closeComparePanel();
     }
   }
 
@@ -5244,7 +5272,7 @@ function createChart(host) {
         if (!cid || seen.has(cid) || !M.byId(cid)) return false;
         seen.add(cid); return true;
       }).slice(0, MAX_COMPARE - 1);
-      comparePanel.style.display = 'none';
+      closeComparePanel();
       state.defaultLog = M.isLogByDefault(id, scale);
       state.scaleType = state.defaultLog ? 'log' : 'linear';
       if (state.defaultLog) { optLog.classList.add('is-active'); optLin.classList.remove('is-active'); }
@@ -7481,19 +7509,44 @@ function renderSearch(container, { onSelectVariable, onSelectGeography, typeFilt
       }
     }).join('');
 
+    const clearSearch = () => { resultsEl.innerHTML = ''; input.value = ''; };
     resultsEl.querySelectorAll('.sr-row[data-var]').forEach(btn => {
-      btn.addEventListener('click', () => onSelectVariable(btn.dataset.var));
+      btn.addEventListener('click', () => { clearSearch(); onSelectVariable(btn.dataset.var); });
     });
     resultsEl.querySelectorAll('.sr-row[data-geo-code]').forEach(btn => {
-      btn.addEventListener('click', () => onSelectGeography && onSelectGeography({
-        code: btn.dataset.geoCode, scale: btn.dataset.geoScale, name: btn.dataset.geoName,
-      }));
+      btn.addEventListener('click', () => {
+        const geo = { code: btn.dataset.geoCode, scale: btn.dataset.geoScale, name: btn.dataset.geoName };
+        clearSearch();
+        onSelectGeography && onSelectGeography(geo);
+      });
+    });
+    // Family and category rows rendered but were never wired (second audit,
+    // N7): a click did nothing. Resolve each to its first published variable.
+    resultsEl.querySelectorAll('.sr-row[data-family]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const first = varsForFamily(btn.dataset.family)[0];
+        if (first) { clearSearch(); onSelectVariable(first.id); }
+      });
+    });
+    resultsEl.querySelectorAll('.sr-row[data-cat]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const first = M.listByTopic(btn.dataset.cat)[0];
+        if (first) { clearSearch(); onSelectVariable(first.id); }
+      });
     });
   }
 
   input.addEventListener('input', () => {
     clearTimeout(timeout);
     timeout = setTimeout(doSearch, 200);
+  });
+  // Escape and outside clicks dismiss stale results (they used to persist as
+  // a floating overlay after navigating away; second audit, N7).
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { resultsEl.innerHTML = ''; input.value = ''; }
+  });
+  document.addEventListener('click', e => {
+    if (!container.contains(e.target)) resultsEl.innerHTML = '';
   });
 }
 
@@ -8204,10 +8257,44 @@ async function _atlasInit() {
       if (!variable) return;
       const meta = M.byId(variable);
       const scale = ['national','department','province','commune','port','city'].find(s => meta.scale_availability[s]) || 'national';
-      strip.setSelection({ scale, variable });
+      strip.setSelection({ scale, variable, year: bestYearFor(variable, scale) ?? undefined });
       document.getElementById('control-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
     },
   });
+
+
+// Coverage-aware jump years (second audit, N3). A search or browse jump used
+// to land on the slider's first-valid-year default, which for fragmentary
+// series is the emptiest cross-section (wheat: 1965, 3 of 25 provinces).
+const SCALE_BLOCKS = { department: 'department_data', province: 'province_data',
+                       commune: 'commune_data', port: 'port_data', city: 'city_data' };
+
+function bestYearFor(variable, scale) {
+  const block = window._data && window._data[SCALE_BLOCKS[scale]];
+  if (!block || !block.data) return null;
+  let best = null, bestN = 0;
+  for (const [y, units] of Object.entries(block.data)) {
+    let n = 0;
+    for (const cells of Object.values(units)) if (cells[variable] != null) n++;
+    if (n > bestN || (n === bestN && n > 0 && Number(y) > best)) { best = Number(y); bestN = n; }
+  }
+  return bestN > 0 ? best : null;
+}
+
+function bestYearForUnit(variable, scale, code) {
+  const block = window._data && window._data[SCALE_BLOCKS[scale]];
+  if (!block || !block.data || code == null) return null;
+  const key = String(code).toLowerCase();
+  let best = null, bestN = -1;
+  for (const [y, units] of Object.entries(block.data)) {
+    const cells = units[key];
+    if (!cells || cells[variable] == null) continue;
+    let n = 0;
+    for (const c of Object.values(units)) if (c[variable] != null) n++;
+    if (n > bestN) { best = Number(y); bestN = n; }
+  }
+  return best;
+}
 
   // 2026-08-18 site-audit fix (N1): a search hit for a place name has no
   // single associated variable, unlike every other browse-nav result. Land
@@ -8228,7 +8315,8 @@ async function _atlasInit() {
         const curMeta = curVar ? M.byId(curVar) : null;
         const useVar = (curMeta && curMeta.scale_availability[scale]) ? curVar : GEO_FALLBACK_VARIABLE[scale];
         mapView.pinPending(scale, code);
-        strip.setSelection({ scale, variable: useVar });
+        const jumpYear = bestYearForUnit(useVar, scale, code) ?? bestYearFor(useVar, scale);
+        strip.setSelection({ scale, variable: useVar, year: jumpYear ?? undefined });
         document.getElementById('control-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
         return;
       }
@@ -8236,7 +8324,7 @@ async function _atlasInit() {
       const meta = M.byId(variable);
       if (!meta) return;
       const scale = ['national','department','province','commune','port','city'].find(s => meta.scale_availability[s]) || 'national';
-      strip.setSelection({ scale, variable });
+      strip.setSelection({ scale, variable, year: bestYearFor(variable, scale) ?? undefined });
       document.getElementById('control-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
     },
   });

@@ -71,23 +71,24 @@ export function createControlStrip(host, { onSelect }) {
     _lastSliderVar: null, _explicitYear: false };
 
   function refreshScaleTabs() {
-    // Hide scale tabs when variable is only available at one level
-    if (!state.variable) { tabsEl.style.display = ''; return; }
-    const meta = M.byId(state.variable);
-    if (!meta) { tabsEl.style.display = ''; return; }
-    const available = SCALES.filter(s => meta.scale_availability[s]);
-    if (available.length <= 1) {
-      tabsEl.style.display = 'none';
-    } else {
-      tabsEl.style.display = '';
-      // Disable tabs for unavailable scales
-      tabsEl.querySelectorAll('button').forEach(b => {
-        const avail = meta.scale_availability[b.dataset.scale];
-        b.disabled = !avail;
-        b.style.opacity = avail ? '' : '0.35';
-        b.style.cursor = avail ? '' : 'default';
-      });
-    }
+    // The tablist ALWAYS renders (2026-08-18 second audit, B8/B7, decision
+    // D4). Hiding it for single-scale variables stranded anyone who reached
+    // a port/city/cross-section view through search or a deep link: the only
+    // way back to another scale disappeared. A scale without data for the
+    // current variable renders muted but stays CLICKABLE; clicking it runs
+    // the existing cross-scale cascade in setScale (switch scale, fall back
+    // to the first available indicator there, flash a one-line notice).
+    tabsEl.style.display = '';
+    const meta = state.variable ? M.byId(state.variable) : null;
+    tabsEl.querySelectorAll('button').forEach(b => {
+      const avail = !meta || !!meta.scale_availability[b.dataset.scale];
+      b.disabled = false;
+      b.style.opacity = avail ? '' : '0.4';
+      b.style.cursor = 'pointer';
+      b.title = avail ? '' :
+        `No ${b.dataset.scale} data for ${meta.display_label || meta.label}. ` +
+        `Click to switch scale and pick another indicator.`;
+    });
   }
 
   function refreshPCToggle() {
@@ -482,21 +483,32 @@ export function createControlStrip(host, { onSelect }) {
       populateCategories();
       populateVariables();
       refreshScaleTabs();
+      refreshPCToggle();
       refreshSlider();
       emit();
     },
-    setSelection({ scale, variable, pillar }) {
+    setSelection({ scale, variable, pillar, year }) {
       const meta = variable ? M.byId(variable) : null;
       if (!meta) return;
       const targetScale = meta.scale_availability.national ? 'national' : (meta.scale_availability.province ? 'province' : 'department');
       state.scale = scale || targetScale;
       state.pillar = pillar || null;
+      // Coverage-aware jump year (second audit, N3): search and browse jumps
+      // can name the year worth landing on (max coverage, or the year where
+      // the searched place has a value) instead of the slider's first-valid
+      // default (wheat used to land on 1965 with 3 of 25 provinces).
+      if (year != null) {
+        state.year = year;
+        state._explicitYear = true;
+        state._lastSliderVar = null;
+      }
       tabsEl.querySelectorAll('button').forEach(b => b.classList.toggle('is-active', b.dataset.scale === state.scale));
       state.category = meta.topic_category || meta.category;
       populateCategories();
       state.variable = meta.id;
       populateVariables();
       refreshScaleTabs();
+      refreshPCToggle();
       refreshSlider();
       emit();
     },

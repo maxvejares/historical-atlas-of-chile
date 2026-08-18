@@ -341,12 +341,28 @@ export function createChart(host) {
     });
   }
 
+  // Escape / outside-click dismissal, same pattern as the cite popover
+  // (citation.js): the picker used to stay open floating over the Sources
+  // section until the next mount (second audit, N7).
+  function closeComparePanel() {
+    comparePanel.style.display = 'none';
+    document.removeEventListener('keydown', onCompareKeydown, true);
+    document.removeEventListener('click', onCompareOutsideClick, true);
+  }
+  function onCompareKeydown(e) {
+    if (e.key === 'Escape') closeComparePanel();
+  }
+  function onCompareOutsideClick(e) {
+    if (!comparePanel.contains(e.target) && !compareBtn.contains(e.target)) closeComparePanel();
+  }
   function toggleComparePanel() {
     if (comparePanel.style.display === 'none') {
       buildComparePanel();
       comparePanel.style.display = 'block';
+      document.addEventListener('keydown', onCompareKeydown, true);
+      document.addEventListener('click', onCompareOutsideClick, true);
     } else {
-      comparePanel.style.display = 'none';
+      closeComparePanel();
     }
   }
 
@@ -1124,7 +1140,7 @@ export function createChart(host) {
         if (!cid || seen.has(cid) || !M.byId(cid)) return false;
         seen.add(cid); return true;
       }).slice(0, MAX_COMPARE - 1);
-      comparePanel.style.display = 'none';
+      closeComparePanel();
       state.defaultLog = M.isLogByDefault(id, scale);
       state.scaleType = state.defaultLog ? 'log' : 'linear';
       if (state.defaultLog) { optLog.classList.add('is-active'); optLin.classList.remove('is-active'); }

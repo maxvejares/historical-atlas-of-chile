@@ -188,10 +188,44 @@ async function _atlasInit() {
       if (!variable) return;
       const meta = M.byId(variable);
       const scale = ['national','department','province','commune','port','city'].find(s => meta.scale_availability[s]) || 'national';
-      strip.setSelection({ scale, variable });
+      strip.setSelection({ scale, variable, year: bestYearFor(variable, scale) ?? undefined });
       document.getElementById('control-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
     },
   });
+
+
+// Coverage-aware jump years (second audit, N3). A search or browse jump used
+// to land on the slider's first-valid-year default, which for fragmentary
+// series is the emptiest cross-section (wheat: 1965, 3 of 25 provinces).
+const SCALE_BLOCKS = { department: 'department_data', province: 'province_data',
+                       commune: 'commune_data', port: 'port_data', city: 'city_data' };
+
+function bestYearFor(variable, scale) {
+  const block = window._data && window._data[SCALE_BLOCKS[scale]];
+  if (!block || !block.data) return null;
+  let best = null, bestN = 0;
+  for (const [y, units] of Object.entries(block.data)) {
+    let n = 0;
+    for (const cells of Object.values(units)) if (cells[variable] != null) n++;
+    if (n > bestN || (n === bestN && n > 0 && Number(y) > best)) { best = Number(y); bestN = n; }
+  }
+  return bestN > 0 ? best : null;
+}
+
+function bestYearForUnit(variable, scale, code) {
+  const block = window._data && window._data[SCALE_BLOCKS[scale]];
+  if (!block || !block.data || code == null) return null;
+  const key = String(code).toLowerCase();
+  let best = null, bestN = -1;
+  for (const [y, units] of Object.entries(block.data)) {
+    const cells = units[key];
+    if (!cells || cells[variable] == null) continue;
+    let n = 0;
+    for (const c of Object.values(units)) if (c[variable] != null) n++;
+    if (n > bestN) { best = Number(y); bestN = n; }
+  }
+  return best;
+}
 
   // 2026-08-18 site-audit fix (N1): a search hit for a place name has no
   // single associated variable, unlike every other browse-nav result. Land
@@ -212,7 +246,8 @@ async function _atlasInit() {
         const curMeta = curVar ? M.byId(curVar) : null;
         const useVar = (curMeta && curMeta.scale_availability[scale]) ? curVar : GEO_FALLBACK_VARIABLE[scale];
         mapView.pinPending(scale, code);
-        strip.setSelection({ scale, variable: useVar });
+        const jumpYear = bestYearForUnit(useVar, scale, code) ?? bestYearFor(useVar, scale);
+        strip.setSelection({ scale, variable: useVar, year: jumpYear ?? undefined });
         document.getElementById('control-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
         return;
       }
@@ -220,7 +255,7 @@ async function _atlasInit() {
       const meta = M.byId(variable);
       if (!meta) return;
       const scale = ['national','department','province','commune','port','city'].find(s => meta.scale_availability[s]) || 'national';
-      strip.setSelection({ scale, variable });
+      strip.setSelection({ scale, variable, year: bestYearFor(variable, scale) ?? undefined });
       document.getElementById('control-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
     },
   });

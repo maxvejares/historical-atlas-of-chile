@@ -560,19 +560,44 @@ function renderSearch(container, { onSelectVariable, onSelectGeography, typeFilt
       }
     }).join('');
 
+    const clearSearch = () => { resultsEl.innerHTML = ''; input.value = ''; };
     resultsEl.querySelectorAll('.sr-row[data-var]').forEach(btn => {
-      btn.addEventListener('click', () => onSelectVariable(btn.dataset.var));
+      btn.addEventListener('click', () => { clearSearch(); onSelectVariable(btn.dataset.var); });
     });
     resultsEl.querySelectorAll('.sr-row[data-geo-code]').forEach(btn => {
-      btn.addEventListener('click', () => onSelectGeography && onSelectGeography({
-        code: btn.dataset.geoCode, scale: btn.dataset.geoScale, name: btn.dataset.geoName,
-      }));
+      btn.addEventListener('click', () => {
+        const geo = { code: btn.dataset.geoCode, scale: btn.dataset.geoScale, name: btn.dataset.geoName };
+        clearSearch();
+        onSelectGeography && onSelectGeography(geo);
+      });
+    });
+    // Family and category rows rendered but were never wired (second audit,
+    // N7): a click did nothing. Resolve each to its first published variable.
+    resultsEl.querySelectorAll('.sr-row[data-family]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const first = varsForFamily(btn.dataset.family)[0];
+        if (first) { clearSearch(); onSelectVariable(first.id); }
+      });
+    });
+    resultsEl.querySelectorAll('.sr-row[data-cat]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const first = M.listByTopic(btn.dataset.cat)[0];
+        if (first) { clearSearch(); onSelectVariable(first.id); }
+      });
     });
   }
 
   input.addEventListener('input', () => {
     clearTimeout(timeout);
     timeout = setTimeout(doSearch, 200);
+  });
+  // Escape and outside clicks dismiss stale results (they used to persist as
+  // a floating overlay after navigating away; second audit, N7).
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { resultsEl.innerHTML = ''; input.value = ''; }
+  });
+  document.addEventListener('click', e => {
+    if (!container.contains(e.target)) resultsEl.innerHTML = '';
   });
 }
 
