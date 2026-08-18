@@ -350,8 +350,10 @@ export function createChart(host) {
     }
   }
 
-  function writeCSV(rows, name) {
-    const csv = rows.map(r => r.map(c => `"${String(c).replace(/"/g, '""')}"`).join(',')).join('\n');
+  function writeCSV(rows, name, headerComments = []) {
+    const head = headerComments.map(c => `# ${c}`).join('\n');
+    const csv = (head ? head + '\n' : '') +
+      rows.map(r => r.map(c => `"${String(c).replace(/"/g, '""')}"`).join(',')).join('\n');
     const blob = new Blob([csv], { type: 'text/csv' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -449,14 +451,22 @@ export function createChart(host) {
     if (!state.id) return;
     const series = activeSeries();
     if (!series.length) return;
-    // Single variable: the long-format export, unchanged.
+    // Single variable: the long-format export. The old export stamped the
+    // indicator-level source_type onto every row, which read as per-year
+    // provenance and mislabeled interpolated years of stitched series as
+    // "census" (2026-08-18 second audit, B5/D7). Provenance now travels as
+    // canonical citation header comments instead of a fake per-row column.
     if (series.length === 1) {
       const meta = series[0].meta;
       const valueHead = meta.display_label || meta.label || meta.id;
       const unit = meta.display_unit || '';
-      const rows = [['year', valueHead, 'unit', 'scale', 'source_type']];
-      for (const [y, v] of series[0].pairs) rows.push([y, v, unit, state.scale, meta.source_type]);
-      writeCSV(rows, `${meta.id}_${state.scale}.csv`);
+      const comments = [
+        `${valueHead} · ${state.scale} · exported ${new Date().toISOString().slice(0, 10)} from the Historical Atlas of Chile`,
+        ...M.sourceCitations(meta).map(c => `Source: ${c}`),
+      ];
+      const rows = [['year', valueHead, 'unit', 'scale']];
+      for (const [y, v] of series[0].pairs) rows.push([y, v, unit, state.scale]);
+      writeCSV(rows, `${meta.id}_${state.scale}.csv`, comments);
       return;
     }
     // Comparison set: a wide table, one column per selected variable. UX2 B.3:

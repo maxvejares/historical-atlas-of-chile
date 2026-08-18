@@ -1,18 +1,18 @@
 {
  "generated": "2026-08-18",
- "n_documents": 148,
+ "n_documents": 138,
  "groups": [
   {
    "id": "Primary Chilean government publications",
    "group_id": "primary_government",
-   "n_documents": 117,
-   "n_rows": 109144
+   "n_documents": 108,
+   "n_rows": 109428
   },
   {
    "id": "Compiled academic statistics",
    "group_id": "compiled_academic",
-   "n_documents": 10,
-   "n_rows": 10987
+   "n_documents": 9,
+   "n_rows": 11596
   },
   {
    "id": "Specialized institutional sources",
@@ -65,7 +65,7 @@
    "n_variables": 74
   },
   {
-   "document": "Humud - Politica economica en Chile 1830-1930",
+   "document": "Humud, Carlos. 1969. La Política Económica de Chile entre 1830 y 1930. Universidad de Chile.",
    "group": "Compiled academic statistics",
    "n_tables": 4,
    "n_rows": 688,
@@ -82,41 +82,41 @@
    "n_variables": 10
   },
   {
-   "document": "Mamalakis 1980 Historical Statistics Vol 2",
+   "document": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 1.1 (DEC/INE/ODEPLAN source). Westport, CT: Greenwood Press.",
    "group": "Compiled academic statistics",
-   "n_tables": 3,
-   "n_rows": 409,
+   "n_tables": 0,
+   "n_rows": 96,
    "year_range": [
     1835,
-    1990
+    1975
    ],
    "geo_levels": [
     "national"
    ],
    "raw_keys": [
-    "Mamalakis 1980 Historical Statistics Vol 2"
-   ],
-   "n_variables": 7
-  },
-  {
-   "document": "Mamalakis 1980 Vol 2 Ch 16 Regional Distribution",
-   "group": "Compiled academic statistics",
-   "n_tables": 1,
-   "n_rows": 250,
-   "year_range": [
-    1885,
-    1975
-   ],
-   "geo_levels": [
-    "province"
-   ],
-   "raw_keys": [
-    "Mamalakis 1980 Vol 2 Ch 16 Regional Distribution"
+    "Mamalakis Vol 2, Table 1.1 (DEC/INE/ODEPLAN)"
    ],
    "n_variables": 1
   },
   {
-   "document": "Mamalakis 1980 Vol 2 Migration",
+   "document": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 1.2 (INE source). Westport, CT: Greenwood Press.",
+   "group": "Compiled academic statistics",
+   "n_tables": 0,
+   "n_rows": 14,
+   "year_range": [
+    1835,
+    1970
+   ],
+   "geo_levels": [
+    "national"
+   ],
+   "raw_keys": [
+    "Mamalakis Vol 2, Table 1.2 (INE)"
+   ],
+   "n_variables": 1
+  },
+  {
+   "document": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, migration tables. Westport, CT: Greenwood Press.",
    "group": "Compiled academic statistics",
    "n_tables": 2,
    "n_rows": 171,
@@ -134,44 +134,30 @@
    "n_variables": 2
   },
   {
-   "document": "Mamalakis Vol 2, Table 1.1 (DEC/INE/ODEPLAN)",
+   "document": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, regional distribution tables. Westport, CT: Greenwood Press.",
    "group": "Compiled academic statistics",
-   "n_tables": 0,
-   "n_rows": 96,
+   "n_tables": 3,
+   "n_rows": 859,
    "year_range": [
     1835,
     1975
    ],
    "geo_levels": [
-    "national"
+    "macro_region",
+    "national",
+    "province"
    ],
    "raw_keys": [
-    "Mamalakis Vol 2, Table 1.1 (DEC/INE/ODEPLAN)"
-   ],
-   "n_variables": 1
-  },
-  {
-   "document": "Mamalakis Vol 2, Table 1.2 (INE)",
-   "group": "Compiled academic statistics",
-   "n_tables": 0,
-   "n_rows": 14,
-   "year_range": [
-    1835,
-    1970
-   ],
-   "geo_levels": [
-    "national"
-   ],
-   "raw_keys": [
-    "Mamalakis Vol 2, Table 1.2 (INE)"
+    "Mamalakis 1980 Vol 2 Ch 16 Regional Distribution",
+    "Mamalakis 1980 Vol 2 Regional Distribution"
    ],
    "n_variables": 1
   },
   {
    "document": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press.",
    "group": "Compiled academic statistics",
-   "n_tables": 21,
-   "n_rows": 4382,
+   "n_tables": 24,
+   "n_rows": 4791,
    "year_range": [
     1835,
     2000
@@ -184,12 +170,13 @@
    "raw_keys": [
     "Datos Mamalakis",
     "Datos Mamalakis 1",
+    "Mamalakis 1980 Historical Statistics Vol 2",
     "Mamalakis, Markos. 1980. Historical Statistics of Chile, Vol. 2"
    ],
-   "n_variables": 58
+   "n_variables": 65
   },
   {
-   "document": "Molina 1898. Bosquejo de la Hacienda Pública de Chile 1830-1897",
+   "document": "Molina, Evaristo. 1898. Bosquejo de la Hacienda Pública de Chile desde la Independencia hasta 1897. Santiago: Imprenta Nacional.",
    "group": "Compiled academic statistics",
    "n_tables": 0,
    "n_rows": 360,
@@ -206,7 +193,7 @@
    "n_variables": 9
   },
   {
-   "document": "SNA 1874",
+   "document": "Sociedad Nacional de Agricultura. 1874. Boletín de la Sociedad Nacional de Agricultura, Vol. VI. Santiago.",
    "group": "Specialized institutional sources",
    "n_tables": 0,
    "n_rows": 81,
@@ -235,147 +222,19 @@
    "n_variables": 2
   },
   {
-   "document": "Anuario Estadistico - Chile 1917 Vol III",
-   "group": "Primary Chilean government publications",
-   "n_tables": 6,
-   "n_rows": 315,
-   "year_range": [
-    1893,
-    1918
-   ],
-   "geo_levels": [
-    "national",
-    "province"
-   ],
-   "raw_keys": [
-    "Anuario Estadistico - Chile 1917 Vol III"
-   ],
-   "n_variables": 5
-  },
-  {
-   "document": "Anuario Estadistico Chile 1917 Vol III",
+   "document": "Dirección General de Estadística. 1918. Anuario Estadístico de la República de Chile, año 1917, enfranchisement section. Santiago.",
    "group": "Primary Chilean government publications",
    "n_tables": 0,
-   "n_rows": 95,
-   "year_range": [
-    1917,
-    1917
-   ],
-   "geo_levels": [
-    "department"
-   ],
+   "n_rows": 0,
+   "year_range": null,
+   "geo_levels": [],
    "raw_keys": [
-    "Anuario Estadistico Chile 1917 Vol III"
+    "Anuario Estadístico de Chile, 1917 (enfranchisement)"
    ],
    "n_variables": 1
   },
   {
-   "document": "Anuario Estadistico Vol III Politica y Administracion 1918",
-   "group": "Primary Chilean government publications",
-   "n_tables": 0,
-   "n_rows": 127,
-   "year_range": [
-    1918,
-    1918
-   ],
-   "geo_levels": [
-    "department"
-   ],
-   "raw_keys": [
-    "Anuario Estadistico Vol III Politica y Administracion 1918"
-   ],
-   "n_variables": 1
-  },
-  {
-   "document": "Anuario Estadistico Vol III Politica y Administracion 1921",
-   "group": "Primary Chilean government publications",
-   "n_tables": 0,
-   "n_rows": 127,
-   "year_range": [
-    1921,
-    1921
-   ],
-   "geo_levels": [
-    "department"
-   ],
-   "raw_keys": [
-    "Anuario Estadistico Vol III Politica y Administracion 1921"
-   ],
-   "n_variables": 1
-  },
-  {
-   "document": "Anuario Estadistico de Chile 1928 (Yumpu 56511060)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 3,
-   "n_rows": 456,
-   "year_range": [
-    1928,
-    1928
-   ],
-   "geo_levels": [
-    "department",
-    "national",
-    "province"
-   ],
-   "raw_keys": [
-    "Anuario Estadistico de Chile 1928 (Yumpu 56511060)"
-   ],
-   "n_variables": 2
-  },
-  {
-   "document": "Anuario Estadistico de Chile 1936 (Yumpu 56511081)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 6,
-   "n_rows": 695,
-   "year_range": [
-    1936,
-    1936
-   ],
-   "geo_levels": [
-    "department",
-    "province"
-   ],
-   "raw_keys": [
-    "Anuario Estadistico de Chile 1936 (Yumpu 56511081)"
-   ],
-   "n_variables": 5
-  },
-  {
-   "document": "Anuario Estadistico de la Republica de Chile 1879-1880 (Yumpu 56511022)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 2,
-   "n_rows": 1652,
-   "year_range": [
-    1879,
-    1880
-   ],
-   "geo_levels": [
-    "department"
-   ],
-   "raw_keys": [
-    "Anuario Estadistico de la Republica de Chile 1879-1880 (Yumpu 56511022)"
-   ],
-   "n_variables": 15
-  },
-  {
-   "document": "Anuario Estadistico de la Republica de Chile 1890-1891-1892 (Yumpu 56511021)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 3,
-   "n_rows": 1252,
-   "year_range": [
-    1890,
-    1892
-   ],
-   "geo_levels": [
-    "department"
-   ],
-   "raw_keys": [
-    "Anuario Estadistico de la Republica de Chile 1890-1891-1892 (Yumpu 56511021)"
-   ],
-   "n_variables": 15
-  },
-  {
-   "document": "Anuario Estadistico de la Republica de Chile 1925 (Yumpu 56511059)",
+   "document": "Dirección General de Estadística. 1926. Anuario Estadístico de Chile, año 1925. Santiago.",
    "group": "Primary Chilean government publications",
    "n_tables": 7,
    "n_rows": 2044,
@@ -394,137 +253,7 @@
    "n_variables": 5
   },
   {
-   "document": "Anuario Estadistico de la Republica de Chile 1926 (Yumpu 56511049)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 4,
-   "n_rows": 633,
-   "year_range": [
-    1850,
-    1926
-   ],
-   "geo_levels": [
-    "department",
-    "national",
-    "province"
-   ],
-   "raw_keys": [
-    "Anuario Estadistico de la Republica de Chile 1926 (Yumpu 56511049)"
-   ],
-   "n_variables": 2
-  },
-  {
-   "document": "Anuario Estadistico de la Republica de Chile 1931-1935 (Yumpu 56511070)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 6,
-   "n_rows": 1008,
-   "year_range": [
-    1900,
-    1935
-   ],
-   "geo_levels": [
-    "department",
-    "national",
-    "province"
-   ],
-   "raw_keys": [
-    "Anuario Estadistico de la Republica de Chile 1931-1935 (Yumpu 56511070)"
-   ],
-   "n_variables": 5
-  },
-  {
-   "document": "Anuario Estadistico de la Republica de Chile 1945 (Yumpu 56511087)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 2,
-   "n_rows": 577,
-   "year_range": [
-    1941,
-    1945
-   ],
-   "geo_levels": [
-    "department",
-    "national",
-    "province"
-   ],
-   "raw_keys": [
-    "Anuario Estadistico de la Republica de Chile 1945 (Yumpu 56511087)"
-   ],
-   "n_variables": 4
-  },
-  {
-   "document": "Anuario Estadistico de la Republica de Chile 1948 (Yumpu 56511094)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 2,
-   "n_rows": 575,
-   "year_range": [
-    1946,
-    1948
-   ],
-   "geo_levels": [
-    "department",
-    "national",
-    "province"
-   ],
-   "raw_keys": [
-    "Anuario Estadistico de la Republica de Chile 1948 (Yumpu 56511094)"
-   ],
-   "n_variables": 4
-  },
-  {
-   "document": "Anuario Estadistico de la Republica de Chile, Ano 1913, Vol. V Instruccion",
-   "group": "Primary Chilean government publications",
-   "n_tables": 1,
-   "n_rows": 172,
-   "year_range": [
-    1913,
-    1913
-   ],
-   "geo_levels": [
-    "national",
-    "province"
-   ],
-   "raw_keys": [
-    "Anuario Estadistico de la Republica de Chile, Ano 1913, Vol. V Instruccion"
-   ],
-   "n_variables": 7
-  },
-  {
-   "document": "Anuario Estadistico de la Republica de Chile, Ano 1914, Vol. V Instruccion",
-   "group": "Primary Chilean government publications",
-   "n_tables": 1,
-   "n_rows": 175,
-   "year_range": [
-    1914,
-    1914
-   ],
-   "geo_levels": [
-    "national",
-    "province"
-   ],
-   "raw_keys": [
-    "Anuario Estadistico de la Republica de Chile, Ano 1914, Vol. V Instruccion"
-   ],
-   "n_variables": 7
-  },
-  {
-   "document": "Anuario Estadistico de la Republica de Chile, Ano 1914, Vol. VII Mineria y Metalurgia",
-   "group": "Primary Chilean government publications",
-   "n_tables": 2,
-   "n_rows": 38,
-   "year_range": [
-    1914,
-    1914
-   ],
-   "geo_levels": [
-    "national",
-    "province"
-   ],
-   "raw_keys": [
-    "Anuario Estadistico de la Republica de Chile, Ano 1914, Vol. VII Mineria y Metalurgia"
-   ],
-   "n_variables": 1
-  },
-  {
-   "document": "Anuario Estadistico de la Republica de Chile, Ano 1926, Vol. I Demografia (Direccion General de Estadistica)",
+   "document": "Dirección General de Estadística. 1927. Anuario Estadístico de Chile, año 1926, Vol. I: Demografía. Santiago.",
    "group": "Primary Chilean government publications",
    "n_tables": 7,
    "n_rows": 435,
@@ -543,32 +272,13 @@
    "n_variables": 1
   },
   {
-   "document": "Anuario Estadistico de la Republica de Chile, Ano 1928 (Direccion General de Estadistica)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 3,
-   "n_rows": 196,
-   "year_range": [
-    1928,
-    1928
-   ],
-   "geo_levels": [
-    "department",
-    "national",
-    "province"
-   ],
-   "raw_keys": [
-    "Anuario Estadistico de la Republica de Chile, Ano 1928 (Direccion General de Estadistica)"
-   ],
-   "n_variables": 6
-  },
-  {
-   "document": "Anuario Estadistico de la Republica de Chile, entrega 1876-1877 (Yumpu 56511011)",
+   "document": "Dirección General de Estadística. 1927. Anuario Estadístico de Chile, año 1926. Santiago.",
    "group": "Primary Chilean government publications",
    "n_tables": 4,
-   "n_rows": 1605,
+   "n_rows": 633,
    "year_range": [
-    1876,
-    1876
+    1850,
+    1926
    ],
    "geo_levels": [
     "department",
@@ -576,339 +286,9 @@
     "province"
    ],
    "raw_keys": [
-    "Anuario Estadistico de la Republica de Chile, entrega 1876-1877 (Yumpu 56511011)"
-   ],
-   "n_variables": 24
-  },
-  {
-   "document": "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511013)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 4,
-   "n_rows": 1618,
-   "year_range": [
-    1877,
-    1877
-   ],
-   "geo_levels": [
-    "department",
-    "national",
-    "province"
-   ],
-   "raw_keys": [
-    "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511013)"
-   ],
-   "n_variables": 24
-  },
-  {
-   "document": "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511018)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 1,
-   "n_rows": 786,
-   "year_range": [
-    1878,
-    1878
-   ],
-   "geo_levels": [
-    "department"
-   ],
-   "raw_keys": [
-    "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511018)"
-   ],
-   "n_variables": 15
-  },
-  {
-   "document": "Anuario Estadistico de la Republica de Chile, entrega 1878-1879 (Yumpu 56511018)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 3,
-   "n_rows": 840,
-   "year_range": [
-    1878,
-    1878
-   ],
-   "geo_levels": [
-    "department",
-    "national",
-    "province"
-   ],
-   "raw_keys": [
-    "Anuario Estadistico de la Republica de Chile, entrega 1878-1879 (Yumpu 56511018)"
-   ],
-   "n_variables": 9
-  },
-  {
-   "document": "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 4,
-   "n_rows": 1672,
-   "year_range": [
-    1879,
-    1880
-   ],
-   "geo_levels": [
-    "department",
-    "national",
-    "province"
-   ],
-   "raw_keys": [
-    "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)"
-   ],
-   "n_variables": 9
-  },
-  {
-   "document": "Anuario Estadístico 1935",
-   "group": "Primary Chilean government publications",
-   "n_tables": 0,
-   "n_rows": 7,
-   "year_range": [
-    1935,
-    1935
-   ],
-   "geo_levels": [
-    "province"
-   ],
-   "raw_keys": [
-    "Anuario Estadístico 1935"
-   ],
-   "n_variables": 1
-  },
-  {
-   "document": "Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 9,
-   "n_rows": 2005,
-   "year_range": [
-    1865,
-    1952
-   ],
-   "geo_levels": [
-    "national",
-    "province"
-   ],
-   "raw_keys": [
-    "Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos)"
-   ],
-   "n_variables": 50
-  },
-  {
-   "document": "Censo 1970 CIREN folleto CAUTIN (Características Básicas de la Población)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 1,
-   "n_rows": 80,
-   "year_range": [
-    1970,
-    1970
-   ],
-   "geo_levels": [
-    "commune"
-   ],
-   "raw_keys": [
-    "Censo 1970 CIREN folleto CAUTIN (Características Básicas de la Población)"
+    "Anuario Estadistico de la Republica de Chile 1926 (Yumpu 56511049)"
    ],
    "n_variables": 2
-  },
-  {
-   "document": "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 1,
-   "n_rows": 135,
-   "year_range": [
-    1970,
-    1970
-   ],
-   "geo_levels": [
-    "commune"
-   ],
-   "raw_keys": [
-    "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)"
-   ],
-   "n_variables": 6
-  },
-  {
-   "document": "Censo 1970 CIREN folleto CURICO (Características Básicas de la Población)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 1,
-   "n_rows": 63,
-   "year_range": [
-    1970,
-    1970
-   ],
-   "geo_levels": [
-    "commune"
-   ],
-   "raw_keys": [
-    "Censo 1970 CIREN folleto CURICO (Características Básicas de la Población)"
-   ],
-   "n_variables": 4
-  },
-  {
-   "document": "Censo 1970 CIREN folleto OHIGGINS (Características Básicas de la Población)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 1,
-   "n_rows": 85,
-   "year_range": [
-    1970,
-    1970
-   ],
-   "geo_levels": [
-    "commune"
-   ],
-   "raw_keys": [
-    "Censo 1970 CIREN folleto OHIGGINS (Características Básicas de la Población)"
-   ],
-   "n_variables": 2
-  },
-  {
-   "document": "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 1,
-   "n_rows": 188,
-   "year_range": [
-    1970,
-    1970
-   ],
-   "geo_levels": [
-    "commune"
-   ],
-   "raw_keys": [
-    "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)"
-   ],
-   "n_variables": 4
-  },
-  {
-   "document": "Censo 1970 CIREN folleto TALCA (Características Básicas de la Población)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 1,
-   "n_rows": 81,
-   "year_range": [
-    1970,
-    1970
-   ],
-   "geo_levels": [
-    "commune"
-   ],
-   "raw_keys": [
-    "Censo 1970 CIREN folleto TALCA (Características Básicas de la Población)"
-   ],
-   "n_variables": 4
-  },
-  {
-   "document": "Censo 1970 CIREN folleto VALPARAISO (Características Básicas de la Población)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 1,
-   "n_rows": 90,
-   "year_range": [
-    1970,
-    1970
-   ],
-   "geo_levels": [
-    "commune"
-   ],
-   "raw_keys": [
-    "Censo 1970 CIREN folleto VALPARAISO (Características Básicas de la Población)"
-   ],
-   "n_variables": 2
-  },
-  {
-   "document": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 1,
-   "n_rows": 6030,
-   "year_range": [
-    1992,
-    1992
-   ],
-   "geo_levels": [
-    "commune"
-   ],
-   "raw_keys": [
-    "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
-   ],
-   "n_variables": 18
-  },
-  {
-   "document": "Censo 1992 (INE, born-digital volumen)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 1,
-   "n_rows": 987,
-   "year_range": [
-    1992,
-    1992
-   ],
-   "geo_levels": [
-    "commune"
-   ],
-   "raw_keys": [
-    "Censo 1992 (INE, born-digital volumen)"
-   ],
-   "n_variables": 2
-  },
-  {
-   "document": "Censo Jeneral de la Poblacion de Chile 1875 (Quinto Censo, Oficina Central de Estadistica, 1876)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 2,
-   "n_rows": 279,
-   "year_range": [
-    1875,
-    1875
-   ],
-   "geo_levels": [
-    "department"
-   ],
-   "raw_keys": [
-    "Censo Jeneral de la Poblacion de Chile 1875 (Quinto Censo, Oficina Central de Estadistica, 1876)"
-   ],
-   "n_variables": 3
-  },
-  {
-   "document": "Censo de la Republica de Chile levantado el 28 de Noviembre de 1907 (Comision Central del Censo, 1908)",
-   "group": "Primary Chilean government publications",
-   "n_tables": 2,
-   "n_rows": 39189,
-   "year_range": [
-    1854,
-    1907
-   ],
-   "geo_levels": [
-    "department",
-    "province"
-   ],
-   "raw_keys": [
-    "Censo de la Republica de Chile levantado el 28 de Noviembre de 1907 (Comision Central del Censo, 1908)"
-   ],
-   "n_variables": 52
-  },
-  {
-   "document": "Census - Chile 1930 VERIFIED",
-   "group": "Primary Chilean government publications",
-   "n_tables": 2,
-   "n_rows": 338,
-   "year_range": [
-    1875,
-    1930
-   ],
-   "geo_levels": [
-    "city",
-    "department",
-    "province",
-    "province_or_dept",
-    "territory"
-   ],
-   "raw_keys": [
-    "Census - Chile 1930 VERIFIED"
-   ],
-   "n_variables": 2
-  },
-  {
-   "document": "Dirección General de Estadística. 1918. Anuario Estadístico de la República de Chile, año 1917, enfranchisement section. Santiago.",
-   "group": "Primary Chilean government publications",
-   "n_tables": 0,
-   "n_rows": 0,
-   "year_range": null,
-   "geo_levels": [],
-   "raw_keys": [
-    "Anuario Estadístico de Chile, 1917 (enfranchisement)"
-   ],
-   "n_variables": 1
   },
   {
    "document": "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 27. Santiago.",
@@ -1008,16 +388,46 @@
    "n_variables": 57
   },
   {
+   "document": "Dirección General de Estadística. 1929. Anuario Estadístico de Chile, año 1928. Santiago.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 6,
+   "n_rows": 652,
+   "year_range": [
+    1928,
+    1928
+   ],
+   "geo_levels": [
+    "department",
+    "national",
+    "province"
+   ],
+   "raw_keys": [
+    "Anuario Estadistico de Chile 1928 (Yumpu 56511060)",
+    "Anuario Estadistico de la Republica de Chile, Ano 1928 (Direccion General de Estadistica)"
+   ],
+   "n_variables": 8
+  },
+  {
    "document": "Dirección General de Estadística. 1931. X Censo de Población de la República de Chile, 27 de noviembre de 1930. Santiago.",
    "group": "Primary Chilean government publications",
-   "n_tables": 0,
-   "n_rows": 0,
-   "year_range": null,
-   "geo_levels": [],
-   "raw_keys": [
-    "Censo de la República de Chile, 1930"
+   "n_tables": 2,
+   "n_rows": 338,
+   "year_range": [
+    1875,
+    1930
    ],
-   "n_variables": 3
+   "geo_levels": [
+    "city",
+    "department",
+    "province",
+    "province_or_dept",
+    "territory"
+   ],
+   "raw_keys": [
+    "Censo de la República de Chile, 1930",
+    "Census - Chile 1930 VERIFIED"
+   ],
+   "n_variables": 5
   },
   {
    "document": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, Tabla 36. Santiago.",
@@ -1177,7 +587,7 @@
    "document": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935. Santiago.",
    "group": "Primary Chilean government publications",
    "n_tables": 2,
-   "n_rows": 258,
+   "n_rows": 265,
    "year_range": [
     1933,
     1935
@@ -1188,24 +598,88 @@
    ],
    "raw_keys": [
     "Anuario Estadistico - Chile 1935.pdf",
+    "Anuario Estadístico 1935",
     "Anuario Estadístico de Chile, 1935"
    ],
-   "n_variables": 11
+   "n_variables": 12
   },
   {
-   "document": "Dirección del Rejistro Electoral. 1915. Censo Electoral de la República de Chile, 1915. Santiago.",
+   "document": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, años 1931–1935. Santiago.",
    "group": "Primary Chilean government publications",
-   "n_tables": 0,
-   "n_rows": 0,
-   "year_range": null,
-   "geo_levels": [],
-   "raw_keys": [
-    "Censo Electoral de la República de Chile, 1915"
+   "n_tables": 6,
+   "n_rows": 1008,
+   "year_range": [
+    1900,
+    1935
    ],
-   "n_variables": 3
+   "geo_levels": [
+    "department",
+    "national",
+    "province"
+   ],
+   "raw_keys": [
+    "Anuario Estadistico de la Republica de Chile 1931-1935 (Yumpu 56511070)"
+   ],
+   "n_variables": 5
   },
   {
-   "document": "Estadistica Anual de la Republica de Chile 1926/1927 (Direccion General de Estadistica)",
+   "document": "Dirección General de Estadística. 1937. Anuario Estadístico de Chile, año 1936. Santiago.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 6,
+   "n_rows": 695,
+   "year_range": [
+    1936,
+    1936
+   ],
+   "geo_levels": [
+    "department",
+    "province"
+   ],
+   "raw_keys": [
+    "Anuario Estadistico de Chile 1936 (Yumpu 56511081)"
+   ],
+   "n_variables": 5
+  },
+  {
+   "document": "Dirección General de Estadística. 1946. Anuario Estadístico de Chile, año 1945. Santiago.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 2,
+   "n_rows": 577,
+   "year_range": [
+    1941,
+    1945
+   ],
+   "geo_levels": [
+    "department",
+    "national",
+    "province"
+   ],
+   "raw_keys": [
+    "Anuario Estadistico de la Republica de Chile 1945 (Yumpu 56511087)"
+   ],
+   "n_variables": 4
+  },
+  {
+   "document": "Dirección General de Estadística. 1949. Anuario Estadístico de Chile, año 1948. Santiago.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 2,
+   "n_rows": 575,
+   "year_range": [
+    1946,
+    1948
+   ],
+   "geo_levels": [
+    "department",
+    "national",
+    "province"
+   ],
+   "raw_keys": [
+    "Anuario Estadistico de la Republica de Chile 1948 (Yumpu 56511094)"
+   ],
+   "n_variables": 4
+  },
+  {
+   "document": "Dirección General de Estadística. ca. 1928. Estadística Anual de la República de Chile, años 1926–1927. Santiago.",
    "group": "Primary Chilean government publications",
    "n_tables": 1,
    "n_rows": 38,
@@ -1223,7 +697,172 @@
    "n_variables": 2
   },
   {
-   "document": "Mamalakis Vol 2, Table 10.1 (Census 1952, corrected)",
+   "document": "Dirección del Rejistro Electoral. 1915. Censo Electoral de la República de Chile, 1915. Santiago.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 0,
+   "n_rows": 0,
+   "year_range": null,
+   "geo_levels": [],
+   "raw_keys": [
+    "Censo Electoral de la República de Chile, 1915"
+   ],
+   "n_variables": 3
+  },
+  {
+   "document": "Instituto Nacional de Estadísticas. 1993. Censo de Población y Vivienda 1992: Resultados Generales. Santiago: INE.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 1,
+   "n_rows": 987,
+   "year_range": [
+    1992,
+    1992
+   ],
+   "geo_levels": [
+    "commune"
+   ],
+   "raw_keys": [
+    "Censo 1992 (INE, born-digital volumen)"
+   ],
+   "n_variables": 2
+  },
+  {
+   "document": "Instituto Nacional de Estadísticas. 1995. Censo de Población y Vivienda 1992: Ciudades, Pueblos y Aldeas. Santiago: INE.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 1,
+   "n_rows": 6030,
+   "year_range": [
+    1992,
+    1992
+   ],
+   "geo_levels": [
+    "commune"
+   ],
+   "raw_keys": [
+    "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)"
+   ],
+   "n_variables": 18
+  },
+  {
+   "document": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Cautín. Santiago: INE.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 1,
+   "n_rows": 80,
+   "year_range": [
+    1970,
+    1970
+   ],
+   "geo_levels": [
+    "commune"
+   ],
+   "raw_keys": [
+    "Censo 1970 CIREN folleto CAUTIN (Características Básicas de la Población)"
+   ],
+   "n_variables": 2
+  },
+  {
+   "document": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Colchagua. Santiago: INE.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 1,
+   "n_rows": 135,
+   "year_range": [
+    1970,
+    1970
+   ],
+   "geo_levels": [
+    "commune"
+   ],
+   "raw_keys": [
+    "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)"
+   ],
+   "n_variables": 6
+  },
+  {
+   "document": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Curicó. Santiago: INE.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 1,
+   "n_rows": 63,
+   "year_range": [
+    1970,
+    1970
+   ],
+   "geo_levels": [
+    "commune"
+   ],
+   "raw_keys": [
+    "Censo 1970 CIREN folleto CURICO (Características Básicas de la Población)"
+   ],
+   "n_variables": 4
+  },
+  {
+   "document": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto O'Higgins. Santiago: INE.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 1,
+   "n_rows": 85,
+   "year_range": [
+    1970,
+    1970
+   ],
+   "geo_levels": [
+    "commune"
+   ],
+   "raw_keys": [
+    "Censo 1970 CIREN folleto OHIGGINS (Características Básicas de la Población)"
+   ],
+   "n_variables": 2
+  },
+  {
+   "document": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Santiago. Santiago: INE.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 1,
+   "n_rows": 188,
+   "year_range": [
+    1970,
+    1970
+   ],
+   "geo_levels": [
+    "commune"
+   ],
+   "raw_keys": [
+    "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)"
+   ],
+   "n_variables": 4
+  },
+  {
+   "document": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Talca. Santiago: INE.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 1,
+   "n_rows": 81,
+   "year_range": [
+    1970,
+    1970
+   ],
+   "geo_levels": [
+    "commune"
+   ],
+   "raw_keys": [
+    "Censo 1970 CIREN folleto TALCA (Características Básicas de la Población)"
+   ],
+   "n_variables": 4
+  },
+  {
+   "document": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Valparaíso. Santiago: INE.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 1,
+   "n_rows": 90,
+   "year_range": [
+    1970,
+    1970
+   ],
+   "geo_levels": [
+    "commune"
+   ],
+   "raw_keys": [
+    "Censo 1970 CIREN folleto VALPARAISO (Características Básicas de la Población)"
+   ],
+   "n_variables": 2
+  },
+  {
+   "document": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 10.1 (1952 census, corrected). Westport, CT: Greenwood Press.",
    "group": "Primary Chilean government publications",
    "n_tables": 0,
    "n_rows": 81,
@@ -1239,302 +878,6 @@
     "Mamalakis Vol 2, Table 10.1 (Census 1952, corrected)"
    ],
    "n_variables": 3
-  },
-  {
-   "document": "Memoria Interior",
-   "group": "Primary Chilean government publications",
-   "n_tables": 0,
-   "n_rows": 69,
-   "year_range": [
-    1867,
-    1876
-   ],
-   "geo_levels": [
-    "department"
-   ],
-   "raw_keys": [
-    "Memoria Interior"
-   ],
-   "n_variables": 1
-  },
-  {
-   "document": "Memoria de Hacienda - Chile 1857",
-   "group": "Primary Chilean government publications",
-   "n_tables": 1,
-   "n_rows": 26,
-   "year_range": [
-    1855,
-    1856
-   ],
-   "geo_levels": [
-    "national"
-   ],
-   "raw_keys": [
-    "Memoria de Hacienda - Chile 1857"
-   ],
-   "n_variables": 8
-  },
-  {
-   "document": "Memoria de Hacienda - Chile 1858",
-   "group": "Primary Chilean government publications",
-   "n_tables": 2,
-   "n_rows": 303,
-   "year_range": [
-    1856,
-    1858
-   ],
-   "geo_levels": [
-    "department",
-    "national"
-   ],
-   "raw_keys": [
-    "Memoria de Hacienda - Chile 1858"
-   ],
-   "n_variables": 15
-  },
-  {
-   "document": "Memoria de Hacienda - Chile 1860",
-   "group": "Primary Chilean government publications",
-   "n_tables": 3,
-   "n_rows": 59,
-   "year_range": [
-    1858,
-    1860
-   ],
-   "geo_levels": [
-    "national",
-    "port"
-   ],
-   "raw_keys": [
-    "Memoria de Hacienda - Chile 1860"
-   ],
-   "n_variables": 9
-  },
-  {
-   "document": "Memoria de Hacienda - Chile 1861",
-   "group": "Primary Chilean government publications",
-   "n_tables": 3,
-   "n_rows": 56,
-   "year_range": [
-    1831,
-    1860
-   ],
-   "geo_levels": [
-    "national",
-    "port"
-   ],
-   "raw_keys": [
-    "Memoria de Hacienda - Chile 1861"
-   ],
-   "n_variables": 1
-  },
-  {
-   "document": "Memoria de Hacienda - Chile 1876",
-   "group": "Primary Chilean government publications",
-   "n_tables": 3,
-   "n_rows": 104,
-   "year_range": [
-    1874,
-    1876
-   ],
-   "geo_levels": [
-    "port"
-   ],
-   "raw_keys": [
-    "Memoria de Hacienda - Chile 1876"
-   ],
-   "n_variables": 4
-  },
-  {
-   "document": "Memoria de Hacienda - Chile 1882",
-   "group": "Primary Chilean government publications",
-   "n_tables": 3,
-   "n_rows": 170,
-   "year_range": [
-    1879,
-    1881
-   ],
-   "geo_levels": [
-    "national",
-    "port"
-   ],
-   "raw_keys": [
-    "Memoria de Hacienda - Chile 1882"
-   ],
-   "n_variables": 5
-  },
-  {
-   "document": "Memoria de Hacienda - Chile 1883",
-   "group": "Primary Chilean government publications",
-   "n_tables": 3,
-   "n_rows": 92,
-   "year_range": [
-    1881,
-    1882
-   ],
-   "geo_levels": [
-    "national"
-   ],
-   "raw_keys": [
-    "Memoria de Hacienda - Chile 1883"
-   ],
-   "n_variables": 1
-  },
-  {
-   "document": "Memoria de Hacienda - Chile 1885",
-   "group": "Primary Chilean government publications",
-   "n_tables": 4,
-   "n_rows": 166,
-   "year_range": [
-    1883,
-    1884
-   ],
-   "geo_levels": [
-    "national",
-    "port"
-   ],
-   "raw_keys": [
-    "Memoria de Hacienda - Chile 1885"
-   ],
-   "n_variables": 3
-  },
-  {
-   "document": "Memoria de Hacienda - Chile 1888",
-   "group": "Primary Chilean government publications",
-   "n_tables": 6,
-   "n_rows": 258,
-   "year_range": [
-    1831,
-    1887
-   ],
-   "geo_levels": [
-    "national",
-    "port"
-   ],
-   "raw_keys": [
-    "Memoria de Hacienda - Chile 1888"
-   ],
-   "n_variables": 9
-  },
-  {
-   "document": "Memoria de Hacienda - Chile 1889",
-   "group": "Primary Chilean government publications",
-   "n_tables": 2,
-   "n_rows": 123,
-   "year_range": [
-    1882,
-    1888
-   ],
-   "geo_levels": [
-    "national",
-    "port"
-   ],
-   "raw_keys": [
-    "Memoria de Hacienda - Chile 1889"
-   ],
-   "n_variables": 8
-  },
-  {
-   "document": "Memoria de Hacienda - Chile 1890",
-   "group": "Primary Chilean government publications",
-   "n_tables": 3,
-   "n_rows": 96,
-   "year_range": [
-    1888,
-    1889
-   ],
-   "geo_levels": [
-    "national",
-    "port"
-   ],
-   "raw_keys": [
-    "Memoria de Hacienda - Chile 1890"
-   ],
-   "n_variables": 6
-  },
-  {
-   "document": "Memoria del Interior 1893 Tomo I",
-   "group": "Primary Chilean government publications",
-   "n_tables": 6,
-   "n_rows": 1118,
-   "year_range": [
-    1892,
-    1893
-   ],
-   "geo_levels": [
-    "city",
-    "commune",
-    "department",
-    "establishment",
-    "national"
-   ],
-   "raw_keys": [
-    "Memoria del Interior 1893 Tomo I"
-   ],
-   "n_variables": 11
-  },
-  {
-   "document": "Memoria del Interior 1893 Tomo III",
-   "group": "Primary Chilean government publications",
-   "n_tables": 33,
-   "n_rows": 219,
-   "year_range": [
-    1892,
-    1892
-   ],
-   "geo_levels": [
-    "department",
-    "province"
-   ],
-   "raw_keys": [
-    "Memoria del Interior 1893 Tomo III"
-   ],
-   "n_variables": 9
-  },
-  {
-   "document": "Memoria del Interior 1895",
-   "group": "Primary Chilean government publications",
-   "n_tables": 4,
-   "n_rows": 807,
-   "year_range": [
-    1894,
-    1895
-   ],
-   "geo_levels": [
-    "city",
-    "commune",
-    "department",
-    "establishment",
-    "national"
-   ],
-   "raw_keys": [
-    "Memoria del Interior 1895"
-   ],
-   "n_variables": 12
-  },
-  {
-   "document": "Memoria del Ministerio de Hacienda 1861, 1870, 1876, 1880, and 1889 (cuadros comparativos de las entradas ordinarias), and Oficina Central de Estadistica, Anuario Estadistico de la Republica de Chile 1860 (entradas fiscales por ramos, 1846-1852). Santiago: Imprenta Nacional. Per-ramo levels transcribed and reconciled to each cuadro's printed total.",
-   "group": "Primary Chilean government publications",
-   "n_tables": 0,
-   "n_rows": 0,
-   "year_range": null,
-   "geo_levels": [],
-   "raw_keys": [
-    "Memoria del Ministerio de Hacienda 1861, 1870, 1876, 1880, and 1889 (cuadros comparativos de las entradas ordinarias), and Oficina Central de Estadistica, Anuario Estadistico de la Republica de Chile 1860 (entradas fiscales por ramos, 1846-1852). Santiago: Imprenta Nacional. Per-ramo levels transcribed and reconciled to each cuadro's printed total."
-   ],
-   "n_variables": 9
-  },
-  {
-   "document": "Memoria del Ministerio del Interior, 1870",
-   "group": "Primary Chilean government publications",
-   "n_tables": 0,
-   "n_rows": 0,
-   "year_range": null,
-   "geo_levels": [],
-   "raw_keys": [
-    "Memoria del Ministerio del Interior, 1870"
-   ],
-   "n_variables": 8
   },
   {
    "document": "Ministerio de Hacienda. 1857. Memoria de Hacienda presentada al Congreso Nacional, año 1856. Santiago.",
@@ -1554,6 +897,89 @@
     "Memoria de Hacienda - Chile 1856"
    ],
    "n_variables": 13
+  },
+  {
+   "document": "Ministerio de Hacienda. 1858. Memoria de Hacienda presentada al Congreso Nacional, año 1857. Santiago.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 1,
+   "n_rows": 26,
+   "year_range": [
+    1855,
+    1856
+   ],
+   "geo_levels": [
+    "national"
+   ],
+   "raw_keys": [
+    "Memoria de Hacienda - Chile 1857"
+   ],
+   "n_variables": 8
+  },
+  {
+   "document": "Ministerio de Hacienda. 1859. Memoria de Hacienda presentada al Congreso Nacional, año 1858. Santiago.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 2,
+   "n_rows": 303,
+   "year_range": [
+    1856,
+    1858
+   ],
+   "geo_levels": [
+    "department",
+    "national"
+   ],
+   "raw_keys": [
+    "Memoria de Hacienda - Chile 1858"
+   ],
+   "n_variables": 15
+  },
+  {
+   "document": "Ministerio de Hacienda. 1861. Memoria de Hacienda presentada al Congreso Nacional, año 1860. Santiago.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 3,
+   "n_rows": 59,
+   "year_range": [
+    1858,
+    1860
+   ],
+   "geo_levels": [
+    "national",
+    "port"
+   ],
+   "raw_keys": [
+    "Memoria de Hacienda - Chile 1860"
+   ],
+   "n_variables": 9
+  },
+  {
+   "document": "Ministerio de Hacienda. 1861–1889. Memorias de Hacienda (cuadros comparativos de las entradas ordinarias), and Oficina Central de Estadística, Anuario Estadístico de la República de Chile, año 1860 (entradas fiscales por ramos, 1846–1852). Santiago: Imprenta Nacional.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 0,
+   "n_rows": 0,
+   "year_range": null,
+   "geo_levels": [],
+   "raw_keys": [
+    "Memoria del Ministerio de Hacienda 1861, 1870, 1876, 1880, and 1889 (cuadros comparativos de las entradas ordinarias), and Oficina Central de Estadistica, Anuario Estadistico de la Republica de Chile 1860 (entradas fiscales por ramos, 1846-1852). Santiago: Imprenta Nacional. Per-ramo levels transcribed and reconciled to each cuadro's printed total."
+   ],
+   "n_variables": 9
+  },
+  {
+   "document": "Ministerio de Hacienda. 1862. Memoria de Hacienda presentada al Congreso Nacional, año 1861. Santiago.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 3,
+   "n_rows": 56,
+   "year_range": [
+    1831,
+    1860
+   ],
+   "geo_levels": [
+    "national",
+    "port"
+   ],
+   "raw_keys": [
+    "Memoria de Hacienda - Chile 1861"
+   ],
+   "n_variables": 1
   },
   {
    "document": "Ministerio de Hacienda. 1875. Catastro de Avalúos de la República de Chile, 1874. Santiago.",
@@ -1578,6 +1004,130 @@
     "Rol de Avalúos de la República de Chile, 1874 (departmental)"
    ],
    "n_variables": 4
+  },
+  {
+   "document": "Ministerio de Hacienda. 1877. Memoria de Hacienda presentada al Congreso Nacional, año 1876. Santiago.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 3,
+   "n_rows": 104,
+   "year_range": [
+    1874,
+    1876
+   ],
+   "geo_levels": [
+    "port"
+   ],
+   "raw_keys": [
+    "Memoria de Hacienda - Chile 1876"
+   ],
+   "n_variables": 4
+  },
+  {
+   "document": "Ministerio de Hacienda. 1883. Memoria de Hacienda presentada al Congreso Nacional, año 1882. Santiago.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 3,
+   "n_rows": 170,
+   "year_range": [
+    1879,
+    1881
+   ],
+   "geo_levels": [
+    "national",
+    "port"
+   ],
+   "raw_keys": [
+    "Memoria de Hacienda - Chile 1882"
+   ],
+   "n_variables": 5
+  },
+  {
+   "document": "Ministerio de Hacienda. 1884. Memoria de Hacienda presentada al Congreso Nacional, año 1883. Santiago.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 3,
+   "n_rows": 92,
+   "year_range": [
+    1881,
+    1882
+   ],
+   "geo_levels": [
+    "national"
+   ],
+   "raw_keys": [
+    "Memoria de Hacienda - Chile 1883"
+   ],
+   "n_variables": 1
+  },
+  {
+   "document": "Ministerio de Hacienda. 1886. Memoria de Hacienda presentada al Congreso Nacional, año 1885. Santiago.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 4,
+   "n_rows": 166,
+   "year_range": [
+    1883,
+    1884
+   ],
+   "geo_levels": [
+    "national",
+    "port"
+   ],
+   "raw_keys": [
+    "Memoria de Hacienda - Chile 1885"
+   ],
+   "n_variables": 3
+  },
+  {
+   "document": "Ministerio de Hacienda. 1889. Memoria de Hacienda presentada al Congreso Nacional, año 1888. Santiago.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 6,
+   "n_rows": 258,
+   "year_range": [
+    1831,
+    1887
+   ],
+   "geo_levels": [
+    "national",
+    "port"
+   ],
+   "raw_keys": [
+    "Memoria de Hacienda - Chile 1888"
+   ],
+   "n_variables": 9
+  },
+  {
+   "document": "Ministerio de Hacienda. 1890. Memoria de Hacienda presentada al Congreso Nacional, año 1889. Santiago.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 2,
+   "n_rows": 123,
+   "year_range": [
+    1882,
+    1888
+   ],
+   "geo_levels": [
+    "national",
+    "port"
+   ],
+   "raw_keys": [
+    "Memoria de Hacienda - Chile 1889"
+   ],
+   "n_variables": 8
+  },
+  {
+   "document": "Ministerio de Hacienda. 1891. Memoria de Hacienda presentada al Congreso Nacional, año 1890. Santiago.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 3,
+   "n_rows": 96,
+   "year_range": [
+    1888,
+    1889
+   ],
+   "geo_levels": [
+    "national",
+    "port"
+   ],
+   "raw_keys": [
+    "Memoria de Hacienda - Chile 1890"
+   ],
+   "n_variables": 6
   },
   {
    "document": "Ministerio del Interior. 1844. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1844. Santiago: Imprenta del Estado.",
@@ -1612,6 +1162,18 @@
     "Memoria del Interior 1862"
    ],
    "n_variables": 11
+  },
+  {
+   "document": "Ministerio del Interior. 1870. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1870. Santiago: Imprenta Nacional.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 0,
+   "n_rows": 0,
+   "year_range": null,
+   "geo_levels": [],
+   "raw_keys": [
+    "Memoria del Ministerio del Interior, 1870"
+   ],
+   "n_variables": 8
   },
   {
    "document": "Ministerio del Interior. 1875. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1875. Santiago: Imprenta Nacional.",
@@ -1738,16 +1300,62 @@
    "n_variables": 15
   },
   {
-   "document": "Ministerio del Interior. 1891. Memoria del Ministerio del Interior, año 1890, Tomo II. Santiago.",
+   "document": "Ministerio del Interior. 1891. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1890, Tomo II. Santiago.",
    "group": "Primary Chilean government publications",
-   "n_tables": 0,
-   "n_rows": 0,
-   "year_range": null,
-   "geo_levels": [],
+   "n_tables": 4,
+   "n_rows": 232,
+   "year_range": [
+    1889,
+    1889
+   ],
+   "geo_levels": [
+    "department",
+    "province"
+   ],
    "raw_keys": [
+    "Memoria del Interior 1890 Tomo II",
     "Ministerio del Interior. 1891. Memoria del Ministerio del Interior, año 1890, Tomo II. Santiago."
    ],
    "n_variables": 1
+  },
+  {
+   "document": "Ministerio del Interior. 1893. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1893, Tomo I. Santiago.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 6,
+   "n_rows": 1118,
+   "year_range": [
+    1892,
+    1893
+   ],
+   "geo_levels": [
+    "city",
+    "commune",
+    "department",
+    "establishment",
+    "national"
+   ],
+   "raw_keys": [
+    "Memoria del Interior 1893 Tomo I"
+   ],
+   "n_variables": 11
+  },
+  {
+   "document": "Ministerio del Interior. 1893. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1893, Tomo III. Santiago.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 33,
+   "n_rows": 219,
+   "year_range": [
+    1892,
+    1892
+   ],
+   "geo_levels": [
+    "department",
+    "province"
+   ],
+   "raw_keys": [
+    "Memoria del Interior 1893 Tomo III"
+   ],
+   "n_variables": 9
   },
   {
    "document": "Ministerio del Interior. 1893. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1892, Tomo II. Santiago.",
@@ -1768,6 +1376,44 @@
     "Memoria del Interior 1892 Tomo II"
    ],
    "n_variables": 12
+  },
+  {
+   "document": "Ministerio del Interior. 1895. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1895. Santiago.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 4,
+   "n_rows": 807,
+   "year_range": [
+    1894,
+    1895
+   ],
+   "geo_levels": [
+    "city",
+    "commune",
+    "department",
+    "establishment",
+    "national"
+   ],
+   "raw_keys": [
+    "Memoria del Interior 1895"
+   ],
+   "n_variables": 12
+  },
+  {
+   "document": "Ministerio del Interior. Multiple years. Memoria del Ministerio del Interior presentada al Congreso Nacional. Santiago.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 0,
+   "n_rows": 69,
+   "year_range": [
+    1867,
+    1876
+   ],
+   "geo_levels": [
+    "department"
+   ],
+   "raw_keys": [
+    "Memoria Interior"
+   ],
+   "n_variables": 1
   },
   {
    "document": "Oficina Central de Estadística. 1860–1872. Anuario Estadístico de la República de Chile, Tomos I–XIII. Santiago: Imprenta Nacional. (2012 reissue: Instituto Nacional de Estadísticas.)",
@@ -1824,11 +1470,18 @@
    "document": "Oficina Central de Estadística. 1866. Censo Jeneral de la República de Chile, 19 de abril de 1865, Cuadro Sinóptico. Santiago: Imprenta Nacional.",
    "group": "Primary Chilean government publications",
    "n_tables": 0,
-   "n_rows": 0,
-   "year_range": null,
-   "geo_levels": [],
+   "n_rows": 52,
+   "year_range": [
+    1835,
+    1865
+   ],
+   "geo_levels": [
+    "national",
+    "province"
+   ],
    "raw_keys": [
-    "Censo Jeneral de la República de Chile, 1865 — Cuadro Sinóptico"
+    "Censo Jeneral de la República de Chile, 1865 — Cuadro Sinóptico",
+    "Censo Jeneral de la República de Chile, 1865, Cuadro Sinóptico"
    ],
    "n_variables": 1
   },
@@ -1892,8 +1545,8 @@
   {
    "document": "Oficina Central de Estadística. 1876. Quinto Censo Jeneral de la Población de Chile, 1875. Santiago: Imprenta Nacional.",
    "group": "Primary Chilean government publications",
-   "n_tables": 42,
-   "n_rows": 13713,
+   "n_tables": 44,
+   "n_rows": 13992,
    "year_range": [
     1865,
     1875
@@ -1906,9 +1559,10 @@
    "raw_keys": [
     "Censo Jeneral 1875",
     "Censo Jeneral 1875 (MC0043456)",
+    "Censo Jeneral de la Poblacion de Chile 1875 (Quinto Censo, Oficina Central de Estadistica, 1876)",
     "Census - Chile 1875"
    ],
-   "n_variables": 231
+   "n_variables": 234
   },
   {
    "document": "Oficina Central de Estadística. 1882. Anuario Estadístico de la República de Chile, año 1881, enfranchisement section. Santiago: Imprenta Nacional.",
@@ -1961,35 +1615,44 @@
   {
    "document": "Oficina Central de Estadística. 1900. Sinopsis Estadística de la República de Chile, año 1900. Santiago: Imprenta Nacional.",
    "group": "Primary Chilean government publications",
-   "n_tables": 6,
-   "n_rows": 882,
+   "n_tables": 13,
+   "n_rows": 1308,
    "year_range": [
-    1895,
+    1842,
     1900
    ],
    "geo_levels": [
     "establishment",
     "macro_region",
     "national",
+    "port",
     "province"
    ],
    "raw_keys": [
+    "Sinopsis Estadistica - Chile 1900",
     "Sinopsis Estadistica - Chile 1900.pdf",
     "Sinopsis Estadística de Chile, 1900"
    ],
-   "n_variables": 10
+   "n_variables": 24
   },
   {
    "document": "Oficina Central de Estadística. 1908. Censo de la República de Chile levantado el 28 de Noviembre de 1907. Santiago: Sociedad Imprenta y Litografía Universo.",
    "group": "Primary Chilean government publications",
-   "n_tables": 0,
-   "n_rows": 0,
-   "year_range": null,
-   "geo_levels": [],
+   "n_tables": 2,
+   "n_rows": 39189,
+   "year_range": [
+    1854,
+    1907
+   ],
+   "geo_levels": [
+    "department",
+    "province"
+   ],
    "raw_keys": [
+    "Censo de la Republica de Chile levantado el 28 de Noviembre de 1907 (Comision Central del Censo, 1908)",
     "Censo de la República de Chile, 1907"
    ],
-   "n_variables": 22
+   "n_variables": 74
   },
   {
    "document": "Oficina Central de Estadística. 1910. Anuario Estadístico de la República de Chile, año 1909. Santiago: Sociedad Imprenta y Litografía Universo.",
@@ -2013,6 +1676,97 @@
    "n_variables": 21
   },
   {
+   "document": "Oficina Central de Estadística. 1914. Anuario Estadístico de la República de Chile, año 1913, Vol. V: Instrucción. Santiago: Imprenta Nacional.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 1,
+   "n_rows": 172,
+   "year_range": [
+    1913,
+    1913
+   ],
+   "geo_levels": [
+    "national",
+    "province"
+   ],
+   "raw_keys": [
+    "Anuario Estadistico de la Republica de Chile, Ano 1913, Vol. V Instruccion"
+   ],
+   "n_variables": 7
+  },
+  {
+   "document": "Oficina Central de Estadística. 1915. Anuario Estadístico de la República de Chile, año 1914, Vol. V: Instrucción. Santiago: Imprenta Nacional.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 1,
+   "n_rows": 175,
+   "year_range": [
+    1914,
+    1914
+   ],
+   "geo_levels": [
+    "national",
+    "province"
+   ],
+   "raw_keys": [
+    "Anuario Estadistico de la Republica de Chile, Ano 1914, Vol. V Instruccion"
+   ],
+   "n_variables": 7
+  },
+  {
+   "document": "Oficina Central de Estadística. 1915. Anuario Estadístico de la República de Chile, año 1914, Vol. VII: Minería y Metalurgia. Santiago: Imprenta Nacional.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 2,
+   "n_rows": 38,
+   "year_range": [
+    1914,
+    1914
+   ],
+   "geo_levels": [
+    "national",
+    "province"
+   ],
+   "raw_keys": [
+    "Anuario Estadistico de la Republica de Chile, Ano 1914, Vol. VII Mineria y Metalurgia"
+   ],
+   "n_variables": 1
+  },
+  {
+   "document": "Oficina Central de Estadística. 1918. Anuario Estadístico de la República de Chile, año 1917, Vol. III. Santiago: Imprenta Nacional.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 6,
+   "n_rows": 410,
+   "year_range": [
+    1893,
+    1918
+   ],
+   "geo_levels": [
+    "department",
+    "national",
+    "province"
+   ],
+   "raw_keys": [
+    "Anuario Estadistico - Chile 1917 Vol III",
+    "Anuario Estadistico Chile 1917 Vol III"
+   ],
+   "n_variables": 6
+  },
+  {
+   "document": "Oficina Central de Estadística. 1919. Anuario Estadístico de la República de Chile, año 1918, Vol. III: Política y Administración. Santiago: Imprenta Nacional.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 0,
+   "n_rows": 127,
+   "year_range": [
+    1918,
+    1918
+   ],
+   "geo_levels": [
+    "department"
+   ],
+   "raw_keys": [
+    "Anuario Estadistico Vol III Politica y Administracion 1918"
+   ],
+   "n_variables": 1
+  },
+  {
    "document": "Oficina Central de Estadística. 1921. Anuario Estadístico de la República de Chile, año 1920. Santiago.",
    "group": "Primary Chilean government publications",
    "n_tables": 0,
@@ -2023,6 +1777,23 @@
     "Anuario Estadístico de Chile, 1920"
    ],
    "n_variables": 3
+  },
+  {
+   "document": "Oficina Central de Estadística. 1922. Anuario Estadístico de la República de Chile, año 1921, Vol. III: Política y Administración. Santiago: Imprenta Nacional.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 0,
+   "n_rows": 127,
+   "year_range": [
+    1921,
+    1921
+   ],
+   "geo_levels": [
+    "department"
+   ],
+   "raw_keys": [
+    "Anuario Estadistico Vol III Politica y Administracion 1921"
+   ],
+   "n_variables": 1
   },
   {
    "document": "Oficina Central de Estadística. 1925. X Censo de la Población de la República de Chile, 15 de diciembre de 1920, public employees by theme. Santiago.",
@@ -2099,6 +1870,84 @@
    "n_variables": 26
   },
   {
+   "document": "Oficina Central de Estadística. ca. 1878. Anuario Estadístico de la República de Chile, entrega correspondiente a 1876–1877. Santiago: Imprenta Nacional.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 4,
+   "n_rows": 1605,
+   "year_range": [
+    1876,
+    1876
+   ],
+   "geo_levels": [
+    "department",
+    "national",
+    "province"
+   ],
+   "raw_keys": [
+    "Anuario Estadistico de la Republica de Chile, entrega 1876-1877 (Yumpu 56511011)"
+   ],
+   "n_variables": 24
+  },
+  {
+   "document": "Oficina Central de Estadística. ca. 1879. Anuario Estadístico de la República de Chile, entrega correspondiente a 1877–1878. Santiago: Imprenta Nacional.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 5,
+   "n_rows": 2404,
+   "year_range": [
+    1877,
+    1878
+   ],
+   "geo_levels": [
+    "department",
+    "national",
+    "province"
+   ],
+   "raw_keys": [
+    "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511013)",
+    "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511018)"
+   ],
+   "n_variables": 24
+  },
+  {
+   "document": "Oficina Central de Estadística. ca. 1880. Anuario Estadístico de la República de Chile, entrega correspondiente a 1878–1879. Santiago: Imprenta Nacional.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 3,
+   "n_rows": 840,
+   "year_range": [
+    1878,
+    1878
+   ],
+   "geo_levels": [
+    "department",
+    "national",
+    "province"
+   ],
+   "raw_keys": [
+    "Anuario Estadistico de la Republica de Chile, entrega 1878-1879 (Yumpu 56511018)"
+   ],
+   "n_variables": 9
+  },
+  {
+   "document": "Oficina Central de Estadística. ca. 1881. Anuario Estadístico de la República de Chile, entrega correspondiente a 1879–1880. Santiago: Imprenta Nacional.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 6,
+   "n_rows": 3324,
+   "year_range": [
+    1879,
+    1880
+   ],
+   "geo_levels": [
+    "department",
+    "national",
+    "province"
+   ],
+   "raw_keys": [
+    "Anuario Estadistico de la Republica de Chile 1879-1880 (Yumpu 56511022)",
+    "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)"
+   ],
+   "n_variables": 24
+  },
+  {
    "document": "Oficina Central de Estadística. ca. 1885. Anuario Estadístico de la República de Chile, Tomo XXIV. Santiago: Imprenta Nacional.",
    "group": "Primary Chilean government publications",
    "n_tables": 0,
@@ -2109,6 +1958,23 @@
     "Anuario Estadístico, Tomo XXIV"
    ],
    "n_variables": 1
+  },
+  {
+   "document": "Oficina Central de Estadística. ca. 1893. Anuario Estadístico de la República de Chile, años 1890–1892. Santiago: Imprenta Nacional.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 3,
+   "n_rows": 1252,
+   "year_range": [
+    1890,
+    1892
+   ],
+   "geo_levels": [
+    "department"
+   ],
+   "raw_keys": [
+    "Anuario Estadistico de la Republica de Chile 1890-1891-1892 (Yumpu 56511021)"
+   ],
+   "n_variables": 15
   },
   {
    "document": "Servicio Nacional de Estadística y Censos. 1953. XII Censo General de Población y I de Vivienda de la República de Chile, 24 de abril de 1952. Santiago.",
@@ -2130,7 +1996,25 @@
    "n_variables": 2
   },
   {
-   "document": "Servicio de Registro Civil e Identificación and Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario de Demografía, with the Censos de Población de Chile, various years.",
+   "document": "Servicio Nacional de Estadística y Censos. ca. 1956. XII Censo General de Población y I de Vivienda, 24 de abril de 1952, Tomo I: Resumen del País. Santiago.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 9,
+   "n_rows": 2005,
+   "year_range": [
+    1865,
+    1952
+   ],
+   "geo_levels": [
+    "national",
+    "province"
+   ],
+   "raw_keys": [
+    "Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos)"
+   ],
+   "n_variables": 50
+  },
+  {
+   "document": "Servicio de Registro Civil, Dirección General de Estadística, and Instituto Nacional de Estadísticas. Multiple years. Anuarios de Demografía and Censos de Población de Chile. Santiago.",
    "group": "Primary Chilean government publications",
    "n_tables": 0,
    "n_rows": 0,
@@ -2140,25 +2024,6 @@
     "Servicio de Registro Civil e Identificación and Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario de Demografía, with the Censos de Población de Chile, various years."
    ],
    "n_variables": 1
-  },
-  {
-   "document": "Sinopsis Estadistica - Chile 1900",
-   "group": "Primary Chilean government publications",
-   "n_tables": 7,
-   "n_rows": 426,
-   "year_range": [
-    1842,
-    1900
-   ],
-   "geo_levels": [
-    "national",
-    "port",
-    "province"
-   ],
-   "raw_keys": [
-    "Sinopsis Estadistica - Chile 1900"
-   ],
-   "n_variables": 14
   },
   {
    "document": "Bauer, Arnold J. 1975. Chilean Rural Society from the Spanish Conquest to 1930. Cambridge: Cambridge University Press.",
@@ -2197,160 +2062,6 @@
    "n_variables": 1
   },
   {
-   "document": "Lei de Presupuestos 1890, Ministerio del Interior",
-   "group": "Foreign and academic secondary sources",
-   "n_tables": 1,
-   "n_rows": 36,
-   "year_range": [
-    1890,
-    1890
-   ],
-   "geo_levels": [
-    "department"
-   ],
-   "raw_keys": [
-    "Lei de Presupuestos 1890, Ministerio del Interior"
-   ],
-   "n_variables": 3
-  },
-  {
-   "document": "Lei de Presupuestos 1891, Ministerio de Justicia, Culto e Instruccion Publica",
-   "group": "Foreign and academic secondary sources",
-   "n_tables": 1,
-   "n_rows": 12,
-   "year_range": [
-    1891,
-    1891
-   ],
-   "geo_levels": [
-    "city"
-   ],
-   "raw_keys": [
-    "Lei de Presupuestos 1891, Ministerio de Justicia, Culto e Instruccion Publica"
-   ],
-   "n_variables": 3
-  },
-  {
-   "document": "Lei de Presupuestos 1892, Ministerio del Interior",
-   "group": "Foreign and academic secondary sources",
-   "n_tables": 1,
-   "n_rows": 6,
-   "year_range": [
-    1892,
-    1892
-   ],
-   "geo_levels": [
-    "department"
-   ],
-   "raw_keys": [
-    "Lei de Presupuestos 1892, Ministerio del Interior"
-   ],
-   "n_variables": 3
-  },
-  {
-   "document": "Lei de Presupuestos 1893, Ministerio del Interior",
-   "group": "Foreign and academic secondary sources",
-   "n_tables": 1,
-   "n_rows": 21,
-   "year_range": [
-    1893,
-    1893
-   ],
-   "geo_levels": [
-    "department"
-   ],
-   "raw_keys": [
-    "Lei de Presupuestos 1893, Ministerio del Interior"
-   ],
-   "n_variables": 3
-  },
-  {
-   "document": "Lei de Presupuestos 1894, Ministerio de Justicia e Instruccion Publica, Seccion de Justicia",
-   "group": "Foreign and academic secondary sources",
-   "n_tables": 1,
-   "n_rows": 12,
-   "year_range": [
-    1894,
-    1894
-   ],
-   "geo_levels": [
-    "city"
-   ],
-   "raw_keys": [
-    "Lei de Presupuestos 1894, Ministerio de Justicia e Instruccion Publica, Seccion de Justicia"
-   ],
-   "n_variables": 3
-  },
-  {
-   "document": "Lei de Presupuestos 1894, Ministerio del Interior",
-   "group": "Foreign and academic secondary sources",
-   "n_tables": 1,
-   "n_rows": 15,
-   "year_range": [
-    1894,
-    1894
-   ],
-   "geo_levels": [
-    "department",
-    "province"
-   ],
-   "raw_keys": [
-    "Lei de Presupuestos 1894, Ministerio del Interior"
-   ],
-   "n_variables": 3
-  },
-  {
-   "document": "Lei de Presupuestos 1895, Ministerio de Justicia, Culto e Instruccion Publica",
-   "group": "Foreign and academic secondary sources",
-   "n_tables": 1,
-   "n_rows": 3,
-   "year_range": [
-    1895,
-    1895
-   ],
-   "geo_levels": [
-    "city"
-   ],
-   "raw_keys": [
-    "Lei de Presupuestos 1895, Ministerio de Justicia, Culto e Instruccion Publica"
-   ],
-   "n_variables": 3
-  },
-  {
-   "document": "Lei de Presupuestos 1895, Ministerio del Interior",
-   "group": "Foreign and academic secondary sources",
-   "n_tables": 1,
-   "n_rows": 12,
-   "year_range": [
-    1895,
-    1895
-   ],
-   "geo_levels": [
-    "department"
-   ],
-   "raw_keys": [
-    "Lei de Presupuestos 1895, Ministerio del Interior"
-   ],
-   "n_variables": 3
-  },
-  {
-   "document": "Lei de Presupuestos 1896, Ministerio de Justicia, Culto e Instruccion Publica",
-   "group": "Foreign and academic secondary sources",
-   "n_tables": 1,
-   "n_rows": 6,
-   "year_range": [
-    1896,
-    1896
-   ],
-   "geo_levels": [
-    "city"
-   ],
-   "raw_keys": [
-    "Lei de Presupuestos 1896, Ministerio de Justicia, Culto e Instruccion Publica"
-   ],
-   "n_variables": 3
-  },
-  {
    "document": "Ministerio de Hacienda. 1876. Rol de Contribuyentes de la República de Chile, 1875. Santiago.",
    "group": "Foreign and academic secondary sources",
    "n_tables": 0,
@@ -2368,7 +2079,7 @@
    "n_variables": 4
   },
   {
-   "document": "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)",
+   "document": "Oficina de Planificación Agrícola (ODEPA). 1976. Estadísticas Agropecuarias 1965–1974. Santiago: Ministerio de Agricultura.",
    "group": "Foreign and academic secondary sources",
    "n_tables": 35,
    "n_rows": 3802,
@@ -2383,6 +2094,160 @@
     "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)"
    ],
    "n_variables": 64
+  },
+  {
+   "document": "República de Chile. 1890. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1890, Ministerio del Interior. Santiago: Imprenta Nacional.",
+   "group": "Foreign and academic secondary sources",
+   "n_tables": 1,
+   "n_rows": 36,
+   "year_range": [
+    1890,
+    1890
+   ],
+   "geo_levels": [
+    "department"
+   ],
+   "raw_keys": [
+    "Lei de Presupuestos 1890, Ministerio del Interior"
+   ],
+   "n_variables": 3
+  },
+  {
+   "document": "República de Chile. 1891. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1891, Ministerio de Justicia, Culto e Instrucción Pública. Santiago: Imprenta Nacional.",
+   "group": "Foreign and academic secondary sources",
+   "n_tables": 1,
+   "n_rows": 12,
+   "year_range": [
+    1891,
+    1891
+   ],
+   "geo_levels": [
+    "city"
+   ],
+   "raw_keys": [
+    "Lei de Presupuestos 1891, Ministerio de Justicia, Culto e Instruccion Publica"
+   ],
+   "n_variables": 3
+  },
+  {
+   "document": "República de Chile. 1892. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1892, Ministerio del Interior. Santiago: Imprenta Nacional.",
+   "group": "Foreign and academic secondary sources",
+   "n_tables": 1,
+   "n_rows": 6,
+   "year_range": [
+    1892,
+    1892
+   ],
+   "geo_levels": [
+    "department"
+   ],
+   "raw_keys": [
+    "Lei de Presupuestos 1892, Ministerio del Interior"
+   ],
+   "n_variables": 3
+  },
+  {
+   "document": "República de Chile. 1893. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1893, Ministerio del Interior. Santiago: Imprenta Nacional.",
+   "group": "Foreign and academic secondary sources",
+   "n_tables": 1,
+   "n_rows": 21,
+   "year_range": [
+    1893,
+    1893
+   ],
+   "geo_levels": [
+    "department"
+   ],
+   "raw_keys": [
+    "Lei de Presupuestos 1893, Ministerio del Interior"
+   ],
+   "n_variables": 3
+  },
+  {
+   "document": "República de Chile. 1894. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1894, Ministerio de Justicia e Instrucción Pública, Sección de Justicia. Santiago: Imprenta Nacional.",
+   "group": "Foreign and academic secondary sources",
+   "n_tables": 1,
+   "n_rows": 12,
+   "year_range": [
+    1894,
+    1894
+   ],
+   "geo_levels": [
+    "city"
+   ],
+   "raw_keys": [
+    "Lei de Presupuestos 1894, Ministerio de Justicia e Instruccion Publica, Seccion de Justicia"
+   ],
+   "n_variables": 3
+  },
+  {
+   "document": "República de Chile. 1894. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1894, Ministerio del Interior. Santiago: Imprenta Nacional.",
+   "group": "Foreign and academic secondary sources",
+   "n_tables": 1,
+   "n_rows": 15,
+   "year_range": [
+    1894,
+    1894
+   ],
+   "geo_levels": [
+    "department",
+    "province"
+   ],
+   "raw_keys": [
+    "Lei de Presupuestos 1894, Ministerio del Interior"
+   ],
+   "n_variables": 3
+  },
+  {
+   "document": "República de Chile. 1895. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1895, Ministerio de Justicia, Culto e Instrucción Pública. Santiago: Imprenta Nacional.",
+   "group": "Foreign and academic secondary sources",
+   "n_tables": 1,
+   "n_rows": 3,
+   "year_range": [
+    1895,
+    1895
+   ],
+   "geo_levels": [
+    "city"
+   ],
+   "raw_keys": [
+    "Lei de Presupuestos 1895, Ministerio de Justicia, Culto e Instruccion Publica"
+   ],
+   "n_variables": 3
+  },
+  {
+   "document": "República de Chile. 1895. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1895, Ministerio del Interior. Santiago: Imprenta Nacional.",
+   "group": "Foreign and academic secondary sources",
+   "n_tables": 1,
+   "n_rows": 12,
+   "year_range": [
+    1895,
+    1895
+   ],
+   "geo_levels": [
+    "department"
+   ],
+   "raw_keys": [
+    "Lei de Presupuestos 1895, Ministerio del Interior"
+   ],
+   "n_variables": 3
+  },
+  {
+   "document": "República de Chile. 1896. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1896, Ministerio de Justicia, Culto e Instrucción Pública. Santiago: Imprenta Nacional.",
+   "group": "Foreign and academic secondary sources",
+   "n_tables": 1,
+   "n_rows": 6,
+   "year_range": [
+    1896,
+    1896
+   ],
+   "geo_levels": [
+    "city"
+   ],
+   "raw_keys": [
+    "Lei de Presupuestos 1896, Ministerio de Justicia, Culto e Instruccion Publica"
+   ],
+   "n_variables": 3
   },
   {
    "document": "Véjares, Maximiliano. Forthcoming. Compiled fiscal and customs series, Chile, 19th century. Net Zero Industrial Policy Lab, Johns Hopkins University.",
@@ -2574,66 +2439,141 @@
   "Anuario Estadístico de Chile, 1935 (elections, province level)": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, electoral registration and turnout by province. Santiago.",
   "Memoria del Ministerio del Interior, 1844": "Ministerio del Interior. 1844. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1844. Santiago: Imprenta del Estado.",
   "Memoria del Ministerio del Interior, 1875": "Ministerio del Interior. 1875. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1875. Santiago: Imprenta Nacional.",
+  "Anuario Estadistico - Chile 1917 Vol III": "Oficina Central de Estadística. 1918. Anuario Estadístico de la República de Chile, año 1917, Vol. III. Santiago: Imprenta Nacional.",
+  "Anuario Estadistico Chile 1917 Vol III": "Oficina Central de Estadística. 1918. Anuario Estadístico de la República de Chile, año 1917, Vol. III. Santiago: Imprenta Nacional.",
+  "Anuario Estadistico Vol III Politica y Administracion 1918": "Oficina Central de Estadística. 1919. Anuario Estadístico de la República de Chile, año 1918, Vol. III: Política y Administración. Santiago: Imprenta Nacional.",
+  "Anuario Estadistico Vol III Politica y Administracion 1921": "Oficina Central de Estadística. 1922. Anuario Estadístico de la República de Chile, año 1921, Vol. III: Política y Administración. Santiago: Imprenta Nacional.",
+  "Anuario Estadistico de Chile 1928 (Yumpu 56511060)": "Dirección General de Estadística. 1929. Anuario Estadístico de Chile, año 1928. Santiago.",
+  "Anuario Estadistico de la Republica de Chile, Ano 1928 (Direccion General de Estadistica)": "Dirección General de Estadística. 1929. Anuario Estadístico de Chile, año 1928. Santiago.",
+  "Anuario Estadistico de Chile 1936 (Yumpu 56511081)": "Dirección General de Estadística. 1937. Anuario Estadístico de Chile, año 1936. Santiago.",
+  "Anuario Estadistico de la Republica de Chile 1879-1880 (Yumpu 56511022)": "Oficina Central de Estadística. ca. 1881. Anuario Estadístico de la República de Chile, entrega correspondiente a 1879–1880. Santiago: Imprenta Nacional.",
+  "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)": "Oficina Central de Estadística. ca. 1881. Anuario Estadístico de la República de Chile, entrega correspondiente a 1879–1880. Santiago: Imprenta Nacional.",
+  "Anuario Estadistico de la Republica de Chile 1890-1891-1892 (Yumpu 56511021)": "Oficina Central de Estadística. ca. 1893. Anuario Estadístico de la República de Chile, años 1890–1892. Santiago: Imprenta Nacional.",
+  "Anuario Estadistico de la Republica de Chile 1925 (Yumpu 56511059)": "Dirección General de Estadística. 1926. Anuario Estadístico de Chile, año 1925. Santiago.",
+  "Anuario Estadistico de la Republica de Chile 1926 (Yumpu 56511049)": "Dirección General de Estadística. 1927. Anuario Estadístico de Chile, año 1926. Santiago.",
+  "Anuario Estadistico de la Republica de Chile, Ano 1926, Vol. I Demografia (Direccion General de Estadistica)": "Dirección General de Estadística. 1927. Anuario Estadístico de Chile, año 1926, Vol. I: Demografía. Santiago.",
+  "Anuario Estadistico de la Republica de Chile 1931-1935 (Yumpu 56511070)": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, años 1931–1935. Santiago.",
+  "Anuario Estadistico de la Republica de Chile 1945 (Yumpu 56511087)": "Dirección General de Estadística. 1946. Anuario Estadístico de Chile, año 1945. Santiago.",
+  "Anuario Estadistico de la Republica de Chile 1948 (Yumpu 56511094)": "Dirección General de Estadística. 1949. Anuario Estadístico de Chile, año 1948. Santiago.",
+  "Anuario Estadistico de la Republica de Chile, Ano 1913, Vol. V Instruccion": "Oficina Central de Estadística. 1914. Anuario Estadístico de la República de Chile, año 1913, Vol. V: Instrucción. Santiago: Imprenta Nacional.",
+  "Anuario Estadistico de la Republica de Chile, Ano 1914, Vol. V Instruccion": "Oficina Central de Estadística. 1915. Anuario Estadístico de la República de Chile, año 1914, Vol. V: Instrucción. Santiago: Imprenta Nacional.",
+  "Anuario Estadistico de la Republica de Chile, Ano 1914, Vol. VII Mineria y Metalurgia": "Oficina Central de Estadística. 1915. Anuario Estadístico de la República de Chile, año 1914, Vol. VII: Minería y Metalurgia. Santiago: Imprenta Nacional.",
+  "Anuario Estadistico de la Republica de Chile, entrega 1876-1877 (Yumpu 56511011)": "Oficina Central de Estadística. ca. 1878. Anuario Estadístico de la República de Chile, entrega correspondiente a 1876–1877. Santiago: Imprenta Nacional.",
+  "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511013)": "Oficina Central de Estadística. ca. 1879. Anuario Estadístico de la República de Chile, entrega correspondiente a 1877–1878. Santiago: Imprenta Nacional.",
+  "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511018)": "Oficina Central de Estadística. ca. 1879. Anuario Estadístico de la República de Chile, entrega correspondiente a 1877–1878. Santiago: Imprenta Nacional.",
+  "Anuario Estadistico de la Republica de Chile, entrega 1878-1879 (Yumpu 56511018)": "Oficina Central de Estadística. ca. 1880. Anuario Estadístico de la República de Chile, entrega correspondiente a 1878–1879. Santiago: Imprenta Nacional.",
+  "Anuario Estadístico 1935": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935. Santiago.",
+  "Estadistica Anual de la Republica de Chile 1926/1927 (Direccion General de Estadistica)": "Dirección General de Estadística. ca. 1928. Estadística Anual de la República de Chile, años 1926–1927. Santiago.",
+  "Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos)": "Servicio Nacional de Estadística y Censos. ca. 1956. XII Censo General de Población y I de Vivienda, 24 de abril de 1952, Tomo I: Resumen del País. Santiago.",
+  "Censo 1970 CIREN folleto CAUTIN (Características Básicas de la Población)": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Cautín. Santiago: INE.",
+  "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Colchagua. Santiago: INE.",
+  "Censo 1970 CIREN folleto CURICO (Características Básicas de la Población)": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Curicó. Santiago: INE.",
+  "Censo 1970 CIREN folleto OHIGGINS (Características Básicas de la Población)": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto O'Higgins. Santiago: INE.",
+  "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Santiago. Santiago: INE.",
+  "Censo 1970 CIREN folleto TALCA (Características Básicas de la Población)": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Talca. Santiago: INE.",
+  "Censo 1970 CIREN folleto VALPARAISO (Características Básicas de la Población)": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Valparaíso. Santiago: INE.",
+  "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)": "Instituto Nacional de Estadísticas. 1995. Censo de Población y Vivienda 1992: Ciudades, Pueblos y Aldeas. Santiago: INE.",
+  "Censo 1992 (INE, born-digital volumen)": "Instituto Nacional de Estadísticas. 1993. Censo de Población y Vivienda 1992: Resultados Generales. Santiago: INE.",
+  "Censo Jeneral de la Poblacion de Chile 1875 (Quinto Censo, Oficina Central de Estadistica, 1876)": "Oficina Central de Estadística. 1876. Quinto Censo Jeneral de la Población de Chile, 1875. Santiago: Imprenta Nacional.",
+  "Censo de la Republica de Chile levantado el 28 de Noviembre de 1907 (Comision Central del Censo, 1908)": "Oficina Central de Estadística. 1908. Censo de la República de Chile levantado el 28 de Noviembre de 1907. Santiago: Sociedad Imprenta y Litografía Universo.",
+  "Census - Chile 1930 VERIFIED": "Dirección General de Estadística. 1931. X Censo de Población de la República de Chile, 27 de noviembre de 1930. Santiago.",
+  "Humud - Politica economica en Chile 1830-1930": "Humud, Carlos. 1969. La Política Económica de Chile entre 1830 y 1930. Universidad de Chile.",
+  "Lei de Presupuestos 1890, Ministerio del Interior": "República de Chile. 1890. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1890, Ministerio del Interior. Santiago: Imprenta Nacional.",
+  "Lei de Presupuestos 1891, Ministerio de Justicia, Culto e Instruccion Publica": "República de Chile. 1891. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1891, Ministerio de Justicia, Culto e Instrucción Pública. Santiago: Imprenta Nacional.",
+  "Lei de Presupuestos 1892, Ministerio del Interior": "República de Chile. 1892. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1892, Ministerio del Interior. Santiago: Imprenta Nacional.",
+  "Lei de Presupuestos 1893, Ministerio del Interior": "República de Chile. 1893. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1893, Ministerio del Interior. Santiago: Imprenta Nacional.",
+  "Lei de Presupuestos 1894, Ministerio de Justicia e Instruccion Publica, Seccion de Justicia": "República de Chile. 1894. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1894, Ministerio de Justicia e Instrucción Pública, Sección de Justicia. Santiago: Imprenta Nacional.",
+  "Lei de Presupuestos 1894, Ministerio del Interior": "República de Chile. 1894. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1894, Ministerio del Interior. Santiago: Imprenta Nacional.",
+  "Lei de Presupuestos 1895, Ministerio de Justicia, Culto e Instruccion Publica": "República de Chile. 1895. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1895, Ministerio de Justicia, Culto e Instrucción Pública. Santiago: Imprenta Nacional.",
+  "Lei de Presupuestos 1895, Ministerio del Interior": "República de Chile. 1895. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1895, Ministerio del Interior. Santiago: Imprenta Nacional.",
+  "Lei de Presupuestos 1896, Ministerio de Justicia, Culto e Instruccion Publica": "República de Chile. 1896. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1896, Ministerio de Justicia, Culto e Instrucción Pública. Santiago: Imprenta Nacional.",
+  "Mamalakis 1980 Historical Statistics Vol 2": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press.",
+  "Mamalakis 1980 Vol 2 Ch 16 Regional Distribution": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, regional distribution tables. Westport, CT: Greenwood Press.",
+  "Mamalakis 1980 Vol 2 Migration": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, migration tables. Westport, CT: Greenwood Press.",
+  "Mamalakis Vol 2, Table 1.1 (DEC/INE/ODEPLAN)": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 1.1 (DEC/INE/ODEPLAN source). Westport, CT: Greenwood Press.",
+  "Mamalakis Vol 2, Table 1.2 (INE)": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 1.2 (INE source). Westport, CT: Greenwood Press.",
+  "Mamalakis Vol 2, Table 10.1 (Census 1952, corrected)": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 10.1 (1952 census, corrected). Westport, CT: Greenwood Press.",
+  "Memoria Interior": "Ministerio del Interior. Multiple years. Memoria del Ministerio del Interior presentada al Congreso Nacional. Santiago.",
+  "Memoria de Hacienda - Chile 1857": "Ministerio de Hacienda. 1858. Memoria de Hacienda presentada al Congreso Nacional, año 1857. Santiago.",
+  "Memoria de Hacienda - Chile 1858": "Ministerio de Hacienda. 1859. Memoria de Hacienda presentada al Congreso Nacional, año 1858. Santiago.",
+  "Memoria de Hacienda - Chile 1860": "Ministerio de Hacienda. 1861. Memoria de Hacienda presentada al Congreso Nacional, año 1860. Santiago.",
+  "Memoria de Hacienda - Chile 1861": "Ministerio de Hacienda. 1862. Memoria de Hacienda presentada al Congreso Nacional, año 1861. Santiago.",
+  "Memoria de Hacienda - Chile 1876": "Ministerio de Hacienda. 1877. Memoria de Hacienda presentada al Congreso Nacional, año 1876. Santiago.",
+  "Memoria de Hacienda - Chile 1882": "Ministerio de Hacienda. 1883. Memoria de Hacienda presentada al Congreso Nacional, año 1882. Santiago.",
+  "Memoria de Hacienda - Chile 1883": "Ministerio de Hacienda. 1884. Memoria de Hacienda presentada al Congreso Nacional, año 1883. Santiago.",
+  "Memoria de Hacienda - Chile 1885": "Ministerio de Hacienda. 1886. Memoria de Hacienda presentada al Congreso Nacional, año 1885. Santiago.",
+  "Memoria de Hacienda - Chile 1888": "Ministerio de Hacienda. 1889. Memoria de Hacienda presentada al Congreso Nacional, año 1888. Santiago.",
+  "Memoria de Hacienda - Chile 1889": "Ministerio de Hacienda. 1890. Memoria de Hacienda presentada al Congreso Nacional, año 1889. Santiago.",
+  "Memoria de Hacienda - Chile 1890": "Ministerio de Hacienda. 1891. Memoria de Hacienda presentada al Congreso Nacional, año 1890. Santiago.",
+  "Memoria del Interior 1893 Tomo I": "Ministerio del Interior. 1893. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1893, Tomo I. Santiago.",
+  "Memoria del Interior 1893 Tomo III": "Ministerio del Interior. 1893. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1893, Tomo III. Santiago.",
+  "Memoria del Interior 1895": "Ministerio del Interior. 1895. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1895. Santiago.",
+  "Memoria del Ministerio de Hacienda 1861, 1870, 1876, 1880, and 1889 (cuadros comparativos de las entradas ordinarias), and Oficina Central de Estadistica, Anuario Estadistico de la Republica de Chile 1860 (entradas fiscales por ramos, 1846-1852). Santiago: Imprenta Nacional. Per-ramo levels transcribed and reconciled to each cuadro's printed total.": "Ministerio de Hacienda. 1861–1889. Memorias de Hacienda (cuadros comparativos de las entradas ordinarias), and Oficina Central de Estadística, Anuario Estadístico de la República de Chile, año 1860 (entradas fiscales por ramos, 1846–1852). Santiago: Imprenta Nacional.",
+  "Memoria del Ministerio del Interior, 1870": "Ministerio del Interior. 1870. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1870. Santiago: Imprenta Nacional.",
+  "Ministerio del Interior. 1891. Memoria del Ministerio del Interior, año 1890, Tomo II. Santiago.": "Ministerio del Interior. 1891. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1890, Tomo II. Santiago.",
+  "Molina 1898. Bosquejo de la Hacienda Pública de Chile 1830-1897": "Molina, Evaristo. 1898. Bosquejo de la Hacienda Pública de Chile desde la Independencia hasta 1897. Santiago: Imprenta Nacional.",
+  "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)": "Oficina de Planificación Agrícola (ODEPA). 1976. Estadísticas Agropecuarias 1965–1974. Santiago: Ministerio de Agricultura.",
+  "SNA 1874": "Sociedad Nacional de Agricultura. 1874. Boletín de la Sociedad Nacional de Agricultura, Vol. VI. Santiago.",
+  "Servicio de Registro Civil e Identificación and Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario de Demografía, with the Censos de Población de Chile, various years.": "Servicio de Registro Civil, Dirección General de Estadística, and Instituto Nacional de Estadísticas. Multiple years. Anuarios de Demografía and Censos de Población de Chile. Santiago.",
+  "Sinopsis Estadistica - Chile 1900": "Oficina Central de Estadística. 1900. Sinopsis Estadística de la República de Chile, año 1900. Santiago: Imprenta Nacional.",
+  "Mamalakis Vol 2, Table 17.1 (DEC/INE)": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 17.1 (DEC/INE source). Westport, CT: Greenwood Press.",
+  "Censo Jeneral de la República de Chile, 1865, Cuadro Sinóptico": "Oficina Central de Estadística. 1866. Censo Jeneral de la República de Chile, 19 de abril de 1865, Cuadro Sinóptico. Santiago: Imprenta Nacional.",
   "Véjares, Maximiliano. Forthcoming. Compiled state-capacity dataset, Chile, 1935. Net Zero Industrial Policy Lab, Johns Hopkins University.": "Véjares, Maximiliano. Forthcoming. Compiled state-capacity dataset, Chile, 1935. Net Zero Industrial Policy Lab, Johns Hopkins University.",
   "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927. Santiago.": "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927. Santiago.",
-  "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)": "ODEPA Estadisticas Agropecuarias 1965-1974 (Min. Agricultura, 1976)",
+  "Oficina de Planificación Agrícola (ODEPA). 1976. Estadísticas Agropecuarias 1965–1974. Santiago: Ministerio de Agricultura.": "Oficina de Planificación Agrícola (ODEPA). 1976. Estadísticas Agropecuarias 1965–1974. Santiago: Ministerio de Agricultura.",
   "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, livestock slaughtered by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, livestock slaughtered by province. Santiago.",
-  "Memoria del Interior 1893 Tomo I": "Memoria del Interior 1893 Tomo I",
-  "Memoria del Ministerio del Interior, 1870": "Memoria del Ministerio del Interior, 1870",
-  "Memoria del Interior 1895": "Memoria del Interior 1895",
+  "Ministerio del Interior. 1893. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1893, Tomo I. Santiago.": "Ministerio del Interior. 1893. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1893, Tomo I. Santiago.",
+  "Ministerio del Interior. 1870. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1870. Santiago: Imprenta Nacional.": "Ministerio del Interior. 1870. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1870. Santiago: Imprenta Nacional.",
+  "Ministerio del Interior. 1895. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1895. Santiago.": "Ministerio del Interior. 1895. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1895. Santiago.",
   "Oficina Central de Estadística. 1872. Anuario Estadístico de la República de Chile, año 1871. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1872. Anuario Estadístico de la República de Chile, año 1871. Santiago: Imprenta Nacional.",
-  "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)": "Censo 1970 CIREN folleto SANTIAGO (Características Básicas de la Población)",
-  "Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos)": "Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos)",
+  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Santiago. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Santiago. Santiago: INE.",
+  "Servicio Nacional de Estadística y Censos. ca. 1956. XII Censo General de Población y I de Vivienda, 24 de abril de 1952, Tomo I: Resumen del País. Santiago.": "Servicio Nacional de Estadística y Censos. ca. 1956. XII Censo General de Población y I de Vivienda, 24 de abril de 1952, Tomo I: Resumen del País. Santiago.",
   "Servicio Nacional de Estadística y Censos. 1953. XII Censo General de Población y I de Vivienda de la República de Chile, 24 de abril de 1952. Santiago.": "Servicio Nacional de Estadística y Censos. 1953. XII Censo General de Población y I de Vivienda de la República de Chile, 24 de abril de 1952. Santiago.",
   "Oficina Central de Estadística. 1908. Censo de la República de Chile levantado el 28 de Noviembre de 1907. Santiago: Sociedad Imprenta y Litografía Universo.": "Oficina Central de Estadística. 1908. Censo de la República de Chile levantado el 28 de Noviembre de 1907. Santiago: Sociedad Imprenta y Litografía Universo.",
   "Oficina Central de Estadística. ca. 1858. Sinopsis Estadística i Jeográfica de la República de Chile. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. ca. 1858. Sinopsis Estadística i Jeográfica de la República de Chile. Santiago: Imprenta Nacional.",
   "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 39. Santiago.": "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 39. Santiago.",
-  "Estadistica Anual de la Republica de Chile 1926/1927 (Direccion General de Estadistica)": "Estadistica Anual de la Republica de Chile 1926/1927 (Direccion General de Estadistica)",
+  "Dirección General de Estadística. ca. 1928. Estadística Anual de la República de Chile, años 1926–1927. Santiago.": "Dirección General de Estadística. ca. 1928. Estadística Anual de la República de Chile, años 1926–1927. Santiago.",
   "Oficina Central de Estadística. 1925. X Censo de la Población de la República de Chile, 15 de diciembre de 1920. Santiago.": "Oficina Central de Estadística. 1925. X Censo de la Población de la República de Chile, 15 de diciembre de 1920. Santiago.",
-  "Anuario Estadistico - Chile 1917 Vol III": "Anuario Estadistico - Chile 1917 Vol III",
-  "Anuario Estadistico de la Republica de Chile, Ano 1928 (Direccion General de Estadistica)": "Anuario Estadistico de la Republica de Chile, Ano 1928 (Direccion General de Estadistica)",
+  "Oficina Central de Estadística. 1918. Anuario Estadístico de la República de Chile, año 1917, Vol. III. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1918. Anuario Estadístico de la República de Chile, año 1917, Vol. III. Santiago: Imprenta Nacional.",
+  "Dirección General de Estadística. 1929. Anuario Estadístico de Chile, año 1928. Santiago.": "Dirección General de Estadística. 1929. Anuario Estadístico de Chile, año 1928. Santiago.",
   "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 29. Santiago.": "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 29. Santiago.",
   "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, prison admissions by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, prison admissions by province. Santiago.",
-  "Censo 1992 (INE, born-digital volumen)": "Censo 1992 (INE, born-digital volumen)",
+  "Instituto Nacional de Estadísticas. 1993. Censo de Población y Vivienda 1992: Resultados Generales. Santiago: INE.": "Instituto Nacional de Estadísticas. 1993. Censo de Población y Vivienda 1992: Resultados Generales. Santiago: INE.",
   "Oficina Central de Estadística. 1900. Sinopsis Estadística de la República de Chile, año 1900. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1900. Sinopsis Estadística de la República de Chile, año 1900. Santiago: Imprenta Nacional.",
   "Ministerio del Interior. 1893. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1892, Tomo II. Santiago.": "Ministerio del Interior. 1893. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1892, Tomo II. Santiago.",
-  "Mamalakis 1980 Vol 2 Migration": "Mamalakis 1980 Vol 2 Migration",
+  "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, migration tables. Westport, CT: Greenwood Press.": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, migration tables. Westport, CT: Greenwood Press.",
   "Aldana, Abelardo. 1914. Resumen de la Hacienda Pública de Chile, 1833–1914, p. 60. Santiago: Imprenta Universitaria.": "Aldana, Abelardo. 1914. Resumen de la Hacienda Pública de Chile, 1833–1914, p. 60. Santiago: Imprenta Universitaria.",
   "Dirección General de Estadística. 1931. X Censo de Población de la República de Chile, 27 de noviembre de 1930. Santiago.": "Dirección General de Estadística. 1931. X Censo de Población de la República de Chile, 27 de noviembre de 1930. Santiago.",
-  "Census - Chile 1930 VERIFIED": "Census - Chile 1930 VERIFIED",
   "Ministerio del Interior. 1875. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1875. Santiago: Imprenta Nacional.": "Ministerio del Interior. 1875. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1875. Santiago: Imprenta Nacional.",
   "Ministerio del Interior. 1888. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1887. Santiago.": "Ministerio del Interior. 1888. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1887. Santiago.",
   "Aldana, Abelardo. 1914. Resumen de la Hacienda Pública de Chile, 1833–1914. Santiago: Imprenta Universitaria.": "Aldana, Abelardo. 1914. Resumen de la Hacienda Pública de Chile, 1833–1914. Santiago: Imprenta Universitaria.",
-  "Censo Jeneral de la Poblacion de Chile 1875 (Quinto Censo, Oficina Central de Estadistica, 1876)": "Censo Jeneral de la Poblacion de Chile 1875 (Quinto Censo, Oficina Central de Estadistica, 1876)",
+  "Oficina Central de Estadística. 1876. Quinto Censo Jeneral de la Población de Chile, 1875. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1876. Quinto Censo Jeneral de la Población de Chile, 1875. Santiago: Imprenta Nacional.",
   "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, Tabla 8. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, Tabla 8. Santiago.",
   "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 27. Santiago.": "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 27. Santiago.",
-  "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)": "Censo 1970 CIREN folleto COLCHAGUA (Características Básicas de la Población)",
-  "Censo 1970 CIREN folleto TALCA (Características Básicas de la Población)": "Censo 1970 CIREN folleto TALCA (Características Básicas de la Población)",
-  "Censo 1970 CIREN folleto CURICO (Características Básicas de la Población)": "Censo 1970 CIREN folleto CURICO (Características Básicas de la Población)",
+  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Colchagua. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Colchagua. Santiago: INE.",
+  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Talca. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Talca. Santiago: INE.",
+  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Curicó. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Curicó. Santiago: INE.",
   "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press.": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press.",
   "Oficina Central de Estadística. 1925. X Censo de la Población de la República de Chile, 15 de diciembre de 1920, urbano-rural department tables. Santiago.": "Oficina Central de Estadística. 1925. X Censo de la Población de la República de Chile, 15 de diciembre de 1920, urbano-rural department tables. Santiago.",
-  "Censo 1970 CIREN folleto VALPARAISO (Características Básicas de la Población)": "Censo 1970 CIREN folleto VALPARAISO (Características Básicas de la Población)",
-  "Censo 1970 CIREN folleto OHIGGINS (Características Básicas de la Población)": "Censo 1970 CIREN folleto OHIGGINS (Características Básicas de la Población)",
-  "Censo 1970 CIREN folleto CAUTIN (Características Básicas de la Población)": "Censo 1970 CIREN folleto CAUTIN (Características Básicas de la Población)",
-  "Mamalakis 1980 Historical Statistics Vol 2": "Mamalakis 1980 Historical Statistics Vol 2",
+  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Valparaíso. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Valparaíso. Santiago: INE.",
+  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto O'Higgins. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto O'Higgins. Santiago: INE.",
+  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Cautín. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Cautín. Santiago: INE.",
   "Oficina Central de Estadística. 1860–1872. Anuario Estadístico de la República de Chile, Tomos I–XIII. Santiago: Imprenta Nacional. (2012 reissue: Instituto Nacional de Estadísticas.)": "Oficina Central de Estadística. 1860–1872. Anuario Estadístico de la República de Chile, Tomos I–XIII. Santiago: Imprenta Nacional. (2012 reissue: Instituto Nacional de Estadísticas.)",
-  "Mamalakis 1980 Vol 2 Ch 16 Regional Distribution": "Mamalakis 1980 Vol 2 Ch 16 Regional Distribution",
-  "Mamalakis Vol 2, Table 1.1 (DEC/INE/ODEPLAN)": "Mamalakis Vol 2, Table 1.1 (DEC/INE/ODEPLAN)",
+  "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, regional distribution tables. Westport, CT: Greenwood Press.": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, regional distribution tables. Westport, CT: Greenwood Press.",
+  "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 1.1 (DEC/INE/ODEPLAN source). Westport, CT: Greenwood Press.": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 1.1 (DEC/INE/ODEPLAN source). Westport, CT: Greenwood Press.",
   "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935. Santiago.",
-  "Memoria del Ministerio de Hacienda 1861, 1870, 1876, 1880, and 1889 (cuadros comparativos de las entradas ordinarias), and Oficina Central de Estadistica, Anuario Estadistico de la Republica de Chile 1860 (entradas fiscales por ramos, 1846-1852). Santiago: Imprenta Nacional. Per-ramo levels transcribed and reconciled to each cuadro's printed total.": "Memoria del Ministerio de Hacienda 1861, 1870, 1876, 1880, and 1889 (cuadros comparativos de las entradas ordinarias), and Oficina Central de Estadistica, Anuario Estadistico de la Republica de Chile 1860 (entradas fiscales por ramos, 1846-1852). Santiago: Imprenta Nacional. Per-ramo levels transcribed and reconciled to each cuadro's printed total.",
-  "Anuario Estadistico de la Republica de Chile, Ano 1914, Vol. VII Mineria y Metalurgia": "Anuario Estadistico de la Republica de Chile, Ano 1914, Vol. VII Mineria y Metalurgia",
+  "Ministerio de Hacienda. 1861–1889. Memorias de Hacienda (cuadros comparativos de las entradas ordinarias), and Oficina Central de Estadística, Anuario Estadístico de la República de Chile, año 1860 (entradas fiscales por ramos, 1846–1852). Santiago: Imprenta Nacional.": "Ministerio de Hacienda. 1861–1889. Memorias de Hacienda (cuadros comparativos de las entradas ordinarias), and Oficina Central de Estadística, Anuario Estadístico de la República de Chile, año 1860 (entradas fiscales por ramos, 1846–1852). Santiago: Imprenta Nacional.",
+  "Oficina Central de Estadística. 1915. Anuario Estadístico de la República de Chile, año 1914, Vol. VII: Minería y Metalurgia. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1915. Anuario Estadístico de la República de Chile, año 1914, Vol. VII: Minería y Metalurgia. Santiago: Imprenta Nacional.",
   "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, value of mining production by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, value of mining production by province. Santiago.",
-  "Anuario Estadistico de la Republica de Chile 1879-1880 (Yumpu 56511022)": "Anuario Estadistico de la Republica de Chile 1879-1880 (Yumpu 56511022)",
-  "Anuario Estadistico de la Republica de Chile 1890-1891-1892 (Yumpu 56511021)": "Anuario Estadistico de la Republica de Chile 1890-1891-1892 (Yumpu 56511021)",
-  "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511013)": "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511013)",
-  "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511018)": "Anuario Estadistico de la Republica de Chile, entrega 1877-1878 (Yumpu 56511018)",
-  "Anuario Estadistico de la Republica de Chile, entrega 1876-1877 (Yumpu 56511011)": "Anuario Estadistico de la Republica de Chile, entrega 1876-1877 (Yumpu 56511011)",
-  "Sinopsis Estadistica - Chile 1900": "Sinopsis Estadistica - Chile 1900",
+  "Oficina Central de Estadística. ca. 1881. Anuario Estadístico de la República de Chile, entrega correspondiente a 1879–1880. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. ca. 1881. Anuario Estadístico de la República de Chile, entrega correspondiente a 1879–1880. Santiago: Imprenta Nacional.",
+  "Oficina Central de Estadística. ca. 1893. Anuario Estadístico de la República de Chile, años 1890–1892. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. ca. 1893. Anuario Estadístico de la República de Chile, años 1890–1892. Santiago: Imprenta Nacional.",
+  "Oficina Central de Estadística. ca. 1879. Anuario Estadístico de la República de Chile, entrega correspondiente a 1877–1878. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. ca. 1879. Anuario Estadístico de la República de Chile, entrega correspondiente a 1877–1878. Santiago: Imprenta Nacional.",
+  "Oficina Central de Estadística. ca. 1878. Anuario Estadístico de la República de Chile, entrega correspondiente a 1876–1877. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. ca. 1878. Anuario Estadístico de la República de Chile, entrega correspondiente a 1876–1877. Santiago: Imprenta Nacional.",
   "Oficina Central de Estadística. 1875. Sinopsis Estadística de la República de Chile, año 1875, municipal finance section. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1875. Sinopsis Estadística de la República de Chile, año 1875, municipal finance section. Santiago: Imprenta Nacional.",
   "Oficina Central de Estadística. 1895. Sinopsis Estadística de la República de Chile, año 1895, municipal finance section. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1895. Sinopsis Estadística de la República de Chile, año 1895, municipal finance section. Santiago: Imprenta Nacional.",
   "Oficina Central de Estadística. 1886. Anuario Estadístico de la República de Chile, año 1885, municipal finance section. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1886. Anuario Estadístico de la República de Chile, año 1885, municipal finance section. Santiago: Imprenta Nacional.",
-  "Anuario Estadistico de la Republica de Chile, Ano 1914, Vol. V Instruccion": "Anuario Estadistico de la Republica de Chile, Ano 1914, Vol. V Instruccion",
-  "Anuario Estadistico de la Republica de Chile, Ano 1913, Vol. V Instruccion": "Anuario Estadistico de la Republica de Chile, Ano 1913, Vol. V Instruccion",
+  "Oficina Central de Estadística. 1915. Anuario Estadístico de la República de Chile, año 1914, Vol. V: Instrucción. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1915. Anuario Estadístico de la República de Chile, año 1914, Vol. V: Instrucción. Santiago: Imprenta Nacional.",
+  "Oficina Central de Estadística. 1914. Anuario Estadístico de la República de Chile, año 1913, Vol. V: Instrucción. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1914. Anuario Estadístico de la República de Chile, año 1913, Vol. V: Instrucción. Santiago: Imprenta Nacional.",
   "Oficina Central de Estadística. 1910. Anuario Estadístico de la República de Chile, año 1909. Santiago: Sociedad Imprenta y Litografía Universo.": "Oficina Central de Estadística. 1910. Anuario Estadístico de la República de Chile, año 1909. Santiago: Sociedad Imprenta y Litografía Universo.",
   "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, education section. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, education section. Santiago.",
   "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, electoral registration and turnout by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, electoral registration and turnout by province. Santiago.",
@@ -2642,85 +2582,79 @@
   "Oficina Central de Estadística. 1921. Anuario Estadístico de la República de Chile, año 1920. Santiago.": "Oficina Central de Estadística. 1921. Anuario Estadístico de la República de Chile, año 1920. Santiago.",
   "Oficina Central de Estadística. 1892. Anuario Estadístico de la República de Chile, Tomo XXVI, años 1887–1888. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1892. Anuario Estadístico de la República de Chile, Tomo XXVI, años 1887–1888. Santiago: Imprenta Nacional.",
   "Oficina Central de Estadística. ca. 1885. Anuario Estadístico de la República de Chile, Tomo XXIV. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. ca. 1885. Anuario Estadístico de la República de Chile, Tomo XXIV. Santiago: Imprenta Nacional.",
-  "Anuario Estadistico Chile 1917 Vol III": "Anuario Estadistico Chile 1917 Vol III",
-  "Anuario Estadistico Vol III Politica y Administracion 1918": "Anuario Estadistico Vol III Politica y Administracion 1918",
-  "Anuario Estadistico Vol III Politica y Administracion 1921": "Anuario Estadistico Vol III Politica y Administracion 1921",
+  "Oficina Central de Estadística. 1919. Anuario Estadístico de la República de Chile, año 1918, Vol. III: Política y Administración. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1919. Anuario Estadístico de la República de Chile, año 1918, Vol. III: Política y Administración. Santiago: Imprenta Nacional.",
+  "Oficina Central de Estadística. 1922. Anuario Estadístico de la República de Chile, año 1921, Vol. III: Política y Administración. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1922. Anuario Estadístico de la República de Chile, año 1921, Vol. III: Política y Administración. Santiago: Imprenta Nacional.",
   "Dirección del Rejistro Electoral. 1915. Censo Electoral de la República de Chile, 1915. Santiago.": "Dirección del Rejistro Electoral. 1915. Censo Electoral de la República de Chile, 1915. Santiago.",
   "Oficina Central de Estadística. 1882. Anuario Estadístico de la República de Chile, año 1881, enfranchisement section. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1882. Anuario Estadístico de la República de Chile, año 1881, enfranchisement section. Santiago: Imprenta Nacional.",
-  "Lei de Presupuestos 1891, Ministerio de Justicia, Culto e Instruccion Publica": "Lei de Presupuestos 1891, Ministerio de Justicia, Culto e Instruccion Publica",
-  "Lei de Presupuestos 1894, Ministerio de Justicia e Instruccion Publica, Seccion de Justicia": "Lei de Presupuestos 1894, Ministerio de Justicia e Instruccion Publica, Seccion de Justicia",
-  "Lei de Presupuestos 1896, Ministerio de Justicia, Culto e Instruccion Publica": "Lei de Presupuestos 1896, Ministerio de Justicia, Culto e Instruccion Publica",
-  "Lei de Presupuestos 1895, Ministerio de Justicia, Culto e Instruccion Publica": "Lei de Presupuestos 1895, Ministerio de Justicia, Culto e Instruccion Publica",
+  "República de Chile. 1891. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1891, Ministerio de Justicia, Culto e Instrucción Pública. Santiago: Imprenta Nacional.": "República de Chile. 1891. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1891, Ministerio de Justicia, Culto e Instrucción Pública. Santiago: Imprenta Nacional.",
+  "República de Chile. 1894. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1894, Ministerio de Justicia e Instrucción Pública, Sección de Justicia. Santiago: Imprenta Nacional.": "República de Chile. 1894. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1894, Ministerio de Justicia e Instrucción Pública, Sección de Justicia. Santiago: Imprenta Nacional.",
+  "República de Chile. 1896. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1896, Ministerio de Justicia, Culto e Instrucción Pública. Santiago: Imprenta Nacional.": "República de Chile. 1896. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1896, Ministerio de Justicia, Culto e Instrucción Pública. Santiago: Imprenta Nacional.",
+  "República de Chile. 1895. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1895, Ministerio de Justicia, Culto e Instrucción Pública. Santiago: Imprenta Nacional.": "República de Chile. 1895. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1895, Ministerio de Justicia, Culto e Instrucción Pública. Santiago: Imprenta Nacional.",
   "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, arrests by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, arrests by province. Santiago.",
-  "Memoria Interior": "Memoria Interior",
+  "Ministerio del Interior. Multiple years. Memoria del Ministerio del Interior presentada al Congreso Nacional. Santiago.": "Ministerio del Interior. Multiple years. Memoria del Ministerio del Interior presentada al Congreso Nacional. Santiago.",
   "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I). Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I). Santiago: Imprenta Nacional.",
   "Ministerio del Interior. 1862. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1862. Santiago: Imprenta Nacional.": "Ministerio del Interior. 1862. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1862. Santiago: Imprenta Nacional.",
-  "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)": "Censo 1992 (INE, Ciudades Pueblos y Aldeas, born-digital)",
+  "Instituto Nacional de Estadísticas. 1995. Censo de Población y Vivienda 1992: Ciudades, Pueblos y Aldeas. Santiago: INE.": "Instituto Nacional de Estadísticas. 1995. Censo de Población y Vivienda 1992: Ciudades, Pueblos y Aldeas. Santiago: INE.",
   "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, registered vehicles by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, registered vehicles by province. Santiago.",
   "Ministerio del Interior. 1883. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1883. Santiago: Imprenta Nacional.": "Ministerio del Interior. 1883. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1883. Santiago: Imprenta Nacional.",
   "Ministerio del Interior. 1878. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1878. Santiago: Imprenta Nacional.": "Ministerio del Interior. 1878. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1878. Santiago: Imprenta Nacional.",
   "Ministerio del Interior. 1879. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1879. Santiago: Imprenta Nacional.": "Ministerio del Interior. 1879. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1879. Santiago: Imprenta Nacional.",
-  "Oficina Central de Estadística. 1876. Quinto Censo Jeneral de la Población de Chile, 1875. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1876. Quinto Censo Jeneral de la Población de Chile, 1875. Santiago: Imprenta Nacional.",
   "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, postal traffic by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, postal traffic by province. Santiago.",
   "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, road length by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, road length by province. Santiago.",
   "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, money orders by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, money orders by province. Santiago.",
   "Ministerio de Hacienda. 1857. Memoria de Hacienda presentada al Congreso Nacional, año 1856. Santiago.": "Ministerio de Hacienda. 1857. Memoria de Hacienda presentada al Congreso Nacional, año 1856. Santiago.",
-  "Memoria de Hacienda - Chile 1858": "Memoria de Hacienda - Chile 1858",
-  "Memoria de Hacienda - Chile 1860": "Memoria de Hacienda - Chile 1860",
-  "Memoria de Hacienda - Chile 1857": "Memoria de Hacienda - Chile 1857",
-  "Humud - Politica economica en Chile 1830-1930": "Humud - Politica economica en Chile 1830-1930",
+  "Ministerio de Hacienda. 1859. Memoria de Hacienda presentada al Congreso Nacional, año 1858. Santiago.": "Ministerio de Hacienda. 1859. Memoria de Hacienda presentada al Congreso Nacional, año 1858. Santiago.",
+  "Ministerio de Hacienda. 1861. Memoria de Hacienda presentada al Congreso Nacional, año 1860. Santiago.": "Ministerio de Hacienda. 1861. Memoria de Hacienda presentada al Congreso Nacional, año 1860. Santiago.",
+  "Ministerio de Hacienda. 1858. Memoria de Hacienda presentada al Congreso Nacional, año 1857. Santiago.": "Ministerio de Hacienda. 1858. Memoria de Hacienda presentada al Congreso Nacional, año 1857. Santiago.",
+  "Humud, Carlos. 1969. La Política Económica de Chile entre 1830 y 1930. Universidad de Chile.": "Humud, Carlos. 1969. La Política Económica de Chile entre 1830 y 1930. Universidad de Chile.",
   "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, Tabla 36. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, Tabla 36. Santiago.",
-  "Anuario Estadístico 1935": "Anuario Estadístico 1935",
   "Ministerio del Interior. 1891. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1890, Tomo I. Santiago.": "Ministerio del Interior. 1891. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1890, Tomo I. Santiago.",
-  "Memoria de Hacienda - Chile 1882": "Memoria de Hacienda - Chile 1882",
-  "Memoria de Hacienda - Chile 1883": "Memoria de Hacienda - Chile 1883",
+  "Ministerio de Hacienda. 1883. Memoria de Hacienda presentada al Congreso Nacional, año 1882. Santiago.": "Ministerio de Hacienda. 1883. Memoria de Hacienda presentada al Congreso Nacional, año 1882. Santiago.",
+  "Ministerio de Hacienda. 1884. Memoria de Hacienda presentada al Congreso Nacional, año 1883. Santiago.": "Ministerio de Hacienda. 1884. Memoria de Hacienda presentada al Congreso Nacional, año 1883. Santiago.",
   "Ministerio de Hacienda. 1875. Catastro de Avalúos de la República de Chile, 1874. Santiago.": "Ministerio de Hacienda. 1875. Catastro de Avalúos de la República de Chile, 1874. Santiago.",
   "Ministerio de Hacienda. 1875. Rol de Avalúos de la República de Chile, 1874, departmental returns. Santiago.": "Ministerio de Hacienda. 1875. Rol de Avalúos de la República de Chile, 1874, departmental returns. Santiago.",
   "Ministerio de Hacienda. 1876. Rol de Contribuyentes de la República de Chile, 1875. Santiago.": "Ministerio de Hacienda. 1876. Rol de Contribuyentes de la República de Chile, 1875. Santiago.",
   "Bauer, Arnold J. 1975. Chilean Rural Society from the Spanish Conquest to 1930. Cambridge: Cambridge University Press.": "Bauer, Arnold J. 1975. Chilean Rural Society from the Spanish Conquest to 1930. Cambridge: Cambridge University Press.",
-  "SNA 1874": "SNA 1874",
+  "Sociedad Nacional de Agricultura. 1874. Boletín de la Sociedad Nacional de Agricultura, Vol. VI. Santiago.": "Sociedad Nacional de Agricultura. 1874. Boletín de la Sociedad Nacional de Agricultura, Vol. VI. Santiago.",
   "Sociedad Nacional de Agricultura. 1874. Boletín de la Sociedad Nacional de Agricultura, Volume VI. Santiago.": "Sociedad Nacional de Agricultura. 1874. Boletín de la Sociedad Nacional de Agricultura, Volume VI. Santiago.",
   "Dirección General de Estadística. 1918. Anuario Estadístico de la República de Chile, año 1917, enfranchisement section. Santiago.": "Dirección General de Estadística. 1918. Anuario Estadístico de la República de Chile, año 1917, enfranchisement section. Santiago.",
-  "Censo de la Republica de Chile levantado el 28 de Noviembre de 1907 (Comision Central del Censo, 1908)": "Censo de la Republica de Chile levantado el 28 de Noviembre de 1907 (Comision Central del Censo, 1908)",
-  "Mamalakis Vol 2, Table 10.1 (Census 1952, corrected)": "Mamalakis Vol 2, Table 10.1 (Census 1952, corrected)",
+  "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 10.1 (1952 census, corrected). Westport, CT: Greenwood Press.": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 10.1 (1952 census, corrected). Westport, CT: Greenwood Press.",
   "Véjares, Maximiliano. Forthcoming. Compiled public-employment series, Chile. Net Zero Industrial Policy Lab, Johns Hopkins University.": "Véjares, Maximiliano. Forthcoming. Compiled public-employment series, Chile. Net Zero Industrial Policy Lab, Johns Hopkins University.",
   "Oficina Central de Estadística. 1925. X Censo de la Población de la República de Chile, 15 de diciembre de 1920, public employees by theme. Santiago.": "Oficina Central de Estadística. 1925. X Censo de la Población de la República de Chile, 15 de diciembre de 1920, public employees by theme. Santiago.",
   "Biblioteca del Congreso Nacional de Chile. Reseñas Biográficas Parlamentarias. Santiago: BCN. [database].": "Biblioteca del Congreso Nacional de Chile. Reseñas Biográficas Parlamentarias. Santiago: BCN. [database].",
   "Oficina Central de Estadística. 1863. Anuario Estadístico de la República de Chile, año 1862 (Tomo III). Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1863. Anuario Estadístico de la República de Chile, año 1862 (Tomo III). Santiago: Imprenta Nacional.",
   "Oficina Central de Estadística. 1873. Anuario Estadístico de la República de Chile, año 1872. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1873. Anuario Estadístico de la República de Chile, año 1872. Santiago: Imprenta Nacional.",
   "Biblioteca del Congreso Nacional de Chile. Reseñas Biográficas Parlamentarias, 1833–1891. Santiago: BCN. [database].": "Biblioteca del Congreso Nacional de Chile. Reseñas Biográficas Parlamentarias, 1833–1891. Santiago: BCN. [database].",
-  "Mamalakis Vol 2, Table 1.2 (INE)": "Mamalakis Vol 2, Table 1.2 (INE)",
+  "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 1.2 (INE source). Westport, CT: Greenwood Press.": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 1.2 (INE source). Westport, CT: Greenwood Press.",
   "Oficina Central de Estadística. 1866. Censo Jeneral de la República de Chile, 19 de abril de 1865, clasificación por provincias. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1866. Censo Jeneral de la República de Chile, 19 de abril de 1865, clasificación por provincias. Santiago: Imprenta Nacional.",
   "Oficina Central de Estadística. 1866. Censo Jeneral de la República de Chile, 19 de abril de 1865, Cuadro Sinóptico. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1866. Censo Jeneral de la República de Chile, 19 de abril de 1865, Cuadro Sinóptico. Santiago: Imprenta Nacional.",
-  "Lei de Presupuestos 1890, Ministerio del Interior": "Lei de Presupuestos 1890, Ministerio del Interior",
-  "Lei de Presupuestos 1893, Ministerio del Interior": "Lei de Presupuestos 1893, Ministerio del Interior",
-  "Lei de Presupuestos 1894, Ministerio del Interior": "Lei de Presupuestos 1894, Ministerio del Interior",
-  "Lei de Presupuestos 1895, Ministerio del Interior": "Lei de Presupuestos 1895, Ministerio del Interior",
-  "Lei de Presupuestos 1892, Ministerio del Interior": "Lei de Presupuestos 1892, Ministerio del Interior",
-  "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)": "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)",
-  "Anuario Estadistico de la Republica de Chile, entrega 1878-1879 (Yumpu 56511018)": "Anuario Estadistico de la Republica de Chile, entrega 1878-1879 (Yumpu 56511018)",
-  "Molina 1898. Bosquejo de la Hacienda Pública de Chile 1830-1897": "Molina 1898. Bosquejo de la Hacienda Pública de Chile 1830-1897",
+  "República de Chile. 1890. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1890, Ministerio del Interior. Santiago: Imprenta Nacional.": "República de Chile. 1890. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1890, Ministerio del Interior. Santiago: Imprenta Nacional.",
+  "República de Chile. 1893. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1893, Ministerio del Interior. Santiago: Imprenta Nacional.": "República de Chile. 1893. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1893, Ministerio del Interior. Santiago: Imprenta Nacional.",
+  "República de Chile. 1894. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1894, Ministerio del Interior. Santiago: Imprenta Nacional.": "República de Chile. 1894. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1894, Ministerio del Interior. Santiago: Imprenta Nacional.",
+  "República de Chile. 1895. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1895, Ministerio del Interior. Santiago: Imprenta Nacional.": "República de Chile. 1895. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1895, Ministerio del Interior. Santiago: Imprenta Nacional.",
+  "República de Chile. 1892. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1892, Ministerio del Interior. Santiago: Imprenta Nacional.": "República de Chile. 1892. Lei de Presupuestos de los Gastos Jenerales de la Administración Pública para el año 1892, Ministerio del Interior. Santiago: Imprenta Nacional.",
+  "Oficina Central de Estadística. ca. 1880. Anuario Estadístico de la República de Chile, entrega correspondiente a 1878–1879. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. ca. 1880. Anuario Estadístico de la República de Chile, entrega correspondiente a 1878–1879. Santiago: Imprenta Nacional.",
+  "Molina, Evaristo. 1898. Bosquejo de la Hacienda Pública de Chile desde la Independencia hasta 1897. Santiago: Imprenta Nacional.": "Molina, Evaristo. 1898. Bosquejo de la Hacienda Pública de Chile desde la Independencia hasta 1897. Santiago: Imprenta Nacional.",
   "Ministerio del Interior. 1877. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1877. Santiago: Imprenta Nacional.": "Ministerio del Interior. 1877. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1877. Santiago: Imprenta Nacional.",
   "Ministerio del Interior. 1844. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1844. Santiago: Imprenta del Estado.": "Ministerio del Interior. 1844. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1844. Santiago: Imprenta del Estado.",
-  "Memoria del Interior 1893 Tomo III": "Memoria del Interior 1893 Tomo III",
+  "Ministerio del Interior. 1893. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1893, Tomo III. Santiago.": "Ministerio del Interior. 1893. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1893, Tomo III. Santiago.",
   "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 55. Santiago.": "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 55. Santiago.",
-  "Memoria de Hacienda - Chile 1888": "Memoria de Hacienda - Chile 1888",
+  "Ministerio de Hacienda. 1889. Memoria de Hacienda presentada al Congreso Nacional, año 1888. Santiago.": "Ministerio de Hacienda. 1889. Memoria de Hacienda presentada al Congreso Nacional, año 1888. Santiago.",
   "Véjares, Maximiliano. Forthcoming. Compiled fiscal and customs series, Chile, 19th century. Net Zero Industrial Policy Lab, Johns Hopkins University.": "Véjares, Maximiliano. Forthcoming. Compiled fiscal and customs series, Chile, 19th century. Net Zero Industrial Policy Lab, Johns Hopkins University.",
-  "Memoria de Hacienda - Chile 1889": "Memoria de Hacienda - Chile 1889",
-  "Memoria de Hacienda - Chile 1890": "Memoria de Hacienda - Chile 1890",
-  "Memoria de Hacienda - Chile 1876": "Memoria de Hacienda - Chile 1876",
-  "Memoria de Hacienda - Chile 1885": "Memoria de Hacienda - Chile 1885",
-  "Memoria de Hacienda - Chile 1861": "Memoria de Hacienda - Chile 1861",
+  "Ministerio de Hacienda. 1890. Memoria de Hacienda presentada al Congreso Nacional, año 1889. Santiago.": "Ministerio de Hacienda. 1890. Memoria de Hacienda presentada al Congreso Nacional, año 1889. Santiago.",
+  "Ministerio de Hacienda. 1891. Memoria de Hacienda presentada al Congreso Nacional, año 1890. Santiago.": "Ministerio de Hacienda. 1891. Memoria de Hacienda presentada al Congreso Nacional, año 1890. Santiago.",
+  "Ministerio de Hacienda. 1877. Memoria de Hacienda presentada al Congreso Nacional, año 1876. Santiago.": "Ministerio de Hacienda. 1877. Memoria de Hacienda presentada al Congreso Nacional, año 1876. Santiago.",
+  "Ministerio de Hacienda. 1886. Memoria de Hacienda presentada al Congreso Nacional, año 1885. Santiago.": "Ministerio de Hacienda. 1886. Memoria de Hacienda presentada al Congreso Nacional, año 1885. Santiago.",
+  "Ministerio de Hacienda. 1862. Memoria de Hacienda presentada al Congreso Nacional, año 1861. Santiago.": "Ministerio de Hacienda. 1862. Memoria de Hacienda presentada al Congreso Nacional, año 1861. Santiago.",
   "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 32. Santiago.": "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 32. Santiago.",
-  "Servicio de Registro Civil e Identificación and Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario de Demografía, with the Censos de Población de Chile, various years.": "Servicio de Registro Civil e Identificación and Dirección General de Estadística e Instituto Nacional de Estadísticas, Anuario de Demografía, with the Censos de Población de Chile, various years.",
-  "Anuario Estadistico de la Republica de Chile 1925 (Yumpu 56511059)": "Anuario Estadistico de la Republica de Chile 1925 (Yumpu 56511059)",
-  "Anuario Estadistico de la Republica de Chile 1931-1935 (Yumpu 56511070)": "Anuario Estadistico de la Republica de Chile 1931-1935 (Yumpu 56511070)",
-  "Anuario Estadistico de la Republica de Chile 1926 (Yumpu 56511049)": "Anuario Estadistico de la Republica de Chile 1926 (Yumpu 56511049)",
-  "Anuario Estadistico de Chile 1936 (Yumpu 56511081)": "Anuario Estadistico de Chile 1936 (Yumpu 56511081)",
-  "Anuario Estadistico de la Republica de Chile 1948 (Yumpu 56511094)": "Anuario Estadistico de la Republica de Chile 1948 (Yumpu 56511094)",
-  "Anuario Estadistico de Chile 1928 (Yumpu 56511060)": "Anuario Estadistico de Chile 1928 (Yumpu 56511060)",
-  "Anuario Estadistico de la Republica de Chile 1945 (Yumpu 56511087)": "Anuario Estadistico de la Republica de Chile 1945 (Yumpu 56511087)",
-  "Anuario Estadistico de la Republica de Chile, Ano 1926, Vol. I Demografia (Direccion General de Estadistica)": "Anuario Estadistico de la Republica de Chile, Ano 1926, Vol. I Demografia (Direccion General de Estadistica)",
-  "Ministerio del Interior. 1891. Memoria del Ministerio del Interior, año 1890, Tomo II. Santiago.": "Ministerio del Interior. 1891. Memoria del Ministerio del Interior, año 1890, Tomo II. Santiago."
+  "Servicio de Registro Civil, Dirección General de Estadística, and Instituto Nacional de Estadísticas. Multiple years. Anuarios de Demografía and Censos de Población de Chile. Santiago.": "Servicio de Registro Civil, Dirección General de Estadística, and Instituto Nacional de Estadísticas. Multiple years. Anuarios de Demografía and Censos de Población de Chile. Santiago.",
+  "Dirección General de Estadística. 1926. Anuario Estadístico de Chile, año 1925. Santiago.": "Dirección General de Estadística. 1926. Anuario Estadístico de Chile, año 1925. Santiago.",
+  "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, años 1931–1935. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, años 1931–1935. Santiago.",
+  "Dirección General de Estadística. 1927. Anuario Estadístico de Chile, año 1926. Santiago.": "Dirección General de Estadística. 1927. Anuario Estadístico de Chile, año 1926. Santiago.",
+  "Dirección General de Estadística. 1937. Anuario Estadístico de Chile, año 1936. Santiago.": "Dirección General de Estadística. 1937. Anuario Estadístico de Chile, año 1936. Santiago.",
+  "Dirección General de Estadística. 1949. Anuario Estadístico de Chile, año 1948. Santiago.": "Dirección General de Estadística. 1949. Anuario Estadístico de Chile, año 1948. Santiago.",
+  "Dirección General de Estadística. 1946. Anuario Estadístico de Chile, año 1945. Santiago.": "Dirección General de Estadística. 1946. Anuario Estadístico de Chile, año 1945. Santiago.",
+  "Dirección General de Estadística. 1927. Anuario Estadístico de Chile, año 1926, Vol. I: Demografía. Santiago.": "Dirección General de Estadística. 1927. Anuario Estadístico de Chile, año 1926, Vol. I: Demografía. Santiago.",
+  "Ministerio del Interior. 1891. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1890, Tomo II. Santiago.": "Ministerio del Interior. 1891. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1890, Tomo II. Santiago."
  }
 }

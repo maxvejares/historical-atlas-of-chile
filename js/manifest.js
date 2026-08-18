@@ -190,11 +190,13 @@ export function cadenceLabel(id, scale) {
   if (!v || !blk) return '';
   const [a, b] = blk.year_range;
   const cad = blk.cadence;
-  const src = (v.source_documents && v.source_documents[0])
-    || ({census: 'Chilean census + INE', anuario: 'Anuarios Estadísticos', mamalakis: 'Mamalakis 1976', sinopsis: 'Sinopsis Estadísticas'}[v.source_type] || 'Mixed sources');
+  const src = sourceLine(v);
   if (cad === 'annual') return `Annual, ${a}–${b} · ${src}`;
   if (cad === 'census') return `Census years, ${a}–${b} · ${src}`;
-  return `Irregular sampling, ${blk.valid_years.length} observation${blk.valid_years.length === 1 ? '' : 's'} ${a}–${b} · ${src}`;
+  // valid_years counts distinct sampled YEARS, not observations: a year of a
+  // 25-province cross-section is one entry here but 25 observations
+  // (2026-08-18 second audit wording fix).
+  return `Irregular sampling, ${blk.valid_years.length} year${blk.valid_years.length === 1 ? '' : 's'} sampled, ${a}–${b} · ${src}`;
 }
 
 // Is this variable a single-year cross-section?
@@ -383,15 +385,39 @@ export function isPendingAttribution(meta) {
   return Boolean(meta) && !hasConcreteSource(meta);
 }
 
+// Resolve a raw source key to its canonical citation through the map baked
+// into source_index.json by scripts/build_source_index.py. Raw keys are
+// internal shorthand ("Memoria de Hacienda - Chile 1882", "Census - Chile
+// 1930 VERIFIED") and must never reach a rendered citation (2026-08-18
+// second audit, B4/N5).
+export function canonicalCitation(key) {
+  if (!key) return key;
+  const idx = (typeof window !== 'undefined' && window.__INLINE_source_index) || {};
+  const map = idx.key_to_citation || {};
+  return map[key] || key;
+}
+
+// Canonical, deduplicated citation list for an indicator.
+export function sourceCitations(meta) {
+  if (!meta) return [];
+  const docs = Array.isArray(meta.source_documents) && meta.source_documents.length
+    ? meta.source_documents
+    : (meta.source_document ? [meta.source_document] : []);
+  return [...new Set(docs.filter(d => d && String(d).trim()).map(canonicalCitation))];
+}
+
 export function sourceLine(meta) {
   if (!meta) return '';
-  const docs = Array.isArray(meta.source_documents) ? meta.source_documents : [];
-  const clean = docs[0];
-  const single = meta.source_document;
-  if (clean && single && clean !== single) return clean;
+  const cites = sourceCitations(meta);
   // Never substitute a source_type guess for a missing citation — that is the
   // blank-fallback leak. An uncited series reads as honestly pending.
-  return single || clean || PENDING_ATTRIBUTION_LABEL;
+  if (!cites.length) return PENDING_ATTRIBUTION_LABEL;
+  // Multi-source format (decision D5): a stitched series must not silently
+  // credit only its first document (the national population series cited
+  // Mamalakis alone while drawing on two censuses and a Sinopsis).
+  if (cites.length === 1) return cites[0];
+  if (cites.length <= 3) return cites.join(' ; ');
+  return `${cites[0]} Plus ${cites.length - 1} additional sources (see Sources).`;
 }
 
 // Source-type readable name
