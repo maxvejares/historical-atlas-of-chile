@@ -709,6 +709,32 @@ export function createMapView(host) {
     return scale === 'department' ? 'department' : scale === 'commune' ? 'comuna' : 'provincia';
   }
 
+  // The 1935 commune frame carries lowercase unaccented names ("santiago");
+  // the geography index carries the cased, accented form keyed by the same
+  // canonical code, so resolve through it before displaying (second audit,
+  // N4). Falls back to per-word capitalization when the index has no entry.
+  let _geoNameIdx = null;
+  function properName(raw, code, scale) {
+    if (!raw) return raw;
+    if (raw !== raw.toLowerCase()) return raw;
+    if (_geoNameIdx === null) {
+      _geoNameIdx = {};
+      const idx = (typeof window !== 'undefined' && Array.isArray(window.__INLINE_geography_index))
+        ? window.__INLINE_geography_index : [];
+      for (const e of idx) _geoNameIdx[`${e.scale}|${String(e.code).toLowerCase()}`] = e.name;
+    }
+    const hit = code != null && _geoNameIdx[`${scale}|${String(code).toLowerCase()}`];
+    if (hit) return hit;
+    const minor = new Set(['de', 'del', 'la', 'las', 'los', 'el', 'y']);
+    return raw.split(' ').map((w, i) =>
+      (i > 0 && minor.has(w)) ? w : w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+  }
+
+  function displayNameFor(f, scale) {
+    const raw = f.properties[nameFieldFor(scale)] || f.properties.name;
+    return properName(raw, featureCode(f, scale), scale);
+  }
+
   function featureStyle(f) {
     // Territory zones get distinct styling (not data-driven)
     if (isTerritory(f)) {
@@ -717,8 +743,22 @@ export function createMapView(host) {
     }
     const code = featureCode(f, cur.scale);
     const v = cur.values ? cur.values[code] : null;
-    if (v == null) return { fillColor: NO_DATA_FILL, fillOpacity: 0.7, color: NO_DATA_STROKE, weight: 0.6, dashArray: '2 3' };
-    const c = cur.breaks.length ? colorFor(v, cur.breaks) : SEQ[Math.min(SEQ.length - 1, Math.floor(((v - cur.min) / Math.max(1, cur.max - cur.min)) * SEQ.length))];
+    if (v == null) {
+      // Point scales: a pale radius-4 circle is invisible against the
+      // basemap, so an empty port map looked broken (second audit, B6). A
+      // hollow ring with a legible stroke reads as "a port with no value
+      // this year" instead of nothing.
+      if (isPointScale(cur.scale)) {
+        return { fillColor: '#FFFFFF', fillOpacity: 0.9, color: '#8A8378',
+                 weight: 1.2, dashArray: '2 2' };
+      }
+      return { fillColor: NO_DATA_FILL, fillOpacity: 0.7, color: NO_DATA_STROKE, weight: 0.6, dashArray: '2 3' };
+    }
+    // Degenerate view (one distinct value): the linear ramp lands on SEQ[0],
+    // the lightest step, leaving the only populated unit nearly invisible.
+    const c = cur.breaks.length ? colorFor(v, cur.breaks)
+      : (cur.max === cur.min ? SEQ[Math.floor(SEQ.length / 2)]
+         : SEQ[Math.min(SEQ.length - 1, Math.floor(((v - cur.min) / Math.max(1, cur.max - cur.min)) * SEQ.length))]);
     const qf = cur.cellFlags && cur.cellFlags[code];
     if (qf) {
       // Non-observed cell (estimated / reconstructed / needs_review): lighter
@@ -748,7 +788,7 @@ export function createMapView(host) {
     ly.on('mouseover', () => {
       if (pinned) return;
       const v = cur.values[featureCode(f, cur.scale)];
-      const displayName = f.properties[nameFieldFor(cur.scale)] || f.properties.name;
+      const displayName = displayNameFor(f, cur.scale);
       ly.setStyle({ weight: 1.5, color: HOVER_STROKE });
       ly.bringToFront();
       if (v != null) setInfo(displayName, cur.year, v, cur.meta, cur.perCapita, cur.cellFlags && cur.cellFlags[featureCode(f, cur.scale)]); else setInfoDefault(cur.distribution, cur.meta, cur.year, cur.perCapita);
@@ -766,7 +806,7 @@ export function createMapView(host) {
 
   function applyPin(f, ly) {
     const v = cur.values[featureCode(f, cur.scale)];
-    const displayName = f.properties[nameFieldFor(cur.scale)] || f.properties.name;
+    const displayName = displayNameFor(f, cur.scale);
     if (pinned) layer.resetStyle(pinned);
     pinned = ly;
     ly.setStyle({ weight: 2, color: HOVER_STROKE });
@@ -797,9 +837,54 @@ export function createMapView(host) {
   // top/bottom, which is worse than the extra neighboring territory.
   const MAINLAND_ZOOM_BUMP = 2;
 
+  // Data-aware framing (2026-08-18 second audit, B6, decision D3). The
+  // zoom-bump above framed a fixed mid-Chile window regardless of where the
+  // data was: the 1843 department view opened on Chiloe and Patagonia while
+  // Ovalle, the highest-value unit, sat off-frame north, and the port map
+  // looked empty because both populated ports were outside the window. The
+  // frame now fits the units that CARRY data for the current view; the
+  // mainland fit is only the no-data fallback. Refits happen on scale or
+  // variable change, never on a year tick, and a user pan or zoom within a
+  // scale suppresses variable-change refits (progFit marks programmatic
+  // moves so user intent is detectable).
+  let userMoved = false;
+  let programmaticMove = false;
+  let lastFitScale = null;
+  let lastFitKey = null;
+
+  function progFit(fn) {
+    programmaticMove = true;
+    try { fn(); } finally { programmaticMove = false; }
+  }
+
   function fitMainland(m) {
-    m.fitBounds(MAINLAND_BOUNDS, { animate: false, padding: MAINLAND_PADDING });
-    m.setZoom(Math.min(m.getZoom() + MAINLAND_ZOOM_BUMP, m.getMaxZoom()), { animate: false });
+    progFit(() => {
+      m.fitBounds(MAINLAND_BOUNDS, { animate: false, padding: MAINLAND_PADDING });
+      m.setZoom(Math.min(m.getZoom() + MAINLAND_ZOOM_BUMP, m.getMaxZoom()), { animate: false });
+    });
+  }
+
+  function fitToData(m, lyr, values, scale) {
+    let b = null;
+    // Point scales frame the whole gazetteer: fitting only the populated
+    // markers can mean zooming onto one dot when a year has a single value,
+    // and the empty network is itself information (which ports exist).
+    const includeAll = isPointScale(scale);
+    lyr.eachLayer(ly => {
+      const f = ly.feature;
+      if (!f || isTerritory(f)) return;
+      if (!includeAll && values[featureCode(f, scale)] == null) return;
+      const lb = ly.getBounds ? ly.getBounds()
+        : (ly.getLatLng ? L.latLngBounds(ly.getLatLng(), ly.getLatLng()) : null);
+      if (!lb) return;
+      b = b ? b.extend(lb) : L.latLngBounds(lb.getSouthWest(), lb.getNorthEast());
+    });
+    if (!b || !b.isValid()) { fitMainland(m); return; }
+    progFit(() => {
+      m.fitBounds(b.pad(0.15), { animate: false });
+      const cap = isPointScale(scale) ? 9 : 8;
+      if (m.getZoom() > cap) m.setZoom(cap, { animate: false });
+    });
   }
 
   function ensureMap() {
@@ -811,6 +896,9 @@ export function createMapView(host) {
       maxBounds: [[-58, -82], [-15, -60]],   // hard pan clamp around Chile
       maxBoundsViscosity: 1.0,
     });
+    // User pans/zooms (non-programmatic moves) suppress variable-change
+    // refits within the same scale; a scale change resets the flag.
+    map.on('moveend zoomend', () => { if (!programmaticMove) userMoved = true; });
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; OpenStreetMap &copy; CARTO &middot; Boundaries: La Política en el Espacio',
       subdomains: 'abcd', maxZoom: 19,
@@ -1143,7 +1231,7 @@ export function createMapView(host) {
     const matchedEntries = []; // {name, value} for every matched feature
     for (const f of geoJSON.features) {
       if (isTerritory(f)) continue; // skip territory zones for coverage
-      const displayName = f.properties[nameField] || f.properties.name;
+      const displayName = properName(f.properties[nameField] || f.properties.name, featureCode(f, scale), scale);
       const code = featureCode(f, scale);
       const v = values[code];
       if (v != null && !Number.isNaN(v)) {
@@ -1188,7 +1276,7 @@ export function createMapView(host) {
         const ranked = [...matchedValues].sort((a, b) => a - b);
         opts.pointToLayer = (feature, latlng) => {
           const v = values[featureCode(feature, scale)];
-          let r = 4;
+          let r = v == null ? 5 : 4;
           if (v != null && !Number.isNaN(v) && ranked.length > 1) {
             const pos = ranked.filter(x => x <= v).length / ranked.length;
             r = 4 + Math.round(pos * 10);
@@ -1198,10 +1286,18 @@ export function createMapView(host) {
       }
       layer = L.geoJSON(geoJSON, opts).addTo(map);
       lastGeoJSON = geoJSON;
-      // Tighten bbox to mainland Chile (don't fitBounds to GeoJSON which may
-      // extend offshore); only on a geometry swap, so hover/zoom state survives
-      // ordinary year scrubbing.
-      fitMainland(map);
+      // Refit policy (D3): on scale change always (old viewport is
+      // meaningless over new geometry, and user intent resets); on variable
+      // change only if the user has not panned or zoomed; NEVER on a year
+      // tick or mid-scrub vintage swap.
+      const fitKey = `${scale}|${variable}`;
+      const scaleChanged = lastFitScale !== scale;
+      if (scaleChanged) userMoved = false;
+      if ((scaleChanged || fitKey !== lastFitKey) && !userMoved) {
+        fitToData(map, layer, values, scale);
+      }
+      lastFitScale = scale;
+      lastFitKey = fitKey;
       if (pendingPin && pendingPin.scale === scale) schedulePinResolution(scale);
     }
 
@@ -1213,7 +1309,14 @@ export function createMapView(host) {
     legend.querySelector('.ml-overline').textContent = scale.charAt(0).toUpperCase() + scale.slice(1) + 's, ' + year;
     legend.querySelector('.ml-title').textContent = (meta.display_label || meta.label) + (perCapita ? ' (per 100,000)' : '');
     legend.querySelector('.ml-units').textContent = perCapita ? 'rate per 100,000 population' : mapUnitCaption(meta);
-    legend.querySelector('.ml-ramp').innerHTML = SEQ.map(c => `<span style="background:${c}"></span>`).join('');
+    if (matchedValues.length && min === max) {
+      // One populated value: a full seven-step ramp labeled X to X is
+      // noise (the 1840 port view read "1.68M - 1.68M"; second audit, N8).
+      legend.querySelector('.ml-ramp').innerHTML =
+        `<span style="background:${SEQ[Math.floor(SEQ.length / 2)]}"></span>`;
+    } else {
+      legend.querySelector('.ml-ramp').innerHTML = SEQ.map(c => `<span style="background:${c}"></span>`).join('');
+    }
     {
       let fn = legend.querySelector('.ml-flagnote');
       if (!fn) {
@@ -1230,7 +1333,8 @@ export function createMapView(host) {
     }
     if (tableOpen) renderTable();
     legend.querySelector('.ml-min').textContent = fmt(min, perCapita ? 'rate' : meta.format_hint, perCapita ? '' : meta.display_unit);
-    legend.querySelector('.ml-max').textContent = fmt(max, perCapita ? 'rate' : meta.format_hint, perCapita ? '' : meta.display_unit);
+    legend.querySelector('.ml-max').textContent = (matchedValues.length && min === max)
+      ? '' : fmt(max, perCapita ? 'rate' : meta.format_hint, perCapita ? '' : meta.display_unit);
     const cov = legend.querySelector('.ml-cov');
     cov.style.display = 'none';
 
@@ -1251,7 +1355,7 @@ export function createMapView(host) {
     // not have) and show a distribution panel for the one year instead. A
     // series/sparse view keeps the sparkline (drawn as dots for sparse).
     const tmode = M.classifyTemporal(meta, scale);
-    const distNoun = scale === 'department' ? 'departments' : scale === 'commune' ? 'comunas' : 'provinces';
+    const distNoun = scale === 'department' ? 'departments' : scale === 'commune' ? 'comunas' : scale === 'port' ? 'ports' : scale === 'city' ? 'cities' : 'provinces';
     if (tmode === 'snapshot') {
       sparkEl.style.display = 'none'; sparkEl.innerHTML = '';
       renderDistribution(distribution, meta, year, perCapita, distNoun);
@@ -1264,7 +1368,7 @@ export function createMapView(host) {
     // Name how many units in the active geometry frame carry data. The count
     // is the matched intersection of geometry features and data (P1 fix),
     // already computed above as `matched` / `total`.
-    const scaleNoun = scale === 'department' ? 'departments' : scale === 'commune' ? 'comunas' : 'provinces';
+    const scaleNoun = scale === 'department' ? 'departments' : scale === 'commune' ? 'comunas' : scale === 'port' ? 'ports' : scale === 'city' ? 'cities' : 'provinces';
     covCaptionEl.style.display = 'block';
     covCaptionEl.textContent = `${matched} of ${total} ${scaleNoun} mapped · ${year}` +
       (perCapita ? ' · per capita' : '');
@@ -1310,7 +1414,12 @@ export function createMapView(host) {
     const geoYear = nearestGeoYear(year, yrs);
     const latestFrame = yrs[yrs.length - 1];
     const lastInterval = yrs[yrs.length - 1] - yrs[yrs.length - 2];
-    if (year - latestFrame > lastInterval) {
+    if (isPointScale(scale)) {
+      // Point gazetteers are not boundary vintages; geoYearsFor's [0]
+      // sentinel rendered "Showing 0 boundaries (closest available to
+      // 1840)" here (second audit, N1).
+      noticeEl.style.display = 'none';
+    } else if (year - latestFrame > lastInterval) {
       noticeEl.style.display = 'block';
       noticeEl.setAttribute('style',
         'display:block;margin:8px 0;padding:10px 12px;border:1px solid #7A1E2B;' +
