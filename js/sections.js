@@ -36,13 +36,17 @@ const SOURCE_GROUPS = [
 ];
 
 const GROUP_RULES = [
+  // Keep in sync with scripts/build_source_index.py GROUP_RULES: the browse
+  // tab classifies from that script's output, this registry classifies here,
+  // and the two must agree document by document.
   ['primary_government', [
     /\banuario\b/i, /\bsinopsis estad/i, /\bcenso\b/i, /\bcensus\b/i,
     /\bmemoria\b/i, /\bpresupuesto\b/i, /\bcatastro\b/i, /\brol de aval/i,
+    /direcci[oó]n general de estad/i, /oficina central de estad/i,
   ]],
   ['compiled_academic', [
     /\bmamalakis\b/i,
-    /\baldana\b/i, /\bmolina\b/i, /\bmiquel\b/i, /\bmartner\b/i,
+    /\baldana\b/i, /\bmolina\b/i, /\bmiquel\b/i, /\bmartner\b/i, /\bhumud\b/i,
   ]],
   ['institutional', [
     /\bsociedad nacional/i, /\bsofofa\b/i, /\bbolet[ií]n del trabajo\b/i,
@@ -67,14 +71,25 @@ function classifyDocument(docName) {
 
 // Build the sources registry as an array of group objects, optionally
 // filtered to a single variable id.
+// Raw source keys resolve to their canonical citation through the same map
+// build_source_index.py bakes into source_index.json, so this registry and
+// the browse Sources tab count the same documents (2026-08-18 second audit:
+// the two surfaces said 148 and 44 against a stat strip saying 241).
+function canonicalDocName(d) {
+  const idx = (typeof window !== 'undefined' && window.__INLINE_source_index) || {};
+  const map = idx.key_to_citation || {};
+  return map[d] || d;
+}
+
 function buildSourceRegistry(filterVar) {
   const groupMap = Object.fromEntries(SOURCE_GROUPS.map(g => [g.id, { ...g, docs: {}, pendingVars: [] }]));
   for (const v of M.manifest()) {
     if (v.published === false) continue;
     if (filterVar && v.id !== filterVar) continue;
-    const docs = (v.source_documents && v.source_documents.length)
+    const rawDocs = (v.source_documents && v.source_documents.length)
       ? v.source_documents
       : (v.source_document ? [v.source_document] : []);
+    const docs = [...new Set(rawDocs.map(canonicalDocName))];
     if (!docs.length) {
       groupMap.pending_attribution.pendingVars.push({
         id: v.id, label: v.display_label || v.label,
@@ -233,14 +248,14 @@ export function createSections(host) {
       </p>
       <p class="ss-body">
         The database contains ${nObs} observations drawn from ${nSrc} source documents,
-        covering ${nFam} indicator families across six geographic levels (commune,
-        department, province, national, city, and macro-region). Every observation carries a
+        covering ${nFam} indicator families across ${M.scalesPresent().length} geographic
+        levels (${M.scaleListText()}). Every observation carries a
         quality flag and a source citation. The extraction pipeline, audit
         framework, and known limitations are documented in the methodology.
       </p>
       <p class="ss-body">
         <strong>Citation:</strong> V&eacute;jares, Maximiliano. 2026.
-        <em>Historical Atlas of Chile, 1810&ndash;1990: Database and Methodology, Version 1.0.</em>
+        <em>Historical Atlas of Chile, ${sc.start}&ndash;${sc.end}: Database and Methodology, Version ${M.ATLAS_VERSION}.</em>
         Johns Hopkins University.
       </p>
       <p class="ss-foot caption">Contact: <a href="mailto:maxvejares@jhu.edu">maxvejares@jhu.edu</a>.</p>
@@ -250,9 +265,8 @@ export function createSections(host) {
       <div class="ss-overline overline">Other data</div>
       <h2 class="ss-title serif">Looking for something else?</h2>
       <p class="ss-body">
-        This atlas is deliberately focused: subnational (department and province)
-        Chilean statistics for ${sc.start}&ndash;${sc.end}, compiled from primary
-        records. For national long-run series, cross-country comparison, or data
+        This atlas is deliberately focused: subnational Chilean statistics
+        for ${sc.start}&ndash;${sc.end}, compiled from primary records. For national long-run series, cross-country comparison, or data
         after 1990, the resources below are the best starting points.
       </p>
 
@@ -325,20 +339,29 @@ export function createSections(host) {
     </section>
   `;
 
-  // 2026-08-18 site-audit fix: the CSV download size was a hardcoded "24 MB"
-  // against an actual ~55 MB file. HEAD the real file and read Content-Length
-  // instead of hardcoding a number that goes stale the next time the dataset
-  // grows. Degrades silently (no size shown) if the HEAD request fails.
+  // Download size labels come from downloads.json, baked at build time from
+  // the exact file written to disk (run_m028.write_downloads_metadata). The
+  // prior HEAD-request approach read GitHub Pages' Content-Length, which is
+  // the gzip TRANSFER size, not the file size -- the card said "2 MB" for a
+  // 57.8 MB file (2026-08-18 second audit, B3). HEAD survives only as a
+  // fallback for dev servers with no baked metadata.
   const dlSizeEl = host.querySelector('.dl-csv-size');
   const dlLinkEl = host.querySelector('.dl-csv-link');
   if (dlSizeEl && dlLinkEl) {
-    fetch(dlLinkEl.getAttribute('href'), { method: 'HEAD' })
-      .then(r => {
-        const len = r.headers.get('content-length');
-        const mb = fmtMB(len ? Number(len) : null);
-        if (mb) dlSizeEl.textContent = ` (${mb})`;
-      })
-      .catch(() => {});
+    const href = dlLinkEl.getAttribute('href');
+    const baked = M.downloadFiles().find(f => href.endsWith(f.file));
+    const bakedMB = baked ? fmtMB(baked.bytes) : null;
+    if (bakedMB) {
+      dlSizeEl.textContent = ` (${bakedMB})`;
+    } else {
+      fetch(href, { method: 'HEAD' })
+        .then(r => {
+          const len = r.headers.get('content-length');
+          const mb = fmtMB(len ? Number(len) : null);
+          if (mb) dlSizeEl.textContent = ` (${mb})`;
+        })
+        .catch(() => {});
+    }
   }
 
   const registryEl = host.querySelector('.src-registry');

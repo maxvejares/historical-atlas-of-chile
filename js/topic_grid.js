@@ -68,6 +68,9 @@ export function createTopicGrid(host, { onSelect }) {
   // set host.setAttribute('data-dropcap', 'on'). CSS rule remains in app.css.
   const counts = M.topicCounts();
   const stats = M.stats();
+  // Unit counts from the all-vintage geography index (the strip's old "70+"
+  // and "25" were hand-written and stale; 2026-08-18 second audit).
+  const geo = M.geographyCounts();
 
   const cards = TOPICS.map(t => {
     const n = counts[t.id] || 0;
@@ -86,10 +89,10 @@ export function createTopicGrid(host, { onSelect }) {
     <div class="topic-grid">${cards}</div>
     <div class="dataset-strip topic-strip">
       <div class="stat"><span class="v num">${stats.year_span}</span><span class="l">years</span></div>
-      <div class="stat"><span class="v num">${Object.values(counts).reduce((a, b) => a + b, 0)}</span><span class="l">indicators</span></div>
+      <div class="stat"><span class="v num">${(stats.n_variables_total ?? Object.values(counts).reduce((a, b) => a + b, 0)).toLocaleString('en-US')}</span><span class="l">indicators</span></div>
       <div class="stat"><span class="v num">${stats.n_census_years}</span><span class="l">census waves</span></div>
-      <div class="stat"><span class="v num">70+</span><span class="l">departments</span></div>
-      <div class="stat"><span class="v num">25</span><span class="l">provinces</span></div>
+      ${geo.department ? `<div class="stat"><span class="v num">${geo.department}</span><span class="l">departments, all vintages</span></div>` : ''}
+      ${geo.province ? `<div class="stat"><span class="v num">${geo.province}</span><span class="l">provinces, all vintages</span></div>` : ''}
       <div class="stat"><span class="v num">${(stats.n_source_documents ?? 0).toLocaleString('en-US')}</span><span class="l">source documents</span></div>
     </div>
   `;

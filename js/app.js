@@ -76,7 +76,8 @@ function browseHeadingSub() {
   const fam = s.n_families != null ? s.n_families.toLocaleString('en-US') : 'many';
   const cat = s.n_categories != null ? s.n_categories : 'several';
   const src = s.n_source_documents != null ? s.n_source_documents.toLocaleString('en-US') : 'many';
-  return `Browse ${fam} indicator families across ${cat} thematic categories, three geographic levels, and ${src} source documents.`;
+  const nLevels = (M.scalesPresent() || []).length || 'several';
+  return `Browse ${fam} indicator families across ${cat} thematic categories, ${nLevels} geographic levels, and ${src} source documents.`;
 }
 
 async function _atlasInit() {
@@ -92,10 +93,13 @@ async function _atlasInit() {
     document.title = `Historical Atlas of Chile, ${span}`;
     const desc = document.querySelector('meta[name="description"]');
     if (desc) {
+      const s = M.stats() || {};
+      const nSrcDesc = s.n_source_documents != null
+        ? `${s.n_source_documents.toLocaleString('en-US')} sources` : 'primary sources';
       desc.setAttribute(
         'content',
         `A historical archive of Chilean economic, political, and social data, ${span}. ` +
-        `A century and a half of records compiled from over a dozen sources, free to browse, ` +
+        `A century and a half of records compiled from ${nSrcDesc}, free to browse, ` +
         `compare, visualize, and download.`
       );
     }

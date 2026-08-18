@@ -1,11 +1,11 @@
 {
  "generated": "2026-08-18",
- "n_documents": 150,
+ "n_documents": 148,
  "groups": [
   {
    "id": "Primary Chilean government publications",
    "group_id": "primary_government",
-   "n_documents": 119,
+   "n_documents": 117,
    "n_rows": 109144
   },
   {
@@ -652,7 +652,7 @@
    "raw_keys": [
     "Anuario Estadistico de la Republica de Chile, entrega 1879-1880 (Yumpu 56511022)"
    ],
-   "n_variables": 10
+   "n_variables": 9
   },
   {
    "document": "Anuario Estadístico 1935",
@@ -840,7 +840,7 @@
    "raw_keys": [
     "Censo 1992 (INE, born-digital volumen)"
    ],
-   "n_variables": 3
+   "n_variables": 2
   },
   {
    "document": "Censo Jeneral de la Poblacion de Chile 1875 (Quinto Censo, Oficina Central de Estadistica, 1876)",
@@ -1818,19 +1818,7 @@
    "raw_keys": [
     "Anuario Estadístico de Chile, 1862"
    ],
-   "n_variables": 3
-  },
-  {
-   "document": "Oficina Central de Estadística. 1863. Anuario Estadístico de la República de Chile, año 1862, Entrega Quinta. Santiago: Imprenta Nacional.",
-   "group": "Primary Chilean government publications",
-   "n_tables": 0,
-   "n_rows": 0,
-   "year_range": null,
-   "geo_levels": [],
-   "raw_keys": [
-    "Anuario Estadístico de Chile, 1862 (Entrega Quinta)"
-   ],
-   "n_variables": 1
+   "n_variables": 2
   },
   {
    "document": "Oficina Central de Estadística. 1866. Censo Jeneral de la República de Chile, 19 de abril de 1865, Cuadro Sinóptico. Santiago: Imprenta Nacional.",
@@ -1853,18 +1841,6 @@
    "geo_levels": [],
    "raw_keys": [
     "Censo Jeneral de la República de Chile, 1865 — Clasificación por provincias"
-   ],
-   "n_variables": 1
-  },
-  {
-   "document": "Oficina Central de Estadística. 1872. Anuario Estadístico de la República de Chile, Tomo XI, años 1870–1871. Santiago: Imprenta Nacional.",
-   "group": "Primary Chilean government publications",
-   "n_tables": 0,
-   "n_rows": 0,
-   "year_range": null,
-   "geo_levels": [],
-   "raw_keys": [
-    "Anuario Estadístico, Tomo XI, 1870–1871"
    ],
    "n_variables": 1
   },
@@ -2132,7 +2108,7 @@
    "raw_keys": [
     "Anuario Estadístico, Tomo XXIV"
    ],
-   "n_variables": 2
+   "n_variables": 1
   },
   {
    "document": "Servicio Nacional de Estadística y Censos. 1953. XII Censo General de Población y I de Vivienda de la República de Chile, 24 de abril de 1952. Santiago.",
@@ -2430,7 +2406,7 @@
    "raw_keys": [
     "Véjares, compiled public-employment series (Chile), author's compilation"
    ],
-   "n_variables": 2
+   "n_variables": 1
   },
   {
    "document": "Véjares, Maximiliano. Forthcoming. Compiled state-capacity dataset, Chile, 1935. Net Zero Industrial Policy Lab, Johns Hopkins University.",
@@ -2442,7 +2418,7 @@
    "raw_keys": [
     "Véjares, compiled state-capacity dataset (Chile, 1935), author's compilation"
    ],
-   "n_variables": 10
+   "n_variables": 9
   },
   {
    "document": "Véjares, Maximiliano. Forthcoming. Department-level historical dataset, Chile, 19th century. Compiled from primary archival sources. Net Zero Industrial Policy Lab, Johns Hopkins University.",
@@ -2461,7 +2437,7 @@
     "Véjares, Department-level historical dataset (Chile, 19th c.), author's compilation",
     "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation."
    ],
-   "n_variables": 5
+   "n_variables": 3
   },
   {
    "document": "Véjares, Maximiliano. Forthcoming. Landholding and Democracy in Chile. Working paper, Net Zero Industrial Policy Lab, Johns Hopkins University.",
@@ -2473,7 +2449,7 @@
    "raw_keys": [
     "Véjares, *Landholding and Democracy in Chile*"
    ],
-   "n_variables": 3
+   "n_variables": 2
   }
  ],
  "key_to_citation": {
@@ -2661,14 +2637,11 @@
   "Oficina Central de Estadística. 1910. Anuario Estadístico de la República de Chile, año 1909. Santiago: Sociedad Imprenta y Litografía Universo.": "Oficina Central de Estadística. 1910. Anuario Estadístico de la República de Chile, año 1909. Santiago: Sociedad Imprenta y Litografía Universo.",
   "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, education section. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, education section. Santiago.",
   "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, electoral registration and turnout by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, electoral registration and turnout by province. Santiago.",
-  "Véjares, Maximiliano. Forthcoming. Landholding and Democracy in Chile. Working paper, Net Zero Industrial Policy Lab, Johns Hopkins University.": "Véjares, Maximiliano. Forthcoming. Landholding and Democracy in Chile. Working paper, Net Zero Industrial Policy Lab, Johns Hopkins University.",
-  "Oficina Central de Estadística. 1872. Anuario Estadístico de la República de Chile, Tomo XI, años 1870–1871. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1872. Anuario Estadístico de la República de Chile, Tomo XI, años 1870–1871. Santiago: Imprenta Nacional.",
-  "Oficina Central de Estadística. ca. 1885. Anuario Estadístico de la República de Chile, Tomo XXIV. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. ca. 1885. Anuario Estadístico de la República de Chile, Tomo XXIV. Santiago: Imprenta Nacional.",
-  "Oficina Central de Estadística. 1863. Anuario Estadístico de la República de Chile, año 1862 (Tomo III). Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1863. Anuario Estadístico de la República de Chile, año 1862 (Tomo III). Santiago: Imprenta Nacional.",
-  "Oficina Central de Estadística. 1863. Anuario Estadístico de la República de Chile, año 1862, Entrega Quinta. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1863. Anuario Estadístico de la República de Chile, año 1862, Entrega Quinta. Santiago: Imprenta Nacional.",
   "Véjares, Maximiliano. Forthcoming. Department-level historical dataset, Chile, 19th century. Compiled from primary archival sources. Net Zero Industrial Policy Lab, Johns Hopkins University.": "Véjares, Maximiliano. Forthcoming. Department-level historical dataset, Chile, 19th century. Compiled from primary archival sources. Net Zero Industrial Policy Lab, Johns Hopkins University.",
+  "Véjares, Maximiliano. Forthcoming. Landholding and Democracy in Chile. Working paper, Net Zero Industrial Policy Lab, Johns Hopkins University.": "Véjares, Maximiliano. Forthcoming. Landholding and Democracy in Chile. Working paper, Net Zero Industrial Policy Lab, Johns Hopkins University.",
   "Oficina Central de Estadística. 1921. Anuario Estadístico de la República de Chile, año 1920. Santiago.": "Oficina Central de Estadística. 1921. Anuario Estadístico de la República de Chile, año 1920. Santiago.",
   "Oficina Central de Estadística. 1892. Anuario Estadístico de la República de Chile, Tomo XXVI, años 1887–1888. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1892. Anuario Estadístico de la República de Chile, Tomo XXVI, años 1887–1888. Santiago: Imprenta Nacional.",
+  "Oficina Central de Estadística. ca. 1885. Anuario Estadístico de la República de Chile, Tomo XXIV. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. ca. 1885. Anuario Estadístico de la República de Chile, Tomo XXIV. Santiago: Imprenta Nacional.",
   "Anuario Estadistico Chile 1917 Vol III": "Anuario Estadistico Chile 1917 Vol III",
   "Anuario Estadistico Vol III Politica y Administracion 1918": "Anuario Estadistico Vol III Politica y Administracion 1918",
   "Anuario Estadistico Vol III Politica y Administracion 1921": "Anuario Estadistico Vol III Politica y Administracion 1921",
@@ -2713,6 +2686,7 @@
   "Véjares, Maximiliano. Forthcoming. Compiled public-employment series, Chile. Net Zero Industrial Policy Lab, Johns Hopkins University.": "Véjares, Maximiliano. Forthcoming. Compiled public-employment series, Chile. Net Zero Industrial Policy Lab, Johns Hopkins University.",
   "Oficina Central de Estadística. 1925. X Censo de la Población de la República de Chile, 15 de diciembre de 1920, public employees by theme. Santiago.": "Oficina Central de Estadística. 1925. X Censo de la Población de la República de Chile, 15 de diciembre de 1920, public employees by theme. Santiago.",
   "Biblioteca del Congreso Nacional de Chile. Reseñas Biográficas Parlamentarias. Santiago: BCN. [database].": "Biblioteca del Congreso Nacional de Chile. Reseñas Biográficas Parlamentarias. Santiago: BCN. [database].",
+  "Oficina Central de Estadística. 1863. Anuario Estadístico de la República de Chile, año 1862 (Tomo III). Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1863. Anuario Estadístico de la República de Chile, año 1862 (Tomo III). Santiago: Imprenta Nacional.",
   "Oficina Central de Estadística. 1873. Anuario Estadístico de la República de Chile, año 1872. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1873. Anuario Estadístico de la República de Chile, año 1872. Santiago: Imprenta Nacional.",
   "Biblioteca del Congreso Nacional de Chile. Reseñas Biográficas Parlamentarias, 1833–1891. Santiago: BCN. [database].": "Biblioteca del Congreso Nacional de Chile. Reseñas Biográficas Parlamentarias, 1833–1891. Santiago: BCN. [database].",
   "Mamalakis Vol 2, Table 1.2 (INE)": "Mamalakis Vol 2, Table 1.2 (INE)",

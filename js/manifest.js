@@ -290,6 +290,57 @@ export function topicCounts() {
   return out;
 }
 
+// Geographic scales actually present in the browse-visible catalog, in the
+// toolbar's canonical order. Every piece of site copy that names "N geographic
+// levels" or lists them derives from this, never from a hand-written list
+// (2026-08-18 second audit: the page said "three geographic levels" in one
+// place and "six ... including macro-region" in another, against an actual
+// six that include port and exclude macro-region).
+// Release version of the public atlas. Single source of truth for the About
+// citation and the footer; bump when a release materially changes the catalog
+// (v2.0 = the 2026-08 second-audit release: coherent self-description,
+// two-file downloads, scripted codebook).
+export const ATLAS_VERSION = '2.0';
+
+const SCALE_ORDER = ['national', 'department', 'province', 'commune', 'port', 'city'];
+export function scalesPresent() {
+  const seen = new Set();
+  for (const v of _manifest) {
+    if (v.published === false) continue;
+    for (const [s, ok] of Object.entries(v.scale_availability || {})) {
+      if (ok) seen.add(s);
+    }
+  }
+  return SCALE_ORDER.filter(s => seen.has(s));
+}
+
+// Human list of the present scales: "national, department, province, commune,
+// port, and city".
+export function scaleListText() {
+  const names = scalesPresent();
+  if (names.length <= 1) return names.join('');
+  return `${names.slice(0, -1).join(', ')}, and ${names[names.length - 1]}`;
+}
+
+// Unit counts per scale from the all-vintage geography index (union of every
+// boundary vintage plus the port/city gazetteers). Returns {} when the index
+// is absent (dev mode before the bundle inlines it).
+export function geographyCounts() {
+  const idx = (typeof window !== 'undefined' && Array.isArray(window.__INLINE_geography_index))
+    ? window.__INLINE_geography_index : [];
+  const out = {};
+  for (const e of idx) out[e.scale] = (out[e.scale] || 0) + 1;
+  return out;
+}
+
+// Download-file metadata baked at build time by run_m028.write_downloads_metadata
+// (true byte sizes -- a HEAD request against GitHub Pages reports the gzip
+// transfer size). Returns [] when absent.
+export function downloadFiles() {
+  const d = (typeof window !== 'undefined' && window.__INLINE_downloads);
+  return (d && Array.isArray(d.files)) ? d.files : [];
+}
+
 // Per-capita rules
 export function perCapitaMode(id) {
   const v = byId(id);
