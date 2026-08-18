@@ -189,9 +189,29 @@ async function _atlasInit() {
     },
   });
 
+  // 2026-08-18 site-audit fix (N1): a search hit for a place name has no
+  // single associated variable, unlike every other browse-nav result. Land
+  // on whichever variable is already showing if it's available at that
+  // place's scale (keeps context), else a scale-appropriate default so the
+  // map always has something to show.
+  const GEO_FALLBACK_VARIABLE = {
+    national: 'total_population', province: 'total_population', department: 'total_population',
+    commune: 'total_population', port: 'customs_receipts_pesos', city: 'population_urban',
+  };
+
   // Full dataset browser (Topics / Geography / Sources / Search)
   createBrowseNav(document.getElementById('browse-section'), {
-    onSelect: ({ variable }) => {
+    onSelect: ({ variable, geography }) => {
+      if (geography) {
+        const { scale, code } = geography;
+        const curVar = strip.state().variable;
+        const curMeta = curVar ? M.byId(curVar) : null;
+        const useVar = (curMeta && curMeta.scale_availability[scale]) ? curVar : GEO_FALLBACK_VARIABLE[scale];
+        mapView.pinPending(scale, code);
+        strip.setSelection({ scale, variable: useVar });
+        document.getElementById('control-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        return;
+      }
       if (!variable) return;
       const meta = M.byId(variable);
       if (!meta) return;

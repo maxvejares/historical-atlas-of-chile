@@ -387,6 +387,7 @@ export function createChart(host) {
     .chart-step { fill: none; stroke-width: 1; }
     .chart-dot { stroke: #FAFAF7; stroke-width: 1.5; }
     .event-rail .baseline { stroke: #D9D2C2; stroke-width: 1; }
+    .event-rail .ev-dot { stroke: #FDFCF8; stroke-width: 1; }
   `;
 
   function downloadPNG() {
@@ -606,13 +607,23 @@ export function createChart(host) {
   }
 
   // Event-rail SVG, shared by both renders.
+  // 2026-08-18 site-audit fix (N5): these dots sit right above the plot with
+  // no visible label -- only a hover tooltip -- and were drawn at the same
+  // radius and same solid-fill style as the actual chart-dot data markers,
+  // so a sparse series (few real points, similarly spread out) reads as if
+  // the events were part of the data. A persistent "Events" caption plus a
+  // paper-colored ring around each dot (borrowing the .is-hidden-label
+  // treatment app.css already defined for this) make the rail legible at a
+  // glance, without hovering.
   function eventRailSvg(xScale, xMin, xMax, M_TOP, plotW, plotH) {
     const railBaselineY = M_TOP - 6;
-    let svg = `<g class="event-rail"><line class="baseline" x1="${M_LEFT_C}" x2="${M_LEFT_C + plotW}" y1="${railBaselineY}" y2="${railBaselineY}"/>`;
+    let svg = `<g class="event-rail">`;
+    svg += `<text class="ev-rail-caption" x="${M_LEFT_C - 6}" y="${railBaselineY + 3}" text-anchor="end" font-size="9" fill="var(--ink-muted)" opacity="0.65">Events</text>`;
+    svg += `<line class="baseline" x1="${M_LEFT_C}" x2="${M_LEFT_C + plotW}" y1="${railBaselineY}" y2="${railBaselineY}"/>`;
     for (const e of pickEvents(M.events(), [xMin, xMax])) {
       const ex = xScale(e.year);
       const fill = ({war: 'var(--event-war)', political: 'var(--event-political)', economic: 'var(--event-economic)', institutional: 'var(--event-institutional)'})[e.category] || 'var(--ink-muted)';
-      svg += `<circle class="ev-dot" data-year="${e.year}" cx="${ex}" cy="${railBaselineY}" r="3.5" fill="${fill}"/>`;
+      svg += `<circle class="ev-dot is-hidden-label" data-year="${e.year}" cx="${ex}" cy="${railBaselineY}" r="3.5" fill="${fill}"/>`;
       svg += `<line class="ev-vline" data-year="${e.year}" x1="${ex}" x2="${ex}" y1="${railBaselineY + 4}" y2="${M_TOP + plotH}" stroke="${fill}" stroke-width="1" stroke-dasharray="3,3" stroke-opacity="0" pointer-events="none"/>`;
     }
     return svg + '</g>';

@@ -670,6 +670,40 @@ export function createMapView(host) {
   // rebuilding every polygon + handler — the old per-slider-tick hot path.
   let cur = {};
   let lastGeoJSON = null;
+  // 2026-08-18 site-audit fix (N1): a search hit for a place name needs to
+  // land pinned on the map, but the click that triggers it happens before
+  // the target scale's GeoJSON is even requested (render() is async). Stash
+  // the request and resolve it against whichever geometry frame gets built
+  // next that matches its scale, rather than racing render()'s fetch.
+  let pendingPin = null;
+  let pinResolveTimer = null;
+
+  // control_strip.js's setSelection() fires two renders back to back (its
+  // own emit() plus one from the year slider's mount-time onChange), the
+  // second of which rebuilds the geometry layer and would silently wipe out
+  // a pin+pan applied against the first layer. Debounce so only the LAST
+  // layer built in a burst gets the pin -- `layer` always points at
+  // whichever one is current when this fires, so no stale-layer risk.
+  function schedulePinResolution(scale) {
+    clearTimeout(pinResolveTimer);
+    pinResolveTimer = setTimeout(() => {
+      if (!pendingPin || pendingPin.scale !== scale || !layer) return;
+      const code = pendingPin.code;
+      pendingPin = null;
+      layer.eachLayer(ly => {
+        if (pinned) return;
+        const f = ly.feature;
+        if (f && featureCode(f, scale) === code) {
+          applyPin(f, ly);
+          // fitMainland() frames the whole country; the pinned unit can
+          // land outside that view entirely. Center on it so pinning it
+          // also means showing it.
+          const target = ly.getBounds ? ly.getBounds().getCenter() : ly.getLatLng && ly.getLatLng();
+          if (target) map.panTo(target, { animate: false });
+        }
+      });
+    }, 80);
+  }
 
   function nameFieldFor(scale) {
     return scale === 'department' ? 'department' : scale === 'commune' ? 'comuna' : 'provincia';
@@ -725,14 +759,47 @@ export function createMapView(host) {
       setInfoDefault(cur.distribution, cur.meta, cur.year, cur.perCapita);
     });
     ly.on('click', () => {
-      const v = cur.values[featureCode(f, cur.scale)];
-      const displayName = f.properties[nameFieldFor(cur.scale)] || f.properties.name;
       if (pinned === ly) { pinned = null; layer.resetStyle(ly); setInfoDefault(cur.distribution, cur.meta, cur.year, cur.perCapita); return; }
-      if (pinned) layer.resetStyle(pinned);
-      pinned = ly;
-      ly.setStyle({ weight: 2, color: HOVER_STROKE });
-      if (v != null) setInfo(displayName, cur.year, v, cur.meta, cur.perCapita, cur.cellFlags && cur.cellFlags[featureCode(f, cur.scale)]); else setInfoDefault(cur.distribution, cur.meta, cur.year, cur.perCapita);
+      applyPin(f, ly);
     });
+  }
+
+  function applyPin(f, ly) {
+    const v = cur.values[featureCode(f, cur.scale)];
+    const displayName = f.properties[nameFieldFor(cur.scale)] || f.properties.name;
+    if (pinned) layer.resetStyle(pinned);
+    pinned = ly;
+    ly.setStyle({ weight: 2, color: HOVER_STROKE });
+    if (ly.bringToFront) ly.bringToFront();
+    if (v != null) setInfo(displayName, cur.year, v, cur.meta, cur.perCapita, cur.cellFlags && cur.cellFlags[featureCode(f, cur.scale)]); else setInfoDefault(cur.distribution, cur.meta, cur.year, cur.perCapita);
+  }
+
+  // 2026-08-18 site-audit fix (N4): a fresh-eyes audit found the map
+  // defaulting to showing most of South America. Root cause is NOT a
+  // stale/0-size container at construction time (confirmed via debug
+  // logging: the container is correctly sized -- ~770x700 -- at every
+  // measurement, construction included). The real cause is an aspect-ratio
+  // mismatch: Chile's bounding box spans ~39 degrees of latitude but only
+  // ~10 of longitude, and Mercator projection stretches that latitude span
+  // even further at Chile's high absolute latitudes. Fitting that shape into
+  // a near-square container forces Leaflet's fitBounds() to pick a zoom
+  // constrained by the vertical (latitude) extent, which at this
+  // container's proportions leaves a huge amount of extra horizontal
+  // (longitude) space visible on both sides -- sweeping in Bolivia,
+  // Paraguay, and Argentina even though Chile itself is a thin sliver in
+  // the middle. fitBounds() is not wrong given its single-zoom, fit-both-
+  // dimensions contract; it is just the wrong tool for a country this
+  // narrow in a container this square. fitMainland() below fits first, then
+  // zooms in past that worst-case fit so the frame reads as "Chile" rather
+  // than "South America." zoomBump is tuned by eye against the actual
+  // container: +2 keeps the full N-S extent (Arica to Cape Horn) in frame
+  // with Argentina visible at the edges; +3 crops entire regions off the
+  // top/bottom, which is worse than the extra neighboring territory.
+  const MAINLAND_ZOOM_BUMP = 2;
+
+  function fitMainland(m) {
+    m.fitBounds(MAINLAND_BOUNDS, { animate: false, padding: MAINLAND_PADDING });
+    m.setZoom(Math.min(m.getZoom() + MAINLAND_ZOOM_BUMP, m.getMaxZoom()), { animate: false });
   }
 
   function ensureMap() {
@@ -748,7 +815,7 @@ export function createMapView(host) {
       attribution: '&copy; OpenStreetMap &copy; CARTO &middot; Boundaries: La Política en el Espacio',
       subdomains: 'abcd', maxZoom: 19,
     }).addTo(map);
-    map.fitBounds(MAINLAND_BOUNDS, { animate: false, padding: MAINLAND_PADDING });
+    fitMainland(map);
     return map;
   }
 
@@ -1016,7 +1083,10 @@ export function createMapView(host) {
     // (display:none -> visible; resize) which would otherwise leave the
     // tile layer stuck at 0x0.
     ensureMap();
-    requestAnimationFrame(() => map && map.invalidateSize());
+    requestAnimationFrame(() => {
+      if (!map) return;
+      map.invalidateSize();
+    });
 
     let geoJSON;
     try {
@@ -1131,7 +1201,8 @@ export function createMapView(host) {
       // Tighten bbox to mainland Chile (don't fitBounds to GeoJSON which may
       // extend offshore); only on a geometry swap, so hover/zoom state survives
       // ordinary year scrubbing.
-      map.fitBounds(MAINLAND_BOUNDS, { animate: false, padding: MAINLAND_PADDING });
+      fitMainland(map);
+      if (pendingPin && pendingPin.scale === scale) schedulePinResolution(scale);
     }
 
     // Default info-card state shows the distribution summary for this view.
@@ -1257,5 +1328,10 @@ export function createMapView(host) {
     }
   }
 
-  return { render };
+  return {
+    render,
+    // 2026-08-18 site-audit fix (N1): request a pin-on-load for the next
+    // geometry frame built at `scale`. See `pendingPin` declaration above.
+    pinPending(scale, code) { pendingPin = { scale, code }; },
+  };
 }

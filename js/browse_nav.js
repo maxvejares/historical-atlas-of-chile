@@ -78,7 +78,24 @@ async function loadVariableToFamily() {
   return _variableToFamily;
 }
 
+// 2026-08-18 site-audit fix (N1): place-name search index, bundle-aware like
+// the loaders above. Built by scripts/build_geography_index.py from every
+// vintage of the boundary files, keyed by the same canonical code
+// (dcode/pcode/ccode/ucode) map_view.js uses to join panel data to
+// geometry, so a search hit can be pinned on the map with no new crosswalk.
+let _geographyIndex = null;
+async function loadGeographyIndex() {
+  if (!_geographyIndex) _geographyIndex = window.__INLINE_geography_index !== undefined
+    ? window.__INLINE_geography_index
+    : await fetch('data/geography_index.json').then(r => r.json());
+  return _geographyIndex;
+}
+
 // ─── Helpers ───────────────────────────────────────────────────────────────
+
+function stripAccents(s) {
+  return String(s).normalize('NFD').replace(/[̀-ͯ]/g, '');
+}
 
 function escHTML(s) {
   return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -181,6 +198,19 @@ function searchEntries(query) {
     for (const cat of _taxonomy.categories) {
       if (cat.label.toLowerCase().includes(q) || cat.description.toLowerCase().includes(q)) {
         results.push({ type: 'category', item: cat, score: 0 });
+      }
+    }
+  }
+
+  // Search place names (N1 fix). Accent-insensitive both ways: a search for
+  // "Valparaiso" must hit the accented "Valparaíso" the boundary files carry,
+  // and vice versa.
+  if (_geographyIndex) {
+    const qBare = stripAccents(q);
+    for (const g of _geographyIndex) {
+      const nameBare = stripAccents(g.name.toLowerCase());
+      if (nameBare.includes(qBare)) {
+        results.push({ type: 'geography', item: g, score: nameBare.startsWith(qBare) ? 2 : 1 });
       }
     }
   }
@@ -337,8 +367,15 @@ function renderGeoTab(container, { onSelectVariable, typeFilter }) {
   const tf = typeFilter || (() => true);
   const manifest = M.manifest() || [];
 
-  // Count variables available at each level
-  const levels = ['national', 'province', 'department', 'commune'];
+  // Count variables available at each level.
+  // 2026-08-18 site-audit fix (N3): port/city were missing from this list
+  // entirely, so a user browsing "by geographic level" could never land on
+  // one of the 13 port- or 48 city-level variables that DO exist -- the
+  // scale tabs for Port/City then look permanently disabled (they were only
+  // ever disabled for whichever variable the user happened to already have
+  // selected, correctly, since most variables genuinely have no port/city
+  // rows -- but that variable was never reachable through this tab).
+  const levels = ['national', 'province', 'department', 'commune', 'port', 'city'];
   const counts = {};
   for (const lvl of levels) {
     counts[lvl] = manifest.filter(v => v.published !== false && v.scale_availability[lvl] && tf(v) && isPublishable(v)).length;
@@ -355,7 +392,7 @@ function renderGeoTab(container, { onSelectVariable, typeFilter }) {
             <button class="geo-level-btn" data-level="${lvl}">
               <span class="gl-label">${lvl.charAt(0).toUpperCase() + lvl.slice(1)}</span>
               <span class="gl-count">${counts[lvl]} variables</span>
-              <span class="gl-desc">${{national: 'Country-level time series', province: 'Data at the province level', department: 'Data at the department level', commune: 'Data at the comuna level (post-1891)'}[lvl]}</span>
+              <span class="gl-desc">${{national: 'Country-level time series', province: 'Data at the province level', department: 'Data at the department level', commune: 'Data at the comuna level (post-1891)', port: 'Customs and trade data at individual ports', city: 'Data for individual cities and towns'}[lvl]}</span>
             </button>
           `).join('')}
         </div>
@@ -423,11 +460,16 @@ function renderSourceTab(container, { onSelectVariable }) {
       const docs = isExpanded
         ? _sourceIndex.documents.filter(d => d.group === g.id).slice(0, 20)
         : [];
+      // 2026-08-18 site-audit fix (N2): a hardcoded 80-char slice() cut every
+      // citation off before the part that actually distinguishes it -- e.g.
+      // two censuses ("levantado el 26 de noviembre de 1885" vs "...28 de
+      // noviembre de 1895") read as identical rows. Citations here top out
+      // at 133 chars, so showing the full string is cheap and unambiguous.
       const docList = isExpanded ? `
         <div class="src-docs">
           ${docs.map(d => `
             <div class="src-doc-row">
-              <span class="sd-name">${escHTML(d.document.slice(0, 80))}</span>
+              <span class="sd-name">${escHTML(d.document)}</span>
               <span class="sd-meta">${d.n_tables} tables · ${fmtNum(d.n_rows)} rows${d.year_range ? ` · ${d.year_range[0]}–${d.year_range[1]}` : ''}</span>
             </div>
           `).join('')}
@@ -467,13 +509,13 @@ function renderSourceTab(container, { onSelectVariable }) {
 
 // ─── Search ────��───────────────────────────────────────────────────────────
 
-function renderSearch(container, { onSelectVariable, typeFilter }) {
+function renderSearch(container, { onSelectVariable, onSelectGeography, typeFilter }) {
   const tf = typeFilter || (() => true);
   let timeout = null;
 
   container.innerHTML = `
     <div class="search-panel">
-      <input type="search" class="search-input" placeholder="Search variables, families, topics..." autocomplete="off">
+      <input type="search" class="search-input" placeholder="Search variables, families, topics, places..." autocomplete="off">
       <div class="search-results"></div>
     </div>
   `;
@@ -504,6 +546,12 @@ function renderSearch(container, { onSelectVariable, typeFilter }) {
           <span class="sr-label">${escHTML(r.item.label)}</span>
           <span class="sr-cat">${r.item.n_observations} obs</span>
         </button>`;
+      } else if (r.type === 'geography') {
+        return `<button class="sr-row sr-geo" data-geo-code="${escHTML(r.item.code)}" data-geo-scale="${escHTML(r.item.scale)}" data-geo-name="${escHTML(r.item.name)}">
+          <span class="sr-type">Place</span>
+          <span class="sr-label">${escHTML(r.item.name)}</span>
+          <span class="sr-cat">${r.item.scale.charAt(0).toUpperCase() + r.item.scale.slice(1)}</span>
+        </button>`;
       } else {
         return `<button class="sr-row sr-cat-row" data-cat="${escHTML(r.item.id)}">
           <span class="sr-type">Category</span>
@@ -514,6 +562,11 @@ function renderSearch(container, { onSelectVariable, typeFilter }) {
 
     resultsEl.querySelectorAll('.sr-row[data-var]').forEach(btn => {
       btn.addEventListener('click', () => onSelectVariable(btn.dataset.var));
+    });
+    resultsEl.querySelectorAll('.sr-row[data-geo-code]').forEach(btn => {
+      btn.addEventListener('click', () => onSelectGeography && onSelectGeography({
+        code: btn.dataset.geoCode, scale: btn.dataset.geoScale, name: btn.dataset.geoName,
+      }));
     });
   }
 
@@ -527,7 +580,7 @@ function renderSearch(container, { onSelectVariable, typeFilter }) {
 
 export async function createBrowseNav(host, { onSelect }) {
   // Load data in parallel
-  const [tax, src] = await Promise.all([loadTaxonomy(), loadSourceIndex(), loadVariableToFamily()]);
+  const [tax, src] = await Promise.all([loadTaxonomy(), loadSourceIndex(), loadVariableToFamily(), loadGeographyIndex()]);
 
   host.classList.add('browse-nav-section');
 
@@ -549,6 +602,11 @@ export async function createBrowseNav(host, { onSelect }) {
     const meta = M.byId(varId);
     if (!meta) return;
     onSelect && onSelect({ variable: varId });
+  }
+
+  function onSelectGeography(geo) {
+    if (!geo) return;
+    onSelect && onSelect({ geography: geo });
   }
 
   function render() {
@@ -578,7 +636,7 @@ export async function createBrowseNav(host, { onSelect }) {
         renderSourceTab(panel, { onSelectVariable });
         break;
       case 'Search':
-        renderSearch(panel, { onSelectVariable, typeFilter });
+        renderSearch(panel, { onSelectVariable, onSelectGeography, typeFilter });
         break;
     }
 
