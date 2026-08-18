@@ -24,3 +24,7 @@ curation/*~
 # readable build inputs (.json/.csv the scripts read); exclude internal prose docs
 # (apply logs, UX diagnostics, status handoffs, prompts) from the public repo.
 curation/*.md
+# Timestamped curation snapshots (pre-change backups written by apply scripts).
+curation/*_pre_*.json
+curation/*_pre.json
+curation/old_*.json

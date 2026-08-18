@@ -1,0 +1,117 @@
+{
+ "generated": "2026-08-05T13:06:02",
+ "generator": "scripts/apply_concept_merges.py (P1a)",
+ "doctrine": "Master-layer concept merge. Each key is a canonical master variable; its list is the published indicator ids that merged into it and must survive as aliases so no published id becomes a dead link.",
+ "aliases": {
+  "alfabetos": [
+   "alfabetos_1952"
+  ],
+  "alfabetos_mujeres": [
+   "alfabetos_mujeres_1952"
+  ],
+  "alfabetos_hombres": [
+   "alfabetos_hombres_1952"
+  ],
+  "hospital_dados_de_alta": [
+   "hospital_dados_de_alta_1894"
+  ],
+  "analfabetos_mujeres": [
+   "analfabetos_mujeres_1952"
+  ],
+  "analfabetos_hombres": [
+   "analfabetos_hombres_1952"
+  ],
+  "anulados": [
+   "anulados_1952"
+  ],
+  "reos_aprehendidos_total": [
+   "total_reos_aprehendidos"
+  ],
+  "hospital_asignacion_fiscal": [
+   "hospital_asignacion_fiscal_1879"
+  ],
+  "nacimientos": [
+   "nacimientos_1926",
+   "nacimientos_1926",
+   "nacimientos_1926"
+  ],
+  "births_female": [
+   "nacimientos_mujeres"
+  ],
+  "births_male": [
+   "nacimientos_hombres"
+  ],
+  "poblacion_calculada": [
+   "poblacion_calculada_1935"
+  ],
+  "correos_cartas_recibidas": [
+   "correos_cartas_recibidas_1882"
+  ],
+  "casados": [
+   "casados_1952"
+  ],
+  "catolicos": [
+   "catolicos_1952"
+  ],
+  "convivientes": [
+   "convivientes_1952"
+  ],
+  "defunciones": [
+   "defunciones_1926",
+   "defunciones_1926",
+   "defunciones_1926"
+  ],
+  "deaths_female": [
+   "defunciones_mujeres"
+  ],
+  "deaths_male": [
+   "defunciones_hombres"
+  ],
+  "defunciones_total": [
+   "deaths_total"
+  ],
+  "hospital_existencia_final": [
+   "hospital_existencia_final_1894",
+   "hospital_existencia_final_1894"
+  ],
+  "poblacion_mujeres": [
+   "poblacion_1868_mujeres"
+  ],
+  "superficie_km2": [
+   "superficie_km2_1952"
+  ],
+  "poblacion_hombres": [
+   "poblacion_1868_hombres",
+   "population_hombres"
+  ],
+  "matrimonios": [
+   "matrimonios_1926",
+   "matrimonios_1926",
+   "matrimonios_1926"
+  ],
+  "municipal_presupuesto": [
+   "municipal_presupuesto_1861",
+   "municipal_presupuesto_1862",
+   "municipal_presupuesto_1861",
+   "municipal_presupuesto_1862"
+  ],
+  "religion_otra": [
+   "otra_religion_1952"
+  ],
+  "religion_sin_religion": [
+   "sin_religion_1952"
+  ],
+  "virus_repartido": [
+   "virus_repartido_1889"
+  ],
+  "separados": [
+   "separados_1952"
+  ],
+  "solteros": [
+   "solteros_1952"
+  ],
+  "viudos": [
+   "viudos_1952"
+  ]
+ }
+}
