@@ -13424,6 +13424,81 @@
     "published": "cross_section"
   },
   {
+    "id": "population_census_count",
+    "label": "Total population (census enumerations)",
+    "display_label": "Total population (census enumerations)",
+    "category": "Demography",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "persons",
+    "curated_subtitle": "Total population (census enumerations), 1843–1980, persons",
+    "scale_availability": {
+      "national": true,
+      "province": false,
+      "department": false,
+      "commune": false
+    },
+    "scales": {
+      "national": {
+        "cadence": "irregular",
+        "valid_years": [
+          1843,
+          1854,
+          1865,
+          1875,
+          1885,
+          1895,
+          1907,
+          1930,
+          1940,
+          1952,
+          1970,
+          1975,
+          1980
+        ],
+        "year_range": [
+          1843,
+          1980
+        ],
+        "n_observations": 13,
+        "magnitude": {
+          "min": 1083801.0,
+          "max": 11259871.0,
+          "median": 3220531.0,
+          "orders_of_magnitude": 1.02,
+          "hint": "linear"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Oficina Central de Estadística. 1866. Censo Jeneral de la República de Chile, 19 de abril de 1865, Cuadro Sinóptico. Santiago: Imprenta Nacional.",
+      "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 17.1 (DEC/INE source). Westport, CT: Greenwood Press.",
+      "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, regional distribution tables. Westport, CT: Greenwood Press."
+    ],
+    "topic_category": "demography",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "",
+    "per_capita_default": "default_raw",
+    "accent": "#5b3f8e",
+    "definition": "National population as enumerated at census and benchmark dates, exactly as the sources print it (Censo Jeneral de 1865, Cuadro Sinóptico, for 1843-1865; Mamalakis 1980, Table 17.1, for later benchmark years). Published separately from the continuous Total Population estimate line because an enumerated count and a mid-year intercensal estimate measure population on different definitions and can differ by several percent in the same year.",
+    "coverage_statement": "13 year(s) 1843-1980, 13 national observations",
+    "commit_status_by_scale": {
+      "national": "committed"
+    },
+    "published_by_scale": {
+      "national": "complete"
+    },
+    "commit_status": "committed",
+    "published": "complete",
+    "source_attribution_status": "reconstructed_from_primary",
+    "reconstructed_from": [
+      "master:total_population"
+    ]
+  },
+  {
     "id": "bank_offices_total_branch_agency",
     "label": "Bank branches and agencies (1935)",
     "display_label": "Bank branches and agencies (1935)",
@@ -49098,10 +49173,10 @@
         ],
         "n_observations": 151,
         "magnitude": {
-          "min": 1083801.0,
+          "min": 1231402,
           "max": 13173000,
           "median": 3584000,
-          "orders_of_magnitude": 1.08,
+          "orders_of_magnitude": 1.03,
           "hint": "linear"
         },
         "rendering_mode": "line",
@@ -49203,7 +49278,7 @@
     "source_document": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Vol. 2",
     "per_capita_default": "user_choice",
     "accent": "#0E1A2B",
-    "definition": "Total population of the unit (national, province, or department), the canonical population indicator at each scale. The national series carries Mamalakis (1980) intercensal estimates as a continuous annual line; census enumerations are published alongside it as a separate series, because an enumerated census count and a mid-year estimate measure population on different definitions and can differ by several percent in the same year. The subnational series stitch together census enumerations (1865, 1875, 1885, 1895, 1907, 1920, 1930, 1940, 1952, 1960, 1970, 1982, 1992), Mamalakis (1980) intercensal estimates, and the Véjares department-level extraction. Earlier duplicate population series have been consolidated into this indicator.",
+    "definition": "Total population of the unit (national, province, or department), the canonical population indicator at each scale. The national series is a continuous annual line of intercensal estimates; census enumerations are published alongside it as the separate indicator Total population (census enumerations), because an enumerated count and a mid-year estimate measure population on different definitions and can differ by several percent in the same year. The subnational series stitch together census enumerations (1865, 1875, 1885, 1895, 1907, 1920, 1930, 1940, 1952, 1960, 1970, 1982, 1992), Mamalakis (1980) intercensal estimates, and the Véjares department-level extraction. Earlier duplicate population series have been consolidated into this indicator.",
     "coverage_statement": "151 year(s) 1840-1990, 151 national observations; 16 year(s) 1843-1970, 344 province-level observations; 7 year(s) 1843-1878, 256 department-level observations; 3 year(s) 1935-1992, 798 observations",
     "commit_status_by_scale": {
       "national": "committed",

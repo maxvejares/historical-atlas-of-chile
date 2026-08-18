@@ -714,7 +714,7 @@
     },
     "total_population": {
       "subtitle": "Total population, by scale, 1835–1990, persons",
-      "definition": "Total population of the unit (national, province, or department), the canonical population indicator at each scale. The national series carries Mamalakis (1980) intercensal estimates as a continuous annual line; census enumerations are published alongside it as a separate series, because an enumerated census count and a mid-year estimate measure population on different definitions and can differ by several percent in the same year. The subnational series stitch together census enumerations (1865, 1875, 1885, 1895, 1907, 1920, 1930, 1940, 1952, 1960, 1970, 1982, 1992), Mamalakis (1980) intercensal estimates, and the Véjares department-level extraction. Earlier duplicate population series have been consolidated into this indicator."
+      "definition": "Total population of the unit (national, province, or department), the canonical population indicator at each scale. The national series is a continuous annual line of intercensal estimates; census enumerations are published alongside it as the separate indicator Total population (census enumerations), because an enumerated count and a mid-year estimate measure population on different definitions and can differ by several percent in the same year. The subnational series stitch together census enumerations (1865, 1875, 1885, 1895, 1907, 1920, 1930, 1940, 1952, 1960, 1970, 1982, 1992), Mamalakis (1980) intercensal estimates, and the Véjares department-level extraction. Earlier duplicate population series have been consolidated into this indicator."
     },
     "unemployed_labor_force": {
       "subtitle": "Unemployed labor force, 1810–1990, persons",

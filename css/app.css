@@ -656,8 +656,12 @@ svg.chart { display: block; width: 100%; height: auto; }
 /* Map source block placement in the side-by-side grid */
 .map-block .map-source-block { padding: 14px 0 0; grid-row: 2; grid-column: 1 / -1; }
 .map-block .chart-actions { grid-row: 3; grid-column: 1 / -1; padding-top: 10px; }
+/* css-mirror-marker: boundary-notice v2 (2026-08-18). Bottom-left, not
+   top-left: the top strip of the map sits under the sticky toolbar at normal
+   scroll positions and behind the Leaflet zoom control, which together
+   obscured the notice ("...wing 2018 boundaries") in the second audit. */
 .boundary-notice {
-  position: absolute; top: 12px; left: 12px; z-index: 600;
+  position: absolute; bottom: 24px; left: 12px; z-index: 600;
   background: var(--surface); border: 1px solid var(--rule);
   padding: 6px 10px; font-size: 11px; color: var(--ink-muted);
   letter-spacing: 0.04em;

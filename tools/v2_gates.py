@@ -76,6 +76,10 @@ G1_ALLOW = {
     "external_taxes_share_of_revenue", "direct_taxes_share_of_revenue",
     "indirect_taxes_share_of_revenue", "mining_taxes_share_of_revenue",
     "other_taxes_share_of_revenue",
+    # Master projection (2026-08-18, B5): the national census enumerations
+    # rendered under their own id. Every cell IS a master row, but under
+    # variable `total_population`, so the by-name trace cannot see it.
+    "population_census_count",
 }
 
 RESULTS: list[tuple[str, str, bool, str]] = []

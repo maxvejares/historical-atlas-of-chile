@@ -34,6 +34,9 @@ RECONSTRUCTED_NO_MASTER_ROWS = {
     "external_taxes_share_of_revenue", "direct_taxes_share_of_revenue",
     "indirect_taxes_share_of_revenue", "mining_taxes_share_of_revenue",
     "other_taxes_share_of_revenue",
+    # Master projection of total_population national rows under its own id;
+    # the curated download has no rows under this name by design.
+    "population_census_count",
 }
 
 # The geographic levels the published catalog renders. Master artifact levels
