@@ -1136,11 +1136,24 @@ function escapeXML(s) {
 
 // Break-rule annotations as thin vertical dashed lines with a hover title.
 // Shared by the single-series and comparison renders (UX2 B.2).
+//
+// Label collision avoidance (2026-08-18 fix): breaks that fall close together
+// in time (e.g. successive boundary/currency changes a few years apart) used
+// to each draw a text label at a fixed x+3 offset with no regard for a
+// neighbour's label, so the numbers visually fused into unreadable smashed
+// text. The dashed line and hover <title> always render — only the inline
+// year label is dropped when it would overlap the previous one, same
+// principle as the event rail's greedy row placement (placeLabels above),
+// simplified to one row since breaks are sparse enough not to need stacking.
 function breaksSvg(breaksList, xScale, xMin, xMax, M_TOP, plotH) {
   if (!breaksList || !breaksList.length) return '';
+  const inRange = breaksList
+    .filter(b => b.year != null && b.year >= xMin && b.year <= xMax)
+    .sort((a, b) => a.year - b.year);
   let svg = '<g class="chart-breaks">';
-  for (const b of breaksList) {
-    if (b.year == null || b.year < xMin || b.year > xMax) continue;
+  let labelRightEdge = -Infinity;
+  const LABEL_GAP_PX = 4;
+  for (const b of inRange) {
     const bx = xScale(b.year);
     const sevColor = b.severity === 'blocker' ? '#7A1E2B' : (b.severity === 'warning' ? '#7A1E2B' : '#94918A');
     const dash = b.severity === 'informational' ? '2,3' : '4,3';
@@ -1149,7 +1162,12 @@ function breaksSvg(breaksList, xScale, xMin, xMax, M_TOP, plotH) {
     svg += `<g class="chart-break" data-year="${b.year}">`;
     svg += `<line x1="${bx}" y1="${M_TOP}" x2="${bx}" y2="${M_TOP + plotH}" stroke="${sevColor}" stroke-width="1" stroke-dasharray="${dash}" opacity="0.55"/>`;
     svg += `<title>${safeLabel}\n${safeDesc}</title>`;
-    svg += `<text x="${bx + 3}" y="${M_TOP + 10}" font-size="10" fill="${sevColor}" opacity="0.7">${b.year}</text>`;
+    const labelX = bx + 3;
+    const labelW = String(b.year).length * 6.2 + 4;
+    if (labelX >= labelRightEdge) {
+      svg += `<text x="${labelX}" y="${M_TOP + 10}" font-size="10" fill="${sevColor}" opacity="0.7">${b.year}</text>`;
+      labelRightEdge = labelX + labelW + LABEL_GAP_PX;
+    }
     svg += `</g>`;
   }
   return svg + '</g>';

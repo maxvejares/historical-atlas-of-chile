@@ -1,0 +1,30 @@
+{
+  "_comment": "The named register of FENCED source files. A fenced source's rows stay in master and are never deleted; they are withheld from BOTH published products, the catalog and the CSV download. This file is the single definition of the fence. `scripts/regenerate_ui_data.py` reads it to build the catalog, `scripts/run_m028.py` reads it to build the download, and `gis_platform/tools/v2_gates.py` G7 reads it to test the download against every entry BY NAME. Before this file existed the fence was a regex literal repeated in three places and G7 tested one of the names in it, which is how `Datos pre 73` was withheld from the catalog while 3,293 of its rows shipped in the download with the gate green. Add a source here and all three sites move together. To unfence, set `fenced` to false and re-run `scripts/run_m028.py`.",
+  "policy_doc": "V2_PLAN decision 4 keeps period monographs and excludes compilations: a work doing its own research on its own period is a source, a workbook restating other people's series is not. Decisions 3 (2026-08-03) and 6 (2026-08-04) apply that test to the author's own working files. A fence is a PROVENANCE judgement, not a data-quality one; fenced values may be perfectly correct and are kept in master for exactly that reason.",
+  "sources": [
+    {
+      "key": "data_chile_complete",
+      "label": "Data Chile complete.xlsx (unverified hand compilation)",
+      "match": ["Data Chile complete"],
+      "fenced": true,
+      "decision": "decision 3, owner, 2026-08-03",
+      "reason": "The workbook restates data the atlas now publishes directly from the Censo Jeneral 1875. Its lawyer, military, engineers and pubemp series agree with the census extraction on 25 of 25, 39 of 40, 27 of 27 and 39 of 43 shared cells. Removing it deletes a duplicate, not a source."
+    },
+    {
+      "key": "vejares_department_compilation",
+      "label": "Véjares, Maximiliano. Department-level historical dataset (Chile, 19th c.), author's compilation",
+      "match": ["V[ée]jares.*author's compilation"],
+      "fenced": true,
+      "decision": "decision 3 extension, owner, 2026-08-03",
+      "reason": "A compilation of other series rather than a work doing its own research on its own period, which is the test V2_PLAN decision 4 sets."
+    },
+    {
+      "key": "datos_pre_73",
+      "label": "Datos pre 73'.xlsx (author's multi-source working compilation, Chile pre-1973)",
+      "match": ["Datos pre 73"],
+      "fenced": true,
+      "decision": "decision 6, owner, 2026-08-04",
+      "reason": "A multi-source author working compilation whose source line resolves to nothing: its only available rename is `Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation`, and 62 of its 63 catalog pairs have no other source behind a single row, so there is no primary attribution to fall back on. Publishing it would hand each indicator a family sibling's citation, the `cartas_ordinarias` misattribution class. The 2026-08-03 re-triage established that the previously recorded ground was FALSE: the pairs carry neither the M153 malformation nor fractional years. This fence rests on source policy alone and the values are not impeached. Fencing it in both products closes the asymmetry in which the catalog withheld 63 pairs while the download shipped 3,293 rows."
+    }
+  ]
+}

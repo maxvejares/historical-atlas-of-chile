@@ -1,12 +1,12 @@
 {
   "_meta": {
-    "generated": "2026-08-03T23:55:51",
+    "generated": "2026-08-05T13:33:56",
     "generator": "scripts/build_indicator_metadata.py",
     "purpose": "M098-minimum definition and unit for indicators that reached the catalog without them. Derived from the label, measured coverage and source citation already on the indicator; nothing here is invented.",
     "doctrine": "apply_curation_16 fills a field ONLY when it is empty, so curated prose always wins and regenerating this cannot flatten it. An indicator promoted to the featured tier should have its definition hand-written in 04_indicator_definitions.json, which is applied first.",
-    "indicators": 984,
-    "definitions_generated": 881,
-    "units_generated": 984
+    "indicators": 958,
+    "definitions_generated": 851,
+    "units_generated": 958
   },
   "indicators": {
     "cultivos_praderas_alfalfa_ha": {
@@ -333,9 +333,11 @@
       "display_unit": "pesos",
       "definition": "Municipal salidas gobernador pesos. Coverage: 68 observations at commune level across year (1892). Source: Memoria del Interior 1893 Tomo I. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
-    "anulados_1952": {
-      "display_unit": "persons",
-      "definition": "Annulled marriages (1952), measured in persons. Coverage: 25 observations at province level across year (1952). Source: Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
+    "poblacion_hombres": {
+      "display_unit": "persons"
+    },
+    "poblacion_mujeres": {
+      "display_unit": "persons"
     },
     "anulados_mujeres_1952": {
       "display_unit": "persons",
@@ -345,15 +347,9 @@
       "display_unit": "persons",
       "definition": "Annulled marriages, male (1952), measured in persons. Coverage: 25 observations at province level across year (1952). Source: Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
-    "catolicos_1952": {
-      "display_unit": "persons"
-    },
-    "pop_censal": {
-      "display_unit": "persons"
-    },
     "poblacion_censo": {
       "display_unit": "persons",
-      "definition": "Census population (Sinopsis), measured in persons. Coverage: 24 observations at province level across year (1895). Source: Oficina Central de Estadística. ca. 1858. Sinopsis Estadística i Jeográfica de la República de Chile. Santiago: Imprenta Nacional. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
+      "definition": "Census population (Sinopsis), measured in persons. Coverage: 64 observations at province level across 3 years (1895 to 1927). Source: Oficina Central de Estadística. ca. 1858. Sinopsis Estadística i Jeográfica de la República de Chile. Santiago: Imprenta Nacional. and 2 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
     "nacionales_total": {
       "display_unit": "persons",
@@ -411,9 +407,9 @@
     },
     "poblacion_calculada": {
       "display_unit": "persons",
-      "definition": "Estimated population (Sinopsis), measured in persons. Coverage: 49 observations at province level across 2 years (1900 to 1924). Source: Oficina Central de Estadística. ca. 1858. Sinopsis Estadística i Jeográfica de la República de Chile. Santiago: Imprenta Nacional. and 1 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
+      "definition": "Estimated population (Sinopsis), measured in persons. Coverage: 68 observations at province level across 3 years (1900 to 1935). Source: Oficina Central de Estadística. ca. 1858. Sinopsis Estadística i Jeográfica de la República de Chile. Santiago: Imprenta Nacional. and 2 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
-    "poblacion_mujeres": {
+    "poblacion_mujeres_1992": {
       "display_unit": "persons"
     },
     "foreigners_total_1885": {
@@ -467,10 +463,7 @@
     "extranjeros_total_1952": {
       "display_unit": "persons"
     },
-    "superficie_km2_1952": {
-      "display_unit": "persons"
-    },
-    "poblacion_hombres": {
+    "poblacion_hombres_1992": {
       "display_unit": "persons"
     },
     "ignorados_1952": {
@@ -493,9 +486,6 @@
       "display_unit": "persons",
       "definition": "Married persons, male (1952). Coverage: 25 observations at province level across year (1952). Source: Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
-    "casados_1952": {
-      "display_unit": "persons"
-    },
     "poblacion_media_departamento_1927": {
       "display_unit": "persons",
       "definition": "Mean department population (1927), measured in persons. Coverage: 17 observations at province level across year (1927). Source: Estadistica Anual de la Republica de Chile 1926/1927 (Direccion General de Estadistica). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
@@ -512,14 +502,6 @@
       "display_unit": "persons",
       "definition": "Net migration, annual rate per 1,000, measured in persons. Coverage: 75 observations at province level across 3 years (1950 to 1970). Source: Mamalakis 1980 Vol 2 Migration. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
-    "otra_religion_1952": {
-      "display_unit": "persons",
-      "definition": "Other religion (1952), measured in persons. Coverage: 25 observations at province level across year (1952). Source: Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
-    "convivientes_1952": {
-      "display_unit": "persons",
-      "definition": "Persons cohabiting (1952). Coverage: 25 observations at province level across year (1952). Source: Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
     "convivientes_mujeres_1952": {
       "display_unit": "persons",
       "definition": "Persons cohabiting, female (1952). Coverage: 25 observations at province level across year (1952). Source: Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
@@ -534,7 +516,7 @@
     },
     "poblacion": {
       "display_unit": "persons",
-      "definition": "Population (Memoria del Interior), measured in persons. Coverage: 200 observations at department level across 3 years (1869 to 1891). Source: Aldana, Abelardo. 1914. Resumen de la Hacienda Pública de Chile, 1833–1914, p. 60. Santiago: Imprenta Universitaria. and 1 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
+      "definition": "Population (Memoria del Interior), measured in persons. Coverage: 247 observations at department level across 4 years (1869 to 1899). Source: Aldana, Abelardo. 1914. Resumen de la Hacienda Pública de Chile, 1833–1914, p. 60. Santiago: Imprenta Universitaria. and 1 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
     "poblacion_15ymas_1952": {
       "display_unit": "persons",
@@ -559,43 +541,22 @@
       "display_unit": "persons",
       "definition": "Population on 1930 boundaries (1930), measured in persons. Coverage: 55 observations at department level across year (1930). Source: Census - Chile 1930 VERIFIED. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
-    "sin_religion_1952": {
-      "display_unit": "persons"
-    },
     "poblacion_1875_total": {
       "display_unit": "persons",
       "definition": "Population, 1875 (Memoria del Interior), measured in persons. Coverage: 17 observations at province level across year (1875). Source: Ministerio del Interior. 1875. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1875. Santiago: Imprenta Nacional. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
     "population": {
       "display_unit": "persons",
-      "definition": "Population, Aldana per-capita denominator, measured in persons. Coverage: 12 observations at national level across 12 years (1901 to 1913). Source: Aldana, Abelardo. 1914. Resumen de la Hacienda Pública de Chile, 1833–1914. Santiago: Imprenta Universitaria. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
-    "poblacion_1868_mujeres": {
-      "display_unit": "persons",
-      "definition": "Population, female (1868), measured in persons. Coverage: 54 observations at department level across year (1868). Source: Oficina Central de Estadística. 1872. Anuario Estadístico de la República de Chile, año 1871. Santiago: Imprenta Nacional. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
-    "population_hombres": {
-      "display_unit": "persons",
-      "definition": "Population, male (1854), measured in persons. Coverage: 15 observations at province level across year (1854). Source: Oficina Central de Estadística. 1860–1872. Anuario Estadístico de la República de Chile, Tomos I–XIII. Santiago: Imprenta Nacional. (2012 reissue: Instituto Nacional de Estadísticas.). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
-    "poblacion_1868_hombres": {
-      "display_unit": "persons",
-      "definition": "Population, male (1868), measured in persons. Coverage: 54 observations at department level across year (1868). Source: Oficina Central de Estadística. 1872. Anuario Estadístico de la República de Chile, año 1871. Santiago: Imprenta Nacional. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
-    "poblacion_calculada_1935": {
-      "display_unit": "persons",
-      "definition": "Population, official 1935 estimate, measured in persons. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, prison admissions by province. Santiago. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
+      "definition": "Population, Aldana per-capita denominator, measured in persons. Coverage: 19 observations at national level across 19 years (1865 to 1920). Source: Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927. Santiago. and 4 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
     "protestantes_1952": {
       "display_unit": "persons"
     },
-    "poblacion_rural_mujeres": {
-      "display_unit": "persons",
-      "definition": "Rural female population, commune, measured in persons. Coverage: 31 observations at commune level across year (1970). Source: Oficina Central de Estadística. 1908. Censo de la República de Chile levantado el 28 de Noviembre de 1907. Santiago: Sociedad Imprenta y Litografía Universo. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
+    "poblacion_rural_mujeres_1970": {
+      "display_unit": "persons"
     },
-    "poblacion_rural_hombres": {
-      "display_unit": "persons",
-      "definition": "Rural male population, commune, measured in persons. Coverage: 31 observations at commune level across year (1970). Source: Oficina Central de Estadística. 1908. Censo de la República de Chile levantado el 28 de Noviembre de 1907. Santiago: Sociedad Imprenta y Litografía Universo. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
+    "poblacion_rural_hombres_1970": {
+      "display_unit": "persons"
     },
     "rural_population": {
       "display_unit": "persons",
@@ -616,10 +577,6 @@
     "poblacion_rural_1970": {
       "display_unit": "persons"
     },
-    "separados_1952": {
-      "display_unit": "persons",
-      "definition": "Separated persons (1952). Coverage: 25 observations at province level across year (1952). Source: Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
     "separados_mujeres_1952": {
       "display_unit": "persons",
       "definition": "Separated persons, female (1952). Coverage: 25 observations at province level across year (1952). Source: Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
@@ -636,12 +593,9 @@
       "display_unit": "persons",
       "definition": "Single persons, male (1952). Coverage: 25 observations at province level across year (1952). Source: Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
-    "solteros_1952": {
-      "display_unit": "persons"
-    },
     "population_total": {
       "display_unit": "persons",
-      "definition": "Total population (Aldana 1914), measured in persons. Coverage: 13 observations at national level across 13 years (1901 to 1913); 15 observations at province level across year (1854). Source: Oficina Central de Estadística. 1860–1872. Anuario Estadístico de la República de Chile, Tomos I–XIII. Santiago: Imprenta Nacional. (2012 reissue: Instituto Nacional de Estadísticas.) and 1 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
+      "definition": "Total population (Aldana 1914), measured in persons. Coverage: 13 observations at national level across 13 years (1901 to 1913); 15 observations at province level across year (1854). Source: Aldana, Abelardo. 1914. Resumen de la Hacienda Pública de Chile, 1833–1914. Santiago: Imprenta Universitaria. and 1 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
     "total_population_subnational": {
       "display_unit": "persons",
@@ -659,13 +613,11 @@
       "display_unit": "thousand pesos",
       "definition": "Total population, thousands (Mamalakis), measured in thousand pesos. Coverage: 110 observations at national level across 110 years (1843 to 1990). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
-    "poblacion_urbana_mujeres": {
-      "display_unit": "persons",
-      "definition": "Urban female population, commune, measured in persons. Coverage: 31 observations at commune level across year (1970). Source: Oficina Central de Estadística. 1908. Censo de la República de Chile levantado el 28 de Noviembre de 1907. Santiago: Sociedad Imprenta y Litografía Universo. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
+    "poblacion_urbana_mujeres_1970": {
+      "display_unit": "persons"
     },
-    "poblacion_urbana_hombres": {
-      "display_unit": "persons",
-      "definition": "Urban male population, commune, measured in persons. Coverage: 31 observations at commune level across year (1970). Source: Oficina Central de Estadística. 1908. Censo de la República de Chile levantado el 28 de Noviembre de 1907. Santiago: Sociedad Imprenta y Litografía Universo. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
+    "poblacion_urbana_hombres_1970": {
+      "display_unit": "persons"
     },
     "population_urban": {
       "display_unit": "persons"
@@ -704,9 +656,6 @@
     "viudos_hombres_1952": {
       "display_unit": "persons",
       "definition": "Widowed persons, male (1952). Coverage: 25 observations at province level across year (1952). Source: Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
-    "viudos_1952": {
-      "display_unit": "persons"
     },
     "bank_offices_total_branch_agency": {
       "display_unit": "offices",
@@ -821,14 +770,6 @@
       "display_unit": "persons",
       "definition": "Illiterate persons (1952). Coverage: 25 observations at province level across year (1952). Source: Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
-    "analfabetos_mujeres_1952": {
-      "display_unit": "persons",
-      "definition": "Illiterate persons, female (1952). Coverage: 25 observations at province level across year (1952). Source: Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
-    "analfabetos_hombres_1952": {
-      "display_unit": "persons",
-      "definition": "Illiterate persons, male (1952). Coverage: 25 observations at province level across year (1952). Source: Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
     "liceos_hombres_asistencia": {
       "display_unit": "persons"
     },
@@ -857,18 +798,6 @@
     "literate_count": {
       "display_unit": "persons",
       "definition": "Literate persons (1920). Coverage: 20 observations at province level across year (1920). Source: Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927. Santiago. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
-    "alfabetos_1952": {
-      "display_unit": "persons",
-      "definition": "Literate persons (1952). Coverage: 25 observations at province level across year (1952). Source: Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
-    "alfabetos_mujeres_1952": {
-      "display_unit": "persons",
-      "definition": "Literate persons, female (1952). Coverage: 25 observations at province level across year (1952). Source: Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
-    "alfabetos_hombres_1952": {
-      "display_unit": "persons",
-      "definition": "Literate persons, male (1952). Coverage: 24 observations at province level across year (1952). Source: Censo 1952 Tomo 1 - Resumen del Pais (Servicio Nacional de Estadistica y Censos). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
     "pct_alfabetos": {
       "display_unit": "%",
@@ -1268,6 +1197,12 @@
       "display_unit": "persons",
       "definition": "Votes for president (1871), measured in persons. Coverage: 53 observations at department level across year (1871). Source: Oficina Central de Estadística. 1872. Anuario Estadístico de la República de Chile, año 1871. Santiago: Imprenta Nacional. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
+    "rainfall_days_count_santiago": {
+      "display_unit": "days"
+    },
+    "rainfall_mm_santiago": {
+      "display_unit": "mm"
+    },
     "pres_jus_corte_n_posts": {
       "display_unit": "persons",
       "definition": "Appeal court budgeted posts, measured in persons. Coverage: 9 observations at city level across 4 years (1891 to 1896). Source: Lei de Presupuestos 1891, Ministerio de Justicia, Culto e Instruccion Publica and 3 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
@@ -1290,10 +1225,6 @@
     },
     "pct_ebriedad": {
       "display_unit": "%"
-    },
-    "total_reos_aprehendidos": {
-      "display_unit": "persons",
-      "definition": "Arrests, total, measured in persons. Coverage: 19 observations at province level across year (1935). Source: Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, arrests by province. Santiago. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
     "causas_civiles_falladas": {
       "display_unit": "persons",
@@ -1352,7 +1283,7 @@
     },
     "reos_aprehendidos_total": {
       "display_unit": "persons",
-      "definition": "Persons arrested. Coverage: 39 observations at province level across 2 years (1924 to 1925). Source: Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927. Santiago. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
+      "definition": "Persons arrested. Coverage: 58 observations at province level across 3 years (1924 to 1935). Source: Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927. Santiago. and 1 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
     "reos_aprehendidos_comunales": {
       "display_unit": "persons",
@@ -1435,10 +1366,6 @@
     "correos_cartas_por_habitante": {
       "display_unit": "per inhabitant",
       "definition": "Letters posted per inhabitant. Coverage: 178 observations at department level across 3 years (1876 to 1878). Source: Ministerio del Interior. 1878. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1878. Santiago: Imprenta Nacional. and 1 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
-    "correos_cartas_recibidas_1882": {
-      "display_unit": "items",
-      "definition": "Letters received (1882), measured in items. Coverage: 60 observations at department level across year (1882). Source: Ministerio del Interior. 1883. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1883. Santiago: Imprenta Nacional. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
     "correos_cartas_recibidas_por_habitante_1882": {
       "display_unit": "per inhabitant",
@@ -2780,7 +2707,7 @@
     },
     "poblacion_total": {
       "display_unit": "persons",
-      "definition": "Total population (census returns), measured in persons. Coverage: 10 observations at national level across 10 years (1865 to 1960); 211 observations at province level across 11 years (1865 to 1970). Source: Oficina Central de Estadística. 1908. Censo de la República de Chile levantado el 28 de Noviembre de 1907. Santiago: Sociedad Imprenta y Litografía Universo. and 3 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
+      "definition": "Total population (census returns), measured in persons. Coverage: 7 observations at national level across 7 years (1854 to 1920); 210 observations at province level across 14 years (1843 to 1970). Source: Oficina Central de Estadística. 1908. Censo de la República de Chile levantado el 28 de Noviembre de 1907. Santiago: Sociedad Imprenta y Litografía Universo. and 3 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
     "unemployment_rate_pct": {
       "display_unit": "%",
@@ -3065,14 +2992,6 @@
       "display_unit": "pesos",
       "definition": "Miscellaneous revenue, pesos. Coverage: 12 observations at national level across 12 years (1841 to 1860). Source: Aldana, Abelardo. 1914. Resumen de la Hacienda Pública de Chile, 1833–1914. Santiago: Imprenta Universitaria. and 4 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
-    "municipal_presupuesto_1861": {
-      "display_unit": "pesos",
-      "definition": "Municipal budget, pesos (1861). Coverage: 49 observations at city level across year (1861). Source: Ministerio del Interior. 1862. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1862. Santiago: Imprenta Nacional. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
-    "municipal_presupuesto_1862": {
-      "display_unit": "pesos",
-      "definition": "Municipal budget, pesos (1862). Coverage: 49 observations at city level across year (1862). Source: Ministerio del Interior. 1862. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1862. Santiago: Imprenta Nacional. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
     "municipal_presupuesto_salidas_gobernador_1889": {
       "display_unit": "pesos",
       "definition": "Municipal budgeted expenditure, governor's account, pesos (1889). Coverage: 55 observations at department level across year (1889). Source: Ministerio del Interior. 1891. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1890, Tomo I. Santiago. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
@@ -3331,6 +3250,12 @@
       "display_unit": "count",
       "definition": "Hospital admissions (1886). Coverage: 47 observations at city level across year (1886). Source: Oficina Central de Estadística. 1900. Sinopsis Estadística de la República de Chile, año 1900. Santiago: Imprenta Nacional. and 3 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
+    "hospital_sb_mujeres_entrados": {
+      "display_unit": "persons"
+    },
+    "hospital_sjd_hombres_entrados": {
+      "display_unit": "persons"
+    },
     "hospital_entradas_mujeres_1894": {
       "display_unit": "count",
       "definition": "Hospital admissions, female (1894). Coverage: 45 observations at city level across year (1894). Source: Memoria del Interior 1895. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
@@ -3355,21 +3280,25 @@
       "display_unit": "persons",
       "definition": "Hospital deaths (1894), measured in persons. Coverage: 47 observations at city level across year (1894). Source: Memoria del Interior 1895. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
+    "hospital_sb_mujeres_muertos": {
+      "display_unit": "persons"
+    },
+    "hospital_sjd_hombres_muertos": {
+      "display_unit": "persons"
+    },
     "hospital_dados_de_alta": {
       "display_unit": "count",
-      "definition": "Hospital discharges (1886). Coverage: 46 observations at city level across year (1886). Source: Ministerio del Interior. 1888. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1887. Santiago. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
-    "hospital_dados_de_alta_1894": {
-      "display_unit": "count",
-      "definition": "Hospital discharges (1894). Coverage: 48 observations at city level across year (1894). Source: Memoria del Interior 1895. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
+      "definition": "Hospital discharges (1886). Coverage: 94 observations at city level across 2 years (1886 to 1894). Source: Memoria del Interior 1895 and 1 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
     "hospital_movimiento_egresos": {
       "display_unit": "count",
       "definition": "Hospital discharges (1909). Coverage: 82 observations at city level across year (1909). Source: Oficina Central de Estadística. 1910. Anuario Estadístico de la República de Chile, año 1909. Santiago: Sociedad Imprenta y Litografía Universo. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
-    "hospital_asignacion_fiscal_1879": {
-      "display_unit": "pesos",
-      "definition": "Hospital fiscal allocation, pesos (1879). Coverage: 29 observations at city level across year (1879). Source: Ministerio del Interior. 1879. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1879. Santiago: Imprenta Nacional. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
+    "hospital_sb_mujeres_salidos": {
+      "display_unit": "persons"
+    },
+    "hospital_sjd_hombres_salidos": {
+      "display_unit": "persons"
     },
     "hospital_fiscal_subsidy_pesos": {
       "display_unit": "pesos",
@@ -3377,11 +3306,7 @@
     },
     "hospital_existencia_final": {
       "display_unit": "count",
-      "definition": "Hospital patients at year end (1886). Coverage: 46 observations at city level across year (1886). Source: Oficina Central de Estadística. 1900. Sinopsis Estadística de la República de Chile, año 1900. Santiago: Imprenta Nacional. and 2 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
-    "hospital_existencia_final_1894": {
-      "display_unit": "count",
-      "definition": "Hospital patients at year end (1894). Coverage: 48 observations at city level across year (1894). Source: Memoria del Interior 1895. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
+      "definition": "Hospital patients at year end (1886). Coverage: 94 observations at city level across 2 years (1886 to 1894). Source: Oficina Central de Estadística. 1900. Sinopsis Estadística de la República de Chile, año 1900. Santiago: Imprenta Nacional. and 3 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
     "hospital_existencia_inicial": {
       "display_unit": "count",
@@ -3451,7 +3376,7 @@
     },
     "junta_vacuna_egresos_total": {
       "display_unit": "pesos",
-      "definition": "Vaccination board expenditure, pesos. Coverage: 129 observations at department level across 2 years (1889 to 1890). Source: Memoria del Interior 1893 Tomo I. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
+      "definition": "Vaccination board expenditure, pesos. Coverage: 190 observations at department level across 3 years (1889 to 1892). Source: Ministerio del Interior. 1893. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1892, Tomo II. Santiago. and 2 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
     "junta_vacuna_saldo_inicial_1889": {
       "display_unit": "pesos",
@@ -3474,11 +3399,7 @@
     },
     "virus_repartido": {
       "display_unit": "doses",
-      "definition": "Vaccine doses distributed. Coverage: 130 observations at department level across 2 years (1890 to 1892). Source: Ministerio del Interior. 1893. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1892, Tomo II. Santiago. and 1 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
-    "virus_repartido_1889": {
-      "display_unit": "doses",
-      "definition": "Vaccine doses distributed (1889). Coverage: 69 observations at department level across year (1889). Source: Ministerio del Interior. 1891. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1890, Tomo I. Santiago. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
+      "definition": "Vaccine doses distributed. Coverage: 199 observations at department level across 3 years (1889 to 1892). Source: Ministerio del Interior. 1893. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1892, Tomo II. Santiago. and 2 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
     "police1920": {
       "display_unit": "persons"
@@ -3591,20 +3512,13 @@
       "display_unit": "persons",
       "definition": "Baptisms, male, 1869, measured in persons. Coverage: 54 observations at department level across year (1869). Source: Oficina Central de Estadística. 1872. Anuario Estadístico de la República de Chile, año 1871. Santiago: Imprenta Nacional. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
-    "nacimientos_1926": {
-      "display_unit": "persons"
-    },
     "nacimientos_permil": {
       "display_unit": "per 1,000 inhabitants",
       "definition": "Births per 1,000 inhabitants. Coverage: 25 observations at province level across year (1924). Source: Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927, p. 29. Santiago. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
-    "nacimientos_mujeres": {
-      "display_unit": "persons",
-      "definition": "Births, female, measured in persons. Coverage: 10 observations at national level across 10 years (1849 to 1858). Source: Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I). Santiago: Imprenta Nacional. and 1 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
     "births_female": {
       "display_unit": "persons",
-      "definition": "Births, female (Mamalakis 1980), measured in persons. Coverage: 43 observations at national level across 43 years (1870 to 1975). Source: Mamalakis 1980 Historical Statistics Vol 2. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
+      "definition": "Births, female (Mamalakis 1980), measured in persons. Coverage: 53 observations at national level across 53 years (1849 to 1975). Source: Mamalakis 1980 Historical Statistics Vol 2 and 2 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
     "births_mujeres_annual": {
       "display_unit": "persons",
@@ -3618,13 +3532,9 @@
       "display_unit": "persons",
       "definition": "Births, legitimate, measured in persons. Coverage: 66 observations at national level across 66 years (1849 to 1925); 24 observations at province level across year (1924). Source: Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927. Santiago. and 1 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
-    "nacimientos_hombres": {
-      "display_unit": "persons",
-      "definition": "Births, male, measured in persons. Coverage: 10 observations at national level across 10 years (1849 to 1858). Source: Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I). Santiago: Imprenta Nacional. and 1 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
     "births_male": {
       "display_unit": "persons",
-      "definition": "Births, male (Mamalakis 1980), measured in persons. Coverage: 43 observations at national level across 43 years (1870 to 1975). Source: Mamalakis 1980 Historical Statistics Vol 2. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
+      "definition": "Births, male (Mamalakis 1980), measured in persons. Coverage: 53 observations at national level across 53 years (1849 to 1975). Source: Mamalakis 1980 Historical Statistics Vol 2 and 2 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
     "births_hombres_annual": {
       "display_unit": "persons",
@@ -3635,7 +3545,7 @@
     },
     "births_total": {
       "display_unit": "persons",
-      "definition": "Births, total (Mamalakis 1980), measured in persons. Coverage: 43 observations at national level across 43 years (1870 to 1975). Source: Mamalakis 1980 Historical Statistics Vol 2. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
+      "definition": "Births, total (Mamalakis 1980), measured in persons. Coverage: 43 observations at national level across 43 years (1870 to 1975). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
     "births_total_annual": {
       "display_unit": "persons",
@@ -3643,10 +3553,7 @@
     },
     "tasa_mortalidad_por_mil": {
       "display_unit": "per 1,000 inhabitants",
-      "definition": "Death rate per 1,000 inhabitants. Coverage: 61 observations at national level across 61 years (1900 to 1960). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
-    "defunciones_1926": {
-      "display_unit": "persons"
+      "definition": "Death rate per 1,000 inhabitants. Coverage: 50 observations at national level across 50 years (1900 to 1949). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
     "defunciones_por_medicos": {
       "display_unit": "persons",
@@ -3678,13 +3585,9 @@
       "display_unit": "persons",
       "definition": "Deaths, 1869, measured in persons. Coverage: 54 observations at department level across year (1869). Source: Oficina Central de Estadística. 1872. Anuario Estadístico de la República de Chile, año 1871. Santiago: Imprenta Nacional. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
-    "defunciones_mujeres": {
-      "display_unit": "persons",
-      "definition": "Deaths, female, measured in persons. Coverage: 10 observations at national level across 10 years (1849 to 1858). Source: Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I). Santiago: Imprenta Nacional. and 1 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
     "deaths_female": {
       "display_unit": "persons",
-      "definition": "Deaths, female (Mamalakis 1980), measured in persons. Coverage: 27 observations at national level across 27 years (1870 to 1920). Source: Mamalakis 1980 Historical Statistics Vol 2. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
+      "definition": "Deaths, female (Mamalakis 1980), measured in persons. Coverage: 37 observations at national level across 37 years (1849 to 1920). Source: Mamalakis 1980 Historical Statistics Vol 2 and 2 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
     "muertes_mujeres": {
       "display_unit": "persons",
@@ -3694,13 +3597,9 @@
       "display_unit": "persons",
       "definition": "Deaths, female, 1869, measured in persons. Coverage: 54 observations at department level across year (1869). Source: Oficina Central de Estadística. 1872. Anuario Estadístico de la República de Chile, año 1871. Santiago: Imprenta Nacional. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
-    "defunciones_hombres": {
-      "display_unit": "persons",
-      "definition": "Deaths, male, measured in persons. Coverage: 10 observations at national level across 10 years (1849 to 1858). Source: Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I). Santiago: Imprenta Nacional. and 1 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
     "deaths_male": {
       "display_unit": "persons",
-      "definition": "Deaths, male (Mamalakis 1980), measured in persons. Coverage: 27 observations at national level across 27 years (1870 to 1920). Source: Mamalakis 1980 Historical Statistics Vol 2. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
+      "definition": "Deaths, male (Mamalakis 1980), measured in persons. Coverage: 37 observations at national level across 37 years (1849 to 1920). Source: Mamalakis 1980 Historical Statistics Vol 2 and 2 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
     "muertes_hombres": {
       "display_unit": "persons",
@@ -3712,11 +3611,7 @@
     },
     "defunciones_total": {
       "display_unit": "persons",
-      "definition": "Deaths, total, measured in persons. Coverage: 22 observations at department level across year (1892). Source: Memoria del Interior 1893 Tomo III. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
-    "deaths_total": {
-      "display_unit": "persons",
-      "definition": "Deaths, total (Mamalakis 1980), measured in persons. Coverage: 27 observations at national level across 27 years (1870 to 1920). Source: Mamalakis 1980 Historical Statistics Vol 2. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
+      "definition": "Deaths, total, measured in persons. Coverage: 22 observations at department level across year (1892). Source: Mamalakis 1980 Historical Statistics Vol 2 and 1 other source(s). Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
     },
     "excedente": {
       "display_unit": "persons",
@@ -3768,9 +3663,6 @@
     "relacion_por_100_mujeres": {
       "display_unit": "persons",
       "definition": "Males per 100 females, population, measured in persons. Coverage: 10 observations at national level across 10 years (1849 to 1858). Source: Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I). Santiago: Imprenta Nacional. Documented to the M098 minimum: label, unit, coverage and source, generated from the catalog record rather than hand-written."
-    },
-    "matrimonios_1926": {
-      "display_unit": "persons"
     },
     "matrimonios_permil": {
       "display_unit": "per 1,000 inhabitants",

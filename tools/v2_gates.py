@@ -347,16 +347,43 @@ def gate_g7(d):
     # correct behaviour, not a defect. What the download must actually satisfy is
     # the source and scope policy: nothing from an excluded compilation, and
     # nothing from a fenced file (decision 3, Data Chile complete.xlsx).
+    #
+    # Decision 6 (2026-08-04). This gate used to name ONE fenced file as a regex
+    # literal, `Data Chile complete`, while the catalog builder and the download
+    # builder each kept their own copy of the list. The three were free to
+    # disagree and did: `Datos pre 73` was withheld from the catalog and 3,293 of
+    # its rows shipped in this download with G7 green. The gate now tests EVERY
+    # entry in `curation/fenced_sources.json` BY NAME and reports which fence
+    # leaked, so the next fenced compilation cannot slip through the same hole.
+    sys.path.insert(0, os.path.join(ROOT, "scripts"))
+    from fenced_sources import entries as fence_entries  # noqa: E402
+
     dl = pd.read_csv(DOWNLOAD, dtype=str, low_memory=False)
-    fenced = dl.source_document.astype(str).str.contains(
-        r"Data Chile complete", case=False, na=False)
-    excluded = dl.source_document.astype(str).str.contains(
+    src = dl.source_document.astype(str)
+
+    leaks = {}
+    for e in fence_entries():
+        pat = "|".join(e.get("match") or [])
+        if not pat:  # an entry with no pattern fences nothing; say so, don't skip silently
+            leaks[e.get("key", "?")] = -1
+            continue
+        n = int(src.str.contains(pat, case=False, na=False, regex=True).sum())
+        if n:
+            leaks[e.get("key", "?")] = n
+
+    excluded = src.str.contains(
         r"braun|d[ıi]az.*l[uü]ders|república en cifras", case=False, na=False)
-    n_f, n_x = int(fenced.sum()), int(excluded.sum())
-    ok = not (n_f or n_x)
-    report("G7", "download", ok,
-           f"{len(dl):,} rows; {n_f:,} from the fenced Data Chile complete.xlsx, "
-           f"{n_x:,} from an excluded compilation")
+    n_x = int(excluded.sum())
+    n_f = sum(v for v in leaks.values() if v > 0)
+    ok = not (leaks or n_x)
+    tested = len(fence_entries())
+    detail = (f"{len(dl):,} rows; {n_f:,} from {tested} fenced sources tested by name, "
+              f"{n_x:,} from an excluded compilation")
+    if leaks:
+        detail += " — leaking: " + ", ".join(
+            f"{k} ({'no match pattern' if v < 0 else f'{v:,} rows'})"
+            for k, v in sorted(leaks.items()))
+    report("G7", "download", ok, detail)
 
 
 def main() -> None:
