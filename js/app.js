@@ -65,6 +65,20 @@ function isPerCapitaVariant(meta) {
   return /per capita|per 1,000|per 1000|per 100,000|per 100\b/.test(txt);
 }
 
+// 2026-08-18 site-audit fix: this line used to hardcode "135 indicator
+// families across 14 thematic categories... 156 source documents" as a
+// literal string, which drifted from reality (a fresh-eyes audit found six
+// different source-document counts live). Compute from M.stats() instead,
+// which is patched at build time from the exact dataframe the CSV download
+// is built from (see scripts/run_m028.py write_download()).
+function browseHeadingSub() {
+  const s = M.stats() || {};
+  const fam = s.n_families != null ? s.n_families.toLocaleString('en-US') : 'many';
+  const cat = s.n_categories != null ? s.n_categories : 'several';
+  const src = s.n_source_documents != null ? s.n_source_documents.toLocaleString('en-US') : 'many';
+  return `Browse ${fam} indicator families across ${cat} thematic categories, three geographic levels, and ${src} source documents.`;
+}
+
 async function _atlasInit() {
   await M.loadManifest();
 
@@ -99,7 +113,7 @@ async function _atlasInit() {
     <section id="topic-section"></section>
     <div class="browse-heading">
       <h2 class="bh-title">Explore the full dataset</h2>
-      <p class="bh-sub">Browse 135 indicator families across 14 thematic categories, three geographic levels, and 156 source documents.</p>
+      <p class="bh-sub">${browseHeadingSub()}</p>
     </div>
     <section id="browse-section"></section>
     <section id="control-section"></section>

@@ -64,6 +64,20 @@ async function loadSourceIndex() {
   return _sourceIndex;
 }
 
+// 2026-08-18 site-audit fix (B3): the full variable->family map (~10k
+// entries), bundle-aware like loadTaxonomy/loadSourceIndex above. Replaces
+// the legacy window._variableToFamily (a few-hundred-entry map hand-embedded
+// in variable_metadata.js) that varsForFamily() used to read, which only
+// covered 3 of 11 topic categories by accident of which variables happened
+// to be in it.
+let _variableToFamily = null;
+async function loadVariableToFamily() {
+  if (!_variableToFamily) _variableToFamily = window.__INLINE_variable_to_family !== undefined
+    ? window.__INLINE_variable_to_family
+    : await fetch('data/variable_to_family.json').then(r => r.json());
+  return _variableToFamily;
+}
+
 // ─── Helpers ───────────────────────────────────────────────────────────────
 
 function escHTML(s) {
@@ -78,9 +92,11 @@ function fmtNum(n) {
 function varsForFamily(familyId) {
   const manifest = M.manifest();
   if (!manifest) return [];
-  // Match by checking if the variable's category or id relates to the family
-  // The manifest doesn't store family_id directly, so we use the window._variableToFamily map
-  const vToF = window._variableToFamily || {};
+  // The manifest doesn't store family_id directly, so we use the full
+  // variable->family map loaded by loadVariableToFamily() (2026-08-18: was
+  // window._variableToFamily, a stale few-hundred-entry legacy map -- see
+  // that function's comment for why this silently broke 8 of 11 topics).
+  const vToF = _variableToFamily || {};
   // The `published !== false` test is the one every other enumeration applies
   // (listForScale, listByTopic, topicCounts). Omitting it here let a discarded
   // indicator surface inside a family drill-down (chunk 0.5, finding D1-04).
@@ -511,7 +527,7 @@ function renderSearch(container, { onSelectVariable, typeFilter }) {
 
 export async function createBrowseNav(host, { onSelect }) {
   // Load data in parallel
-  const [tax, src] = await Promise.all([loadTaxonomy(), loadSourceIndex()]);
+  const [tax, src] = await Promise.all([loadTaxonomy(), loadSourceIndex(), loadVariableToFamily()]);
 
   host.classList.add('browse-nav-section');
 

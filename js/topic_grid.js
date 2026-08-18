@@ -90,7 +90,7 @@ export function createTopicGrid(host, { onSelect }) {
       <div class="stat"><span class="v num">${stats.n_census_years}</span><span class="l">census waves</span></div>
       <div class="stat"><span class="v num">70+</span><span class="l">departments</span></div>
       <div class="stat"><span class="v num">25</span><span class="l">provinces</span></div>
-      <div class="stat"><span class="v num">~145</span><span class="l">source documents</span></div>
+      <div class="stat"><span class="v num">${(stats.n_source_documents ?? 0).toLocaleString('en-US')}</span><span class="l">source documents</span></div>
     </div>
   `;
 

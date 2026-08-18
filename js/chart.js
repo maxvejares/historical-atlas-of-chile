@@ -359,17 +359,54 @@ export function createChart(host) {
     URL.revokeObjectURL(url);
   }
 
+  // 2026-08-18 site-audit fix (B2). Two bugs, both from the same cause: the
+  // chart's line/axis/dot styling lives in css/app.css class rules
+  // (.chart-line{fill:none}, .chart-axis text{fill:...}, etc.), and
+  // cloneNode() only copies DOM structure + inline attributes, never applied
+  // external CSS. A detached, standalone SVG has no stylesheet to apply, so
+  // SVG's fill default (black) took over -- for a path with points but no
+  // explicit fill, that renders as a solid black wedge, exactly what a
+  // fresh-eyes audit caught on the default population chart. Fix: embed an
+  // inline <style> block with the handful of rules the chart SVG actually
+  // uses, hardcoded from css/tokens.css (an export is a point-in-time
+  // raster; if the palette changes, this function needs a matching update,
+  // same as any other hardcoded snapshot).
+  //
+  // Second bug: the variable title (<h2>, outside the SVG) and the source
+  // citation (.chart-source-block, also outside the SVG) were never part of
+  // svgEl at all, so cloning it could never include them -- a sparse chart's
+  // export was uninterpretable without them. Both are now drawn onto the
+  // canvas directly, making the PNG self-contained for citation.
+  const CHART_EXPORT_CSS = `
+    text { font-family: Georgia, 'Times New Roman', serif; }
+    .chart-axis text { font-size: 11px; fill: #4A5568; }
+    .chart-axis line, .chart-axis path { stroke: #D9D2C2; }
+    .chart-grid line { stroke: #E8E4DA; stroke-width: 1; }
+    .chart-line { fill: none; stroke-width: 1.5; }
+    .chart-line.dim { stroke-dasharray: 2 3; opacity: 0.7; }
+    .chart-step { fill: none; stroke-width: 1; }
+    .chart-dot { stroke: #FAFAF7; stroke-width: 1.5; }
+    .event-rail .baseline { stroke: #D9D2C2; stroke-width: 1; }
+  `;
+
   function downloadPNG() {
-    // The chart is a plain inline SVG, so export = serialize -> raster via
-    // canvas at 2x for crisp text. Fonts fall back to system serif in the
-    // raster; acceptable for a citation-grade figure export.
     if (!state.id) return;
+    const meta = M.byId(state.id);
+    const titleText = titleEl ? titleEl.textContent : '';
+    const sourceText = sourceBlock ? sourceBlock.textContent.replace(/\s+/g, ' ').trim() : '';
+
     const vb = (svgEl.getAttribute('viewBox') || '0 0 1200 510').split(/\s+/).map(Number);
-    const w = vb[2] || 1200, h = vb[3] || 510;
+    const chartW = vb[2] || 1200, chartH = vb[3] || 510;
+    const HEAD_H = titleText ? 44 : 0;
+    const FOOT_H = sourceText ? 28 : 0;
+    const w = chartW, h = chartH + HEAD_H + FOOT_H;
+
     const clone = svgEl.cloneNode(true);
     clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-    clone.setAttribute('width', w); clone.setAttribute('height', h);
-    clone.style.background = '#FDFCF8';
+    clone.setAttribute('width', chartW); clone.setAttribute('height', chartH);
+    const styleEl = document.createElementNS('http://www.w3.org/2000/svg', 'style');
+    styleEl.textContent = CHART_EXPORT_CSS;
+    clone.insertBefore(styleEl, clone.firstChild);
     const xml = new XMLSerializer().serializeToString(clone);
     const svgUrl = URL.createObjectURL(new Blob([xml], { type: 'image/svg+xml;charset=utf-8' }));
     const img = new Image();
@@ -377,9 +414,22 @@ export function createChart(host) {
       const canvas = document.createElement('canvas');
       canvas.width = w * 2; canvas.height = h * 2;
       const ctx = canvas.getContext('2d');
+      ctx.scale(2, 2);
       ctx.fillStyle = '#FDFCF8';
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
-      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+      ctx.fillRect(0, 0, w, h);
+      if (titleText) {
+        ctx.fillStyle = '#0E1A2B';
+        ctx.font = '600 16px Georgia, "Times New Roman", serif';
+        ctx.textBaseline = 'alphabetic';
+        ctx.fillText(titleText, 24, 28);
+      }
+      ctx.drawImage(img, 0, HEAD_H, chartW, chartH);
+      if (sourceText) {
+        ctx.fillStyle = '#4A5568';
+        ctx.font = '11px Georgia, "Times New Roman", serif';
+        ctx.fillText(sourceText.length > 140 ? sourceText.slice(0, 137) + '...' : sourceText,
+                     24, HEAD_H + chartH + 18);
+      }
       URL.revokeObjectURL(svgUrl);
       canvas.toBlob(blob => {
         const url = URL.createObjectURL(blob);

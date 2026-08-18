@@ -181,8 +181,29 @@ function renderRegistry(groups, filterVar) {
   return groups.map(g => renderGroup(g, false)).join('');
 }
 
+// 2026-08-18 site-audit fix: format bytes as a human MB string, used to
+// replace the hardcoded "24 MB" download label (actual file was ~55 MB, a
+// fresh-eyes audit caught the mismatch). fmtMB() is deliberately loose about
+// what it's given so a fetch failure degrades gracefully to a fallback string.
+function fmtMB(bytes) {
+  if (!bytes || !isFinite(bytes)) return null;
+  return `${(bytes / (1024 * 1024)).toFixed(0)} MB`;
+}
+
 export function createSections(host) {
   const sc = M.scope() || { start: 1840, end: 1990 };
+  // 2026-08-18 site-audit fix: these three numbers (observations, source
+  // documents, families) used to be hardcoded prose ("110,572 observations
+  // drawn from 216 source documents, covering 149 indicator families") and
+  // drifted from the real data -- a fresh-eyes audit found the live download
+  // actually contained 202,861 rows. Pulled from M.stats(), which is patched
+  // at build time from the exact dataframe the CSV download is built from
+  // (see scripts/run_m028.py write_download()), so this can't drift again.
+  const stats = M.stats() || {};
+  const nObs = stats.n_observations != null ? stats.n_observations.toLocaleString('en-US') : 'many';
+  const nSrc = stats.n_source_documents != null ? stats.n_source_documents.toLocaleString('en-US') : 'many';
+  const nFam = stats.n_families != null ? stats.n_families.toLocaleString('en-US') : 'many';
+  const nCat = stats.n_categories != null ? stats.n_categories : 'several';
   let activeVariable = null;
 
   host.classList.add('static-sections');
@@ -211,8 +232,8 @@ export function createSections(host) {
         journalistic, and pedagogical use.
       </p>
       <p class="ss-body">
-        The database contains 110,572 observations drawn from 216 source documents,
-        covering 149 indicator families across six geographic levels (commune,
+        The database contains ${nObs} observations drawn from ${nSrc} source documents,
+        covering ${nFam} indicator families across six geographic levels (commune,
         department, province, national, city, and macro-region). Every observation carries a
         quality flag and a source citation. The extraction pipeline, audit
         framework, and known limitations are documented in the methodology.
@@ -276,16 +297,16 @@ export function createSections(host) {
         <div style="background:var(--surface); border:1px solid var(--rule); border-radius:var(--radius); padding:20px;">
           <p style="font-weight:600; margin-bottom:8px;">Dataset (CSV)</p>
           <p style="font-size:13px; color:var(--ink-muted); margin-bottom:12px;">
-            110,572 observations in long format. 14-column canonical schema.
+            ${nObs} observations in long format. 14-column canonical schema.
             Excludes Braun et al.&nbsp;(1998), available separately from PUC.
           </p>
-          <a href="data/chile_historical_database_v1.csv" download
-             style="color:var(--accent); font-weight:600;">Download CSV (24 MB)</a>
+          <a href="data/chile_historical_database_v1.csv" download class="dl-csv-link"
+             style="color:var(--accent); font-weight:600;">Download CSV<span class="dl-csv-size"></span></a>
         </div>
         <div style="background:var(--surface); border:1px solid var(--rule); border-radius:var(--radius); padding:20px;">
           <p style="font-weight:600; margin-bottom:8px;">Codebook (PDF)</p>
           <p style="font-size:13px; color:var(--ink-muted); margin-bottom:12px;">
-            287 indicators across 149 families with definitions, units,
+            ${stats.n_variables_total != null ? stats.n_variables_total.toLocaleString('en-US') : 'many'} indicators across ${nFam} families with definitions, units,
             geographic coverage, year ranges, and primary sources.
           </p>
           <a href="data/codebook_v1.pdf" download
@@ -303,6 +324,22 @@ export function createSections(host) {
       </div>
     </section>
   `;
+
+  // 2026-08-18 site-audit fix: the CSV download size was a hardcoded "24 MB"
+  // against an actual ~55 MB file. HEAD the real file and read Content-Length
+  // instead of hardcoding a number that goes stale the next time the dataset
+  // grows. Degrades silently (no size shown) if the HEAD request fails.
+  const dlSizeEl = host.querySelector('.dl-csv-size');
+  const dlLinkEl = host.querySelector('.dl-csv-link');
+  if (dlSizeEl && dlLinkEl) {
+    fetch(dlLinkEl.getAttribute('href'), { method: 'HEAD' })
+      .then(r => {
+        const len = r.headers.get('content-length');
+        const mb = fmtMB(len ? Number(len) : null);
+        if (mb) dlSizeEl.textContent = ` (${mb})`;
+      })
+      .catch(() => {});
+  }
 
   const registryEl = host.querySelector('.src-registry');
 
