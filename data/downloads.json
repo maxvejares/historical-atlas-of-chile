@@ -1,0 +1,12 @@
+{
+  "files": [
+    {
+      "file": "chile_historical_database_v1.csv",
+      "path": "data/chile_historical_database_v1.csv",
+      "bytes": 57840400,
+      "n_rows": 202861,
+      "n_variables": 4794,
+      "built": "2026-08-18"
+    }
+  ]
+}
