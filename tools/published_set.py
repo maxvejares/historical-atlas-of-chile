@@ -39,10 +39,14 @@ RECONSTRUCTED_NO_MASTER_ROWS = {
     "population_census_count",
 }
 
-# The geographic levels the published catalog renders. Master artifact levels
-# (constituency, establishment, territory, macro_region, region,
-# province_or_dept) never reach the curated download.
-CURATED_LEVELS = {"national", "department", "province", "commune", "port", "city"}
+# The geographic levels the published catalog carries. Master artifact levels
+# (establishment, territory, macro_region, region, province_or_dept) never
+# reach the curated download. `constituency` IS carried: n_legislators is a
+# published indicator whose master rows are stored at their as-printed
+# constituency level (electoral districts coincide with departments before
+# 1891), and the fidelity doctrine ships the level as transcribed.
+CURATED_LEVELS = {"national", "department", "province", "commune", "port",
+                  "city", "constituency"}
 
 
 def visible_manifest_ids() -> set[str]:

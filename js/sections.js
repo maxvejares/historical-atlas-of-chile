@@ -353,7 +353,7 @@ export function createSections(host) {
             ${stats.n_variables_total != null ? stats.n_variables_total.toLocaleString('en-US') : 'many'} indicators across ${nFam} families with definitions, units,
             geographic coverage, year ranges, and primary sources.
           </p>
-          <a href="data/codebook_v1.pdf" download
+          <a href="data/codebook_v2.pdf" download
              style="color:var(--accent); font-weight:600;">Download Codebook</a>
         </div>
         <div style="background:var(--surface); border:1px solid var(--rule); border-radius:var(--radius); padding:20px;">
