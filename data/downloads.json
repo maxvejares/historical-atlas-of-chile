@@ -4,8 +4,8 @@
       "file": "historical_atlas_of_chile_curated_v2.csv",
       "path": "data/historical_atlas_of_chile_curated_v2.csv",
       "kind": "curated",
-      "bytes": 32053275,
-      "n_rows": 114950,
+      "bytes": 32086245,
+      "n_rows": 115071,
       "n_variables": 1045,
       "n_source_documents": 223,
       "built": "2026-08-19"
@@ -14,8 +14,8 @@
       "file": "historical_atlas_of_chile_research_extract_v2.csv",
       "path": "data/historical_atlas_of_chile_research_extract_v2.csv",
       "kind": "research_extract",
-      "bytes": 57937975,
-      "n_rows": 204484,
+      "bytes": 57970219,
+      "n_rows": 204605,
       "n_variables": 4795,
       "n_source_documents": 247,
       "built": "2026-08-19"

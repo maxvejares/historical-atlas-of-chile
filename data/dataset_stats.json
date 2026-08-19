@@ -1,5 +1,5 @@
 {
-  "n_years_covered": 161,
+  "n_years_covered": 162,
   "year_span": 162,
   "year_range": [
     1831,
@@ -13,7 +13,7 @@
   "n_variables_province": 403,
   "n_variables_national": 216,
   "n_source_documents": 217,
-  "n_observations": 114950,
-  "n_observations_full_extract": 204484,
+  "n_observations": 115071,
+  "n_observations_full_extract": 204605,
   "n_source_documents_full_extract": 247
 }

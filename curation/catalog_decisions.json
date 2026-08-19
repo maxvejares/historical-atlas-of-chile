@@ -1482,6 +1482,13 @@
    "settled": "owner decision 6, 2026-08-04",
    "fence_register_key": "datos_pre_73",
    "reason": "Withdrawn whole by owner decision 6, 2026-08-04, and recorded here 2026-08-04 after G3 caught the omission. Decision 6 fenced `Datos pre 73` from BOTH products; this indicator drew 51 of 51 of its cells from that file, so unlike `defunciones_total` or `poblacion_total` there is no primary-sourced remainder to keep and the series leaves the catalog whole.\n\nWHY IT WAS MISSED, which is the reusable part: the withdrawal was applied but never written as a decision, and the screener's candidate list was stale, so G3 measured against a file that did not contain this pair. Regenerating the list during the 2026-08-04 data session surfaced it immediately — the SAME trap Phase 6 recorded on 2026-08-03, when a stale list hid seven decision-3 fences. Structural fix applied the same day: `screen_unexposed_indicators.py` now carries a FENCED screen that reads `curation/fenced_sources.json`, so a series whose every promotable row is fenced screens BLOCKED instead of being handed back as READY. That screen blocks 149 pairs and 7,119 cells the screener was previously offering as publishable.\n\nRows stay in master and the fence is reversible from the register."
+  },
+  "total_population|national|census_year_arbitration": {
+   "decision": "published",
+   "code": "m098_rule2_arbitration",
+   "cells": 14,
+   "source_document": "Mamalakis Vol 2, Table 1.1 (DEC/INE/ODEPLAN)",
+   "reason": "2026-08-19, Task 1 (annual line restoration). Master holds two printed values for national total_population at the census years 1843-1980: the raw census enumerations (Mamalakis Vol 2 Table 17.1 and the Censo 1865 Cuadro Sinoptico) and the INE revised annual series (Mamalakis Vol 2 Table 1.1, extracted 2026-08-19 with page-level provenance, 121 rows). The two differ by up to 7.5% (1952: 6,378,000 vs 5,932,995) because Table 1.1 note 3 excludes territories not under effective Chilean sovereignty from the 1885-1920 censuses and the DEC/INE revised later counts. The rendered total_population national series takes the Table 1.1 value at every year (series-majority pick in regenerate_ui_data.py), keeping the annual line on one definition; the raw enumerations render as the separate population_census_count indicator and both row sets ship in the curated download. Splicing enumerations into the estimate line at census years was rejected: it reproduced the 4-7% definitional dips the 2026-08-18 B5 fix removed. NATIONAL_PRIOR_WINS emptied accordingly (the annual line now lives in master, not the payload)."
   }
  }
 }
