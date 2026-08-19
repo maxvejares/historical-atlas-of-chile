@@ -30,11 +30,14 @@ export const TOPICS = [
   // primary-sourced (DGE/INE) macro series, complete and national.
   { id: "economy",        label: "Economy",        landing: "municipal_presupuesto_pesos",                   desc: "Prices, fiscal accounts, trade, exchange rates." },
   { id: "demography",     label: "Demography",     landing: "total_population",            desc: "Population, vital statistics, urbanization." },
-  // 2026-08-19: landing moved off n_legislators — its department-scale payload
-  // cells (1865/75/85) had no master rows at those years (master samples
-  // decades at constituency level) and were pruned by the G8 display=download
-  // doctrine, which unpublished the indicator until a real re-extraction.
-  { id: "politics",       label: "Politics",       landing: "enfranchised",                desc: "Suffrage, legislators, elections, franchise reform." },
+  // 2026-08-19 (later same day): landing back on n_legislators. Its
+  // department maps are now PROJECTED from the as-printed constituency rows
+  // (decade years 1840-1890; districts = departments before 1891) via the
+  // source_level entry in curation/indicator_master_sources.json, so every
+  // rendered cell is backed by a curated download row and G8 verifies it.
+  // The fabricated 1865/75/85 cells the first 2026-08-19 pass pruned are gone
+  // for good — the projection renders only years master actually samples.
+  { id: "politics",       label: "Politics",       landing: "n_legislators",                desc: "Suffrage, legislators, elections, franchise reform." },
   { id: "agriculture",    label: "Agriculture",    landing: "existencias_bovinos_cabezas",            desc: "Crops, estates, agrarian structure, peasants." },
   { id: "mining",         label: "Mining",         landing: "salitre_production_tons",           desc: "Copper, coal, gold, silver, saltpeter, sulfur." },
   { id: "labor",          label: "Labor",          landing: "peasant",           desc: "Workforce, occupational composition, participation." },

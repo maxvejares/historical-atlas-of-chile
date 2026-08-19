@@ -46573,6 +46573,68 @@
     "published": "cross_section"
   },
   {
+    "id": "n_legislators",
+    "label": "Active legislators",
+    "display_label": "Active legislators",
+    "category": "Politics",
+    "source_type": "compiled",
+    "format_hint": "count",
+    "display_unit": "legislators",
+    "curated_subtitle": "Active legislators by department, decade years 1840–1890",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": true,
+      "commune": false
+    },
+    "scales": {
+      "department": {
+        "cadence": "irregular",
+        "valid_years": [
+          1840,
+          1850,
+          1860,
+          1870,
+          1880,
+          1890
+        ],
+        "year_range": [
+          1840,
+          1890
+        ],
+        "n_observations": 306,
+        "magnitude": {
+          "min": 1.0,
+          "max": 43.0,
+          "median": 6.0,
+          "orders_of_magnitude": 1.63,
+          "hint": "linear"
+        },
+        "rendering_mode": "dots",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Biblioteca del Congreso Nacional de Chile. Reseñas Biográficas Parlamentarias. Santiago: BCN. [database]."
+    ],
+    "topic_category": "politics",
+    "semantic_zero": true,
+    "source_quality": "clean",
+    "source_document": "Biblioteca del Congreso Nacional, Legislators Database",
+    "per_capita_default": "user_choice",
+    "accent": "#4a3970",
+    "definition": "Number of legislators (diputados plus senadores) representing the electoral district, Biblioteca del Congreso Nacional database, sampled at decade years. The data is stored at its as-printed constituency level, and the curated download ships it that way; the department map projects each district onto its department, which is valid before 1891 because electoral districts coincided with departments until the Ley de Comuna Autónoma reorganization. A district spanning several departments (for example Ancud y Quinchao) is never split across them and does not appear on the map; its rows remain in the download at constituency level. The 19th-century Chilean Congress had a small number of legislators per electoral district; counts of one or two were typical.",
+    "coverage_statement": "6 year(s) 1840-1890, 306 department-level observations",
+    "commit_status_by_scale": {
+      "department": "committed"
+    },
+    "published_by_scale": {
+      "department": "sparse"
+    },
+    "commit_status": "committed",
+    "published": "sparse"
+  },
+  {
     "id": "enfranchised_peasant",
     "label": "Enfranchised peasants",
     "display_label": "Enfranchised peasants",

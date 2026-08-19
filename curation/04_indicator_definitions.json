@@ -640,8 +640,8 @@
     },
     "_POLITICS": "Department/province-scale political indicators from the Biblioteca del Congreso Nacional database and the Anuario.",
     "n_legislators": {
-      "subtitle": "Active legislators by department, 1865–1885",
-      "definition": "Number of legislators (diputados plus senadores) representing the department, Biblioteca del Congreso Nacional database. The 19th-century Chilean Congress had a small number of legislators per electoral district; counts of one or two were typical."
+      "subtitle": "Active legislators by department, decade years 1840–1890",
+      "definition": "Number of legislators (diputados plus senadores) representing the electoral district, Biblioteca del Congreso Nacional database, sampled at decade years. The data is stored at its as-printed constituency level, and the curated download ships it that way; the department map projects each district onto its department, which is valid before 1891 because electoral districts coincided with departments until the Ley de Comuna Autónoma reorganization. A district spanning several departments (for example Ancud y Quinchao) is never split across them and does not appear on the map; its rows remain in the download at constituency level. The 19th-century Chilean Congress had a small number of legislators per electoral district; counts of one or two were typical."
     },
     "enfranchised_peasant": {
       "subtitle": "Enfranchised peasants by department, 1862–1920",

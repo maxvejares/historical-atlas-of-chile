@@ -123,6 +123,27 @@ def register_sources() -> dict[str, set[str]]:
     return out
 
 
+def level_projections() -> dict[tuple, set[tuple]]:
+    """{(indicator, target_level): {(master_variable, source_level)}} from
+    register entries that carry `source_level` (cross-level projection,
+    2026-08-19 Task 2). Step B renders such an indicator's cells at the
+    TARGET level from master rows stored at a DIFFERENT as-printed level
+    (n_legislators: constituency rows render as pre-1891 department maps,
+    districts = departments until 1891). The curated download ships the rows
+    at their as-printed level, so the gate accepts a payload cell backed by
+    an equal-value curated row at (master_variable, source_level, same year,
+    same unit slug)."""
+    out: dict[tuple, set[tuple]] = {}
+    ims_path = os.path.join(GP, "curation/indicator_master_sources.json")
+    if os.path.exists(ims_path):
+        for e in json.load(open(ims_path, encoding="utf-8")).get("entries", []):
+            sl = e.get("source_level")
+            if sl:
+                out.setdefault((e["indicator"], e["level"]), set()).update(
+                    (mv, sl) for mv in e["master_variables"])
+    return out
+
+
 def load_payload() -> dict:
     src = open(WINDOW, encoding="utf-8").read()
     return json.loads(src[src.index("=") + 1:].strip().rstrip(";"))
@@ -200,6 +221,7 @@ def run(enforce: bool, only_var: str | None, dump_csv: str | None,
     members = collapsed_members()
     member_of = {m: stem for stem, ys in members.items() for m in ys.values()}
     sources = register_sources()
+    projections = level_projections()
     payload = load_payload()
     idx = curated_index()
     aliases = geo_alias_map()
@@ -235,6 +257,15 @@ def run(enforce: bool, only_var: str | None, dump_csv: str | None,
         found: list = []
         for cv in cand_vars:
             units = idx.get((cv, lvl, yi))
+            if not units:
+                continue
+            for uk in unit_keys:
+                found.extend(units.get(uk, []))
+        # Cross-level projections: the backing curated row lives at the
+        # register entry's source_level under the master variable's own id.
+        for mv, sl in (projections.get((stem, lvl), set())
+                       | projections.get((var, lvl), set())):
+            units = idx.get((mv, sl, yi))
             if not units:
                 continue
             for uk in unit_keys:

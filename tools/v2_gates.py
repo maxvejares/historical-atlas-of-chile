@@ -421,6 +421,7 @@ def main() -> None:
         members = g8.collapsed_members()
         member_of = {mm: stem for stem, ys in members.items() for mm in ys.values()}
         sources = g8.register_sources()
+        projections = g8.level_projections()
         idx = g8.curated_index()
         amap = g8.geo_alias_map()
         n_miss = n_mm = 0
@@ -435,11 +436,20 @@ def main() -> None:
                 cand.add(mem[yi])
             found = []
             uslug = g8._slug(unit)
+            ukeys = ({unit, uslug} | amap.get(unit, set())
+                     | amap.get(uslug, set()))
             for cv in cand:
                 units = idx.get((cv, lvl, yi))
                 if units:
-                    for uk in ({unit, uslug} | amap.get(unit, set())
-                               | amap.get(uslug, set())):
+                    for uk in ukeys:
+                        found.extend(units.get(uk, []))
+            # Cross-level projections (register entries with source_level):
+            # the backing curated row lives at the as-printed source level.
+            for mv, sl in (projections.get((stem, lvl), set())
+                           | projections.get((var, lvl), set())):
+                units = idx.get((mv, sl, yi))
+                if units:
+                    for uk in ukeys:
                         found.extend(units.get(uk, []))
             if not found:
                 n_miss += 1

@@ -5,62 +5,102 @@
     {
       "indicator": "poblacion",
       "level": "department",
-      "master_variables": ["population"],
+      "master_variables": [
+        "population"
+      ],
       "evidence": "200/200 divergent payload cells (1869, 1885) value-identical to master `population` department rows; sources Anuario Estadistico 1871, Memoria del Interior 1887, Memoria del Interior 1892 Tomo II, Census 1895 Preliminar, Sinopsis 1924-1927. The published id kept the Spanish legacy key while the master extraction landed under the English id."
     },
     {
       "indicator": "total_population",
       "level": "province",
-      "master_variables": ["poblacion_calculada", "poblacion_total"],
+      "master_variables": [
+        "poblacion_calculada",
+        "poblacion_total"
+      ],
       "evidence": "80 divergent payload cells value-identical to master rows under these ids (poblacion_calculada 53, poblacion_total 17, both 6+); Anuario calculated-population and census province tables."
     },
     {
       "indicator": "total_population",
       "level": "department",
-      "master_variables": ["totalpop", "enfranchised_totalpop"],
+      "master_variables": [
+        "totalpop",
+        "enfranchised_totalpop"
+      ],
       "evidence": "56 divergent payload cells value-identical to unfenced promotable rows under these ids (enfranchised_totalpop 47, totalpop 9). enfranchised_totalpop is the population column of the enfranchisement tables, a primary printed count. Fenced totalpop rows (Data Chile complete.xlsx) do NOT ship and their payload cells are pruned."
     },
     {
       "indicator": "total_population",
       "level": "commune",
-      "master_variables": ["totalpop", "poblacion_total_1970", "poblacion_total_1992"],
+      "master_variables": [
+        "totalpop",
+        "poblacion_total_1970",
+        "poblacion_total_1992"
+      ],
       "evidence": "Mirrors COMMUNE_VAR_REMAP in scripts/regenerate_ui_data.py (M151 Phase 6): the three commune total-population snapshots fold into the canonical indicator. 798 payload cells; sources 1935 commune assembly, Censo 1970, Censo 1992 (INE). The publisher-side remap and this register must stay in sync."
     },
     {
       "indicator": "poblacion_total",
       "level": "province",
-      "master_variables": ["Población total", "poblacion_total_1920", "poblacion_total_1940", "poblacion_total_1952", "poblacion_total_1960"],
+      "master_variables": [
+        "Población total",
+        "poblacion_total_1920",
+        "poblacion_total_1940",
+        "poblacion_total_1952",
+        "poblacion_total_1960"
+      ],
       "evidence": "78 divergent payload cells value-identical to master rows under the as-printed raw id `Población total` and the census-retrospective year-stamped ids (Censo 1952 Tomo 1 resumen, Censo 1960 INE)."
     },
     {
       "indicator": "urban_population",
       "level": "province",
-      "master_variables": ["poblacion_urbana", "poblacion_urbana_censo"],
+      "master_variables": [
+        "poblacion_urbana",
+        "poblacion_urbana_censo"
+      ],
       "evidence": "18 divergent payload cells value-identical to master rows under these ids (census urban-population province tables)."
     },
     {
       "indicator": "rural_population",
       "level": "province",
-      "master_variables": ["poblacion_rural", "poblacion_rural_censo"],
+      "master_variables": [
+        "poblacion_rural",
+        "poblacion_rural_censo"
+      ],
       "evidence": "18 divergent payload cells value-identical to master rows under these ids (census rural-population province tables)."
     },
     {
       "indicator": "pop_urbana",
       "level": "province",
-      "master_variables": ["poblacion_urbana"],
+      "master_variables": [
+        "poblacion_urbana"
+      ],
       "evidence": "15 divergent payload cells (1895) value-identical to master poblacion_urbana rows. NOTE post-v1: pop_urbana and urban_population draw on the same master variable and are merge candidates."
     },
     {
       "indicator": "pop_rural",
       "level": "province",
-      "master_variables": ["poblacion_rural"],
+      "master_variables": [
+        "poblacion_rural"
+      ],
       "evidence": "15 divergent payload cells (1895) value-identical to master poblacion_rural rows. Same post-v1 merge note as pop_urbana."
     },
     {
       "indicator": "population_total",
       "level": "province",
-      "master_variables": ["poblacion_absoluta"],
+      "master_variables": [
+        "poblacion_absoluta"
+      ],
       "evidence": "2 divergent payload cells value-identical to master poblacion_absoluta rows (as-printed absolute-population column)."
+    },
+    {
+      "indicator": "n_legislators",
+      "level": "department",
+      "master_variables": [
+        "n_legislators"
+      ],
+      "source_level": "constituency",
+      "source_level_year_max": 1890,
+      "evidence": "Electoral districts coincide with departments before 1891 (GEO_LEVEL_PENDING['constituency'], extraction_output/pipeline.py); master stores n_legislators at its as-printed constituency level (BCN Legislators Database, decade years 1830-1890, 425 rows; the 1830 sample is wholly needs_review and never projects). Step B projects a constituency row onto the department payload only when its unit resolves to exactly ONE department dcode via dept_mapping.resolve and only one as-printed district maps to that department that year: combined districts ('Ancud y Quinchao', 'Lebu, Cañete y Arauco'), province or corporate seats ('Provincia de Aconcagua', 'Comisión Conservadora'), and collision keys (Curicó 1850; Loncomilla/San Javier 1870, 1880) are skipped, never split or summed. The curated download ships the as-printed constituency rows unchanged (fidelity doctrine); G8 accepts a department payload cell backed by an equal-value curated constituency row at the same year and unit slug."
     }
   ]
 }
