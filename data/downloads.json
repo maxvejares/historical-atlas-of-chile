@@ -4,10 +4,10 @@
       "file": "historical_atlas_of_chile_curated_v2.csv",
       "path": "data/historical_atlas_of_chile_curated_v2.csv",
       "kind": "curated",
-      "bytes": 32120677,
-      "n_rows": 115456,
-      "n_variables": 1046,
-      "n_source_documents": 224,
+      "bytes": 32092478,
+      "n_rows": 115352,
+      "n_variables": 1042,
+      "n_source_documents": 223,
       "built": "2026-08-19"
     },
     {

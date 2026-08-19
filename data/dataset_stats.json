@@ -8,12 +8,12 @@
   "n_census_years": 15,
   "n_categories": 11,
   "n_families": 101,
-  "n_variables_total": 1034,
+  "n_variables_total": 1030,
   "n_variables_department": 375,
-  "n_variables_province": 403,
-  "n_variables_national": 216,
-  "n_source_documents": 218,
-  "n_observations": 115456,
+  "n_variables_province": 399,
+  "n_variables_national": 214,
+  "n_source_documents": 217,
+  "n_observations": 115352,
   "n_observations_full_extract": 204605,
   "n_source_documents_full_extract": 247
 }

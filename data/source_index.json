@@ -1,12 +1,12 @@
 {
  "generated": "2026-08-19",
- "n_documents": 218,
+ "n_documents": 217,
  "groups": [
   {
    "id": "Primary Chilean government publications",
    "group_id": "primary_government",
-   "n_documents": 180,
-   "n_rows": 101516
+   "n_documents": 181,
+   "n_rows": 102472
   },
   {
    "id": "Compiled academic statistics",
@@ -23,8 +23,8 @@
   {
    "id": "Foreign and academic secondary sources",
    "group_id": "secondary_academic",
-   "n_documents": 21,
-   "n_rows": 7439
+   "n_documents": 19,
+   "n_rows": 6379
   }
  ],
  "documents": [
@@ -87,7 +87,7 @@
     "Aldana 1914. Resumen de la Hacienda Pública de Chile 1833-1914",
     "Aldana, Abelardo. 1914. Resumen Hacienda Publica Chile 1833-1914"
    ],
-   "n_variables": 74,
+   "n_variables": 73,
    "variable_ids": [
     "asset_ferrocarriles_equipo_pesos",
     "auctioneers",
@@ -125,7 +125,6 @@
     "monopoly_income_gbp",
     "national_estates_gbp",
     "population",
-    "population_total",
     "post_office_gbp",
     "railways_gbp",
     "renta_aduanas_exportacion",
@@ -389,7 +388,7 @@
     "Mamalakis 1980 Historical Statistics Vol 2",
     "Mamalakis, Markos. 1980. Historical Statistics of Chile, Vol. 2"
    ],
-   "n_variables": 65,
+   "n_variables": 64,
    "variable_ids": [
     "active_population_thousands",
     "births_female",
@@ -432,7 +431,6 @@
     "nacidos_vivos_mujeres",
     "nacimientos_total",
     "poblacion_total_miles",
-    "population_total",
     "population_total_thousands_mamalakis",
     "rural_pct",
     "rural_population",
@@ -524,25 +522,6 @@
     "sna_estate_count_1874",
     "sna_estate_price_mean_1874"
    ]
-  },
-  {
-   "document": "Censo 1960 (INE) - Caracteristicas basicas de la poblacion",
-   "group": "Primary Chilean government publications",
-   "n_tables": 1,
-   "n_rows": 26,
-   "year_range": [
-    1960,
-    1960
-   ],
-   "geo_levels": [
-    "national",
-    "province"
-   ],
-   "raw_keys": [
-    "Censo 1960 (INE) - Caracteristicas basicas de la poblacion"
-   ],
-   "n_variables": 0,
-   "variable_ids": []
   },
   {
    "document": "Census (census_1930_canonical_pop.csv)",
@@ -834,7 +813,7 @@
     "Sinopsis Estadistica de Chile 1924-27",
     "Sinopsis Estadística de Chile, 1924–1927"
    ],
-   "n_variables": 57,
+   "n_variables": 55,
    "variable_ids": [
     "circulante_billetes_fiscales_vigente",
     "circulante_total_efectiva",
@@ -878,8 +857,6 @@
     "pct_urbana",
     "permil_ilegitimos",
     "permil_legitimos",
-    "pop_rural",
-    "pop_urbana",
     "population",
     "reos_aprehendidos_comunales",
     "reos_aprehendidos_fiscales",
@@ -984,11 +961,10 @@
     "Censo de la República de Chile, 1930",
     "Census - Chile 1930 VERIFIED"
    ],
-   "n_variables": 5,
+   "n_variables": 4,
    "variable_ids": [
     "densidad_hab_por_km2",
     "pct_poblacion_urbana",
-    "poblacion_total",
     "population_total_1930_boundary",
     "population_urban"
    ]
@@ -1069,9 +1045,8 @@
     "Anuario Estadístico 1935, Tabla 8",
     "Anuario Estadístico de Chile, 1935 (Tabla 8)"
    ],
-   "n_variables": 2,
+   "n_variables": 1,
    "variable_ids": [
-    "poblacion_total",
     "superficie_km2"
    ]
   },
@@ -3240,7 +3215,7 @@
    "raw_keys": [
     "Anuario Estadistico - Chile 1860-1872"
    ],
-   "n_variables": 51,
+   "n_variables": 50,
    "variable_ids": [
     "alumnos_hombres_fiscales",
     "alumnos_hombres_municipales",
@@ -3279,7 +3254,6 @@
     "n_escuelas_municipales_m",
     "n_escuelas_municipales_t",
     "patentes_count",
-    "population_total",
     "school_expenditure_pesos_primary",
     "schools_hombres_fiscales",
     "schools_hombres_municipales",
@@ -4113,7 +4087,7 @@
     "Censo de la Republica de Chile levantado el 28 de Noviembre de 1907 (Comision Central del Censo, 1908)",
     "Censo de la República de Chile, 1907"
    ],
-   "n_variables": 74,
+   "n_variables": 73,
    "variable_ids": [
     "densidad_hab_por_km2",
     "estranjeros_hombres",
@@ -4128,7 +4102,6 @@
     "poblacion_hombres",
     "poblacion_mujeres",
     "poblacion_rural",
-    "poblacion_total",
     "poblacion_urbana",
     "profesion_abastecedores_hombres",
     "profesion_abastecedores_mujeres",
@@ -4453,7 +4426,7 @@
     "Censo 1920 (MC0043126)",
     "Censo 1920 (Memoria Chilena)"
    ],
-   "n_variables": 28,
+   "n_variables": 27,
    "variable_ids": [
     "landowners_count_h",
     "landowners_count_m",
@@ -4463,7 +4436,6 @@
     "poblacion_nacionales_h",
     "poblacion_nacionales_m",
     "poblacion_rural",
-    "poblacion_total",
     "poblacion_urbana",
     "profesion_cat_agricultura_total",
     "profesion_cat_bellas_artes_total",
@@ -4969,10 +4941,10 @@
   {
    "document": "Servicio Nacional de Estadística y Censos. ca. 1956. XII Censo General de Población y I de Vivienda, 24 de abril de 1952, Tomo I: Resumen del País. Santiago.",
    "group": "Primary Chilean government publications",
-   "n_tables": 9,
-   "n_rows": 1375,
+   "n_tables": 8,
+   "n_rows": 1297,
    "year_range": [
-    1920,
+    1952,
     1952
    ],
    "geo_levels": [
@@ -5049,6 +5021,55 @@
    "n_variables": 1,
    "variable_ids": [
     "crude_death_rate"
+   ]
+  },
+  {
+   "document": "Véjares, Maximiliano. 2026. Enfranchised-voter series, Chile, 1862 to 1920. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'. Compiled from the Anuario Estadístico calificados and inscritos tabulations and census occupational tables.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 0,
+   "n_rows": 995,
+   "year_range": [
+    1862,
+    1921
+   ],
+   "geo_levels": [
+    "department"
+   ],
+   "raw_keys": [
+    "Enfranchisement Data 1862",
+    "Enfranchisement Data 1872",
+    "Enfranchisement Data 1920",
+    "Landholding & Democracy in Chile (analysis_panel.xlsx, sheet 3)",
+    "Landholding & Democracy in Chile (analysis_panel.xlsx, sheet 5)",
+    "User-curated assembly (enfranchised 1862.xlsx)",
+    "User-curated assembly (enfranchised 1863.xlsx)",
+    "User-curated assembly (enfranchised 1872.xlsx)",
+    "User-curated assembly (enfranchised 1881.xlsx)",
+    "User-curated assembly (enfranchised 1917.xlsx)",
+    "User-curated assembly (enfranchised 1920.xlsx)"
+   ],
+   "n_variables": 0,
+   "variable_ids": []
+  },
+  {
+   "document": "Véjares, Maximiliano. 2026. Public-employment series, Chile, census years 1865 to 1920. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'. Compiled from the census occupational tables, 1865 to 1920.",
+   "group": "Primary Chilean government publications",
+   "n_tables": 0,
+   "n_rows": 65,
+   "year_range": [
+    1865,
+    1920
+   ],
+   "geo_levels": [
+    "department"
+   ],
+   "raw_keys": [
+    "User-curated assembly (chile_pubemp_per_capita_all_years.csv)",
+    "Véjares, compiled public-employment series (Chile), author's compilation"
+   ],
+   "n_variables": 1,
+   "variable_ids": [
+    "pubemp"
    ]
   },
   {
@@ -5431,43 +5452,7 @@
    ]
   },
   {
-   "document": "Véjares, Maximiliano. Forthcoming. Compiled fiscal and customs series, Chile, 19th century. Net Zero Industrial Policy Lab, Johns Hopkins University.",
-   "group": "Foreign and academic secondary sources",
-   "n_tables": 0,
-   "n_rows": 0,
-   "year_range": null,
-   "geo_levels": [],
-   "raw_keys": [
-    "Véjares, compiled fiscal and customs series (Chile, 19th c.), author's compilation"
-   ],
-   "n_variables": 1,
-   "variable_ids": [
-    "customs_receipts_pesos"
-   ]
-  },
-  {
-   "document": "Véjares, Maximiliano. Forthcoming. Compiled public-employment series, Chile. Net Zero Industrial Policy Lab, Johns Hopkins University.",
-   "group": "Foreign and academic secondary sources",
-   "n_tables": 0,
-   "n_rows": 65,
-   "year_range": [
-    1865,
-    1920
-   ],
-   "geo_levels": [
-    "department"
-   ],
-   "raw_keys": [
-    "User-curated assembly (chile_pubemp_per_capita_all_years.csv)",
-    "Véjares, compiled public-employment series (Chile), author's compilation"
-   ],
-   "n_variables": 1,
-   "variable_ids": [
-    "pubemp"
-   ]
-  },
-  {
-   "document": "Véjares, Maximiliano. Forthcoming. Compiled state-capacity dataset, Chile, 1935. Net Zero Industrial Policy Lab, Johns Hopkins University.",
+   "document": "Véjares, Maximiliano. 2026. Commune state-capacity dataset, Chile, 1935. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'.",
    "group": "Foreign and academic secondary sources",
    "n_tables": 0,
    "n_rows": 2404,
@@ -5496,6 +5481,21 @@
    ]
   },
   {
+   "document": "Véjares, Maximiliano. Forthcoming. Compiled fiscal and customs series, Chile, 19th century. Net Zero Industrial Policy Lab, Johns Hopkins University.",
+   "group": "Foreign and academic secondary sources",
+   "n_tables": 0,
+   "n_rows": 0,
+   "year_range": null,
+   "geo_levels": [],
+   "raw_keys": [
+    "Véjares, compiled fiscal and customs series (Chile, 19th c.), author's compilation"
+   ],
+   "n_variables": 1,
+   "variable_ids": [
+    "customs_receipts_pesos"
+   ]
+  },
+  {
    "document": "Véjares, Maximiliano. Forthcoming. Department-level historical dataset, Chile, 19th century. Compiled from primary archival sources. Net Zero Industrial Policy Lab, Johns Hopkins University.",
    "group": "Foreign and academic secondary sources",
    "n_tables": 0,
@@ -5520,46 +5520,13 @@
    ]
   },
   {
-   "document": "Véjares, Maximiliano. Forthcoming. Enfranchised-voter series, Chile, 19th and early 20th century, compiled from electoral registers and statistical yearbooks. Net Zero Industrial Policy Lab, Johns Hopkins University.",
-   "group": "Foreign and academic secondary sources",
-   "n_tables": 0,
-   "n_rows": 943,
-   "year_range": [
-    1862,
-    1920
-   ],
-   "geo_levels": [
-    "department"
-   ],
-   "raw_keys": [
-    "Enfranchisement Data 1862",
-    "Enfranchisement Data 1872",
-    "Enfranchisement Data 1920",
-    "User-curated assembly (enfranchised 1862.xlsx)",
-    "User-curated assembly (enfranchised 1863.xlsx)",
-    "User-curated assembly (enfranchised 1872.xlsx)",
-    "User-curated assembly (enfranchised 1881.xlsx)",
-    "User-curated assembly (enfranchised 1917.xlsx)",
-    "User-curated assembly (enfranchised 1920.xlsx)"
-   ],
-   "n_variables": 0,
-   "variable_ids": []
-  },
-  {
    "document": "Véjares, Maximiliano. Forthcoming. Landholding and Democracy in Chile. Working paper, Net Zero Industrial Policy Lab, Johns Hopkins University.",
    "group": "Foreign and academic secondary sources",
    "n_tables": 0,
-   "n_rows": 52,
-   "year_range": [
-    1863,
-    1921
-   ],
-   "geo_levels": [
-    "department"
-   ],
+   "n_rows": 0,
+   "year_range": null,
+   "geo_levels": [],
    "raw_keys": [
-    "Landholding & Democracy in Chile (analysis_panel.xlsx, sheet 3)",
-    "Landholding & Democracy in Chile (analysis_panel.xlsx, sheet 5)",
     "Véjares, *Landholding and Democracy in Chile*"
    ],
    "n_variables": 2,
@@ -5676,8 +5643,8 @@
   "Véjares, Department-level historical dataset (Chile, 19th c.), author's compilation": "Véjares, Maximiliano. Forthcoming. Department-level historical dataset, Chile, 19th century. Compiled from primary archival sources. Net Zero Industrial Policy Lab, Johns Hopkins University.",
   "Véjares, compiled fiscal and customs series (Chile, 19th c.), author's compilation": "Véjares, Maximiliano. Forthcoming. Compiled fiscal and customs series, Chile, 19th century. Net Zero Industrial Policy Lab, Johns Hopkins University.",
   "Véjares, compiled historical dataset (Chile, pre-1973, multi-source), author's compilation": "Véjares, Maximiliano. Forthcoming. Compiled historical dataset, Chile, pre-1973, multi-source. Net Zero Industrial Policy Lab, Johns Hopkins University.",
-  "Véjares, compiled public-employment series (Chile), author's compilation": "Véjares, Maximiliano. Forthcoming. Compiled public-employment series, Chile. Net Zero Industrial Policy Lab, Johns Hopkins University.",
-  "Véjares, compiled state-capacity dataset (Chile, 1935), author's compilation": "Véjares, Maximiliano. Forthcoming. Compiled state-capacity dataset, Chile, 1935. Net Zero Industrial Policy Lab, Johns Hopkins University.",
+  "Véjares, compiled public-employment series (Chile), author's compilation": "Véjares, Maximiliano. 2026. Public-employment series, Chile, census years 1865 to 1920. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'. Compiled from the census occupational tables, 1865 to 1920.",
+  "Véjares, compiled state-capacity dataset (Chile, 1935), author's compilation": "Véjares, Maximiliano. 2026. Commune state-capacity dataset, Chile, 1935. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'.",
   "Anuario Estadístico de Chile, 1935 (postal traffic, province level)": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, postal traffic by province. Santiago.",
   "Anuario Estadístico de Chile, 1935 (money orders, province level)": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, money orders by province. Santiago.",
   "Anuario Estadístico de Chile, 1935 (vehicles, province level)": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, registered vehicles by province. Santiago.",
@@ -5781,21 +5748,21 @@
   "Censo 1930 (Memoria Chilena)": "Dirección General de Estadística. 1931. X Censo de Población de la República de Chile, 27 de noviembre de 1930. Santiago.",
   "Censo Jeneral de la República de Chile, 1865, Clasificacion por provincias": "Oficina Central de Estadística. 1866. Censo Jeneral de la República de Chile, 19 de abril de 1865, clasificación por provincias. Santiago: Imprenta Nacional.",
   "Censo Electoral 1915": "Dirección del Rejistro Electoral. 1915. Censo Electoral de la República de Chile, 1915. Santiago.",
-  "User-curated assembly (regime-state 1935.xlsx)": "Véjares, Maximiliano. Forthcoming. Compiled state-capacity dataset, Chile, 1935. Net Zero Industrial Policy Lab, Johns Hopkins University.",
-  "User-curated assembly (chile_pubemp_per_capita_all_years.csv)": "Véjares, Maximiliano. Forthcoming. Compiled public-employment series, Chile. Net Zero Industrial Policy Lab, Johns Hopkins University.",
-  "Landholding & Democracy in Chile (analysis_panel.xlsx, sheet 3)": "Véjares, Maximiliano. Forthcoming. Landholding and Democracy in Chile. Working paper, Net Zero Industrial Policy Lab, Johns Hopkins University.",
-  "Landholding & Democracy in Chile (analysis_panel.xlsx, sheet 5)": "Véjares, Maximiliano. Forthcoming. Landholding and Democracy in Chile. Working paper, Net Zero Industrial Policy Lab, Johns Hopkins University.",
+  "User-curated assembly (regime-state 1935.xlsx)": "Véjares, Maximiliano. 2026. Commune state-capacity dataset, Chile, 1935. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'.",
+  "User-curated assembly (chile_pubemp_per_capita_all_years.csv)": "Véjares, Maximiliano. 2026. Public-employment series, Chile, census years 1865 to 1920. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'. Compiled from the census occupational tables, 1865 to 1920.",
+  "Landholding & Democracy in Chile (analysis_panel.xlsx, sheet 3)": "Véjares, Maximiliano. 2026. Enfranchised-voter series, Chile, 1862 to 1920. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'. Compiled from the Anuario Estadístico calificados and inscritos tabulations and census occupational tables.",
+  "Landholding & Democracy in Chile (analysis_panel.xlsx, sheet 5)": "Véjares, Maximiliano. 2026. Enfranchised-voter series, Chile, 1862 to 1920. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'. Compiled from the Anuario Estadístico calificados and inscritos tabulations and census occupational tables.",
   "Bauer 1975, Chilean Rural Society (theoretical construct)": "Bauer, Arnold J. 1975. Chilean Rural Society from the Spanish Conquest to 1930. Cambridge: Cambridge University Press.",
   "BCN Legislators Database": "Biblioteca del Congreso Nacional de Chile. Reseñas biográficas parlamentarias, 1811 to present. Santiago: BCN.",
   "BCN Legislators database 1833-1891": "Biblioteca del Congreso Nacional de Chile. Reseñas biográficas parlamentarias, 1811 to present. Santiago: BCN.",
-  "Enfranchisement Data 1862": "Véjares, Maximiliano. Forthcoming. Enfranchised-voter series, Chile, 19th and early 20th century, compiled from electoral registers and statistical yearbooks. Net Zero Industrial Policy Lab, Johns Hopkins University.",
-  "Enfranchisement Data 1872": "Véjares, Maximiliano. Forthcoming. Enfranchised-voter series, Chile, 19th and early 20th century, compiled from electoral registers and statistical yearbooks. Net Zero Industrial Policy Lab, Johns Hopkins University.",
-  "Enfranchisement Data 1920": "Véjares, Maximiliano. Forthcoming. Enfranchised-voter series, Chile, 19th and early 20th century, compiled from electoral registers and statistical yearbooks. Net Zero Industrial Policy Lab, Johns Hopkins University.",
-  "User-curated assembly (enfranchised 1863.xlsx)": "Véjares, Maximiliano. Forthcoming. Enfranchised-voter series, Chile, 19th and early 20th century, compiled from electoral registers and statistical yearbooks. Net Zero Industrial Policy Lab, Johns Hopkins University.",
-  "User-curated assembly (enfranchised 1872.xlsx)": "Véjares, Maximiliano. Forthcoming. Enfranchised-voter series, Chile, 19th and early 20th century, compiled from electoral registers and statistical yearbooks. Net Zero Industrial Policy Lab, Johns Hopkins University.",
-  "User-curated assembly (enfranchised 1881.xlsx)": "Véjares, Maximiliano. Forthcoming. Enfranchised-voter series, Chile, 19th and early 20th century, compiled from electoral registers and statistical yearbooks. Net Zero Industrial Policy Lab, Johns Hopkins University.",
-  "User-curated assembly (enfranchised 1917.xlsx)": "Véjares, Maximiliano. Forthcoming. Enfranchised-voter series, Chile, 19th and early 20th century, compiled from electoral registers and statistical yearbooks. Net Zero Industrial Policy Lab, Johns Hopkins University.",
-  "User-curated assembly (enfranchised 1920.xlsx)": "Véjares, Maximiliano. Forthcoming. Enfranchised-voter series, Chile, 19th and early 20th century, compiled from electoral registers and statistical yearbooks. Net Zero Industrial Policy Lab, Johns Hopkins University.",
+  "Enfranchisement Data 1862": "Véjares, Maximiliano. 2026. Enfranchised-voter series, Chile, 1862 to 1920. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'. Compiled from the Anuario Estadístico calificados and inscritos tabulations and census occupational tables.",
+  "Enfranchisement Data 1872": "Véjares, Maximiliano. 2026. Enfranchised-voter series, Chile, 1862 to 1920. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'. Compiled from the Anuario Estadístico calificados and inscritos tabulations and census occupational tables.",
+  "Enfranchisement Data 1920": "Véjares, Maximiliano. 2026. Enfranchised-voter series, Chile, 1862 to 1920. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'. Compiled from the Anuario Estadístico calificados and inscritos tabulations and census occupational tables.",
+  "User-curated assembly (enfranchised 1863.xlsx)": "Véjares, Maximiliano. 2026. Enfranchised-voter series, Chile, 1862 to 1920. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'. Compiled from the Anuario Estadístico calificados and inscritos tabulations and census occupational tables.",
+  "User-curated assembly (enfranchised 1872.xlsx)": "Véjares, Maximiliano. 2026. Enfranchised-voter series, Chile, 1862 to 1920. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'. Compiled from the Anuario Estadístico calificados and inscritos tabulations and census occupational tables.",
+  "User-curated assembly (enfranchised 1881.xlsx)": "Véjares, Maximiliano. 2026. Enfranchised-voter series, Chile, 1862 to 1920. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'. Compiled from the Anuario Estadístico calificados and inscritos tabulations and census occupational tables.",
+  "User-curated assembly (enfranchised 1917.xlsx)": "Véjares, Maximiliano. 2026. Enfranchised-voter series, Chile, 1862 to 1920. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'. Compiled from the Anuario Estadístico calificados and inscritos tabulations and census occupational tables.",
+  "User-curated assembly (enfranchised 1920.xlsx)": "Véjares, Maximiliano. 2026. Enfranchised-voter series, Chile, 1862 to 1920. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'. Compiled from the Anuario Estadístico calificados and inscritos tabulations and census occupational tables.",
   "Rol de Avalúos 1874 (departmental)": "República de Chile. 1874. Rol de Avalúos de la Contribución Agrícola, 1874. Santiago.",
   "Catastro de Avalúos 1874": "República de Chile. 1874. Rol de Avalúos de la Contribución Agrícola, 1874. Santiago.",
   "Boletín de la Sociedad Nacional de Agricultura 1874, Vol VI": "Sociedad Nacional de Agricultura. 1874. Boletín de la Sociedad Nacional de Agricultura, Vol. VI. Santiago.",
@@ -5869,10 +5836,10 @@
   "Censo 1970 - Caracteristicas basicas de la poblacion, NUBLE (INE/CIREN)": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Ñuble. Santiago: INE.",
   "Censo 1970 - Caracteristicas basicas de la poblacion, TARAPACA (INE/CIREN)": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Tarapacá. Santiago: INE.",
   "Censo 1970 - Caracteristicas basicas de la poblacion, MAGALLANES (INE/CIREN)": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Magallanes. Santiago: INE.",
-  "User-curated assembly (enfranchised 1862.xlsx)": "Véjares, Maximiliano. Forthcoming. Enfranchised-voter series, Chile, 19th and early 20th century, compiled from electoral registers and statistical yearbooks. Net Zero Industrial Policy Lab, Johns Hopkins University.",
+  "User-curated assembly (enfranchised 1862.xlsx)": "Véjares, Maximiliano. 2026. Enfranchised-voter series, Chile, 1862 to 1920. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'. Compiled from the Anuario Estadístico calificados and inscritos tabulations and census occupational tables.",
   "Curation-15 reconstruction (Historical Atlas of Chile)": "Historical Atlas of Chile. 2026. Reconstructed series (curation step 15), computed from primary fiscal and trade levels held in the atlas; formulas stated in each indicator definition and the methodology document.",
   "Anuario estadistico, entrega quinta. P. 450; https://dds.crl.edu/item/177216": "Oficina Central de Estadística. 1863. Anuario Estadístico de la República de Chile, año 1862, Entrega Quinta, p. 450. Santiago: Imprenta Nacional.",
-  "Véjares, Maximiliano. Forthcoming. Compiled state-capacity dataset, Chile, 1935. Net Zero Industrial Policy Lab, Johns Hopkins University.": "Véjares, Maximiliano. Forthcoming. Compiled state-capacity dataset, Chile, 1935. Net Zero Industrial Policy Lab, Johns Hopkins University.",
+  "Véjares, Maximiliano. 2026. Commune state-capacity dataset, Chile, 1935. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'.": "Véjares, Maximiliano. 2026. Commune state-capacity dataset, Chile, 1935. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'.",
   "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927. Santiago.": "Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927. Santiago.",
   "Oficina de Planificación Agrícola (ODEPA). 1976. Estadísticas Agropecuarias 1965–1974. Santiago: Ministerio de Agricultura.": "Oficina de Planificación Agrícola (ODEPA). 1976. Estadísticas Agropecuarias 1965–1974. Santiago: Ministerio de Agricultura.",
   "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, livestock slaughtered by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, livestock slaughtered by province. Santiago.",
@@ -5912,7 +5879,6 @@
   "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Valparaíso. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Valparaíso. Santiago: INE.",
   "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto O'Higgins. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto O'Higgins. Santiago: INE.",
   "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Cautín. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Cautín. Santiago: INE.",
-  "Oficina Central de Estadística. 1860–1872. Anuario Estadístico de la República de Chile, Tomos I–XIII. Santiago: Imprenta Nacional. (2012 reissue: Instituto Nacional de Estadísticas.)": "Oficina Central de Estadística. 1860–1872. Anuario Estadístico de la República de Chile, Tomos I–XIII. Santiago: Imprenta Nacional. (2012 reissue: Instituto Nacional de Estadísticas.)",
   "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, regional distribution tables. Westport, CT: Greenwood Press.": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, regional distribution tables. Westport, CT: Greenwood Press.",
   "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 1.1 (DEC/INE/ODEPLAN source). Westport, CT: Greenwood Press.": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 1.1 (DEC/INE/ODEPLAN source). Westport, CT: Greenwood Press.",
   "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 1.2 (INE source). Westport, CT: Greenwood Press.": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 1.2 (INE source). Westport, CT: Greenwood Press.",
@@ -5930,6 +5896,7 @@
   "Oficina Central de Estadística. 1915. Anuario Estadístico de la República de Chile, año 1914, Vol. V: Instrucción. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1915. Anuario Estadístico de la República de Chile, año 1914, Vol. V: Instrucción. Santiago: Imprenta Nacional.",
   "Oficina Central de Estadística. 1914. Anuario Estadístico de la República de Chile, año 1913, Vol. V: Instrucción. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1914. Anuario Estadístico de la República de Chile, año 1913, Vol. V: Instrucción. Santiago: Imprenta Nacional.",
   "Oficina Central de Estadística. 1910. Anuario Estadístico de la República de Chile, año 1909. Santiago: Sociedad Imprenta y Litografía Universo.": "Oficina Central de Estadística. 1910. Anuario Estadístico de la República de Chile, año 1909. Santiago: Sociedad Imprenta y Litografía Universo.",
+  "Oficina Central de Estadística. 1860–1872. Anuario Estadístico de la República de Chile, Tomos I–XIII. Santiago: Imprenta Nacional. (2012 reissue: Instituto Nacional de Estadísticas.)": "Oficina Central de Estadística. 1860–1872. Anuario Estadístico de la República de Chile, Tomos I–XIII. Santiago: Imprenta Nacional. (2012 reissue: Instituto Nacional de Estadísticas.)",
   "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, education section. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, education section. Santiago.",
   "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, electoral registration and turnout by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, electoral registration and turnout by province. Santiago.",
   "Véjares, Maximiliano. Forthcoming. Department-level historical dataset, Chile, 19th century. Compiled from primary archival sources. Net Zero Industrial Policy Lab, Johns Hopkins University.": "Véjares, Maximiliano. Forthcoming. Department-level historical dataset, Chile, 19th century. Compiled from primary archival sources. Net Zero Industrial Policy Lab, Johns Hopkins University.",
@@ -5974,7 +5941,7 @@
   "Sociedad Nacional de Agricultura. 1874. Boletín de la Sociedad Nacional de Agricultura, Volume VI. Santiago.": "Sociedad Nacional de Agricultura. 1874. Boletín de la Sociedad Nacional de Agricultura, Volume VI. Santiago.",
   "Dirección General de Estadística. 1918. Anuario Estadístico de la República de Chile, año 1917, enfranchisement section. Santiago.": "Dirección General de Estadística. 1918. Anuario Estadístico de la República de Chile, año 1917, enfranchisement section. Santiago.",
   "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 10.1 (1952 census, corrected). Westport, CT: Greenwood Press.": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 10.1 (1952 census, corrected). Westport, CT: Greenwood Press.",
-  "Véjares, Maximiliano. Forthcoming. Compiled public-employment series, Chile. Net Zero Industrial Policy Lab, Johns Hopkins University.": "Véjares, Maximiliano. Forthcoming. Compiled public-employment series, Chile. Net Zero Industrial Policy Lab, Johns Hopkins University.",
+  "Véjares, Maximiliano. 2026. Public-employment series, Chile, census years 1865 to 1920. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'. Compiled from the census occupational tables, 1865 to 1920.": "Véjares, Maximiliano. 2026. Public-employment series, Chile, census years 1865 to 1920. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'. Compiled from the census occupational tables, 1865 to 1920.",
   "Oficina Central de Estadística. 1925. X Censo de la Población de la República de Chile, 15 de diciembre de 1920, public employees by theme. Santiago.": "Oficina Central de Estadística. 1925. X Censo de la Población de la República de Chile, 15 de diciembre de 1920, public employees by theme. Santiago.",
   "Biblioteca del Congreso Nacional de Chile. Reseñas Biográficas Parlamentarias. Santiago: BCN. [database].": "Biblioteca del Congreso Nacional de Chile. Reseñas Biográficas Parlamentarias. Santiago: BCN. [database].",
   "Oficina Central de Estadística. 1863. Anuario Estadístico de la República de Chile, año 1862 (Tomo III). Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1863. Anuario Estadístico de la República de Chile, año 1862 (Tomo III). Santiago: Imprenta Nacional.",
@@ -6010,86 +5977,85 @@
   "Dirección General de Estadística. 1946. Anuario Estadístico de Chile, año 1945. Santiago.": "Dirección General de Estadística. 1946. Anuario Estadístico de Chile, año 1945. Santiago.",
   "Dirección General de Estadística. 1927. Anuario Estadístico de Chile, año 1926, Vol. I: Demografía. Santiago.": "Dirección General de Estadística. 1927. Anuario Estadístico de Chile, año 1926, Vol. I: Demografía. Santiago.",
   "Ministerio del Interior. 1891. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1890, Tomo II. Santiago.": "Ministerio del Interior. 1891. Memoria del Ministerio del Interior presentada al Congreso Nacional, año 1890, Tomo II. Santiago.",
-  "Biblioteca del Congreso Nacional de Chile. Reseñas biográficas parlamentarias, 1811 to present. Santiago: BCN.": "Biblioteca del Congreso Nacional de Chile. Reseñas biográficas parlamentarias, 1811 to present. Santiago: BCN.",
-  "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 17.2 (INE source). Westport, CT: Greenwood Press.": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 17.2 (INE source). Westport, CT: Greenwood Press.",
-  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Ñuble. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Ñuble. Santiago: INE.",
-  "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), Tomo I. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), Tomo I. Santiago: Imprenta Nacional.",
-  "Dirección General de Estadística. 1940. Anuario Estadístico de Chile, año 1939. Santiago.": "Dirección General de Estadística. 1940. Anuario Estadístico de Chile, año 1939. Santiago.",
-  "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, population tables. Westport, CT: Greenwood Press.": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, population tables. Westport, CT: Greenwood Press.",
-  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Aysén. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Aysén. Santiago: INE.",
-  "Oficina Central de Estadística. 1863. Anuario Estadístico de la República de Chile, año 1862, Entrega Quinta. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1863. Anuario Estadístico de la República de Chile, año 1862, Entrega Quinta. Santiago: Imprenta Nacional.",
-  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Llanquihue. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Llanquihue. Santiago: INE.",
-  "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, vehicles by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, vehicles by province. Santiago.",
-  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Maule. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Maule. Santiago: INE.",
-  "Oficina Central de Estadística. 1863. Anuario Estadístico de la República de Chile, año 1862, Entrega Quinta, p. 450. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1863. Anuario Estadístico de la República de Chile, año 1862, Entrega Quinta, p. 450. Santiago: Imprenta Nacional.",
-  "Dirección General de Estadística. 1947. Anuario Estadístico de Chile, año 1946. Santiago.": "Dirección General de Estadística. 1947. Anuario Estadístico de Chile, año 1946. Santiago.",
-  "Ministerio de Hacienda. 1889. Memoria de Hacienda presentada al Congreso Nacional en 1889. Santiago.": "Ministerio de Hacienda. 1889. Memoria de Hacienda presentada al Congreso Nacional en 1889. Santiago.",
-  "Dirección General de Estadística. ca. 1928. Estadística Anual de la República de Chile, año 1927. Santiago.": "Dirección General de Estadística. ca. 1928. Estadística Anual de la República de Chile, año 1927. Santiago.",
-  "Dirección General de Estadística. 1935. Anuario Estadístico de Chile, año 1934. Santiago.": "Dirección General de Estadística. 1935. Anuario Estadístico de Chile, año 1934. Santiago.",
-  "Census (census_1930_canonical_pop.csv)": "Census (census_1930_canonical_pop.csv)",
-  "Oficina Central de Estadística. ca. 1886. Anuario Estadístico de la República de Chile, año 1885, municipal finance tables. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. ca. 1886. Anuario Estadístico de la República de Chile, año 1885, municipal finance tables. Santiago: Imprenta Nacional.",
-  "Ministerio de Hacienda. 1876. Memoria de Hacienda presentada al Congreso Nacional en 1876. Santiago.": "Ministerio de Hacienda. 1876. Memoria de Hacienda presentada al Congreso Nacional en 1876. Santiago.",
-  "Véjares, Maximiliano. Forthcoming. Enfranchised-voter series, Chile, 19th and early 20th century, compiled from electoral registers and statistical yearbooks. Net Zero Industrial Policy Lab, Johns Hopkins University.": "Véjares, Maximiliano. Forthcoming. Enfranchised-voter series, Chile, 19th and early 20th century, compiled from electoral registers and statistical yearbooks. Net Zero Industrial Policy Lab, Johns Hopkins University.",
-  "Oficina Central de Estadística. ca. 1900. Sétimo Censo Jeneral de la Población de Chile, 28 de noviembre de 1895, Tomo I. Santiago.": "Oficina Central de Estadística. ca. 1900. Sétimo Censo Jeneral de la Población de Chile, 28 de noviembre de 1895, Tomo I. Santiago.",
   "Oficina Central de Estadística. ca. 1882. Anuario Estadístico de la República de Chile, Tomo XXII, años 1879–1881. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. ca. 1882. Anuario Estadístico de la República de Chile, Tomo XXII, años 1879–1881. Santiago: Imprenta Nacional.",
-  "Dirección General de Estadística. 1945. Anuario Estadístico de Chile, año 1944. Santiago.": "Dirección General de Estadística. 1945. Anuario Estadístico de Chile, año 1944. Santiago.",
-  "República de Chile. 1874. Rol de Avalúos de la Contribución Agrícola, 1874. Santiago.": "República de Chile. 1874. Rol de Avalúos de la Contribución Agrícola, 1874. Santiago.",
-  "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), population by sex and province, census of 1854. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), population by sex and province, census of 1854. Santiago: Imprenta Nacional.",
-  "Dirección General de Estadística. 1943. Anuario Estadístico de Chile, año 1942. Santiago.": "Dirección General de Estadística. 1943. Anuario Estadístico de Chile, año 1942. Santiago.",
-  "Dirección General de Estadística. 1944. Anuario Estadístico de Chile, año 1943. Santiago.": "Dirección General de Estadística. 1944. Anuario Estadístico de Chile, año 1943. Santiago.",
-  "Dirección General de Estadística. 1939. Anuario Estadístico de Chile, año 1938. Santiago.": "Dirección General de Estadística. 1939. Anuario Estadístico de Chile, año 1938. Santiago.",
-  "Census (census_1940_canonical_pop.csv)": "Census (census_1940_canonical_pop.csv)",
-  "Oficina Central de Estadística. ca. 1874. Anuario Estadístico de la República de Chile, Tomo XV. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. ca. 1874. Anuario Estadístico de la República de Chile, Tomo XV. Santiago: Imprenta Nacional.",
-  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Concepción. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Concepción. Santiago: INE.",
-  "Ministerio del Interior. 1840. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1840. Santiago: Imprenta del Estado.": "Ministerio del Interior. 1840. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1840. Santiago: Imprenta del Estado.",
-  "Oficina Central de Estadística. 1896. Sétimo Censo Jeneral de la Población de Chile, 28 de noviembre de 1895: Resultados Preliminares. Santiago.": "Oficina Central de Estadística. 1896. Sétimo Censo Jeneral de la Población de Chile, 28 de noviembre de 1895: Resultados Preliminares. Santiago.",
-  "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, prison population by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, prison population by province. Santiago.",
-  "Población total; Censo 1920, organizado por tema; http://www.bibliotecanacionaldigital.gob.cl/visor/BND:82449": "Población total; Censo 1920, organizado por tema; http://www.bibliotecanacionaldigital.gob.cl/visor/BND:82449",
-  "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), population by province, census of 1854. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), population by province, census of 1854. Santiago: Imprenta Nacional.",
-  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Linares. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Linares. Santiago: INE.",
-  "Ministerio de Hacienda. 1861. Memoria de Hacienda presentada al Congreso Nacional en 1861. Santiago.": "Ministerio de Hacienda. 1861. Memoria de Hacienda presentada al Congreso Nacional en 1861. Santiago.",
-  "Oficina Central de Estadística. ca. 1900. Sétimo Censo Jeneral de la Población de Chile, 28 de noviembre de 1895, Tomo IV. Santiago.": "Oficina Central de Estadística. ca. 1900. Sétimo Censo Jeneral de la Población de Chile, 28 de noviembre de 1895, Tomo IV. Santiago.",
-  "Census (census_1952_canonical_pop.csv)": "Census (census_1952_canonical_pop.csv)",
-  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Atacama. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Atacama. Santiago: INE.",
-  "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 2.1 (DEC/INE source). Westport, CT: Greenwood Press.": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 2.1 (DEC/INE source). Westport, CT: Greenwood Press.",
-  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Antofagasta. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Antofagasta. Santiago: INE.",
-  "Censo 1960 (INE) - Caracteristicas basicas de la poblacion": "Censo 1960 (INE) - Caracteristicas basicas de la poblacion",
-  "Oficina Central de Estadística. 1907. Sinopsis Estadística de la República de Chile, año 1907, municipal finance section. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1907. Sinopsis Estadística de la República de Chile, año 1907, municipal finance section. Santiago: Imprenta Nacional.",
-  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Osorno. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Osorno. Santiago: INE.",
-  "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, roads by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, roads by province. Santiago.",
-  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Chiloé. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Chiloé. Santiago: INE.",
-  "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 17.1 (DEC/INE source). Westport, CT: Greenwood Press.": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 17.1 (DEC/INE source). Westport, CT: Greenwood Press.",
-  "Oficina Central de Estadística. ca. 1889. Sesto Censo Jeneral de la Población de Chile, 26 de noviembre de 1885, Tomo II. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. ca. 1889. Sesto Censo Jeneral de la Población de Chile, 26 de noviembre de 1885, Tomo II. Santiago: Imprenta Nacional.",
-  "Dirección General de Estadística. 1931. Anuario Estadístico de Chile, año 1930. Santiago.": "Dirección General de Estadística. 1931. Anuario Estadístico de Chile, año 1930. Santiago.",
-  "Dirección General de Estadística. 1948. Anuario Estadístico de Chile, año 1947. Santiago.": "Dirección General de Estadística. 1948. Anuario Estadístico de Chile, año 1947. Santiago.",
-  "Dirección General de Estadística. 1930. Anuario Estadístico de Chile, año 1929. Santiago.": "Dirección General de Estadística. 1930. Anuario Estadístico de Chile, año 1929. Santiago.",
-  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Coquimbo. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Coquimbo. Santiago: INE.",
-  "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, elections by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, elections by province. Santiago.",
   "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, postal statistics by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, postal statistics by province. Santiago.",
   "Census (census_1930_from1940_canonical_pop.csv)": "Census (census_1930_from1940_canonical_pop.csv)",
-  "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 12.1 (compiled from De Castro 1979). Westport, CT: Greenwood Press.": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 12.1 (compiled from De Castro 1979). Westport, CT: Greenwood Press.",
-  "Oficina Central de Estadística. 1872. Anuario Estadístico de la República de Chile, Tomo XI, años 1870–1871. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1872. Anuario Estadístico de la República de Chile, Tomo XI, años 1870–1871. Santiago: Imprenta Nacional.",
-  "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), child mortality by province, 1849–1858. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), child mortality by province, 1849–1858. Santiago: Imprenta Nacional.",
-  "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, postal money orders by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, postal money orders by province. Santiago.",
-  "Oficina Central de Estadística. ca. 1900. Sétimo Censo Jeneral de la Población de Chile, 28 de noviembre de 1895, Tomo II. Santiago.": "Oficina Central de Estadística. ca. 1900. Sétimo Censo Jeneral de la Población de Chile, 28 de noviembre de 1895, Tomo II. Santiago.",
+  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Osorno. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Osorno. Santiago: INE.",
+  "Ministerio de Hacienda. 1876. Memoria de Hacienda presentada al Congreso Nacional en 1876. Santiago.": "Ministerio de Hacienda. 1876. Memoria de Hacienda presentada al Congreso Nacional en 1876. Santiago.",
+  "Véjares, Maximiliano. 2026. Enfranchised-voter series, Chile, 1862 to 1920. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'. Compiled from the Anuario Estadístico calificados and inscritos tabulations and census occupational tables.": "Véjares, Maximiliano. 2026. Enfranchised-voter series, Chile, 1862 to 1920. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'. Compiled from the Anuario Estadístico calificados and inscritos tabulations and census occupational tables.",
+  "Oficina Central de Estadística. ca. 1889. Sesto Censo Jeneral de la Población de Chile, 26 de noviembre de 1885, Tomo II. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. ca. 1889. Sesto Censo Jeneral de la Población de Chile, 26 de noviembre de 1885, Tomo II. Santiago: Imprenta Nacional.",
+  "Dirección General de Estadística. 1931. Anuario Estadístico de Chile, año 1930. Santiago.": "Dirección General de Estadística. 1931. Anuario Estadístico de Chile, año 1930. Santiago.",
+  "República de Chile. 1874. Rol de Avalúos de la Contribución Agrícola, 1874. Santiago.": "República de Chile. 1874. Rol de Avalúos de la Contribución Agrícola, 1874. Santiago.",
+  "Dirección General de Estadística. 1935. Anuario Estadístico de Chile, año 1934. Santiago.": "Dirección General de Estadística. 1935. Anuario Estadístico de Chile, año 1934. Santiago.",
   "Oficina Central de Estadística. ca. 1900. Sétimo Censo Jeneral de la Población de Chile, 28 de noviembre de 1895, Tomo III. Santiago.": "Oficina Central de Estadística. ca. 1900. Sétimo Censo Jeneral de la Población de Chile, 28 de noviembre de 1895, Tomo III. Santiago.",
-  "Ministerio de Hacienda. 1880. Memoria de Hacienda presentada al Congreso Nacional en 1880. Santiago.": "Ministerio de Hacienda. 1880. Memoria de Hacienda presentada al Congreso Nacional en 1880. Santiago.",
-  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Magallanes. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Magallanes. Santiago: INE.",
-  "Dirección General de Estadística. 1941. Anuario Estadístico de Chile, año 1940. Santiago.": "Dirección General de Estadística. 1941. Anuario Estadístico de Chile, año 1940. Santiago.",
-  "Oficina Central de Estadística. 1866. Censo Jeneral de la República de Chile, 19 de abril de 1865. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1866. Censo Jeneral de la República de Chile, 19 de abril de 1865. Santiago: Imprenta Nacional.",
-  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Tarapacá. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Tarapacá. Santiago: INE.",
-  "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, crime statistics by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, crime statistics by province. Santiago.",
-  "Dirección General de Estadística. 1938. Anuario Estadístico de Chile, año 1937. Santiago.": "Dirección General de Estadística. 1938. Anuario Estadístico de Chile, año 1937. Santiago.",
+  "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, postal money orders by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, postal money orders by province. Santiago.",
+  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Maule. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Maule. Santiago: INE.",
+  "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, prison population by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, prison population by province. Santiago.",
+  "Ministerio de Hacienda. 1889. Memoria de Hacienda presentada al Congreso Nacional en 1889. Santiago.": "Ministerio de Hacienda. 1889. Memoria de Hacienda presentada al Congreso Nacional en 1889. Santiago.",
+  "Dirección General de Estadística. 1948. Anuario Estadístico de Chile, año 1947. Santiago.": "Dirección General de Estadística. 1948. Anuario Estadístico de Chile, año 1947. Santiago.",
+  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Linares. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Linares. Santiago: INE.",
   "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), population growth by province, 1849–1858. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), population growth by province, 1849–1858. Santiago: Imprenta Nacional.",
-  "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), deaths by sex and province, 1849–1858. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), deaths by sex and province, 1849–1858. Santiago: Imprenta Nacional.",
+  "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, mining production by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, mining production by province. Santiago.",
+  "Ministerio de Hacienda. 1880. Memoria de Hacienda presentada al Congreso Nacional en 1880. Santiago.": "Ministerio de Hacienda. 1880. Memoria de Hacienda presentada al Congreso Nacional en 1880. Santiago.",
+  "Oficina Central de Estadística. ca. 1874. Anuario Estadístico de la República de Chile, Tomo XV. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. ca. 1874. Anuario Estadístico de la República de Chile, Tomo XV. Santiago: Imprenta Nacional.",
+  "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, population tables. Westport, CT: Greenwood Press.": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, population tables. Westport, CT: Greenwood Press.",
+  "Census (census_1930_canonical_pop.csv)": "Census (census_1930_canonical_pop.csv)",
+  "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), child mortality by province, 1849–1858. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), child mortality by province, 1849–1858. Santiago: Imprenta Nacional.",
+  "Oficina Central de Estadística. ca. 1886. Anuario Estadístico de la República de Chile, año 1885, municipal finance tables. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. ca. 1886. Anuario Estadístico de la República de Chile, año 1885, municipal finance tables. Santiago: Imprenta Nacional.",
+  "Oficina Central de Estadística. ca. 1900. Sétimo Censo Jeneral de la Población de Chile, 28 de noviembre de 1895, Tomo IV. Santiago.": "Oficina Central de Estadística. ca. 1900. Sétimo Censo Jeneral de la Población de Chile, 28 de noviembre de 1895, Tomo IV. Santiago.",
+  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Ñuble. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Ñuble. Santiago: INE.",
+  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Aysén. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Aysén. Santiago: INE.",
   "Ministerio de Hacienda. 1870. Memoria de Hacienda presentada al Congreso Nacional en 1870. Santiago.": "Ministerio de Hacienda. 1870. Memoria de Hacienda presentada al Congreso Nacional en 1870. Santiago.",
+  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Atacama. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Atacama. Santiago: INE.",
   "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Valdivia. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Valdivia. Santiago: INE.",
-  "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), births by sex and province, 1849–1858. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), births by sex and province, 1849–1858. Santiago: Imprenta Nacional.",
+  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Concepción. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Concepción. Santiago: INE.",
   "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, livestock slaughter by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, livestock slaughter by province. Santiago.",
+  "Dirección General de Estadística. 1939. Anuario Estadístico de Chile, año 1938. Santiago.": "Dirección General de Estadística. 1939. Anuario Estadístico de Chile, año 1938. Santiago.",
+  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Coquimbo. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Coquimbo. Santiago: INE.",
+  "Oficina Central de Estadística. ca. 1900. Sétimo Censo Jeneral de la Población de Chile, 28 de noviembre de 1895, Tomo II. Santiago.": "Oficina Central de Estadística. ca. 1900. Sétimo Censo Jeneral de la Población de Chile, 28 de noviembre de 1895, Tomo II. Santiago.",
   "Aldana, Abelardo. 1914. Resumen de la Hacienda Pública de Chile, 1833–1914, customs receipts and shipping cuadros. Santiago: Imprenta Universitaria.": "Aldana, Abelardo. 1914. Resumen de la Hacienda Pública de Chile, 1833–1914, customs receipts and shipping cuadros. Santiago: Imprenta Universitaria.",
+  "Biblioteca del Congreso Nacional de Chile. Reseñas biográficas parlamentarias, 1811 to present. Santiago: BCN.": "Biblioteca del Congreso Nacional de Chile. Reseñas biográficas parlamentarias, 1811 to present. Santiago: BCN.",
+  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Magallanes. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Magallanes. Santiago: INE.",
+  "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), population by sex and province, census of 1854. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), population by sex and province, census of 1854. Santiago: Imprenta Nacional.",
+  "Ministerio de Hacienda. 1861. Memoria de Hacienda presentada al Congreso Nacional en 1861. Santiago.": "Ministerio de Hacienda. 1861. Memoria de Hacienda presentada al Congreso Nacional en 1861. Santiago.",
+  "Oficina Central de Estadística. 1863. Anuario Estadístico de la República de Chile, año 1862, Entrega Quinta, p. 450. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1863. Anuario Estadístico de la República de Chile, año 1862, Entrega Quinta, p. 450. Santiago: Imprenta Nacional.",
+  "Oficina Central de Estadística. 1907. Sinopsis Estadística de la República de Chile, año 1907, municipal finance section. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1907. Sinopsis Estadística de la República de Chile, año 1907, municipal finance section. Santiago: Imprenta Nacional.",
+  "Dirección General de Estadística. 1930. Anuario Estadístico de Chile, año 1929. Santiago.": "Dirección General de Estadística. 1930. Anuario Estadístico de Chile, año 1929. Santiago.",
+  "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, vehicles by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, vehicles by province. Santiago.",
+  "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, roads by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, roads by province. Santiago.",
+  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Chiloé. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Chiloé. Santiago: INE.",
+  "Oficina Central de Estadística. 1863. Anuario Estadístico de la República de Chile, año 1862, Entrega Quinta. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1863. Anuario Estadístico de la República de Chile, año 1862, Entrega Quinta. Santiago: Imprenta Nacional.",
+  "Oficina Central de Estadística. 1896. Sétimo Censo Jeneral de la Población de Chile, 28 de noviembre de 1895: Resultados Preliminares. Santiago.": "Oficina Central de Estadística. 1896. Sétimo Censo Jeneral de la Población de Chile, 28 de noviembre de 1895: Resultados Preliminares. Santiago.",
+  "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 17.2 (INE source). Westport, CT: Greenwood Press.": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 17.2 (INE source). Westport, CT: Greenwood Press.",
+  "Census (census_1952_canonical_pop.csv)": "Census (census_1952_canonical_pop.csv)",
+  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Llanquihue. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Llanquihue. Santiago: INE.",
+  "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 2.1 (DEC/INE source). Westport, CT: Greenwood Press.": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 2.1 (DEC/INE source). Westport, CT: Greenwood Press.",
+  "Oficina Central de Estadística. ca. 1900. Sétimo Censo Jeneral de la Población de Chile, 28 de noviembre de 1895, Tomo I. Santiago.": "Oficina Central de Estadística. ca. 1900. Sétimo Censo Jeneral de la Población de Chile, 28 de noviembre de 1895, Tomo I. Santiago.",
+  "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 12.1 (compiled from De Castro 1979). Westport, CT: Greenwood Press.": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 12.1 (compiled from De Castro 1979). Westport, CT: Greenwood Press.",
+  "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), births by sex and province, 1849–1858. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), births by sex and province, 1849–1858. Santiago: Imprenta Nacional.",
+  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Tarapacá. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Tarapacá. Santiago: INE.",
+  "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), population by province, census of 1854. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), population by province, census of 1854. Santiago: Imprenta Nacional.",
+  "Dirección General de Estadística. 1944. Anuario Estadístico de Chile, año 1943. Santiago.": "Dirección General de Estadística. 1944. Anuario Estadístico de Chile, año 1943. Santiago.",
+  "Dirección General de Estadística. 1945. Anuario Estadístico de Chile, año 1944. Santiago.": "Dirección General de Estadística. 1945. Anuario Estadístico de Chile, año 1944. Santiago.",
+  "Dirección General de Estadística. 1941. Anuario Estadístico de Chile, año 1940. Santiago.": "Dirección General de Estadística. 1941. Anuario Estadístico de Chile, año 1940. Santiago.",
+  "Ministerio del Interior. 1840. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1840. Santiago: Imprenta del Estado.": "Ministerio del Interior. 1840. Memoria del Ministerio del Interior presentada al Congreso Nacional en 1840. Santiago: Imprenta del Estado.",
+  "Dirección General de Estadística. 1947. Anuario Estadístico de Chile, año 1946. Santiago.": "Dirección General de Estadística. 1947. Anuario Estadístico de Chile, año 1946. Santiago.",
+  "Dirección General de Estadística. 1938. Anuario Estadístico de Chile, año 1937. Santiago.": "Dirección General de Estadística. 1938. Anuario Estadístico de Chile, año 1937. Santiago.",
+  "Oficina Central de Estadística. 1866. Censo Jeneral de la República de Chile, 19 de abril de 1865. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1866. Censo Jeneral de la República de Chile, 19 de abril de 1865. Santiago: Imprenta Nacional.",
+  "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, elections by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, elections by province. Santiago.",
+  "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), Tomo I. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), Tomo I. Santiago: Imprenta Nacional.",
+  "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), deaths by sex and province, 1849–1858. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1861. Anuario Estadístico de la República de Chile, año 1860 (Tomo I), deaths by sex and province, 1849–1858. Santiago: Imprenta Nacional.",
+  "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Antofagasta. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Antofagasta. Santiago: INE.",
   "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Biobío. Santiago: INE.": "Instituto Nacional de Estadísticas. ca. 1973. XIV Censo Nacional de Población y III de Vivienda, abril de 1970: Características Básicas de la Población, folleto Biobío. Santiago: INE.",
+  "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 17.1 (DEC/INE source). Westport, CT: Greenwood Press.": "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 17.1 (DEC/INE source). Westport, CT: Greenwood Press.",
   "Dirección General de Estadística. 1934. Anuario Estadístico de Chile, año 1933. Santiago.": "Dirección General de Estadística. 1934. Anuario Estadístico de Chile, año 1933. Santiago.",
-  "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, mining production by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, mining production by province. Santiago."
+  "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, crime statistics by province. Santiago.": "Dirección General de Estadística. 1936. Anuario Estadístico de Chile, año 1935, crime statistics by province. Santiago.",
+  "Dirección General de Estadística. ca. 1928. Estadística Anual de la República de Chile, año 1927. Santiago.": "Dirección General de Estadística. ca. 1928. Estadística Anual de la República de Chile, año 1927. Santiago.",
+  "Población total; Censo 1920, organizado por tema; http://www.bibliotecanacionaldigital.gob.cl/visor/BND:82449": "Población total; Censo 1920, organizado por tema; http://www.bibliotecanacionaldigital.gob.cl/visor/BND:82449",
+  "Oficina Central de Estadística. 1872. Anuario Estadístico de la República de Chile, Tomo XI, años 1870–1871. Santiago: Imprenta Nacional.": "Oficina Central de Estadística. 1872. Anuario Estadístico de la República de Chile, Tomo XI, años 1870–1871. Santiago: Imprenta Nacional.",
+  "Census (census_1940_canonical_pop.csv)": "Census (census_1940_canonical_pop.csv)",
+  "Dirección General de Estadística. 1943. Anuario Estadístico de Chile, año 1942. Santiago.": "Dirección General de Estadística. 1943. Anuario Estadístico de Chile, año 1942. Santiago.",
+  "Dirección General de Estadística. 1940. Anuario Estadístico de Chile, año 1939. Santiago.": "Dirección General de Estadística. 1940. Anuario Estadístico de Chile, año 1939. Santiago."
  },
  "row_basis": "curated_download"
 }

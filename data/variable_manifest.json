@@ -37,7 +37,7 @@
       }
     },
     "source_documents": [
-      "Véjares, Maximiliano. Forthcoming. Compiled state-capacity dataset, Chile, 1935. Net Zero Industrial Policy Lab, Johns Hopkins University."
+      "Véjares, Maximiliano. 2026. Commune state-capacity dataset, Chile, 1935. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'."
     ],
     "topic_category": "agriculture",
     "semantic_zero": true,
@@ -9810,7 +9810,7 @@
     "source_type": "memoria",
     "format_hint": "count",
     "display_unit": "persons",
-    "curated_subtitle": "Population (Memoria del Interior), by department, 1869–1899",
+    "curated_subtitle": "Population (Memoria del Interior), by department, 1865–1920",
     "scale_availability": {
       "national": false,
       "province": false,
@@ -9819,27 +9819,32 @@
     },
     "scales": {
       "department": {
-        "cadence": "irregular",
+        "cadence": "census",
         "valid_years": [
+          1865,
           1869,
+          1875,
           1885,
           1891,
-          1899
+          1895,
+          1899,
+          1907,
+          1920
         ],
         "year_range": [
-          1869,
-          1899
+          1865,
+          1920
         ],
-        "n_observations": 247,
+        "n_observations": 598,
         "magnitude": {
-          "min": 2085.0,
-          "max": 312467.0,
-          "median": 31315.0,
-          "orders_of_magnitude": 2.18,
-          "hint": "linear"
+          "min": 14.0,
+          "max": 403775.0,
+          "median": 27722.0,
+          "orders_of_magnitude": 4.46,
+          "hint": "log"
         },
-        "rendering_mode": "dots",
-        "magnitude_hint": "auto"
+        "rendering_mode": "dots_with_line",
+        "magnitude_hint": "log"
       }
     },
     "source_documents": [
@@ -9853,7 +9858,7 @@
     "per_capita_default": "default_raw",
     "accent": "#0E1A2B",
     "definition": "Population (Memoria del Interior), measured in persons. Coverage: 247 observations at department level across 4 years (1869 to 1899). Source: Aldana, Abelardo. 1914. Resumen de la Hacienda Pública de Chile, 1833–1914, p. 60. Santiago: Imprenta Universitaria. and 1 other source(s). This description is generated from the indicator's catalog record.",
-    "coverage_statement": "4 year(s) 1869-1899, 247 department-level observations",
+    "coverage_statement": "9 year(s) 1865-1920, 598 department-level observations",
     "commit_status_by_scale": {
       "department": "committed"
     },
@@ -10820,6 +10825,7 @@
         "cadence": "census",
         "valid_years": [
           1865,
+          1870,
           1875,
           1885,
           1895,
@@ -10835,11 +10841,11 @@
           1865,
           1970
         ],
-        "n_observations": 192,
+        "n_observations": 234,
         "magnitude": {
           "min": 1235.0,
           "max": 283039.0,
-          "median": 80282.0,
+          "median": 78779.0,
           "orders_of_magnitude": 2.36,
           "hint": "linear"
         },
@@ -10857,7 +10863,7 @@
     "per_capita_default": "default_raw",
     "accent": "#0E1A2B",
     "definition": "Rural population (Mamalakis 1980), measured in persons. Coverage: 13 observations at national level across 13 years (1865 to 1980); 230 observations at province level across 11 years (1865 to 1970). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. This description is generated from the indicator's catalog record.",
-    "coverage_statement": "11 year(s) 1865-1980, 11 national observations; 11 year(s) 1865-1970, 192 province-level observations",
+    "coverage_statement": "11 year(s) 1865-1980, 11 national observations; 12 year(s) 1865-1970, 234 province-level observations",
     "commit_status_by_scale": {
       "national": "committed",
       "province": "committed"
@@ -10929,7 +10935,7 @@
     "source_type": "sinopsis",
     "format_hint": "count",
     "display_unit": "persons",
-    "curated_subtitle": "Rural population (Sinopsis), by province, 1895–1920",
+    "curated_subtitle": "Rural population (Sinopsis), by province, 1870–1920",
     "scale_availability": {
       "national": false,
       "province": true,
@@ -10940,20 +10946,21 @@
       "province": {
         "cadence": "census",
         "valid_years": [
+          1870,
           1895,
           1907,
           1920
         ],
         "year_range": [
-          1895,
+          1870,
           1920
         ],
-        "n_observations": 40,
+        "n_observations": 73,
         "magnitude": {
           "min": 643.0,
-          "max": 153683.0,
-          "median": 79468.0,
-          "orders_of_magnitude": 2.38,
+          "max": 182467.0,
+          "median": 76193.0,
+          "orders_of_magnitude": 2.45,
           "hint": "linear"
         },
         "rendering_mode": "dots_with_line",
@@ -10970,7 +10977,7 @@
     "per_capita_default": "default_raw",
     "accent": "#0E1A2B",
     "definition": "Rural population (Sinopsis), measured in persons. Coverage: 72 observations at province level across 3 years (1895 to 1920). Source: Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927. Santiago. This description is generated from the indicator's catalog record.",
-    "coverage_statement": "3 year(s) 1895-1920, 40 province-level observations",
+    "coverage_statement": "4 year(s) 1870-1920, 73 province-level observations",
     "commit_status_by_scale": {
       "province": "committed"
     },
@@ -10978,7 +10985,9 @@
       "province": "sparse"
     },
     "commit_status": "committed",
-    "published": "sparse"
+    "published": "sparse",
+    "presentation_status": "alternate_variant",
+    "variant_of": "rural_population"
   },
   {
     "id": "ruralpop_pct",
@@ -11018,7 +11027,7 @@
       }
     },
     "source_documents": [
-      "Véjares, Maximiliano. Forthcoming. Compiled state-capacity dataset, Chile, 1935. Net Zero Industrial Policy Lab, Johns Hopkins University.",
+      "Véjares, Maximiliano. 2026. Commune state-capacity dataset, Chile, 1935. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'.",
       "Oficina Central de Estadística. 1925. X Censo de la Población de la República de Chile, 15 de diciembre de 1920, urbano-rural department tables. Santiago."
     ],
     "topic_category": "demography",
@@ -11647,6 +11656,8 @@
     },
     "commit_status": "committed",
     "published": "partial",
+    "presentation_status": "alternate_variant",
+    "variant_of": "total_population",
     "breaks": [
       {
         "id": "boundary_regionalization_1928",
@@ -12780,6 +12791,7 @@
         "cadence": "census",
         "valid_years": [
           1865,
+          1870,
           1875,
           1885,
           1895,
@@ -12795,11 +12807,11 @@
           1865,
           1970
         ],
-        "n_observations": 192,
+        "n_observations": 236,
         "magnitude": {
           "min": 850.0,
           "max": 3017015.0,
-          "median": 49871.0,
+          "median": 42363.0,
           "orders_of_magnitude": 3.55,
           "hint": "log"
         },
@@ -12817,7 +12829,7 @@
     "per_capita_default": "default_raw",
     "accent": "#0E1A2B",
     "definition": "Urban population (Mamalakis 1980), measured in persons. Coverage: 13 observations at national level across 13 years (1865 to 1980); 229 observations at province level across 11 years (1865 to 1970). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. This description is generated from the indicator's catalog record.",
-    "coverage_statement": "11 year(s) 1865-1980, 11 national observations; 11 year(s) 1865-1970, 192 province-level observations",
+    "coverage_statement": "11 year(s) 1865-1980, 11 national observations; 12 year(s) 1865-1970, 236 province-level observations",
     "commit_status_by_scale": {
       "national": "committed",
       "province": "committed"
@@ -12889,7 +12901,7 @@
     "source_type": "sinopsis",
     "format_hint": "count",
     "display_unit": "persons",
-    "curated_subtitle": "Urban population (Sinopsis), by province, 1895–1920",
+    "curated_subtitle": "Urban population (Sinopsis), by province, 1870–1920",
     "scale_availability": {
       "national": false,
       "province": true,
@@ -12900,20 +12912,21 @@
       "province": {
         "cadence": "census",
         "valid_years": [
+          1870,
           1895,
           1907,
           1920
         ],
         "year_range": [
-          1895,
+          1870,
           1920
         ],
-        "n_observations": 38,
+        "n_observations": 73,
         "magnitude": {
           "min": 4527.0,
-          "max": 265754.0,
-          "median": 34356.0,
-          "orders_of_magnitude": 1.77,
+          "max": 507074.0,
+          "median": 31609.0,
+          "orders_of_magnitude": 2.05,
           "hint": "linear"
         },
         "rendering_mode": "dots_with_line",
@@ -12930,7 +12943,7 @@
     "per_capita_default": "default_raw",
     "accent": "#0E1A2B",
     "definition": "Urban population (Sinopsis), measured in persons. Coverage: 72 observations at province level across 3 years (1895 to 1920). Source: Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927. Santiago. This description is generated from the indicator's catalog record.",
-    "coverage_statement": "3 year(s) 1895-1920, 38 province-level observations",
+    "coverage_statement": "4 year(s) 1870-1920, 73 province-level observations",
     "commit_status_by_scale": {
       "province": "committed"
     },
@@ -12938,7 +12951,9 @@
       "province": "sparse"
     },
     "commit_status": "committed",
-    "published": "sparse"
+    "published": "sparse",
+    "presentation_status": "alternate_variant",
+    "variant_of": "urban_population"
   },
   {
     "id": "municipalidad_poblacion_urbana",
@@ -22018,7 +22033,7 @@
       }
     },
     "source_documents": [
-      "Véjares, Maximiliano. Forthcoming. Compiled state-capacity dataset, Chile, 1935. Net Zero Industrial Policy Lab, Johns Hopkins University."
+      "Véjares, Maximiliano. 2026. Commune state-capacity dataset, Chile, 1935. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'."
     ],
     "topic_category": "politics",
     "semantic_zero": true,
@@ -22505,7 +22520,7 @@
       }
     },
     "source_documents": [
-      "Véjares, Maximiliano. Forthcoming. Compiled state-capacity dataset, Chile, 1935. Net Zero Industrial Policy Lab, Johns Hopkins University."
+      "Véjares, Maximiliano. 2026. Commune state-capacity dataset, Chile, 1935. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'."
     ],
     "topic_category": "politics",
     "semantic_zero": true,
@@ -42338,7 +42353,7 @@
     },
     "source_documents": [
       "Véjares, Maximiliano. Forthcoming. Department-level historical dataset, Chile, 19th century. Compiled from primary archival sources. Net Zero Industrial Policy Lab, Johns Hopkins University.",
-      "Véjares, Maximiliano. Forthcoming. Compiled public-employment series, Chile. Net Zero Industrial Policy Lab, Johns Hopkins University.",
+      "Véjares, Maximiliano. 2026. Public-employment series, Chile, census years 1865 to 1920. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'. Compiled from the census occupational tables, 1865 to 1920.",
       "Oficina Central de Estadística. 1925. X Censo de la Población de la República de Chile, 15 de diciembre de 1920, public employees by theme. Santiago."
     ],
     "topic_category": "labor",
@@ -42498,7 +42513,7 @@
       }
     },
     "source_documents": [
-      "Véjares, Maximiliano. Forthcoming. Compiled public-employment series, Chile. Net Zero Industrial Policy Lab, Johns Hopkins University.",
+      "Véjares, Maximiliano. 2026. Public-employment series, Chile, census years 1865 to 1920. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'. Compiled from the census occupational tables, 1865 to 1920.",
       "Véjares, Maximiliano. Forthcoming. Department-level historical dataset, Chile, 19th century. Compiled from primary archival sources. Net Zero Industrial Policy Lab, Johns Hopkins University."
     ],
     "topic_category": "labor",
@@ -49132,11 +49147,11 @@
           1843,
           1970
         ],
-        "n_observations": 315,
+        "n_observations": 341,
         "magnitude": {
           "min": 153.0,
           "max": 3230790.0,
-          "median": 122266.0,
+          "median": 119791.0,
           "orders_of_magnitude": 4.32,
           "hint": "log"
         },
@@ -49144,28 +49159,47 @@
         "magnitude_hint": "log"
       },
       "department": {
-        "cadence": "census",
+        "cadence": "irregular",
         "valid_years": [
           1843,
           1854,
           1862,
+          1863,
           1865,
-          1878
+          1869,
+          1872,
+          1875,
+          1876,
+          1877,
+          1878,
+          1879,
+          1880,
+          1881,
+          1884,
+          1885,
+          1895,
+          1907,
+          1917,
+          1920,
+          1930,
+          1935,
+          1940,
+          1952
         ],
         "year_range": [
           1843,
-          1878
+          1952
         ],
-        "n_observations": 112,
+        "n_observations": 1024,
         "magnitude": {
-          "min": 3826.0,
-          "max": 146282.0,
-          "median": 21008.0,
-          "orders_of_magnitude": 1.58,
-          "hint": "linear"
+          "min": 1144.0,
+          "max": 1171337.0,
+          "median": 30718.0,
+          "orders_of_magnitude": 3.01,
+          "hint": "log"
         },
-        "rendering_mode": "dots_with_line",
-        "magnitude_hint": "auto"
+        "rendering_mode": "dots",
+        "magnitude_hint": "log"
       },
       "commune": {
         "cadence": "irregular",
@@ -49182,7 +49216,7 @@
         "magnitude": {
           "min": 131.0,
           "max": 542432.0,
-          "median": 13757.0,
+          "median": 13745.0,
           "orders_of_magnitude": 3.62,
           "hint": "log"
         },
@@ -49204,7 +49238,7 @@
     "per_capita_default": "user_choice",
     "accent": "#0E1A2B",
     "definition": "Total population of the unit (national, province, or department), the canonical population indicator at each scale. The national series is a continuous annual line of intercensal estimates; census enumerations are published alongside it as the separate indicator Total population (census enumerations), because an enumerated count and a mid-year estimate measure population on different definitions and can differ by several percent in the same year. The subnational series stitch together census enumerations (1865, 1875, 1885, 1895, 1907, 1920, 1930, 1940, 1952, 1960, 1970, 1982, 1992), Mamalakis (1980) intercensal estimates, and the Véjares department-level extraction. Earlier duplicate population series have been consolidated into this indicator. The annual national line is extracted as printed from Mamalakis (1980) Volume 2, Table 1.1 (page 4): June-30 estimates by the INE Section of Analysis and Measurement of Population, computed by geometric intercensal interpolation between census anchors, published in thousands and scaled to persons. Census-year values in that table follow the INE revised basis (its note 3 excludes territories not under effective Chilean sovereignty from the 1885, 1895, 1907, and 1920 censuses), so they can differ from the raw enumerations by up to several percent; values from 1976 onward are the INE projection series printed with the table. Every rendered value is a row in the curated download under source Mamalakis Vol 2, Table 1.1 (DEC/INE/ODEPLAN).",
-    "coverage_statement": "113 year(s) 1835-1992, 113 national observations; 16 year(s) 1843-1970, 315 province-level observations; 5 year(s) 1843-1878, 112 department-level observations; 3 year(s) 1935-1992, 798 observations",
+    "coverage_statement": "113 year(s) 1835-1992, 113 national observations; 16 year(s) 1843-1970, 341 province-level observations; 24 year(s) 1843-1952, 1024 department-level observations; 3 year(s) 1935-1992, 798 observations",
     "commit_status_by_scale": {
       "national": "committed",
       "province": "committed",
@@ -49425,6 +49459,8 @@
     },
     "commit_status": "committed",
     "published": "sparse",
+    "presentation_status": "alternate_variant",
+    "variant_of": "total_population",
     "breaks": [
       {
         "id": "boundary_regionalization_1928",
@@ -56492,7 +56528,7 @@
       }
     },
     "source_documents": [
-      "Véjares, Maximiliano. Forthcoming. Compiled state-capacity dataset, Chile, 1935. Net Zero Industrial Policy Lab, Johns Hopkins University."
+      "Véjares, Maximiliano. 2026. Commune state-capacity dataset, Chile, 1935. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'."
     ],
     "topic_category": "fiscal",
     "semantic_zero": true,
@@ -56722,7 +56758,7 @@
       }
     },
     "source_documents": [
-      "Véjares, Maximiliano. Forthcoming. Compiled state-capacity dataset, Chile, 1935. Net Zero Industrial Policy Lab, Johns Hopkins University."
+      "Véjares, Maximiliano. 2026. Commune state-capacity dataset, Chile, 1935. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'."
     ],
     "topic_category": "fiscal",
     "semantic_zero": true,
@@ -56846,7 +56882,7 @@
       }
     },
     "source_documents": [
-      "Véjares, Maximiliano. Forthcoming. Compiled state-capacity dataset, Chile, 1935. Net Zero Industrial Policy Lab, Johns Hopkins University."
+      "Véjares, Maximiliano. 2026. Commune state-capacity dataset, Chile, 1935. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'."
     ],
     "topic_category": "fiscal",
     "semantic_zero": true,
@@ -63774,7 +63810,7 @@
       }
     },
     "source_documents": [
-      "Véjares, Maximiliano. Forthcoming. Compiled state-capacity dataset, Chile, 1935. Net Zero Industrial Policy Lab, Johns Hopkins University."
+      "Véjares, Maximiliano. 2026. Commune state-capacity dataset, Chile, 1935. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'."
     ],
     "topic_category": "labor",
     "semantic_zero": false,
@@ -63831,7 +63867,7 @@
       }
     },
     "source_documents": [
-      "Véjares, Maximiliano. Forthcoming. Compiled state-capacity dataset, Chile, 1935. Net Zero Industrial Policy Lab, Johns Hopkins University."
+      "Véjares, Maximiliano. 2026. Commune state-capacity dataset, Chile, 1935. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'."
     ],
     "topic_category": "economy",
     "semantic_zero": true,
@@ -72033,7 +72069,7 @@
     "source_documents": [
       "Véjares, Maximiliano. Forthcoming. Department-level historical dataset, Chile, 19th century. Compiled from primary archival sources. Net Zero Industrial Policy Lab, Johns Hopkins University.",
       "Instituto Nacional de Estadísticas. 1993. Censo de Población y Vivienda 1992: Resultados Generales. Santiago: INE.",
-      "Véjares, Maximiliano. Forthcoming. Compiled state-capacity dataset, Chile, 1935. Net Zero Industrial Policy Lab, Johns Hopkins University.",
+      "Véjares, Maximiliano. 2026. Commune state-capacity dataset, Chile, 1935. Historical Atlas of Chile compiled series; construction documented in the atlas methodology, section 'Compiled series: construction notes'.",
       "Oficina Central de Estadística. ca. 1881. Anuario Estadístico de la República de Chile, entrega correspondiente a 1879–1880. Santiago: Imprenta Nacional."
     ],
     "topic_category": "demography",

@@ -1489,6 +1489,20 @@
    "cells": 14,
    "source_document": "Mamalakis Vol 2, Table 1.1 (DEC/INE/ODEPLAN)",
    "reason": "2026-08-19, Task 1 (annual line restoration). Master holds two printed values for national total_population at the census years 1843-1980: the raw census enumerations (Mamalakis Vol 2 Table 17.1 and the Censo 1865 Cuadro Sinoptico) and the INE revised annual series (Mamalakis Vol 2 Table 1.1, extracted 2026-08-19 with page-level provenance, 121 rows). The two differ by up to 7.5% (1952: 6,378,000 vs 5,932,995) because Table 1.1 note 3 excludes territories not under effective Chilean sovereignty from the 1885-1920 censuses and the DEC/INE revised later counts. The rendered total_population national series takes the Table 1.1 value at every year (series-majority pick in regenerate_ui_data.py), keeping the annual line on one definition; the raw enumerations render as the separate population_census_count indicator and both row sets ship in the curated download. Splicing enumerations into the estimate line at census years was rejected: it reproduced the 4-7% definitional dips the 2026-08-18 B5 fix removed. NATIONAL_PRIOR_WINS emptied accordingly (the annual line now lives in master, not the payload)."
+  },
+  "population_family_merge|task3a": {
+   "decision": "merged",
+   "code": "m098_rule2_arbitration",
+   "reason": "2026-08-19 Task 3a catalog consolidation. Four duplicate population ids retired as presentation_status=alternate_variant (apply_curation_01_duplicates.py): pop_urbana -> urban_population, pop_rural -> rural_population, poblacion_total -> total_population, population_total -> total_population. They draw on the same master variables as their survivors but OVERLAP on (level, unit, year) keys, so they fail the concept-alias register's disjointness bar and cannot be aliased. Master variables moved into the survivors' indicator_master_sources.json entries; the retired ids' own master rows keep shipping through those entries (run_m028 retired-name rule). Where two absorbed sources print DIFFERENT values for one key, Step B's register projection picks by the M098 rule 2 hierarchy Census > Anuario > Memoria > Sinopsis, deterministically, never averaging; arbitrated key counts are printed per run (regenerate_ui_data.py projection log).",
+   "settled": "Task 3a, 2026-08-19"
+  },
+  "poblacion_total_retrospectives|province": {
+   "decision": "excluded",
+   "code": "scope_d_boundary_vintage",
+   "cells": 104,
+   "source_document": "Censo 1920/1940/1952/1960 retrospective tables",
+   "reason": "2026-08-19 Task 3a. The retired poblacion_total id's register entry folded four census-retrospective year-stamped ids (poblacion_total_1920, _1940, _1952, _1960; 104 curated rows) into an as-printed series. Scope D (CLAUDE.md, proven against Censo 1875 p.47) forbids that: retrospective cuadros restate earlier censuses on the LATER census's boundaries and are a distinct measurement. They are NOT absorbed into total_population; their rows stay in master and leave the curated download until published under the population_total_<vintage>_boundary convention (naming precedent: population_total_1930_boundary). This is the exclusion-on-the-record that G3 demands.",
+   "settled": "Task 3a, 2026-08-19"
   }
  }
 }
