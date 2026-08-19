@@ -83,6 +83,42 @@ function canonicalDocName(d) {
 
 function buildSourceRegistry(filterVar) {
   const groupMap = Object.fromEntries(SOURCE_GROUPS.map(g => [g.id, { ...g, docs: {}, pendingVars: [] }]));
+  // Unfiltered view: render the SAME registry the browse tab and the stat
+  // strip use (source_index.json), so all three surfaces state one document
+  // count. It includes documents that back download rows without being named
+  // in any indicator-level attribution; those list their row coverage
+  // instead of a variable list. The manifest recomputation below serves only
+  // the filtered-by-variable view.
+  const idx = (typeof window !== 'undefined' && window.__INLINE_source_index) || null;
+  if (!filterVar && idx && Array.isArray(idx.documents)) {
+    const nameToId = Object.fromEntries(SOURCE_GROUPS.map(g => [g.name, g.id]));
+    for (const d of idx.documents) {
+      const gid = nameToId[d.group] || classifyDocument(d.document);
+      const group = groupMap[gid];
+      const vars = (d.variable_ids || [])
+        .map(id => M.byId(id))
+        .filter(Boolean)
+        .map(v => ({ id: v.id, label: v.display_label || v.label }));
+      group.docs[d.document] = { name: d.document, variables: vars,
+                                 nRows: d.n_rows || 0 };
+    }
+    for (const v of M.manifest()) {
+      if (v.published === false) continue;
+      if (!M.sourceCitations(v).length) {
+        groupMap.pending_attribution.pendingVars.push({
+          id: v.id, label: v.display_label || v.label,
+          status: v.source_attribution_status || null,
+        });
+      }
+    }
+    return SOURCE_GROUPS.map(spec => {
+      const g = groupMap[spec.id];
+      const docs = Object.values(g.docs).sort((a, b) => a.name.localeCompare(b.name));
+      const docCount = docs.length;
+      const varCount = docs.reduce((n, d) => n + d.variables.length, 0) + g.pendingVars.length;
+      return { ...spec, docs, pendingVars: g.pendingVars, docCount, varCount };
+    });
+  }
   for (const v of M.manifest()) {
     if (v.published === false) continue;
     if (filterVar && v.id !== filterVar) continue;
@@ -123,12 +159,15 @@ function renderDocItem(d) {
       <details class="src-doc-details">
         <summary>
           <span class="sd-name">${escapeS(d.name)}</span>
-          <span class="sd-count caption num">${d.variables.length} variable${d.variables.length === 1 ? '' : 's'}</span>
+          <span class="sd-count caption num">${d.variables.length
+            ? `${d.variables.length} variable${d.variables.length === 1 ? '' : 's'}`
+            : `${(d.nRows || 0).toLocaleString('en-US')} download rows`}</span>
         </summary>
         <ul class="sd-vars">
           ${d.variables.slice().sort((a, b) => a.label.localeCompare(b.label)).map(v => `
             <li><a href="#variable=${encodeURIComponent(v.id)}">${escapeS(v.label)}</a></li>
           `).join('')}
+          ${d.variables.length ? '' : '<li class="caption">Backs download rows; not named in an indicator-level attribution.</li>'}
         </ul>
       </details>
     </li>`;
@@ -335,6 +374,10 @@ export function createSections(host) {
           </p>
           <a href="${dlHref('curated')}" download class="dl-link" data-kind="curated"
              style="color:var(--accent); font-weight:600;">Download curated CSV<span class="dl-size"></span></a>
+          <p style="font-size:12px; margin-top:8px;">
+            <a href="data/source_crosswalk_v2.csv" download style="color:var(--accent);">Source key crosswalk (CSV)</a>
+            <span style="color:var(--ink-muted);">resolves each row's source_document key to its full citation.</span>
+          </p>
         </div>
         <div style="background:var(--surface); border:1px solid var(--rule); border-radius:var(--radius); padding:20px;">
           <p style="font-weight:600; margin-bottom:8px;">Research extract (CSV)</p>
@@ -362,7 +405,7 @@ export function createSections(host) {
             Source corpus, extraction pipeline, tiered audit protocol,
             quality-flag definitions, geographic schema, known limitations.
           </p>
-          <a href="data/methodology_v1.docx" download
+          <a href="data/methodology_v2.docx" download
              style="color:var(--accent); font-weight:600;">Download Methodology</a>
         </div>
       </div>

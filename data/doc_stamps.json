@@ -3,7 +3,14 @@
     "file": "codebook_v2.pdf",
     "version": "2.0",
     "date": "2026-08-18",
-    "inputs_md5": "cfdc34e49cb716e89bc432d45f58353b",
+    "inputs_md5": "d751625588ee9afddf123f9896fbe3c4",
     "n_indicators": 1034
+  },
+  "methodology": {
+    "file": "methodology_v2.docx",
+    "version": "2.0",
+    "date": "2026-08-18",
+    "n_observations": 119952,
+    "n_source_documents": 212
   }
 }

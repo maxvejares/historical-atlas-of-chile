@@ -126,8 +126,22 @@ def gate_s2() -> None:
     ok = r.returncode == 0
     detail = (r.stdout or r.stderr).strip().splitlines()[-1] if (r.stdout or r.stderr) else ""
     stamps = json.loads(STAMPS.read_text()) if STAMPS.exists() else {}
-    if "methodology" not in stamps:
-        detail += " · WARN methodology docx not yet stamped (enforce after its refresh lands)"
+    meth = stamps.get("methodology")
+    stats = json.loads(STATS.read_text())
+    if not meth:
+        ok = False
+        detail += " · methodology docx not stamped"
+    else:
+        # The methodology is hand-written prose; freshness is enforced at the
+        # numbers level: the headline counts it states must equal the live
+        # catalog, so a catalog change forces a documented refresh.
+        for k in ("n_observations", "n_source_documents"):
+            if meth.get(k) != stats.get(k):
+                ok = False
+                detail += (f" · methodology states {k}={meth.get(k)} "
+                           f"vs live {stats.get(k)}")
+        if ok and meth:
+            detail += f" · methodology v{meth.get('version')} stamped {meth.get('date')}"
     report("S2 doc freshness", ok, detail)
 
 
@@ -188,6 +202,23 @@ def gate_s3(fast: bool) -> None:
             if n_bad:
                 problems.append(f"{n_bad:,} curated rows are not byte-identical "
                                 f"to a master row (source-fidelity doctrine)")
+
+    xwalk = GP / "data" / "source_crosswalk_v2.csv"
+    if not xwalk.exists():
+        problems.append("source_crosswalk_v2.csv missing")
+    elif "curated" in paths and paths["curated"].exists():
+        xkeys = {r["source_document_key"] for r in csv.DictReader(xwalk.open())}
+        cur_keys = set(cur["source_document"].unique()) - {""}
+        not_in_xwalk = cur_keys - xkeys
+        if not_in_xwalk:
+            problems.append(f"{len(not_in_xwalk)} curated source keys missing from "
+                            f"the crosswalk (e.g. {sorted(not_in_xwalk)[:2]})")
+        unmapped = [r for r in csv.DictReader(xwalk.open())
+                    if r["source_document_key"] == r["canonical_citation"]
+                    and r["in_published_registry"] == "no"]
+        if unmapped:
+            problems.append(f"{len(unmapped)} crosswalk keys resolve to no canonical "
+                            f"citation (e.g. {[r['source_document_key'][:40] for r in unmapped[:2]]})")
 
     report("S3 downloads", not problems,
            "; ".join(problems) if problems else
@@ -250,32 +281,22 @@ def gate_s5() -> None:
 
 
 def gate_s6() -> None:
-    """The index must be a faithful function of its inputs: same document set
-    as recomputing canonical citations over the visible manifest."""
-    raw_to_canon = {r["source_string_raw"]: r["canonical_citation"]
-                    for r in csv.DictReader(CANON_CSV.open())
-                    if r.get("canonical_citation")}
-    canon_set = set(raw_to_canon.values())
-    expected = set()
-    for v in visible_manifest():
-        docs = v.get("source_documents") or (
-            [v["source_document"]] if v.get("source_document") else [])
-        for d in docs:
-            expected.add(d if d in canon_set else raw_to_canon.get(d, d))
+    """The index must be a faithful function of its inputs. Delegates the
+    recomputation to build_source_index.py --check (single implementation of
+    the derivation, so gate and builder cannot drift), then confirms the
+    stat strip reads the same document count."""
+    r = subprocess.run([sys.executable,
+                        str(ROOT / "scripts" / "build_source_index.py"),
+                        "--check"], capture_output=True, text=True)
+    ok = r.returncode == 0
+    detail = (r.stdout or r.stderr).strip().splitlines()[-1] if (r.stdout or r.stderr) else ""
     idx = json.loads(SOURCE_INDEX.read_text())
-    actual = {d["document"] for d in idx.get("documents", [])}
-    missing = expected - actual
-    extra = actual - expected
-    ok = not missing and not extra
     stats = json.loads(STATS.read_text())
     if stats.get("n_source_documents") != idx.get("n_documents"):
         ok = False
-        extra.add(f"stats.n_source_documents={stats.get('n_source_documents')} "
-                  f"!= index {idx.get('n_documents')}")
-    report("S6 index sync", ok,
-           f"{len(missing)} missing / {len(extra)} extra vs recomputation"
-           + (f" (e.g. {list(missing or extra)[:2]})" if (missing or extra) else
-              f"; {idx.get('n_documents')} documents, stats agree"))
+        detail += (f" · stats.n_source_documents={stats.get('n_source_documents')}"
+                   f" != index {idx.get('n_documents')}")
+    report("S6 index sync", ok, detail)
 
 
 def main() -> int:

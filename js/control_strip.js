@@ -380,8 +380,15 @@ export function createControlStrip(host, { onSelect }) {
     const vy = blk.valid_years || [];
     const varChanged = state._lastSliderVar !== state.variable;
     let preferYear;
-    if (state._explicitYear && state.year != null && vy.includes(state.year)) {
-      preferYear = state.year;
+    if (state._explicitYear && state.year != null && vy.length) {
+      // A deep-link year that is not itself a sampled year snaps to the
+      // NEAREST sampled year instead of silently resetting to the series
+      // start (second re-audit, 2026-08-18: #...&year=1858 on an annual
+      // customs series rewrote to 1840 although 1857 existed).
+      preferYear = vy.includes(state.year)
+        ? state.year
+        : vy.reduce((best, y) =>
+            Math.abs(y - state.year) < Math.abs(best - state.year) ? y : best, vy[0]);
     } else if (varChanged || state.year == null) {
       preferYear = vy[0];
     } else {

@@ -645,11 +645,17 @@ export function createMapView(host) {
     const yd = block.data[String(lastState.year)] || {};
     const valueHead = meta.display_label || meta.label || meta.id;
     const measUnit = meta.display_unit || '';
-    const rows = [['geographic_unit', 'year', valueHead, 'unit']];
+    const rows = [['geographic_unit', 'display_name', 'year', valueHead, 'unit']];
     for (const [u, vars] of Object.entries(yd)) {
-      if (vars[meta.id] != null) rows.push([u, lastState.year, vars[meta.id], measUnit]);
+      if (vars[meta.id] != null) {
+        rows.push([u, properName(u, u, lastState.scale) || '', lastState.year, vars[meta.id], measUnit]);
+      }
     }
-    const csv = rows.map(r => r.map(c => `"${String(c).replace(/"/g, '""')}"`).join(',')).join('\n');
+    const comments = [
+      `# ${valueHead} · ${lastState.scale} · ${lastState.year} · exported from the Historical Atlas of Chile`,
+      ...M.sourceCitations(meta).map(c => `# Source: ${c}`),
+    ].join('\n');
+    const csv = comments + '\n' + rows.map(r => r.map(c => `"${String(c).replace(/"/g, '""')}"`).join(',')).join('\n');
     const blob = new Blob([csv], { type: 'text/csv' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -1226,21 +1232,27 @@ export function createMapView(host) {
     // coverage counts — they carry no administrative data.
     const nameField = isPointScale(scale) ? 'name'
       : scale === 'department' ? 'department' : scale === 'commune' ? 'comuna' : 'provincia';
-    let matched = 0;
     const matchedValues = [];
-    const matchedEntries = []; // {name, value} for every matched feature
+    const matchedEntries = []; // {name, value} for every matched UNIT
+    const seenCodes = new Set();
+    const allCodes = new Set();
     for (const f of geoJSON.features) {
       if (isTerritory(f)) continue; // skip territory zones for coverage
       const displayName = properName(f.properties[nameField] || f.properties.name, featureCode(f, scale), scale);
       const code = featureCode(f, scale);
+      allCodes.add(code);
       const v = values[code];
-      if (v != null && !Number.isNaN(v)) {
-        matched++;
+      // Count distinct units, not features: the port gazetteer carries a
+      // duplicate ucode, which made the caption claim "2 of 22" for a year
+      // with one populated port (second re-audit, 2026-08-18).
+      if (v != null && !Number.isNaN(v) && !seenCodes.has(code)) {
+        seenCodes.add(code);
         matchedValues.push(v);
         matchedEntries.push({ name: displayName, value: v });
       }
     }
-    const total = geoJSON.features.filter(f => !isTerritory(f)).length;
+    const matched = seenCodes.size;
+    const total = allCodes.size;
     const pct = total > 0 ? Math.round((matched / total) * 100) : 0;
     matchedEntries.sort((a, b) => b.value - a.value);
     const sortedVals = [...matchedValues].sort((a, b) => a - b);
@@ -1306,7 +1318,9 @@ export function createMapView(host) {
 
     // Legend
     legend.style.display = 'block';
-    legend.querySelector('.ml-overline').textContent = scale.charAt(0).toUpperCase() + scale.slice(1) + 's, ' + year;
+    const SCALE_PLURAL = { national: 'National', department: 'Departments',
+      province: 'Provinces', commune: 'Communes', port: 'Ports', city: 'Cities' };
+    legend.querySelector('.ml-overline').textContent = (SCALE_PLURAL[scale] || scale) + ', ' + year;
     legend.querySelector('.ml-title').textContent = (meta.display_label || meta.label) + (perCapita ? ' (per 100,000)' : '');
     legend.querySelector('.ml-units').textContent = perCapita ? 'rate per 100,000 population' : mapUnitCaption(meta);
     if (matchedValues.length && min === max) {
