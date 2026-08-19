@@ -1950,11 +1950,11 @@
           1965,
           1974
         ],
-        "n_observations": 56,
+        "n_observations": 50,
         "magnitude": {
           "min": 13.0,
           "max": 140923.0,
-          "median": 4022.0,
+          "median": 5594.0,
           "orders_of_magnitude": 4.04,
           "hint": "log"
         },
@@ -1972,7 +1972,7 @@
     "per_capita_default": "default_raw",
     "accent": "#3b6d11",
     "definition": "Maize production in metric tons by province, 1972 to 1974, from ODEPA's Estadísticas Agropecuarias.",
-    "coverage_statement": "4 year(s) 1965-1974, 56 province-level observations",
+    "coverage_statement": "4 year(s) 1965-1974, 50 province-level observations",
     "commit_status_by_scale": {
       "province": "committed"
     },
@@ -3315,11 +3315,11 @@
           1965,
           1974
         ],
-        "n_observations": 69,
+        "n_observations": 63,
         "magnitude": {
           "min": 167.0,
           "max": 148967.0,
-          "median": 20671.0,
+          "median": 25773.0,
           "orders_of_magnitude": 2.95,
           "hint": "linear"
         },
@@ -3337,7 +3337,7 @@
     "per_capita_default": "default_raw",
     "accent": "#3b6d11",
     "definition": "Potato production in metric tons by province, 1972 to 1974, from ODEPA's Estadísticas Agropecuarias.",
-    "coverage_statement": "4 year(s) 1965-1974, 69 province-level observations",
+    "coverage_statement": "4 year(s) 1965-1974, 63 province-level observations",
     "commit_status_by_scale": {
       "province": "committed"
     },
@@ -6209,11 +6209,11 @@
           1965,
           1974
         ],
-        "n_observations": 69,
+        "n_observations": 60,
         "magnitude": {
           "min": 90.0,
           "max": 110650.0,
-          "median": 11430.0,
+          "median": 15900.0,
           "orders_of_magnitude": 3.09,
           "hint": "log"
         },
@@ -6231,7 +6231,7 @@
     "per_capita_default": "default_raw",
     "accent": "#3b6d11",
     "definition": "Area sown with wheat in hectares by province, 1972 to 1974, from ODEPA's Estadísticas Agropecuarias.",
-    "coverage_statement": "4 year(s) 1965-1974, 69 province-level observations",
+    "coverage_statement": "4 year(s) 1965-1974, 60 province-level observations",
     "commit_status_by_scale": {
       "province": "committed"
     },
@@ -6302,11 +6302,11 @@
           1965,
           1974
         ],
-        "n_observations": 69,
+        "n_observations": 60,
         "magnitude": {
           "min": 60.0,
           "max": 160443.0,
-          "median": 11913.0,
+          "median": 18331.0,
           "orders_of_magnitude": 3.43,
           "hint": "log"
         },
@@ -6324,7 +6324,7 @@
     "per_capita_default": "default_raw",
     "accent": "#3b6d11",
     "definition": "Wheat production in metric tons by province, 1972 to 1974, from ODEPA's Estadísticas Agropecuarias.",
-    "coverage_statement": "4 year(s) 1965-1974, 69 province-level observations",
+    "coverage_statement": "4 year(s) 1965-1974, 60 province-level observations",
     "commit_status_by_scale": {
       "province": "committed"
     },
@@ -10792,8 +10792,6 @@
           1865,
           1875,
           1885,
-          1895,
-          1907,
           1920,
           1930,
           1940,
@@ -10807,11 +10805,11 @@
           1865,
           1980
         ],
-        "n_observations": 13,
+        "n_observations": 11,
         "magnitude": {
           "min": 1298560.0,
-          "max": 2384325.5,
-          "median": 2165143.0,
+          "max": 2384228.0,
+          "median": 2168224.0,
           "orders_of_magnitude": 0.26,
           "hint": "linear"
         },
@@ -10837,11 +10835,11 @@
           1865,
           1970
         ],
-        "n_observations": 230,
+        "n_observations": 192,
         "magnitude": {
           "min": 1235.0,
           "max": 283039.0,
-          "median": 80513.0,
+          "median": 80282.0,
           "orders_of_magnitude": 2.36,
           "hint": "linear"
         },
@@ -10859,7 +10857,7 @@
     "per_capita_default": "default_raw",
     "accent": "#0E1A2B",
     "definition": "Rural population (Mamalakis 1980), measured in persons. Coverage: 13 observations at national level across 13 years (1865 to 1980); 230 observations at province level across 11 years (1865 to 1970). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. This description is generated from the indicator's catalog record.",
-    "coverage_statement": "13 year(s) 1865-1980, 13 national observations; 11 year(s) 1865-1970, 230 province-level observations",
+    "coverage_statement": "11 year(s) 1865-1980, 11 national observations; 11 year(s) 1865-1970, 192 province-level observations",
     "commit_status_by_scale": {
       "national": "committed",
       "province": "committed"
@@ -10950,7 +10948,7 @@
           1895,
           1920
         ],
-        "n_observations": 72,
+        "n_observations": 40,
         "magnitude": {
           "min": 643.0,
           "max": 153683.0,
@@ -10972,7 +10970,7 @@
     "per_capita_default": "default_raw",
     "accent": "#0E1A2B",
     "definition": "Rural population (Sinopsis), measured in persons. Coverage: 72 observations at province level across 3 years (1895 to 1920). Source: Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927. Santiago. This description is generated from the indicator's catalog record.",
-    "coverage_statement": "3 year(s) 1895-1920, 72 province-level observations",
+    "coverage_statement": "3 year(s) 1895-1920, 40 province-level observations",
     "commit_status_by_scale": {
       "province": "committed"
     },
@@ -11478,7 +11476,7 @@
     },
     "scales": {
       "national": {
-        "cadence": "annual",
+        "cadence": "irregular",
         "valid_years": [
           1835,
           1843,
@@ -11520,7 +11518,6 @@
           1917,
           1918,
           1919,
-          1920,
           1921,
           1922,
           1923,
@@ -11560,7 +11557,6 @@
           1957,
           1958,
           1959,
-          1960,
           1961,
           1962,
           1963,
@@ -11596,7 +11592,7 @@
           1835,
           1990
         ],
-        "n_observations": 111,
+        "n_observations": 109,
         "magnitude": {
           "min": 1010000.0,
           "max": 13553000.0,
@@ -11604,7 +11600,7 @@
           "orders_of_magnitude": 1.13,
           "hint": "linear"
         },
-        "rendering_mode": "line",
+        "rendering_mode": "dots",
         "magnitude_hint": "auto"
       },
       "province": {
@@ -11640,7 +11636,7 @@
     "per_capita_default": "default_raw",
     "accent": "#0E1A2B",
     "definition": "Total population (Aldana 1914), measured in persons. Coverage: 111 observations at national level across 111 years (1835 to 1990); 15 observations at province level in 1854. Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. and 2 other source(s). This description is generated from the indicator's catalog record.",
-    "coverage_statement": "111 year(s) 1835-1990, 111 national observations; 1 year(s) 1854, 15 province-level observations",
+    "coverage_statement": "109 year(s) 1835-1990, 109 national observations; 1 year(s) 1854, 15 province-level observations",
     "commit_status_by_scale": {
       "national": "committed",
       "province": "cross_section"
@@ -12756,8 +12752,6 @@
           1865,
           1875,
           1885,
-          1895,
-          1907,
           1920,
           1930,
           1940,
@@ -12771,11 +12765,11 @@
           1865,
           1980
         ],
-        "n_observations": 13,
+        "n_observations": 11,
         "magnitude": {
           "min": 520663.0,
           "max": 9094728.0,
-          "median": 2119221.0,
+          "median": 2639311.0,
           "orders_of_magnitude": 1.24,
           "hint": "linear"
         },
@@ -12801,11 +12795,11 @@
           1865,
           1970
         ],
-        "n_observations": 229,
+        "n_observations": 192,
         "magnitude": {
           "min": 850.0,
           "max": 3017015.0,
-          "median": 45193.0,
+          "median": 49871.0,
           "orders_of_magnitude": 3.55,
           "hint": "log"
         },
@@ -12823,7 +12817,7 @@
     "per_capita_default": "default_raw",
     "accent": "#0E1A2B",
     "definition": "Urban population (Mamalakis 1980), measured in persons. Coverage: 13 observations at national level across 13 years (1865 to 1980); 229 observations at province level across 11 years (1865 to 1970). Source: Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force. Westport, CT: Greenwood Press. This description is generated from the indicator's catalog record.",
-    "coverage_statement": "13 year(s) 1865-1980, 13 national observations; 11 year(s) 1865-1970, 229 province-level observations",
+    "coverage_statement": "11 year(s) 1865-1980, 11 national observations; 11 year(s) 1865-1970, 192 province-level observations",
     "commit_status_by_scale": {
       "national": "committed",
       "province": "committed"
@@ -12914,12 +12908,12 @@
           1895,
           1920
         ],
-        "n_observations": 72,
+        "n_observations": 38,
         "magnitude": {
           "min": 4527.0,
-          "max": 546812.0,
-          "median": 32054.0,
-          "orders_of_magnitude": 2.08,
+          "max": 265754.0,
+          "median": 34356.0,
+          "orders_of_magnitude": 1.77,
           "hint": "linear"
         },
         "rendering_mode": "dots_with_line",
@@ -12936,7 +12930,7 @@
     "per_capita_default": "default_raw",
     "accent": "#0E1A2B",
     "definition": "Urban population (Sinopsis), measured in persons. Coverage: 72 observations at province level across 3 years (1895 to 1920). Source: Dirección General de Estadística. 1927. Sinopsis Estadística de Chile, 1924–1927. Santiago. This description is generated from the indicator's catalog record.",
-    "coverage_statement": "3 year(s) 1895-1920, 72 province-level observations",
+    "coverage_statement": "3 year(s) 1895-1920, 38 province-level observations",
     "commit_status_by_scale": {
       "province": "committed"
     },
@@ -13431,7 +13425,7 @@
     "source_type": "census",
     "format_hint": "count",
     "display_unit": "persons",
-    "curated_subtitle": "Total population (census enumerations), 1843–1980, persons",
+    "curated_subtitle": "Total population (census enumerations), 1843–1970, persons",
     "scale_availability": {
       "national": true,
       "province": false,
@@ -13449,23 +13443,23 @@
           1885,
           1895,
           1907,
+          1920,
           1930,
           1940,
           1952,
-          1970,
-          1975,
-          1980
+          1960,
+          1970
         ],
         "year_range": [
           1843,
-          1980
+          1970
         ],
         "n_observations": 13,
         "magnitude": {
           "min": 1083801.0,
-          "max": 11259871.0,
-          "median": 3220531.0,
-          "orders_of_magnitude": 1.02,
+          "max": 8884768.0,
+          "median": 3231022.0,
+          "orders_of_magnitude": 0.91,
           "hint": "linear"
         },
         "rendering_mode": "dots",
@@ -13473,9 +13467,7 @@
       }
     },
     "source_documents": [
-      "Oficina Central de Estadística. 1866. Censo Jeneral de la República de Chile, 19 de abril de 1865, Cuadro Sinóptico. Santiago: Imprenta Nacional.",
-      "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 17.1 (DEC/INE source). Westport, CT: Greenwood Press.",
-      "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, regional distribution tables. Westport, CT: Greenwood Press."
+      "Mamalakis, Markos. 1980. Historical Statistics of Chile, Volume 2: Demography and Labor Force, Table 1.2 (INE source). Westport, CT: Greenwood Press."
     ],
     "topic_category": "demography",
     "semantic_zero": true,
@@ -13483,8 +13475,8 @@
     "source_document": "",
     "per_capita_default": "default_raw",
     "accent": "#5b3f8e",
-    "definition": "National population as enumerated at census and benchmark dates, exactly as the sources print it (Censo Jeneral de 1865, Cuadro Sinóptico, for 1843-1865; Mamalakis 1980, Table 17.1, for later benchmark years). Published separately from the continuous Total Population estimate line because an enumerated count and a mid-year intercensal estimate measure population on different definitions and can differ by several percent in the same year.",
-    "coverage_statement": "13 year(s) 1843-1980, 13 national observations",
+    "definition": "National population as enumerated at each census, exactly as the census offices printed it: every census from 1843 to 1970, from Mamalakis (1980) Table 1.2, which reprints the INE census-count series. Published separately from the continuous Total Population estimate line because an enumerated count and a mid-year intercensal estimate measure population on different definitions and can differ by several percent in the same year. Values are as-enumerated totals and can differ from the adjusted regional-distribution benchmarks used elsewhere in the atlas.",
+    "coverage_statement": "13 year(s) 1843-1970, 13 national observations",
     "commit_status_by_scale": {
       "national": "committed"
     },
@@ -13495,7 +13487,7 @@
     "published": "complete",
     "source_attribution_status": "reconstructed_from_primary",
     "reconstructed_from": [
-      "master:total_population"
+      "master:census_population"
     ]
   },
   {
@@ -22081,11 +22073,11 @@
           1862,
           1921
         ],
-        "n_observations": 637,
+        "n_observations": 636,
         "magnitude": {
           "min": 41.0,
           "max": 42319.0,
-          "median": 1530.0,
+          "median": 1533.0,
           "orders_of_magnitude": 3.01,
           "hint": "log"
         },
@@ -22107,7 +22099,7 @@
     "per_capita_default": "default_raw",
     "accent": "#4a3970",
     "definition": "Number of enfranchised voters (calificados, the term used in the 19th-century electoral law) by department, Véjares department-level historical dataset. The base for the enfranchised_pc series and the analytical core of the Landholding paper's argument about landlord influence on the 19th-century franchise.",
-    "coverage_statement": "12 year(s) 1862-1921, 637 department-level observations",
+    "coverage_statement": "12 year(s) 1862-1921, 636 department-level observations",
     "commit_status_by_scale": {
       "department": "committed"
     },
@@ -22616,12 +22608,12 @@
           1888,
           1915
         ],
-        "n_observations": 138,
+        "n_observations": 67,
         "magnitude": {
-          "min": 186.0,
+          "min": 219.0,
           "max": 17925.0,
-          "median": 1093.0,
-          "orders_of_magnitude": 1.98,
+          "median": 1489.0,
+          "orders_of_magnitude": 1.91,
           "hint": "linear"
         },
         "rendering_mode": "dots",
@@ -22639,7 +22631,7 @@
     "per_capita_default": "default_raw",
     "accent": "#4a3970",
     "definition": "Number of voters who actually cast ballots in elections, by department, Anuario Estadístico Tomo XXVI and successor volumes. The ratio of sufragantes to register_voters is a measure of electoral participation; the gap between them captures abstention.",
-    "coverage_statement": "2 year(s) 1888-1915, 138 department-level observations",
+    "coverage_statement": "2 year(s) 1888-1915, 67 department-level observations",
     "commit_status_by_scale": {
       "department": "committed"
     },
@@ -27773,9 +27765,9 @@
         "n_observations": 65,
         "magnitude": {
           "min": 27340.0,
-          "max": 6529041.5,
+          "max": 6411669.0,
           "median": 211568.0,
-          "orders_of_magnitude": 2.38,
+          "orders_of_magnitude": 2.37,
           "hint": "linear"
         },
         "rendering_mode": "line",
@@ -30856,13 +30848,9 @@
     },
     "scales": {
       "department": {
-        "cadence": "census",
+        "cadence": "irregular",
         "valid_years": [
           1872,
-          1875,
-          1885,
-          1895,
-          1907,
           1917,
           1920
         ],
@@ -30870,15 +30858,15 @@
           1872,
           1920
         ],
-        "n_observations": 126,
+        "n_observations": 122,
         "magnitude": {
           "min": 72.0,
           "max": 13530.0,
-          "median": 2720.0,
+          "median": 2773.0,
           "orders_of_magnitude": 2.27,
           "hint": "linear"
         },
-        "rendering_mode": "dots_with_line",
+        "rendering_mode": "dots",
         "magnitude_hint": "auto"
       }
     },
@@ -30893,7 +30881,7 @@
     "per_capita_default": "default_pc",
     "accent": "#2c5060",
     "definition": "Department-level count of agricultural workers, covering the 19th-century Chilean rural laborer occupations (peón, inquilino, gañán, jornalero), from the Véjares department-level historical dataset. The 'peasant' label is editorially loaded, and the historiographical debate over what to call this class is documented in Bauer (1975) and Bengoa (2015); a future release will carry this series under the name agricultural workers.",
-    "coverage_statement": "7 year(s) 1872-1920, 126 department-level observations",
+    "coverage_statement": "3 year(s) 1872-1920, 122 department-level observations",
     "commit_status_by_scale": {
       "department": "committed"
     },
@@ -42307,6 +42295,82 @@
     "published": "sparse"
   },
   {
+    "id": "pubemp",
+    "label": "Public Employees",
+    "display_label": "Public employees",
+    "category": "Occupations",
+    "source_type": "census",
+    "format_hint": "count",
+    "display_unit": "employees",
+    "curated_subtitle": "Public employees at department/province scale, 1865–1920, persons",
+    "scale_availability": {
+      "national": false,
+      "province": false,
+      "department": true,
+      "commune": false
+    },
+    "scales": {
+      "department": {
+        "cadence": "census",
+        "valid_years": [
+          1865,
+          1875,
+          1885,
+          1895,
+          1907,
+          1920
+        ],
+        "year_range": [
+          1865,
+          1920
+        ],
+        "n_observations": 71,
+        "magnitude": {
+          "min": 4.0,
+          "max": 3599.0,
+          "median": 83.0,
+          "orders_of_magnitude": 2.95,
+          "hint": "linear"
+        },
+        "rendering_mode": "dots_with_line",
+        "magnitude_hint": "auto"
+      }
+    },
+    "source_documents": [
+      "Véjares, Maximiliano. Forthcoming. Department-level historical dataset, Chile, 19th century. Compiled from primary archival sources. Net Zero Industrial Policy Lab, Johns Hopkins University.",
+      "Véjares, Maximiliano. Forthcoming. Compiled public-employment series, Chile. Net Zero Industrial Policy Lab, Johns Hopkins University.",
+      "Oficina Central de Estadística. 1925. X Censo de la Población de la República de Chile, 15 de diciembre de 1920, public employees by theme. Santiago."
+    ],
+    "topic_category": "labor",
+    "semantic_zero": false,
+    "source_quality": "ocr",
+    "source_document": "Véjares, Department-level historical dataset (Chile, 19th c.), author's compilation",
+    "per_capita_default": "default_pc",
+    "accent": "#2c5060",
+    "definition": "Count of public employees (all branches and levels of government) at department or province scale, Véjares department-level historical dataset. The aggregate corresponding to the specific governance-presence indicators (pres_has_gobernador, pres_has_juez, pres_has_reg_civil).",
+    "coverage_statement": "6 year(s) 1865-1920, 71 department-level observations",
+    "commit_status_by_scale": {
+      "department": "committed"
+    },
+    "published_by_scale": {
+      "department": "sparse"
+    },
+    "commit_status": "committed",
+    "published": "sparse",
+    "display_id": "public_employees",
+    "aliases": [
+      "pubemp",
+      "pubemp_per_capita"
+    ],
+    "source_provenance_internal": [
+      {
+        "raw": "Empleados publicos; Censo 1920, organizado por tema; http://www.bibliotecanacionaldigital.gob.cl/visor/BND:82449",
+        "provenance": "BND:82449"
+      }
+    ],
+    "units_note": "Unit field currently blank; should read 'persons'."
+  },
+  {
     "id": "profesion_empleados_publicos_total",
     "label": "Public employees (1875 census)",
     "display_label": "Public employees (1875 census)",
@@ -42390,109 +42454,6 @@
     },
     "commit_status": "committed",
     "published": "sparse"
-  },
-  {
-    "id": "pubemp",
-    "label": "Public employees (province)",
-    "display_label": "Public employees",
-    "category": "Occupations",
-    "source_type": "census",
-    "format_hint": "count",
-    "display_unit": "employees",
-    "curated_subtitle": "Public employees at department/province scale, 1865–1920, persons",
-    "scale_availability": {
-      "national": false,
-      "province": true,
-      "department": true,
-      "commune": false
-    },
-    "scales": {
-      "province": {
-        "cadence": "census",
-        "valid_years": [
-          1865,
-          1875,
-          1885,
-          1895,
-          1907,
-          1920
-        ],
-        "year_range": [
-          1865,
-          1920
-        ],
-        "n_observations": 47,
-        "magnitude": {
-          "min": 3.0,
-          "max": 212.0,
-          "median": 25.0,
-          "orders_of_magnitude": 1.85,
-          "hint": "linear"
-        },
-        "rendering_mode": "dots_with_line",
-        "magnitude_hint": "auto"
-      },
-      "department": {
-        "cadence": "census",
-        "valid_years": [
-          1865,
-          1875,
-          1885,
-          1895,
-          1907,
-          1920
-        ],
-        "year_range": [
-          1865,
-          1920
-        ],
-        "n_observations": 75,
-        "magnitude": {
-          "min": 4.0,
-          "max": 3599.0,
-          "median": 78.0,
-          "orders_of_magnitude": 2.95,
-          "hint": "linear"
-        },
-        "rendering_mode": "dots_with_line",
-        "magnitude_hint": "auto"
-      }
-    },
-    "source_documents": [
-      "Véjares, Maximiliano. Forthcoming. Department-level historical dataset, Chile, 19th century. Compiled from primary archival sources. Net Zero Industrial Policy Lab, Johns Hopkins University.",
-      "Véjares, Maximiliano. Forthcoming. Compiled public-employment series, Chile. Net Zero Industrial Policy Lab, Johns Hopkins University.",
-      "Oficina Central de Estadística. 1925. X Censo de la Población de la República de Chile, 15 de diciembre de 1920, public employees by theme. Santiago."
-    ],
-    "topic_category": "labor",
-    "semantic_zero": false,
-    "source_quality": "ocr",
-    "source_document": "Véjares, Department-level historical dataset (Chile, 19th c.), author's compilation",
-    "per_capita_default": "default_pc",
-    "accent": "#2c5060",
-    "definition": "Count of public employees (all branches and levels of government) at department or province scale, Véjares department-level historical dataset. The aggregate corresponding to the specific governance-presence indicators (pres_has_gobernador, pres_has_juez, pres_has_reg_civil).",
-    "coverage_statement": "6 year(s) 1865-1920, 47 province-level observations; 6 year(s) 1865-1920, 75 department-level observations",
-    "commit_status_by_scale": {
-      "province": "committed",
-      "department": "committed"
-    },
-    "published_by_scale": {
-      "province": "sparse",
-      "department": "sparse"
-    },
-    "commit_status": "committed",
-    "published": "sparse",
-    "display_id": "public_employees",
-    "aliases": [
-      "pubemp",
-      "pubemp_per_capita"
-    ],
-    "source_provenance_internal": [
-      {
-        "raw": "Empleados publicos; Censo 1920, organizado por tema; http://www.bibliotecanacionaldigital.gob.cl/visor/BND:82449",
-        "provenance": "BND:82449"
-      }
-    ],
-    "units_note": "Unit field currently blank; should read 'persons'."
   },
   {
     "id": "pubemp_per_capita",
@@ -46612,65 +46573,6 @@
     "published": "cross_section"
   },
   {
-    "id": "n_legislators",
-    "label": "Active legislators",
-    "display_label": "Active legislators",
-    "category": "Politics",
-    "source_type": "compiled",
-    "format_hint": "count",
-    "display_unit": "legislators",
-    "curated_subtitle": "Active legislators by department, 1865–1885",
-    "scale_availability": {
-      "national": false,
-      "province": false,
-      "department": true,
-      "commune": false
-    },
-    "scales": {
-      "department": {
-        "cadence": "census",
-        "valid_years": [
-          1865,
-          1875,
-          1885
-        ],
-        "year_range": [
-          1865,
-          1885
-        ],
-        "n_observations": 137,
-        "magnitude": {
-          "min": 1.0,
-          "max": 22.0,
-          "median": 3.0,
-          "orders_of_magnitude": 1.34,
-          "hint": "linear"
-        },
-        "rendering_mode": "dots_with_line",
-        "magnitude_hint": "auto"
-      }
-    },
-    "source_documents": [
-      "Biblioteca del Congreso Nacional de Chile. Reseñas Biográficas Parlamentarias. Santiago: BCN. [database]."
-    ],
-    "topic_category": "politics",
-    "semantic_zero": true,
-    "source_quality": "clean",
-    "source_document": "Biblioteca del Congreso Nacional, Legislators Database",
-    "per_capita_default": "user_choice",
-    "accent": "#4a3970",
-    "definition": "Number of legislators (diputados plus senadores) representing the department, Biblioteca del Congreso Nacional database. The 19th-century Chilean Congress had a small number of legislators per electoral district; counts of one or two were typical.",
-    "coverage_statement": "3 year(s) 1865-1885, 137 department-level observations",
-    "commit_status_by_scale": {
-      "department": "committed"
-    },
-    "published_by_scale": {
-      "department": "sparse"
-    },
-    "commit_status": "committed",
-    "published": "sparse"
-  },
-  {
     "id": "enfranchised_peasant",
     "label": "Enfranchised peasants",
     "display_label": "Enfranchised peasants",
@@ -49013,173 +48915,35 @@
     },
     "scales": {
       "national": {
-        "cadence": "annual",
+        "cadence": "census",
         "valid_years": [
-          1840,
-          1841,
-          1842,
           1843,
-          1844,
-          1845,
-          1846,
-          1847,
-          1848,
-          1849,
-          1850,
-          1851,
-          1852,
-          1853,
           1854,
-          1855,
-          1856,
-          1857,
-          1858,
-          1859,
-          1860,
-          1861,
-          1862,
-          1863,
-          1864,
           1865,
-          1866,
-          1867,
-          1868,
-          1869,
-          1870,
-          1871,
-          1872,
-          1873,
-          1874,
           1875,
-          1876,
-          1877,
-          1878,
-          1879,
-          1880,
-          1881,
-          1882,
-          1883,
-          1884,
           1885,
-          1886,
-          1887,
-          1888,
-          1889,
-          1890,
-          1891,
-          1892,
-          1893,
-          1894,
           1895,
-          1896,
-          1897,
-          1898,
-          1899,
-          1900,
-          1901,
-          1902,
-          1903,
-          1904,
-          1905,
-          1906,
           1907,
-          1908,
-          1909,
-          1910,
-          1911,
-          1912,
-          1913,
-          1914,
-          1915,
-          1916,
-          1917,
-          1918,
-          1919,
-          1920,
-          1921,
-          1922,
-          1923,
-          1924,
-          1925,
-          1926,
-          1927,
-          1928,
-          1929,
           1930,
-          1931,
-          1932,
-          1933,
-          1934,
-          1935,
-          1936,
-          1937,
-          1938,
-          1939,
           1940,
-          1941,
-          1942,
-          1943,
-          1944,
-          1945,
-          1946,
-          1947,
-          1948,
-          1949,
-          1950,
-          1951,
           1952,
-          1953,
-          1954,
-          1955,
-          1956,
-          1957,
-          1958,
-          1959,
-          1960,
-          1961,
-          1962,
-          1963,
-          1964,
-          1965,
-          1966,
-          1967,
-          1968,
-          1969,
           1970,
-          1971,
-          1972,
-          1973,
-          1974,
           1975,
-          1976,
-          1977,
-          1978,
-          1979,
-          1980,
-          1981,
-          1982,
-          1983,
-          1984,
-          1985,
-          1986,
-          1987,
-          1988,
-          1989,
-          1990
+          1980
         ],
         "year_range": [
-          1840,
-          1990
+          1843,
+          1980
         ],
-        "n_observations": 151,
+        "n_observations": 13,
         "magnitude": {
-          "min": 1231402,
-          "max": 13173000,
-          "median": 3584000,
-          "orders_of_magnitude": 1.03,
+          "min": 1083801.0,
+          "max": 11259871.0,
+          "median": 3220531.0,
+          "orders_of_magnitude": 1.02,
           "hint": "linear"
         },
-        "rendering_mode": "line",
+        "rendering_mode": "dots_with_line",
         "magnitude_hint": "auto"
       },
       "province": {
@@ -49206,11 +48970,11 @@
           1843,
           1970
         ],
-        "n_observations": 344,
+        "n_observations": 315,
         "magnitude": {
           "min": 153.0,
           "max": 3230790.0,
-          "median": 123057.0,
+          "median": 122266.0,
           "orders_of_magnitude": 4.32,
           "hint": "log"
         },
@@ -49218,29 +48982,27 @@
         "magnitude_hint": "log"
       },
       "department": {
-        "cadence": "irregular",
+        "cadence": "census",
         "valid_years": [
           1843,
           1854,
           1862,
           1865,
-          1870,
-          1873,
           1878
         ],
         "year_range": [
           1843,
           1878
         ],
-        "n_observations": 256,
+        "n_observations": 112,
         "magnitude": {
           "min": 3826.0,
-          "max": 200871.0,
-          "median": 26152.0,
-          "orders_of_magnitude": 1.72,
+          "max": 146282.0,
+          "median": 21008.0,
+          "orders_of_magnitude": 1.58,
           "hint": "linear"
         },
-        "rendering_mode": "dots",
+        "rendering_mode": "dots_with_line",
         "magnitude_hint": "auto"
       },
       "commune": {
@@ -49279,7 +49041,7 @@
     "per_capita_default": "user_choice",
     "accent": "#0E1A2B",
     "definition": "Total population of the unit (national, province, or department), the canonical population indicator at each scale. The national series is a continuous annual line of intercensal estimates; census enumerations are published alongside it as the separate indicator Total population (census enumerations), because an enumerated count and a mid-year estimate measure population on different definitions and can differ by several percent in the same year. The subnational series stitch together census enumerations (1865, 1875, 1885, 1895, 1907, 1920, 1930, 1940, 1952, 1960, 1970, 1982, 1992), Mamalakis (1980) intercensal estimates, and the Véjares department-level extraction. Earlier duplicate population series have been consolidated into this indicator. The annual national line is a display series assembled for the chart; the curated download carries the as-printed enumeration rows (see Total population, census enumerations), and the annual estimates are pending re-extraction with page-level provenance.",
-    "coverage_statement": "151 year(s) 1840-1990, 151 national observations; 16 year(s) 1843-1970, 344 province-level observations; 7 year(s) 1843-1878, 256 department-level observations; 3 year(s) 1935-1992, 798 observations",
+    "coverage_statement": "13 year(s) 1843-1980, 13 national observations; 16 year(s) 1843-1970, 315 province-level observations; 5 year(s) 1843-1878, 112 department-level observations; 3 year(s) 1935-1992, 798 observations",
     "commit_status_by_scale": {
       "national": "committed",
       "province": "committed",
@@ -49287,13 +49049,13 @@
       "commune": "committed"
     },
     "published_by_scale": {
-      "national": "complete",
+      "national": "sparse",
       "province": "sparse",
       "department": "sparse",
       "commune": "sparse"
     },
     "commit_status": "committed",
-    "published": "complete",
+    "published": "sparse",
     "breaks": [
       {
         "id": "boundary_wop_tarapaca_1883",
@@ -49409,7 +49171,7 @@
     "source_type": "census",
     "format_hint": "count",
     "display_unit": "persons",
-    "curated_subtitle": "Total population (census returns), by province, 1843–1970",
+    "curated_subtitle": "Total population (census returns), by province, 1843–1960",
     "scale_availability": {
       "national": true,
       "province": true,
@@ -49436,7 +49198,7 @@
         "magnitude": {
           "min": 1439120.0,
           "max": 3731573.0,
-          "median": 2517340.0,
+          "median": 2507380.0,
           "orders_of_magnitude": 0.41,
           "hint": "linear"
         },
@@ -49458,18 +49220,17 @@
           1935,
           1940,
           1952,
-          1960,
-          1970
+          1960
         ],
         "year_range": [
           1843,
-          1970
+          1960
         ],
-        "n_observations": 210,
+        "n_observations": 207,
         "magnitude": {
           "min": 153.0,
           "max": 2437425.0,
-          "median": 113331.0,
+          "median": 113323.0,
           "orders_of_magnitude": 4.2,
           "hint": "log"
         },
@@ -49490,7 +49251,7 @@
     "per_capita_default": "default_raw",
     "accent": "#0E1A2B",
     "definition": "Total population (census returns), measured in persons. Coverage: 7 observations at national level across 7 years (1854 to 1920); 210 observations at province level across 14 years (1843 to 1970). Source: Oficina Central de Estadística. 1908. Censo de la República de Chile levantado el 28 de Noviembre de 1907. Santiago: Sociedad Imprenta y Litografía Universo. and 3 other source(s). This description is generated from the indicator's catalog record.",
-    "coverage_statement": "7 year(s) 1854-1920, 7 national observations; 14 year(s) 1843-1970, 210 province-level observations",
+    "coverage_statement": "7 year(s) 1854-1920, 7 national observations; 13 year(s) 1843-1960, 207 province-level observations",
     "commit_status_by_scale": {
       "national": "committed",
       "province": "committed"
@@ -49521,16 +49282,6 @@
         "severity": "informational",
         "citation": "Ley 11,237 de 1953, creación del Servicio Nacional de Estadística y Censos.",
         "rule_for_chart": "Source caption flags the 1952-vs-1960 transition. No rule line; the discontinuity is in methodology, not in the data shape."
-      },
-      {
-        "id": "methodological_ine_1970",
-        "year": 1970,
-        "kind": "methodological",
-        "label": "INE replaces SNEC",
-        "description": "The Instituto Nacional de Estadísticas (INE), created by Law 17.374 of 1970, replaced SNEC and remains Chile's statistical institute today. Series originating from INE after 1970 use modern definitions, including the 1976 labor-force survey redesign that breaks unemployment comparability with pre-1976 figures.",
-        "severity": "informational",
-        "citation": "Ley 17.374 de 1970 (15 de octubre de 1970), creación del Instituto Nacional de Estadísticas.",
-        "rule_for_chart": "Source caption transitions to INE for post-1970 cells. The 1976 labor-force redefinition is a separate event (see below)."
       },
       {
         "id": "data_caveat_pre_1865_censuses",
@@ -52101,9 +51852,9 @@
         "n_observations": 18,
         "magnitude": {
           "min": 32336534.0,
-          "max": 87857279.5,
+          "max": 85030985.0,
           "median": 50142774.0,
-          "orders_of_magnitude": 0.43,
+          "orders_of_magnitude": 0.42,
           "hint": "linear"
         },
         "rendering_mode": "line",
@@ -59015,7 +58766,7 @@
         "n_observations": 35,
         "magnitude": {
           "min": 433386.0,
-          "max": 2636653.0149999997,
+          "max": 2636653.0,
           "median": 932484.65,
           "orders_of_magnitude": 0.78,
           "hint": "linear"
@@ -67479,7 +67230,6 @@
         "cadence": "irregular",
         "valid_years": [
           1858,
-          1900,
           1920,
           1921,
           1922,
@@ -67512,11 +67262,11 @@
           1858,
           1948
         ],
-        "n_observations": 631,
+        "n_observations": 610,
         "magnitude": {
           "min": 31.0,
           "max": 99377.0,
-          "median": 3620.0,
+          "median": 3629.0,
           "orders_of_magnitude": 3.51,
           "hint": "log"
         },
@@ -67561,7 +67311,7 @@
           1876,
           1948
         ],
-        "n_observations": 2508,
+        "n_observations": 2506,
         "magnitude": {
           "min": 13.0,
           "max": 26093.0,
@@ -67587,7 +67337,7 @@
     "per_capita_default": "default_pc",
     "accent": "#0E1A2B",
     "definition": "Annual count of deaths by province, from the Sinopsis Estadística de Chile 1924-1927 and earlier Anuario sources. A future release will consolidate the related death-count series into a single deaths-by-province indicator.",
-    "coverage_statement": "29 year(s) 1858-1948, 631 province-level observations; 30 year(s) 1876-1948, 2508 department-level observations",
+    "coverage_statement": "28 year(s) 1858-1948, 610 province-level observations; 30 year(s) 1876-1948, 2506 department-level observations",
     "commit_status_by_scale": {
       "province": "committed",
       "department": "committed"
@@ -69488,7 +69238,6 @@
         "cadence": "irregular",
         "valid_years": [
           1858,
-          1900,
           1920,
           1921,
           1922,
@@ -69521,11 +69270,11 @@
           1858,
           1948
         ],
-        "n_observations": 642,
+        "n_observations": 621,
         "magnitude": {
           "min": 199.0,
           "max": 125771.0,
-          "median": 5183.0,
+          "median": 5218.0,
           "orders_of_magnitude": 2.8,
           "hint": "linear"
         },
@@ -69547,7 +69296,7 @@
     "per_capita_default": "default_pc",
     "accent": "#0E1A2B",
     "definition": "Annual count of live births by province, from the Sinopsis Estadística de Chile 1924-1927. A future release will consolidate the related birth-count series into a single births-by-province indicator.",
-    "coverage_statement": "29 year(s) 1858-1948, 642 province-level observations",
+    "coverage_statement": "28 year(s) 1858-1948, 621 province-level observations",
     "commit_status_by_scale": {
       "province": "committed"
     },
@@ -70162,9 +69911,8 @@
     },
     "scales": {
       "province": {
-        "cadence": "irregular",
+        "cadence": "annual",
         "valid_years": [
-          1900,
           1920,
           1921,
           1922,
@@ -70194,18 +69942,18 @@
           1948
         ],
         "year_range": [
-          1900,
+          1920,
           1948
         ],
-        "n_observations": 628,
+        "n_observations": 607,
         "magnitude": {
           "min": 26.0,
           "max": 15541.0,
-          "median": 953.0,
+          "median": 968.0,
           "orders_of_magnitude": 2.78,
           "hint": "linear"
         },
-        "rendering_mode": "dots",
+        "rendering_mode": "line",
         "magnitude_hint": "auto"
       },
       "department": {
@@ -70246,7 +69994,7 @@
           1876,
           1948
         ],
-        "n_observations": 2531,
+        "n_observations": 2529,
         "magnitude": {
           "min": 5.0,
           "max": 13844.0,
@@ -70272,17 +70020,17 @@
     "per_capita_default": "default_raw",
     "accent": "#0E1A2B",
     "definition": "Annual count of marriages by province, from the Sinopsis Estadística de Chile 1924-1927. A future release will consolidate the related marriage-count series into a single marriages-by-province indicator.",
-    "coverage_statement": "28 year(s) 1900-1948, 628 province-level observations; 30 year(s) 1876-1948, 2531 department-level observations",
+    "coverage_statement": "27 year(s) 1920-1948, 607 province-level observations; 30 year(s) 1876-1948, 2529 department-level observations",
     "commit_status_by_scale": {
       "province": "committed",
       "department": "committed"
     },
     "published_by_scale": {
-      "province": "partial",
+      "province": "complete",
       "department": "sparse"
     },
     "commit_status": "committed",
-    "published": "partial",
+    "published": "complete",
     "display_id": "marriages_province",
     "aliases": [
       "matrimonios"

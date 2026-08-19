@@ -4,21 +4,21 @@
       "file": "historical_atlas_of_chile_curated_v2.csv",
       "path": "data/historical_atlas_of_chile_curated_v2.csv",
       "kind": "curated",
-      "bytes": 33479910,
-      "n_rows": 119952,
-      "n_variables": 1029,
-      "n_source_documents": 216,
-      "built": "2026-08-18"
+      "bytes": 32053275,
+      "n_rows": 114950,
+      "n_variables": 1045,
+      "n_source_documents": 223,
+      "built": "2026-08-19"
     },
     {
       "file": "historical_atlas_of_chile_research_extract_v2.csv",
       "path": "data/historical_atlas_of_chile_research_extract_v2.csv",
       "kind": "research_extract",
-      "bytes": 57438546,
-      "n_rows": 202861,
-      "n_variables": 4794,
-      "n_source_documents": 241,
-      "built": "2026-08-18"
+      "bytes": 57937975,
+      "n_rows": 204484,
+      "n_variables": 4795,
+      "n_source_documents": 247,
+      "built": "2026-08-19"
     }
   ]
 }

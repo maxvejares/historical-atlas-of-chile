@@ -411,10 +411,53 @@ def main() -> None:
     mani = json.load(open(MANIFEST))
     m = master_frame()
 
+    def gate_g8():
+        """G8 DISPLAY=DOWNLOAD (2026-08-19 external audit). Cell-level: every
+        payload cell of a published indicator must be reproducible from the
+        curated download under a registered lineage. Lives in its own module
+        (g8_display_download.py) because run_m028 also runs it standalone."""
+        import g8_display_download as g8
+        pub = g8.published_ids()
+        members = g8.collapsed_members()
+        member_of = {mm: stem for stem, ys in members.items() for mm in ys.values()}
+        sources = g8.register_sources()
+        idx = g8.curated_index()
+        amap = g8.geo_alias_map()
+        n_miss = n_mm = 0
+        offenders = {}
+        for var, lvl, yi, unit, val in g8.payload_cells(d):
+            stem = member_of.get(var, var)
+            if stem not in pub and var not in pub:
+                continue
+            cand = {var, stem} | sources.get(stem, set())
+            mem = members.get(stem)
+            if mem and yi in mem:
+                cand.add(mem[yi])
+            found = []
+            uslug = g8._slug(unit)
+            for cv in cand:
+                units = idx.get((cv, lvl, yi))
+                if units:
+                    for uk in ({unit, uslug} | amap.get(unit, set())
+                               | amap.get(uslug, set())):
+                        found.extend(units.get(uk, []))
+            if not found:
+                n_miss += 1
+                offenders[stem] = offenders.get(stem, 0) + 1
+            elif not any(abs(f - val) <= 1e-9 * max(abs(f), abs(val), 1.0) for f in found):
+                n_mm += 1
+                offenders[stem] = offenders.get(stem, 0) + 1
+        ok = not (n_miss or n_mm)
+        worst = sorted(offenders, key=lambda k: -offenders[k])[:3]
+        report("G8", "display=download", ok,
+               f"{n_miss:,} rendered cells missing from the curated CSV, "
+               f"{n_mm:,} with a different value"
+               + (f" — worst {worst}" if worst else ""))
+
     runners = {"G1": lambda: gate_g1(d, m), "G2": lambda: gate_g2(d),
                "G3": lambda: gate_g3(d), "G4": lambda: gate_g4(mani),
                "G5": lambda: gate_g5(d, mani), "G6": lambda: gate_g6(d),
-               "G7": lambda: gate_g7(d)}
+               "G7": lambda: gate_g7(d), "G8": gate_g8}
     for g, fn in runners.items():
         if a.gate and g != a.gate:
             continue

@@ -897,6 +897,20 @@ svg.chart { display: block; width: 100%; height: auto; }
   }
   .hero-figure img { max-height: 280px; }
   .hero-figure figcaption { font-size: 11px; }
+
+  /* 2026-08-19 external-audit P7: phone-width header collision. The masthead
+     stops being sticky (tokens.css sets --header-h to 0 in step), stacks
+     title over nav, and the control strip wraps its rows instead of printing
+     the scale tabs across the nav links. */
+  .site-header { position: static; height: auto; }
+  .site-header .inner {
+    flex-direction: column; align-items: flex-start; gap: 6px;
+    padding: 14px var(--gutter) 10px;
+  }
+  .site-header .mark .mark-name { font-size: 24px; }
+  .site-header nav { align-self: flex-start; padding-bottom: 0; flex-wrap: wrap; gap: 14px; }
+  .control-strip .inner { flex-wrap: wrap; gap: 10px 16px; }
+  .scale-tabs { display: flex; flex-wrap: wrap; gap: 12px 16px; }
 }
 
 /* ---------- Browse heading ---------- */

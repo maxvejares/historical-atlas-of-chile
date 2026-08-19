@@ -1,0 +1,66 @@
+{
+  "generated": "2026-08-19",
+  "doctrine": "The ISSUE-002 translation table, made public. Each entry declares that a published indicator's payload cells at one geographic level are drawn from master rows stored under DIFFERENT variable ids (English/Spanish legacy splits, boundary-vintage restatements, census-retrospective year stamps). Both the publisher and the downloader read this register: scripts/run_m028.py ships the mapped master variables' rows in the curated download (under their as-printed master names, source-fidelity doctrine), and tools/g8_display_download.py accepts them as backing for the indicator's rendered cells. An entry requires evidence: every payload cell it legitimizes must be value-identical to a promotable, unfenced master row under the mapped id at the same (level, year, unit). Payload cells no entry can back are pruned by scripts/prune_unbacked_payload_cells.py, never kept on faith. Registered from the 2026-08-19 external-audit reconciliation (G8); evidence counts are payload cells verified value-identical at registration time.",
+  "entries": [
+    {
+      "indicator": "poblacion",
+      "level": "department",
+      "master_variables": ["population"],
+      "evidence": "200/200 divergent payload cells (1869, 1885) value-identical to master `population` department rows; sources Anuario Estadistico 1871, Memoria del Interior 1887, Memoria del Interior 1892 Tomo II, Census 1895 Preliminar, Sinopsis 1924-1927. The published id kept the Spanish legacy key while the master extraction landed under the English id."
+    },
+    {
+      "indicator": "total_population",
+      "level": "province",
+      "master_variables": ["poblacion_calculada", "poblacion_total"],
+      "evidence": "80 divergent payload cells value-identical to master rows under these ids (poblacion_calculada 53, poblacion_total 17, both 6+); Anuario calculated-population and census province tables."
+    },
+    {
+      "indicator": "total_population",
+      "level": "department",
+      "master_variables": ["totalpop", "enfranchised_totalpop"],
+      "evidence": "56 divergent payload cells value-identical to unfenced promotable rows under these ids (enfranchised_totalpop 47, totalpop 9). enfranchised_totalpop is the population column of the enfranchisement tables, a primary printed count. Fenced totalpop rows (Data Chile complete.xlsx) do NOT ship and their payload cells are pruned."
+    },
+    {
+      "indicator": "total_population",
+      "level": "commune",
+      "master_variables": ["totalpop", "poblacion_total_1970", "poblacion_total_1992"],
+      "evidence": "Mirrors COMMUNE_VAR_REMAP in scripts/regenerate_ui_data.py (M151 Phase 6): the three commune total-population snapshots fold into the canonical indicator. 798 payload cells; sources 1935 commune assembly, Censo 1970, Censo 1992 (INE). The publisher-side remap and this register must stay in sync."
+    },
+    {
+      "indicator": "poblacion_total",
+      "level": "province",
+      "master_variables": ["Población total", "poblacion_total_1920", "poblacion_total_1940", "poblacion_total_1952", "poblacion_total_1960"],
+      "evidence": "78 divergent payload cells value-identical to master rows under the as-printed raw id `Población total` and the census-retrospective year-stamped ids (Censo 1952 Tomo 1 resumen, Censo 1960 INE)."
+    },
+    {
+      "indicator": "urban_population",
+      "level": "province",
+      "master_variables": ["poblacion_urbana", "poblacion_urbana_censo"],
+      "evidence": "18 divergent payload cells value-identical to master rows under these ids (census urban-population province tables)."
+    },
+    {
+      "indicator": "rural_population",
+      "level": "province",
+      "master_variables": ["poblacion_rural", "poblacion_rural_censo"],
+      "evidence": "18 divergent payload cells value-identical to master rows under these ids (census rural-population province tables)."
+    },
+    {
+      "indicator": "pop_urbana",
+      "level": "province",
+      "master_variables": ["poblacion_urbana"],
+      "evidence": "15 divergent payload cells (1895) value-identical to master poblacion_urbana rows. NOTE post-v1: pop_urbana and urban_population draw on the same master variable and are merge candidates."
+    },
+    {
+      "indicator": "pop_rural",
+      "level": "province",
+      "master_variables": ["poblacion_rural"],
+      "evidence": "15 divergent payload cells (1895) value-identical to master poblacion_rural rows. Same post-v1 merge note as pop_urbana."
+    },
+    {
+      "indicator": "population_total",
+      "level": "province",
+      "master_variables": ["poblacion_absoluta"],
+      "evidence": "2 divergent payload cells value-identical to master poblacion_absoluta rows (as-printed absolute-population column)."
+    }
+  ]
+}

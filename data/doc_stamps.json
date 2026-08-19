@@ -2,15 +2,15 @@
   "codebook": {
     "file": "codebook_v2.pdf",
     "version": "2.0",
-    "date": "2026-08-18",
-    "inputs_md5": "d751625588ee9afddf123f9896fbe3c4",
-    "n_indicators": 1034
+    "date": "2026-08-19",
+    "inputs_md5": "8a0b99b374b8fe3219bf3dc9688a2fd6",
+    "n_indicators": 1033
   },
   "methodology": {
     "file": "methodology_v2.docx",
     "version": "2.0",
-    "date": "2026-08-18",
-    "n_observations": 119952,
-    "n_source_documents": 212
+    "date": "2026-08-19",
+    "n_observations": 114950,
+    "n_source_documents": 217
   }
 }

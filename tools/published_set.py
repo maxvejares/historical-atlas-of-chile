@@ -69,11 +69,53 @@ def collapsed_members() -> dict[str, dict[int, str]]:
     return out
 
 
+def concept_alias_ids() -> dict[str, set[str]]:
+    """{canonical: {alias ids}} from the concept-alias register."""
+    reg_path = GP / "curation" / "concept_aliases.json"
+    if not reg_path.exists():
+        return {}
+    reg = json.loads(reg_path.read_text())
+    return {g["canonical"]: set(g.get("aliases", [])) for g in reg.get("groups", [])}
+
+
+def indicator_master_sources() -> dict[str, set[str]]:
+    """{published indicator id: {master variable ids that feed it}} from the
+    public ISSUE-002 translation register (2026-08-19 G8 reconciliation).
+    Level scoping is deliberately dropped here: the download ships whole
+    master variables under their as-printed names, and shipping a mapped
+    variable's rows at additional levels only widens the download, never the
+    display."""
+    reg_path = GP / "curation" / "indicator_master_sources.json"
+    if not reg_path.exists():
+        return {}
+    reg = json.loads(reg_path.read_text())
+    out: dict[str, set[str]] = {}
+    for e in reg.get("entries", []):
+        out.setdefault(e["indicator"], set()).update(e["master_variables"])
+    return out
+
+
 def published_master_variables() -> set[str]:
-    """Every master `variable` name that belongs to the published catalog."""
+    """Every master `variable` name that belongs to the published catalog.
+
+    Union of four resolutions, all register-driven (2026-08-19 G8 fix — the
+    downloader used to know only the first two, so master rows that back
+    rendered cells under alias or translated ids never shipped and the site
+    displayed data the download could not reproduce):
+      1. browse-visible manifest ids;
+      2. year-stamped members of published collapsible families;
+      3. concept-alias ids of published canonicals (curation register);
+      4. master source ids from curation/indicator_master_sources.json.
+    """
     ids = visible_manifest_ids()
     out = set(ids)
     for stem, members in collapsed_members().items():
         if stem in ids:
             out.update(members.values())
+    for canonical, aliases in concept_alias_ids().items():
+        if canonical in ids:
+            out.update(aliases)
+    for indicator, sources in indicator_master_sources().items():
+        if indicator in ids:
+            out.update(sources)
     return out

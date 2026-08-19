@@ -417,7 +417,29 @@ export function createChart(host) {
     const vb = (svgEl.getAttribute('viewBox') || '0 0 1200 510').split(/\s+/).map(Number);
     const chartW = vb[2] || 1200, chartH = vb[3] || 510;
     const HEAD_H = titleText ? 44 : 0;
-    const FOOT_H = sourceText ? 28 : 0;
+    // 2026-08-19 external-audit P8: the source line used to hard-truncate at
+    // 140 chars, exporting citations cut mid-word ("Plus 3 addi..."). Wrap
+    // the full citation over as many lines as it needs (word wrap against
+    // the chart width) and grow the canvas to fit.
+    const SRC_LINE_H = 16;
+    const sourceLines = [];
+    if (sourceText) {
+      const maxW = chartW - 48;
+      const measure = document.createElement('canvas').getContext('2d');
+      measure.font = '11px Georgia, "Times New Roman", serif';
+      let line = '';
+      for (const word of sourceText.split(' ')) {
+        const probe = line ? line + ' ' + word : word;
+        if (measure.measureText(probe).width > maxW && line) {
+          sourceLines.push(line);
+          line = word;
+        } else {
+          line = probe;
+        }
+      }
+      if (line) sourceLines.push(line);
+    }
+    const FOOT_H = sourceLines.length ? 12 + SRC_LINE_H * sourceLines.length : 0;
     const w = chartW, h = chartH + HEAD_H + FOOT_H;
 
     const clone = svgEl.cloneNode(true);
@@ -443,11 +465,12 @@ export function createChart(host) {
         ctx.fillText(titleText, 24, 28);
       }
       ctx.drawImage(img, 0, HEAD_H, chartW, chartH);
-      if (sourceText) {
+      if (sourceLines.length) {
         ctx.fillStyle = '#4A5568';
         ctx.font = '11px Georgia, "Times New Roman", serif';
-        ctx.fillText(sourceText.length > 140 ? sourceText.slice(0, 137) + '...' : sourceText,
-                     24, HEAD_H + chartH + 18);
+        sourceLines.forEach((ln, i) => {
+          ctx.fillText(ln, 24, HEAD_H + chartH + 18 + i * SRC_LINE_H);
+        });
       }
       URL.revokeObjectURL(svgUrl);
       canvas.toBlob(blob => {
@@ -946,10 +969,26 @@ export function createChart(host) {
     const unitOf = (s) => s.meta.display_unit || s.meta.format_hint || '';
     const indexed = new Set(series.map(unitOf)).size > 1;
 
+    // 2026-08-19 external-audit fix: rebasing each series at its OWN first
+    // observation made two series of the same quantity diverge by the growth
+    // between their start years (two total-population series plotted ~15%
+    // apart). Rebase everything at the first year every series covers; only
+    // if the series never overlap does each fall back to its own first
+    // observation, and the subtitle says which rule is in force.
+    let baseYear = null;
+    if (indexed) {
+      const yearSets = series.map(s => new Set(
+        s.pairs.filter(p => p[1] != null && p[1] !== 0 && !Number.isNaN(p[1]))
+               .map(p => p[0])));
+      const common = [...yearSets[0]].filter(y => yearSets.every(set => set.has(y)));
+      if (common.length) baseYear = Math.min(...common);
+    }
     const plot = series.map(s => {
       let pairs = s.pairs;
       if (indexed) {
-        const base = s.pairs.find(p => p[1] != null && p[1] !== 0 && !Number.isNaN(p[1]));
+        const base = baseYear != null
+          ? s.pairs.find(p => p[0] === baseYear)
+          : s.pairs.find(p => p[1] != null && p[1] !== 0 && !Number.isNaN(p[1]));
         const b = base ? base[1] : null;
         pairs = b ? s.pairs.map(([y, v]) => [y, (v / b) * 100]) : s.pairs;
       }
@@ -959,7 +998,9 @@ export function createChart(host) {
     titleEl.textContent = 'Variable comparison';
     if (tierBadgeEl) tierBadgeEl.style.display = 'none';
     unitsEl.textContent = indexed
-      ? 'Indexed: first observation of each series = 100'
+      ? (baseYear != null
+          ? `Indexed: ${baseYear} = 100 for every series (units differ)`
+          : 'Indexed: first observation of each series = 100 (units differ; series never overlap)')
       : (series[0].meta.display_unit || unitLabel(series[0].meta) || '');
 
     // UX2 B.1: data-quality warnings must survive comparison mode. Collect the

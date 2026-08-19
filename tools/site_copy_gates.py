@@ -197,11 +197,31 @@ def gate_s3(fast: bool) -> None:
             mas = pd.read_csv(MASTER, dtype=str, low_memory=False,
                               keep_default_na=False)
             mkeys = set(map(tuple, mas[cols].itertuples(index=False, name=None)))
-            n_bad = sum(1 for k in map(tuple, cur[cols].itertuples(index=False, name=None))
+            # Curation-15 rows are the one legitimate non-master class in the
+            # curated file (2026-08-19 G8 fix): reconstructed indicators ship
+            # rows so the download reproduces every rendered cell. They must
+            # be byte-identical to the sidecar apply_curation_15 emitted, not
+            # to master. Everything else must be a master row verbatim.
+            recon_path = GP / "curation" / "reconstructed_rows.csv"
+            rkeys = set()
+            if recon_path.exists():
+                rec = pd.read_csv(recon_path, dtype=str, low_memory=False,
+                                  keep_default_na=False)
+                rkeys = set(map(tuple, rec[cols].itertuples(index=False, name=None)))
+            is_recon = cur["notes"].str.contains(
+                r"\[(?:reconstructed=curation15|master_projection_of=)", regex=True)
+            n_bad = sum(1 for k in map(tuple, cur.loc[~is_recon, cols]
+                                       .itertuples(index=False, name=None))
                         if k not in mkeys)
+            n_bad_recon = sum(1 for k in map(tuple, cur.loc[is_recon, cols]
+                                             .itertuples(index=False, name=None))
+                              if k not in rkeys)
             if n_bad:
                 problems.append(f"{n_bad:,} curated rows are not byte-identical "
                                 f"to a master row (source-fidelity doctrine)")
+            if n_bad_recon:
+                problems.append(f"{n_bad_recon:,} curation-15 rows do not match "
+                                f"the reconstructed_rows.csv sidecar")
 
     xwalk = GP / "data" / "source_crosswalk_v2.csv"
     if not xwalk.exists():
